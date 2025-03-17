@@ -20,12 +20,12 @@ Basic;Math::Derivatives::02 Trigonometric;\[ \frac{d}{dx} \sec x \];\[   \sec x 
 Basic;Math::Derivatives::02 Trigonometric;\[ \frac{d}{dx} \csc x \];\[ - \csc x \cdot \cot x \];
 
 # Derivatives::03 Inverse Trigonometric
-Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \sin^{-1} x \];\[   \frac{1}{\sqrt{1-x^2}} \];
-Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \cos^{-1} x \];\[ - \frac{1}{\sqrt{1-x^2}} \];
-Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \tan^{-1} x \];\[   \frac{1}{1+x^2} \];
-Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \cot^{-1} x \];\[ - \frac{1}{1+x^2} \];
-Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \sec^{-1} x \];\[   \frac{1}{|x| \sqrt{x^2-1}} \];
-Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \csc^{-1} x \];\[ - \frac{1}{|x| \sqrt{x^2-1}} \];
+Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \sin^{-1} x \];\[ \frac{ 1}{\sqrt{1-x^2}} \];
+Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \cos^{-1} x \];\[ \frac{-1}{\sqrt{1-x^2}} \];
+Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \tan^{-1} x \];\[ \frac{ 1}{1+x^2} \];
+Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \cot^{-1} x \];\[ \frac{-1}{1+x^2} \];
+Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \sec^{-1} x \];\[ \frac{ 1}{|x| \sqrt{x^2-1}} \];
+Basic;Math::Derivatives::03 Inverse Trigonometric;\[ \frac{d}{dx} \csc^{-1} x \];\[ \frac{-1}{|x| \sqrt{x^2-1}} \];
 
 # Derivatives::Hyperbolic
 Basic;Math::Derivatives::04 Hyperbolic;\[ \frac{d}{dx} \sinh x \];\[ \cosh x \];Hyperbolic
@@ -36,19 +36,19 @@ Basic;Math::Derivatives::04 Hyperbolic;\[ \frac{d}{dx} \sech x \];\[ - \sech x \
 Basic;Math::Derivatives::04 Hyperbolic;\[ \frac{d}{dx} \csch x \];\[ - \csch x \coth x \];Hyperbolic
 
 # Derivatives::Inverse Hyperbolic
-Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \sinh^{-1} x \];\[ \frac{1}{\sqrt{x^2 + 1}} \];Hyperbolic
-Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \cosh^{-1} x \];\[ \frac{1}{\sqrt{x^2 - 1}} \];Hyperbolic
-Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \tanh^{-1} x \];\[ \frac{1}{1 - x^2} \];Hyperbolic
-Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \coth^{-1} x \];\[ \frac{1}{1 - x^2} \];Hyperbolic
-Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \sech^{-1} x \];\[ - \frac{1}{ x  \sqrt{1 - x^2}} \];Hyperbolic
-Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \csch^{-1} x \];\[ - \frac{1}{|x| \sqrt{1 + x^2}} \];Hyperbolic
+Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \sinh^{-1} x \];\[ \frac{ 1}{\sqrt{x^2 + 1}} \];Hyperbolic
+Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \cosh^{-1} x \];\[ \frac{ 1}{\sqrt{x^2 - 1}} \];Hyperbolic
+Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \tanh^{-1} x \];\[ \frac{ 1}{1 - x^2} \];Hyperbolic
+Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \coth^{-1} x \];\[ \frac{ 1}{1 - x^2} \];Hyperbolic
+Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \sech^{-1} x \];\[ \frac{-1}{ x  \sqrt{1 - x^2}} \];Hyperbolic
+Basic;Math::Derivatives::05 Inverse Hyperbolic;\[ \frac{d}{dx} \csch^{-1} x \];\[ \frac{-1}{|x| \sqrt{1 + x^2}} \];Hyperbolic
 
 # Integrals::01 Basic
 Basic;Math::Integrals::01 Basic;\[ \int x^n dx \];\[ \frac{x^{n+1}}{n+1} + C, \quad n \neq -1 \];
 Basic;Math::Integrals::01 Basic;\[ \int \frac{1}{x} dx \];\[ \ln |x| + C \];
 Basic;Math::Integrals::01 Basic;\[ \int \frac{1}{ax + b} dx \];\[ \frac{1}{a} \ln |ax + b| + C \];
-Basic;Math::Integrals::01 Basic;\[ \int \frac{1}{a^2 - x^2} dx \];\[ \frac{1}{2a} \ln |\frac{x+a}{x-a}| + C \];
-Basic;Math::Integrals::01 Basic;\[ \int \frac{1}{x^2 - a^2} dx \];\[ \frac{1}{2a} \ln |\frac{x-a}{x+a}| + C \];
+Basic;Math::Integrals::01 Basic;\[ \int \frac{1}{a^2 - x^2} dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \];
+Basic;Math::Integrals::01 Basic;\[ \int \frac{1}{x^2 - a^2} dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \];
 
 # Integrals::02 Trigonometric
 Basic;Math::Integrals::02 Trigonometric;\[ \int \cos x dx \];\[   \sin x + C \];
