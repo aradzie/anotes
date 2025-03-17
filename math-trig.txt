@@ -1,0 +1,117 @@
+!deck:Math::Trigonometry::01 Basic
+
+!tags:Trigonometry
+
+\[ \sec \alpha \]
+---
+\[ \frac{1}{\cos \alpha} \]
+===
+
+\[ \csc \alpha \]
+---
+\[ \frac{1}{\sin \alpha} \]
+===
+
+\[ \tan \alpha \]
+---
+\[ \frac{\sin \alpha}{\cos \alpha} = \frac{1}{\cot \alpha} \]
+===
+
+\[ \cot \alpha \]
+---
+\[ \frac{\cos \alpha}{\sin \alpha} = \frac{1}{\tan \alpha} \]
+===
+
+!deck:Math::Trigonometry::02 Angle Sum
+
+\[ \sin (\alpha + \beta) \]
+---
+\[ \sin \alpha \cos \beta + \sin \beta \cos \alpha \]
+===
+
+\[ \sin (\alpha - \beta) \]
+---
+\[ \sin \alpha \cos \beta - \sin \beta \cos \alpha \]
+===
+
+\[ \cos (\alpha + \beta) \]
+---
+\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+===
+
+\[ \cos (\alpha - \beta) \]
+---
+\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+===
+
+\[ \tan (\alpha + \beta) \]
+---
+\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+===
+
+\[ \tan (\alpha - \beta) \]
+---
+\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+===
+
+\[ \cot (\alpha + \beta) \]
+---
+\[ \frac{1 - \tan \alpha \tan \beta}{\tan \alpha + \tan \beta} \]
+===
+
+\[ \cot (\alpha - \beta) \]
+---
+\[ \frac{1 + \tan \alpha \tan \beta}{\tan \alpha - \tan \beta} \]
+===
+
+!deck:Math::Trigonometry::03 Half Angle
+
+\[ \sin \frac{\alpha}{2} \]
+---
+\[ \pm \sqrt{ \frac{1 - \cos \alpha}{2} } \]
+===
+
+\[ \cos \frac{\alpha}{2} \]
+---
+\[ \pm \sqrt{ \frac{1 + \cos \alpha}{2} } \]
+===
+
+\[ \tan \frac{\alpha}{2} \]
+---
+\[ \pm \sqrt{ \frac{1 - \cos \alpha}{1 + \cos \alpha} } \]
+\[ \frac{\sin \alpha}{1 + \cos \alpha} \]
+\[ \frac{1 - \cos \alpha}{\sin \alpha} \]
+===
+
+\[ \cot \frac{\alpha}{2} \]
+---
+\[ \pm \sqrt{ \frac{1 + \cos \alpha}{1 - \cos \alpha} } \]
+\[ \frac{\sin \alpha}{1 - \cos \alpha} \]
+\[ \frac{1 + \cos \alpha}{\sin \alpha} \]
+===
+
+!deck:Math::Trigonometry::04 Double Angle
+
+\[ \sin 2 \alpha \]
+---
+\[ 2 \sin \alpha \cos \alpha \]
+===
+
+\[ \cos 2 \alpha \]
+---
+\[ \cos^2 \alpha - \sin^2 \alpha \]
+\[ 1 - 2 \sin^2 \alpha \]
+\[ 2 \cos^2 \alpha - 1 \]
+===
+
+\[ \tan 2 \alpha \]
+---
+\[ \frac{2 \tan \alpha}{1 - \tan^2 \alpha} \]
+\[ \frac{2}{\cot \alpha - \tan \alpha} \]
+===
+
+\[ \cot 2 \alpha \]
+---
+\[ \frac{\cot^2 \alpha - 1}{2 \cot \alpha} \]
+\[ \frac{\cot \alpha - \tan \alpha}{2} \]
+===

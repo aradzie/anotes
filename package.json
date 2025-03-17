@@ -1,0 +1,19 @@
+{
+  "name": "anki-decks",
+  "version": "1.0.0",
+  "description": "A collection of Anki decks.",
+  "keywords": [
+    "anki"
+  ],
+  "homepage": "https://github.com/aradzie/anki#readme",
+  "bugs": {
+    "url": "https://github.com/aradzie/anki/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aradzie/anki.git"
+  },
+  "license": "ISC",
+  "type": "module",
+  "main": "index.js"
+}
