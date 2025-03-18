@@ -98,3 +98,136 @@ Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= x^3 + 1 \\
+    du &= 3x^2 \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int 3x^2 \sqrt{x^3 + 1} \ dx
+    &= \int \sqrt{u} \ du \\
+    &= \frac{2}{3} u^{\frac{3}{2}} + C \\
+    &= \frac{2}{3} (x^3 + 1)^{\frac{3}{2}} + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int xe^{-x^2} \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= -x^2 \\
+    du &= -2x \ dx \\
+    -\frac{1}{2} du &= x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int xe^{-x^2} \ dx
+    &= -\frac{1}{2} \int e^u \ du \\
+    &= -\frac{1}{2} e^u + C \\
+    &= -\frac{1}{2} e^{-x^2} + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{x}{(x^2 + 1)^2} \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= x^2 + 1 \\
+    du &= 2x \ dx \\
+    \frac{1}{2} du &= x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{x}{(x^2 + 1)^2} \ dx
+    &= \frac{1}{2} \int \frac{1}{u^2} \ du \\
+    &= -\frac{1}{2} \frac{1}{u} + C \\
+    &= -\frac{1}{2} \frac{1}{x^2 + 1} + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int e^{\cos x} \sin x \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= \cos x \\
+    du &= - \sin x \ dx \\
+    - du &= \sin x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int e^{\cos x} \sin x \ dx
+    &= - \int e^u \ du \\
+    &= - e^u + C \\
+    &= - e^{\cos x} + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{e^x}{e^x + 1} \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= e^x + 1 \\
+    du &= e^x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{e^x}{e^x + 1} \ dx
+    &= \int \frac{1}{u} \ du \\
+    &= \ln |u| + C \\
+    &= \ln (e^x + 1) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{x}{x^2 + 1} \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= x^2 + 1 \\
+    du &= 2x \ dx \\
+    \frac{1}{2} du &= x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{x}{x^2 + 1} \ dx
+    &= \frac{1}{2} \int \frac{1}{u} \ du \\
+    &= \frac{1}{2} \ln |u| + C \\
+    &= \frac{1}{2} \ln (x^2 + 1) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= \cos x \\
+    du &= - \sin x \ dx \\
+    - du &= \sin x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{\sin x}{1 + \cos^2 x} \ dx
+    &= - \int \frac{1}{1 + u^2} \ du \\
+    &= - \tan^{-1} u + C \\
+    &= - \tan^{-1} (\cos x) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \cos(x) \sin(\sin(x)) \ dx \];"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= \sin x \\
+    du &= \cos x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \cos(x) \sin(\sin(x)) \ dx
+    &= \int \sin(u) \ du \\
+    &= \cos(u) + C \\
+    &= \cos(\sin(x)) + C
+\end{align*}
+\]"
