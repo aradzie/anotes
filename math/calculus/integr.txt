@@ -14,38 +14,28 @@
 \[ \ln |x| + C \]
 ===
 
-\[ \int \frac{1}{ax + b} \ dx \]
+\[ \int e^x \ dx \]
 ---
-\[ \frac{1}{a} \ln |ax + b| + C \]
+\[ e^x + C \]
 ===
 
-\[ \int \frac{1}{a^2 - x^2} \ dx \]
+\[ \int a^x \ dx \]
 ---
-\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
-===
-
-\[ \int \frac{1}{x^2 - a^2} \ dx \]
----
-\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
-===
-
-\[ \int \ln x \ dx \]
----
-\[ x \ln x - x + C \]
+\[ \frac{a^x}{\ln a} + C \]
 ===
 
 !deck:Math::Integrals::02 Trigonometric
 
 !tags:Calculus Trigonometric
 
-\[ \int \cos x \ dx \]
----
-\[ \sin x + C \]
-===
-
 \[ \int \sin x \ dx \]
 ---
 \[ - \cos x + C \]
+===
+
+\[ \int \cos x \ dx \]
+---
+\[ \sin x + C \]
 ===
 
 \[ \int \sec^2 x \ dx \]
@@ -92,32 +82,51 @@
 
 !deck:Math::Integrals::03 Inverse Trigonometric
 
-\[ \int \frac{1}{\sqrt{1-x^2}} \ dx \]
+\[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \]
 ---
-\[ \sin^{-1} x + C \]
+\[ \sin^{-1} \frac{x}{a} + C \]
 ===
 
-\[ \int \frac{-1}{\sqrt{1-x^2}} \ dx \]
+\[ \int \frac{-1}{\sqrt{a^2 - x^2}} \ dx \]
 ---
-\[ \cos^{-1} x + C \]
+\[ \cos^{-1} \frac{x}{a} + C \]
 ===
 
-\[ \int \frac{1}{1+x^2} \ dx \]
+\[ \int \frac{1}{a^2 + x^2} \ dx \]
 ---
-\[ \tan^{-1} x + C \]
+\[ \tan^{-1} \frac{x}{a} + C \]
 ===
 
-\[ \int \frac{-1}{1+x^2} \ dx \]
+\[ \int \frac{-1}{a^2 + x^2} \ dx \]
 ---
-\[ \cot^{-1} x + C \]
+\[ \cot^{-1} \frac{x}{a} + C \]
 ===
 
-\[ \int \frac{1}{x \sqrt{x^2-1}} \ dx \]
+\[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \]
 ---
-\[ \sec^{-1} x + C \]
+\[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
 ===
 
-\[ \int \frac{-1}{x \sqrt{x^2-1}} \ dx \]
+\[ \int \frac{-1}{x \sqrt{x^2 - 1}} \ dx \]
 ---
-\[ \csc^{-1} x + C \]
+\[ \frac{1}{a} \csc^{-1} \frac{x}{a} + C \]
+===
+
+!deck:Math::Integrals::04 Extended
+
+!tags:Calculus
+
+\[ \int \ln x \ dx \]
+---
+\[ x \ln x - x + C \]
+===
+
+\[ \int \frac{1}{a^2 - x^2} \ dx \]
+---
+\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
+===
+
+\[ \int \frac{1}{x^2 - a^2} \ dx \]
+---
+\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
 ===

@@ -29,6 +29,11 @@
 \[ \frac{1}{x} \]
 ===
 
+\[ \frac{d}{dx} \log_b x \]
+---
+\[ \frac{1}{x \ln b} \]
+===
+
 !deck:Math::Derivatives::02 Trigonometric
 
 !tags:Calculus Trigonometric
@@ -55,19 +60,19 @@
 
 \[ \frac{d}{dx} \sec x \]
 ---
-\[ \sec x \cdot \tan x \]
+\[ \sec x \tan x \]
 ===
 
 \[ \frac{d}{dx} \csc x \]
 ---
-\[ - \csc x \cdot \cot x \]
+\[ - \csc x \cot x \]
 ===
 
 !deck:Math::Derivatives::03 Inverse Trigonometric
 
 \[ \frac{d}{dx} \sin^{-1} x \]
 ---
-\[ \frac{ 1}{\sqrt{1-x^2}} \]
+\[ \frac{1}{\sqrt{1-x^2}} \]
 ===
 
 \[ \frac{d}{dx} \cos^{-1} x \]
@@ -77,7 +82,7 @@
 
 \[ \frac{d}{dx} \tan^{-1} x \]
 ---
-\[ \frac{ 1}{1+x^2} \]
+\[ \frac{1}{1+x^2} \]
 ===
 
 \[ \frac{d}{dx} \cot^{-1} x \]
@@ -87,7 +92,7 @@
 
 \[ \frac{d}{dx} \sec^{-1} x \]
 ---
-\[ \frac{ 1}{|x| \sqrt{x^2-1}} \]
+\[ \frac{1}{|x| \sqrt{x^2-1}} \]
 ===
 
 \[ \frac{d}{dx} \csc^{-1} x \]
@@ -133,30 +138,30 @@
 
 \[ \frac{d}{dx} \sinh^{-1} x \]
 ---
-\[ \frac{ 1}{\sqrt{x^2 + 1}} \]
+\[ \frac{1}{\sqrt{x^2 + 1}} \]
 ===
 
 \[ \frac{d}{dx} \cosh^{-1} x \]
 ---
-\[ \frac{ 1}{\sqrt{x^2 - 1}} \]
+\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
 ===
 
 \[ \frac{d}{dx} \tanh^{-1} x \]
 ---
-\[ \frac{ 1}{1 - x^2} \]
+\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
 ===
 
 \[ \frac{d}{dx} \coth^{-1} x \]
 ---
-\[ \frac{ 1}{1 - x^2} \]
+\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
 ===
 
 \[ \frac{d}{dx} \sech^{-1} x \]
 ---
-\[ \frac{-1}{ x \sqrt{1 - x^2}} \]
+\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
 ===
 
 \[ \frac{d}{dx} \csch^{-1} x \]
 ---
-\[ \frac{-1}{|x| \sqrt{1 + x^2}} \]
+\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
 ===
