@@ -596,6 +596,48 @@
   },
   {
     "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\sin^2(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\ dx\n    &= \\int \\frac{1-\\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} - \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} \\int dx - \\frac{1}{2} \\int \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x - \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\cos^2(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\ dx\n    &= \\int \\frac{1 + \\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} + \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} \\int dx + \\frac{1}{2} \\int \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x + \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\sin^3(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = 1 - \\cos^2(2) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^3(x) \\ dx\n    &= \\int \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int (1 - \\cos^2(x)) \\sin(x) \\ dx \\\\\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    du &= - \\sin(x) \\ dx \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - (1 - u^2) \\ du \\\\\n    &= \\int u^2 - 1 \\ du \\\\\n    &= \\frac{1}{3} u^3 - u + C \\\\\n    &= \\frac{1}{3} \\cos^3(x) - \\cos(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\cos^3(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = 1 - \\sin^2(2) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^3(x) \\ dx\n    &= \\int \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int (1 - \\sin^2(x)) \\cos(x) \\ dx \\\\\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int 1 - u^2 \\ du \\\\\n    &= u - \\frac{1}{3} u^3 + C \\\\\n    &= \\sin(x) - \\frac{1}{3} \\sin^3(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\cos^2(x) \\sin^3(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\ dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    du &= - \\sin(x) \\ dx \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^4 - u^2 \\ du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\sin^2(x) \\cos^3(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = 1 - \\sin^2(x) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^3(x) \\ dx\n    &= \\int \\sin^2(x) \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x)\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^2 - u^4 \\ du \\\\\n    &= \\frac{1}{3} u^3 - \\frac{1}{5} u^5 + C \\\\\n    &= \\frac{1}{3} \\sin^3(x) - \\frac{1}{5} \\sin^5(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Problems::Integrals::U-Substitution*",
     "tags": "Calculus Problem",
     "front": "\\[ \\int \\frac{x}{\\sqrt{x + 1}} \\ dx \\]",

@@ -1,0 +1,196 @@
+!type:Basic
+
+!deck:Math::Problems::Integrals::Trigonometric
+
+!tags:Calculus Problem
+
+\[ \int \sin^2(x) \ dx \]
+---
+Apply trigonometric identity:
+
+\[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
+
+Then:
+
+\[
+\begin{align*}
+    \int \sin^2(x) \ dx
+    &= \int \frac{1-\cos(2x)}{2} \ dx \\
+    &= \int \frac{1}{2} - \frac{1}{2} \cos(2x) \ dx \\
+    &= \frac{1}{2} \int dx - \frac{1}{2} \int \cos(2x) \ dx \\
+    &= \frac{1}{2} x - \frac{1}{4} \sin(2x) + C
+\end{align*}
+\]
+===
+
+\[ \int \cos^2(x) \ dx \]
+---
+Apply trigonometric identity:
+
+\[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
+
+Then:
+
+\[
+\begin{align*}
+    \int \cos^2(x) \ dx
+    &= \int \frac{1 + \cos(2x)}{2} \ dx \\
+    &= \int \frac{1}{2} + \frac{1}{2} \cos(2x) \ dx \\
+    &= \frac{1}{2} \int dx + \frac{1}{2} \int \cos(2x) \ dx \\
+    &= \frac{1}{2} x + \frac{1}{4} \sin(2x) + C
+\end{align*}
+\]
+===
+
+\[ \int \sin^3(x) \ dx \]
+---
+Apply trigonometric identity:
+
+\[ \sin^2(x) = 1 - \cos^2(2) \]
+
+Then:
+
+\[
+\begin{align*}
+    \int \sin^3(x) \ dx
+    &= \int \sin^2(x) \sin(x) \ dx \\
+    &= \int (1 - \cos^2(x)) \sin(x) \ dx \\
+\end{align*}
+\]
+
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+    u &= \cos(x) \\
+    du &= - \sin(x) \ dx \\
+    - du &= \sin(x) \ dx
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int (1 - \cos^2(x)) \sin(x) \ dx
+    &= \int - (1 - u^2) \ du \\
+    &= \int u^2 - 1 \ du \\
+    &= \frac{1}{3} u^3 - u + C \\
+    &= \frac{1}{3} \cos^3(x) - \cos(x) + C
+\end{align*}
+\]
+===
+
+\[ \int \cos^3(x) \ dx \]
+---
+Apply trigonometric identity:
+
+\[ \cos^2(x) = 1 - \sin^2(2) \]
+
+Then:
+
+\[
+\begin{align*}
+    \int \cos^3(x) \ dx
+    &= \int \cos^2(x) \cos(x) \ dx \\
+    &= \int (1 - \sin^2(x)) \cos(x) \ dx \\
+\end{align*}
+\]
+
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+    u &= \sin(x) \\
+    du &= \cos(x) \ dx
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int (1 - \sin^2(x)) \cos(x) \ dx
+    &= \int 1 - u^2 \ du \\
+    &= u - \frac{1}{3} u^3 + C \\
+    &= \sin(x) - \frac{1}{3} \sin^3(x) + C
+\end{align*}
+\]
+===
+
+\[ \int \cos^2(x) \sin^3(x) \ dx \]
+---
+Apply trigonometric identity:
+
+\[ \sin^2(x) = 1 - \cos^2(x) \]
+
+Then:
+
+\[
+\begin{align*}
+    \int \cos^2(x) \sin^3(x) \ dx
+    &= \int \cos^2(x) \sin^2(x) \sin(x) \ dx \\
+    &= \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \ dx
+\end{align*}
+\]
+
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+    u &= \cos(x) \\
+    du &= - \sin(x) \ dx \\
+    - du &= \sin(x) \ dx
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \ dx
+    &= \int - u^2 (1 - u^2) \ du \\
+    &= \int u^4 - u^2 \ du \\
+    &= \frac{1}{5} u^5 - \frac{1}{3} u^3 + C \\
+    &= \frac{1}{5} \cos^5(x) - \frac{1}{3} \cos^3(x) + C
+\end{align*}
+\]
+===
+
+\[ \int \sin^2(x) \cos^3(x) \ dx \]
+---
+Apply trigonometric identity:
+
+\[ \cos^2(x) = 1 - \sin^2(x) \]
+
+Then:
+
+\[
+\begin{align*}
+    \int \sin^2(x) \cos^3(x) \ dx
+    &= \int \sin^2(x) \cos^2(x) \cos(x) \ dx \\
+    &= \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \ dx
+\end{align*}
+\]
+
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+    u &= \sin(x) \\
+    du &= \cos(x)
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \ dx
+    &= \int u^2 (1 - u^2) \ du \\
+    &= \int u^2 - u^4 \ du \\
+    &= \frac{1}{3} u^3 - \frac{1}{5} u^5 + C \\
+    &= \frac{1}{3} \sin^3(x) - \frac{1}{5} \sin^5(x) + C
+\end{align*}
+\]
+===
