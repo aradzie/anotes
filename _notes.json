@@ -626,6 +626,27 @@
     "type": "Basic",
     "deck": "Math::Problems::Integrals::Trigonometric",
     "tags": "Calculus Problem",
+    "front": "\\[ \\int \\sin^4(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 - \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} - 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} - \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x - \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\cos^4(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\ dx \\]",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\ dx\n    &= \\int \\left( \\frac{1 - \\cos(2x)}{2} \\right) \\left( \\frac{1 + \\cos(2x)}{2} \\right) \\ dx \\\\\n    &= \\frac{1}{4} \\int 1 - \\cos^2(2x) \\ dx \\\\\n    &= \\frac{1}{4} \\int \\sin^2(2x) \\ dx, \\quad u = 2x, \\quad \\frac{1}{2} du = dx \\\\\n    &= \\frac{1}{8} \\int \\sin^2(u) \\ du \\\\\n    &= \\frac{1}{8} \\left( \\frac{1}{2} u - \\frac{1}{4} \\sin(2u) \\right) + C \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric",
+    "tags": "Calculus Problem",
     "front": "\\[ \\int \\cos^2(x) \\sin^3(x) \\ dx \\]",
     "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\ dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    du &= - \\sin(x) \\ dx \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^4 - u^2 \\ du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*}\n\\]"
   },
