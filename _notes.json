@@ -1,0 +1,653 @@
+[
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::01 Basic",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sec \\theta \\]",
+    "back": "\\[ \\frac{1}{\\cos \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::01 Basic",
+    "tags": "Trigonometry",
+    "front": "\\[ \\csc \\theta \\]",
+    "back": "\\[ \\frac{1}{\\sin \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::01 Basic",
+    "tags": "Trigonometry",
+    "front": "\\[ \\tan \\theta \\]",
+    "back": "\\[ \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{1}{\\cot \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::01 Basic",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cot \\theta \\]",
+    "back": "\\[ \\frac{\\cos \\theta}{\\sin \\theta} = \\frac{1}{\\tan \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin (\\alpha + \\beta) \\]",
+    "back": "\\[ \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin (\\alpha - \\beta) \\]",
+    "back": "\\[ \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos (\\alpha + \\beta) \\]",
+    "back": "\\[ \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos (\\alpha - \\beta) \\]",
+    "back": "\\[ \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\tan (\\alpha + \\beta) \\]",
+    "back": "\\[ \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\tan (\\alpha - \\beta) \\]",
+    "back": "\\[ \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cot (\\alpha + \\beta) \\]",
+    "back": "\\[ \\frac{1 - \\tan \\alpha \\tan \\beta}{\\tan \\alpha + \\tan \\beta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::02 Angle Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cot (\\alpha - \\beta) \\]",
+    "back": "\\[ \\frac{1 + \\tan \\alpha \\tan \\beta}{\\tan \\alpha - \\tan \\beta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::03 Half Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin \\frac{\\theta}{2} \\]",
+    "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::03 Half Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos \\frac{\\theta}{2} \\]",
+    "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} } \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::03 Half Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\tan \\frac{\\theta}{2} \\]",
+    "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{1 + \\cos \\theta} } \\]\n\\[ \\frac{\\sin \\theta}{1 + \\cos \\theta} \\]\n\\[ \\frac{1 - \\cos \\theta}{\\sin \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::03 Half Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cot \\frac{\\theta}{2} \\]",
+    "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{1 - \\cos \\theta} } \\]\n\\[ \\frac{\\sin \\theta}{1 - \\cos \\theta} \\]\n\\[ \\frac{1 + \\cos \\theta}{\\sin \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin^2 \\theta \\]",
+    "back": "\\[ \\frac{1 - \\cos 2 \\theta}{2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos^2 \\theta \\]",
+    "back": "\\[ \\frac{1 + \\cos 2 \\theta}{2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
+    "tags": "Trigonometry",
+    "front": "\\[ \\tan^2 \\theta \\]",
+    "back": "\\[ \\frac{1 - \\cos 2 \\theta}{1 + \\cos 2 \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cot^2 \\theta \\]",
+    "back": "\\[ \\frac{1 + \\cos 2 \\theta}{1 - \\cos 2 \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::05 Double Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin 2 \\theta \\]",
+    "back": "\\[ 2 \\sin \\theta \\cos \\theta \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::05 Double Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos 2 \\theta \\]",
+    "back": "\\[ \\cos^2 \\theta - \\sin^2 \\theta \\]\n\\[ 1 - 2 \\sin^2 \\theta \\]\n\\[ 2 \\cos^2 \\theta - 1 \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::05 Double Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\tan 2 \\theta \\]",
+    "back": "\\[ \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} \\]\n\\[ \\frac{2}{\\cot \\theta - \\tan \\theta} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::05 Double Angle",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cot 2 \\theta \\]",
+    "back": "\\[ \\frac{\\cot^2 \\theta - 1}{2 \\cot \\theta} \\]\n\\[ \\frac{\\cot \\theta - \\tan \\theta}{2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::06 Product to Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin \\alpha \\cdot \\sin \\beta \\]",
+    "back": "\\[ \\frac{1}{2} [ \\cos (\\alpha - \\beta) - \\cos (\\alpha + \\beta) ] \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::06 Product to Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos \\alpha \\cdot \\cos \\beta \\]",
+    "back": "\\[ \\frac{1}{2} [ \\cos (\\alpha - \\beta) + \\cos (\\alpha + \\beta) ] \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::06 Product to Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin \\alpha \\cdot \\cos \\beta \\]",
+    "back": "\\[ \\frac{1}{2} [ \\sin (\\alpha + \\beta) + \\sin (\\alpha - \\beta) ] \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::06 Product to Sum",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos \\alpha \\cdot \\sin \\beta \\]",
+    "back": "\\[ \\frac{1}{2} [ \\sin (\\alpha + \\beta) - \\sin (\\alpha - \\beta) ] \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::07 Sum to Product",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin \\alpha + \\sin \\beta \\]",
+    "back": "\\[ 2 \\sin \\left( \\frac{\\alpha + \\beta}{2} \\right) \\cos \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::07 Sum to Product",
+    "tags": "Trigonometry",
+    "front": "\\[ \\sin \\alpha - \\sin \\beta \\]",
+    "back": "\\[ 2 \\cos \\left( \\frac{\\alpha + \\beta}{2} \\right) \\sin \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::07 Sum to Product",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos \\alpha + \\cos \\beta \\]",
+    "back": "\\[ 2 \\cos \\left( \\frac{\\alpha + \\beta}{2} \\right) \\cos \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry::07 Sum to Product",
+    "tags": "Trigonometry",
+    "front": "\\[ \\cos \\alpha - \\cos \\beta \\]",
+    "back": "\\[ 2 \\sin \\left( \\frac{\\alpha + \\beta}{2} \\right) \\sin \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\frac{d}{dx} x^n \\]",
+    "back": "\\[ nx^{n-1} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\frac{d}{dx} \\sqrt{x} \\]",
+    "back": "\\[ \\frac{1}{2 \\sqrt{x}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\frac{d}{dx} e^x \\]",
+    "back": "\\[ e^x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\frac{d}{dx} a^x \\]",
+    "back": "\\[ a^x \\ln a \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\frac{d}{dx} \\ln x \\]",
+    "back": "\\[ \\frac{1}{x} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\frac{d}{dx} \\log_b x \\]",
+    "back": "\\[ \\frac{1}{x \\ln b} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\sin x \\]",
+    "back": "\\[ \\cos x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\cos x \\]",
+    "back": "\\[ - \\sin x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\tan x \\]",
+    "back": "\\[ \\sec^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\cot x \\]",
+    "back": "\\[ - \\csc^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\sec x \\]",
+    "back": "\\[ \\sec x \\tan x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\csc x \\]",
+    "back": "\\[ - \\csc x \\cot x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\sin^{-1} x \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{1-x^2}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\cos^{-1} x \\]",
+    "back": "\\[ \\frac{-1}{\\sqrt{1-x^2}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\tan^{-1} x \\]",
+    "back": "\\[ \\frac{1}{1+x^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\cot^{-1} x \\]",
+    "back": "\\[ \\frac{-1}{1+x^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\sec^{-1} x \\]",
+    "back": "\\[ \\frac{1}{|x| \\sqrt{x^2-1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\frac{d}{dx} \\csc^{-1} x \\]",
+    "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2-1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::04 Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\sinh x \\]",
+    "back": "\\[ \\cosh x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::04 Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\cosh x \\]",
+    "back": "\\[ \\sinh x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::04 Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\tanh x \\]",
+    "back": "\\[ \\sech^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::04 Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\coth x \\]",
+    "back": "\\[ - \\csch^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::04 Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\sech x \\]",
+    "back": "\\[ - \\sech x \\tanh x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::04 Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\csch x \\]",
+    "back": "\\[ - \\csch x \\coth x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\sinh^{-1} x \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\cosh^{-1} x \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\tanh^{-1} x \\]",
+    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\coth^{-1} x \\]",
+    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\sech^{-1} x \\]",
+    "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\frac{d}{dx} \\csch^{-1} x \\]",
+    "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\int x^n \\ dx \\]",
+    "back": "\\[ \\frac{x^{n+1}}{n+1} + C, \\quad n \\neq -1 \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\int \\frac{1}{x} \\ dx \\]",
+    "back": "\\[ \\ln |x| + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\int e^x \\ dx \\]",
+    "back": "\\[ e^x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::01 Basic",
+    "tags": "Calculus",
+    "front": "\\[ \\int a^x \\ dx \\]",
+    "back": "\\[ \\frac{a^x}{\\ln a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\sin x \\ dx \\]",
+    "back": "\\[ - \\cos x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\cos x \\ dx \\]",
+    "back": "\\[ \\sin x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\sec^2 x \\ dx \\]",
+    "back": "\\[ \\tan x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\csc^2 x \\ dx \\]",
+    "back": "\\[ - \\cot x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\sec x \\tan x \\ dx \\]",
+    "back": "\\[ \\sec x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\csc x \\cot x \\ dx \\]",
+    "back": "\\[ - \\csc x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\tan x \\ dx \\]",
+    "back": "\\[ - \\ln | \\cos x | + C \\]\n\\[ \\ln | \\sec x | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\cot x \\ dx \\]",
+    "back": "\\[ \\ln | \\sin x | + C \\]\n\\[ - \\ln | \\csc x | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\sec x \\ dx \\]",
+    "back": "\\[ \\ln | \\sec x + \\tan x | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::02 Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\csc x \\ dx \\]",
+    "back": "\\[ \\ln | \\csc x - \\cot x | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 - x^2}} \\ dx \\]",
+    "back": "\\[ \\sin^{-1} \\frac{x}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\frac{-1}{\\sqrt{a^2 - x^2}} \\ dx \\]",
+    "back": "\\[ \\cos^{-1} \\frac{x}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\frac{1}{a^2 + x^2} \\ dx \\]",
+    "back": "\\[ \\tan^{-1} \\frac{x}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\frac{-1}{a^2 + x^2} \\ dx \\]",
+    "back": "\\[ \\cot^{-1} \\frac{x}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\frac{1}{x \\sqrt{x^2 - a^2}} \\ dx \\]",
+    "back": "\\[ \\frac{1}{a} \\sec^{-1} \\frac{x}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::03 Inverse Trigonometric",
+    "tags": "Calculus Trigonometric",
+    "front": "\\[ \\int \\frac{-1}{x \\sqrt{x^2 - 1}} \\ dx \\]",
+    "back": "\\[ \\frac{1}{a} \\csc^{-1} \\frac{x}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::04 Extended",
+    "tags": "Calculus",
+    "front": "\\[ \\int \\ln x \\ dx \\]",
+    "back": "\\[ x \\ln x - x + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::04 Extended",
+    "tags": "Calculus",
+    "front": "\\[ \\int \\frac{1}{a^2 - x^2} \\ dx \\]",
+    "back": "\\[ \\frac{1}{2a} \\ln \\left| \\frac{x+a}{x-a} \\right| + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Integrals::04 Extended",
+    "tags": "Calculus",
+    "front": "\\[ \\int \\frac{1}{x^2 - a^2} \\ dx \\]",
+    "back": "\\[ \\frac{1}{2a} \\ln \\left| \\frac{x-a}{x+a} \\right| + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int 3x^2 \\sqrt {x^3 + 1} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^3 + 1 \\\\\n    du &= 3x^2 \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int 3x^2 \\sqrt{x^3 + 1} \\ dx\n    &= \\int \\sqrt{u} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{3} (x^3 + 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int xe^{-x^2} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= -x^2 \\\\\n    du &= -2x \\ dx \\\\\n    -\\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int xe^{-x^2} \\ dx\n    &= -\\frac{1}{2} \\int e^u \\ du \\\\\n    &= -\\frac{1}{2} e^u + C \\\\\n    &= -\\frac{1}{2} e^{-x^2} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\frac{x}{(x^2 + 1)^2} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{(x^2 + 1)^2} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u^2} \\ du \\\\\n    &= -\\frac{1}{2} \\frac{1}{u} + C \\\\\n    &= -\\frac{1}{2} \\frac{1}{x^2 + 1} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int e^{\\cos x} \\sin x \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int e^{\\cos x} \\sin x \\ dx\n    &= - \\int e^u \\ du \\\\\n    &= - e^u + C \\\\\n    &= - e^{\\cos x} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\frac{e^x}{e^x + 1} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= e^x + 1 \\\\\n    du &= e^x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{e^x}{e^x + 1} \\ dx\n    &= \\int \\frac{1}{u} \\ du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln (e^x + 1) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\frac{x}{x^2 + 1} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{x^2 + 1} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u} \\ du \\\\\n    &= \\frac{1}{2} \\ln |u| + C \\\\\n    &= \\frac{1}{2} \\ln (x^2 + 1) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx\n    &= - \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= - \\tan^{-1} u + C \\\\\n    &= - \\tan^{-1} (\\cos x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\cos(x) \\sin(\\sin(x)) \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\ dx\n    &= \\int \\sin(u) \\ du \\\\\n    &= \\cos(u) + C \\\\\n    &= \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
+  }
+]
