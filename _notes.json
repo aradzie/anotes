@@ -596,6 +596,27 @@
   },
   {
     "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution*",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\frac{x}{\\sqrt{x + 1}} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    x &= u - 1 \\\\\n    u &= x + 1 \\\\\n    du &= dx \\\\\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{\\sqrt{x + 1}} \\ dx\n    &= \\int \\frac{u - 1}{\\sqrt{u}} \\ du \\\\\n    &= \\int \\frac{u}{\\sqrt{u}} \\ du - \\int \\frac{1}{\\sqrt{u}} \\ du \\\\\n    &= \\int u^{1/2} \\ du - \\int u^{-1/2} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}} + C \\\\\n    &= \\frac{2}{3} (x + 1)^{\\frac{3}{2}} - 2(x + 1)^{\\frac{1}{2}} + C \\\\\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution*",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\frac{x}{1 + x^4} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx \\\\\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{1 + x^4} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= \\frac{1}{2} \\tan^{-1}(u) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1}(x^2) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Integrals::U-Substitution*",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int (x + 1) \\sqrt{x - 1} \\ dx \\]",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    x &= u + 1 \\\\\n    u &= x - 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (x + 1) \\sqrt{x - 1} \\ dx\n    &= \\int (u + 2) \\sqrt{u} \\ du \\\\\n    &= \\int (u \\sqrt{u} + 2 \\sqrt{u}) \\ du \\\\\n    &= \\int (u^{\\frac{3}{2}} + 2 u^{\\frac{1}{2}}) \\ du \\\\\n    &= \\int u^{\\frac{3}{2}} \\ du + 2 \\int u^{\\frac{1}{2}} \\ du \\\\\n    &= \\frac{2}{5} u^{\\frac{5}{2}} + \\frac{4}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{5} (x - 1)^{\\frac{5}{2}} + \\frac{4}{3} (x - 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Problems::Integrals::U-Substitution",
     "tags": "Calculus Problem",
     "front": "\\[ \\int 3x^2 \\sqrt {x^3 + 1} \\ dx \\]",
@@ -648,6 +669,6 @@
     "deck": "Math::Problems::Integrals::U-Substitution",
     "tags": "Calculus Problem",
     "front": "\\[ \\int \\cos(x) \\sin(\\sin(x)) \\ dx \\]",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\ dx\n    &= \\int \\sin(u) \\ du \\\\\n    &= \\cos(u) + C \\\\\n    &= \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\ dx\n    &= \\int \\sin(u) \\ du \\\\\n    &= - \\cos(u) + C \\\\\n    &= - \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
   }
 ]
