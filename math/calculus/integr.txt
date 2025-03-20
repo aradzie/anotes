@@ -87,29 +87,14 @@
 \[ \sin^{-1} \frac{x}{a} + C \]
 ===
 
-\[ \int \frac{-1}{\sqrt{a^2 - x^2}} \ dx \]
----
-\[ \cos^{-1} \frac{x}{a} + C \]
-===
-
 \[ \int \frac{1}{a^2 + x^2} \ dx \]
 ---
 \[ \tan^{-1} \frac{x}{a} + C \]
 ===
 
-\[ \int \frac{-1}{a^2 + x^2} \ dx \]
----
-\[ \cot^{-1} \frac{x}{a} + C \]
-===
-
 \[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \]
 ---
 \[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
-===
-
-\[ \int \frac{-1}{x \sqrt{x^2 - 1}} \ dx \]
----
-\[ \frac{1}{a} \csc^{-1} \frac{x}{a} + C \]
 ===
 
 !deck:Math::Integrals::04 Extended

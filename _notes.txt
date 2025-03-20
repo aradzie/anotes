@@ -90,11 +90,8 @@ Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \cot x \ 
 Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec x \ dx \];\[ \ln | \sec x + \tan x | + C \]
 Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc x \ dx \];\[ \ln | \csc x - \cot x | + C \]
 Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \];\[ \sin^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{-1}{\sqrt{a^2 - x^2}} \ dx \];\[ \cos^{-1} \frac{x}{a} + C \]
 Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{a^2 + x^2} \ dx \];\[ \tan^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{-1}{a^2 + x^2} \ dx \];\[ \cot^{-1} \frac{x}{a} + C \]
 Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \];\[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{-1}{x \sqrt{x^2 - 1}} \ dx \];\[ \frac{1}{a} \csc^{-1} \frac{x}{a} + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
@@ -106,7 +103,6 @@ Then:
     \int \sin^2(x) \ dx
     &= \int \frac{1-\cos(2x)}{2} \ dx \\
     &= \int \frac{1}{2} - \frac{1}{2} \cos(2x) \ dx \\
-    &= \frac{1}{2} \int dx - \frac{1}{2} \int \cos(2x) \ dx \\
     &= \frac{1}{2} x - \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
@@ -118,7 +114,6 @@ Then:
     \int \cos^2(x) \ dx
     &= \int \frac{1 + \cos(2x)}{2} \ dx \\
     &= \int \frac{1}{2} + \frac{1}{2} \cos(2x) \ dx \\
-    &= \frac{1}{2} \int dx + \frac{1}{2} \int \cos(2x) \ dx \\
     &= \frac{1}{2} x + \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
@@ -136,7 +131,6 @@ Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= \cos(x) \\
-    du &= - \sin(x) \ dx \\
     - du &= \sin(x) \ dx
 \end{align*}
 \]
@@ -217,10 +211,10 @@ Then:
 \begin{align*}
     \int \sin^2(x) \cos^2(x) \ dx
     &= \int \left( \frac{1 - \cos(2x)}{2} \right) \left( \frac{1 + \cos(2x)}{2} \right) \ dx \\
-    &= \frac{1}{4} \int 1 - \cos^2(2x) \ dx \\
-    &= \frac{1}{4} \int \sin^2(2x) \ dx, \quad u = 2x, \quad \frac{1}{2} du = dx \\
-    &= \frac{1}{8} \int \sin^2(u) \ du \\
-    &= \frac{1}{8} \left( \frac{1}{2} u - \frac{1}{4} \sin(2u) \right) + C \\
+    &= \int \frac{1}{4} \left( 1 - \cos^2(2x) \right) \ dx \\
+    &= \int \frac{1}{4} \left( 1 - \frac{1 + \cos(4x)}{2} \right) \ dx \\
+    &= \int \frac{1}{4} \left( \frac{1}{2} - \frac{1}{2} \cos(4x) \right) \ dx \\
+    &= \int \frac{1}{8} \left( 1 - \cos(4x) \right) \ dx \\
     &= \frac{1}{8} \left( x - \frac{1}{4} \sin(4x) \right) + C \\
     &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
 \end{align*}
@@ -239,7 +233,6 @@ Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= \cos(x) \\
-    du &= - \sin(x) \ dx \\
     - du &= \sin(x) \ dx
 \end{align*}
 \]
