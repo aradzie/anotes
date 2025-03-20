@@ -1,9 +1,10 @@
 {
-  "name": "anki-decks",
+  "name": "anki-math-notes",
   "version": "1.0.0",
-  "description": "A collection of Anki decks.",
+  "description": "A collection of math notes for Anki.",
   "keywords": [
-    "anki"
+    "anki",
+    "math"
   ],
   "homepage": "https://github.com/aradzie/anki#readme",
   "bugs": {

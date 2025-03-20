@@ -1,3 +1,3 @@
-# Anki Decks
+# Anki Math Notes
 
-A collection of [Anki](https://apps.ankiweb.net/) decks.
+A collection of math notes for [Anki](https://apps.ankiweb.net/).
