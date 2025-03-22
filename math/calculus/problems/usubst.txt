@@ -5,6 +5,7 @@
 !tags:Calculus Problem
 
 \[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 
@@ -28,6 +29,7 @@ Then:
 ===
 
 \[ \int xe^{-x^2} \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 
@@ -52,6 +54,7 @@ Then:
 ===
 
 \[ \int \frac{x}{(x^2 + 1)^2} \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 
@@ -76,6 +79,7 @@ Then:
 ===
 
 \[ \int e^{\cos x} \sin x \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 
@@ -100,6 +104,7 @@ Then:
 ===
 
 \[ \int \frac{e^x}{e^x + 1} \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 
@@ -123,6 +128,7 @@ Then:
 ===
 
 \[ \int \frac{x}{x^2 + 1} \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 
@@ -147,6 +153,7 @@ Then:
 ===
 
 \[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 
@@ -171,6 +178,7 @@ Then:
 ===
 
 \[ \int \cos(x) \sin(\sin(x)) \ dx \]
+Solve the integral.
 ---
 Apply \(u\)-substitution:
 

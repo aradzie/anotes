@@ -5,6 +5,7 @@
 !tags:Calculus Problem
 
 \[ \int \sin^2(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -23,6 +24,7 @@ Then:
 ===
 
 \[ \int \cos^2(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -41,6 +43,7 @@ Then:
 ===
 
 \[ \int \sin^3(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -79,6 +82,7 @@ Then:
 ===
 
 \[ \int \cos^3(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -116,6 +120,7 @@ Then:
 ===
 
 \[ \int \sin^4(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -141,6 +146,7 @@ Then:
 ===
 
 \[ \int \cos^4(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -166,6 +172,7 @@ Then:
 ===
 
 \[ \int \sin^2(x) \cos^2(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -192,6 +199,7 @@ Then:
 ===
 
 \[ \int \cos^2(x) \sin^3(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 
@@ -230,6 +238,7 @@ Then:
 ===
 
 \[ \int \sin^2(x) \cos^3(x) \ dx \]
+Solve the integral.
 ---
 Apply trigonometric identity:
 

@@ -95,7 +95,44 @@ Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \sin^2(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Integration by Parts;Calculus Problem;"\[ \int \ln x \ dx \]
+Solve the integral.";"Integrate by parts:
+\[ u \ dv = uv - \int v \ du \]
+\[
+\begin{align*}
+     u &= \ln x            & dv &= dx \\
+    du &= \frac{1}{x} \ dx &  v &= x
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \ln x \ dx
+    &= x \ln x - \int x \frac{1}{x} \ dx \\
+    &= x \ln x - \int dx \\
+    &= x \ln x - x + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::Integration by Parts;Calculus Problem;"\[ \int (\ln x)^2 \ dx \]
+Solve the integral.";"Integrate by parts:
+\[ u \ dv = uv - \int v \ du \]
+\[
+\begin{align*}
+     u &= (\ln x)^2              & dv &= dx \\
+    du &= \frac{2 \ln x}{x} \ dx &  v &= x
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int (\ln x)^2 \ dx
+    &= x (\ln x)^2 - \int x \frac{2 \ln x}{x} \ dx \\
+    &= x (\ln x)^2 - 2 \int \ln x \ dx \\
+    &= x (\ln x)^2 - 2 (x \ln x - x) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
 Then:
 \[
@@ -106,7 +143,8 @@ Then:
     &= \frac{1}{2} x - \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \cos^2(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^2(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
 Then:
 \[
@@ -117,7 +155,8 @@ Then:
     &= \frac{1}{2} x + \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \sin^3(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^3(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = 1 - \cos^2(2) \]
 Then:
 \[
@@ -144,7 +183,8 @@ Then:
     &= \frac{1}{3} \cos^3(x) - \cos(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \cos^3(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^3(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = 1 - \sin^2(2) \]
 Then:
 \[
@@ -170,7 +210,8 @@ Then:
     &= \sin(x) - \frac{1}{3} \sin^3(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \sin^4(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^4(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
 and
 \[ \cos^2(2x) = \frac{1 + \cos(4x)}{2} \]
@@ -186,7 +227,8 @@ Then:
     &= \frac{3}{8} x - \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \cos^4(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^4(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
 and
 \[ \cos^2(2x) = \frac{1 + \cos(4x)}{2} \]
@@ -202,7 +244,8 @@ Then:
     &= \frac{3}{8} x + \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \sin^2(x) \cos^2(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \cos^2(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
 and
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
@@ -219,7 +262,8 @@ Then:
     &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \cos^2(x) \sin^3(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^2(x) \sin^3(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = 1 - \cos^2(x) \]
 Then:
 \[
@@ -246,7 +290,8 @@ Then:
     &= \frac{1}{5} \cos^5(x) - \frac{1}{3} \cos^3(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;\[ \int \sin^2(x) \cos^3(x) \ dx \];"Apply trigonometric identity:
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \cos^3(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = 1 - \sin^2(x) \]
 Then:
 \[
@@ -273,7 +318,8 @@ Then:
     &= \frac{1}{3} \sin^3(x) - \frac{1}{5} \sin^5(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;\[ \int \frac{x}{\sqrt{x + 1}} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{x}{\sqrt{x + 1}} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     x &= u - 1 \\
@@ -292,7 +338,8 @@ Then:
     &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C \\
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;\[ \int \frac{x}{1 + x^4} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{x}{1 + x^4} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= x^2 \\
@@ -309,7 +356,8 @@ Then:
     &= \frac{1}{2} \tan^{-1}(x^2) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;\[ \int (x + 1) \sqrt{x - 1} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int (x + 1) \sqrt{x - 1} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     x &= u + 1 \\
@@ -329,7 +377,48 @@ Then:
     &= \frac{2}{5} (x - 1)^{\frac{5}{2}} + \frac{4}{3} (x - 1)^{\frac{3}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{1}{x^2 + 4x + 8} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution after completing the square:
+\[
+\begin{align*}
+    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\
+    u &= x + 2 \\
+    du &= dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{1}{x^2 + 4x + 8} \ dx
+    &= \int \frac{1}{u^2 + 2^2} \ du \\
+    &= \frac{1}{2} \tan^{-1} \left( \frac{u}{2} \right) + C \\
+    &= \frac{1}{2} \tan^{-1} \left( \frac{x + 2}{2} \right) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{1}{1 + \sqrt{2x}} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= 1 + \sqrt{2x} \\
+      &= 1 + (2x)^\frac{1}{2} \\
+    du &= (2x)^{-\frac{1}{2}} \ dx \\
+    dx &= (2x)^\frac{1}{2} \ du \\
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{1}{1 + \sqrt{2x}} \ dx
+    &= \int \frac{1}{u} (2x)^\frac{1}{2} \ du, \quad (2x)^\frac{1}{2} = u - 1 \\
+    &= \int \frac{1}{u} (u - 1) \ du \\
+    &= \int \frac{u}{u} - \frac{1}{u} \ du \\
+    &= \int du - \int \frac{1}{u} \ du \\
+    &= u - \ln |u| + C \\
+    &= (1 + \sqrt{2x}) - \ln(1 + \sqrt{2x}) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= x^3 + 1 \\
@@ -345,7 +434,8 @@ Then:
     &= \frac{2}{3} (x^3 + 1)^{\frac{3}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int xe^{-x^2} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int xe^{-x^2} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= -x^2 \\
@@ -362,7 +452,8 @@ Then:
     &= -\frac{1}{2} e^{-x^2} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{x}{(x^2 + 1)^2} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{(x^2 + 1)^2} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= x^2 + 1 \\
@@ -379,7 +470,8 @@ Then:
     &= -\frac{1}{2} \frac{1}{x^2 + 1} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int e^{\cos x} \sin x \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int e^{\cos x} \sin x \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= \cos x \\
@@ -396,7 +488,8 @@ Then:
     &= - e^{\cos x} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{e^x}{e^x + 1} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{e^x}{e^x + 1} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= e^x + 1 \\
@@ -412,7 +505,8 @@ Then:
     &= \ln (e^x + 1) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{x}{x^2 + 1} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{x^2 + 1} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= x^2 + 1 \\
@@ -429,7 +523,8 @@ Then:
     &= \frac{1}{2} \ln (x^2 + 1) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= \cos x \\
@@ -446,7 +541,8 @@ Then:
     &= - \tan^{-1} (\cos x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;\[ \int \cos(x) \sin(\sin(x)) \ dx \];"Apply \(u\)-substitution:
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \cos(x) \sin(\sin(x)) \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
     u &= \sin x \\

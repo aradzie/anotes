@@ -1,0 +1,59 @@
+!type:Basic
+
+!deck:Math::Problems::Integrals::Integration by Parts
+
+!tags:Calculus Problem
+
+\[ \int \ln x \ dx \]
+Solve the integral.
+---
+
+Integrate by parts:
+
+\[ u \ dv = uv - \int v \ du \]
+
+\[
+\begin{align*}
+     u &= \ln x            & dv &= dx \\
+    du &= \frac{1}{x} \ dx &  v &= x
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int \ln x \ dx
+    &= x \ln x - \int x \frac{1}{x} \ dx \\
+    &= x \ln x - \int dx \\
+    &= x \ln x - x + C
+\end{align*}
+\]
+===
+
+\[ \int (\ln x)^2 \ dx \]
+Solve the integral.
+---
+
+Integrate by parts:
+
+\[ u \ dv = uv - \int v \ du \]
+
+\[
+\begin{align*}
+     u &= (\ln x)^2              & dv &= dx \\
+    du &= \frac{2 \ln x}{x} \ dx &  v &= x
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int (\ln x)^2 \ dx
+    &= x (\ln x)^2 - \int x \frac{2 \ln x}{x} \ dx \\
+    &= x (\ln x)^2 - 2 \int \ln x \ dx \\
+    &= x (\ln x)^2 - 2 (x \ln x - x) + C
+\end{align*}
+\]
+===
