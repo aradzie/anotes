@@ -1,6 +1,90 @@
 [
   {
     "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\sinh x \\]",
+    "back": "\\[ -i \\sin(ix) \\]\n\\[ \\frac{e^{x} - e^{-x}}{2} \\]\n\\[ \\frac{e^{2x} - 1}{2e^{x}} \\]\n\\[ \\frac{1 - e^{-2x}}{2e^{-x}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\cosh x \\]",
+    "back": "\\[ \\cos(ix) \\]\n\\[ \\frac{e^{x} + e^{-x}}{2} \\]\n\\[ \\frac{e^{2x} + 1}{2e^{x}} \\]\n\\[ \\frac{1 + e^{-2x}}{2e^{-x}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\tanh x \\]",
+    "back": "\\[ -i \\tan(ix) \\]\n\\[ \\frac{\\sinh x}{\\cosh x} \\]\n\\[ \\frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \\]\n\\[ \\frac{e^{2x} - 1}{e^{2x} + 1} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\coth x \\]",
+    "back": "\\[ i \\cot(ix) \\]\n\\[ \\frac{\\cosh x}{\\sinh x} \\]\n\\[ \\frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \\]\n\\[ \\frac{e^{2x} + 1}{e^{2x} - 1} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\sech x \\]",
+    "back": "\\[ \\sec(ix) \\]\n\\[ \\frac{1}{\\cosh x} \\]\n\\[ \\frac{2}{e^{x} + e^{-x}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\csch x \\]",
+    "back": "\\[ i \\csc(ix) \\]\n\\[ \\frac{1}{\\sinh x} \\]\n\\[ \\frac{2}{e^{x} - e^{-x}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::02 Identities",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\cosh x + \\sinh x \\]",
+    "back": "\\[ e^{x} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::02 Identities",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\cosh x - \\sinh x \\]",
+    "back": "\\[ e^{-x} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::02 Identities",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\cosh^2 x - \\sinh^2 x \\]",
+    "back": "\\[ 1 \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::03 Integrals",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 + u^2}} \\ du \\]",
+    "back": "\\[ \\sinh^{-1} \\left( \\frac{u}{a} \\right) + C\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::04 Taylor Series",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\sinh x \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Hyperbolic Functions::04 Taylor Series",
+    "tags": "Hyperbolic",
+    "front": "\\[ \\cosh x \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Trigonometry::01 Basic",
     "tags": "Trigonometry",
     "front": "\\[ \\sec \\theta \\]",
@@ -368,14 +452,14 @@
     "deck": "Math::Derivatives::04 Hyperbolic",
     "tags": "Calculus Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\tanh x \\]",
-    "back": "\\[ \\sech^2 x \\]"
+    "back": "\\[ \\sech^2 x = 1 - \\tanh^2 x \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Derivatives::04 Hyperbolic",
     "tags": "Calculus Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\coth x \\]",
-    "back": "\\[ - \\csch^2 x \\]"
+    "back": "\\[ - \\csch^2 x = 1 - \\coth^2 x \\]"
   },
   {
     "type": "Basic",
@@ -572,6 +656,48 @@
     "tags": "Calculus",
     "front": "\\[ \\int \\frac{1}{x^2 - a^2} \\ dx \\]",
     "back": "\\[ \\frac{1}{2a} \\ln \\left| \\frac{x-a}{x+a} \\right| + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus",
+    "front": "\\[ e^x \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    e^x\n    &= 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus",
+    "front": "\\[ \\ln(x) \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\ln(x)\n    &= (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} - \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}(x-1)^{n}}{n}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus",
+    "front": "\\[ \\ln(1-x) \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\ln(1-x)\n    &= - x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} - \\cdots \\\\\n    &= -\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus",
+    "front": "\\[ \\ln(1+x) \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\ln(1+x)\n    &= x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus",
+    "front": "\\[ \\sin(x) \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{(2n+1)!} x^{2n+1}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus",
+    "front": "\\[ \\cos(x) \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{(2n)!} x^{2n}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",

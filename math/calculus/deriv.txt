@@ -116,12 +116,12 @@
 
 \[ \frac{d}{dx} \tanh x \]
 ---
-\[ \sech^2 x \]
+\[ \sech^2 x = 1 - \tanh^2 x \]
 ===
 
 \[ \frac{d}{dx} \coth x \]
 ---
-\[ - \csch^2 x \]
+\[ - \csch^2 x = 1 - \coth^2 x \]
 ===
 
 \[ \frac{d}{dx} \sech x \]

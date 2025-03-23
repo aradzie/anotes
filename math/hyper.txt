@@ -1,0 +1,109 @@
+!type:Basic
+
+!deck:Math::Hyperbolic Functions::01 Basic
+
+!tags:Hyperbolic
+
+\[ \sinh x \]
+---
+\[ -i \sin(ix) \]
+\[ \frac{e^{x} - e^{-x}}{2} \]
+\[ \frac{e^{2x} - 1}{2e^{x}} \]
+\[ \frac{1 - e^{-2x}}{2e^{-x}} \]
+===
+
+\[ \cosh x \]
+---
+\[ \cos(ix) \]
+\[ \frac{e^{x} + e^{-x}}{2} \]
+\[ \frac{e^{2x} + 1}{2e^{x}} \]
+\[ \frac{1 + e^{-2x}}{2e^{-x}} \]
+===
+
+\[ \tanh x \]
+---
+\[ -i \tan(ix) \]
+\[ \frac{\sinh x}{\cosh x} \]
+\[ \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
+\[ \frac{e^{2x} - 1}{e^{2x} + 1} \]
+===
+
+\[ \coth x \]
+---
+\[ i \cot(ix) \]
+\[ \frac{\cosh x}{\sinh x} \]
+\[ \frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \]
+\[ \frac{e^{2x} + 1}{e^{2x} - 1} \]
+===
+
+\[ \sech x \]
+---
+\[ \sec(ix) \]
+\[ \frac{1}{\cosh x} \]
+\[ \frac{2}{e^{x} + e^{-x}} \]
+===
+
+\[ \csch x \]
+---
+\[ i \csc(ix) \]
+\[ \frac{1}{\sinh x} \]
+\[ \frac{2}{e^{x} - e^{-x}} \]
+===
+
+!deck:Math::Hyperbolic Functions::02 Identities
+
+!tags:Hyperbolic
+
+\[ \cosh x + \sinh x \]
+---
+\[ e^{x} \]
+===
+
+\[ \cosh x - \sinh x \]
+---
+\[ e^{-x} \]
+===
+
+\[ \cosh^2 x - \sinh^2 x \]
+---
+\[ 1 \]
+===
+
+!deck:Math::Hyperbolic Functions::03 Integrals
+
+!tags:Hyperbolic
+
+\[ \int \frac{1}{\sqrt{a^2 + u^2}} \ du \]
+---
+\[ \sinh^{-1} \left( \frac{u}{a} \right) + C\]
+===
+
+# TODO
+
+!deck:Math::Hyperbolic Functions::04 Taylor Series
+
+!tags:Hyperbolic
+
+\[ \sinh x \]
+Taylor series expansion
+---
+\[
+\begin{align*}
+    \sinh x
+    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
+\end{align*}
+\]
+===
+
+\[ \cosh x \]
+Taylor series expansion
+---
+\[
+\begin{align*}
+    \cosh x
+    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
+\end{align*}
+\]
+===
