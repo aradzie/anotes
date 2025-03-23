@@ -64,27 +64,6 @@
   },
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::03 Integrals",
-    "tags": "Hyperbolic",
-    "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 + u^2}} \\ du \\]",
-    "back": "\\[ \\sinh^{-1} \\left( \\frac{u}{a} \\right) + C\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::04 Taylor Series",
-    "tags": "Hyperbolic",
-    "front": "\\[ \\sinh x \\]\nTaylor series expansion",
-    "back": "\\[\n\\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::04 Taylor Series",
-    "tags": "Hyperbolic",
-    "front": "\\[ \\cosh x \\]\nTaylor series expansion",
-    "back": "\\[\n\\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
     "deck": "Math::Trigonometry::01 Basic",
     "tags": "Trigonometry",
     "front": "\\[ \\sec \\theta \\]",
@@ -688,16 +667,30 @@
   {
     "type": "Basic",
     "deck": "Math::Taylor Series",
-    "tags": "Calculus",
+    "tags": "Calculus Trigonometric",
     "front": "\\[ \\sin(x) \\]\nTaylor series expansion",
-    "back": "\\[\n\\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{(2n+1)!} x^{2n+1}\n\\end{align*}\n\\]"
+    "back": "\\[\n\\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n} x^{2n+1}}{(2n+1)!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Taylor Series",
-    "tags": "Calculus",
+    "tags": "Calculus Trigonometric",
     "front": "\\[ \\cos(x) \\]\nTaylor series expansion",
-    "back": "\\[\n\\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{(2n)!} x^{2n}\n\\end{align*}\n\\]"
+    "back": "\\[\n\\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n} x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\sinh x \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Taylor Series",
+    "tags": "Calculus Hyperbolic",
+    "front": "\\[ \\cosh x \\]\nTaylor series expansion",
+    "back": "\\[\n\\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",

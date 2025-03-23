@@ -28,23 +28,6 @@ Basic;Math::Hyperbolic Functions::01 Basic;Hyperbolic;\[ \csch x \];"\[ i \csc(i
 Basic;Math::Hyperbolic Functions::02 Identities;Hyperbolic;\[ \cosh x + \sinh x \];\[ e^{x} \]
 Basic;Math::Hyperbolic Functions::02 Identities;Hyperbolic;\[ \cosh x - \sinh x \];\[ e^{-x} \]
 Basic;Math::Hyperbolic Functions::02 Identities;Hyperbolic;\[ \cosh^2 x - \sinh^2 x \];\[ 1 \]
-Basic;Math::Hyperbolic Functions::03 Integrals;Hyperbolic;\[ \int \frac{1}{\sqrt{a^2 + u^2}} \ du \];\[ \sinh^{-1} \left( \frac{u}{a} \right) + C\]
-Basic;Math::Hyperbolic Functions::04 Taylor Series;Hyperbolic;"\[ \sinh x \]
-Taylor series expansion";"\[
-\begin{align*}
-    \sinh x
-    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
-\end{align*}
-\]"
-Basic;Math::Hyperbolic Functions::04 Taylor Series;Hyperbolic;"\[ \cosh x \]
-Taylor series expansion";"\[
-\begin{align*}
-    \cosh x
-    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
-\end{align*}
-\]"
 Basic;Math::Trigonometry::01 Basic;Trigonometry;\[ \sec \theta \];\[ \frac{1}{\cos \theta} \]
 Basic;Math::Trigonometry::01 Basic;Trigonometry;\[ \csc \theta \];\[ \frac{1}{\sin \theta} \]
 Basic;Math::Trigonometry::01 Basic;Trigonometry;\[ \tan \theta \];\[ \frac{\sin \theta}{\cos \theta} = \frac{1}{\cot \theta} \]
@@ -169,20 +152,36 @@ Taylor series expansion";"\[
     &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
 \end{align*}
 \]"
-Basic;Math::Taylor Series;Calculus;"\[ \sin(x) \]
+Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \sin(x) \]
 Taylor series expansion";"\[
 \begin{align*}
     \sin(x)
     &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)!} x^{2n+1}
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n+1}}{(2n+1)!}
 \end{align*}
 \]"
-Basic;Math::Taylor Series;Calculus;"\[ \cos(x) \]
+Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \cos(x) \]
 Taylor series expansion";"\[
 \begin{align*}
     \cos(x)
     &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n)!} x^{2n}
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \sinh x \]
+Taylor series expansion";"\[
+\begin{align*}
+    \sinh x
+    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \cosh x \]
+Taylor series expansion";"\[
+\begin{align*}
+    \cosh x
+    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
 \end{align*}
 \]"
 Basic;Math::Problems::Integrals::Integration by Parts;Calculus Problem;"\[ \int \ln x \ dx \]

@@ -52,6 +52,8 @@ Taylor series expansion
 \]
 ===
 
+!tags:Calculus Trigonometric
+
 \[ \sin(x) \]
 Taylor series expansion
 ---
@@ -59,7 +61,7 @@ Taylor series expansion
 \begin{align*}
     \sin(x)
     &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)!} x^{2n+1}
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n+1}}{(2n+1)!}
 \end{align*}
 \]
 ===
@@ -71,7 +73,33 @@ Taylor series expansion
 \begin{align*}
     \cos(x)
     &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n)!} x^{2n}
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!}
+\end{align*}
+\]
+===
+
+!tags:Calculus Hyperbolic
+
+\[ \sinh x \]
+Taylor series expansion
+---
+\[
+\begin{align*}
+    \sinh x
+    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
+\end{align*}
+\]
+===
+
+\[ \cosh x \]
+Taylor series expansion
+---
+\[
+\begin{align*}
+    \cosh x
+    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
 \end{align*}
 \]
 ===
