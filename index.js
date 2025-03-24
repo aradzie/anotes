@@ -10,7 +10,9 @@ main("_notes.txt");
 
 function main(deckFile) {
   const notes = [];
-  for (const inputFile of globSync("**/*.txt", {exclude: [deckFile]})) {
+  for (const inputFile of globSync("**/*.txt", {
+    exclude: [deckFile, "tmp"]
+  })) {
     parseFile(inputFile, notes);
   }
   console.log(`Parsed ${notes.length} note(s)`);

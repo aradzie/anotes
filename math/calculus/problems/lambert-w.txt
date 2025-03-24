@@ -1,0 +1,130 @@
+!type:Basic
+
+!deck:Math::Problems::Lambert W
+
+!tags:Lambert-W Problem
+
+# https://www.youtube.com/watch?v=LyEPB6Wxc_U
+# https://math.stackexchange.com/questions/1473437/derivative-of-lambert-w-function
+
+\[ \frac{d}{dx} W(x) \]
+Find the derivative of the Lambert \(W\) function.
+---
+
+Use implicit differentiation:
+
+\[
+\begin{align*}
+    W(x) e^{W(x)} &= x \\
+    \frac{d}{dx} \left( W(x) e^{W(x)} \right) &= \frac{d}{dx} x
+\end{align*}
+\]
+
+Use the chain rule:
+
+\[
+\begin{align*}
+    W(x) e^{W(x)} \cdot W'(x) + e^{W(x)} \cdot W'(x) &= 1 \\
+    W'(x) ( W(x) e^{W(x)} + e^{W(x)} ) &= 1 \\
+    W'(x) ( x + e^{W(x)} ) &= 1
+\end{align*}
+\]
+
+Since
+
+\[ W(x)e^{W(x)} = x \implies e^{W(x)} = x/W(x) \]
+
+Then:
+
+\[
+\begin{align*}
+    W'(x) &= \frac{1}{x + e^{W(x)}}  \\
+    &= \frac{1}{x + x/W(x)} \\
+    &= \frac{W(x)}{x W(x) + x} \\
+    &= \frac{W(x)}{x (W(x) + 1)}
+\end{align*}
+\]
+===
+
+# https://www.youtube.com/watch?v=l0Ucr7Oah4c
+
+\[ \int W(x) \ dx \]
+Find the anti-derivative of the Lambert \(W\) function.
+---
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+     u &= W(x) \\
+     x &= u e^u \\
+    dx &= (u e^u + e^u) \ du \\
+       &= e^u (u  + 1) \ du
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    &= \int W(x) \ dx \\
+    &= \int u e^u(u+1) \ du \\
+    &= \int e^u (u^2 + u) \ du, \quad \text{Integrate by parts} \\
+    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\
+    &= u u e^u - u e^u + e^u + C \\
+    &= x W(x) - W(x) + e^{W(x)} + C \\
+    &= x W(x) - W(x) + \frac{x}{W(x)} + C
+\end{align*}
+\]
+===
+
+# https://www.youtube.com/watch?v=elkUO6eRMvM
+
+\[ W(W(x)) = 1 \]
+---
+\[
+\begin{align*}
+    W(W(x)) &= 1 \\
+       W(x) &= 1 e^1 \\
+            &= e \\
+          x &= e e^e \\
+            &= e^{e+1}
+\end{align*}
+\]
+===
+
+\[ W(x) = \ln(2x) \]
+---
+\[
+\begin{align*}
+    W(x) &= \ln(2x) \\
+       x &= \ln(2x) e^{\ln(2x)} \\
+         &= 2x \ln(2x) \\
+\end{align*}
+\]
+
+\[
+\begin{align*}
+     2x \ln(2x) &= x \\
+        \ln(2x) &= \frac{1}{2} \\
+    e^{\ln(2x)} &= e^{\frac{1}{2}} \\
+             2x &= e^{\frac{1}{2}} \\
+              x &= \frac{1}{2} e^{\frac{1}{2}}
+\end{align*}
+\]
+===
+
+\[ W(e^x) = (W(e))^x \]
+---
+\[
+\begin{align*}
+    W(e^x) &= (W(e))^x \\
+    W(e^x) &= (W(1 e^1))^x \\
+    W(e^x) &= (1)^x \\
+    W(e^x) &= 1 \\
+       e^x &= 1 e^1 \\
+         x &= 1
+\end{align*}
+\]
+===
+
+# TODO The remaining problems from the video.

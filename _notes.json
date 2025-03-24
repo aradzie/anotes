@@ -708,6 +708,41 @@
   },
   {
     "type": "Basic",
+    "deck": "Math::Problems::Lambert W",
+    "tags": "Lambert-W Problem",
+    "front": "\\[ \\frac{d}{dx} W(x) \\]\nFind the derivative of the Lambert \\(W\\) function.",
+    "back": "Use implicit differentiation:\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} &= x \\\\\n    \\frac{d}{dx} \\left( W(x) e^{W(x)} \\right) &= \\frac{d}{dx} x\n\\end{align*}\n\\]\nUse the chain rule:\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} \\cdot W'(x) + e^{W(x)} \\cdot W'(x) &= 1 \\\\\n    W'(x) ( W(x) e^{W(x)} + e^{W(x)} ) &= 1 \\\\\n    W'(x) ( x + e^{W(x)} ) &= 1\n\\end{align*}\n\\]\nSince\n\\[ W(x)e^{W(x)} = x \\implies e^{W(x)} = x/W(x) \\]\nThen:\n\\[\n\\begin{align*}\n    W'(x) &= \\frac{1}{x + e^{W(x)}}  \\\\\n    &= \\frac{1}{x + x/W(x)} \\\\\n    &= \\frac{W(x)}{x W(x) + x} \\\\\n    &= \\frac{W(x)}{x (W(x) + 1)}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Lambert W",
+    "tags": "Lambert-W Problem",
+    "front": "\\[ \\int W(x) \\ dx \\]\nFind the anti-derivative of the Lambert \\(W\\) function.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n     u &= W(x) \\\\\n     x &= u e^u \\\\\n    dx &= (u e^u + e^u) \\ du \\\\\n       &= e^u (u  + 1) \\ du\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    &= \\int W(x) \\ dx \\\\\n    &= \\int u e^u(u+1) \\ du \\\\\n    &= \\int e^u (u^2 + u) \\ du, \\quad \\text{Integrate by parts} \\\\\n    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\\\\n    &= u u e^u - u e^u + e^u + C \\\\\n    &= x W(x) - W(x) + e^{W(x)} + C \\\\\n    &= x W(x) - W(x) + \\frac{x}{W(x)} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Lambert W",
+    "tags": "Lambert-W Problem",
+    "front": "\\[ W(W(x)) = 1 \\]",
+    "back": "\\[\n\\begin{align*}\n    W(W(x)) &= 1 \\\\\n       W(x) &= 1 e^1 \\\\\n            &= e \\\\\n          x &= e e^e \\\\\n            &= e^{e+1}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Lambert W",
+    "tags": "Lambert-W Problem",
+    "front": "\\[ W(x) = \\ln(2x) \\]",
+    "back": "\\[\n\\begin{align*}\n    W(x) &= \\ln(2x) \\\\\n       x &= \\ln(2x) e^{\\ln(2x)} \\\\\n         &= 2x \\ln(2x) \\\\\n\\end{align*}\n\\]\n\\[\n\\begin{align*}\n     2x \\ln(2x) &= x \\\\\n        \\ln(2x) &= \\frac{1}{2} \\\\\n    e^{\\ln(2x)} &= e^{\\frac{1}{2}} \\\\\n             2x &= e^{\\frac{1}{2}} \\\\\n              x &= \\frac{1}{2} e^{\\frac{1}{2}}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Problems::Lambert W",
+    "tags": "Lambert-W Problem",
+    "front": "\\[ W(e^x) = (W(e))^x \\]",
+    "back": "\\[\n\\begin{align*}\n    W(e^x) &= (W(e))^x \\\\\n    W(e^x) &= (W(1 e^1))^x \\\\\n    W(e^x) &= (1)^x \\\\\n    W(e^x) &= 1 \\\\\n       e^x &= 1 e^1 \\\\\n         x &= 1\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Problems::Integrals::Trigonometric",
     "tags": "Calculus Problem",
     "front": "\\[ \\int \\sin^2(x) \\ dx \\]\nSolve the integral.",
