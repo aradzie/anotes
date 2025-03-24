@@ -1,288 +1,274 @@
 [
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
     "front": "\\[ \\sinh x \\]",
-    "back": "\\[ -i \\sin(ix) \\]\n\\[ \\frac{e^{x} - e^{-x}}{2} \\]\n\\[ \\frac{e^{2x} - 1}{2e^{x}} \\]\n\\[ \\frac{1 - e^{-2x}}{2e^{-x}} \\]"
+    "back": "\\[ \\frac{e^{x} - e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
     "front": "\\[ \\cosh x \\]",
-    "back": "\\[ \\cos(ix) \\]\n\\[ \\frac{e^{x} + e^{-x}}{2} \\]\n\\[ \\frac{e^{2x} + 1}{2e^{x}} \\]\n\\[ \\frac{1 + e^{-2x}}{2e^{-x}} \\]"
+    "back": "\\[ \\frac{e^{x} + e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
     "front": "\\[ \\tanh x \\]",
-    "back": "\\[ -i \\tan(ix) \\]\n\\[ \\frac{\\sinh x}{\\cosh x} \\]\n\\[ \\frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \\]\n\\[ \\frac{e^{2x} - 1}{e^{2x} + 1} \\]"
+    "back": "\\[ \\frac{\\sinh x}{\\cosh x} = \\frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::01 Basic",
+    "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
     "front": "\\[ \\coth x \\]",
-    "back": "\\[ i \\cot(ix) \\]\n\\[ \\frac{\\cosh x}{\\sinh x} \\]\n\\[ \\frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \\]\n\\[ \\frac{e^{2x} + 1}{e^{2x} - 1} \\]"
+    "back": "\\[ \\frac{\\cosh x}{\\sinh x} = \\frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::01 Basic",
-    "tags": "Hyperbolic",
-    "front": "\\[ \\sech x \\]",
-    "back": "\\[ \\sec(ix) \\]\n\\[ \\frac{1}{\\cosh x} \\]\n\\[ \\frac{2}{e^{x} + e^{-x}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::01 Basic",
-    "tags": "Hyperbolic",
-    "front": "\\[ \\csch x \\]",
-    "back": "\\[ i \\csc(ix) \\]\n\\[ \\frac{1}{\\sinh x} \\]\n\\[ \\frac{2}{e^{x} - e^{-x}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::02 Identities",
+    "deck": "Math::Trig::Hyperbolic Functions::Identities",
     "tags": "Hyperbolic",
     "front": "\\[ \\cosh x + \\sinh x \\]",
     "back": "\\[ e^{x} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::02 Identities",
+    "deck": "Math::Trig::Hyperbolic Functions::Identities",
     "tags": "Hyperbolic",
     "front": "\\[ \\cosh x - \\sinh x \\]",
     "back": "\\[ e^{-x} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Hyperbolic Functions::02 Identities",
+    "deck": "Math::Trig::Hyperbolic Functions::Identities",
     "tags": "Hyperbolic",
     "front": "\\[ \\cosh^2 x - \\sinh^2 x \\]",
     "back": "\\[ 1 \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::01 Basic",
-    "tags": "Trigonometry",
-    "front": "\\[ \\sec \\theta \\]",
-    "back": "\\[ \\frac{1}{\\cos \\theta} \\]"
+    "deck": "Math::Trig::Hyperbolic to Trigonometric",
+    "tags": "Hyperbolic Trigonometric",
+    "front": "\\[ \\sin x \\]\nExpress as a hyperbolic function",
+    "back": "\\[ \\frac{e^{ix} - e^{-ix}}{2i} = -i \\sinh(ix) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::01 Basic",
-    "tags": "Trigonometry",
-    "front": "\\[ \\csc \\theta \\]",
-    "back": "\\[ \\frac{1}{\\sin \\theta} \\]"
+    "deck": "Math::Trig::Hyperbolic to Trigonometric",
+    "tags": "Hyperbolic Trigonometric",
+    "front": "\\[ \\sinh x \\]\nExpress as a trigonometric function",
+    "back": "\\[ \\frac{e^{x} - e^{-x}}{2} = -i \\sin(ix) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::01 Basic",
-    "tags": "Trigonometry",
-    "front": "\\[ \\tan \\theta \\]",
-    "back": "\\[ \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{1}{\\cot \\theta} \\]"
+    "deck": "Math::Trig::Hyperbolic to Trigonometric",
+    "tags": "Hyperbolic Trigonometric",
+    "front": "\\[ \\cos x \\]\nExpress as a hyperbolic function",
+    "back": "\\[ \\frac{e^{ix} + e^{-ix}}{2} = \\cosh(ix) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::01 Basic",
-    "tags": "Trigonometry",
-    "front": "\\[ \\cot \\theta \\]",
-    "back": "\\[ \\frac{\\cos \\theta}{\\sin \\theta} = \\frac{1}{\\tan \\theta} \\]"
+    "deck": "Math::Trig::Hyperbolic to Trigonometric",
+    "tags": "Hyperbolic Trigonometric",
+    "front": "\\[ \\cosh x \\]\nExpress as a trigonometric function",
+    "back": "\\[ \\frac{e^{x} + e^{-x}}{2} = \\cos(ix) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin (\\alpha + \\beta) \\]",
     "back": "\\[ \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin (\\alpha - \\beta) \\]",
     "back": "\\[ \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos (\\alpha + \\beta) \\]",
     "back": "\\[ \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos (\\alpha - \\beta) \\]",
     "back": "\\[ \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\tan (\\alpha + \\beta) \\]",
     "back": "\\[ \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\tan (\\alpha - \\beta) \\]",
     "back": "\\[ \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\cot (\\alpha + \\beta) \\]",
     "back": "\\[ \\frac{1 - \\tan \\alpha \\tan \\beta}{\\tan \\alpha + \\tan \\beta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::02 Angle Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Angle Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\cot (\\alpha - \\beta) \\]",
     "back": "\\[ \\frac{1 + \\tan \\alpha \\tan \\beta}{\\tan \\alpha - \\tan \\beta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::03 Half Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin \\frac{\\theta}{2} \\]",
     "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::03 Half Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos \\frac{\\theta}{2} \\]",
     "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} } \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::03 Half Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\tan \\frac{\\theta}{2} \\]",
     "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{1 + \\cos \\theta} } \\]\n\\[ \\frac{\\sin \\theta}{1 + \\cos \\theta} \\]\n\\[ \\frac{1 - \\cos \\theta}{\\sin \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::03 Half Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\cot \\frac{\\theta}{2} \\]",
     "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{1 - \\cos \\theta} } \\]\n\\[ \\frac{\\sin \\theta}{1 - \\cos \\theta} \\]\n\\[ \\frac{1 + \\cos \\theta}{\\sin \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle (Alt)",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin^2 \\theta \\]",
     "back": "\\[ \\frac{1 - \\cos 2 \\theta}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle (Alt)",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos^2 \\theta \\]",
     "back": "\\[ \\frac{1 + \\cos 2 \\theta}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle (Alt)",
+    "tags": "Trigonometric",
     "front": "\\[ \\tan^2 \\theta \\]",
     "back": "\\[ \\frac{1 - \\cos 2 \\theta}{1 + \\cos 2 \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::04 Half Angle (Alt)",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Half Angle (Alt)",
+    "tags": "Trigonometric",
     "front": "\\[ \\cot^2 \\theta \\]",
     "back": "\\[ \\frac{1 + \\cos 2 \\theta}{1 - \\cos 2 \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::05 Double Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Double Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin 2 \\theta \\]",
     "back": "\\[ 2 \\sin \\theta \\cos \\theta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::05 Double Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Double Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos 2 \\theta \\]",
     "back": "\\[ \\cos^2 \\theta - \\sin^2 \\theta \\]\n\\[ 1 - 2 \\sin^2 \\theta \\]\n\\[ 2 \\cos^2 \\theta - 1 \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::05 Double Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Double Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\tan 2 \\theta \\]",
     "back": "\\[ \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} \\]\n\\[ \\frac{2}{\\cot \\theta - \\tan \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::05 Double Angle",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Double Angle",
+    "tags": "Trigonometric",
     "front": "\\[ \\cot 2 \\theta \\]",
     "back": "\\[ \\frac{\\cot^2 \\theta - 1}{2 \\cot \\theta} \\]\n\\[ \\frac{\\cot \\theta - \\tan \\theta}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::06 Product to Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Product to Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin \\alpha \\cdot \\sin \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\cos (\\alpha - \\beta) - \\cos (\\alpha + \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::06 Product to Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Product to Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos \\alpha \\cdot \\cos \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\cos (\\alpha - \\beta) + \\cos (\\alpha + \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::06 Product to Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Product to Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin \\alpha \\cdot \\cos \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\sin (\\alpha + \\beta) + \\sin (\\alpha - \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::06 Product to Sum",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Product to Sum",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos \\alpha \\cdot \\sin \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\sin (\\alpha + \\beta) - \\sin (\\alpha - \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::07 Sum to Product",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Sum to Product",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin \\alpha + \\sin \\beta \\]",
     "back": "\\[ 2 \\sin \\left( \\frac{\\alpha + \\beta}{2} \\right) \\cos \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::07 Sum to Product",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Sum to Product",
+    "tags": "Trigonometric",
     "front": "\\[ \\sin \\alpha - \\sin \\beta \\]",
     "back": "\\[ 2 \\cos \\left( \\frac{\\alpha + \\beta}{2} \\right) \\sin \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::07 Sum to Product",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Sum to Product",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos \\alpha + \\cos \\beta \\]",
     "back": "\\[ 2 \\cos \\left( \\frac{\\alpha + \\beta}{2} \\right) \\cos \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trigonometry::07 Sum to Product",
-    "tags": "Trigonometry",
+    "deck": "Math::Trig::Trigonometric Functions::Sum to Product",
+    "tags": "Trigonometric",
     "front": "\\[ \\cos \\alpha - \\cos \\beta \\]",
     "back": "\\[ 2 \\sin \\left( \\frac{\\alpha + \\beta}{2} \\right) \\sin \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },

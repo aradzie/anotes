@@ -1,28 +1,8 @@
-!deck:Math::Trigonometry::01 Basic
+!type:Basic
 
-!tags:Trigonometry
+!tags:Trigonometric
 
-\[ \sec \theta \]
----
-\[ \frac{1}{\cos \theta} \]
-===
-
-\[ \csc \theta \]
----
-\[ \frac{1}{\sin \theta} \]
-===
-
-\[ \tan \theta \]
----
-\[ \frac{\sin \theta}{\cos \theta} = \frac{1}{\cot \theta} \]
-===
-
-\[ \cot \theta \]
----
-\[ \frac{\cos \theta}{\sin \theta} = \frac{1}{\tan \theta} \]
-===
-
-!deck:Math::Trigonometry::02 Angle Sum
+!deck:Math::Trig::Trigonometric Functions::Angle Sum
 
 \[ \sin (\alpha + \beta) \]
 ---
@@ -64,7 +44,7 @@
 \[ \frac{1 + \tan \alpha \tan \beta}{\tan \alpha - \tan \beta} \]
 ===
 
-!deck:Math::Trigonometry::03 Half Angle
+!deck:Math::Trig::Trigonometric Functions::Half Angle
 
 \[ \sin \frac{\theta}{2} \]
 ---
@@ -90,7 +70,7 @@
 \[ \frac{1 + \cos \theta}{\sin \theta} \]
 ===
 
-!deck:Math::Trigonometry::04 Half Angle (Alt)
+!deck:Math::Trig::Trigonometric Functions::Half Angle (Alt)
 
 \[ \sin^2 \theta \]
 ---
@@ -112,7 +92,7 @@
 \[ \frac{1 + \cos 2 \theta}{1 - \cos 2 \theta} \]
 ===
 
-!deck:Math::Trigonometry::05 Double Angle
+!deck:Math::Trig::Trigonometric Functions::Double Angle
 
 \[ \sin 2 \theta \]
 ---
@@ -138,7 +118,7 @@
 \[ \frac{\cot \theta - \tan \theta}{2} \]
 ===
 
-!deck:Math::Trigonometry::06 Product to Sum
+!deck:Math::Trig::Trigonometric Functions::Product to Sum
 
 \[ \sin \alpha \cdot \sin \beta \]
 ---
@@ -160,7 +140,7 @@
 \[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
 ===
 
-!deck:Math::Trigonometry::07 Sum to Product
+!deck:Math::Trig::Trigonometric Functions::Sum to Product
 
 \[ \sin \alpha + \sin \beta \]
 ---
