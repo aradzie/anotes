@@ -3,8 +3,8 @@
 #notetype column:1
 #deck column:2
 #tags column:3
-Basic;Math::Complex::Identities;;De Moivre's Formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) , \quad n \in \mathbb{N} \]
-\[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) , \quad n \in \mathbb{N} \]"
+Basic;Math::Complex::Identities;Complex;De Moivre's Formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
+\[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) \]"
 Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;\[ \sinh x \];\[ \frac{e^{x} - e^{-x}}{2} \]
 Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;\[ \cosh x \];\[ \frac{e^{x} + e^{-x}}{2} \]
 Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;\[ \tanh x \];\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
@@ -76,16 +76,16 @@ Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \fra
 Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \csc^{-1} x \];\[ \frac{-1}{|x| \sqrt{x^2-1}} \]
 Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \sinh x \];\[ \cosh x \]
 Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \cosh x \];\[ \sinh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \tanh x \];\[ \sech^2 x = 1 - \tanh^2 x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \coth x \];\[ - \csch^2 x = 1 - \coth^2 x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \sech x \];\[ - \sech x \tanh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \csch x \];\[ - \csch x \coth x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \tanh x \];\[ \text{sech}^2 \ x = 1 - \tanh^2 x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \coth x \];\[ - \text{csch}^2 \ x = 1 - \coth^2 x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{sech} \ x \];\[ - \text{sech} \ x \tanh x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{csch} \ x \];\[ - \text{csch} \ x \coth x \]
 Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \sinh^{-1} x \];\[ \frac{1}{\sqrt{x^2 + 1}} \]
 Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \cosh^{-1} x \];\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
 Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \tanh^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
 Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \coth^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \sech^{-1} x \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \csch^{-1} x \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{sech}^{-1} \ x \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{csch}^{-1} \ x \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
 Basic;Math::Integrals::01 Basic;Calculus;\[ \int x^n \ dx \];\[ \frac{x^{n+1}}{n+1} + C, \quad n \neq -1 \]
 Basic;Math::Integrals::01 Basic;Calculus;\[ \int \frac{1}{x} \ dx \];\[ \ln |x| + C \]
 Basic;Math::Integrals::01 Basic;Calculus;\[ \int e^x \ dx \];\[ e^x + C \]
