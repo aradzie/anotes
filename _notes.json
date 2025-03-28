@@ -1,6 +1,13 @@
 [
   {
     "type": "Basic",
+    "deck": "Math::Complex::Identities",
+    "tags": "",
+    "front": "De Moivre's Formula",
+    "back": "\\[ \\left( \\cos(x) + i \\sin(x) \\right)^n = \\cos(nx) + i \\sin(nx) , \\quad n \\in \\mathbb{N} \\]\n\\[ \\left( \\cosh(x) + i \\sinh(x) \\right)^n = \\cosh(nx) + i \\sinh(nx) , \\quad n \\in \\mathbb{N} \\]"
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
     "front": "\\[ \\sinh x \\]",

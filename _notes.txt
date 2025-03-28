@@ -3,6 +3,8 @@
 #notetype column:1
 #deck column:2
 #tags column:3
+Basic;Math::Complex::Identities;;De Moivre's Formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) , \quad n \in \mathbb{N} \]
+\[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) , \quad n \in \mathbb{N} \]"
 Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;\[ \sinh x \];\[ \frac{e^{x} - e^{-x}}{2} \]
 Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;\[ \cosh x \];\[ \frac{e^{x} + e^{-x}}{2} \]
 Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;\[ \tanh x \];\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
