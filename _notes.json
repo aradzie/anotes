@@ -10,50 +10,50 @@
     "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
-    "front": "\\[ \\sinh x \\]",
+    "front": "\\[ \\sinh x \\]\nThe definition of",
     "back": "\\[ \\frac{e^{x} - e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
-    "front": "\\[ \\cosh x \\]",
+    "front": "\\[ \\cosh x \\]\nThe definition of",
     "back": "\\[ \\frac{e^{x} + e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
-    "front": "\\[ \\tanh x \\]",
+    "front": "\\[ \\tanh x \\]\nThe definition of",
     "back": "\\[ \\frac{\\sinh x}{\\cosh x} = \\frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Basic",
     "tags": "Hyperbolic",
-    "front": "\\[ \\coth x \\]",
+    "front": "\\[ \\coth x \\]\nThe definition of",
     "back": "\\[ \\frac{\\cosh x}{\\sinh x} = \\frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Identities",
     "tags": "Hyperbolic",
-    "front": "\\[ \\cosh x + \\sinh x \\]",
-    "back": "\\[ e^{x} \\]"
+    "front": "\\[ e^{x} \\]\nHyperbolic identity",
+    "back": "\\[ \\cosh x + \\sinh x \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Identities",
     "tags": "Hyperbolic",
-    "front": "\\[ \\cosh x - \\sinh x \\]",
-    "back": "\\[ e^{-x} \\]"
+    "front": "\\[ e^{-x} \\]\nHyperbolic identity",
+    "back": "\\[ \\cosh x - \\sinh x \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trig::Hyperbolic Functions::Identities",
     "tags": "Hyperbolic",
-    "front": "\\[ \\cosh^2 x - \\sinh^2 x \\]",
-    "back": "\\[ 1 \\]"
+    "front": "\\[ 1 \\]\nHyperbolic identity",
+    "back": "\\[ \\cosh^2 x - \\sinh^2 x \\]"
   },
   {
     "type": "Basic",
