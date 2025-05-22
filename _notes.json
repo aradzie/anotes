@@ -736,6 +736,13 @@
   },
   {
     "type": "Basic",
+    "deck": "Math::Problems::Integrals::Trigonometric*",
+    "tags": "Calculus Problem",
+    "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\sin(2x) = 2 \\sin(x) \\cos(x) \\]\nand\n\\[ \\sin^2(2x) = \\frac{1 - \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\ dx\n    &= \\int \\sin(x) \\sin(x)  \\cos(x) \\cos(x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left( 2 \\sin(x) \\cos(x) \\right) \\left( 2 \\sin(x) \\cos(x) \\right) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin(2x) \\sin(2x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin^2(2x) \\ dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\ dx \\\\\n    &= \\frac{1}{8} \\left( \\int dx - \\int \\cos(4x) \\ dx \\right) \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Problems::Integrals::Trigonometric",
     "tags": "Calculus Problem",
     "front": "\\[ \\int \\sin^2(x) \\ dx \\]\nSolve the integral.",
@@ -775,13 +782,6 @@
     "tags": "Calculus Problem",
     "front": "\\[ \\int \\cos^4(x) \\ dx \\]\nSolve the integral.",
     "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\ dx\n    &= \\int \\left( \\frac{1 - \\cos(2x)}{2} \\right) \\left( \\frac{1 + \\cos(2x)}{2} \\right) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left( 1 - \\cos^2(2x) \\right) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left( 1 - \\frac{1 + \\cos(4x)}{2} \\right) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left( \\frac{1}{2} - \\frac{1}{2} \\cos(4x) \\right) \\ dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\ dx \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",

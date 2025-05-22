@@ -4,4 +4,30 @@
 
 !tags:Calculus Problem
 
-# TODO
+\[ \int \sin^2(x) \cos^2(x) \ dx \]
+Solve the integral.
+---
+Apply trigonometric identity:
+
+\[ \sin(2x) = 2 \sin(x) \cos(x) \]
+
+and
+
+\[ \sin^2(2x) = \frac{1 - \cos(4x)}{2} \]
+
+Then:
+
+\[
+\begin{align*}
+    \int \sin^2(x) \cos^2(x) \ dx
+    &= \int \sin(x) \sin(x)  \cos(x) \cos(x) \ dx \\
+    &= \int \frac{1}{4} \left( 2 \sin(x) \cos(x) \right) \left( 2 \sin(x) \cos(x) \right) \ dx \\
+    &= \int \frac{1}{4} \sin(2x) \sin(2x) \ dx \\
+    &= \int \frac{1}{4} \sin^2(2x) \ dx \\
+    &= \int \frac{1}{8} \left( 1 - \cos(4x) \right) \ dx \\
+    &= \frac{1}{8} \left( \int dx - \int \cos(4x) \ dx \right) \\
+    &= \frac{1}{8} \left( x - \frac{1}{4} \sin(4x) \right) + C \\
+    &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
+\end{align*}
+\]
+===
