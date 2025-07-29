@@ -1,0 +1,58 @@
+!type:Basic
+
+!deck:Math::Calculus::Basic
+
+!tags:Calculus Theorem
+
+The definition of the extreme value theorem (EVT).
+---
+The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.
+
+That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).
+
+In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.
+===
+
+The definition of the Rolle's theorem.
+---
+The Rolle's theorem is a special case of the mean value theorem.
+
+The Rolle's theorem states that if a function \(f(x)\) is:
+
+- Continuous on a closed interval \([a,b]\)
+- Differentiable on the open interval \((a,b)\)
+- \(f(a)=f(b)\) (the function has the same value at the endpoints)
+
+Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).
+
+Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).
+===
+
+The definition of the mean value theorem (MVT).
+---
+The mean value theorem is a generalization of Rolle's theorem.
+
+The mean value theorem states that if a function \(f(x)\) is:
+
+- Continuous on a closed interval \([a,b]\)
+- Differentiable on the open interval \((a,b)\)
+
+Then there exists at least one point \(c\) in the open interval \((a,b)\) such that the instantaneous rate of change (the derivative \(f'(c)\)) is equal to the average rate of change over the interval.
+
+Mathematically, this is expressed as:
+
+\[ f'(c) = \frac{f(b) - f(a)}{b - a} \]
+
+The Rolle's theorem can be derived from the mean value theorem: if \(f(a) = f(b)\), then the right side of the mean value theorem equation becomes
+
+\[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
+
+which means \(f'(c)=0\).
+===
+
+The definition of the intermediate value theorem (IVT).
+---
+The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).
+
+Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.
+===
