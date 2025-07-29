@@ -4,115 +4,137 @@
 
 !tags:Math Calculus Integral
 
-\[ \int x^n \ dx \]
+\[ \int u^n \ du \]
 ---
-\[ \frac{x^{n+1}}{n+1} + C, \quad n \neq -1 \]
+\[ \frac{u^{n + 1}}{n + 1} + C, \quad n \neq -1 \]
 ===
 
-\[ \int \frac{1}{x} \ dx \]
+\[ \int \frac{1}{u} \ du \]
 ---
-\[ \ln |x| + C \]
+\[ \ln |u| + C \]
 ===
 
-\[ \int e^x \ dx \]
+\[ \int e^u \ du \]
 ---
-\[ e^x + C \]
+\[ e^u + C \]
 ===
 
-\[ \int a^x \ dx \]
+\[ \int a^u \ du \]
 ---
-\[ \frac{a^x}{\ln a} + C \]
-===
-
-!tags:Math Calculus Integral Trigonometric
-
-\[ \int \sin x \ dx \]
----
-\[ - \cos x + C \]
-===
-
-\[ \int \cos x \ dx \]
----
-\[ \sin x + C \]
-===
-
-\[ \int \sec^2 x \ dx \]
----
-\[ \tan x + C \]
-===
-
-\[ \int \csc^2 x \ dx \]
----
-\[ - \cot x + C \]
-===
-
-\[ \int \sec x \tan x \ dx \]
----
-\[ \sec x + C \]
-===
-
-\[ \int \csc x \cot x \ dx \]
----
-\[ - \csc x + C \]
-===
-
-\[ \int \tan x \ dx \]
----
-\[ - \ln | \cos x | + C \]
-\[ \ln | \sec x | + C \]
-===
-
-\[ \int \cot x \ dx \]
----
-\[ \ln | \sin x | + C \]
-\[ - \ln | \csc x | + C \]
-===
-
-\[ \int \sec x \ dx \]
----
-\[ \ln | \sec x + \tan x | + C \]
-===
-
-\[ \int \csc x \ dx \]
----
-\[ \ln | \csc x - \cot x | + C \]
+\[ \frac{a^u}{\ln a} + C \]
 ===
 
 !tags:Math Calculus Integral Trigonometric
 
-\[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \]
+\[ \int \sin u \ du \]
 ---
-\[ \sin^{-1} \frac{x}{a} + C \]
+\[ - \cos u + C \]
 ===
 
-\[ \int \frac{1}{a^2 + x^2} \ dx \]
+\[ \int \cos u \ du \]
 ---
-\[ \tan^{-1} \frac{x}{a} + C \]
+\[ \sin u + C \]
 ===
 
-\[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \]
+\[ \int \sec^2 u \ du \]
 ---
-\[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
+\[ \tan u + C \]
+===
+
+\[ \int \csc^2 u \ du \]
+---
+\[ - \cot u + C \]
+===
+
+\[ \int \sec u \tan u \ du \]
+---
+\[ \sec u + C \]
+===
+
+\[ \int \csc u \cot u \ du \]
+---
+\[ - \csc u + C \]
+===
+
+\[ \int \tan u \ du \]
+---
+\[ - \ln | \cos u | + C \]
+\[ \ln | \sec u | + C \]
+===
+
+\[ \int \cot u \ du \]
+---
+\[ \ln | \sin u | + C \]
+\[ - \ln | \csc u | + C \]
+===
+
+\[ \int \sec u \ du \]
+---
+\[ \ln | \sec u + \tan u | + C \]
+===
+
+\[ \int \csc u \ du \]
+---
+\[ \ln | \csc u - \cot u | + C \]
+===
+
+!tags:Math Calculus Integral Trigonometric
+
+\[ \int \frac{1}{\sqrt{a^2 - u^2}} \ du \]
+---
+\[ \sin^{-1} \frac{u}{a} + C \]
+===
+
+\[ \int \frac{1}{a^2 + u^2} \ du \]
+---
+\[ \tan^{-1} \frac{u}{a} + C \]
+===
+
+\[ \int \frac{1}{u \sqrt{u^2 - a^2}} \ du \]
+---
+\[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
+===
+
+!tags:Math Calculus Integral Hyperbolic
+
+\[ \int \sinh u \ du \]
+---
+\[ \cosh u + C \]
+===
+
+\[ \int \cosh u \ du \]
+---
+\[ \sinh u + C \]
+===
+
+\[ \int \text{sech}^2 \ u \ du \]
+---
+\[ \tanh u + C \]
+===
+
+\[ \int \text{csch}^2 \ u \ du \]
+---
+\[ - \coth u + C \]
+===
+
+\[ \int \text{sech} \ u \tanh u \ du \]
+---
+\[ - \text{sech} \ u + C \]
+===
+
+\[ \int \text{csch} \ u \coth u \ du \]
+---
+\[ - \text{csch} \ u + C \]
 ===
 
 !tags:Math Calculus Integral
 
-\[ \int \ln x \ dx \]
+\[ \int u e^u \ du \]
 ---
-\[ x \ln x - x + C \]
+\[ u e^u - e^u + C \]
 ===
 
-\[ \int \frac{1}{a^2 - x^2} \ dx \]
+\[ \int \ln u \ du \]
 ---
-\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
-===
-
-\[ \int \frac{1}{x^2 - a^2} \ dx \]
----
-\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
-===
-
-\[ \int x e^x \ dx \]
----
-\[ x e^x - e^x + C \]
+\[ u \ln u - u + C \]
 ===

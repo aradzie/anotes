@@ -35,7 +35,6 @@ What is the squeeze theorem for sequences?
 ---
 Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
 Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
-
 If there exists a real number \(L\) such that
 
 \[ \lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n, \]
@@ -148,8 +147,7 @@ or
 
 What is the alternating series test?
 ---
-An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(
-\sum_{n=1}^{\infty} (-1)^{n} \ a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).
+An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \ a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).
 ===
 
 What is the remainder of an alternating series?
@@ -188,7 +186,7 @@ What is the power series?
 ---
 The power series is an infinite series of the following form
 
-\[ \sum_{n=1}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
+\[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
 
 where \(x\) is a variable and the coefficients \(c_n\) are constants.
 ===

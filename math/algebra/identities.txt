@@ -1,0 +1,16 @@
+!type:Basic
+
+!deck:Math::Algebra
+
+!tags:Math Algebra Identity
+
+Quadratic formula
+---
+If
+
+\[ a x^2 + b x + c = 0 \]
+
+then
+
+\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+===
