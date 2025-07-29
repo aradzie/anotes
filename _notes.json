@@ -631,6 +631,13 @@
   },
   {
     "type": "Basic",
+    "deck": "Math::Integrals::04 Extended",
+    "tags": "Calculus",
+    "front": "\\[ \\int x e^x \\ dx \\]",
+    "back": "\\[ x e^x - e^x + C \\]"
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Taylor Series",
     "tags": "Calculus",
     "front": "\\[ e^x \\]\nTaylor series expansion",

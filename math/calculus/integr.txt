@@ -115,3 +115,8 @@
 ---
 \[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
 ===
+
+\[ \int x e^x \ dx \]
+---
+\[ x e^x - e^x + C \]
+===

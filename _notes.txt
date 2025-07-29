@@ -115,6 +115,7 @@ Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
 Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
+Basic;Math::Integrals::04 Extended;Calculus;\[ \int x e^x \ dx \];\[ x e^x - e^x + C \]
 Basic;Math::Taylor Series;Calculus;"\[ e^x \]
 Taylor series expansion";"\[
 \begin{align*}
