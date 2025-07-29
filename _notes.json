@@ -281,6 +281,146 @@
   },
   {
     "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is an infinite sequence?",
+    "back": "An infinite sequence is an ordered and indexed list of numbers of the form\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\nEach number \\(a_n\\) is a term of the sequence.\nThe subscript \\(n\\) is the index variable of the sequence.\nSequences can be defined in various ways:\n- Listing terms: For instance, \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).\n- Explicit formula: A formula that defines the n-th term directly in terms of n, \\(a_n = f(n)\\).\n- Recurrence relation: A rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the limit of a sequence?",
+    "back": "A real number \\(L\\) is called the limit of a sequence \\(\\{a_n\\}\\) if, for every positive real number \\(\\epsilon\\), there exists a natural number \\(N\\) such that for all \\(n > N\\), the absolute difference between \\(a_n\\) and \\(L\\) is less than \\(\\epsilon\\):\n\\[ \\lim_{n \\to \\infty} a_n = L \\]\nIf such a finite value \\(L\\) exists, the sequence is said to **converge** to that limit.\nIf the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to **diverge**."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the squeeze theorem for sequences?",
+    "back": "Consider sequences \\(\\{a_n\\}\\), \\(\\{b_n\\}\\), and \\(\\{c_n\\}\\).\nSuppose there exists an integer \\(N\\) such that \\(a_n \\le b_n \\le c_n\\) for all \\(n \\ge N\\).\nIf there exists a real number \\(L\\) such that\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\nthen \\(\\{b_n\\}\\) converges and\n\\[ \\lim_{n \\to \\infty} b_n = L \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the monotone convergence theorem?",
+    "back": "If \\(\\{a_n\\}\\) is a bounded sequence and there exists a positive integer \\(n_0\\) such that \\(\\{a_n\\}\\) is monotone for all \\(n \\ge n_0\\), then \\(\\{a_n\\}\\) converges."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is an infinite series?",
+    "back": "An infinite series is a sum of the terms of an infinite sequnce \\(a_n\\)\n\\[ S = \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the harmonic series?",
+    "back": "The harmonic series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\nThe harmonic series diverges to infinity.\nThe harmonic series is a special case of the p-series with \\(p = 1\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the geometric series?",
+    "back": "The geometric series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \\ldots \\]\nThe geometric series converges to\n\\[ \\frac{a}{1-r} \\]\nif \\(|r| < 1\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the p-series?",
+    "back": "The p-series series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]\nThe p-series converges if \\(p > 1\\).\nThe p-series diverges if \\(p \\le 1\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the divergence test for a series?",
+    "back": "Consider the sequence \\(a_n\\). If \\(\\lim_{n \\to \\infty} a_n \\neq 0\\) or \\(\\lim_{n \\to \\infty} a_n\\) does not exist, then the series \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\nThe converse is not true. That is, if \\(\\lim_{n \\to \\infty} a_n = 0\\), we cannot make any conclusion about the convergence of \\(\\sum_{n=1}^{\\infty} a_n\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the integral test?",
+    "back": "Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:\n- \\(f\\) is continuous,\n- \\(f\\) is decreasing, and\n- \\(f(n) = a_n\\) for all integers \\(n \\ge N\\).\nThen \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\ dx\\) both converge or both diverge.\nAlthough convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "How to estimate the remainder of a series?",
+    "back": "TODO"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the direct comparison test?",
+    "back": "Suppose there exists an integer \\(N\\) such that \\(0 \\le a_n \\le b_n\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.\nSuppose there exists an integer \\(N\\) such that \\(a_n \\ge b_n \\ge 0\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the limit comparison test?",
+    "back": "Let \\(a_n\\), \\(b_n \\ge 0\\) for all \\(n \\ge 1\\).\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = L \\ne 0\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) both converge or both diverge.\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = 0\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = \\infty\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the alternating series?",
+    "back": "The alternating series is a sum of the terms of an infinite sequnce \\(a_n\\) whose terms alternate between positive and negative values:\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\nor\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the alternating series test?",
+    "back": "An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\ a_n\\) or \\(\n\\sum_{n=1}^{\\infty} (-1)^{n} \\ a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the remainder of an alternating series?",
+    "back": "TODO"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the relationship between absolute and conditional convergence?",
+    "back": "TODO"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the ratio test?",
+    "back": "Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n- If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.\n- If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\n- If \\(\\rho = 1\\), the test does not provide any information."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the root test?",
+    "back": "Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n- If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.\n- If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\n- If \\(\\rho = 1\\), the test does not provide any information."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Sequences and Series",
+    "tags": "Calculus Sequences Series",
+    "front": "What is the power series?",
+    "back": "The power series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\nwhere \\(x\\) is a variable and the coefficients \\(c_n\\) are constants."
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Problems::Integrals::Integration by Parts",
     "tags": "Calculus Problem",
     "front": "\\[ \\int \\ln x \\ dx \\]\nSolve the integral.",

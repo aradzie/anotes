@@ -63,6 +63,76 @@ Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Ident
 Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \sin \alpha - \sin \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
 Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \cos \alpha + \cos \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
 Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \cos \alpha - \cos \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is an infinite sequence?;"An infinite sequence is an ordered and indexed list of numbers of the form
+\[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
+Each number \(a_n\) is a term of the sequence.
+The subscript \(n\) is the index variable of the sequence.
+Sequences can be defined in various ways:
+- Listing terms: For instance, \(\{ 2, 4, 6, 8, \ldots \}\).
+- Explicit formula: A formula that defines the n-th term directly in terms of n, \(a_n = f(n)\).
+- Recurrence relation: A rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\)."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the limit of a sequence?;"A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):
+\[ \lim_{n \to \infty} a_n = L \]
+If such a finite value \(L\) exists, the sequence is said to **converge** to that limit.
+If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to **diverge**."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the squeeze theorem for sequences?;"Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
+Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
+If there exists a real number \(L\) such that
+\[ \lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n, \]
+then \(\{b_n\}\) converges and
+\[ \lim_{n \to \infty} b_n = L \]"
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the monotone convergence theorem?;If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is an infinite series?;"An infinite series is a sum of the terms of an infinite sequnce \(a_n\)
+\[ S = \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]"
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the harmonic series?;"The harmonic series is an infinite series of the following form
+\[ \sum_{n=1}^{\infty} \frac{1}{n} \]
+The harmonic series diverges to infinity.
+The harmonic series is a special case of the p-series with \(p = 1\)."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the geometric series?;"The geometric series is an infinite series of the following form
+\[ \sum_{n=1}^{\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \ldots \]
+The geometric series converges to
+\[ \frac{a}{1-r} \]
+if \(|r| < 1\)."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the p-series?;"The p-series series is an infinite series of the following form
+\[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]
+The p-series converges if \(p > 1\).
+The p-series diverges if \(p \le 1\)."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the divergence test for a series?;"Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.
+The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\)."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the integral test?;"Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:
+- \(f\) is continuous,
+- \(f\) is decreasing, and
+- \(f(n) = a_n\) for all integers \(n \ge N\).
+Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \ dx\) both converge or both diverge.
+Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same."
+Basic;Math::Sequences and Series;Calculus Sequences Series;How to estimate the remainder of a series?;TODO
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the direct comparison test?;"Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
+Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the limit comparison test?;"Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).
+If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.
+If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
+If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the alternating series?;"The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:
+\[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
+or
+\[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]"
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the alternating series test?;"An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(
+\sum_{n=1}^{\infty} (-1)^{n} \ a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\)."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the remainder of an alternating series?;TODO
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the relationship between absolute and conditional convergence?;TODO
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the ratio test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
+\[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
+- If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
+- If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
+- If \(\rho = 1\), the test does not provide any information."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the root test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\). Let
+\[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
+- If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
+- If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
+- If \(\rho = 1\), the test does not provide any information."
+Basic;Math::Sequences and Series;Calculus Sequences Series;What is the power series?;"The power series is an infinite series of the following form
+\[ \sum_{n=1}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
+where \(x\) is a variable and the coefficients \(c_n\) are constants."
 Basic;Math::Problems::Integrals::Integration by Parts;Calculus Problem;"\[ \int \ln x \ dx \]
 Solve the integral.";"Integrate by parts:
 \[ u \ dv = uv - \int v \ du \]
