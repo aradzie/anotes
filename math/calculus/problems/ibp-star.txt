@@ -1,7 +1,0 @@
-!type:Basic
-
-!deck:Math::Problems::Integrals::Integration by Parts*
-
-!tags:Calculus Problem
-
-# TODO
