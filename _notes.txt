@@ -1,33 +1,32 @@
 #separator:semicolon
-#html:false
+#html:true
 #notetype column:1
 #deck column:2
 #tags column:3
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;Euler's formula;"\[ e^{ix} = \cos x + i \sin x \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>Euler&#39;s formula</p>";"\[ e^{ix} = \cos x + i \sin x \]
 \[ e^{-ix} = \cos x - i \sin x \]"
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;De Moivre's formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>De Moivre&#39;s formula</p>";"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
 \[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) \]"
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;"\[ \sinh x \]
-The definition of";\[ \frac{e^{x} - e^{-x}}{2} \]
+<p>The definition of</p>";\[ \frac{e^{x} - e^{-x}}{2} \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;"\[ \cosh x \]
-The definition of";\[ \frac{e^{x} + e^{-x}}{2} \]
+<p>The definition of</p>";\[ \frac{e^{x} + e^{-x}}{2} \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;"\[ \tanh x \]
-The definition of";\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;;
+<p>The definition of</p>";\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{x} = \ldots \]
-Hyperbolic identity";\[ \cosh x + \sinh x \]
+<p>Hyperbolic identity</p>";\[ \cosh x + \sinh x \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{-x} = \ldots \]
-Hyperbolic identity";\[ \cosh x - \sinh x \]
+<p>Hyperbolic identity</p>";\[ \cosh x - \sinh x \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ 1 = \ldots \]
-Hyperbolic identity";\[ \cosh^2 x - \sinh^2 x \]
+<p>Hyperbolic identity</p>";\[ \cosh^2 x - \sinh^2 x \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sin x = \ldots \]
-Express as a hyperbolic function";\[ -i \sinh(ix) = \frac{e^{ix} - e^{-ix}}{2i} \]
+<p>Express as a hyperbolic function</p>";\[ -i \sinh(ix) = \frac{e^{ix} - e^{-ix}}{2i} \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sinh x = \ldots \]
-Express as a trigonometric function";\[ -i \sin(ix) = \frac{e^{x} - e^{-x}}{2} \]
+<p>Express as a trigonometric function</p>";\[ -i \sin(ix) = \frac{e^{x} - e^{-x}}{2} \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cos x = \ldots \]
-Express as a hyperbolic function";\[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
+<p>Express as a hyperbolic function</p>";\[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cosh x = \ldots \]
-Express as a trigonometric function";\[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
+<p>Express as a trigonometric function</p>";\[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
 Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
 Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
 Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
@@ -110,7 +109,7 @@ Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \frac{1}{a^2 - x^
 Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
 Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int x e^x \ dx \];\[ x e^x - e^x + C \]
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ e^x \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     e^x
     &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
@@ -118,7 +117,7 @@ Taylor series expansion";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ \ln(x) \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     \ln(x)
     &= (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \\
@@ -126,7 +125,7 @@ Taylor series expansion";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ \ln(1-x) \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     \ln(1-x)
     &= - x - \frac{x^2}{2} - \frac{x^3}{3} - \frac{x^4}{4} - \cdots \\
@@ -134,7 +133,7 @@ Taylor series expansion";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ \ln(1+x) \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     \ln(1+x)
     &= x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots \\
@@ -142,7 +141,7 @@ Taylor series expansion";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Trigonometric;"\[ \sin(x) \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     \sin(x)
     &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
@@ -150,7 +149,7 @@ Taylor series expansion";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Trigonometric;"\[ \cos(x) \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     \cos(x)
     &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
@@ -158,7 +157,7 @@ Taylor series expansion";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Hyperbolic;"\[ \sinh x \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     \sinh x
     &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
@@ -166,115 +165,178 @@ Taylor series expansion";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Hyperbolic;"\[ \cosh x \]
-Taylor series expansion";"\[
+<p>Taylor series expansion</p>";"\[
 \begin{align*}
     \cosh x
     &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
     &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
 \end{align*}
 \]"
-Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the extreme value theorem (EVT).;"The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.
-That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).
-In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point."
-Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the Rolle's theorem.;"The Rolle's theorem is a special case of the mean value theorem.
-The Rolle's theorem states that if a function \(f(x)\) is:
-- Continuous on a closed interval \([a,b]\)
-- Differentiable on the open interval \((a,b)\)
-- \(f(a)=f(b)\) (the function has the same value at the endpoints)
-Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).
-Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero)."
-Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the mean value theorem (MVT).;"The mean value theorem is a generalization of Rolle's theorem.
-The mean value theorem states that if a function \(f(x)\) is:
-- Continuous on a closed interval \([a,b]\)
-- Differentiable on the open interval \((a,b)\)
-Then there exists at least one point \(c\) in the open interval \((a,b)\) such that the instantaneous rate of change (the derivative \(f'(c)\)) is equal to the average rate of change over the interval.
-Mathematically, this is expressed as:
+Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the extreme value theorem (EVT).</p>;"<p>The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.</p>
+<p>That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).</p>
+<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p>"
+Basic;Math::Calculus::Basic;Math Calculus Theorem;"<p>The definition of the Rolle&#39;s theorem.</p>";"<p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>
+<p>The Rolle&#39;s theorem states that if a function \(f(x)\) is:</p>
+<ul>
+<li>Continuous on a closed interval \([a,b]\)</li>
+<li>Differentiable on the open interval \((a,b)\)</li>
+<li>\(f(a)=f(b)\) (the function has the same value at the endpoints)</li>
+</ul>
+<p>Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).</p>
+<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p>"
+Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the mean value theorem (MVT).</p>;"<p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>
+<p>The mean value theorem states that if a function \(f(x)\) is:</p>
+<ul>
+<li>Continuous on a closed interval \([a,b]\)</li>
+<li>Differentiable on the open interval \((a,b)\)</li>
+</ul>
+<p>Then there exists at least one point \(c\) in the open interval \((a,b)\) such that the instantaneous rate of change (the derivative \(f'(c)\)) is equal to the average rate of change over the interval.</p>
+<p>Mathematically, this is expressed as:</p>
+
+
 \[ f'(c) = \frac{f(b) - f(a)}{b - a} \]
-The Rolle's theorem can be derived from the mean value theorem: if \(f(a) = f(b)\), then the right side of the mean value theorem equation becomes
+
+<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \(f(a) = f(b)\), then the right side of the mean value theorem equation becomes</p>
+
+
 \[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
-which means \(f'(c)=0\)."
-Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the intermediate value theorem (IVT).;"The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).
-Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is an infinite sequence?;"An infinite sequence is an ordered and indexed list of numbers of the form
+
+<p>which means \(f'(c)=0\).</p>"
+Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the intermediate value theorem (IVT).</p>;"<p>The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).</p>
+<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite sequence?</p>;"<p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
+
+
 \[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
-Each number \(a_n\) is a term of the sequence.
-The subscript \(n\) is the index variable of the sequence.
-Sequences can be defined in various ways:
-- Listing terms: For instance, \(\{ 2, 4, 6, 8, \ldots \}\).
-- Explicit formula: A formula that defines the n-th term directly in terms of n, \(a_n = f(n)\).
-- Recurrence relation: A rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\)."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the limit of a sequence?;"A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):
+
+<p>Each number \(a_n\) is a term of the sequence.
+The subscript \(n\) is the index variable of the sequence.</p>
+<p>Sequences can be defined in various ways:</p>
+<ul>
+<li>Listing terms: For instance, \(\{ 2, 4, 6, 8, \ldots \}\).</li>
+<li>Explicit formula: A formula that defines the n-th term directly in terms of n, \(a_n = f(n)\).</li>
+<li>Recurrence relation: A rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</li>
+</ul>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit of a sequence?</p>;"<p>A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):</p>
+
+
 \[ \lim_{n \to \infty} a_n = L \]
-If such a finite value \(L\) exists, the sequence is said to **converge** to that limit.
-If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to **diverge**."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the squeeze theorem for sequences?;"Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
-Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
-If there exists a real number \(L\) such that
+
+<p>If such a finite value \(L\) exists, the sequence is said to <strong>converge</strong> to that limit.</p>
+<p>If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to <strong>diverge</strong>.</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the squeeze theorem for sequences?</p>;"<p>Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
+Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).</p>
+<p>If there exists a real number \(L\) such that</p>
+
+
 \[ \lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n, \]
-then \(\{b_n\}\) converges and
+
+<p>then \(\{b_n\}\) converges and</p>
+
+
 \[ \lim_{n \to \infty} b_n = L \]"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the monotone convergence theorem?;If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is an infinite series?;"An infinite series is a sum of the terms of an infinite sequnce \(a_n\)
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the monotone convergence theorem?</p>;<p>If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.</p>
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite series?</p>;"<p>An infinite series is a sum of the terms of an infinite sequnce \(a_n\)</p>
+
+
 \[ S = \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the harmonic series?;"The harmonic series is an infinite series of the following form
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the harmonic series?</p>;"<p>The harmonic series is an infinite series of the following form</p>
+
+
 \[ \sum_{n=1}^{\infty} \frac{1}{n} \]
-The harmonic series diverges to infinity.
-The harmonic series is a special case of the p-series with \(p = 1\)."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the geometric series?;"The geometric series is an infinite series of the following form
+
+<p>The harmonic series diverges to infinity.</p>
+<p>The harmonic series is a special case of the p-series with \(p = 1\).</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the geometric series?</p>;"<p>The geometric series is an infinite series of the following form</p>
+
+
 \[ \sum_{n=1}^{\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \ldots \]
-The geometric series converges to
+
+<p>The geometric series converges to</p>
+
+
 \[ \frac{a}{1-r} \]
-if \(|r| < 1\)."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the p-series?;"The p-series series is an infinite series of the following form
+
+<p>if \(|r| < 1\).</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the p-series?</p>;"<p>The p-series series is an infinite series of the following form</p>
+
+
 \[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]
-The p-series converges if \(p > 1\).
-The p-series diverges if \(p \le 1\)."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the divergence test for a series?;"Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.
-The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\)."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the integral test?;"Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:
-- \(f\) is continuous,
-- \(f\) is decreasing, and
-- \(f(n) = a_n\) for all integers \(n \ge N\).
-Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \ dx\) both converge or both diverge.
-Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;How to estimate the remainder of a series?;TODO
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the direct comparison test?;"Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
-Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the limit comparison test?;"Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).
-If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.
-If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
-If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the alternating series?;"The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:
+
+<p>The p-series converges if \(p > 1\).</p>
+<p>The p-series diverges if \(p \le 1\).</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the divergence test for a series?</p>;"<p>Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
+<p>The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the integral test?</p>;"<p>Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:</p>
+<ul>
+<li>\(f\) is continuous,</li>
+<li>\(f\) is decreasing, and</li>
+<li>\(f(n) = a_n\) for all integers \(n \ge N\).</li>
+</ul>
+<p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \ dx\) both converge or both diverge.</p>
+<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>How to estimate the remainder of a series?</p>;<p>TODO</p>
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the direct comparison test?</p>;"<p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
+<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit comparison test?</p>;"<p>Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).</p>
+<p>If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.</p>
+<p>If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
+<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series?</p>;"<p>The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:</p>
+
+
 \[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
-or
+
+<p>or</p>
+
+
 \[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the alternating series test?;"An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(
-\sum_{n=1}^{\infty} (-1)^{n} \ a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\)."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the remainder of an alternating series?;TODO
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the relationship between absolute and conditional convergence?;TODO
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the ratio test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series test?</p>;"<p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or (
+\sum_{n=1}^{\infty} (-1)^{n} \ a_n) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the remainder of an alternating series?</p>;<p>TODO</p>
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the relationship between absolute and conditional convergence?</p>;<p>TODO</p>
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the ratio test?</p>;"<p>Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let</p>
+
+
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
-- If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
-- If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
-- If \(\rho = 1\), the test does not provide any information."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the root test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\). Let
+
+<ul>
+<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
+<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
+<li>If \(\rho = 1\), the test does not provide any information.</li>
+</ul>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the root test?</p>;"<p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
+
+
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
-- If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
-- If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
-- If \(\rho = 1\), the test does not provide any information."
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the power series?;"The power series is an infinite series of the following form
+
+<ul>
+<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
+<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
+<li>If \(\rho = 1\), the test does not provide any information.</li>
+</ul>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the power series?</p>;"<p>The power series is an infinite series of the following form</p>
+
+
 \[ \sum_{n=1}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
-where \(x\) is a variable and the coefficients \(c_n\) are constants."
+
+<p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p>"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int \ln x \ dx \]
-Solve the integral.";"Integrate by parts:
+<p>Solve the integral.</p>";"<p>Integrate by parts:</p>
+
+
 \[ u \ dv = uv - \int v \ du \]
+
 \[
 \begin{align*}
      u &= \ln x            & dv &= dx \\
     du &= \frac{1}{x} \ dx &  v &= x
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \ln x \ dx
@@ -284,15 +346,21 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int (\ln x)^2 \ dx \]
-Solve the integral.";"Integrate by parts:
+<p>Solve the integral.</p>";"<p>Integrate by parts:</p>
+
+
 \[ u \ dv = uv - \int v \ du \]
+
 \[
 \begin{align*}
      u &= (\ln x)^2              & dv &= dx \\
     du &= \frac{2 \ln x}{x} \ dx &  v &= x
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int (\ln x)^2 \ dx
@@ -302,14 +370,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \frac{d}{dx} W(x) \]
-Find the derivative of the Lambert \(W\) function.";"Use implicit differentiation:
+<p>Find the derivative of the Lambert \(W\) function.</p>";"<p>Use implicit differentiation:</p>
+
+
 \[
 \begin{align*}
     W(x) e^{W(x)} &= x \\
     \frac{d}{dx} \left( W(x) e^{W(x)} \right) &= \frac{d}{dx} x
 \end{align*}
 \]
-Use the chain rule:
+
+<p>Use the chain rule:</p>
+
+
 \[
 \begin{align*}
     W(x) e^{W(x)} \cdot W'(x) + e^{W(x)} \cdot W'(x) &= 1 \\
@@ -317,9 +390,15 @@ Use the chain rule:
     W'(x) ( x + e^{W(x)} ) &= 1
 \end{align*}
 \]
-Since
+
+<p>Since</p>
+
+
 \[ W(x)e^{W(x)} = x \implies e^{W(x)} = x/W(x) \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     W'(x) &= \frac{1}{x + e^{W(x)}}  \\
@@ -329,7 +408,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \int W(x) \ dx \]
-Find the anti-derivative of the Lambert \(W\) function.";"Apply \(u\)-substitution:
+<p>Find the anti-derivative of the Lambert \(W\) function.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
      u &= W(x) \\
@@ -338,7 +419,10 @@ Find the anti-derivative of the Lambert \(W\) function.";"Apply \(u\)-substituti
        &= e^u (u  + 1) \ du
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     &= \int W(x) \ dx \\
@@ -366,6 +450,7 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(x
          &= 2x \ln(2x) \\
 \end{align*}
 \]
+
 \[
 \begin{align*}
      2x \ln(2x) &= x \\
@@ -386,9 +471,14 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(e
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \sin^2(x) \ dx
@@ -398,9 +488,14 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \cos^2(x) \ dx
@@ -410,9 +505,14 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^3(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \sin^2(x) = 1 - \cos^2(2) \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \sin^3(x) \ dx
@@ -420,14 +520,20 @@ Then:
     &= \int (1 - \cos^2(x)) \sin(x) \ dx \\
 \end{align*}
 \]
-Apply \(u\)-substitution:
+
+<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \cos(x) \\
     - du &= \sin(x) \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int (1 - \cos^2(x)) \sin(x) \ dx
@@ -438,9 +544,14 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^3(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \cos^2(x) = 1 - \sin^2(2) \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \cos^3(x) \ dx
@@ -448,14 +559,20 @@ Then:
     &= \int (1 - \sin^2(x)) \cos(x) \ dx \\
 \end{align*}
 \]
-Apply \(u\)-substitution:
+
+<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \sin(x) \\
     du &= \cos(x) \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int (1 - \sin^2(x)) \cos(x) \ dx
@@ -465,11 +582,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^4(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
-and
+
+<p>and</p>
+
+
 \[ \cos^2(2x) = \frac{1 + \cos(4x)}{2} \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \sin^4(x) \ dx
@@ -482,11 +607,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^4(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
-and
+
+<p>and</p>
+
+
 \[ \cos^2(2x) = \frac{1 + \cos(4x)}{2} \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \cos^4(x) \ dx
@@ -499,9 +632,14 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \sin^3(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \sin^2(x) = 1 - \cos^2(x) \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \cos^2(x) \sin^3(x) \ dx
@@ -509,14 +647,20 @@ Then:
     &= \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \ dx
 \end{align*}
 \]
-Apply \(u\)-substitution:
+
+<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \cos(x) \\
     - du &= \sin(x) \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \ dx
@@ -527,9 +671,14 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^3(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \cos^2(x) = 1 - \sin^2(x) \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \sin^2(x) \cos^3(x) \ dx
@@ -537,14 +686,20 @@ Then:
     &= \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \ dx
 \end{align*}
 \]
-Apply \(u\)-substitution:
+
+<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \sin(x) \\
     du &= \cos(x)
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \ dx
@@ -555,11 +710,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^2(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
+<p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
+
+
 \[ \sin(2x) = 2 \sin(x) \cos(x) \]
-and
+
+<p>and</p>
+
+
 \[ \sin^2(2x) = \frac{1 - \cos(4x)}{2} \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \sin^2(x) \cos^2(x) \ dx
@@ -574,7 +737,7 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \frac{1}{1 + \sin(x)} \ dx \]
-Solve the integral.";"\[
+<p>Solve the integral.</p>";"\[
 \begin{align*}
     \int \frac{1}{1 + \sin(x)} \ dx
     &= \int \left( \frac{1}{1 + \sin(x)} \right) \left( \frac{1 - \sin(x)}{1 - \sin(x)} \right) \ dx \\
@@ -586,14 +749,19 @@ Solve the integral.";"\[
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= x^3 + 1 \\
     du &= 3x^2 \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int 3x^2 \sqrt{x^3 + 1} \ dx
@@ -603,7 +771,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int xe^{-x^2} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= -x^2 \\
@@ -611,7 +781,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     -\frac{1}{2} du &= x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int xe^{-x^2} \ dx
@@ -621,7 +794,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{(x^2 + 1)^2} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= x^2 + 1 \\
@@ -629,7 +804,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     \frac{1}{2} du &= x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{x}{(x^2 + 1)^2} \ dx
@@ -639,7 +817,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\cos x} \sin x \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \cos x \\
@@ -647,7 +827,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     - du &= \sin x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int e^{\cos x} \sin x \ dx
@@ -657,14 +840,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{e^x}{e^x + 1} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= e^x + 1 \\
     du &= e^x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{e^x}{e^x + 1} \ dx
@@ -674,7 +862,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{x^2 + 1} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= x^2 + 1 \\
@@ -682,7 +872,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     \frac{1}{2} du &= x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{x}{x^2 + 1} \ dx
@@ -692,7 +885,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \cos x \\
@@ -700,7 +895,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     - du &= \sin x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{\sin x}{1 + \cos^2 x} \ dx
@@ -710,14 +908,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \cos(x) \sin(\sin(x)) \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \sin x \\
     du &= \cos x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \cos(x) \sin(\sin(x)) \ dx
@@ -727,14 +930,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\ln x}{x} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \ln x \\
     du &= \frac{1}{x} \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{\ln x}{x} \ dx
@@ -744,14 +952,19 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x \ln x} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \ln x \\
     du &= \frac{1}{x} \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{1}{x \ln x} \ dx
@@ -761,7 +974,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{\sqrt{x + 1}} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     x &= u - 1 \\
@@ -769,7 +984,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     du &= dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{x}{\sqrt{x + 1}} \ dx
@@ -781,7 +999,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{1 + x^4} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= x^2 \\
@@ -789,7 +1009,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     \frac{1}{2} du &= x \ dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{x}{1 + x^4} \ dx
@@ -799,7 +1022,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int (x + 1) \sqrt{x - 1} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     x &= u + 1 \\
@@ -807,7 +1032,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     du &= dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int (x + 1) \sqrt{x - 1} \ dx
@@ -820,7 +1048,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x^2 + 4x + 8} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution after completing the square:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution after completing the square:</p>
+
+
 \[
 \begin{align*}
     x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\
@@ -828,7 +1058,10 @@ Solve the integral.";"Apply \(u\)-substitution after completing the square:
     du &= dx
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{1}{x^2 + 4x + 8} \ dx
@@ -838,7 +1071,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{2x}} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= 1 + \sqrt{2x} \\
@@ -847,7 +1082,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     dx &= (2x)^\frac{1}{2} \ du \\
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{1}{1 + \sqrt{2x}} \ dx
@@ -860,7 +1098,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\sqrt{x}} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \sqrt{x} \\
@@ -869,7 +1109,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     dx &= 2u \ du
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int e^{\sqrt{x}} \ dx
@@ -880,7 +1123,9 @@ Then:
 \end{align*}
 \]"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{x}} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
+<p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
+
+
 \[
 \begin{align*}
     u &= \sqrt{x} \\
@@ -888,7 +1133,10 @@ Solve the integral.";"Apply \(u\)-substitution:
     dx &= 2u \ du
 \end{align*}
 \]
-Then:
+
+<p>Then:</p>
+
+
 \[
 \begin{align*}
     \int \frac{1}{1 + \sqrt{x}} \ dx
@@ -923,44 +1171,80 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \math
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \ du \right\} \];\[ \frac{F(s)}{s} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f'(t) \} \];\[ s F(s) - f(0) \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f''(t) \} \];\[ s^2 F(s) - s f(0) - f'(0) \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the definition of the Laplace transform?;"The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the definition of the Laplace transform?</p>;"<p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
+
+
 \[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \ dt \]
-where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\)."
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the first translation or shifting property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), then
+
+<p>where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).</p>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
+
+
 \[ \mathscr{L}\{e^{at} f(t)\} = F(s-a) \]
+
 \[ \mathscr{L}^{-1}\{F(s-a)\} = e^{at} f(t) \]
-Example:
-Since
-\[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4}, \]
-we have
+
+<p>Example:</p>
+<p>Since</p>
+
+
+\[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4} \]
+
+<p>we have</p>
+
+
 \[ \mathscr{L}\{ e^{3t} \cos 2t \} = \frac{(s - 3)}{(s - 3)^2 + 4} \]"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the second translation or shifting property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), and
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) and</p>
+
+
 \[ g(t) = \left\{
 \begin{array}{ll}
     f(t - a) & t > a \\
     0 & t < a
 \end{array}
 \right. \]
-then
+
+<p>then</p>
+
+
 \[ \mathscr{L}\{g(t)\} = e^{-as} F(s) \]
+
 \[ \mathscr{L}^{-1}\{e^{-as} F(s)\} = g(t) \]
-Example:
-Since
-\[ \mathscr{L}\{ t^3 \} = \frac{6}{s^4}, \]
-the Laplace transform of the function
+
+<p>Example:</p>
+<p>Since</p>
+
+
+\[ \mathscr{L}\{ t^3 \} = \frac{6}{s^4} \]
+
+<p>the Laplace transform of the function</p>
+
+
 \[ g(t) = \left\{
 \begin{array}{ll}
     (t - 2)^3 & t > 2 \\
     0 & t < 2
 \end{array}
 \right. \]
-is
+
+<p>is</p>
+
+
 \[ \mathscr{L}\{ g \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the change of scale property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), then
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the change of scale property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
+
+
 \[ \mathscr{L}\{ f(at) \} = \frac{1}{a} F \left( \frac{s}{a} \right) \]
+
 \[ \mathscr{L}^{-1} \left\{ \frac{1}{a} F \left( \frac{s}{a} \right) \right\} = f(at) \]
-Example:
-Since
-\[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1}, \]
-we have
+
+<p>Example:</p>
+<p>Since</p>
+
+
+\[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1} \]
+
+<p>we have</p>
+
+
 \[ \mathscr{L}\{ \sin 3t \} = \frac{1}{3} \frac{1}{(s/3)^2 + 1} = \frac{3}{s^2 + 9} \]"

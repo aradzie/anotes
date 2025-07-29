@@ -22,8 +22,6 @@ The definition of
 \[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
 ===
 
-===
-
 !tags:Math Trigonometric Hyperbolic Identity
 
 \[ e^{x} = \ldots \]

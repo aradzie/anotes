@@ -4,14 +4,18 @@
  * The output file can be imported in Anki.
  */
 
-import { globSync, readFileSync, writeFileSync } from "node:fs"
+import { marked } from "marked";
+import { globSync, readFileSync, writeFileSync } from "node:fs";
+import { latexOptions } from "./lib/latex.js";
+
+marked.use(latexOptions);
 
 main("_notes.txt");
 
 function main(deckFile) {
   const notes = [];
   for (const inputFile of globSync("**/*.txt", {
-    exclude: [deckFile, "tmp"]
+    exclude: [deckFile, "tmp"],
   })) {
     parseFile(inputFile, notes);
   }
@@ -55,27 +59,27 @@ function parseFile(inputFile, notes) {
       continue;
     }
     if (line.startsWith("===")) {
+      front = marked.parse(front.trim()).trim();
+      back = marked.parse(back.trim()).trim();
       notes.push({type, deck, tags, front, back});
       state = "front";
       front = "";
       back = "";
       continue;
     }
-    if (line) {
-      switch (state) {
-        case "front":
-          if (front) {
-            front += "\n";
-          }
-          front += line;
-          break;
-        case "back":
-          if (back) {
-            back += "\n";
-          }
-          back += line;
-          break;
-      }
+    switch (state) {
+      case "front":
+        if (front) {
+          front += "\n";
+        }
+        front += line;
+        break;
+      case "back":
+        if (back) {
+          back += "\n";
+        }
+        back += line;
+        break;
     }
   }
 }
@@ -83,7 +87,7 @@ function parseFile(inputFile, notes) {
 function formatNotes(notes) {
   const lines = [];
   lines.push(`#separator:semicolon`);
-  lines.push(`#html:false`);
+  lines.push(`#html:true`);
   lines.push(`#notetype column:1`);
   lines.push(`#deck column:2`);
   lines.push(`#tags column:3`);

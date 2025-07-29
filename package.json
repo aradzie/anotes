@@ -16,5 +16,8 @@
   },
   "license": "ISC",
   "type": "module",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "marked": "^16.1.1"
+  }
 }

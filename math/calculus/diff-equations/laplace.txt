@@ -15,7 +15,7 @@ where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).
 
 What is the first translation or shifting property of the Laplace transform?
 ---
-If \(f(t)\) has the transform \(F(s)\), then
+If \(f(t)\) has the transform \(F(s)\) then
 
 \[ \mathscr{L}\{e^{at} f(t)\} = F(s-a) \]
 
@@ -25,7 +25,7 @@ Example:
 
 Since
 
-\[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4}, \]
+\[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4} \]
 
 we have
 
@@ -34,7 +34,7 @@ we have
 
 What is the second translation or shifting property of the Laplace transform?
 ---
-If \(f(t)\) has the transform \(F(s)\), and
+If \(f(t)\) has the transform \(F(s)\) and
 
 \[ g(t) = \left\{
 \begin{array}{ll}
@@ -53,7 +53,7 @@ Example:
 
 Since
 
-\[ \mathscr{L}\{ t^3 \} = \frac{6}{s^4}, \]
+\[ \mathscr{L}\{ t^3 \} = \frac{6}{s^4} \]
 
 the Laplace transform of the function
 
@@ -71,7 +71,7 @@ is
 
 What is the change of scale property of the Laplace transform?
 ---
-If \(f(t)\) has the transform \(F(s)\), then
+If \(f(t)\) has the transform \(F(s)\) then
 
 \[ \mathscr{L}\{ f(at) \} = \frac{1}{a} F \left( \frac{s}{a} \right) \]
 
@@ -81,7 +81,7 @@ Example:
 
 Since
 
-\[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1}, \]
+\[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1} \]
 
 we have
 
