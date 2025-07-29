@@ -1,1185 +1,1269 @@
 [
   {
     "type": "Basic",
-    "deck": "Math::Complex::Identities",
-    "tags": "Complex Identity",
-    "front": "De Moivre's Formula",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "Euler's formula",
+    "back": "\\[ e^{ix} = \\cos x + i \\sin x \\]\n\\[ e^{-ix} = \\cos x - i \\sin x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "De Moivre's formula",
     "back": "\\[ \\left( \\cos(x) + i \\sin(x) \\right)^n = \\cos(nx) + i \\sin(nx) \\]\n\\[ \\left( \\cosh(x) + i \\sinh(x) \\right)^n = \\cosh(nx) + i \\sinh(nx) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic Functions::01 Basic",
-    "tags": "Hyperbolic",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic",
     "front": "\\[ \\sinh x \\]\nThe definition of",
     "back": "\\[ \\frac{e^{x} - e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic Functions::01 Basic",
-    "tags": "Hyperbolic",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic",
     "front": "\\[ \\cosh x \\]\nThe definition of",
     "back": "\\[ \\frac{e^{x} + e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic Functions::01 Basic",
-    "tags": "Hyperbolic",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic",
     "front": "\\[ \\tanh x \\]\nThe definition of",
     "back": "\\[ \\frac{\\sinh x}{\\cosh x} = \\frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic Functions::01 Basic",
-    "tags": "Hyperbolic",
-    "front": "\\[ \\coth x \\]\nThe definition of",
-    "back": "\\[ \\frac{\\cosh x}{\\sinh x} = \\frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \\]"
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic",
+    "front": "",
+    "back": ""
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic Functions::02 Identities",
-    "tags": "Hyperbolic Identity",
-    "front": "\\[ e^{x} \\]\nHyperbolic identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "\\[ e^{x} = \\ldots \\]\nHyperbolic identity",
     "back": "\\[ \\cosh x + \\sinh x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic Functions::02 Identities",
-    "tags": "Hyperbolic Identity",
-    "front": "\\[ e^{-x} \\]\nHyperbolic identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "\\[ e^{-x} = \\ldots \\]\nHyperbolic identity",
     "back": "\\[ \\cosh x - \\sinh x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic Functions::02 Identities",
-    "tags": "Hyperbolic Identity",
-    "front": "\\[ 1 \\]\nHyperbolic identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "\\[ 1 = \\ldots \\]\nHyperbolic identity",
     "back": "\\[ \\cosh^2 x - \\sinh^2 x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic to Trigonometric",
-    "tags": "Hyperbolic Trigonometric Identity",
-    "front": "\\[ \\sin x \\]\nExpress as a hyperbolic function",
-    "back": "\\[ \\frac{e^{ix} - e^{-ix}}{2i} = -i \\sinh(ix) \\]"
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "\\[ \\sin x = \\ldots \\]\nExpress as a hyperbolic function",
+    "back": "\\[ -i \\sinh(ix) = \\frac{e^{ix} - e^{-ix}}{2i} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic to Trigonometric",
-    "tags": "Hyperbolic Trigonometric Identity",
-    "front": "\\[ \\sinh x \\]\nExpress as a trigonometric function",
-    "back": "\\[ \\frac{e^{x} - e^{-x}}{2} = -i \\sin(ix) \\]"
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "\\[ \\sinh x = \\ldots \\]\nExpress as a trigonometric function",
+    "back": "\\[ -i \\sin(ix) = \\frac{e^{x} - e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic to Trigonometric",
-    "tags": "Hyperbolic Trigonometric Identity",
-    "front": "\\[ \\cos x \\]\nExpress as a hyperbolic function",
-    "back": "\\[ \\frac{e^{ix} + e^{-ix}}{2} = \\cosh(ix) \\]"
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "\\[ \\cos x = \\ldots \\]\nExpress as a hyperbolic function",
+    "back": "\\[ \\cosh(ix) = \\frac{e^{ix} + e^{-ix}}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Hyperbolic to Trigonometric",
-    "tags": "Hyperbolic Trigonometric Identity",
-    "front": "\\[ \\cosh x \\]\nExpress as a trigonometric function",
-    "back": "\\[ \\frac{e^{x} + e^{-x}}{2} = \\cos(ix) \\]"
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Hyperbolic Identity",
+    "front": "\\[ \\cosh x = \\ldots \\]\nExpress as a trigonometric function",
+    "back": "\\[ \\cos(ix) = \\frac{e^{x} + e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin (\\alpha + \\beta) \\]",
     "back": "\\[ \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin (\\alpha - \\beta) \\]",
     "back": "\\[ \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos (\\alpha + \\beta) \\]",
     "back": "\\[ \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos (\\alpha - \\beta) \\]",
     "back": "\\[ \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\tan (\\alpha + \\beta) \\]",
     "back": "\\[ \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\tan (\\alpha - \\beta) \\]",
     "back": "\\[ \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
-    "front": "\\[ \\cot (\\alpha + \\beta) \\]",
-    "back": "\\[ \\frac{1 - \\tan \\alpha \\tan \\beta}{\\tan \\alpha + \\tan \\beta} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::01 Angle Sum",
-    "tags": "Trigonometric Identity",
-    "front": "\\[ \\cot (\\alpha - \\beta) \\]",
-    "back": "\\[ \\frac{1 + \\tan \\alpha \\tan \\beta}{\\tan \\alpha - \\tan \\beta} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::02 Half Angle",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin \\frac{\\theta}{2} \\]",
     "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::02 Half Angle",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos \\frac{\\theta}{2} \\]",
     "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} } \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::02 Half Angle",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\tan \\frac{\\theta}{2} \\]",
     "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{1 + \\cos \\theta} } \\]\n\\[ \\frac{\\sin \\theta}{1 + \\cos \\theta} \\]\n\\[ \\frac{1 - \\cos \\theta}{\\sin \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::02 Half Angle",
-    "tags": "Trigonometric Identity",
-    "front": "\\[ \\cot \\frac{\\theta}{2} \\]",
-    "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{1 - \\cos \\theta} } \\]\n\\[ \\frac{\\sin \\theta}{1 - \\cos \\theta} \\]\n\\[ \\frac{1 + \\cos \\theta}{\\sin \\theta} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::03 Half Angle (Alt)",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin^2 \\theta \\]",
     "back": "\\[ \\frac{1 - \\cos 2 \\theta}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::03 Half Angle (Alt)",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos^2 \\theta \\]",
     "back": "\\[ \\frac{1 + \\cos 2 \\theta}{2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::03 Half Angle (Alt)",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\tan^2 \\theta \\]",
     "back": "\\[ \\frac{1 - \\cos 2 \\theta}{1 + \\cos 2 \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::03 Half Angle (Alt)",
-    "tags": "Trigonometric Identity",
-    "front": "\\[ \\cot^2 \\theta \\]",
-    "back": "\\[ \\frac{1 + \\cos 2 \\theta}{1 - \\cos 2 \\theta} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::04 Double Angle",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin 2 \\theta \\]",
     "back": "\\[ 2 \\sin \\theta \\cos \\theta \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::04 Double Angle",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos 2 \\theta \\]",
     "back": "\\[ \\cos^2 \\theta - \\sin^2 \\theta \\]\n\\[ 1 - 2 \\sin^2 \\theta \\]\n\\[ 2 \\cos^2 \\theta - 1 \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::04 Double Angle",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\tan 2 \\theta \\]",
     "back": "\\[ \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} \\]\n\\[ \\frac{2}{\\cot \\theta - \\tan \\theta} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::04 Double Angle",
-    "tags": "Trigonometric Identity",
-    "front": "\\[ \\cot 2 \\theta \\]",
-    "back": "\\[ \\frac{\\cot^2 \\theta - 1}{2 \\cot \\theta} \\]\n\\[ \\frac{\\cot \\theta - \\tan \\theta}{2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::05 Product to Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin \\alpha \\cdot \\sin \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\cos (\\alpha - \\beta) - \\cos (\\alpha + \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::05 Product to Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos \\alpha \\cdot \\cos \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\cos (\\alpha - \\beta) + \\cos (\\alpha + \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::05 Product to Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin \\alpha \\cdot \\cos \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\sin (\\alpha + \\beta) + \\sin (\\alpha - \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::05 Product to Sum",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos \\alpha \\cdot \\sin \\beta \\]",
     "back": "\\[ \\frac{1}{2} [ \\sin (\\alpha + \\beta) - \\sin (\\alpha - \\beta) ] \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::06 Sum to Product",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin \\alpha + \\sin \\beta \\]",
     "back": "\\[ 2 \\sin \\left( \\frac{\\alpha + \\beta}{2} \\right) \\cos \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::06 Sum to Product",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\sin \\alpha - \\sin \\beta \\]",
     "back": "\\[ 2 \\cos \\left( \\frac{\\alpha + \\beta}{2} \\right) \\sin \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::06 Sum to Product",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos \\alpha + \\cos \\beta \\]",
     "back": "\\[ 2 \\cos \\left( \\frac{\\alpha + \\beta}{2} \\right) \\cos \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Trig::Trigonometric Functions::06 Sum to Product",
-    "tags": "Trigonometric Identity",
+    "deck": "Math::Trigonometry",
+    "tags": "Math Trigonometric Identity",
     "front": "\\[ \\cos \\alpha - \\cos \\beta \\]",
     "back": "\\[ 2 \\sin \\left( \\frac{\\alpha + \\beta}{2} \\right) \\sin \\left( \\frac{\\alpha - \\beta}{2} \\right) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is an infinite sequence?",
-    "back": "An infinite sequence is an ordered and indexed list of numbers of the form\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\nEach number \\(a_n\\) is a term of the sequence.\nThe subscript \\(n\\) is the index variable of the sequence.\nSequences can be defined in various ways:\n- Listing terms: For instance, \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).\n- Explicit formula: A formula that defines the n-th term directly in terms of n, \\(a_n = f(n)\\).\n- Recurrence relation: A rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\)."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the limit of a sequence?",
-    "back": "A real number \\(L\\) is called the limit of a sequence \\(\\{a_n\\}\\) if, for every positive real number \\(\\epsilon\\), there exists a natural number \\(N\\) such that for all \\(n > N\\), the absolute difference between \\(a_n\\) and \\(L\\) is less than \\(\\epsilon\\):\n\\[ \\lim_{n \\to \\infty} a_n = L \\]\nIf such a finite value \\(L\\) exists, the sequence is said to **converge** to that limit.\nIf the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to **diverge**."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the squeeze theorem for sequences?",
-    "back": "Consider sequences \\(\\{a_n\\}\\), \\(\\{b_n\\}\\), and \\(\\{c_n\\}\\).\nSuppose there exists an integer \\(N\\) such that \\(a_n \\le b_n \\le c_n\\) for all \\(n \\ge N\\).\nIf there exists a real number \\(L\\) such that\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\nthen \\(\\{b_n\\}\\) converges and\n\\[ \\lim_{n \\to \\infty} b_n = L \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the monotone convergence theorem?",
-    "back": "If \\(\\{a_n\\}\\) is a bounded sequence and there exists a positive integer \\(n_0\\) such that \\(\\{a_n\\}\\) is monotone for all \\(n \\ge n_0\\), then \\(\\{a_n\\}\\) converges."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is an infinite series?",
-    "back": "An infinite series is a sum of the terms of an infinite sequnce \\(a_n\\)\n\\[ S = \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the harmonic series?",
-    "back": "The harmonic series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\nThe harmonic series diverges to infinity.\nThe harmonic series is a special case of the p-series with \\(p = 1\\)."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the geometric series?",
-    "back": "The geometric series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \\ldots \\]\nThe geometric series converges to\n\\[ \\frac{a}{1-r} \\]\nif \\(|r| < 1\\)."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the p-series?",
-    "back": "The p-series series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]\nThe p-series converges if \\(p > 1\\).\nThe p-series diverges if \\(p \\le 1\\)."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the divergence test for a series?",
-    "back": "Consider the sequence \\(a_n\\). If \\(\\lim_{n \\to \\infty} a_n \\neq 0\\) or \\(\\lim_{n \\to \\infty} a_n\\) does not exist, then the series \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\nThe converse is not true. That is, if \\(\\lim_{n \\to \\infty} a_n = 0\\), we cannot make any conclusion about the convergence of \\(\\sum_{n=1}^{\\infty} a_n\\)."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the integral test?",
-    "back": "Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:\n- \\(f\\) is continuous,\n- \\(f\\) is decreasing, and\n- \\(f(n) = a_n\\) for all integers \\(n \\ge N\\).\nThen \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\ dx\\) both converge or both diverge.\nAlthough convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "How to estimate the remainder of a series?",
-    "back": "TODO"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the direct comparison test?",
-    "back": "Suppose there exists an integer \\(N\\) such that \\(0 \\le a_n \\le b_n\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.\nSuppose there exists an integer \\(N\\) such that \\(a_n \\ge b_n \\ge 0\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the limit comparison test?",
-    "back": "Let \\(a_n\\), \\(b_n \\ge 0\\) for all \\(n \\ge 1\\).\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = L \\ne 0\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) both converge or both diverge.\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = 0\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = \\infty\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the alternating series?",
-    "back": "The alternating series is a sum of the terms of an infinite sequnce \\(a_n\\) whose terms alternate between positive and negative values:\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\nor\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the alternating series test?",
-    "back": "An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\ a_n\\) or \\(\n\\sum_{n=1}^{\\infty} (-1)^{n} \\ a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\)."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the remainder of an alternating series?",
-    "back": "TODO"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the relationship between absolute and conditional convergence?",
-    "back": "TODO"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the ratio test?",
-    "back": "Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n- If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.\n- If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\n- If \\(\\rho = 1\\), the test does not provide any information."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the root test?",
-    "back": "Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n- If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.\n- If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\n- If \\(\\rho = 1\\), the test does not provide any information."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Sequences and Series",
-    "tags": "Calculus Sequences Series",
-    "front": "What is the power series?",
-    "back": "The power series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\nwhere \\(x\\) is a variable and the coefficients \\(c_n\\) are constants."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Integration by Parts",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\ln x \\ dx \\]\nSolve the integral.",
-    "back": "Integrate by parts:\n\\[ u \\ dv = uv - \\int v \\ du \\]\n\\[\n\\begin{align*}\n     u &= \\ln x            & dv &= dx \\\\\n    du &= \\frac{1}{x} \\ dx &  v &= x\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\ln x \\ dx\n    &= x \\ln x - \\int x \\frac{1}{x} \\ dx \\\\\n    &= x \\ln x - \\int dx \\\\\n    &= x \\ln x - x + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Integration by Parts",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int (\\ln x)^2 \\ dx \\]\nSolve the integral.",
-    "back": "Integrate by parts:\n\\[ u \\ dv = uv - \\int v \\ du \\]\n\\[\n\\begin{align*}\n     u &= (\\ln x)^2              & dv &= dx \\\\\n    du &= \\frac{2 \\ln x}{x} \\ dx &  v &= x\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (\\ln x)^2 \\ dx\n    &= x (\\ln x)^2 - \\int x \\frac{2 \\ln x}{x} \\ dx \\\\\n    &= x (\\ln x)^2 - 2 \\int \\ln x \\ dx \\\\\n    &= x (\\ln x)^2 - 2 (x \\ln x - x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Lambert W",
-    "tags": "Lambert-W Problem",
-    "front": "\\[ \\frac{d}{dx} W(x) \\]\nFind the derivative of the Lambert \\(W\\) function.",
-    "back": "Use implicit differentiation:\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} &= x \\\\\n    \\frac{d}{dx} \\left( W(x) e^{W(x)} \\right) &= \\frac{d}{dx} x\n\\end{align*}\n\\]\nUse the chain rule:\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} \\cdot W'(x) + e^{W(x)} \\cdot W'(x) &= 1 \\\\\n    W'(x) ( W(x) e^{W(x)} + e^{W(x)} ) &= 1 \\\\\n    W'(x) ( x + e^{W(x)} ) &= 1\n\\end{align*}\n\\]\nSince\n\\[ W(x)e^{W(x)} = x \\implies e^{W(x)} = x/W(x) \\]\nThen:\n\\[\n\\begin{align*}\n    W'(x) &= \\frac{1}{x + e^{W(x)}}  \\\\\n    &= \\frac{1}{x + x/W(x)} \\\\\n    &= \\frac{W(x)}{x W(x) + x} \\\\\n    &= \\frac{W(x)}{x (W(x) + 1)}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Lambert W",
-    "tags": "Lambert-W Problem",
-    "front": "\\[ \\int W(x) \\ dx \\]\nFind the anti-derivative of the Lambert \\(W\\) function.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n     u &= W(x) \\\\\n     x &= u e^u \\\\\n    dx &= (u e^u + e^u) \\ du \\\\\n       &= e^u (u  + 1) \\ du\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    &= \\int W(x) \\ dx \\\\\n    &= \\int u e^u(u+1) \\ du \\\\\n    &= \\int e^u (u^2 + u) \\ du, \\quad \\text{Integrate by parts} \\\\\n    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\\\\n    &= u u e^u - u e^u + e^u + C \\\\\n    &= x W(x) - W(x) + e^{W(x)} + C \\\\\n    &= x W(x) - W(x) + \\frac{x}{W(x)} + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Lambert W",
-    "tags": "Lambert-W Problem",
-    "front": "\\[ W(W(x)) = 1 \\]",
-    "back": "\\[\n\\begin{align*}\n    W(W(x)) &= 1 \\\\\n       W(x) &= 1 e^1 \\\\\n            &= e \\\\\n          x &= e e^e \\\\\n            &= e^{e+1}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Lambert W",
-    "tags": "Lambert-W Problem",
-    "front": "\\[ W(x) = \\ln(2x) \\]",
-    "back": "\\[\n\\begin{align*}\n    W(x) &= \\ln(2x) \\\\\n       x &= \\ln(2x) e^{\\ln(2x)} \\\\\n         &= 2x \\ln(2x) \\\\\n\\end{align*}\n\\]\n\\[\n\\begin{align*}\n     2x \\ln(2x) &= x \\\\\n        \\ln(2x) &= \\frac{1}{2} \\\\\n    e^{\\ln(2x)} &= e^{\\frac{1}{2}} \\\\\n             2x &= e^{\\frac{1}{2}} \\\\\n              x &= \\frac{1}{2} e^{\\frac{1}{2}}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Lambert W",
-    "tags": "Lambert-W Problem",
-    "front": "\\[ W(e^x) = (W(e))^x \\]",
-    "back": "\\[\n\\begin{align*}\n    W(e^x) &= (W(e))^x \\\\\n    W(e^x) &= (W(1 e^1))^x \\\\\n    W(e^x) &= (1)^x \\\\\n    W(e^x) &= 1 \\\\\n       e^x &= 1 e^1 \\\\\n         x &= 1\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\sin^2(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\ dx\n    &= \\int \\frac{1-\\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} - \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x - \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\cos^2(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\ dx\n    &= \\int \\frac{1 + \\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} + \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x + \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\sin^3(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = 1 - \\cos^2(2) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^3(x) \\ dx\n    &= \\int \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int (1 - \\cos^2(x)) \\sin(x) \\ dx \\\\\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - (1 - u^2) \\ du \\\\\n    &= \\int u^2 - 1 \\ du \\\\\n    &= \\frac{1}{3} u^3 - u + C \\\\\n    &= \\frac{1}{3} \\cos^3(x) - \\cos(x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\cos^3(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = 1 - \\sin^2(2) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^3(x) \\ dx\n    &= \\int \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int (1 - \\sin^2(x)) \\cos(x) \\ dx \\\\\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int 1 - u^2 \\ du \\\\\n    &= u - \\frac{1}{3} u^3 + C \\\\\n    &= \\sin(x) - \\frac{1}{3} \\sin^3(x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\sin^4(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 - \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} - 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} - \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x - \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\cos^4(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\cos^2(x) \\sin^3(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\ dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^4 - u^2 \\ du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\sin^2(x) \\cos^3(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = 1 - \\sin^2(x) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^3(x) \\ dx\n    &= \\int \\sin^2(x) \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x)\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^2 - u^4 \\ du \\\\\n    &= \\frac{1}{3} u^3 - \\frac{1}{5} u^5 + C \\\\\n    &= \\frac{1}{3} \\sin^3(x) - \\frac{1}{5} \\sin^5(x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\ dx \\]\nSolve the integral.",
-    "back": "Apply trigonometric identity:\n\\[ \\sin(2x) = 2 \\sin(x) \\cos(x) \\]\nand\n\\[ \\sin^2(2x) = \\frac{1 - \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\ dx\n    &= \\int \\sin(x) \\sin(x) \\cos(x) \\cos(x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left( 2 \\sin(x) \\cos(x) \\right) \\left( 2 \\sin(x) \\cos(x) \\right) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin(2x) \\sin(2x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin^2(2x) \\ dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\ dx \\\\\n    &= \\frac{1}{8} \\left( \\int dx - \\int \\cos(4x) \\ dx \\right) \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::Trigonometric",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{1}{1 + \\sin(x)} \\ dx \\]\nSolve the integral.",
-    "back": "\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sin(x)} \\ dx\n    &= \\int \\left( \\frac{1}{1 + \\sin(x)} \\right) \\left( \\frac{1 - \\sin(x)}{1 - \\sin(x)} \\right) \\ dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{1 - \\sin^2(x)} \\ dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{\\cos^2(x)} \\ dx \\\\\n    &= \\int \\frac{1}{\\cos^2(x)} - \\frac{\\sin(x)}{\\cos^2(x)} \\ dx \\\\\n    &= \\int \\sec^2(x) - \\tan(x) \\sec(x) \\ dx \\\\\n    &= \\tan(x) - \\sec(x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int 3x^2 \\sqrt {x^3 + 1} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^3 + 1 \\\\\n    du &= 3x^2 \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int 3x^2 \\sqrt{x^3 + 1} \\ dx\n    &= \\int \\sqrt{u} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{3} (x^3 + 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int xe^{-x^2} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= -x^2 \\\\\n    du &= -2x \\ dx \\\\\n    -\\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int xe^{-x^2} \\ dx\n    &= -\\frac{1}{2} \\int e^u \\ du \\\\\n    &= -\\frac{1}{2} e^u + C \\\\\n    &= -\\frac{1}{2} e^{-x^2} + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{x}{(x^2 + 1)^2} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{(x^2 + 1)^2} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u^2} \\ du \\\\\n    &= -\\frac{1}{2} \\frac{1}{u} + C \\\\\n    &= -\\frac{1}{2} \\frac{1}{x^2 + 1} + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int e^{\\cos x} \\sin x \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int e^{\\cos x} \\sin x \\ dx\n    &= - \\int e^u \\ du \\\\\n    &= - e^u + C \\\\\n    &= - e^{\\cos x} + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{e^x}{e^x + 1} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= e^x + 1 \\\\\n    du &= e^x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{e^x}{e^x + 1} \\ dx\n    &= \\int \\frac{1}{u} \\ du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln (e^x + 1) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{x}{x^2 + 1} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{x^2 + 1} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u} \\ du \\\\\n    &= \\frac{1}{2} \\ln |u| + C \\\\\n    &= \\frac{1}{2} \\ln (x^2 + 1) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx\n    &= - \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= - \\tan^{-1} u + C \\\\\n    &= - \\tan^{-1} (\\cos x) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\cos(x) \\sin(\\sin(x)) \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\ dx\n    &= \\int \\sin(u) \\ du \\\\\n    &= - \\cos(u) + C \\\\\n    &= - \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{\\ln x}{x} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{\\ln x}{x} \\ dx\n    &= \\int u \\ du \\\\\n    &= \\frac{1}{2} u^2 + C \\\\\n    &= \\frac{1}{2} (\\ln x)^2 + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{1}{x \\ln x} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x \\ln x} \\ dx\n    &= \\int \\frac{1}{u} \\ du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln | \\ln x | + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{x}{\\sqrt{x + 1}} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    x &= u - 1 \\\\\n    u &= x + 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{\\sqrt{x + 1}} \\ dx\n    &= \\int \\frac{u - 1}{\\sqrt{u}} \\ du \\\\\n    &= \\int \\frac{u}{\\sqrt{u}} \\ du - \\int \\frac{1}{\\sqrt{u}} \\ du \\\\\n    &= \\int u^{1/2} \\ du - \\int u^{-1/2} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}} + C \\\\\n    &= \\frac{2}{3} (x + 1)^{\\frac{3}{2}} - 2(x + 1)^{\\frac{1}{2}} + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{x}{1 + x^4} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{1 + x^4} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= \\frac{1}{2} \\tan^{-1}(u) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1}(x^2) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int (x + 1) \\sqrt{x - 1} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    x &= u + 1 \\\\\n    u &= x - 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (x + 1) \\sqrt{x - 1} \\ dx\n    &= \\int (u + 2) \\sqrt{u} \\ du \\\\\n    &= \\int (u \\sqrt{u} + 2 \\sqrt{u}) \\ du \\\\\n    &= \\int (u^{\\frac{3}{2}} + 2 u^{\\frac{1}{2}}) \\ du \\\\\n    &= \\int u^{\\frac{3}{2}} \\ du + 2 \\int u^{\\frac{1}{2}} \\ du \\\\\n    &= \\frac{2}{5} u^{\\frac{5}{2}} + \\frac{4}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{5} (x - 1)^{\\frac{5}{2}} + \\frac{4}{3} (x - 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{1}{x^2 + 4x + 8} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution after completing the square:\n\\[\n\\begin{align*}\n    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\\\\n    u &= x + 2 \\\\\n    du &= dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x^2 + 4x + 8} \\ dx\n    &= \\int \\frac{1}{u^2 + 2^2} \\ du \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{u}{2} \\right) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{x + 2}{2} \\right) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{2x}} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= 1 + \\sqrt{2x} \\\\\n      &= 1 + (2x)^\\frac{1}{2} \\\\\n    du &= (2x)^{-\\frac{1}{2}} \\ dx \\\\\n    dx &= (2x)^\\frac{1}{2} \\ du \\\\\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{2x}} \\ dx\n    &= \\int \\frac{1}{u} (2x)^\\frac{1}{2} \\ du, \\quad (2x)^\\frac{1}{2} = u - 1 \\\\\n    &= \\int \\frac{1}{u} (u - 1) \\ du \\\\\n    &= \\int \\frac{u}{u} - \\frac{1}{u} \\ du \\\\\n    &= \\int du - \\int \\frac{1}{u} \\ du \\\\\n    &= u - \\ln |u| + C \\\\\n    &= (1 + \\sqrt{2x}) - \\ln(1 + \\sqrt{2x}) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int e^{\\sqrt{x}} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} dx \\\\\n       &= \\frac{1}{2 u} \\ dx \\\\\n    dx &= 2u \\ du\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int e^{\\sqrt{x}} \\ dx\n    &= 2 \\int u e^u \\ du \\\\\n    &= 2 u e^u - 2 e^u + C \\\\\n    &= 2 e^u (u - 1) + C \\\\\n    &= 2 e^\\sqrt{x} ( \\sqrt{x} - 1 ) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Problems::Integrals::U-Substitution",
-    "tags": "Calculus Problem",
-    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{x}} \\ dx \\]\nSolve the integral.",
-    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} \\ dx \\\\& = \\frac{1}{2 u} \\ dx \\\\\n    dx &= 2u \\ du\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{x}} \\ dx\n    &= 2 \\int \\frac{u}{u + 1} \\ du \\\\\n    &= 2 \\int \\frac{u + 1 - 1}{u + 1} \\ du \\\\\n    &= 2 \\int 1 - \\frac{1}{u + 1} \\ du \\\\\n    &= 2 \\left( u - \\ln |u + 1| \\right) + C \\\\\n    &= 2 \\left( \\sqrt{x} - \\ln |\\sqrt{x} + 1| \\right) + C\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Derivatives::01 Basic",
-    "tags": "Calculus Derivative",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative",
     "front": "\\[ \\frac{d}{dx} x^n \\]",
     "back": "\\[ nx^{n-1} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::01 Basic",
-    "tags": "Calculus Derivative",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative",
     "front": "\\[ \\frac{d}{dx} \\sqrt{x} \\]",
     "back": "\\[ \\frac{1}{2 \\sqrt{x}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::01 Basic",
-    "tags": "Calculus Derivative",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative",
     "front": "\\[ \\frac{d}{dx} e^x \\]",
     "back": "\\[ e^x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::01 Basic",
-    "tags": "Calculus Derivative",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative",
     "front": "\\[ \\frac{d}{dx} a^x \\]",
     "back": "\\[ a^x \\ln a \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::01 Basic",
-    "tags": "Calculus Derivative",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative",
     "front": "\\[ \\frac{d}{dx} \\ln x \\]",
     "back": "\\[ \\frac{1}{x} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::01 Basic",
-    "tags": "Calculus Derivative",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative",
     "front": "\\[ \\frac{d}{dx} \\log_b x \\]",
     "back": "\\[ \\frac{1}{x \\ln b} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::02 Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\sin x \\]",
     "back": "\\[ \\cos x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::02 Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\cos x \\]",
     "back": "\\[ - \\sin x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::02 Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\tan x \\]",
     "back": "\\[ \\sec^2 x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::02 Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\cot x \\]",
     "back": "\\[ - \\csc^2 x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::02 Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\sec x \\]",
     "back": "\\[ \\sec x \\tan x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::02 Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\csc x \\]",
     "back": "\\[ - \\csc x \\cot x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::03 Inverse Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\sin^{-1} x \\]",
     "back": "\\[ \\frac{1}{\\sqrt{1-x^2}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::03 Inverse Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\cos^{-1} x \\]",
     "back": "\\[ \\frac{-1}{\\sqrt{1-x^2}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::03 Inverse Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\tan^{-1} x \\]",
     "back": "\\[ \\frac{1}{1+x^2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::03 Inverse Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\cot^{-1} x \\]",
     "back": "\\[ \\frac{-1}{1+x^2} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::03 Inverse Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\sec^{-1} x \\]",
     "back": "\\[ \\frac{1}{|x| \\sqrt{x^2-1}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::03 Inverse Trigonometric",
-    "tags": "Calculus Derivative Trigonometric",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric",
     "front": "\\[ \\frac{d}{dx} \\csc^{-1} x \\]",
     "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2-1}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::04 Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\sinh x \\]",
     "back": "\\[ \\cosh x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::04 Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\cosh x \\]",
     "back": "\\[ \\sinh x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::04 Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\tanh x \\]",
     "back": "\\[ \\text{sech}^2 \\ x = 1 - \\tanh^2 x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::04 Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\coth x \\]",
     "back": "\\[ - \\text{csch}^2 \\ x = 1 - \\coth^2 x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::04 Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\text{sech} \\ x \\]",
     "back": "\\[ - \\text{sech} \\ x \\tanh x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::04 Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\text{csch} \\ x \\]",
     "back": "\\[ - \\text{csch} \\ x \\coth x \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\sinh^{-1} x \\]",
     "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\cosh^{-1} x \\]",
     "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\tanh^{-1} x \\]",
     "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\coth^{-1} x \\]",
     "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\text{sech}^{-1} \\ x \\]",
     "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Derivatives::05 Inverse Hyperbolic",
-    "tags": "Calculus Derivative Hyperbolic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\text{csch}^{-1} \\ x \\]",
     "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::01 Basic",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int x^n \\ dx \\]",
     "back": "\\[ \\frac{x^{n+1}}{n+1} + C, \\quad n \\neq -1 \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::01 Basic",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int \\frac{1}{x} \\ dx \\]",
     "back": "\\[ \\ln |x| + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::01 Basic",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int e^x \\ dx \\]",
     "back": "\\[ e^x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::01 Basic",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int a^x \\ dx \\]",
     "back": "\\[ \\frac{a^x}{\\ln a} + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\sin x \\ dx \\]",
     "back": "\\[ - \\cos x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\cos x \\ dx \\]",
     "back": "\\[ \\sin x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\sec^2 x \\ dx \\]",
     "back": "\\[ \\tan x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\csc^2 x \\ dx \\]",
     "back": "\\[ - \\cot x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\sec x \\tan x \\ dx \\]",
     "back": "\\[ \\sec x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\csc x \\cot x \\ dx \\]",
     "back": "\\[ - \\csc x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\tan x \\ dx \\]",
     "back": "\\[ - \\ln | \\cos x | + C \\]\n\\[ \\ln | \\sec x | + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\cot x \\ dx \\]",
     "back": "\\[ \\ln | \\sin x | + C \\]\n\\[ - \\ln | \\csc x | + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\sec x \\ dx \\]",
     "back": "\\[ \\ln | \\sec x + \\tan x | + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::02 Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\csc x \\ dx \\]",
     "back": "\\[ \\ln | \\csc x - \\cot x | + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::03 Inverse Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 - x^2}} \\ dx \\]",
     "back": "\\[ \\sin^{-1} \\frac{x}{a} + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::03 Inverse Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\frac{1}{a^2 + x^2} \\ dx \\]",
     "back": "\\[ \\tan^{-1} \\frac{x}{a} + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::03 Inverse Trigonometric",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric",
     "front": "\\[ \\int \\frac{1}{x \\sqrt{x^2 - a^2}} \\ dx \\]",
     "back": "\\[ \\frac{1}{a} \\sec^{-1} \\frac{x}{a} + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::04 Extended",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int \\ln x \\ dx \\]",
     "back": "\\[ x \\ln x - x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::04 Extended",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int \\frac{1}{a^2 - x^2} \\ dx \\]",
     "back": "\\[ \\frac{1}{2a} \\ln \\left| \\frac{x+a}{x-a} \\right| + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::04 Extended",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int \\frac{1}{x^2 - a^2} \\ dx \\]",
     "back": "\\[ \\frac{1}{2a} \\ln \\left| \\frac{x-a}{x+a} \\right| + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Integrals::04 Extended",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral",
     "front": "\\[ \\int x e^x \\ dx \\]",
     "back": "\\[ x e^x - e^x + C \\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series",
     "front": "\\[ e^x \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    e^x\n    &= 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series",
     "front": "\\[ \\ln(x) \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    \\ln(x)\n    &= (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} - \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}(x-1)^{n}}{n}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series",
     "front": "\\[ \\ln(1-x) \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    \\ln(1-x)\n    &= - x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} - \\cdots \\\\\n    &= -\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series",
     "front": "\\[ \\ln(1+x) \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    \\ln(1+x)\n    &= x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Trigonometric",
     "front": "\\[ \\sin(x) \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n} x^{2n+1}}{(2n+1)!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus Trigonometric",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Trigonometric",
     "front": "\\[ \\cos(x) \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{(-1)^{n} x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus Hyperbolic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Hyperbolic",
     "front": "\\[ \\sinh x \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Taylor Series",
-    "tags": "Calculus Hyperbolic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Hyperbolic",
     "front": "\\[ \\cosh x \\]\nTaylor series expansion",
     "back": "\\[\n\\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "What is the definition of the Laplace transform?",
-    "back": "The Laplace transform of a function \\(f(t)\\) is a function \\(F(s)\\) defined as\n\\[ F(s) = \\mathscr{L}\\{f\\} = \\int_0^\\infty e^{-st} f(t) \\ dt \\]\nwhere \\(f(t)\\) is a function of exponential order defined for all \\(t \\ge 0\\)."
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "What is the first translation or shifting property of the Laplace transform?",
-    "back": "If \\(f(t)\\) has the transform \\(F(s)\\), then\n\\[ \\mathscr{L}\\{e^{at} f(t)\\} = F(s-a) \\]\n\\[ \\mathscr{L}^{-1}\\{F(s-a)\\} = e^{at} f(t) \\]\nExample:\nSince\n\\[ \\mathscr{L}\\{ \\cos 2t \\} = \\frac{s}{s^2 + 4}, \\]\nwe have\n\\[ \\mathscr{L}\\{ e^{3t} \\cos 2t \\} = \\frac{(s - 3)}{(s - 3)^2 + 4} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "What is the second translation or shifting property of the Laplace transform?",
-    "back": "If \\(f(t)\\) has the transform \\(F(s)\\), and\n\\[ g(t) = \\left\\{\n\\begin{array}{ll}\n    f(t - a) & t > a \\\\\n    0 & t < a\n\\end{array}\n\\right. \\]\nthen\n\\[ \\mathscr{L}\\{g(t)\\} = e^{-as} F(s) \\]\n\\[ \\mathscr{L}^{-1}\\{e^{-as} F(s)\\} = g(t) \\]\nExample:\nSince\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4}, \\]\nthe Laplace transform of the function\n\\[ g(t) = \\left\\{\n\\begin{array}{ll}\n    (t - 2)^3 & t > 2 \\\\\n    0 & t < 2\n\\end{array}\n\\right. \\]\nis\n\\[ \\mathscr{L}\\{ g \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "What is the change of scale property of the Laplace transform?",
-    "back": "If \\(f(t)\\) has the transform \\(F(s)\\), then\n\\[ \\mathscr{L}\\{ f(at) \\} = \\frac{1}{a} F \\left( \\frac{s}{a} \\right) \\]\n\\[ \\mathscr{L}^{-1} \\left\\{ \\frac{1}{a} F \\left( \\frac{s}{a} \\right) \\right\\} = f(at) \\]\nExample:\nSince\n\\[ \\mathscr{L}\\{ \\sin t \\} = \\frac{1}{s^2 + 1}, \\]\nwe have\n\\[ \\mathscr{L}\\{ \\sin 3t \\} = \\frac{1}{3} \\frac{1}{(s/3)^2 + 1} = \\frac{3}{s^2 + 9} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = 1\\)",
-    "back": "\\[ \\mathscr{L} \\{ 1 \\} = \\frac{1}{s} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = t^n\\)",
-    "back": "\\[ \\mathscr{L} \\{ t^n \\} = \\frac{n!}{s^{n+1}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = \\sin(at)\\)",
-    "back": "\\[ \\mathscr{L} \\{ \\sin(at) \\} = \\frac{a}{s^2 + a^2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = \\cos(at)\\)",
-    "back": "\\[ \\mathscr{L} \\{ \\cos(at) \\} = \\frac{s}{s^2 + a^2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = t \\sin(at)\\)",
-    "back": "\\[ \\mathscr{L} \\{ t \\sin(at) \\} = \\frac{2as}{(s^2 + a^2)^2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = t \\cos(at)\\)",
-    "back": "\\[ \\mathscr{L} \\{ t \\cos(at) \\} = \\frac{s^2 - a^2}{(s^2 + a^2)^2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = \\sinh(at)\\)",
-    "back": "\\[ \\mathscr{L} \\{ \\sinh(at) \\} = \\frac{a}{s^2 - a^2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Calculus Laplace-Transform",
-    "front": "The Laplace transform of \\(f(t) = \\cosh(at)\\)",
-    "back": "\\[ \\mathscr{L} \\{ \\cosh(at) \\} = \\frac{s}{s^2 - a^2} \\]"
-  },
-  {
-    "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Calculus Theorem",
+    "tags": "Math Calculus Theorem",
     "front": "The definition of the extreme value theorem (EVT).",
     "back": "The extreme value theorem states that if a real-valued function \\(f\\) is continuous on the closed and bounded interval \\([a,b]\\), then \\(f\\) must attain a maximum and a minimum, each at least once.\nThat is, there exist numbers \\(c\\) and \\(d\\) in \\([a,b]\\) such that: \\(f(c) \\leq f(x) \\leq f(d) \\quad \\forall x \\in [a,b]\\).\nIn simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point."
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Calculus Theorem",
+    "tags": "Math Calculus Theorem",
     "front": "The definition of the Rolle's theorem.",
     "back": "The Rolle's theorem is a special case of the mean value theorem.\nThe Rolle's theorem states that if a function \\(f(x)\\) is:\n- Continuous on a closed interval \\([a,b]\\)\n- Differentiable on the open interval \\((a,b)\\)\n- \\(f(a)=f(b)\\) (the function has the same value at the endpoints)\nThen there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that \\(f'(c) = 0\\).\nGeometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero)."
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Calculus Theorem",
+    "tags": "Math Calculus Theorem",
     "front": "The definition of the mean value theorem (MVT).",
     "back": "The mean value theorem is a generalization of Rolle's theorem.\nThe mean value theorem states that if a function \\(f(x)\\) is:\n- Continuous on a closed interval \\([a,b]\\)\n- Differentiable on the open interval \\((a,b)\\)\nThen there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that the instantaneous rate of change (the derivative \\(f'(c)\\)) is equal to the average rate of change over the interval.\nMathematically, this is expressed as:\n\\[ f'(c) = \\frac{f(b) - f(a)}{b - a} \\]\nThe Rolle's theorem can be derived from the mean value theorem: if \\(f(a) = f(b)\\), then the right side of the mean value theorem equation becomes\n\\[ f'(c) = \\frac{f(a) - f(a)}{b - a} = \\frac{0}{b - a} \\]\nwhich means \\(f'(c)=0\\)."
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Calculus Theorem",
+    "tags": "Math Calculus Theorem",
     "front": "The definition of the intermediate value theorem (IVT).",
     "back": "The intermediate value theorem states that if a function \\(f(x)\\) is continuous on a closed interval \\([a,b]\\), and \\(L\\) is any value between \\(f(a)\\) and \\(f(b)\\), then there exists at least one number \\(c\\) in the interval \\([a,b]\\) such that \\(f(c)=L\\).\nIntuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is an infinite sequence?",
+    "back": "An infinite sequence is an ordered and indexed list of numbers of the form\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\nEach number \\(a_n\\) is a term of the sequence.\nThe subscript \\(n\\) is the index variable of the sequence.\nSequences can be defined in various ways:\n- Listing terms: For instance, \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).\n- Explicit formula: A formula that defines the n-th term directly in terms of n, \\(a_n = f(n)\\).\n- Recurrence relation: A rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the limit of a sequence?",
+    "back": "A real number \\(L\\) is called the limit of a sequence \\(\\{a_n\\}\\) if, for every positive real number \\(\\epsilon\\), there exists a natural number \\(N\\) such that for all \\(n > N\\), the absolute difference between \\(a_n\\) and \\(L\\) is less than \\(\\epsilon\\):\n\\[ \\lim_{n \\to \\infty} a_n = L \\]\nIf such a finite value \\(L\\) exists, the sequence is said to **converge** to that limit.\nIf the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to **diverge**."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the squeeze theorem for sequences?",
+    "back": "Consider sequences \\(\\{a_n\\}\\), \\(\\{b_n\\}\\), and \\(\\{c_n\\}\\).\nSuppose there exists an integer \\(N\\) such that \\(a_n \\le b_n \\le c_n\\) for all \\(n \\ge N\\).\nIf there exists a real number \\(L\\) such that\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\nthen \\(\\{b_n\\}\\) converges and\n\\[ \\lim_{n \\to \\infty} b_n = L \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the monotone convergence theorem?",
+    "back": "If \\(\\{a_n\\}\\) is a bounded sequence and there exists a positive integer \\(n_0\\) such that \\(\\{a_n\\}\\) is monotone for all \\(n \\ge n_0\\), then \\(\\{a_n\\}\\) converges."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is an infinite series?",
+    "back": "An infinite series is a sum of the terms of an infinite sequnce \\(a_n\\)\n\\[ S = \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the harmonic series?",
+    "back": "The harmonic series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\nThe harmonic series diverges to infinity.\nThe harmonic series is a special case of the p-series with \\(p = 1\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the geometric series?",
+    "back": "The geometric series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \\ldots \\]\nThe geometric series converges to\n\\[ \\frac{a}{1-r} \\]\nif \\(|r| < 1\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the p-series?",
+    "back": "The p-series series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]\nThe p-series converges if \\(p > 1\\).\nThe p-series diverges if \\(p \\le 1\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the divergence test for a series?",
+    "back": "Consider the sequence \\(a_n\\). If \\(\\lim_{n \\to \\infty} a_n \\neq 0\\) or \\(\\lim_{n \\to \\infty} a_n\\) does not exist, then the series \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\nThe converse is not true. That is, if \\(\\lim_{n \\to \\infty} a_n = 0\\), we cannot make any conclusion about the convergence of \\(\\sum_{n=1}^{\\infty} a_n\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the integral test?",
+    "back": "Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:\n- \\(f\\) is continuous,\n- \\(f\\) is decreasing, and\n- \\(f(n) = a_n\\) for all integers \\(n \\ge N\\).\nThen \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\ dx\\) both converge or both diverge.\nAlthough convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "How to estimate the remainder of a series?",
+    "back": "TODO"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the direct comparison test?",
+    "back": "Suppose there exists an integer \\(N\\) such that \\(0 \\le a_n \\le b_n\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.\nSuppose there exists an integer \\(N\\) such that \\(a_n \\ge b_n \\ge 0\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the limit comparison test?",
+    "back": "Let \\(a_n\\), \\(b_n \\ge 0\\) for all \\(n \\ge 1\\).\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = L \\ne 0\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) both converge or both diverge.\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = 0\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.\nIf \\(\\lim_{n \\to \\infty} a_n/b_n = \\infty\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the alternating series?",
+    "back": "The alternating series is a sum of the terms of an infinite sequnce \\(a_n\\) whose terms alternate between positive and negative values:\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\nor\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the alternating series test?",
+    "back": "An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\ a_n\\) or \\(\n\\sum_{n=1}^{\\infty} (-1)^{n} \\ a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the remainder of an alternating series?",
+    "back": "TODO"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the relationship between absolute and conditional convergence?",
+    "back": "TODO"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the ratio test?",
+    "back": "Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n- If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.\n- If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\n- If \\(\\rho = 1\\), the test does not provide any information."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the root test?",
+    "back": "Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n- If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.\n- If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.\n- If \\(\\rho = 1\\), the test does not provide any information."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Sequences and Series",
+    "tags": "Math Calculus Sequences-and-Series",
+    "front": "What is the power series?",
+    "back": "The power series is an infinite series of the following form\n\\[ \\sum_{n=1}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\nwhere \\(x\\) is a variable and the coefficients \\(c_n\\) are constants."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Integration-by-Parts",
+    "front": "\\[ \\int \\ln x \\ dx \\]\nSolve the integral.",
+    "back": "Integrate by parts:\n\\[ u \\ dv = uv - \\int v \\ du \\]\n\\[\n\\begin{align*}\n     u &= \\ln x            & dv &= dx \\\\\n    du &= \\frac{1}{x} \\ dx &  v &= x\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\ln x \\ dx\n    &= x \\ln x - \\int x \\frac{1}{x} \\ dx \\\\\n    &= x \\ln x - \\int dx \\\\\n    &= x \\ln x - x + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Integration-by-Parts",
+    "front": "\\[ \\int (\\ln x)^2 \\ dx \\]\nSolve the integral.",
+    "back": "Integrate by parts:\n\\[ u \\ dv = uv - \\int v \\ du \\]\n\\[\n\\begin{align*}\n     u &= (\\ln x)^2              & dv &= dx \\\\\n    du &= \\frac{2 \\ln x}{x} \\ dx &  v &= x\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (\\ln x)^2 \\ dx\n    &= x (\\ln x)^2 - \\int x \\frac{2 \\ln x}{x} \\ dx \\\\\n    &= x (\\ln x)^2 - 2 \\int \\ln x \\ dx \\\\\n    &= x (\\ln x)^2 - 2 (x \\ln x - x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Lambert W",
+    "tags": "Math Calculus Problem Lambert-W",
+    "front": "\\[ \\frac{d}{dx} W(x) \\]\nFind the derivative of the Lambert \\(W\\) function.",
+    "back": "Use implicit differentiation:\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} &= x \\\\\n    \\frac{d}{dx} \\left( W(x) e^{W(x)} \\right) &= \\frac{d}{dx} x\n\\end{align*}\n\\]\nUse the chain rule:\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} \\cdot W'(x) + e^{W(x)} \\cdot W'(x) &= 1 \\\\\n    W'(x) ( W(x) e^{W(x)} + e^{W(x)} ) &= 1 \\\\\n    W'(x) ( x + e^{W(x)} ) &= 1\n\\end{align*}\n\\]\nSince\n\\[ W(x)e^{W(x)} = x \\implies e^{W(x)} = x/W(x) \\]\nThen:\n\\[\n\\begin{align*}\n    W'(x) &= \\frac{1}{x + e^{W(x)}}  \\\\\n    &= \\frac{1}{x + x/W(x)} \\\\\n    &= \\frac{W(x)}{x W(x) + x} \\\\\n    &= \\frac{W(x)}{x (W(x) + 1)}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Lambert W",
+    "tags": "Math Calculus Problem Lambert-W",
+    "front": "\\[ \\int W(x) \\ dx \\]\nFind the anti-derivative of the Lambert \\(W\\) function.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n     u &= W(x) \\\\\n     x &= u e^u \\\\\n    dx &= (u e^u + e^u) \\ du \\\\\n       &= e^u (u  + 1) \\ du\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    &= \\int W(x) \\ dx \\\\\n    &= \\int u e^u(u+1) \\ du \\\\\n    &= \\int e^u (u^2 + u) \\ du, \\quad \\text{Integrate by parts} \\\\\n    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\\\\n    &= u u e^u - u e^u + e^u + C \\\\\n    &= x W(x) - W(x) + e^{W(x)} + C \\\\\n    &= x W(x) - W(x) + \\frac{x}{W(x)} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Lambert W",
+    "tags": "Math Calculus Problem Lambert-W",
+    "front": "\\[ W(W(x)) = 1 \\]",
+    "back": "\\[\n\\begin{align*}\n    W(W(x)) &= 1 \\\\\n       W(x) &= 1 e^1 \\\\\n            &= e \\\\\n          x &= e e^e \\\\\n            &= e^{e+1}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Lambert W",
+    "tags": "Math Calculus Problem Lambert-W",
+    "front": "\\[ W(x) = \\ln(2x) \\]",
+    "back": "\\[\n\\begin{align*}\n    W(x) &= \\ln(2x) \\\\\n       x &= \\ln(2x) e^{\\ln(2x)} \\\\\n         &= 2x \\ln(2x) \\\\\n\\end{align*}\n\\]\n\\[\n\\begin{align*}\n     2x \\ln(2x) &= x \\\\\n        \\ln(2x) &= \\frac{1}{2} \\\\\n    e^{\\ln(2x)} &= e^{\\frac{1}{2}} \\\\\n             2x &= e^{\\frac{1}{2}} \\\\\n              x &= \\frac{1}{2} e^{\\frac{1}{2}}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Lambert W",
+    "tags": "Math Calculus Problem Lambert-W",
+    "front": "\\[ W(e^x) = (W(e))^x \\]",
+    "back": "\\[\n\\begin{align*}\n    W(e^x) &= (W(e))^x \\\\\n    W(e^x) &= (W(1 e^1))^x \\\\\n    W(e^x) &= (1)^x \\\\\n    W(e^x) &= 1 \\\\\n       e^x &= 1 e^1 \\\\\n         x &= 1\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\sin^2(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\ dx\n    &= \\int \\frac{1-\\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} - \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x - \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\cos^2(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\ dx\n    &= \\int \\frac{1 + \\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} + \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x + \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\sin^3(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = 1 - \\cos^2(2) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^3(x) \\ dx\n    &= \\int \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int (1 - \\cos^2(x)) \\sin(x) \\ dx \\\\\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - (1 - u^2) \\ du \\\\\n    &= \\int u^2 - 1 \\ du \\\\\n    &= \\frac{1}{3} u^3 - u + C \\\\\n    &= \\frac{1}{3} \\cos^3(x) - \\cos(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\cos^3(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = 1 - \\sin^2(2) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^3(x) \\ dx\n    &= \\int \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int (1 - \\sin^2(x)) \\cos(x) \\ dx \\\\\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int 1 - u^2 \\ du \\\\\n    &= u - \\frac{1}{3} u^3 + C \\\\\n    &= \\sin(x) - \\frac{1}{3} \\sin^3(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\sin^4(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 - \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} - 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} - \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x - \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\cos^4(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\nand\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\cos^2(x) \\sin^3(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\ dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^4 - u^2 \\ du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\sin^2(x) \\cos^3(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\cos^2(x) = 1 - \\sin^2(x) \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^3(x) \\ dx\n    &= \\int \\sin^2(x) \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n\\end{align*}\n\\]\nApply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x)\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^2 - u^4 \\ du \\\\\n    &= \\frac{1}{3} u^3 - \\frac{1}{5} u^5 + C \\\\\n    &= \\frac{1}{3} \\sin^3(x) - \\frac{1}{5} \\sin^5(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\ dx \\]\nSolve the integral.",
+    "back": "Apply trigonometric identity:\n\\[ \\sin(2x) = 2 \\sin(x) \\cos(x) \\]\nand\n\\[ \\sin^2(2x) = \\frac{1 - \\cos(4x)}{2} \\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\ dx\n    &= \\int \\sin(x) \\sin(x) \\cos(x) \\cos(x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left( 2 \\sin(x) \\cos(x) \\right) \\left( 2 \\sin(x) \\cos(x) \\right) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin(2x) \\sin(2x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin^2(2x) \\ dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\ dx \\\\\n    &= \\frac{1}{8} \\left( \\int dx - \\int \\cos(4x) \\ dx \\right) \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral Trigonometric",
+    "front": "\\[ \\int \\frac{1}{1 + \\sin(x)} \\ dx \\]\nSolve the integral.",
+    "back": "\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sin(x)} \\ dx\n    &= \\int \\left( \\frac{1}{1 + \\sin(x)} \\right) \\left( \\frac{1 - \\sin(x)}{1 - \\sin(x)} \\right) \\ dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{1 - \\sin^2(x)} \\ dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{\\cos^2(x)} \\ dx \\\\\n    &= \\int \\frac{1}{\\cos^2(x)} - \\frac{\\sin(x)}{\\cos^2(x)} \\ dx \\\\\n    &= \\int \\sec^2(x) - \\tan(x) \\sec(x) \\ dx \\\\\n    &= \\tan(x) - \\sec(x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int 3x^2 \\sqrt {x^3 + 1} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^3 + 1 \\\\\n    du &= 3x^2 \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int 3x^2 \\sqrt{x^3 + 1} \\ dx\n    &= \\int \\sqrt{u} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{3} (x^3 + 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int xe^{-x^2} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= -x^2 \\\\\n    du &= -2x \\ dx \\\\\n    -\\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int xe^{-x^2} \\ dx\n    &= -\\frac{1}{2} \\int e^u \\ du \\\\\n    &= -\\frac{1}{2} e^u + C \\\\\n    &= -\\frac{1}{2} e^{-x^2} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{x}{(x^2 + 1)^2} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{(x^2 + 1)^2} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u^2} \\ du \\\\\n    &= -\\frac{1}{2} \\frac{1}{u} + C \\\\\n    &= -\\frac{1}{2} \\frac{1}{x^2 + 1} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int e^{\\cos x} \\sin x \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int e^{\\cos x} \\sin x \\ dx\n    &= - \\int e^u \\ du \\\\\n    &= - e^u + C \\\\\n    &= - e^{\\cos x} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{e^x}{e^x + 1} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= e^x + 1 \\\\\n    du &= e^x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{e^x}{e^x + 1} \\ dx\n    &= \\int \\frac{1}{u} \\ du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln (e^x + 1) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{x}{x^2 + 1} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{x^2 + 1} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u} \\ du \\\\\n    &= \\frac{1}{2} \\ln |u| + C \\\\\n    &= \\frac{1}{2} \\ln (x^2 + 1) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx\n    &= - \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= - \\tan^{-1} u + C \\\\\n    &= - \\tan^{-1} (\\cos x) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\cos(x) \\sin(\\sin(x)) \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\ dx\n    &= \\int \\sin(u) \\ du \\\\\n    &= - \\cos(u) + C \\\\\n    &= - \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{\\ln x}{x} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{\\ln x}{x} \\ dx\n    &= \\int u \\ du \\\\\n    &= \\frac{1}{2} u^2 + C \\\\\n    &= \\frac{1}{2} (\\ln x)^2 + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{1}{x \\ln x} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x \\ln x} \\ dx\n    &= \\int \\frac{1}{u} \\ du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln | \\ln x | + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{x}{\\sqrt{x + 1}} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    x &= u - 1 \\\\\n    u &= x + 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{\\sqrt{x + 1}} \\ dx\n    &= \\int \\frac{u - 1}{\\sqrt{u}} \\ du \\\\\n    &= \\int \\frac{u}{\\sqrt{u}} \\ du - \\int \\frac{1}{\\sqrt{u}} \\ du \\\\\n    &= \\int u^{1/2} \\ du - \\int u^{-1/2} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}} + C \\\\\n    &= \\frac{2}{3} (x + 1)^{\\frac{3}{2}} - 2(x + 1)^{\\frac{1}{2}} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{x}{1 + x^4} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= x^2 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{x}{1 + x^4} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= \\frac{1}{2} \\tan^{-1}(u) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1}(x^2) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int (x + 1) \\sqrt{x - 1} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    x &= u + 1 \\\\\n    u &= x - 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int (x + 1) \\sqrt{x - 1} \\ dx\n    &= \\int (u + 2) \\sqrt{u} \\ du \\\\\n    &= \\int (u \\sqrt{u} + 2 \\sqrt{u}) \\ du \\\\\n    &= \\int (u^{\\frac{3}{2}} + 2 u^{\\frac{1}{2}}) \\ du \\\\\n    &= \\int u^{\\frac{3}{2}} \\ du + 2 \\int u^{\\frac{1}{2}} \\ du \\\\\n    &= \\frac{2}{5} u^{\\frac{5}{2}} + \\frac{4}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{5} (x - 1)^{\\frac{5}{2}} + \\frac{4}{3} (x - 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{1}{x^2 + 4x + 8} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution after completing the square:\n\\[\n\\begin{align*}\n    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\\\\n    u &= x + 2 \\\\\n    du &= dx\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x^2 + 4x + 8} \\ dx\n    &= \\int \\frac{1}{u^2 + 2^2} \\ du \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{u}{2} \\right) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{x + 2}{2} \\right) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{2x}} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= 1 + \\sqrt{2x} \\\\\n      &= 1 + (2x)^\\frac{1}{2} \\\\\n    du &= (2x)^{-\\frac{1}{2}} \\ dx \\\\\n    dx &= (2x)^\\frac{1}{2} \\ du \\\\\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{2x}} \\ dx\n    &= \\int \\frac{1}{u} (2x)^\\frac{1}{2} \\ du, \\quad (2x)^\\frac{1}{2} = u - 1 \\\\\n    &= \\int \\frac{1}{u} (u - 1) \\ du \\\\\n    &= \\int \\frac{u}{u} - \\frac{1}{u} \\ du \\\\\n    &= \\int du - \\int \\frac{1}{u} \\ du \\\\\n    &= u - \\ln |u| + C \\\\\n    &= (1 + \\sqrt{2x}) - \\ln(1 + \\sqrt{2x}) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int e^{\\sqrt{x}} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} dx \\\\\n       &= \\frac{1}{2 u} \\ dx \\\\\n    dx &= 2u \\ du\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int e^{\\sqrt{x}} \\ dx\n    &= 2 \\int u e^u \\ du \\\\\n    &= 2 u e^u - 2 e^u + C \\\\\n    &= 2 e^u (u - 1) + C \\\\\n    &= 2 e^\\sqrt{x} ( \\sqrt{x} - 1 ) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Problems::Integrals",
+    "tags": "Math Calculus Problem Integral U-Substitution",
+    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{x}} \\ dx \\]\nSolve the integral.",
+    "back": "Apply \\(u\\)-substitution:\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} \\ dx \\\\& = \\frac{1}{2 u} \\ dx \\\\\n    dx &= 2u \\ du\n\\end{align*}\n\\]\nThen:\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{x}} \\ dx\n    &= 2 \\int \\frac{u}{u + 1} \\ du \\\\\n    &= 2 \\int \\frac{u + 1 - 1}{u + 1} \\ du \\\\\n    &= 2 \\int 1 - \\frac{1}{u + 1} \\ du \\\\\n    &= 2 \\left( u - \\ln |u + 1| \\right) + C \\\\\n    &= 2 \\left( \\sqrt{x} - \\ln |\\sqrt{x} + 1| \\right) + C\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ 1 \\} \\]",
+    "back": "\\[ \\frac{1}{s} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ t^n, \\ n = 1, 2, 3, \\ldots \\} \\]",
+    "back": "\\[ \\frac{n!}{s^{n+1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ \\sin(at) \\} \\]",
+    "back": "\\[ \\frac{a}{s^2 + a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ \\cos(at) \\} \\]",
+    "back": "\\[ \\frac{s}{s^2 + a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ \\sin(at + b) \\} \\]",
+    "back": "\\[ \\frac{s \\sin(b) + a \\cos(b)}{s^2 + a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ \\cos(at + b) \\} \\]",
+    "back": "\\[ \\frac{s \\cos(b) - a \\sin(b)}{s^2 + a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ t \\sin(at) \\} \\]",
+    "back": "\\[ \\frac{2as}{(s^2 + a^2)^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ t \\cos(at) \\} \\]",
+    "back": "\\[ \\frac{s^2 - a^2}{(s^2 + a^2)^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ \\sinh(at) \\} \\]",
+    "back": "\\[ \\frac{a}{s^2 - a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ \\cosh(at) \\} \\]",
+    "back": "\\[ \\frac{s}{s^2 - a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} \\} \\]",
+    "back": "\\[ \\frac{1}{s - c} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} t^n, \\ n = 1, 2, 3, \\ldots \\} \\]",
+    "back": "\\[ \\frac{n!}{(s - c)^{n + 1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sin(at) \\} \\]",
+    "back": "\\[ \\frac{a}{(s - c)^2 + a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cos(at) \\} \\]",
+    "back": "\\[ \\frac{s - c}{(s - c)^2 + a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} \\]",
+    "back": "\\[ \\frac{a}{(s - c)^2 - a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} \\]",
+    "back": "\\[ \\frac{s - c}{(s - c)^2 - a^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} f(t) \\} \\]",
+    "back": "\\[ F(s - c) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ \\delta (t - c) \\} \\]",
+    "back": "\\[ e^{-cs} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ u(t - c) \\} \\]",
+    "back": "\\[ e^{-cs} \\frac{1}{s} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ u(t - c) f(t - c) \\} \\]",
+    "back": "\\[ e^{-cs} F(s) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\left\\{ \\frac{f(t)}{t} \\right\\} \\]",
+    "back": "\\[ \\int_{s}^{\\infty} F(u) \\ du \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\left\\{ \\int_{0}^{t} f(u) \\ du \\right\\} \\]",
+    "back": "\\[ \\frac{F(s)}{s} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ f'(t) \\} \\]",
+    "back": "\\[ s F(s) - f(0) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "\\[ \\mathscr{L} \\{ f''(t) \\} \\]",
+    "back": "\\[ s^2 F(s) - s f(0) - f'(0) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "What is the definition of the Laplace transform?",
+    "back": "The Laplace transform of a function \\(f(t)\\) is a function \\(F(s)\\) defined as\n\\[ F(s) = \\mathscr{L}\\{f\\} = \\int_0^\\infty e^{-st} f(t) \\ dt \\]\nwhere \\(f(t)\\) is a function of exponential order defined for all \\(t \\ge 0\\)."
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "What is the first translation or shifting property of the Laplace transform?",
+    "back": "If \\(f(t)\\) has the transform \\(F(s)\\), then\n\\[ \\mathscr{L}\\{e^{at} f(t)\\} = F(s-a) \\]\n\\[ \\mathscr{L}^{-1}\\{F(s-a)\\} = e^{at} f(t) \\]\nExample:\nSince\n\\[ \\mathscr{L}\\{ \\cos 2t \\} = \\frac{s}{s^2 + 4}, \\]\nwe have\n\\[ \\mathscr{L}\\{ e^{3t} \\cos 2t \\} = \\frac{(s - 3)}{(s - 3)^2 + 4} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "What is the second translation or shifting property of the Laplace transform?",
+    "back": "If \\(f(t)\\) has the transform \\(F(s)\\), and\n\\[ g(t) = \\left\\{\n\\begin{array}{ll}\n    f(t - a) & t > a \\\\\n    0 & t < a\n\\end{array}\n\\right. \\]\nthen\n\\[ \\mathscr{L}\\{g(t)\\} = e^{-as} F(s) \\]\n\\[ \\mathscr{L}^{-1}\\{e^{-as} F(s)\\} = g(t) \\]\nExample:\nSince\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4}, \\]\nthe Laplace transform of the function\n\\[ g(t) = \\left\\{\n\\begin{array}{ll}\n    (t - 2)^3 & t > 2 \\\\\n    0 & t < 2\n\\end{array}\n\\right. \\]\nis\n\\[ \\mathscr{L}\\{ g \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform",
+    "front": "What is the change of scale property of the Laplace transform?",
+    "back": "If \\(f(t)\\) has the transform \\(F(s)\\), then\n\\[ \\mathscr{L}\\{ f(at) \\} = \\frac{1}{a} F \\left( \\frac{s}{a} \\right) \\]\n\\[ \\mathscr{L}^{-1} \\left\\{ \\frac{1}{a} F \\left( \\frac{s}{a} \\right) \\right\\} = f(at) \\]\nExample:\nSince\n\\[ \\mathscr{L}\\{ \\sin t \\} = \\frac{1}{s^2 + 1}, \\]\nwe have\n\\[ \\mathscr{L}\\{ \\sin 3t \\} = \\frac{1}{3} \\frac{1}{(s/3)^2 + 1} = \\frac{3}{s^2 + 9} \\]"
   }
 ]

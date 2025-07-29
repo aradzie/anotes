@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Sequences and Series
+!deck:Math::Calculus::Sequences and Series
 
-!tags:Calculus Sequences Series
+!tags:Math Calculus Sequences-and-Series
 
 What is an infinite sequence?
 ---

@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Problems::Integrals::Trigonometric
+!deck:Math::Calculus::Problems::Integrals
 
-!tags:Calculus Problem
+!tags:Math Calculus Problem Integral Trigonometric
 
 \[ \int \sin^2(x) \ dx \]
 Solve the integral.

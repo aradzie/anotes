@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Derivatives::01 Basic
+!deck:Math::Calculus::Derivatives
 
-!tags:Calculus Derivative
+!tags:Math Calculus Derivative
 
 \[ \frac{d}{dx} x^n \]
 ---
@@ -34,9 +34,7 @@
 \[ \frac{1}{x \ln b} \]
 ===
 
-!deck:Math::Derivatives::02 Trigonometric
-
-!tags:Calculus Derivative Trigonometric
+!tags:Math Calculus Derivative Trigonometric
 
 \[ \frac{d}{dx} \sin x \]
 ---
@@ -68,9 +66,7 @@
 \[ - \csc x \cot x \]
 ===
 
-!deck:Math::Derivatives::03 Inverse Trigonometric
-
-!tags:Calculus Derivative Trigonometric
+!tags:Math Calculus Derivative Trigonometric
 
 \[ \frac{d}{dx} \sin^{-1} x \]
 ---
@@ -102,9 +98,7 @@
 \[ \frac{-1}{|x| \sqrt{x^2-1}} \]
 ===
 
-!deck:Math::Derivatives::04 Hyperbolic
-
-!tags:Calculus Derivative Hyperbolic
+!tags:Math Calculus Derivative Hyperbolic
 
 \[ \frac{d}{dx} \sinh x \]
 ---
@@ -136,9 +130,7 @@
 \[ - \text{csch} \ x \coth x \]
 ===
 
-!deck:Math::Derivatives::05 Inverse Hyperbolic
-
-!tags:Calculus Derivative Hyperbolic
+!tags:Math Calculus Derivative Hyperbolic
 
 \[ \frac{d}{dx} \sinh^{-1} x \]
 ---

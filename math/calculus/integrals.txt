@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Integrals::01 Basic
+!deck:Math::Calculus::Integrals
 
-!tags:Calculus
+!tags:Math Calculus Integral
 
 \[ \int x^n \ dx \]
 ---
@@ -24,9 +24,7 @@
 \[ \frac{a^x}{\ln a} + C \]
 ===
 
-!deck:Math::Integrals::02 Trigonometric
-
-!tags:Calculus Trigonometric
+!tags:Math Calculus Integral Trigonometric
 
 \[ \int \sin x \ dx \]
 ---
@@ -80,7 +78,7 @@
 \[ \ln | \csc x - \cot x | + C \]
 ===
 
-!deck:Math::Integrals::03 Inverse Trigonometric
+!tags:Math Calculus Integral Trigonometric
 
 \[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \]
 ---
@@ -97,9 +95,7 @@
 \[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
 ===
 
-!deck:Math::Integrals::04 Extended
-
-!tags:Calculus
+!tags:Math Calculus Integral
 
 \[ \int \ln x \ dx \]
 ---

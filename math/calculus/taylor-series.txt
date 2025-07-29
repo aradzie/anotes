@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Taylor Series
+!deck:Math::Calculus::Taylor Series
 
-!tags:Calculus
+!tags:Math Calculus Taylor-Series
 
 \[ e^x \]
 Taylor series expansion
@@ -52,7 +52,7 @@ Taylor series expansion
 \]
 ===
 
-!tags:Calculus Trigonometric
+!tags:Math Calculus Taylor-Series Trigonometric
 
 \[ \sin(x) \]
 Taylor series expansion
@@ -78,7 +78,7 @@ Taylor series expansion
 \]
 ===
 
-!tags:Calculus Hyperbolic
+!tags:Math Calculus Taylor-Series Hyperbolic
 
 \[ \sinh x \]
 Taylor series expansion

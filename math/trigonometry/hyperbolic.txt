@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Trig::Hyperbolic Functions::01 Basic
+!deck:Math::Trigonometry
 
-!tags:Hyperbolic
+!tags:Math Trigonometric Hyperbolic
 
 \[ \sinh x \]
 The definition of
@@ -22,58 +22,50 @@ The definition of
 \[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
 ===
 
-\[ \coth x \]
-The definition of
----
-\[ \frac{\cosh x}{\sinh x} = \frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \]
 ===
 
-!deck:Math::Trig::Hyperbolic Functions::02 Identities
+!tags:Math Trigonometric Hyperbolic Identity
 
-!tags:Hyperbolic Identity
-
-\[ e^{x} \]
+\[ e^{x} = \ldots \]
 Hyperbolic identity
 ---
 \[ \cosh x + \sinh x \]
 ===
 
-\[ e^{-x} \]
+\[ e^{-x} = \ldots \]
 Hyperbolic identity
 ---
 \[ \cosh x - \sinh x \]
 ===
 
-\[ 1 \]
+\[ 1 = \ldots \]
 Hyperbolic identity
 ---
 \[ \cosh^2 x - \sinh^2 x \]
 ===
 
-!deck:Math::Trig::Hyperbolic to Trigonometric
+!tags:Math Trigonometric Hyperbolic Identity
 
-!tags:Hyperbolic Trigonometric Identity
-
-\[ \sin x \]
+\[ \sin x = \ldots \]
 Express as a hyperbolic function
 ---
-\[ \frac{e^{ix} - e^{-ix}}{2i} = -i \sinh(ix) \]
+\[ -i \sinh(ix) = \frac{e^{ix} - e^{-ix}}{2i} \]
 ===
 
-\[ \sinh x \]
+\[ \sinh x = \ldots \]
 Express as a trigonometric function
 ---
-\[ \frac{e^{x} - e^{-x}}{2} = -i \sin(ix) \]
+\[ -i \sin(ix) = \frac{e^{x} - e^{-x}}{2} \]
 ===
 
-\[ \cos x \]
+\[ \cos x = \ldots \]
 Express as a hyperbolic function
 ---
-\[ \frac{e^{ix} + e^{-ix}}{2} = \cosh(ix) \]
+\[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
 ===
 
-\[ \cosh x \]
+\[ \cosh x = \ldots \]
 Express as a trigonometric function
 ---
-\[ \frac{e^{x} + e^{-x}}{2} = \cos(ix) \]
+\[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
 ===

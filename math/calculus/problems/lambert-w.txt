@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Problems::Lambert W
+!deck:Math::Calculus::Problems::Lambert W
 
-!tags:Lambert-W Problem
+!tags:Math Calculus Problem Lambert-W
 
 # https://www.youtube.com/watch?v=LyEPB6Wxc_U
 # https://math.stackexchange.com/questions/1473437/derivative-of-lambert-w-function

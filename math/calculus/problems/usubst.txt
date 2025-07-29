@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Problems::Integrals::U-Substitution
+!deck:Math::Calculus::Problems::Integrals
 
-!tags:Calculus Problem
+!tags:Math Calculus Problem Integral U-Substitution
 
 \[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
 Solve the integral.

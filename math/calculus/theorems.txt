@@ -2,7 +2,7 @@
 
 !deck:Math::Calculus::Basic
 
-!tags:Calculus Theorem
+!tags:Math Calculus Theorem
 
 The definition of the extreme value theorem (EVT).
 ---

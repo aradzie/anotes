@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Problems::Integrals::Integration by Parts
+!deck:Math::Calculus::Problems::Integrals
 
-!tags:Calculus Problem
+!tags:Math Calculus Problem Integral Integration-by-Parts
 
 \[ \int \ln x \ dx \]
 Solve the integral.

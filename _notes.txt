@@ -3,67 +3,199 @@
 #notetype column:1
 #deck column:2
 #tags column:3
-Basic;Math::Complex::Identities;Complex Identity;De Moivre's Formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;Euler's formula;"\[ e^{ix} = \cos x + i \sin x \]
+\[ e^{-ix} = \cos x - i \sin x \]"
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;De Moivre's formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
 \[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) \]"
-Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \sinh x \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;"\[ \sinh x \]
 The definition of";\[ \frac{e^{x} - e^{-x}}{2} \]
-Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \cosh x \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;"\[ \cosh x \]
 The definition of";\[ \frac{e^{x} + e^{-x}}{2} \]
-Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \tanh x \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;"\[ \tanh x \]
 The definition of";\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
-Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \coth x \]
-The definition of";\[ \frac{\cosh x}{\sinh x} = \frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \]
-Basic;Math::Trig::Hyperbolic Functions::02 Identities;Hyperbolic Identity;"\[ e^{x} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic;;
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{x} = \ldots \]
 Hyperbolic identity";\[ \cosh x + \sinh x \]
-Basic;Math::Trig::Hyperbolic Functions::02 Identities;Hyperbolic Identity;"\[ e^{-x} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{-x} = \ldots \]
 Hyperbolic identity";\[ \cosh x - \sinh x \]
-Basic;Math::Trig::Hyperbolic Functions::02 Identities;Hyperbolic Identity;"\[ 1 \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ 1 = \ldots \]
 Hyperbolic identity";\[ \cosh^2 x - \sinh^2 x \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \sin x \]
-Express as a hyperbolic function";\[ \frac{e^{ix} - e^{-ix}}{2i} = -i \sinh(ix) \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \sinh x \]
-Express as a trigonometric function";\[ \frac{e^{x} - e^{-x}}{2} = -i \sin(ix) \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \cos x \]
-Express as a hyperbolic function";\[ \frac{e^{ix} + e^{-ix}}{2} = \cosh(ix) \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \cosh x \]
-Express as a trigonometric function";\[ \frac{e^{x} + e^{-x}}{2} = \cos(ix) \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cos (\alpha - \beta) \];\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \tan (\alpha + \beta) \];\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \tan (\alpha - \beta) \];\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cot (\alpha + \beta) \];\[ \frac{1 - \tan \alpha \tan \beta}{\tan \alpha + \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cot (\alpha - \beta) \];\[ \frac{1 + \tan \alpha \tan \beta}{\tan \alpha - \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \sin \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
-Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \cos \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
-Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \tan \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sin x = \ldots \]
+Express as a hyperbolic function";\[ -i \sinh(ix) = \frac{e^{ix} - e^{-ix}}{2i} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sinh x = \ldots \]
+Express as a trigonometric function";\[ -i \sin(ix) = \frac{e^{x} - e^{-x}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cos x = \ldots \]
+Express as a hyperbolic function";\[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cosh x = \ldots \]
+Express as a trigonometric function";\[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha - \beta) \];\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha + \beta) \];\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha - \beta) \];\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
 \[ \frac{\sin \theta}{1 + \cos \theta} \]
 \[ \frac{1 - \cos \theta}{\sin \theta} \]"
-Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \cot \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 + \cos \theta}{1 - \cos \theta} } \]
-\[ \frac{\sin \theta}{1 - \cos \theta} \]
-\[ \frac{1 + \cos \theta}{\sin \theta} \]"
-Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \sin^2 \theta \];\[ \frac{1 - \cos 2 \theta}{2} \]
-Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \cos^2 \theta \];\[ \frac{1 + \cos 2 \theta}{2} \]
-Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \tan^2 \theta \];\[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
-Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \cot^2 \theta \];\[ \frac{1 + \cos 2 \theta}{1 - \cos 2 \theta} \]
-Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \sin 2 \theta \];\[ 2 \sin \theta \cos \theta \]
-Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \cos 2 \theta \];"\[ \cos^2 \theta - \sin^2 \theta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin^2 \theta \];\[ \frac{1 - \cos 2 \theta}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos^2 \theta \];\[ \frac{1 + \cos 2 \theta}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan^2 \theta \];\[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin 2 \theta \];\[ 2 \sin \theta \cos \theta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos 2 \theta \];"\[ \cos^2 \theta - \sin^2 \theta \]
 \[ 1 - 2 \sin^2 \theta \]
 \[ 2 \cos^2 \theta - 1 \]"
-Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \tan 2 \theta \];"\[ \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan 2 \theta \];"\[ \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
 \[ \frac{2}{\cot \theta - \tan \theta} \]"
-Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \cot 2 \theta \];"\[ \frac{\cot^2 \theta - 1}{2 \cot \theta} \]
-\[ \frac{\cot \theta - \tan \theta}{2} \]"
-Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \sin \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \cos \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \sin \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \cos \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \sin \alpha + \sin \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \sin \alpha - \sin \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \cos \alpha + \cos \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \cos \alpha - \cos \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is an infinite sequence?;"An infinite sequence is an ordered and indexed list of numbers of the form
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha + \sin \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha - \sin \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha + \cos \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha - \cos \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative;\[ \frac{d}{dx} x^n \];\[ nx^{n-1} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative;\[ \frac{d}{dx} \sqrt{x} \];\[ \frac{1}{2 \sqrt{x}} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative;\[ \frac{d}{dx} e^x \];\[ e^x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative;\[ \frac{d}{dx} a^x \];\[ a^x \ln a \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative;\[ \frac{d}{dx} \ln x \];\[ \frac{1}{x} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative;\[ \frac{d}{dx} \log_b x \];\[ \frac{1}{x \ln b} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sin x \];\[ \cos x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cos x \];\[ - \sin x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \tan x \];\[ \sec^2 x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cot x \];\[ - \csc^2 x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sec x \];\[ \sec x \tan x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \csc x \];\[ - \csc x \cot x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sin^{-1} x \];\[ \frac{1}{\sqrt{1-x^2}} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cos^{-1} x \];\[ \frac{-1}{\sqrt{1-x^2}} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \tan^{-1} x \];\[ \frac{1}{1+x^2} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cot^{-1} x \];\[ \frac{-1}{1+x^2} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sec^{-1} x \];\[ \frac{1}{|x| \sqrt{x^2-1}} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \csc^{-1} x \];\[ \frac{-1}{|x| \sqrt{x^2-1}} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \sinh x \];\[ \cosh x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \cosh x \];\[ \sinh x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \tanh x \];\[ \text{sech}^2 \ x = 1 - \tanh^2 x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \coth x \];\[ - \text{csch}^2 \ x = 1 - \coth^2 x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{sech} \ x \];\[ - \text{sech} \ x \tanh x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{csch} \ x \];\[ - \text{csch} \ x \coth x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \sinh^{-1} x \];\[ \frac{1}{\sqrt{x^2 + 1}} \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \cosh^{-1} x \];\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \tanh^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \coth^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{sech}^{-1} \ x \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{csch}^{-1} \ x \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int x^n \ dx \];\[ \frac{x^{n+1}}{n+1} + C, \quad n \neq -1 \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \frac{1}{x} \ dx \];\[ \ln |x| + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int e^x \ dx \];\[ e^x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int a^x \ dx \];\[ \frac{a^x}{\ln a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sin x \ dx \];\[ - \cos x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \cos x \ dx \];\[ \sin x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec^2 x \ dx \];\[ \tan x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc^2 x \ dx \];\[ - \cot x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec x \tan x \ dx \];\[ \sec x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc x \cot x \ dx \];\[ - \csc x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \tan x \ dx \];"\[ - \ln | \cos x | + C \]
+\[ \ln | \sec x | + C \]"
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \cot x \ dx \];"\[ \ln | \sin x | + C \]
+\[ - \ln | \csc x | + C \]"
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec x \ dx \];\[ \ln | \sec x + \tan x | + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc x \ dx \];\[ \ln | \csc x - \cot x | + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \];\[ \sin^{-1} \frac{x}{a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{a^2 + x^2} \ dx \];\[ \tan^{-1} \frac{x}{a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \];\[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int x e^x \ dx \];\[ x e^x - e^x + C \]
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ e^x \]
+Taylor series expansion";"\[
+\begin{align*}
+    e^x
+    &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ \ln(x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \ln(x)
+    &= (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \\
+    &= \sum_{n=1}^{\infty} \frac{(-1)^{n+1}(x-1)^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ \ln(1-x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \ln(1-x)
+    &= - x - \frac{x^2}{2} - \frac{x^3}{3} - \frac{x^4}{4} - \cdots \\
+    &= -\sum_{n=1}^{\infty} \frac{x^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ \ln(1+x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \ln(1+x)
+    &= x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots \\
+    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Trigonometric;"\[ \sin(x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \sin(x)
+    &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n+1}}{(2n+1)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Trigonometric;"\[ \cos(x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \cos(x)
+    &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Hyperbolic;"\[ \sinh x \]
+Taylor series expansion";"\[
+\begin{align*}
+    \sinh x
+    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Hyperbolic;"\[ \cosh x \]
+Taylor series expansion";"\[
+\begin{align*}
+    \cosh x
+    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the extreme value theorem (EVT).;"The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.
+That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).
+In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point."
+Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the Rolle's theorem.;"The Rolle's theorem is a special case of the mean value theorem.
+The Rolle's theorem states that if a function \(f(x)\) is:
+- Continuous on a closed interval \([a,b]\)
+- Differentiable on the open interval \((a,b)\)
+- \(f(a)=f(b)\) (the function has the same value at the endpoints)
+Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).
+Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero)."
+Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the mean value theorem (MVT).;"The mean value theorem is a generalization of Rolle's theorem.
+The mean value theorem states that if a function \(f(x)\) is:
+- Continuous on a closed interval \([a,b]\)
+- Differentiable on the open interval \((a,b)\)
+Then there exists at least one point \(c\) in the open interval \((a,b)\) such that the instantaneous rate of change (the derivative \(f'(c)\)) is equal to the average rate of change over the interval.
+Mathematically, this is expressed as:
+\[ f'(c) = \frac{f(b) - f(a)}{b - a} \]
+The Rolle's theorem can be derived from the mean value theorem: if \(f(a) = f(b)\), then the right side of the mean value theorem equation becomes
+\[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
+which means \(f'(c)=0\)."
+Basic;Math::Calculus::Basic;Math Calculus Theorem;The definition of the intermediate value theorem (IVT).;"The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).
+Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between."
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is an infinite sequence?;"An infinite sequence is an ordered and indexed list of numbers of the form
 \[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
 Each number \(a_n\) is a term of the sequence.
 The subscript \(n\) is the index variable of the sequence.
@@ -71,69 +203,69 @@ Sequences can be defined in various ways:
 - Listing terms: For instance, \(\{ 2, 4, 6, 8, \ldots \}\).
 - Explicit formula: A formula that defines the n-th term directly in terms of n, \(a_n = f(n)\).
 - Recurrence relation: A rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\)."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the limit of a sequence?;"A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the limit of a sequence?;"A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):
 \[ \lim_{n \to \infty} a_n = L \]
 If such a finite value \(L\) exists, the sequence is said to **converge** to that limit.
 If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to **diverge**."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the squeeze theorem for sequences?;"Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the squeeze theorem for sequences?;"Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
 Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
 If there exists a real number \(L\) such that
 \[ \lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n, \]
 then \(\{b_n\}\) converges and
 \[ \lim_{n \to \infty} b_n = L \]"
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the monotone convergence theorem?;If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is an infinite series?;"An infinite series is a sum of the terms of an infinite sequnce \(a_n\)
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the monotone convergence theorem?;If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is an infinite series?;"An infinite series is a sum of the terms of an infinite sequnce \(a_n\)
 \[ S = \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]"
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the harmonic series?;"The harmonic series is an infinite series of the following form
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the harmonic series?;"The harmonic series is an infinite series of the following form
 \[ \sum_{n=1}^{\infty} \frac{1}{n} \]
 The harmonic series diverges to infinity.
 The harmonic series is a special case of the p-series with \(p = 1\)."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the geometric series?;"The geometric series is an infinite series of the following form
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the geometric series?;"The geometric series is an infinite series of the following form
 \[ \sum_{n=1}^{\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \ldots \]
 The geometric series converges to
 \[ \frac{a}{1-r} \]
 if \(|r| < 1\)."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the p-series?;"The p-series series is an infinite series of the following form
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the p-series?;"The p-series series is an infinite series of the following form
 \[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]
 The p-series converges if \(p > 1\).
 The p-series diverges if \(p \le 1\)."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the divergence test for a series?;"Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the divergence test for a series?;"Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.
 The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\)."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the integral test?;"Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the integral test?;"Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:
 - \(f\) is continuous,
 - \(f\) is decreasing, and
 - \(f(n) = a_n\) for all integers \(n \ge N\).
 Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \ dx\) both converge or both diverge.
 Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same."
-Basic;Math::Sequences and Series;Calculus Sequences Series;How to estimate the remainder of a series?;TODO
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the direct comparison test?;"Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;How to estimate the remainder of a series?;TODO
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the direct comparison test?;"Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
 Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the limit comparison test?;"Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the limit comparison test?;"Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).
 If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.
 If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
 If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the alternating series?;"The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the alternating series?;"The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:
 \[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
 or
 \[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]"
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the alternating series test?;"An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the alternating series test?;"An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(
 \sum_{n=1}^{\infty} (-1)^{n} \ a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\)."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the remainder of an alternating series?;TODO
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the relationship between absolute and conditional convergence?;TODO
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the ratio test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the remainder of an alternating series?;TODO
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the relationship between absolute and conditional convergence?;TODO
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the ratio test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
 - If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
 - If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
 - If \(\rho = 1\), the test does not provide any information."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the root test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\). Let
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the root test?;"Consider the series \(\sum_{n=1}^{\infty} a_n\). Let
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
 - If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
 - If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
 - If \(\rho = 1\), the test does not provide any information."
-Basic;Math::Sequences and Series;Calculus Sequences Series;What is the power series?;"The power series is an infinite series of the following form
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;What is the power series?;"The power series is an infinite series of the following form
 \[ \sum_{n=1}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
 where \(x\) is a variable and the coefficients \(c_n\) are constants."
-Basic;Math::Problems::Integrals::Integration by Parts;Calculus Problem;"\[ \int \ln x \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int \ln x \ dx \]
 Solve the integral.";"Integrate by parts:
 \[ u \ dv = uv - \int v \ du \]
 \[
@@ -151,7 +283,7 @@ Then:
     &= x \ln x - x + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Integration by Parts;Calculus Problem;"\[ \int (\ln x)^2 \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int (\ln x)^2 \ dx \]
 Solve the integral.";"Integrate by parts:
 \[ u \ dv = uv - \int v \ du \]
 \[
@@ -169,7 +301,7 @@ Then:
     &= x (\ln x)^2 - 2 (x \ln x - x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Lambert W;Lambert-W Problem;"\[ \frac{d}{dx} W(x) \]
+Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \frac{d}{dx} W(x) \]
 Find the derivative of the Lambert \(W\) function.";"Use implicit differentiation:
 \[
 \begin{align*}
@@ -196,7 +328,7 @@ Then:
     &= \frac{W(x)}{x (W(x) + 1)}
 \end{align*}
 \]"
-Basic;Math::Problems::Lambert W;Lambert-W Problem;"\[ \int W(x) \ dx \]
+Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \int W(x) \ dx \]
 Find the anti-derivative of the Lambert \(W\) function.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -218,7 +350,7 @@ Then:
     &= x W(x) - W(x) + \frac{x}{W(x)} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Lambert W;Lambert-W Problem;\[ W(W(x)) = 1 \];"\[
+Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(W(x)) = 1 \];"\[
 \begin{align*}
     W(W(x)) &= 1 \\
        W(x) &= 1 e^1 \\
@@ -227,7 +359,7 @@ Basic;Math::Problems::Lambert W;Lambert-W Problem;\[ W(W(x)) = 1 \];"\[
             &= e^{e+1}
 \end{align*}
 \]"
-Basic;Math::Problems::Lambert W;Lambert-W Problem;\[ W(x) = \ln(2x) \];"\[
+Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(x) = \ln(2x) \];"\[
 \begin{align*}
     W(x) &= \ln(2x) \\
        x &= \ln(2x) e^{\ln(2x)} \\
@@ -243,7 +375,7 @@ Basic;Math::Problems::Lambert W;Lambert-W Problem;\[ W(x) = \ln(2x) \];"\[
               x &= \frac{1}{2} e^{\frac{1}{2}}
 \end{align*}
 \]"
-Basic;Math::Problems::Lambert W;Lambert-W Problem;\[ W(e^x) = (W(e))^x \];"\[
+Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(e^x) = (W(e))^x \];"\[
 \begin{align*}
     W(e^x) &= (W(e))^x \\
     W(e^x) &= (W(1 e^1))^x \\
@@ -253,7 +385,7 @@ Basic;Math::Problems::Lambert W;Lambert-W Problem;\[ W(e^x) = (W(e))^x \];"\[
          x &= 1
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
 Then:
@@ -265,7 +397,7 @@ Then:
     &= \frac{1}{2} x - \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^2(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
 Then:
@@ -277,7 +409,7 @@ Then:
     &= \frac{1}{2} x + \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^3(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = 1 - \cos^2(2) \]
 Then:
@@ -305,7 +437,7 @@ Then:
     &= \frac{1}{3} \cos^3(x) - \cos(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^3(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = 1 - \sin^2(2) \]
 Then:
@@ -332,7 +464,7 @@ Then:
     &= \sin(x) - \frac{1}{3} \sin^3(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^4(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^4(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
 and
@@ -349,7 +481,7 @@ Then:
     &= \frac{3}{8} x - \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^4(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^4(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
 and
@@ -366,7 +498,7 @@ Then:
     &= \frac{3}{8} x + \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \cos^2(x) \sin^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \sin^3(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \sin^2(x) = 1 - \cos^2(x) \]
 Then:
@@ -394,7 +526,7 @@ Then:
     &= \frac{1}{5} \cos^5(x) - \frac{1}{3} \cos^3(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \cos^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^3(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \cos^2(x) = 1 - \sin^2(x) \]
 Then:
@@ -422,7 +554,7 @@ Then:
     &= \frac{1}{3} \sin^3(x) - \frac{1}{5} \sin^5(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \cos^2(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^2(x) \ dx \]
 Solve the integral.";"Apply trigonometric identity:
 \[ \sin(2x) = 2 \sin(x) \cos(x) \]
 and
@@ -441,7 +573,7 @@ Then:
     &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \frac{1}{1 + \sin(x)} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \frac{1}{1 + \sin(x)} \ dx \]
 Solve the integral.";"\[
 \begin{align*}
     \int \frac{1}{1 + \sin(x)} \ dx
@@ -453,7 +585,7 @@ Solve the integral.";"\[
     &= \tan(x) - \sec(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -470,7 +602,7 @@ Then:
     &= \frac{2}{3} (x^3 + 1)^{\frac{3}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int xe^{-x^2} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int xe^{-x^2} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -488,7 +620,7 @@ Then:
     &= -\frac{1}{2} e^{-x^2} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{(x^2 + 1)^2} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{(x^2 + 1)^2} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -506,7 +638,7 @@ Then:
     &= -\frac{1}{2} \frac{1}{x^2 + 1} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int e^{\cos x} \sin x \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\cos x} \sin x \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -524,7 +656,7 @@ Then:
     &= - e^{\cos x} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{e^x}{e^x + 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{e^x}{e^x + 1} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -541,7 +673,7 @@ Then:
     &= \ln (e^x + 1) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{x^2 + 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{x^2 + 1} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -559,7 +691,7 @@ Then:
     &= \frac{1}{2} \ln (x^2 + 1) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -577,7 +709,7 @@ Then:
     &= - \tan^{-1} (\cos x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \cos(x) \sin(\sin(x)) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \cos(x) \sin(\sin(x)) \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -594,7 +726,7 @@ Then:
     &= - \cos(\sin(x)) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{\ln x}{x} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\ln x}{x} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -611,7 +743,7 @@ Then:
     &= \frac{1}{2} (\ln x)^2 + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{x \ln x} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x \ln x} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -628,7 +760,7 @@ Then:
     &= \ln | \ln x | + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{\sqrt{x + 1}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{\sqrt{x + 1}} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -648,7 +780,7 @@ Then:
     &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{1 + x^4} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{1 + x^4} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -666,7 +798,7 @@ Then:
     &= \frac{1}{2} \tan^{-1}(x^2) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int (x + 1) \sqrt{x - 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int (x + 1) \sqrt{x - 1} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -687,7 +819,7 @@ Then:
     &= \frac{2}{5} (x - 1)^{\frac{5}{2}} + \frac{4}{3} (x - 1)^{\frac{3}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{x^2 + 4x + 8} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x^2 + 4x + 8} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution after completing the square:
 \[
 \begin{align*}
@@ -705,7 +837,7 @@ Then:
     &= \frac{1}{2} \tan^{-1} \left( \frac{x + 2}{2} \right) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{1 + \sqrt{2x}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{2x}} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -727,7 +859,7 @@ Then:
     &= (1 + \sqrt{2x}) - \ln(1 + \sqrt{2x}) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int e^{\sqrt{x}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\sqrt{x}} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -747,7 +879,7 @@ Then:
     &= 2 e^\sqrt{x} ( \sqrt{x} - 1 ) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{1 + \sqrt{x}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{x}} \ dx \]
 Solve the integral.";"Apply \(u\)-substitution:
 \[
 \begin{align*}
@@ -767,127 +899,34 @@ Then:
     &= 2 \left( \sqrt{x} - \ln |\sqrt{x} + 1| \right) + C
 \end{align*}
 \]"
-Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} x^n \];\[ nx^{n-1} \]
-Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} \sqrt{x} \];\[ \frac{1}{2 \sqrt{x}} \]
-Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} e^x \];\[ e^x \]
-Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} a^x \];\[ a^x \ln a \]
-Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} \ln x \];\[ \frac{1}{x} \]
-Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} \log_b x \];\[ \frac{1}{x \ln b} \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sin x \];\[ \cos x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cos x \];\[ - \sin x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \tan x \];\[ \sec^2 x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cot x \];\[ - \csc^2 x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sec x \];\[ \sec x \tan x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \csc x \];\[ - \csc x \cot x \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sin^{-1} x \];\[ \frac{1}{\sqrt{1-x^2}} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cos^{-1} x \];\[ \frac{-1}{\sqrt{1-x^2}} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \tan^{-1} x \];\[ \frac{1}{1+x^2} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cot^{-1} x \];\[ \frac{-1}{1+x^2} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sec^{-1} x \];\[ \frac{1}{|x| \sqrt{x^2-1}} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \csc^{-1} x \];\[ \frac{-1}{|x| \sqrt{x^2-1}} \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \sinh x \];\[ \cosh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \cosh x \];\[ \sinh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \tanh x \];\[ \text{sech}^2 \ x = 1 - \tanh^2 x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \coth x \];\[ - \text{csch}^2 \ x = 1 - \coth^2 x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{sech} \ x \];\[ - \text{sech} \ x \tanh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{csch} \ x \];\[ - \text{csch} \ x \coth x \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \sinh^{-1} x \];\[ \frac{1}{\sqrt{x^2 + 1}} \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \cosh^{-1} x \];\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \tanh^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \coth^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{sech}^{-1} \ x \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{csch}^{-1} \ x \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int x^n \ dx \];\[ \frac{x^{n+1}}{n+1} + C, \quad n \neq -1 \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int \frac{1}{x} \ dx \];\[ \ln |x| + C \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int e^x \ dx \];\[ e^x + C \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int a^x \ dx \];\[ \frac{a^x}{\ln a} + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sin x \ dx \];\[ - \cos x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \cos x \ dx \];\[ \sin x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec^2 x \ dx \];\[ \tan x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc^2 x \ dx \];\[ - \cot x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec x \tan x \ dx \];\[ \sec x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc x \cot x \ dx \];\[ - \csc x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \tan x \ dx \];"\[ - \ln | \cos x | + C \]
-\[ \ln | \sec x | + C \]"
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \cot x \ dx \];"\[ \ln | \sin x | + C \]
-\[ - \ln | \csc x | + C \]"
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec x \ dx \];\[ \ln | \sec x + \tan x | + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc x \ dx \];\[ \ln | \csc x - \cot x | + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \];\[ \sin^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{a^2 + x^2} \ dx \];\[ \tan^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \];\[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int x e^x \ dx \];\[ x e^x - e^x + C \]
-Basic;Math::Taylor Series;Calculus;"\[ e^x \]
-Taylor series expansion";"\[
-\begin{align*}
-    e^x
-    &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus;"\[ \ln(x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \ln(x)
-    &= (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \\
-    &= \sum_{n=1}^{\infty} \frac{(-1)^{n+1}(x-1)^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus;"\[ \ln(1-x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \ln(1-x)
-    &= - x - \frac{x^2}{2} - \frac{x^3}{3} - \frac{x^4}{4} - \cdots \\
-    &= -\sum_{n=1}^{\infty} \frac{x^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus;"\[ \ln(1+x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \ln(1+x)
-    &= x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots \\
-    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \sin(x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \sin(x)
-    &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n+1}}{(2n+1)!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \cos(x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \cos(x)
-    &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \sinh x \]
-Taylor series expansion";"\[
-\begin{align*}
-    \sinh x
-    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \cosh x \]
-Taylor series expansion";"\[
-\begin{align*}
-    \cosh x
-    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
-\end{align*}
-\]"
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;What is the definition of the Laplace transform?;"The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ 1 \} \];\[ \frac{1}{s} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ t^n, \ n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{s^{n+1}} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sin(at) \} \];\[ \frac{a}{s^2 + a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \cos(at) \} \];\[ \frac{s}{s^2 + a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sin(at + b) \} \];\[ \frac{s \sin(b) + a \cos(b)}{s^2 + a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \cos(at + b) \} \];\[ \frac{s \cos(b) - a \sin(b)}{s^2 + a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ t \sin(at) \} \];\[ \frac{2as}{(s^2 + a^2)^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ t \cos(at) \} \];\[ \frac{s^2 - a^2}{(s^2 + a^2)^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sinh(at) \} \];\[ \frac{a}{s^2 - a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \cosh(at) \} \];\[ \frac{s}{s^2 - a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \} \];\[ \frac{1}{s - c} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n, \ n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{(s - c)^{n + 1}} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sin(at) \} \];\[ \frac{a}{(s - c)^2 + a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cos(at) \} \];\[ \frac{s - c}{(s - c)^2 + a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sinh(at) \} \];\[ \frac{a}{(s - c)^2 - a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cosh(at) \} \];\[ \frac{s - c}{(s - c)^2 - a^2} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} f(t) \} \];\[ F(s - c) \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \delta (t - c) \} \];\[ e^{-cs} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ u(t - c) \} \];\[ e^{-cs} \frac{1}{s} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ u(t - c) f(t - c) \} \];\[ e^{-cs} F(s) \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \frac{f(t)}{t} \right\} \];\[ \int_{s}^{\infty} F(u) \ du \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \ du \right\} \];\[ \frac{F(s)}{s} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f'(t) \} \];\[ s F(s) - f(0) \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f''(t) \} \];\[ s^2 F(s) - s f(0) - f'(0) \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the definition of the Laplace transform?;"The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as
 \[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \ dt \]
 where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\)."
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;What is the first translation or shifting property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), then
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the first translation or shifting property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), then
 \[ \mathscr{L}\{e^{at} f(t)\} = F(s-a) \]
 \[ \mathscr{L}^{-1}\{F(s-a)\} = e^{at} f(t) \]
 Example:
@@ -895,7 +934,7 @@ Since
 \[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4}, \]
 we have
 \[ \mathscr{L}\{ e^{3t} \cos 2t \} = \frac{(s - 3)}{(s - 3)^2 + 4} \]"
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;What is the second translation or shifting property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), and
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the second translation or shifting property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), and
 \[ g(t) = \left\{
 \begin{array}{ll}
     f(t - a) & t > a \\
@@ -917,7 +956,7 @@ the Laplace transform of the function
 \right. \]
 is
 \[ \mathscr{L}\{ g \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]"
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;What is the change of scale property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), then
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;What is the change of scale property of the Laplace transform?;"If \(f(t)\) has the transform \(F(s)\), then
 \[ \mathscr{L}\{ f(at) \} = \frac{1}{a} F \left( \frac{s}{a} \right) \]
 \[ \mathscr{L}^{-1} \left\{ \frac{1}{a} F \left( \frac{s}{a} \right) \right\} = f(at) \]
 Example:
@@ -925,33 +964,3 @@ Since
 \[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1}, \]
 we have
 \[ \mathscr{L}\{ \sin 3t \} = \frac{1}{3} \frac{1}{(s/3)^2 + 1} = \frac{3}{s^2 + 9} \]"
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = 1\);\[ \mathscr{L} \{ 1 \} = \frac{1}{s} \]
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = t^n\);\[ \mathscr{L} \{ t^n \} = \frac{n!}{s^{n+1}} \]
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = \sin(at)\);\[ \mathscr{L} \{ \sin(at) \} = \frac{a}{s^2 + a^2} \]
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = \cos(at)\);\[ \mathscr{L} \{ \cos(at) \} = \frac{s}{s^2 + a^2} \]
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = t \sin(at)\);\[ \mathscr{L} \{ t \sin(at) \} = \frac{2as}{(s^2 + a^2)^2} \]
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = t \cos(at)\);\[ \mathscr{L} \{ t \cos(at) \} = \frac{s^2 - a^2}{(s^2 + a^2)^2} \]
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = \sinh(at)\);\[ \mathscr{L} \{ \sinh(at) \} = \frac{a}{s^2 - a^2} \]
-Basic;Math::Calculus::Laplace Transform;Calculus Laplace-Transform;The Laplace transform of \(f(t) = \cosh(at)\);\[ \mathscr{L} \{ \cosh(at) \} = \frac{s}{s^2 - a^2} \]
-Basic;Math::Calculus::Basic;Calculus Theorem;The definition of the extreme value theorem (EVT).;"The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.
-That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).
-In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point."
-Basic;Math::Calculus::Basic;Calculus Theorem;The definition of the Rolle's theorem.;"The Rolle's theorem is a special case of the mean value theorem.
-The Rolle's theorem states that if a function \(f(x)\) is:
-- Continuous on a closed interval \([a,b]\)
-- Differentiable on the open interval \((a,b)\)
-- \(f(a)=f(b)\) (the function has the same value at the endpoints)
-Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).
-Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero)."
-Basic;Math::Calculus::Basic;Calculus Theorem;The definition of the mean value theorem (MVT).;"The mean value theorem is a generalization of Rolle's theorem.
-The mean value theorem states that if a function \(f(x)\) is:
-- Continuous on a closed interval \([a,b]\)
-- Differentiable on the open interval \((a,b)\)
-Then there exists at least one point \(c\) in the open interval \((a,b)\) such that the instantaneous rate of change (the derivative \(f'(c)\)) is equal to the average rate of change over the interval.
-Mathematically, this is expressed as:
-\[ f'(c) = \frac{f(b) - f(a)}{b - a} \]
-The Rolle's theorem can be derived from the mean value theorem: if \(f(a) = f(b)\), then the right side of the mean value theorem equation becomes
-\[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
-which means \(f'(c)=0\)."
-Basic;Math::Calculus::Basic;Calculus Theorem;The definition of the intermediate value theorem (IVT).;"The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).
-Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between."
