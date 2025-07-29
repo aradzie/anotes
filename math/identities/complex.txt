@@ -2,7 +2,7 @@
 
 !deck:Math::Complex::Identities
 
-!tags:Complex
+!tags:Complex Identity
 
 De Moivre's Formula
 ---

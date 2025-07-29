@@ -3,183 +3,66 @@
 #notetype column:1
 #deck column:2
 #tags column:3
-Basic;Math::Complex::Identities;Complex;De Moivre's Formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
+Basic;Math::Complex::Identities;Complex Identity;De Moivre's Formula;"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
 \[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) \]"
-Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;"\[ \sinh x \]
+Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \sinh x \]
 The definition of";\[ \frac{e^{x} - e^{-x}}{2} \]
-Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;"\[ \cosh x \]
+Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \cosh x \]
 The definition of";\[ \frac{e^{x} + e^{-x}}{2} \]
-Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;"\[ \tanh x \]
+Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \tanh x \]
 The definition of";\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
-Basic;Math::Trig::Hyperbolic Functions::Basic;Hyperbolic;"\[ \coth x \]
+Basic;Math::Trig::Hyperbolic Functions::01 Basic;Hyperbolic;"\[ \coth x \]
 The definition of";\[ \frac{\cosh x}{\sinh x} = \frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \]
-Basic;Math::Trig::Hyperbolic Functions::Identities;Hyperbolic;"\[ e^{x} \]
+Basic;Math::Trig::Hyperbolic Functions::02 Identities;Hyperbolic Identity;"\[ e^{x} \]
 Hyperbolic identity";\[ \cosh x + \sinh x \]
-Basic;Math::Trig::Hyperbolic Functions::Identities;Hyperbolic;"\[ e^{-x} \]
+Basic;Math::Trig::Hyperbolic Functions::02 Identities;Hyperbolic Identity;"\[ e^{-x} \]
 Hyperbolic identity";\[ \cosh x - \sinh x \]
-Basic;Math::Trig::Hyperbolic Functions::Identities;Hyperbolic;"\[ 1 \]
+Basic;Math::Trig::Hyperbolic Functions::02 Identities;Hyperbolic Identity;"\[ 1 \]
 Hyperbolic identity";\[ \cosh^2 x - \sinh^2 x \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric;"\[ \sin x \]
+Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \sin x \]
 Express as a hyperbolic function";\[ \frac{e^{ix} - e^{-ix}}{2i} = -i \sinh(ix) \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric;"\[ \sinh x \]
+Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \sinh x \]
 Express as a trigonometric function";\[ \frac{e^{x} - e^{-x}}{2} = -i \sin(ix) \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric;"\[ \cos x \]
+Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \cos x \]
 Express as a hyperbolic function";\[ \frac{e^{ix} + e^{-ix}}{2} = \cosh(ix) \]
-Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric;"\[ \cosh x \]
+Basic;Math::Trig::Hyperbolic to Trigonometric;Hyperbolic Trigonometric Identity;"\[ \cosh x \]
 Express as a trigonometric function";\[ \frac{e^{x} + e^{-x}}{2} = \cos(ix) \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \cos (\alpha - \beta) \];\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \tan (\alpha + \beta) \];\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \tan (\alpha - \beta) \];\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \cot (\alpha + \beta) \];\[ \frac{1 - \tan \alpha \tan \beta}{\tan \alpha + \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::Angle Sum;Trigonometric;\[ \cot (\alpha - \beta) \];\[ \frac{1 + \tan \alpha \tan \beta}{\tan \alpha - \tan \beta} \]
-Basic;Math::Trig::Trigonometric Functions::Half Angle;Trigonometric;\[ \sin \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
-Basic;Math::Trig::Trigonometric Functions::Half Angle;Trigonometric;\[ \cos \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
-Basic;Math::Trig::Trigonometric Functions::Half Angle;Trigonometric;\[ \tan \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cos (\alpha - \beta) \];\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \tan (\alpha + \beta) \];\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \tan (\alpha - \beta) \];\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cot (\alpha + \beta) \];\[ \frac{1 - \tan \alpha \tan \beta}{\tan \alpha + \tan \beta} \]
+Basic;Math::Trig::Trigonometric Functions::01 Angle Sum;Trigonometric Identity;\[ \cot (\alpha - \beta) \];\[ \frac{1 + \tan \alpha \tan \beta}{\tan \alpha - \tan \beta} \]
+Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \sin \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
+Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \cos \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \tan \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
 \[ \frac{\sin \theta}{1 + \cos \theta} \]
 \[ \frac{1 - \cos \theta}{\sin \theta} \]"
-Basic;Math::Trig::Trigonometric Functions::Half Angle;Trigonometric;\[ \cot \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 + \cos \theta}{1 - \cos \theta} } \]
+Basic;Math::Trig::Trigonometric Functions::02 Half Angle;Trigonometric Identity;\[ \cot \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 + \cos \theta}{1 - \cos \theta} } \]
 \[ \frac{\sin \theta}{1 - \cos \theta} \]
 \[ \frac{1 + \cos \theta}{\sin \theta} \]"
-Basic;Math::Trig::Trigonometric Functions::Half Angle (Alt);Trigonometric;\[ \sin^2 \theta \];\[ \frac{1 - \cos 2 \theta}{2} \]
-Basic;Math::Trig::Trigonometric Functions::Half Angle (Alt);Trigonometric;\[ \cos^2 \theta \];\[ \frac{1 + \cos 2 \theta}{2} \]
-Basic;Math::Trig::Trigonometric Functions::Half Angle (Alt);Trigonometric;\[ \tan^2 \theta \];\[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
-Basic;Math::Trig::Trigonometric Functions::Half Angle (Alt);Trigonometric;\[ \cot^2 \theta \];\[ \frac{1 + \cos 2 \theta}{1 - \cos 2 \theta} \]
-Basic;Math::Trig::Trigonometric Functions::Double Angle;Trigonometric;\[ \sin 2 \theta \];\[ 2 \sin \theta \cos \theta \]
-Basic;Math::Trig::Trigonometric Functions::Double Angle;Trigonometric;\[ \cos 2 \theta \];"\[ \cos^2 \theta - \sin^2 \theta \]
+Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \sin^2 \theta \];\[ \frac{1 - \cos 2 \theta}{2} \]
+Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \cos^2 \theta \];\[ \frac{1 + \cos 2 \theta}{2} \]
+Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \tan^2 \theta \];\[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
+Basic;Math::Trig::Trigonometric Functions::03 Half Angle (Alt);Trigonometric Identity;\[ \cot^2 \theta \];\[ \frac{1 + \cos 2 \theta}{1 - \cos 2 \theta} \]
+Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \sin 2 \theta \];\[ 2 \sin \theta \cos \theta \]
+Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \cos 2 \theta \];"\[ \cos^2 \theta - \sin^2 \theta \]
 \[ 1 - 2 \sin^2 \theta \]
 \[ 2 \cos^2 \theta - 1 \]"
-Basic;Math::Trig::Trigonometric Functions::Double Angle;Trigonometric;\[ \tan 2 \theta \];"\[ \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
+Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \tan 2 \theta \];"\[ \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
 \[ \frac{2}{\cot \theta - \tan \theta} \]"
-Basic;Math::Trig::Trigonometric Functions::Double Angle;Trigonometric;\[ \cot 2 \theta \];"\[ \frac{\cot^2 \theta - 1}{2 \cot \theta} \]
+Basic;Math::Trig::Trigonometric Functions::04 Double Angle;Trigonometric Identity;\[ \cot 2 \theta \];"\[ \frac{\cot^2 \theta - 1}{2 \cot \theta} \]
 \[ \frac{\cot \theta - \tan \theta}{2} \]"
-Basic;Math::Trig::Trigonometric Functions::Product to Sum;Trigonometric;\[ \sin \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::Product to Sum;Trigonometric;\[ \cos \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::Product to Sum;Trigonometric;\[ \sin \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::Product to Sum;Trigonometric;\[ \cos \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
-Basic;Math::Trig::Trigonometric Functions::Sum to Product;Trigonometric;\[ \sin \alpha + \sin \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trig::Trigonometric Functions::Sum to Product;Trigonometric;\[ \sin \alpha - \sin \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trig::Trigonometric Functions::Sum to Product;Trigonometric;\[ \cos \alpha + \cos \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trig::Trigonometric Functions::Sum to Product;Trigonometric;\[ \cos \alpha - \cos \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Derivatives::01 Basic;Calculus;\[ \frac{d}{dx} x^n \];\[ nx^{n-1} \]
-Basic;Math::Derivatives::01 Basic;Calculus;\[ \frac{d}{dx} \sqrt{x} \];\[ \frac{1}{2 \sqrt{x}} \]
-Basic;Math::Derivatives::01 Basic;Calculus;\[ \frac{d}{dx} e^x \];\[ e^x \]
-Basic;Math::Derivatives::01 Basic;Calculus;\[ \frac{d}{dx} a^x \];\[ a^x \ln a \]
-Basic;Math::Derivatives::01 Basic;Calculus;\[ \frac{d}{dx} \ln x \];\[ \frac{1}{x} \]
-Basic;Math::Derivatives::01 Basic;Calculus;\[ \frac{d}{dx} \log_b x \];\[ \frac{1}{x \ln b} \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \sin x \];\[ \cos x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \cos x \];\[ - \sin x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \tan x \];\[ \sec^2 x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \cot x \];\[ - \csc^2 x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \sec x \];\[ \sec x \tan x \]
-Basic;Math::Derivatives::02 Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \csc x \];\[ - \csc x \cot x \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \sin^{-1} x \];\[ \frac{1}{\sqrt{1-x^2}} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \cos^{-1} x \];\[ \frac{-1}{\sqrt{1-x^2}} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \tan^{-1} x \];\[ \frac{1}{1+x^2} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \cot^{-1} x \];\[ \frac{-1}{1+x^2} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \sec^{-1} x \];\[ \frac{1}{|x| \sqrt{x^2-1}} \]
-Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Trigonometric;\[ \frac{d}{dx} \csc^{-1} x \];\[ \frac{-1}{|x| \sqrt{x^2-1}} \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \sinh x \];\[ \cosh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \cosh x \];\[ \sinh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \tanh x \];\[ \text{sech}^2 \ x = 1 - \tanh^2 x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \coth x \];\[ - \text{csch}^2 \ x = 1 - \coth^2 x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{sech} \ x \];\[ - \text{sech} \ x \tanh x \]
-Basic;Math::Derivatives::04 Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{csch} \ x \];\[ - \text{csch} \ x \coth x \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \sinh^{-1} x \];\[ \frac{1}{\sqrt{x^2 + 1}} \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \cosh^{-1} x \];\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \tanh^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \coth^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{sech}^{-1} \ x \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
-Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Hyperbolic;\[ \frac{d}{dx} \text{csch}^{-1} \ x \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int x^n \ dx \];\[ \frac{x^{n+1}}{n+1} + C, \quad n \neq -1 \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int \frac{1}{x} \ dx \];\[ \ln |x| + C \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int e^x \ dx \];\[ e^x + C \]
-Basic;Math::Integrals::01 Basic;Calculus;\[ \int a^x \ dx \];\[ \frac{a^x}{\ln a} + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sin x \ dx \];\[ - \cos x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \cos x \ dx \];\[ \sin x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec^2 x \ dx \];\[ \tan x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc^2 x \ dx \];\[ - \cot x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec x \tan x \ dx \];\[ \sec x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc x \cot x \ dx \];\[ - \csc x + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \tan x \ dx \];"\[ - \ln | \cos x | + C \]
-\[ \ln | \sec x | + C \]"
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \cot x \ dx \];"\[ \ln | \sin x | + C \]
-\[ - \ln | \csc x | + C \]"
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec x \ dx \];\[ \ln | \sec x + \tan x | + C \]
-Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc x \ dx \];\[ \ln | \csc x - \cot x | + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \];\[ \sin^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{a^2 + x^2} \ dx \];\[ \tan^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \];\[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
-Basic;Math::Integrals::04 Extended;Calculus;\[ \int x e^x \ dx \];\[ x e^x - e^x + C \]
-Basic;Math::Taylor Series;Calculus;"\[ e^x \]
-Taylor series expansion";"\[
-\begin{align*}
-    e^x
-    &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus;"\[ \ln(x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \ln(x)
-    &= (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \\
-    &= \sum_{n=1}^{\infty} \frac{(-1)^{n+1}(x-1)^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus;"\[ \ln(1-x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \ln(1-x)
-    &= - x - \frac{x^2}{2} - \frac{x^3}{3} - \frac{x^4}{4} - \cdots \\
-    &= -\sum_{n=1}^{\infty} \frac{x^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus;"\[ \ln(1+x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \ln(1+x)
-    &= x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots \\
-    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \sin(x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \sin(x)
-    &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n+1}}{(2n+1)!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \cos(x) \]
-Taylor series expansion";"\[
-\begin{align*}
-    \cos(x)
-    &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \sinh x \]
-Taylor series expansion";"\[
-\begin{align*}
-    \sinh x
-    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
-\end{align*}
-\]"
-Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \cosh x \]
-Taylor series expansion";"\[
-\begin{align*}
-    \cosh x
-    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
-\end{align*}
-\]"
+Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \sin \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
+Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \cos \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
+Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \sin \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
+Basic;Math::Trig::Trigonometric Functions::05 Product to Sum;Trigonometric Identity;\[ \cos \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
+Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \sin \alpha + \sin \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \sin \alpha - \sin \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \cos \alpha + \cos \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trig::Trigonometric Functions::06 Sum to Product;Trigonometric Identity;\[ \cos \alpha - \cos \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
 Basic;Math::Problems::Integrals::Integration by Parts;Calculus Problem;"\[ \int \ln x \ dx \]
 Solve the integral.";"Integrate by parts:
 \[ u \ dv = uv - \int v \ du \]
@@ -298,25 +181,6 @@ Basic;Math::Problems::Lambert W;Lambert-W Problem;\[ W(e^x) = (W(e))^x \];"\[
     W(e^x) &= 1 \\
        e^x &= 1 e^1 \\
          x &= 1
-\end{align*}
-\]"
-Basic;Math::Problems::Integrals::Trigonometric*;Calculus Problem;"\[ \int \sin^2(x) \cos^2(x) \ dx \]
-Solve the integral.";"Apply trigonometric identity:
-\[ \sin(2x) = 2 \sin(x) \cos(x) \]
-and
-\[ \sin^2(2x) = \frac{1 - \cos(4x)}{2} \]
-Then:
-\[
-\begin{align*}
-    \int \sin^2(x) \cos^2(x) \ dx
-    &= \int \sin(x) \sin(x)  \cos(x) \cos(x) \ dx \\
-    &= \int \frac{1}{4} \left( 2 \sin(x) \cos(x) \right) \left( 2 \sin(x) \cos(x) \right) \ dx \\
-    &= \int \frac{1}{4} \sin(2x) \sin(2x) \ dx \\
-    &= \int \frac{1}{4} \sin^2(2x) \ dx \\
-    &= \int \frac{1}{8} \left( 1 - \cos(4x) \right) \ dx \\
-    &= \frac{1}{8} \left( \int dx - \int \cos(4x) \ dx \right) \\
-    &= \frac{1}{8} \left( x - \frac{1}{4} \sin(4x) \right) + C \\
-    &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
 Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \ dx \]
@@ -488,103 +352,35 @@ Then:
     &= \frac{1}{3} \sin^3(x) - \frac{1}{5} \sin^5(x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{x}{\sqrt{x + 1}} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
-\[
-\begin{align*}
-    x &= u - 1 \\
-    u &= x + 1 \\
-    du &= dx \\
-\end{align*}
-\]
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \sin^2(x) \cos^2(x) \ dx \]
+Solve the integral.";"Apply trigonometric identity:
+\[ \sin(2x) = 2 \sin(x) \cos(x) \]
+and
+\[ \sin^2(2x) = \frac{1 - \cos(4x)}{2} \]
 Then:
 \[
 \begin{align*}
-    \int \frac{x}{\sqrt{x + 1}} \ dx
-    &= \int \frac{u - 1}{\sqrt{u}} \ du \\
-    &= \int \frac{u}{\sqrt{u}} \ du - \int \frac{1}{\sqrt{u}} \ du \\
-    &= \int u^{1/2} \ du - \int u^{-1/2} \ du \\
-    &= \frac{2}{3} u^{\frac{3}{2}} - 2u^{\frac{1}{2}} + C \\
-    &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C \\
+    \int \sin^2(x) \cos^2(x) \ dx
+    &= \int \sin(x) \sin(x) \cos(x) \cos(x) \ dx \\
+    &= \int \frac{1}{4} \left( 2 \sin(x) \cos(x) \right) \left( 2 \sin(x) \cos(x) \right) \ dx \\
+    &= \int \frac{1}{4} \sin(2x) \sin(2x) \ dx \\
+    &= \int \frac{1}{4} \sin^2(2x) \ dx \\
+    &= \int \frac{1}{8} \left( 1 - \cos(4x) \right) \ dx \\
+    &= \frac{1}{8} \left( \int dx - \int \cos(4x) \ dx \right) \\
+    &= \frac{1}{8} \left( x - \frac{1}{4} \sin(4x) \right) + C \\
+    &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{x}{1 + x^4} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
-\[
+Basic;Math::Problems::Integrals::Trigonometric;Calculus Problem;"\[ \int \frac{1}{1 + \sin(x)} \ dx \]
+Solve the integral.";"\[
 \begin{align*}
-    u &= x^2 \\
-    du &= 2x \ dx \\
-    \frac{1}{2} du &= x \ dx \\
-\end{align*}
-\]
-Then:
-\[
-\begin{align*}
-    \int \frac{x}{1 + x^4} \ dx
-    &= \frac{1}{2} \int \frac{1}{1 + u^2} \ du \\
-    &= \frac{1}{2} \tan^{-1}(u) + C \\
-    &= \frac{1}{2} \tan^{-1}(x^2) + C
-\end{align*}
-\]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int (x + 1) \sqrt{x - 1} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
-\[
-\begin{align*}
-    x &= u + 1 \\
-    u &= x - 1 \\
-    du &= dx
-\end{align*}
-\]
-Then:
-\[
-\begin{align*}
-    \int (x + 1) \sqrt{x - 1} \ dx
-    &= \int (u + 2) \sqrt{u} \ du \\
-    &= \int (u \sqrt{u} + 2 \sqrt{u}) \ du \\
-    &= \int (u^{\frac{3}{2}} + 2 u^{\frac{1}{2}}) \ du \\
-    &= \int u^{\frac{3}{2}} \ du + 2 \int u^{\frac{1}{2}} \ du \\
-    &= \frac{2}{5} u^{\frac{5}{2}} + \frac{4}{3} u^{\frac{3}{2}} + C \\
-    &= \frac{2}{5} (x - 1)^{\frac{5}{2}} + \frac{4}{3} (x - 1)^{\frac{3}{2}} + C
-\end{align*}
-\]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{1}{x^2 + 4x + 8} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution after completing the square:
-\[
-\begin{align*}
-    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\
-    u &= x + 2 \\
-    du &= dx
-\end{align*}
-\]
-Then:
-\[
-\begin{align*}
-    \int \frac{1}{x^2 + 4x + 8} \ dx
-    &= \int \frac{1}{u^2 + 2^2} \ du \\
-    &= \frac{1}{2} \tan^{-1} \left( \frac{u}{2} \right) + C \\
-    &= \frac{1}{2} \tan^{-1} \left( \frac{x + 2}{2} \right) + C
-\end{align*}
-\]"
-Basic;Math::Problems::Integrals::U-Substitution*;Calculus Problem;"\[ \int \frac{1}{1 + \sqrt{2x}} \ dx \]
-Solve the integral.";"Apply \(u\)-substitution:
-\[
-\begin{align*}
-    u &= 1 + \sqrt{2x} \\
-      &= 1 + (2x)^\frac{1}{2} \\
-    du &= (2x)^{-\frac{1}{2}} \ dx \\
-    dx &= (2x)^\frac{1}{2} \ du \\
-\end{align*}
-\]
-Then:
-\[
-\begin{align*}
-    \int \frac{1}{1 + \sqrt{2x}} \ dx
-    &= \int \frac{1}{u} (2x)^\frac{1}{2} \ du, \quad (2x)^\frac{1}{2} = u - 1 \\
-    &= \int \frac{1}{u} (u - 1) \ du \\
-    &= \int \frac{u}{u} - \frac{1}{u} \ du \\
-    &= \int du - \int \frac{1}{u} \ du \\
-    &= u - \ln |u| + C \\
-    &= (1 + \sqrt{2x}) - \ln(1 + \sqrt{2x}) + C
+    \int \frac{1}{1 + \sin(x)} \ dx
+    &= \int \left( \frac{1}{1 + \sin(x)} \right) \left( \frac{1 - \sin(x)}{1 - \sin(x)} \right) \ dx \\
+    &= \int \frac{1 - \sin(x)}{1 - \sin^2(x)} \ dx \\
+    &= \int \frac{1 - \sin(x)}{\cos^2(x)} \ dx \\
+    &= \int \frac{1}{\cos^2(x)} - \frac{\sin(x)}{\cos^2(x)} \ dx \\
+    &= \int \sec^2(x) - \tan(x) \sec(x) \ dx \\
+    &= \tan(x) - \sec(x) + C
 \end{align*}
 \]"
 Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
@@ -726,5 +522,295 @@ Then:
     &= \int \sin(u) \ du \\
     &= - \cos(u) + C \\
     &= - \cos(\sin(x)) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{\ln x}{x} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= \ln x \\
+    du &= \frac{1}{x} \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{\ln x}{x} \ dx
+    &= \int u \ du \\
+    &= \frac{1}{2} u^2 + C \\
+    &= \frac{1}{2} (\ln x)^2 + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{x \ln x} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= \ln x \\
+    du &= \frac{1}{x} \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{1}{x \ln x} \ dx
+    &= \int \frac{1}{u} \ du \\
+    &= \ln |u| + C \\
+    &= \ln | \ln x | + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{\sqrt{x + 1}} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    x &= u - 1 \\
+    u &= x + 1 \\
+    du &= dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{x}{\sqrt{x + 1}} \ dx
+    &= \int \frac{u - 1}{\sqrt{u}} \ du \\
+    &= \int \frac{u}{\sqrt{u}} \ du - \int \frac{1}{\sqrt{u}} \ du \\
+    &= \int u^{1/2} \ du - \int u^{-1/2} \ du \\
+    &= \frac{2}{3} u^{\frac{3}{2}} - 2u^{\frac{1}{2}} + C \\
+    &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{x}{1 + x^4} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= x^2 \\
+    du &= 2x \ dx \\
+    \frac{1}{2} du &= x \ dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{x}{1 + x^4} \ dx
+    &= \frac{1}{2} \int \frac{1}{1 + u^2} \ du \\
+    &= \frac{1}{2} \tan^{-1}(u) + C \\
+    &= \frac{1}{2} \tan^{-1}(x^2) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int (x + 1) \sqrt{x - 1} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    x &= u + 1 \\
+    u &= x - 1 \\
+    du &= dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int (x + 1) \sqrt{x - 1} \ dx
+    &= \int (u + 2) \sqrt{u} \ du \\
+    &= \int (u \sqrt{u} + 2 \sqrt{u}) \ du \\
+    &= \int (u^{\frac{3}{2}} + 2 u^{\frac{1}{2}}) \ du \\
+    &= \int u^{\frac{3}{2}} \ du + 2 \int u^{\frac{1}{2}} \ du \\
+    &= \frac{2}{5} u^{\frac{5}{2}} + \frac{4}{3} u^{\frac{3}{2}} + C \\
+    &= \frac{2}{5} (x - 1)^{\frac{5}{2}} + \frac{4}{3} (x - 1)^{\frac{3}{2}} + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{x^2 + 4x + 8} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution after completing the square:
+\[
+\begin{align*}
+    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\
+    u &= x + 2 \\
+    du &= dx
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{1}{x^2 + 4x + 8} \ dx
+    &= \int \frac{1}{u^2 + 2^2} \ du \\
+    &= \frac{1}{2} \tan^{-1} \left( \frac{u}{2} \right) + C \\
+    &= \frac{1}{2} \tan^{-1} \left( \frac{x + 2}{2} \right) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{1 + \sqrt{2x}} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= 1 + \sqrt{2x} \\
+      &= 1 + (2x)^\frac{1}{2} \\
+    du &= (2x)^{-\frac{1}{2}} \ dx \\
+    dx &= (2x)^\frac{1}{2} \ du \\
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{1}{1 + \sqrt{2x}} \ dx
+    &= \int \frac{1}{u} (2x)^\frac{1}{2} \ du, \quad (2x)^\frac{1}{2} = u - 1 \\
+    &= \int \frac{1}{u} (u - 1) \ du \\
+    &= \int \frac{u}{u} - \frac{1}{u} \ du \\
+    &= \int du - \int \frac{1}{u} \ du \\
+    &= u - \ln |u| + C \\
+    &= (1 + \sqrt{2x}) - \ln(1 + \sqrt{2x}) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int e^{\sqrt{x}} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= \sqrt{x} \\
+    du &= \frac{1}{2 \sqrt{x}} dx \\
+       &= \frac{1}{2 u} \ dx \\
+    dx &= 2u \ du
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int e^{\sqrt{x}} \ dx
+    &= 2 \int u e^u \ du \\
+    &= 2 u e^u - 2 e^u + C \\
+    &= 2 e^u (u - 1) + C \\
+    &= 2 e^\sqrt{x} ( \sqrt{x} - 1 ) + C
+\end{align*}
+\]"
+Basic;Math::Problems::Integrals::U-Substitution;Calculus Problem;"\[ \int \frac{1}{1 + \sqrt{x}} \ dx \]
+Solve the integral.";"Apply \(u\)-substitution:
+\[
+\begin{align*}
+    u &= \sqrt{x} \\
+    du &= \frac{1}{2 \sqrt{x}} \ dx \\& = \frac{1}{2 u} \ dx \\
+    dx &= 2u \ du
+\end{align*}
+\]
+Then:
+\[
+\begin{align*}
+    \int \frac{1}{1 + \sqrt{x}} \ dx
+    &= 2 \int \frac{u}{u + 1} \ du \\
+    &= 2 \int \frac{u + 1 - 1}{u + 1} \ du \\
+    &= 2 \int 1 - \frac{1}{u + 1} \ du \\
+    &= 2 \left( u - \ln |u + 1| \right) + C \\
+    &= 2 \left( \sqrt{x} - \ln |\sqrt{x} + 1| \right) + C
+\end{align*}
+\]"
+Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} x^n \];\[ nx^{n-1} \]
+Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} \sqrt{x} \];\[ \frac{1}{2 \sqrt{x}} \]
+Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} e^x \];\[ e^x \]
+Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} a^x \];\[ a^x \ln a \]
+Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} \ln x \];\[ \frac{1}{x} \]
+Basic;Math::Derivatives::01 Basic;Calculus Derivative;\[ \frac{d}{dx} \log_b x \];\[ \frac{1}{x \ln b} \]
+Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sin x \];\[ \cos x \]
+Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cos x \];\[ - \sin x \]
+Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \tan x \];\[ \sec^2 x \]
+Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cot x \];\[ - \csc^2 x \]
+Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sec x \];\[ \sec x \tan x \]
+Basic;Math::Derivatives::02 Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \csc x \];\[ - \csc x \cot x \]
+Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sin^{-1} x \];\[ \frac{1}{\sqrt{1-x^2}} \]
+Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cos^{-1} x \];\[ \frac{-1}{\sqrt{1-x^2}} \]
+Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \tan^{-1} x \];\[ \frac{1}{1+x^2} \]
+Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \cot^{-1} x \];\[ \frac{-1}{1+x^2} \]
+Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \sec^{-1} x \];\[ \frac{1}{|x| \sqrt{x^2-1}} \]
+Basic;Math::Derivatives::03 Inverse Trigonometric;Calculus Derivative Trigonometric;\[ \frac{d}{dx} \csc^{-1} x \];\[ \frac{-1}{|x| \sqrt{x^2-1}} \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \sinh x \];\[ \cosh x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \cosh x \];\[ \sinh x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \tanh x \];\[ \text{sech}^2 \ x = 1 - \tanh^2 x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \coth x \];\[ - \text{csch}^2 \ x = 1 - \coth^2 x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{sech} \ x \];\[ - \text{sech} \ x \tanh x \]
+Basic;Math::Derivatives::04 Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{csch} \ x \];\[ - \text{csch} \ x \coth x \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \sinh^{-1} x \];\[ \frac{1}{\sqrt{x^2 + 1}} \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \cosh^{-1} x \];\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \tanh^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \coth^{-1} x \];\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{sech}^{-1} \ x \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
+Basic;Math::Derivatives::05 Inverse Hyperbolic;Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \text{csch}^{-1} \ x \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
+Basic;Math::Integrals::01 Basic;Calculus;\[ \int x^n \ dx \];\[ \frac{x^{n+1}}{n+1} + C, \quad n \neq -1 \]
+Basic;Math::Integrals::01 Basic;Calculus;\[ \int \frac{1}{x} \ dx \];\[ \ln |x| + C \]
+Basic;Math::Integrals::01 Basic;Calculus;\[ \int e^x \ dx \];\[ e^x + C \]
+Basic;Math::Integrals::01 Basic;Calculus;\[ \int a^x \ dx \];\[ \frac{a^x}{\ln a} + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sin x \ dx \];\[ - \cos x + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \cos x \ dx \];\[ \sin x + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec^2 x \ dx \];\[ \tan x + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc^2 x \ dx \];\[ - \cot x + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec x \tan x \ dx \];\[ \sec x + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc x \cot x \ dx \];\[ - \csc x + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \tan x \ dx \];"\[ - \ln | \cos x | + C \]
+\[ \ln | \sec x | + C \]"
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \cot x \ dx \];"\[ \ln | \sin x | + C \]
+\[ - \ln | \csc x | + C \]"
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \sec x \ dx \];\[ \ln | \sec x + \tan x | + C \]
+Basic;Math::Integrals::02 Trigonometric;Calculus Trigonometric;\[ \int \csc x \ dx \];\[ \ln | \csc x - \cot x | + C \]
+Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{\sqrt{a^2 - x^2}} \ dx \];\[ \sin^{-1} \frac{x}{a} + C \]
+Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{a^2 + x^2} \ dx \];\[ \tan^{-1} \frac{x}{a} + C \]
+Basic;Math::Integrals::03 Inverse Trigonometric;Calculus Trigonometric;\[ \int \frac{1}{x \sqrt{x^2 - a^2}} \ dx \];\[ \frac{1}{a} \sec^{-1} \frac{x}{a} + C \]
+Basic;Math::Integrals::04 Extended;Calculus;\[ \int \ln x \ dx \];\[ x \ln x - x + C \]
+Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{a^2 - x^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x+a}{x-a} \right| + C \]
+Basic;Math::Integrals::04 Extended;Calculus;\[ \int \frac{1}{x^2 - a^2} \ dx \];\[ \frac{1}{2a} \ln \left| \frac{x-a}{x+a} \right| + C \]
+Basic;Math::Integrals::04 Extended;Calculus;\[ \int x e^x \ dx \];\[ x e^x - e^x + C \]
+Basic;Math::Taylor Series;Calculus;"\[ e^x \]
+Taylor series expansion";"\[
+\begin{align*}
+    e^x
+    &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus;"\[ \ln(x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \ln(x)
+    &= (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \\
+    &= \sum_{n=1}^{\infty} \frac{(-1)^{n+1}(x-1)^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus;"\[ \ln(1-x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \ln(1-x)
+    &= - x - \frac{x^2}{2} - \frac{x^3}{3} - \frac{x^4}{4} - \cdots \\
+    &= -\sum_{n=1}^{\infty} \frac{x^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus;"\[ \ln(1+x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \ln(1+x)
+    &= x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots \\
+    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \sin(x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \sin(x)
+    &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n+1}}{(2n+1)!}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus Trigonometric;"\[ \cos(x) \]
+Taylor series expansion";"\[
+\begin{align*}
+    \cos(x)
+    &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \sinh x \]
+Taylor series expansion";"\[
+\begin{align*}
+    \sinh x
+    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
+\end{align*}
+\]"
+Basic;Math::Taylor Series;Calculus Hyperbolic;"\[ \cosh x \]
+Taylor series expansion";"\[
+\begin{align*}
+    \cosh x
+    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
 \end{align*}
 \]"

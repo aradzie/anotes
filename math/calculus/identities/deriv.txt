@@ -2,7 +2,7 @@
 
 !deck:Math::Derivatives::01 Basic
 
-!tags:Calculus
+!tags:Calculus Derivative
 
 \[ \frac{d}{dx} x^n \]
 ---
@@ -36,7 +36,7 @@
 
 !deck:Math::Derivatives::02 Trigonometric
 
-!tags:Calculus Trigonometric
+!tags:Calculus Derivative Trigonometric
 
 \[ \frac{d}{dx} \sin x \]
 ---
@@ -70,6 +70,8 @@
 
 !deck:Math::Derivatives::03 Inverse Trigonometric
 
+!tags:Calculus Derivative Trigonometric
+
 \[ \frac{d}{dx} \sin^{-1} x \]
 ---
 \[ \frac{1}{\sqrt{1-x^2}} \]
@@ -102,7 +104,7 @@
 
 !deck:Math::Derivatives::04 Hyperbolic
 
-!tags:Calculus Hyperbolic
+!tags:Calculus Derivative Hyperbolic
 
 \[ \frac{d}{dx} \sinh x \]
 ---
@@ -135,6 +137,8 @@
 ===
 
 !deck:Math::Derivatives::05 Inverse Hyperbolic
+
+!tags:Calculus Derivative Hyperbolic
 
 \[ \frac{d}{dx} \sinh^{-1} x \]
 ---

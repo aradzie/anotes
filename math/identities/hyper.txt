@@ -1,6 +1,6 @@
 !type:Basic
 
-!deck:Math::Trig::Hyperbolic Functions::Basic
+!deck:Math::Trig::Hyperbolic Functions::01 Basic
 
 !tags:Hyperbolic
 
@@ -28,9 +28,9 @@ The definition of
 \[ \frac{\cosh x}{\sinh x} = \frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \]
 ===
 
-!deck:Math::Trig::Hyperbolic Functions::Identities
+!deck:Math::Trig::Hyperbolic Functions::02 Identities
 
-!tags:Hyperbolic
+!tags:Hyperbolic Identity
 
 \[ e^{x} \]
 Hyperbolic identity
@@ -52,7 +52,7 @@ Hyperbolic identity
 
 !deck:Math::Trig::Hyperbolic to Trigonometric
 
-!tags:Hyperbolic Trigonometric
+!tags:Hyperbolic Trigonometric Identity
 
 \[ \sin x \]
 Express as a hyperbolic function

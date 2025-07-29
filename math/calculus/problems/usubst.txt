@@ -201,6 +201,31 @@ Then:
 \]
 ===
 
+\[ \int \frac{\ln x}{x} \ dx \]
+Solve the integral.
+---
+
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+    u &= \ln x \\
+    du &= \frac{1}{x} \ dx
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int \frac{\ln x}{x} \ dx
+    &= \int u \ du \\
+    &= \frac{1}{2} u^2 + C \\
+    &= \frac{1}{2} (\ln x)^2 + C
+\end{align*}
+\]
+===
+
 \[ \int \frac{1}{x \ln x} \ dx \]
 Solve the integral.
 ---
@@ -220,8 +245,8 @@ Then:
 \begin{align*}
     \int \frac{1}{x \ln x} \ dx
     &= \int \frac{1}{u} \ du \\
-    &= \ln (u) + C \\
-    &= \ln (|\ln (|x|)|) + C
+    &= \ln |u| + C \\
+    &= \ln | \ln x | + C
 \end{align*}
 \]
 ===
@@ -235,7 +260,7 @@ Apply \(u\)-substitution:
 \begin{align*}
     x &= u - 1 \\
     u &= x + 1 \\
-    du &= dx \\
+    du &= dx
 \end{align*}
 \]
 
@@ -248,7 +273,7 @@ Then:
     &= \int \frac{u}{\sqrt{u}} \ du - \int \frac{1}{\sqrt{u}} \ du \\
     &= \int u^{1/2} \ du - \int u^{-1/2} \ du \\
     &= \frac{2}{3} u^{\frac{3}{2}} - 2u^{\frac{1}{2}} + C \\
-    &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C \\
+    &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C
 \end{align*}
 \]
 ===
@@ -262,7 +287,7 @@ Apply \(u\)-substitution:
 \begin{align*}
     u &= x^2 \\
     du &= 2x \ dx \\
-    \frac{1}{2} du &= x \ dx \\
+    \frac{1}{2} du &= x \ dx
 \end{align*}
 \]
 
@@ -357,6 +382,60 @@ Then:
     &= \int du - \int \frac{1}{u} \ du \\
     &= u - \ln |u| + C \\
     &= (1 + \sqrt{2x}) - \ln(1 + \sqrt{2x}) + C
+\end{align*}
+\]
+===
+
+\[ \int e^{\sqrt{x}} \ dx \]
+Solve the integral.
+---
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+    u &= \sqrt{x} \\
+    du &= \frac{1}{2 \sqrt{x}} dx \\
+       &= \frac{1}{2 u} \ dx \\
+    dx &= 2u \ du
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int e^{\sqrt{x}} \ dx
+    &= 2 \int u e^u \ du \\
+    &= 2 u e^u - 2 e^u + C \\
+    &= 2 e^u (u - 1) + C \\
+    &= 2 e^\sqrt{x} ( \sqrt{x} - 1 ) + C
+\end{align*}
+\]
+===
+
+\[ \int \frac{1}{1 + \sqrt{x}} \ dx \]
+Solve the integral.
+---
+Apply \(u\)-substitution:
+
+\[
+\begin{align*}
+    u &= \sqrt{x} \\
+    du &= \frac{1}{2 \sqrt{x}} \ dx \\& = \frac{1}{2 u} \ dx \\
+    dx &= 2u \ du
+\end{align*}
+\]
+
+Then:
+
+\[
+\begin{align*}
+    \int \frac{1}{1 + \sqrt{x}} \ dx
+    &= 2 \int \frac{u}{u + 1} \ du \\
+    &= 2 \int \frac{u + 1 - 1}{u + 1} \ du \\
+    &= 2 \int 1 - \frac{1}{u + 1} \ du \\
+    &= 2 \left( u - \ln |u + 1| \right) + C \\
+    &= 2 \left( \sqrt{x} - \ln |\sqrt{x} + 1| \right) + C
 \end{align*}
 \]
 ===
