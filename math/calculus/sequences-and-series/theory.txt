@@ -2,7 +2,7 @@
 
 !deck:Math::Calculus::Sequences and Series
 
-!tags:Math Calculus Sequences-and-Series
+!tags:Math Calculus Sequences-and-Series Theory
 
 !template:Definition
 
@@ -304,5 +304,5 @@ Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series sati
 
 - The series converges for all real numbers \(x\).
 
-- There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if  \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.
+- There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.
 ===

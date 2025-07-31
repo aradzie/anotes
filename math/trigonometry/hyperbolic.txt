@@ -2,7 +2,7 @@
 
 !deck:Math::Trigonometry
 
-!tags:Math Trigonometric Hyperbolic
+!tags:Math Trigonometric Hyperbolic Identity
 
 \[ \sinh x \]
 The definition of
@@ -22,8 +22,6 @@ The definition of
 \[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
 ===
 
-!tags:Math Trigonometric Hyperbolic Identity
-
 \[ e^{x} = \ldots \]
 Hyperbolic identity
 ---
@@ -41,8 +39,6 @@ Hyperbolic identity
 ---
 \[ \cosh^2 x - \sinh^2 x \]
 ===
-
-!tags:Math Trigonometric Hyperbolic Identity
 
 \[ \sin x = \ldots \]
 Express as a hyperbolic function

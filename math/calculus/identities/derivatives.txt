@@ -2,7 +2,7 @@
 
 !deck:Math::Calculus::Derivatives
 
-!tags:Math Calculus Derivative
+!tags:Math Calculus Derivative Identity
 
 \[ \frac{d}{dx} \left( f(x) g(x) \right) \]
 ---
@@ -44,7 +44,7 @@
 \[ \frac{1}{x \ln b} \]
 ===
 
-!tags:Math Calculus Derivative Trigonometric
+!tags:Math Calculus Derivative Trigonometric Identity
 
 \[ \frac{d}{dx} ( \sin x ) \]
 ---
@@ -76,8 +76,6 @@
 \[ - \csc x \cot x \]
 ===
 
-!tags:Math Calculus Derivative Trigonometric
-
 \[ \frac{d}{dx} \left( \sin^{-1} x \right) \]
 ---
 \[ \frac{1}{\sqrt{1-x^2}} \]
@@ -108,7 +106,7 @@
 \[ \frac{-1}{|x| \sqrt{x^2-1}} \]
 ===
 
-!tags:Math Calculus Derivative Hyperbolic
+!tags:Math Calculus Derivative Hyperbolic Identity
 
 \[ \frac{d}{dx} \left( \sinh \right) x \]
 ---
@@ -139,8 +137,6 @@
 ---
 \[ - \text{csch} \, x \coth x \]
 ===
-
-!tags:Math Calculus Derivative Hyperbolic
 
 \[ \frac{d}{dx} \left( \sinh^{-1} x \right) \]
 ---

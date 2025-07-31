@@ -2,7 +2,7 @@
 
 !deck:Math::Calculus::Taylor Series
 
-!tags:Math Calculus Taylor-Series
+!tags:Math Calculus Taylor-Series Identity
 
 \[ e^x \]
 Taylor series expansion
@@ -52,7 +52,7 @@ Taylor series expansion
 \]
 ===
 
-!tags:Math Calculus Taylor-Series Trigonometric
+!tags:Math Calculus Taylor-Series Trigonometric Identity
 
 \[ \sin(x) \]
 Taylor series expansion
@@ -78,7 +78,7 @@ Taylor series expansion
 \]
 ===
 
-!tags:Math Calculus Taylor-Series Hyperbolic
+!tags:Math Calculus Taylor-Series Hyperbolic Identity
 
 \[ \sinh x \]
 Taylor series expansion

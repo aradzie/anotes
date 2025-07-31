@@ -2,7 +2,7 @@
 
 !deck:Math::Calculus::Integrals
 
-!tags:Math Calculus Integral
+!tags:Math Calculus Integral Identity
 
 \[ \int u^n \, du \]
 ---
@@ -24,7 +24,7 @@
 \[ \frac{a^u}{\ln a} + C \]
 ===
 
-!tags:Math Calculus Integral Trigonometric
+!tags:Math Calculus Integral Trigonometric Identity
 
 \[ \int \sin u \, du \]
 ---
@@ -78,7 +78,7 @@
 \[ \ln | \csc u - \cot u | + C \]
 ===
 
-!tags:Math Calculus Integral Trigonometric
+!tags:Math Calculus Integral Trigonometric Identity
 
 \[ \int \frac{1}{\sqrt{a^2 - u^2}} \, du \]
 ---
@@ -95,7 +95,7 @@
 \[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
 ===
 
-!tags:Math Calculus Integral Hyperbolic
+!tags:Math Calculus Integral Hyperbolic Identity
 
 \[ \int \sinh u \, du \]
 ---
@@ -127,7 +127,7 @@
 \[ - \text{csch} \, u + C \]
 ===
 
-!tags:Math Calculus Integral
+!tags:Math Calculus Integral Identity
 
 \[ \int u e^u \, du \]
 ---

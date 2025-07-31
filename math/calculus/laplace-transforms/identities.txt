@@ -2,7 +2,7 @@
 
 !deck:Math::Calculus::Laplace Transform
 
-!tags:Math Calculus Laplace-Transform
+!tags:Math Calculus Laplace-Transform Identity
 
 \[ \mathscr{L} \{ 1 \} \]
 ---

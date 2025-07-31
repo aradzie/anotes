@@ -2,7 +2,7 @@
 
 !deck:Math::Calculus::Basic
 
-!tags:Math Calculus Theorem
+!tags:Math Calculus Theory Theorem
 
 !template:Definition
 

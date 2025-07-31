@@ -16,21 +16,21 @@
   {
     "type": "Basic",
     "deck": "Math::Trigonometry",
-    "tags": "Math Trigonometric Hyperbolic",
+    "tags": "Math Trigonometric Hyperbolic Identity",
     "front": "\\[ \\sinh x \\]\n<p>The definition of</p>",
     "back": "\\[ \\frac{e^{x} - e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trigonometry",
-    "tags": "Math Trigonometric Hyperbolic",
+    "tags": "Math Trigonometric Hyperbolic Identity",
     "front": "\\[ \\cosh x \\]\n<p>The definition of</p>",
     "back": "\\[ \\frac{e^{x} + e^{-x}}{2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Trigonometry",
-    "tags": "Math Trigonometric Hyperbolic",
+    "tags": "Math Trigonometric Hyperbolic Identity",
     "front": "\\[ \\tanh x \\]\n<p>The definition of</p>",
     "back": "\\[ \\frac{\\sinh x}{\\cosh x} = \\frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \\]"
   },
@@ -246,703 +246,248 @@
   },
   {
     "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( f(x) g(x) \\right) \\]",
-    "back": "\\[ f'(x) g(x) + f(x) g'(x) \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( \\frac{f(x)}{g(x)} \\right) \\]",
-    "back": "\\[ \\frac{f'(x) g(x) - f(x) g'(x)}{(g(x)^2)} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( x^n \\right) \\]",
-    "back": "\\[ nx^{n-1} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sqrt{x} \\right) \\]",
-    "back": "\\[ \\frac{1}{2 \\sqrt{x}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( e^x \\right) \\]",
-    "back": "\\[ e^x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( a^x \\right) \\]",
-    "back": "\\[ a^x \\ln a \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( \\ln x \\right) \\]",
-    "back": "\\[ \\frac{1}{x} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative",
-    "front": "\\[ \\frac{d}{dx} \\left( \\log_b x \\right) \\]",
-    "back": "\\[ \\frac{1}{x \\ln b} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} ( \\sin x ) \\]",
-    "back": "\\[ \\cos x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} ( \\cos x ) \\]",
-    "back": "\\[ - \\sin x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} ( \\tan x ) \\]",
-    "back": "\\[ \\sec^2 x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} ( \\cot x ) \\]",
-    "back": "\\[ - \\csc^2 x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} ( \\sec x ) \\]",
-    "back": "\\[ \\sec x \\tan x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} ( \\csc x ) \\]",
-    "back": "\\[ - \\csc x \\cot x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sin^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{\\sqrt{1-x^2}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cos^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{-1}{\\sqrt{1-x^2}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} \\left( \\tan^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{1+x^2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cot^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{-1}{1+x^2} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sec^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{|x| \\sqrt{x^2-1}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Trigonometric",
-    "front": "\\[ \\frac{d}{dx} \\left( \\csc^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2-1}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sinh \\right) x \\]",
-    "back": "\\[ \\cosh x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cosh \\right) x \\]",
-    "back": "\\[ \\sinh x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\tanh x \\right) \\]",
-    "back": "\\[ \\text{sech}^2 \\, x = 1 - \\tanh^2 x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\coth x \\right) \\]",
-    "back": "\\[ - \\text{csch}^2 \\, x = 1 - \\coth^2 x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech} \\, x \\right) \\]",
-    "back": "\\[ - \\text{sech} \\, x \\tanh x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch} \\, x \\right) \\]",
-    "back": "\\[ - \\text{csch} \\, x \\coth x \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sinh^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cosh^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\tanh^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\coth^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech}^{-1} \\, x \\right) \\]",
-    "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Derivatives",
-    "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch}^{-1} \\, x \\right) \\]",
-    "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral",
-    "front": "\\[ \\int u^n \\, du \\]",
-    "back": "\\[ \\frac{u^{n + 1}}{n + 1} + C, \\quad n \\neq -1 \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral",
-    "front": "\\[ \\int \\frac{1}{u} \\, du \\]",
-    "back": "\\[ \\ln |u| + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral",
-    "front": "\\[ \\int e^u \\, du \\]",
-    "back": "\\[ e^u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral",
-    "front": "\\[ \\int a^u \\, du \\]",
-    "back": "\\[ \\frac{a^u}{\\ln a} + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sin u \\, du \\]",
-    "back": "\\[ - \\cos u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\cos u \\, du \\]",
-    "back": "\\[ \\sin u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sec^2 u \\, du \\]",
-    "back": "\\[ \\tan u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\csc^2 u \\, du \\]",
-    "back": "\\[ - \\cot u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sec u \\tan u \\, du \\]",
-    "back": "\\[ \\sec u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\csc u \\cot u \\, du \\]",
-    "back": "\\[ - \\csc u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\tan u \\, du \\]",
-    "back": "\\[ - \\ln | \\cos u | + C \\]\n\\[ \\ln | \\sec u | + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\cot u \\, du \\]",
-    "back": "\\[ \\ln | \\sin u | + C \\]\n\\[ - \\ln | \\csc u | + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sec u \\, du \\]",
-    "back": "\\[ \\ln | \\sec u + \\tan u | + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\csc u \\, du \\]",
-    "back": "\\[ \\ln | \\csc u - \\cot u | + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 - u^2}} \\, du \\]",
-    "back": "\\[ \\sin^{-1} \\frac{u}{a} + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\frac{1}{a^2 + u^2} \\, du \\]",
-    "back": "\\[ \\tan^{-1} \\frac{u}{a} + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\frac{1}{u \\sqrt{u^2 - a^2}} \\, du \\]",
-    "back": "\\[ \\frac{1}{a} \\sec^{-1} \\frac{u}{a} + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\sinh u \\, du \\]",
-    "back": "\\[ \\cosh u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\cosh u \\, du \\]",
-    "back": "\\[ \\sinh u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{sech}^2 \\, u \\, du \\]",
-    "back": "\\[ \\tanh u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{csch}^2 \\, u \\, du \\]",
-    "back": "\\[ - \\coth u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{sech} \\, u \\tanh u \\, du \\]",
-    "back": "\\[ - \\text{sech} \\, u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{csch} \\, u \\coth u \\, du \\]",
-    "back": "\\[ - \\text{csch} \\, u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral",
-    "front": "\\[ \\int u e^u \\, du \\]",
-    "back": "\\[ u e^u - e^u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Integrals",
-    "tags": "Math Calculus Integral",
-    "front": "\\[ \\int \\ln u \\, du \\]",
-    "back": "\\[ u \\ln u - u + C \\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series",
-    "front": "\\[ e^x \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    e^x\n    &= 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series",
-    "front": "\\[ \\ln(x) \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    \\ln(x)\n    &= (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} - \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{(x-1)^{n}}{n}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series",
-    "front": "\\[ \\ln(1-x) \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    \\ln(1-x)\n    &= - x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} - \\cdots \\\\\n    &= -\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series",
-    "front": "\\[ \\ln(1+x) \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    \\ln(1+x)\n    &= x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series Trigonometric",
-    "front": "\\[ \\sin(x) \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n+1}}{(2n+1)!}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series Trigonometric",
-    "front": "\\[ \\cos(x) \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series Hyperbolic",
-    "front": "\\[ \\sinh x \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
-    "deck": "Math::Calculus::Taylor Series",
-    "tags": "Math Calculus Taylor-Series Hyperbolic",
-    "front": "\\[ \\cosh x \\]\n<p>Taylor series expansion</p>",
-    "back": "\\[\n\\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
-  },
-  {
-    "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Math Calculus Theorem",
+    "tags": "Math Calculus Theory Theorem",
     "front": "<p>The definition of the extreme value theorem (EVT).</p>",
     "back": "<section style=\"text-align: left\"><p>The extreme value theorem states that if a real-valued function \\(f\\) is continuous on the closed and bounded interval \\([a,b]\\), then \\(f\\) must attain a maximum and a minimum, each at least once.</p>\n<p>That is, there exist numbers \\(c\\) and \\(d\\) in \\([a,b]\\) such that: \\(f(c) \\leq f(x) \\leq f(d) \\quad \\forall x \\in [a,b]\\).</p>\n<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Math Calculus Theorem",
+    "tags": "Math Calculus Theory Theorem",
     "front": "<p>The definition of the Rolle&#39;s theorem.</p>",
     "back": "<section style=\"text-align: left\"><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>\n<p>The Rolle&#39;s theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n<li>\\(f(a)=f(b)\\) (the function has the same value at the endpoints)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that \\(f'(c) = 0\\).</p>\n<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Math Calculus Theorem",
+    "tags": "Math Calculus Theory Theorem",
     "front": "<p>The definition of the mean value theorem (MVT).</p>",
     "back": "<section style=\"text-align: left\"><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>\n<p>The mean value theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that the instantaneous rate of change (the derivative \\(f'(c)\\)) is equal to the average rate of change over the interval.</p>\n<p>Mathematically, this is expressed as:</p>\n\n\n\\[ f'(c) = \\frac{f(b) - f(a)}{b - a} \\]\n\n<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \\(f(a) = f(b)\\), then the right side of the mean value theorem equation becomes</p>\n\n\n\\[ f'(c) = \\frac{f(a) - f(a)}{b - a} = \\frac{0}{b - a} \\]\n\n<p>which means \\(f'(c)=0\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
-    "tags": "Math Calculus Theorem",
+    "tags": "Math Calculus Theory Theorem",
     "front": "<p>The definition of the intermediate value theorem (IVT).</p>",
     "back": "<section style=\"text-align: left\"><p>The intermediate value theorem states that if a function \\(f(x)\\) is continuous on a closed interval \\([a,b]\\), and \\(L\\) is any value between \\(f(a)\\) and \\(f(b)\\), then there exists at least one number \\(c\\) in the interval \\([a,b]\\) such that \\(f(c)=L\\).</p>\n<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is an infinite sequence?</p>",
     "back": "<section style=\"text-align: left\"><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>\n\n\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\n\n<p>denoted as</p>\n\n\n\\[ \\{ a_n \\}_{n=1}^{\\infty} \\]\n\n<p>or simply</p>\n\n\n\\[ \\{ a_n \\}. \\]\n\n<p>Each number \\(a_n\\) is a term of the sequence.</p>\n<p>The subscript \\(n\\) is the index variable of the sequence.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What are the different ways to define a sequence?</p>",
     "back": "<section style=\"text-align: left\"><p>An infinite sequence can be defined in various ways:</p>\n<ul>\n<li><p>By listing terms \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).</p>\n</li>\n<li><p>By an explicit formula that defines the \\(n\\)-th term directly in terms of \\(n\\), \\(a_n = f(n)\\).</p>\n</li>\n<li><p>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\).</p>\n</li>\n</ul>\n<p>TODO Add examples.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the limit of a sequence?</p>",
     "back": "<section style=\"text-align: left\"><p>A sequence \\(\\{ a_n \\}\\) converges to a real number \\(L\\) if for all \\(\\epsilon > 0\\), there exists an integer \\(N\\) such that \\(|a_n − L| < \\epsilon\\) if \\(n \\ge N\\). The number \\(L\\) is the limit of the sequence and we write</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L \\text{ or } a_n \\to L. \\]\n\n<p>In this case, we say the sequence \\(\\{a_n\\}\\) is a <strong>convergent sequence</strong>. If a sequence does not converge, it is a <strong>divergent sequence</strong>, and we say the limit does not exist.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the squeeze theorem for sequences?</p>",
     "back": "<section style=\"text-align: left\"><p>Consider sequences \\(\\{a_n\\}\\), \\(\\{b_n\\}\\), and \\(\\{c_n\\}\\).\nSuppose there exists an integer \\(N\\) such that \\(a_n \\le b_n \\le c_n\\) for all \\(n \\ge N\\).\nIf there exists a real number \\(L\\) such that</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\n\n<p>then \\(\\{b_n\\}\\) converges and</p>\n\n\n\\[ \\lim_{n \\to \\infty} b_n = L \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is a bounded sequence?</p>",
     "back": "<section style=\"text-align: left\"><p>A sequence \\(\\{a_n\\}\\) is <strong>bounded above</strong> if there exists a real number \\(M\\) such that</p>\n\n\n\\[ a_n \\le M \\]\n\n<p>for all positive integers \\(n\\).</p>\n<p>A sequence \\(\\{a_n\\}\\) is <em>bounded below</em> if there exists a real number \\(M\\) such that</p>\n\n\n\\[ M \\le a_n \\]\n\n<p>for all positive integers \\(n\\).</p>\n<p>A sequence \\(\\{a_n\\}\\) is a <em>bounded sequence</em> if it is bounded above and bounded below.</p>\n<p>If a sequence is not bounded, it is an <strong>unbounded sequence</strong>.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the relationship between convergent and bounded sequences?</p>",
     "back": "<section style=\"text-align: left\"><p>If a sequence \\(\\{a_n\\}\\) converges, then it is bounded.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is a monotone sequence?</p>",
     "back": "<section style=\"text-align: left\"><p>A sequence \\(\\{a_n\\}\\) is <strong>increasing</strong> for all \\(n \\ge n_0\\) if</p>\n\n\n\\[ a_n \\le a_{n+1} \\text{ for all } n \\ge n_0. \\]\n\n<p>A sequence \\(\\{a_n\\}\\) is <strong>decreasing</strong> for all \\(n \\ge n_0\\) if</p>\n\n\n\\[ a_n \\ge a_{n+1} \\text{ for all } n \\ge n_0. \\]\n\n<p>A sequence \\(\\{a_n\\}\\) is a <strong>monotone sequence</strong> for all \\(n \\ge n_0\\) if it is increasing for all \\(n \\ge n_0\\) or decreasing for all \\(n \\ge n_0\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the monotone convergence theorem?</p>",
     "back": "<section style=\"text-align: left\"><p>If \\(\\{a_n\\}\\) is a bounded sequence and there exists a positive integer \\(n_0\\) such that \\(\\{a_n\\}\\) is monotone for all \\(n \\ge n_0\\), then \\(\\{a_n\\}\\) converges.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is an infinite series?</p>",
     "back": "<section style=\"text-align: left\"><p>An infinite series is a sum of the terms of an infinite sequnce \\(a_n\\):</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the harmonic series?</p>",
     "back": "<section style=\"text-align: left\"><p>The harmonic series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\n\n<p>The harmonic series is a special case of the p-series with \\(p = 1\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What does the harmonic series converge to?</p>",
     "back": "<section style=\"text-align: left\"><p>The harmonic series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n}\\) diverges to infinity.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the geometric series?</p>",
     "back": "<section style=\"text-align: left\"><p>The geometric series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} a r^{n} = a + ar + ar^2 + ar^3 + \\ldots \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What does the geometric series converge to?</p>",
     "back": "<section style=\"text-align: left\"><p>The geometric series \\(\\sum_{n=0}^{\\infty} a r^{n}\\) converges to \\(\\frac{a}{1 - r}\\) if \\(|r| < 1\\), otherwise it diverges.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the p-series?</p>",
     "back": "<section style=\"text-align: left\"><p>The p-series series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What does the p-series converge to?</p>",
     "back": "<section style=\"text-align: left\"><p>The p-series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^p}\\) converges if \\(p > 1\\), otherwise it diverges.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the telescoping series?</p>",
     "back": "<section style=\"text-align: left\"><p>The telescoping series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} a_n - a_{n+1}. \\]\n\n<p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What are the algebraic properties of convergent series?</p>",
     "back": "<section style=\"text-align: left\"><p>Let \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) be convergent series. Then the following algebraic properties hold.</p>\n<ul>\n<li><p>Sum Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n + b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n + b_n) = \\sum_{n=1}^{\\infty} a_n + \\sum_{n=1}^{\\infty} b_n\\).</p>\n</li>\n<li><p>Difference Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n - b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n - b_n) = \\sum_{n=1}^{\\infty} a_n - \\sum_{n=1}^{\\infty} b_n\\).</p>\n</li>\n<li><p>Constant Multiple Rule: For any real number \\(c\\), the series \\(\\sum_{n=1}^{\\infty} c a_n\\) converges and \\(\\sum_{n=1}^{\\infty} c a_n = c \\sum_{n=1}^{\\infty} a_n\\).</p>\n</li>\n</ul></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the divergence test for a series?</p>",
     "back": "<section style=\"text-align: left\"><p>Consider the sequence \\(a_n\\). If \\(\\lim_{n \\to \\infty} a_n \\neq 0\\) or \\(\\lim_{n \\to \\infty} a_n\\) does not exist, then the series \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n<p>The converse is not true. That is, if \\(\\lim_{n \\to \\infty} a_n = 0\\), we cannot make any conclusion about the convergence of \\(\\sum_{n=1}^{\\infty} a_n\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the integral test?</p>",
     "back": "<section style=\"text-align: left\"><p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li><p>\\(f\\) is continuous,</p>\n</li>\n<li><p>\\(f\\) is decreasing, and</p>\n</li>\n<li><p>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</p>\n</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\, dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>How to estimate the value of a series?</p>",
     "back": "<section style=\"text-align: left\"><p>TODO</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>How to estimate the remainder of a series?</p>",
     "back": "<section style=\"text-align: left\"><p>TODO</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the direct comparison test?</p>",
     "back": "<section style=\"text-align: left\"><p>Suppose there exists an integer \\(N\\) such that \\(0 \\le a_n \\le b_n\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>Suppose there exists an integer \\(N\\) such that \\(a_n \\ge b_n \\ge 0\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n<p>TODO Add an example.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the limit comparison test?</p>",
     "back": "<section style=\"text-align: left\"><p>Let \\(a_n\\), \\(b_n \\ge 0\\) for all \\(n \\ge 1\\).</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = L \\ne 0\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) both converge or both diverge.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = 0\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = \\infty\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n<p>TODO Add an example.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the alternating series?</p>",
     "back": "<section style=\"text-align: left\"><p>The alternating series is a sum of the terms of an infinite sequnce \\(a_n\\) whose terms alternate between positive and negative values:</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\n\n<p>or</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the alternating series test?</p>",
     "back": "<section style=\"text-align: left\"><p>An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\, a_n\\) or \\(\\sum_{n=1}^{\\infty} (-1)^{n} \\, a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\).</p>\n<p>TODO Add an example.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the remainder of an alternating series?</p>",
     "back": "<section style=\"text-align: left\"><p>TODO</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the relationship between absolute and conditional convergence?</p>",
     "back": "<section style=\"text-align: left\"><p>A series \\(\\sum_{n=1}^{\\infty} a_n\\) exhibits <strong>absolute convergence</strong> if \\(\\sum_{n=1}^{\\infty} |a_n|\\) converges.</p>\n<p>A series \\(\\sum_{n=1}^{\\infty} a_n\\) exhibits <strong>conditional convergence</strong> if \\(\\sum_{n=1}^{\\infty} a_n\\) converges but \\(\\sum_{n=1}^{\\infty} |a_n|\\) diverges.</p>\n<p>If \\(\\sum_{n=1}^{\\infty} |a_n|\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the ratio test?</p>",
     "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n\n<ul>\n<li><p>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</p>\n</li>\n<li><p>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n</li>\n<li><p>If \\(\\rho = 1\\), the test does not provide any information.</p>\n</li>\n</ul>\n<p>TODO Add an example.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the root test?</p>",
     "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n\n<ul>\n<li><p>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</p>\n</li>\n<li><p>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n</li>\n<li><p>If \\(\\rho = 1\\), the test does not provide any information.</p>\n</li>\n</ul>\n<p>TODO Add an example.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What is the power series?</p>",
     "back": "<section style=\"text-align: left\"><p>The power series centered at \\(x = 0\\) is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\n\n<p>The power series centered at \\(x = a\\) is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \\ldots \\]\n\n<p>where \\(x\\) is a variable and the coefficients \\(c_n\\) are constants.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
-    "tags": "Math Calculus Sequences-and-Series",
+    "tags": "Math Calculus Sequences-and-Series Theory",
     "front": "<p>What are the convergence properties of a power series?</p>",
-    "back": "<section style=\"text-align: left\"><p>Consider the power series \\(\\sum_{n=0}^{\\infty} c_n (x - a)^n\\). The series satisfies exactly one of the following properties:</p>\n<ul>\n<li><p>The series converges at \\(x=a\\) and diverges for all \\(x \\ne a\\).</p>\n</li>\n<li><p>The series converges for all real numbers \\(x\\).</p>\n</li>\n<li><p>There exists a real number \\(R>0\\) such that the series converges if \\(|x − a| < R\\) and diverges if  \\(|x − a| > R\\). At the values \\(x\\) where \\(|x − a| = R\\), the series may converge or diverge.</p>\n</li>\n</ul></section>"
+    "back": "<section style=\"text-align: left\"><p>Consider the power series \\(\\sum_{n=0}^{\\infty} c_n (x - a)^n\\). The series satisfies exactly one of the following properties:</p>\n<ul>\n<li><p>The series converges at \\(x=a\\) and diverges for all \\(x \\ne a\\).</p>\n</li>\n<li><p>The series converges for all real numbers \\(x\\).</p>\n</li>\n<li><p>There exists a real number \\(R>0\\) such that the series converges if \\(|x − a| < R\\) and diverges if \\(|x − a| > R\\). At the values \\(x\\) where \\(|x − a| = R\\), the series may converge or diverge.</p>\n</li>\n</ul></section>"
   },
   {
     "type": "Basic",
@@ -1185,198 +730,681 @@
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ 1 \\} \\]",
     "back": "\\[ \\frac{1}{s} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ t^n \\}, \\, n = 1, 2, 3, \\ldots \\]",
     "back": "\\[ \\frac{n!}{s^{n+1}} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ \\sin(at) \\} \\]",
     "back": "\\[ \\frac{a}{s^2 + a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ \\cos(at) \\} \\]",
     "back": "\\[ \\frac{s}{s^2 + a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ \\sin(at + b) \\} \\]",
     "back": "\\[ \\frac{s \\sin(b) + a \\cos(b)}{s^2 + a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ \\cos(at + b) \\} \\]",
     "back": "\\[ \\frac{s \\cos(b) - a \\sin(b)}{s^2 + a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ t \\sin(at) \\} \\]",
     "back": "\\[ \\frac{2as}{(s^2 + a^2)^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ t \\cos(at) \\} \\]",
     "back": "\\[ \\frac{s^2 - a^2}{(s^2 + a^2)^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ \\sinh(at) \\} \\]",
     "back": "\\[ \\frac{a}{s^2 - a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ \\cosh(at) \\} \\]",
     "back": "\\[ \\frac{s}{s^2 - a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\} \\]",
     "back": "\\[ \\frac{1}{s - c} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} t^n \\}, \\, n = 1, 2, 3, \\ldots \\]",
     "back": "\\[ \\frac{n!}{(s - c)^{n + 1}} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sin(at) \\} \\]",
     "back": "\\[ \\frac{a}{(s - c)^2 + a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cos(at) \\} \\]",
     "back": "\\[ \\frac{s - c}{(s - c)^2 + a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} \\]",
     "back": "\\[ \\frac{a}{(s - c)^2 - a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} \\]",
     "back": "\\[ \\frac{s - c}{(s - c)^2 - a^2} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} f(t) \\} \\]",
     "back": "\\[ F(s - c) \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ \\delta (t - c) \\} \\]",
     "back": "\\[ e^{-cs} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ u(t - c) \\} \\]",
     "back": "\\[ e^{-cs} \\frac{1}{s} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ u(t - c) f(t - c) \\} \\]",
     "back": "\\[ e^{-cs} F(s) \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\left\\{ \\frac{f(t)}{t} \\right\\} \\]",
     "back": "\\[ \\int_{s}^{\\infty} F(u) \\, du \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\left\\{ \\int_{0}^{t} f(u) \\, du \\right\\} \\]",
     "back": "\\[ \\frac{F(s)}{s} \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ f'(t) \\} \\]",
     "back": "\\[ s F(s) - f(0) \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Identity",
     "front": "\\[ \\mathscr{L} \\{ f''(t) \\} \\]",
     "back": "\\[ s^2 F(s) - s f(0) - f'(0) \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
     "front": "<p>What is the definition of the Laplace transform?</p>",
     "back": "<section style=\"text-align: left\"><p>The Laplace transform of a function \\(f(t)\\) is a function \\(F(s)\\) defined as</p>\n\n\n\\[ F(s) = \\mathscr{L}\\{f\\} = \\int_0^\\infty e^{-st} f(t) \\, dt \\]\n\n<p>where \\(f(t)\\) is a function of exponential order defined for all \\(t \\ge 0\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
     "front": "<p>What is the first translation or shifting property of the Laplace transform?</p>",
     "back": "<section style=\"text-align: left\"><p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{e^{ct} f(t)\\} = F(s - c) \\]\n\n\\[ \\mathscr{L}^{-1}\\{F(s - c)\\} = e^{ct} f(t) \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ \\cos 2t \\} = \\frac{s}{s^2 + 4} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ e^{3t} \\cos 2t \\} = F(s - 3) = \\frac{(s - 3)}{(s - 3)^2 + 4} \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
     "front": "<p>What is the second translation or shifting property of the Laplace transform?</p>",
-    "back": "<section style=\"text-align: left\"><p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{f(t - c) \\, u(t - c)\\} = e^{-cs} F(s) \\]\n\n\\[ \\mathscr{L}^{-1}\\{e^{-cs} F(s)\\} = f(t - c) \\, u(t - c) \\]\n\n<p>where \\(u(t - c)\\) is the unit step function, which is defined as</p>\n\n\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t > c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ f(t - 2) \\, u(t - 2) \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]</section>"
+    "back": "<section style=\"text-align: left\"><p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{f(t - c) \\, u(t - c)\\} = e^{-cs} F(s) \\]\n\n\\[ \\mathscr{L}^{-1}\\{e^{-cs} F(s)\\} = f(t - c) \\, u(t - c) \\]\n\n<p>where \\(u(t - c)\\) is the unit step function, which is defined as</p>\n\n\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t \\ge c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ f(t - 2) \\, u(t - 2) \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
-    "tags": "Math Calculus Laplace-Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
     "front": "<p>What is the change of scale property of the Laplace transform?</p>",
     "back": "<section style=\"text-align: left\"><p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{ f(ct) \\} = \\frac{1}{c} F \\left( \\frac{s}{c} \\right) \\]\n\n\\[ \\mathscr{L}^{-1} \\left\\{ \\frac{1}{c} F \\left( \\frac{s}{c} \\right) \\right\\} = f(ct) \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ \\sin t \\} = \\frac{1}{s^2 + 1} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ \\sin 3t \\} = \\frac{1}{3} F \\left( \\frac{s}{3} \\right) = \\frac{1}{3} \\frac{1}{(s/3)^2 + 1} = \\frac{3}{s^2 + 9} \\]</section>"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
+    "front": "<p>What is the unit step function \\(u(t - c)\\)?</p>",
+    "back": "<section style=\"text-align: left\"><p>The unit step function (Heaviside function) \\(u(t - c)\\) is defined as</p>\n\n\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t \\ge c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]</section>"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
+    "front": "<p>What is the effect of multiplying by the unit step function \\(u(t - c)\\)?</p>",
+    "back": "<section style=\"text-align: left\"><p>Let \\(f(t) = 0\\) for all \\(t < 0\\).</p>\n<ul>\n<li>\\(f(t) u(t - c)\\) with \\(c > 0\\) is \\(f(t)\\) switched on at the point \\(c\\).</li>\n<li>\\(f(t - c) u(t - c)\\) with \\(c > 0\\) is \\(f(t)\\) shifted (translated) to the right by the amount \\(c\\).</li>\n</ul></section>"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
+    "front": "<p>What is the unit impulse function \\(\\delta(t - c)\\)?</p>",
+    "back": "<section style=\"text-align: left\"><p>The unit impulse function (Dirac delta function) \\(\\delta(t - c)\\) is a function that has the following properties.</p>\n<p><strong>Infinite at the origin \\(c\\), zero everywhere else:</strong></p>\n\n\n\\[ \\delta(t - c) = \\left\\{\n\\begin{array}{ll}\n    \\infty & t = c \\\\\n    0 & t \\ne c\n\\end{array}\n\\right. \\]\n\n<p><strong>Area of unity:</strong></p>\n\n\n\\[ \\int_0^\\infty \\delta (t - c) \\, dt = 1 \\]\n\n<p><strong>Shifting or sampling property:</strong></p>\n\n\n\\[ \\int_{-\\infty}^{\\infty} f(t) \\delta (t - c) \\, dt = f(c) \\]\n\n<p>The unit impulse function is technically not a function but a <strong>generalized function</strong> or <strong>distribution</strong>.</p></section>"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Laplace Transform",
+    "tags": "Math Calculus Laplace-Transform Theory",
+    "front": "<p>What is the derivative of the unit step function?</p>",
+    "back": "<section style=\"text-align: left\"><p>The derivative of the unit step function (Heaviside function) is the unit impulse function (Dirac delta function);</p>\n\n\n\\[ \\frac{d}{dt} u(t) = \\delta(t) \\]</section>"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( f(x) g(x) \\right) \\]",
+    "back": "\\[ f'(x) g(x) + f(x) g'(x) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\frac{f(x)}{g(x)} \\right) \\]",
+    "back": "\\[ \\frac{f'(x) g(x) - f(x) g'(x)}{(g(x)^2)} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( x^n \\right) \\]",
+    "back": "\\[ nx^{n-1} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\sqrt{x} \\right) \\]",
+    "back": "\\[ \\frac{1}{2 \\sqrt{x}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( e^x \\right) \\]",
+    "back": "\\[ e^x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( a^x \\right) \\]",
+    "back": "\\[ a^x \\ln a \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\ln x \\right) \\]",
+    "back": "\\[ \\frac{1}{x} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\log_b x \\right) \\]",
+    "back": "\\[ \\frac{1}{x \\ln b} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} ( \\sin x ) \\]",
+    "back": "\\[ \\cos x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} ( \\cos x ) \\]",
+    "back": "\\[ - \\sin x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} ( \\tan x ) \\]",
+    "back": "\\[ \\sec^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} ( \\cot x ) \\]",
+    "back": "\\[ - \\csc^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} ( \\sec x ) \\]",
+    "back": "\\[ \\sec x \\tan x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} ( \\csc x ) \\]",
+    "back": "\\[ - \\csc x \\cot x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\sin^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{1-x^2}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\cos^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{-1}{\\sqrt{1-x^2}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\tan^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{1}{1+x^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\cot^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{-1}{1+x^2} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\sec^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{1}{|x| \\sqrt{x^2-1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Trigonometric Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\csc^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2-1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\sinh \\right) x \\]",
+    "back": "\\[ \\cosh x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\cosh \\right) x \\]",
+    "back": "\\[ \\sinh x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\tanh x \\right) \\]",
+    "back": "\\[ \\text{sech}^2 \\, x = 1 - \\tanh^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\coth x \\right) \\]",
+    "back": "\\[ - \\text{csch}^2 \\, x = 1 - \\coth^2 x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech} \\, x \\right) \\]",
+    "back": "\\[ - \\text{sech} \\, x \\tanh x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch} \\, x \\right) \\]",
+    "back": "\\[ - \\text{csch} \\, x \\coth x \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\sinh^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\cosh^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\tanh^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\coth^{-1} x \\right) \\]",
+    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech}^{-1} \\, x \\right) \\]",
+    "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Derivatives",
+    "tags": "Math Calculus Derivative Hyperbolic Identity",
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch}^{-1} \\, x \\right) \\]",
+    "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Identity",
+    "front": "\\[ \\int u^n \\, du \\]",
+    "back": "\\[ \\frac{u^{n + 1}}{n + 1} + C, \\quad n \\neq -1 \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Identity",
+    "front": "\\[ \\int \\frac{1}{u} \\, du \\]",
+    "back": "\\[ \\ln |u| + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Identity",
+    "front": "\\[ \\int e^u \\, du \\]",
+    "back": "\\[ e^u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Identity",
+    "front": "\\[ \\int a^u \\, du \\]",
+    "back": "\\[ \\frac{a^u}{\\ln a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\sin u \\, du \\]",
+    "back": "\\[ - \\cos u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\cos u \\, du \\]",
+    "back": "\\[ \\sin u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\sec^2 u \\, du \\]",
+    "back": "\\[ \\tan u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\csc^2 u \\, du \\]",
+    "back": "\\[ - \\cot u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\sec u \\tan u \\, du \\]",
+    "back": "\\[ \\sec u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\csc u \\cot u \\, du \\]",
+    "back": "\\[ - \\csc u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\tan u \\, du \\]",
+    "back": "\\[ - \\ln | \\cos u | + C \\]\n\\[ \\ln | \\sec u | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\cot u \\, du \\]",
+    "back": "\\[ \\ln | \\sin u | + C \\]\n\\[ - \\ln | \\csc u | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\sec u \\, du \\]",
+    "back": "\\[ \\ln | \\sec u + \\tan u | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\csc u \\, du \\]",
+    "back": "\\[ \\ln | \\csc u - \\cot u | + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 - u^2}} \\, du \\]",
+    "back": "\\[ \\sin^{-1} \\frac{u}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\frac{1}{a^2 + u^2} \\, du \\]",
+    "back": "\\[ \\tan^{-1} \\frac{u}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Trigonometric Identity",
+    "front": "\\[ \\int \\frac{1}{u \\sqrt{u^2 - a^2}} \\, du \\]",
+    "back": "\\[ \\frac{1}{a} \\sec^{-1} \\frac{u}{a} + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Hyperbolic Identity",
+    "front": "\\[ \\int \\sinh u \\, du \\]",
+    "back": "\\[ \\cosh u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Hyperbolic Identity",
+    "front": "\\[ \\int \\cosh u \\, du \\]",
+    "back": "\\[ \\sinh u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Hyperbolic Identity",
+    "front": "\\[ \\int \\text{sech}^2 \\, u \\, du \\]",
+    "back": "\\[ \\tanh u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Hyperbolic Identity",
+    "front": "\\[ \\int \\text{csch}^2 \\, u \\, du \\]",
+    "back": "\\[ - \\coth u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Hyperbolic Identity",
+    "front": "\\[ \\int \\text{sech} \\, u \\tanh u \\, du \\]",
+    "back": "\\[ - \\text{sech} \\, u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Hyperbolic Identity",
+    "front": "\\[ \\int \\text{csch} \\, u \\coth u \\, du \\]",
+    "back": "\\[ - \\text{csch} \\, u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Identity",
+    "front": "\\[ \\int u e^u \\, du \\]",
+    "back": "\\[ u e^u - e^u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Integrals",
+    "tags": "Math Calculus Integral Identity",
+    "front": "\\[ \\int \\ln u \\, du \\]",
+    "back": "\\[ u \\ln u - u + C \\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Identity",
+    "front": "\\[ e^x \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    e^x\n    &= 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Identity",
+    "front": "\\[ \\ln(x) \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    \\ln(x)\n    &= (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} - \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{(x-1)^{n}}{n}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Identity",
+    "front": "\\[ \\ln(1-x) \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    \\ln(1-x)\n    &= - x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} - \\cdots \\\\\n    &= -\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Identity",
+    "front": "\\[ \\ln(1+x) \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    \\ln(1+x)\n    &= x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Trigonometric Identity",
+    "front": "\\[ \\sin(x) \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n+1}}{(2n+1)!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Trigonometric Identity",
+    "front": "\\[ \\cos(x) \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Hyperbolic Identity",
+    "front": "\\[ \\sinh x \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*}\n\\]"
+  },
+  {
+    "type": "Basic",
+    "deck": "Math::Calculus::Taylor Series",
+    "tags": "Math Calculus Taylor-Series Hyperbolic Identity",
+    "front": "\\[ \\cosh x \\]\n<p>Taylor series expansion</p>",
+    "back": "\\[\n\\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
