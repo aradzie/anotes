@@ -599,168 +599,168 @@
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "front": "\\[ \\frac{d}{dx} ( \\sin x ) \\]",
-    "back": "\\[ \\cos x \\]"
+    "back": "\\[ \\cos x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "front": "\\[ \\frac{d}{dx} ( \\cos x ) \\]",
-    "back": "\\[ - \\sin x \\]"
+    "back": "\\[ - \\sin x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "front": "\\[ \\frac{d}{dx} ( \\tan x ) \\]",
-    "back": "\\[ \\sec^2 x \\]"
+    "back": "\\[ \\sec^2 x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "front": "\\[ \\frac{d}{dx} ( \\cot x ) \\]",
-    "back": "\\[ - \\csc^2 x \\]"
+    "back": "\\[ - \\csc^2 x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "front": "\\[ \\frac{d}{dx} ( \\sec x ) \\]",
-    "back": "\\[ \\sec x \\tan x \\]"
+    "back": "\\[ \\sec x \\tan x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "front": "\\[ \\frac{d}{dx} ( \\csc x ) \\]",
-    "back": "\\[ - \\csc x \\cot x \\]"
+    "back": "\\[ - \\csc x \\cot x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sin^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{\\sqrt{1-x^2}} \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\sin^{-1} x ) \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{1 - x^2}} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cos^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{-1}{\\sqrt{1-x^2}} \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\cos^{-1} x ) \\]",
+    "back": "\\[ \\frac{-1}{\\sqrt{1 - x^2}} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\tan^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{1+x^2} \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\tan^{-1} x ) \\]",
+    "back": "\\[ \\frac{1}{1 + x^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cot^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{-1}{1+x^2} \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\cot^{-1} x ) \\]",
+    "back": "\\[ \\frac{-1}{1 + x^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sec^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{|x| \\sqrt{x^2-1}} \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\sec^{-1} x ) \\]",
+    "back": "\\[ \\frac{1}{|x| \\sqrt{x^2 - 1}} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\csc^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2-1}} \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\csc^{-1} x ) \\]",
+    "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sinh \\right) x \\]",
-    "back": "\\[ \\cosh x \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\sinh ) x \\]",
+    "back": "\\[ \\cosh x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cosh \\right) x \\]",
-    "back": "\\[ \\sinh x \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\cosh ) x \\]",
+    "back": "\\[ \\sinh x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\tanh x \\right) \\]",
-    "back": "\\[ \\text{sech}^2 \\, x = 1 - \\tanh^2 x \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\tanh x ) \\]",
+    "back": "\\[ \\text{sech}^2 \\, x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\coth x \\right) \\]",
-    "back": "\\[ - \\text{csch}^2 \\, x = 1 - \\coth^2 x \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\coth x ) \\]",
+    "back": "\\[ - \\text{csch}^2 \\, x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech} \\, x \\right) \\]",
-    "back": "\\[ - \\text{sech} \\, x \\tanh x \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\text{sech} \\, x ) \\]",
+    "back": "\\[ - \\text{sech} \\, x \\tanh x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch} \\, x \\right) \\]",
-    "back": "\\[ - \\text{csch} \\, x \\coth x \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\text{csch} \\, x ) \\]",
+    "back": "\\[ - \\text{csch} \\, x \\coth x \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\sinh^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\sinh^{-1} x ) \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\cosh^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\cosh^{-1} x ) \\]",
+    "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\tanh^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\tanh^{-1} x ) \\]",
+    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\coth^{-1} x \\right) \\]",
-    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\coth^{-1} x ) \\]",
+    "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech}^{-1} \\, x \\right) \\]",
-    "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) \\]",
+    "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch}^{-1} \\, x \\right) \\]",
-    "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]"
+    "front": "\\[ \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) \\]",
+    "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
@@ -1012,14 +1012,14 @@
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ \\sin(at) \\} \\]",
-    "back": "\\[ \\frac{a}{s^2 + a^2} \\]"
+    "back": "\\[ \\frac{a}{s^2 + a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ \\cos(at) \\} \\]",
-    "back": "\\[ \\frac{s}{s^2 + a^2} \\]"
+    "back": "\\[ \\frac{s}{s^2 + a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
@@ -1054,14 +1054,14 @@
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ \\sinh(at) \\} \\]",
-    "back": "\\[ \\frac{a}{s^2 - a^2} \\]"
+    "back": "\\[ \\frac{a}{s^2 - a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ \\cosh(at) \\} \\]",
-    "back": "\\[ \\frac{s}{s^2 - a^2} \\]"
+    "back": "\\[ \\frac{s}{s^2 - a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
@@ -1082,28 +1082,28 @@
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sin(at) \\} \\]",
-    "back": "\\[ \\frac{a}{(s - c)^2 + a^2} \\]"
+    "back": "\\[ \\frac{a}{(s - c)^2 + a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cos(at) \\} \\]",
-    "back": "\\[ \\frac{s - c}{(s - c)^2 + a^2} \\]"
+    "back": "\\[ \\frac{s - c}{(s - c)^2 + a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} \\]",
-    "back": "\\[ \\frac{a}{(s - c)^2 - a^2} \\]"
+    "back": "\\[ \\frac{a}{(s - c)^2 - a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} \\]",
-    "back": "\\[ \\frac{s - c}{(s - c)^2 - a^2} \\]"
+    "back": "\\[ \\frac{s - c}{(s - c)^2 - a^2} \\]\n\n<p>Compare with</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",

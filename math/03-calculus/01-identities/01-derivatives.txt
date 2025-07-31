@@ -49,121 +49,385 @@
 \[ \frac{d}{dx} ( \sin x ) \]
 ---
 \[ \cos x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]
 ===
 
 \[ \frac{d}{dx} ( \cos x ) \]
 ---
 \[ - \sin x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]
 ===
 
 \[ \frac{d}{dx} ( \tan x ) \]
 ---
 \[ \sec^2 x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]
 ===
 
 \[ \frac{d}{dx} ( \cot x ) \]
 ---
 \[ - \csc^2 x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]
 ===
 
 \[ \frac{d}{dx} ( \sec x ) \]
 ---
 \[ \sec x \tan x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]
 ===
 
 \[ \frac{d}{dx} ( \csc x ) \]
 ---
 \[ - \csc x \cot x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \sin^{-1} x \right) \]
+\[ \frac{d}{dx} ( \sin^{-1} x ) \]
 ---
-\[ \frac{1}{\sqrt{1-x^2}} \]
+\[ \frac{1}{\sqrt{1 - x^2}} \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \cos^{-1} x \right) \]
+\[ \frac{d}{dx} ( \cos^{-1} x ) \]
 ---
-\[ \frac{-1}{\sqrt{1-x^2}} \]
+\[ \frac{-1}{\sqrt{1 - x^2}} \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \tan^{-1} x \right) \]
+\[ \frac{d}{dx} ( \tan^{-1} x ) \]
 ---
-\[ \frac{1}{1+x^2} \]
+\[ \frac{1}{1 + x^2} \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \cot^{-1} x \right) \]
+\[ \frac{d}{dx} ( \cot^{-1} x ) \]
 ---
-\[ \frac{-1}{1+x^2} \]
+\[ \frac{-1}{1 + x^2} \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \sec^{-1} x \right) \]
+\[ \frac{d}{dx} ( \sec^{-1} x ) \]
 ---
-\[ \frac{1}{|x| \sqrt{x^2-1}} \]
+\[ \frac{1}{|x| \sqrt{x^2 - 1}} \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \csc^{-1} x \right) \]
+\[ \frac{d}{dx} ( \csc^{-1} x ) \]
 ---
-\[ \frac{-1}{|x| \sqrt{x^2-1}} \]
+\[ \frac{-1}{|x| \sqrt{x^2 - 1}} \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]
 ===
 
 !tags:Math Calculus Derivative Hyperbolic Identity
 
-\[ \frac{d}{dx} \left( \sinh \right) x \]
+\[ \frac{d}{dx} ( \sinh ) x \]
 ---
 \[ \cosh x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \cosh \right) x \]
+\[ \frac{d}{dx} ( \cosh ) x \]
 ---
 \[ \sinh x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \tanh x \right) \]
+\[ \frac{d}{dx} ( \tanh x ) \]
 ---
-\[ \text{sech}^2 \, x = 1 - \tanh^2 x \]
+\[ \text{sech}^2 \, x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \coth x \right) \]
+\[ \frac{d}{dx} ( \coth x ) \]
 ---
-\[ - \text{csch}^2 \, x = 1 - \coth^2 x \]
+\[ - \text{csch}^2 \, x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \text{sech} \, x \right) \]
+\[ \frac{d}{dx} ( \text{sech} \, x ) \]
 ---
 \[ - \text{sech} \, x \tanh x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \text{csch} \, x \right) \]
+\[ \frac{d}{dx} ( \text{csch} \, x ) \]
 ---
 \[ - \text{csch} \, x \coth x \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \sinh^{-1} x \right) \]
+\[ \frac{d}{dx} ( \sinh^{-1} x ) \]
 ---
 \[ \frac{1}{\sqrt{x^2 + 1}} \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \cosh^{-1} x \right) \]
+\[ \frac{d}{dx} ( \cosh^{-1} x ) \]
 ---
 \[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \tanh^{-1} x \right) \]
+\[ \frac{d}{dx} ( \tanh^{-1} x ) \]
 ---
 \[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \coth^{-1} x \right) \]
+\[ \frac{d}{dx} ( \coth^{-1} x ) \]
 ---
 \[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \text{sech}^{-1} \, x \right) \]
+\[ \frac{d}{dx} ( \text{sech}^{-1} \, x ) \]
 ---
 \[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]
 ===
 
-\[ \frac{d}{dx} \left( \text{csch}^{-1} \, x \right) \]
+\[ \frac{d}{dx} ( \text{csch}^{-1} \, x ) \]
 ---
 \[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
+
+Compare with
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]
 ===
