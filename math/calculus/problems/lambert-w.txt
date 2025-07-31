@@ -48,7 +48,7 @@ Then:
 
 # https://www.youtube.com/watch?v=l0Ucr7Oah4c
 
-\[ \int W(x) \ dx \]
+\[ \int W(x) \, dx \]
 Find the anti-derivative of the Lambert \(W\) function.
 ---
 Apply \(u\)-substitution:
@@ -57,8 +57,8 @@ Apply \(u\)-substitution:
 \begin{align*}
      u &= W(x) \\
      x &= u e^u \\
-    dx &= (u e^u + e^u) \ du \\
-       &= e^u (u  + 1) \ du
+    dx &= (u e^u + e^u) \, du \\
+       &= e^u (u  + 1) \, du
 \end{align*}
 \]
 
@@ -66,9 +66,9 @@ Then:
 
 \[
 \begin{align*}
-    &= \int W(x) \ dx \\
-    &= \int u e^u(u+1) \ du \\
-    &= \int e^u (u^2 + u) \ du, \quad \text{Integrate by parts} \\
+    &= \int W(x) \, dx \\
+    &= \int u e^u(u+1) \, du \\
+    &= \int e^u (u^2 + u) \, du, \quad \text{Integrate by parts} \\
     &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\
     &= u u e^u - u e^u + e^u + C \\
     &= x W(x) - W(x) + e^{W(x)} + C \\

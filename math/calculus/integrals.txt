@@ -4,137 +4,137 @@
 
 !tags:Math Calculus Integral
 
-\[ \int u^n \ du \]
+\[ \int u^n \, du \]
 ---
 \[ \frac{u^{n + 1}}{n + 1} + C, \quad n \neq -1 \]
 ===
 
-\[ \int \frac{1}{u} \ du \]
+\[ \int \frac{1}{u} \, du \]
 ---
 \[ \ln |u| + C \]
 ===
 
-\[ \int e^u \ du \]
+\[ \int e^u \, du \]
 ---
 \[ e^u + C \]
 ===
 
-\[ \int a^u \ du \]
+\[ \int a^u \, du \]
 ---
 \[ \frac{a^u}{\ln a} + C \]
 ===
 
 !tags:Math Calculus Integral Trigonometric
 
-\[ \int \sin u \ du \]
+\[ \int \sin u \, du \]
 ---
 \[ - \cos u + C \]
 ===
 
-\[ \int \cos u \ du \]
+\[ \int \cos u \, du \]
 ---
 \[ \sin u + C \]
 ===
 
-\[ \int \sec^2 u \ du \]
+\[ \int \sec^2 u \, du \]
 ---
 \[ \tan u + C \]
 ===
 
-\[ \int \csc^2 u \ du \]
+\[ \int \csc^2 u \, du \]
 ---
 \[ - \cot u + C \]
 ===
 
-\[ \int \sec u \tan u \ du \]
+\[ \int \sec u \tan u \, du \]
 ---
 \[ \sec u + C \]
 ===
 
-\[ \int \csc u \cot u \ du \]
+\[ \int \csc u \cot u \, du \]
 ---
 \[ - \csc u + C \]
 ===
 
-\[ \int \tan u \ du \]
+\[ \int \tan u \, du \]
 ---
 \[ - \ln | \cos u | + C \]
 \[ \ln | \sec u | + C \]
 ===
 
-\[ \int \cot u \ du \]
+\[ \int \cot u \, du \]
 ---
 \[ \ln | \sin u | + C \]
 \[ - \ln | \csc u | + C \]
 ===
 
-\[ \int \sec u \ du \]
+\[ \int \sec u \, du \]
 ---
 \[ \ln | \sec u + \tan u | + C \]
 ===
 
-\[ \int \csc u \ du \]
+\[ \int \csc u \, du \]
 ---
 \[ \ln | \csc u - \cot u | + C \]
 ===
 
 !tags:Math Calculus Integral Trigonometric
 
-\[ \int \frac{1}{\sqrt{a^2 - u^2}} \ du \]
+\[ \int \frac{1}{\sqrt{a^2 - u^2}} \, du \]
 ---
 \[ \sin^{-1} \frac{u}{a} + C \]
 ===
 
-\[ \int \frac{1}{a^2 + u^2} \ du \]
+\[ \int \frac{1}{a^2 + u^2} \, du \]
 ---
 \[ \tan^{-1} \frac{u}{a} + C \]
 ===
 
-\[ \int \frac{1}{u \sqrt{u^2 - a^2}} \ du \]
+\[ \int \frac{1}{u \sqrt{u^2 - a^2}} \, du \]
 ---
 \[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
 ===
 
 !tags:Math Calculus Integral Hyperbolic
 
-\[ \int \sinh u \ du \]
+\[ \int \sinh u \, du \]
 ---
 \[ \cosh u + C \]
 ===
 
-\[ \int \cosh u \ du \]
+\[ \int \cosh u \, du \]
 ---
 \[ \sinh u + C \]
 ===
 
-\[ \int \text{sech}^2 \ u \ du \]
+\[ \int \text{sech}^2 \, u \, du \]
 ---
 \[ \tanh u + C \]
 ===
 
-\[ \int \text{csch}^2 \ u \ du \]
+\[ \int \text{csch}^2 \, u \, du \]
 ---
 \[ - \coth u + C \]
 ===
 
-\[ \int \text{sech} \ u \tanh u \ du \]
+\[ \int \text{sech} \, u \tanh u \, du \]
 ---
-\[ - \text{sech} \ u + C \]
+\[ - \text{sech} \, u + C \]
 ===
 
-\[ \int \text{csch} \ u \coth u \ du \]
+\[ \int \text{csch} \, u \coth u \, du \]
 ---
-\[ - \text{csch} \ u + C \]
+\[ - \text{csch} \, u + C \]
 ===
 
 !tags:Math Calculus Integral
 
-\[ \int u e^u \ du \]
+\[ \int u e^u \, du \]
 ---
 \[ u e^u - e^u + C \]
 ===
 
-\[ \int \ln u \ du \]
+\[ \int \ln u \, du \]
 ---
 \[ u \ln u - u + C \]
 ===

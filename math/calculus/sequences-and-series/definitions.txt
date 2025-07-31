@@ -106,7 +106,7 @@ Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). S
 - \(f\) is decreasing, and
 - \(f(n) = a_n\) for all integers \(n \ge N\).
 
-Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \ dx\) both converge or both diverge.
+Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.
 
 Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.
 ===
@@ -147,7 +147,7 @@ or
 
 What is the alternating series test?
 ---
-An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \ a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).
+An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).
 ===
 
 What is the remainder of an alternating series?

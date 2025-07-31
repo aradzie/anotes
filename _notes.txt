@@ -77,43 +77,43 @@ Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \fra
 Basic;Math::Calculus::Derivatives;Math Calculus Derivative Trigonometric;\[ \frac{d}{dx} \left( \csc^{-1} x \right) \];\[ \frac{-1}{|x| \sqrt{x^2-1}} \]
 Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \sinh \right) x \];\[ \cosh x \]
 Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \cosh \right) x \];\[ \sinh x \]
-Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \tanh x \right) \];\[ \text{sech}^2 \ x = 1 - \tanh^2 x \]
-Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \coth x \right) \];\[ - \text{csch}^2 \ x = 1 - \coth^2 x \]
-Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{sech} \ x \right) \];\[ - \text{sech} \ x \tanh x \]
-Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{csch} \ x \right) \];\[ - \text{csch} \ x \coth x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \tanh x \right) \];\[ \text{sech}^2 \, x = 1 - \tanh^2 x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \coth x \right) \];\[ - \text{csch}^2 \, x = 1 - \coth^2 x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{sech} \, x \right) \];\[ - \text{sech} \, x \tanh x \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{csch} \, x \right) \];\[ - \text{csch} \, x \coth x \]
 Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \sinh^{-1} x \right) \];\[ \frac{1}{\sqrt{x^2 + 1}} \]
 Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \cosh^{-1} x \right) \];\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
 Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \tanh^{-1} x \right) \];\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
 Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \coth^{-1} x \right) \];\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
-Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{sech}^{-1} \ x \right) \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
-Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{csch}^{-1} \ x \right) \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int u^n \ du \];\[ \frac{u^{n + 1}}{n + 1} + C, \quad n \neq -1 \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \frac{1}{u} \ du \];\[ \ln |u| + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int e^u \ du \];\[ e^u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int a^u \ du \];\[ \frac{a^u}{\ln a} + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sin u \ du \];\[ - \cos u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \cos u \ du \];\[ \sin u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec^2 u \ du \];\[ \tan u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc^2 u \ du \];\[ - \cot u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec u \tan u \ du \];\[ \sec u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc u \cot u \ du \];\[ - \csc u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \tan u \ du \];"\[ - \ln | \cos u | + C \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{sech}^{-1} \, x \right) \];\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
+Basic;Math::Calculus::Derivatives;Math Calculus Derivative Hyperbolic;\[ \frac{d}{dx} \left( \text{csch}^{-1} \, x \right) \];\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int u^n \, du \];\[ \frac{u^{n + 1}}{n + 1} + C, \quad n \neq -1 \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \frac{1}{u} \, du \];\[ \ln |u| + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int e^u \, du \];\[ e^u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int a^u \, du \];\[ \frac{a^u}{\ln a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sin u \, du \];\[ - \cos u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \cos u \, du \];\[ \sin u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec^2 u \, du \];\[ \tan u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc^2 u \, du \];\[ - \cot u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec u \tan u \, du \];\[ \sec u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc u \cot u \, du \];\[ - \csc u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \tan u \, du \];"\[ - \ln | \cos u | + C \]
 \[ \ln | \sec u | + C \]"
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \cot u \ du \];"\[ \ln | \sin u | + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \cot u \, du \];"\[ \ln | \sin u | + C \]
 \[ - \ln | \csc u | + C \]"
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec u \ du \];\[ \ln | \sec u + \tan u | + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc u \ du \];\[ \ln | \csc u - \cot u | + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{\sqrt{a^2 - u^2}} \ du \];\[ \sin^{-1} \frac{u}{a} + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{a^2 + u^2} \ du \];\[ \tan^{-1} \frac{u}{a} + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{u \sqrt{u^2 - a^2}} \ du \];\[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \sinh u \ du \];\[ \cosh u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \cosh u \ du \];\[ \sinh u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{sech}^2 \ u \ du \];\[ \tanh u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{csch}^2 \ u \ du \];\[ - \coth u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{sech} \ u \tanh u \ du \];\[ - \text{sech} \ u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{csch} \ u \coth u \ du \];\[ - \text{csch} \ u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int u e^u \ du \];\[ u e^u - e^u + C \]
-Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \ln u \ du \];\[ u \ln u - u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \sec u \, du \];\[ \ln | \sec u + \tan u | + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \csc u \, du \];\[ \ln | \csc u - \cot u | + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{\sqrt{a^2 - u^2}} \, du \];\[ \sin^{-1} \frac{u}{a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{a^2 + u^2} \, du \];\[ \tan^{-1} \frac{u}{a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Trigonometric;\[ \int \frac{1}{u \sqrt{u^2 - a^2}} \, du \];\[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \sinh u \, du \];\[ \cosh u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \cosh u \, du \];\[ \sinh u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{sech}^2 \, u \, du \];\[ \tanh u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{csch}^2 \, u \, du \];\[ - \coth u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{sech} \, u \tanh u \, du \];\[ - \text{sech} \, u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral Hyperbolic;\[ \int \text{csch} \, u \coth u \, du \];\[ - \text{csch} \, u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int u e^u \, du \];\[ u e^u - e^u + C \]
+Basic;Math::Calculus::Integrals;Math Calculus Integral;\[ \int \ln u \, du \];\[ u \ln u - u + C \]
 Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series;"\[ e^x \]
 <p>Taylor series expansion</p>";"\[
 \begin{align*}
@@ -279,7 +279,7 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 <li>\(f\) is decreasing, and</li>
 <li>\(f(n) = a_n\) for all integers \(n \ge N\).</li>
 </ul>
-<p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \ dx\) both converge or both diverge.</p>
+<p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.</p>
 <p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>How to estimate the remainder of a series?</p>;<p>TODO</p>
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the direct comparison test?</p>;"<p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
@@ -297,7 +297,7 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 
 
 \[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series test?</p>;<p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \ a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \ a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p>
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series test?</p>;<p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p>
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the remainder of an alternating series?</p>;<p>TODO</p>
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the relationship between absolute and conditional convergence?</p>;<p>TODO</p>
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the ratio test?</p>;"<p>Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let</p>
@@ -326,16 +326,16 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 \[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
 
 <p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p>"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int \ln x \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int \ln x \, dx \]
 <p>Solve the integral.</p>";"<p>Integrate by parts:</p>
 
 
-\[ u \ dv = uv - \int v \ du \]
+\[ u \, dv = uv - \int v \, du \]
 
 \[
 \begin{align*}
      u &= \ln x            & dv &= dx \\
-    du &= \frac{1}{x} \ dx &  v &= x
+    du &= \frac{1}{x} \, dx &  v &= x
 \end{align*}
 \]
 
@@ -344,22 +344,22 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integra
 
 \[
 \begin{align*}
-    \int \ln x \ dx
-    &= x \ln x - \int x \frac{1}{x} \ dx \\
+    \int \ln x \, dx
+    &= x \ln x - \int x \frac{1}{x} \, dx \\
     &= x \ln x - \int dx \\
     &= x \ln x - x + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int (\ln x)^2 \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int (\ln x)^2 \, dx \]
 <p>Solve the integral.</p>";"<p>Integrate by parts:</p>
 
 
-\[ u \ dv = uv - \int v \ du \]
+\[ u \, dv = uv - \int v \, du \]
 
 \[
 \begin{align*}
      u &= (\ln x)^2              & dv &= dx \\
-    du &= \frac{2 \ln x}{x} \ dx &  v &= x
+    du &= \frac{2 \ln x}{x} \, dx &  v &= x
 \end{align*}
 \]
 
@@ -368,9 +368,9 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integra
 
 \[
 \begin{align*}
-    \int (\ln x)^2 \ dx
-    &= x (\ln x)^2 - \int x \frac{2 \ln x}{x} \ dx \\
-    &= x (\ln x)^2 - 2 \int \ln x \ dx \\
+    \int (\ln x)^2 \, dx
+    &= x (\ln x)^2 - \int x \frac{2 \ln x}{x} \, dx \\
+    &= x (\ln x)^2 - 2 \int \ln x \, dx \\
     &= x (\ln x)^2 - 2 (x \ln x - x) + C
 \end{align*}
 \]"
@@ -412,7 +412,7 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \f
     &= \frac{W(x)}{x (W(x) + 1)}
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \int W(x) \ dx \]
+Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \int W(x) \, dx \]
 <p>Find the anti-derivative of the Lambert \(W\) function.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
@@ -420,8 +420,8 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \i
 \begin{align*}
      u &= W(x) \\
      x &= u e^u \\
-    dx &= (u e^u + e^u) \ du \\
-       &= e^u (u  + 1) \ du
+    dx &= (u e^u + e^u) \, du \\
+       &= e^u (u  + 1) \, du
 \end{align*}
 \]
 
@@ -430,9 +430,9 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;"\[ \i
 
 \[
 \begin{align*}
-    &= \int W(x) \ dx \\
-    &= \int u e^u(u+1) \ du \\
-    &= \int e^u (u^2 + u) \ du, \quad \text{Integrate by parts} \\
+    &= \int W(x) \, dx \\
+    &= \int u e^u(u+1) \, du \\
+    &= \int e^u (u^2 + u) \, du, \quad \text{Integrate by parts} \\
     &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\
     &= u u e^u - u e^u + e^u + C \\
     &= x W(x) - W(x) + e^{W(x)} + C \\
@@ -475,7 +475,7 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(e
          x &= 1
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -486,13 +486,13 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \sin^2(x) \ dx
-    &= \int \frac{1-\cos(2x)}{2} \ dx \\
-    &= \int \frac{1}{2} - \frac{1}{2} \cos(2x) \ dx \\
+    \int \sin^2(x) \, dx
+    &= \int \frac{1-\cos(2x)}{2} \, dx \\
+    &= \int \frac{1}{2} - \frac{1}{2} \cos(2x) \, dx \\
     &= \frac{1}{2} x - \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -503,13 +503,13 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \cos^2(x) \ dx
-    &= \int \frac{1 + \cos(2x)}{2} \ dx \\
-    &= \int \frac{1}{2} + \frac{1}{2} \cos(2x) \ dx \\
+    \int \cos^2(x) \, dx
+    &= \int \frac{1 + \cos(2x)}{2} \, dx \\
+    &= \int \frac{1}{2} + \frac{1}{2} \cos(2x) \, dx \\
     &= \frac{1}{2} x + \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^3(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -520,9 +520,9 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \sin^3(x) \ dx
-    &= \int \sin^2(x) \sin(x) \ dx \\
-    &= \int (1 - \cos^2(x)) \sin(x) \ dx \\
+    \int \sin^3(x) \, dx
+    &= \int \sin^2(x) \sin(x) \, dx \\
+    &= \int (1 - \cos^2(x)) \sin(x) \, dx \\
 \end{align*}
 \]
 
@@ -532,7 +532,7 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 \[
 \begin{align*}
     u &= \cos(x) \\
-    - du &= \sin(x) \ dx
+    - du &= \sin(x) \, dx
 \end{align*}
 \]
 
@@ -541,14 +541,14 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int (1 - \cos^2(x)) \sin(x) \ dx
-    &= \int - (1 - u^2) \ du \\
-    &= \int u^2 - 1 \ du \\
+    \int (1 - \cos^2(x)) \sin(x) \, dx
+    &= \int - (1 - u^2) \, du \\
+    &= \int u^2 - 1 \, du \\
     &= \frac{1}{3} u^3 - u + C \\
     &= \frac{1}{3} \cos^3(x) - \cos(x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^3(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -559,9 +559,9 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \cos^3(x) \ dx
-    &= \int \cos^2(x) \cos(x) \ dx \\
-    &= \int (1 - \sin^2(x)) \cos(x) \ dx \\
+    \int \cos^3(x) \, dx
+    &= \int \cos^2(x) \cos(x) \, dx \\
+    &= \int (1 - \sin^2(x)) \cos(x) \, dx \\
 \end{align*}
 \]
 
@@ -571,7 +571,7 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 \[
 \begin{align*}
     u &= \sin(x) \\
-    du &= \cos(x) \ dx
+    du &= \cos(x) \, dx
 \end{align*}
 \]
 
@@ -580,13 +580,13 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int (1 - \sin^2(x)) \cos(x) \ dx
-    &= \int 1 - u^2 \ du \\
+    \int (1 - \sin^2(x)) \cos(x) \, dx
+    &= \int 1 - u^2 \, du \\
     &= u - \frac{1}{3} u^3 + C \\
     &= \sin(x) - \frac{1}{3} \sin^3(x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^4(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^4(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -602,16 +602,16 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \sin^4(x) \ dx
-    &= \int \left[ \frac{1 - \cos(2x)}{2} \right]^2 \ dx \\
-    &= \int \frac{1}{4} \left[ 1 - 2\cos(2x) + \cos^2(2x) \right] \ dx \\
-    &= \int \frac{1}{4} \left[ 1 - 2\cos(2x) + \frac{1}{2}(1 + \cos(4x)) \right] \ dx \\
-    &= \int \frac{1}{4} \left[ \frac{3}{2} - 2\cos(2x) + \frac{1}{2} \cos(4x) \right] \ dx \\
-    &= \int \frac{3}{8} - \frac{1}{2} \cos(2x) + \frac{1}{8} \cos(4x) \ dx \\
+    \int \sin^4(x) \, dx
+    &= \int \left[ \frac{1 - \cos(2x)}{2} \right]^2 \, dx \\
+    &= \int \frac{1}{4} \left[ 1 - 2\cos(2x) + \cos^2(2x) \right] \, dx \\
+    &= \int \frac{1}{4} \left[ 1 - 2\cos(2x) + \frac{1}{2}(1 + \cos(4x)) \right] \, dx \\
+    &= \int \frac{1}{4} \left[ \frac{3}{2} - 2\cos(2x) + \frac{1}{2} \cos(4x) \right] \, dx \\
+    &= \int \frac{3}{8} - \frac{1}{2} \cos(2x) + \frac{1}{8} \cos(4x) \, dx \\
     &= \frac{3}{8} x - \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^4(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^4(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -627,16 +627,16 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \cos^4(x) \ dx
-    &= \int \left[ \frac{1 + \cos(2x)}{2} \right]^2 \ dx \\
-    &= \int \frac{1}{4} \left[ 1 + 2\cos(2x) + \cos^2(2x) \right] \ dx \\
-    &= \int \frac{1}{4} \left[ 1 + 2\cos(2x) + \frac{1}{2}(1 + \cos(4x)) \right] \ dx \\
-    &= \int \frac{1}{4} \left[ \frac{3}{2} + 2\cos(2x) + \frac{1}{2} \cos(4x) \right] \ dx \\
-    &= \int \frac{3}{8} + \frac{1}{2} \cos(2x) + \frac{1}{8} \cos(4x) \ dx \\
+    \int \cos^4(x) \, dx
+    &= \int \left[ \frac{1 + \cos(2x)}{2} \right]^2 \, dx \\
+    &= \int \frac{1}{4} \left[ 1 + 2\cos(2x) + \cos^2(2x) \right] \, dx \\
+    &= \int \frac{1}{4} \left[ 1 + 2\cos(2x) + \frac{1}{2}(1 + \cos(4x)) \right] \, dx \\
+    &= \int \frac{1}{4} \left[ \frac{3}{2} + 2\cos(2x) + \frac{1}{2} \cos(4x) \right] \, dx \\
+    &= \int \frac{3}{8} + \frac{1}{2} \cos(2x) + \frac{1}{8} \cos(4x) \, dx \\
     &= \frac{3}{8} x + \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \sin^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \cos^2(x) \sin^3(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -647,9 +647,9 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \cos^2(x) \sin^3(x) \ dx
-    &= \int \cos^2(x) \sin^2(x) \sin(x) \ dx \\
-    &= \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \ dx
+    \int \cos^2(x) \sin^3(x) \, dx
+    &= \int \cos^2(x) \sin^2(x) \sin(x) \, dx \\
+    &= \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \, dx
 \end{align*}
 \]
 
@@ -659,7 +659,7 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 \[
 \begin{align*}
     u &= \cos(x) \\
-    - du &= \sin(x) \ dx
+    - du &= \sin(x) \, dx
 \end{align*}
 \]
 
@@ -668,14 +668,14 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \ dx
-    &= \int - u^2 (1 - u^2) \ du \\
-    &= \int u^4 - u^2 \ du \\
+    \int \cos^2(x) (1 - \cos^2(x)) \sin(x) \, dx
+    &= \int - u^2 (1 - u^2) \, du \\
+    &= \int u^4 - u^2 \, du \\
     &= \frac{1}{5} u^5 - \frac{1}{3} u^3 + C \\
     &= \frac{1}{5} \cos^5(x) - \frac{1}{3} \cos^3(x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^3(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^3(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -686,9 +686,9 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \sin^2(x) \cos^3(x) \ dx
-    &= \int \sin^2(x) \cos^2(x) \cos(x) \ dx \\
-    &= \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \ dx
+    \int \sin^2(x) \cos^3(x) \, dx
+    &= \int \sin^2(x) \cos^2(x) \cos(x) \, dx \\
+    &= \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \, dx
 \end{align*}
 \]
 
@@ -707,14 +707,14 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \ dx
-    &= \int u^2 (1 - u^2) \ du \\
-    &= \int u^2 - u^4 \ du \\
+    \int \sin^2(x) (1 - \sin^2(x)) \cos(x) \, dx
+    &= \int u^2 (1 - u^2) \, du \\
+    &= \int u^2 - u^4 \, du \\
     &= \frac{1}{3} u^3 - \frac{1}{5} u^5 + C \\
     &= \frac{1}{3} \sin^3(x) - \frac{1}{5} \sin^5(x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^2(x) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \sin^2(x) \cos^2(x) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply trigonometric identity:</p>
 
 
@@ -730,37 +730,37 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigono
 
 \[
 \begin{align*}
-    \int \sin^2(x) \cos^2(x) \ dx
-    &= \int \sin(x) \sin(x) \cos(x) \cos(x) \ dx \\
-    &= \int \frac{1}{4} \left( 2 \sin(x) \cos(x) \right) \left( 2 \sin(x) \cos(x) \right) \ dx \\
-    &= \int \frac{1}{4} \sin(2x) \sin(2x) \ dx \\
-    &= \int \frac{1}{4} \sin^2(2x) \ dx \\
-    &= \int \frac{1}{8} \left( 1 - \cos(4x) \right) \ dx \\
-    &= \frac{1}{8} \left( \int dx - \int \cos(4x) \ dx \right) \\
+    \int \sin^2(x) \cos^2(x) \, dx
+    &= \int \sin(x) \sin(x) \cos(x) \cos(x) \, dx \\
+    &= \int \frac{1}{4} \left( 2 \sin(x) \cos(x) \right) \left( 2 \sin(x) \cos(x) \right) \, dx \\
+    &= \int \frac{1}{4} \sin(2x) \sin(2x) \, dx \\
+    &= \int \frac{1}{4} \sin^2(2x) \, dx \\
+    &= \int \frac{1}{8} \left( 1 - \cos(4x) \right) \, dx \\
+    &= \frac{1}{8} \left( \int dx - \int \cos(4x) \, dx \right) \\
     &= \frac{1}{8} \left( x - \frac{1}{4} \sin(4x) \right) + C \\
     &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \frac{1}{1 + \sin(x)} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Trigonometric;"\[ \int \frac{1}{1 + \sin(x)} \, dx \]
 <p>Solve the integral.</p>";"\[
 \begin{align*}
-    \int \frac{1}{1 + \sin(x)} \ dx
-    &= \int \left( \frac{1}{1 + \sin(x)} \right) \left( \frac{1 - \sin(x)}{1 - \sin(x)} \right) \ dx \\
-    &= \int \frac{1 - \sin(x)}{1 - \sin^2(x)} \ dx \\
-    &= \int \frac{1 - \sin(x)}{\cos^2(x)} \ dx \\
-    &= \int \frac{1}{\cos^2(x)} - \frac{\sin(x)}{\cos^2(x)} \ dx \\
-    &= \int \sec^2(x) - \tan(x) \sec(x) \ dx \\
+    \int \frac{1}{1 + \sin(x)} \, dx
+    &= \int \left( \frac{1}{1 + \sin(x)} \right) \left( \frac{1 - \sin(x)}{1 - \sin(x)} \right) \, dx \\
+    &= \int \frac{1 - \sin(x)}{1 - \sin^2(x)} \, dx \\
+    &= \int \frac{1 - \sin(x)}{\cos^2(x)} \, dx \\
+    &= \int \frac{1}{\cos^2(x)} - \frac{\sin(x)}{\cos^2(x)} \, dx \\
+    &= \int \sec^2(x) - \tan(x) \sec(x) \, dx \\
     &= \tan(x) - \sec(x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int 3x^2 \sqrt {x^3 + 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int 3x^2 \sqrt {x^3 + 1} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= x^3 + 1 \\
-    du &= 3x^2 \ dx
+    du &= 3x^2 \, dx
 \end{align*}
 \]
 
@@ -769,21 +769,21 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int 3x^2 \sqrt{x^3 + 1} \ dx
-    &= \int \sqrt{u} \ du \\
+    \int 3x^2 \sqrt{x^3 + 1} \, dx
+    &= \int \sqrt{u} \, du \\
     &= \frac{2}{3} u^{\frac{3}{2}} + C \\
     &= \frac{2}{3} (x^3 + 1)^{\frac{3}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int xe^{-x^2} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int xe^{-x^2} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= -x^2 \\
-    du &= -2x \ dx \\
-    -\frac{1}{2} du &= x \ dx
+    du &= -2x \, dx \\
+    -\frac{1}{2} du &= x \, dx
 \end{align*}
 \]
 
@@ -792,21 +792,21 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int xe^{-x^2} \ dx
-    &= -\frac{1}{2} \int e^u \ du \\
+    \int xe^{-x^2} \, dx
+    &= -\frac{1}{2} \int e^u \, du \\
     &= -\frac{1}{2} e^u + C \\
     &= -\frac{1}{2} e^{-x^2} + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{(x^2 + 1)^2} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{(x^2 + 1)^2} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= x^2 + 1 \\
-    du &= 2x \ dx \\
-    \frac{1}{2} du &= x \ dx
+    du &= 2x \, dx \\
+    \frac{1}{2} du &= x \, dx
 \end{align*}
 \]
 
@@ -815,21 +815,21 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{x}{(x^2 + 1)^2} \ dx
-    &= \frac{1}{2} \int \frac{1}{u^2} \ du \\
+    \int \frac{x}{(x^2 + 1)^2} \, dx
+    &= \frac{1}{2} \int \frac{1}{u^2} \, du \\
     &= -\frac{1}{2} \frac{1}{u} + C \\
     &= -\frac{1}{2} \frac{1}{x^2 + 1} + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\cos x} \sin x \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\cos x} \sin x \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= \cos x \\
-    du &= - \sin x \ dx \\
-    - du &= \sin x \ dx
+    du &= - \sin x \, dx \\
+    - du &= \sin x \, dx
 \end{align*}
 \]
 
@@ -838,20 +838,20 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int e^{\cos x} \sin x \ dx
-    &= - \int e^u \ du \\
+    \int e^{\cos x} \sin x \, dx
+    &= - \int e^u \, du \\
     &= - e^u + C \\
     &= - e^{\cos x} + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{e^x}{e^x + 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{e^x}{e^x + 1} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= e^x + 1 \\
-    du &= e^x \ dx
+    du &= e^x \, dx
 \end{align*}
 \]
 
@@ -860,21 +860,21 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{e^x}{e^x + 1} \ dx
-    &= \int \frac{1}{u} \ du \\
+    \int \frac{e^x}{e^x + 1} \, dx
+    &= \int \frac{1}{u} \, du \\
     &= \ln |u| + C \\
     &= \ln (e^x + 1) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{x^2 + 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{x^2 + 1} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= x^2 + 1 \\
-    du &= 2x \ dx \\
-    \frac{1}{2} du &= x \ dx
+    du &= 2x \, dx \\
+    \frac{1}{2} du &= x \, dx
 \end{align*}
 \]
 
@@ -883,21 +883,21 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{x}{x^2 + 1} \ dx
-    &= \frac{1}{2} \int \frac{1}{u} \ du \\
+    \int \frac{x}{x^2 + 1} \, dx
+    &= \frac{1}{2} \int \frac{1}{u} \, du \\
     &= \frac{1}{2} \ln |u| + C \\
     &= \frac{1}{2} \ln (x^2 + 1) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\sin x}{1 + \cos^2 x} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\sin x}{1 + \cos^2 x} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= \cos x \\
-    du &= - \sin x \ dx \\
-    - du &= \sin x \ dx
+    du &= - \sin x \, dx \\
+    - du &= \sin x \, dx
 \end{align*}
 \]
 
@@ -906,20 +906,20 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{\sin x}{1 + \cos^2 x} \ dx
-    &= - \int \frac{1}{1 + u^2} \ du \\
+    \int \frac{\sin x}{1 + \cos^2 x} \, dx
+    &= - \int \frac{1}{1 + u^2} \, du \\
     &= - \tan^{-1} u + C \\
     &= - \tan^{-1} (\cos x) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \cos(x) \sin(\sin(x)) \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \cos(x) \sin(\sin(x)) \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= \sin x \\
-    du &= \cos x \ dx
+    du &= \cos x \, dx
 \end{align*}
 \]
 
@@ -928,20 +928,20 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \cos(x) \sin(\sin(x)) \ dx
-    &= \int \sin(u) \ du \\
+    \int \cos(x) \sin(\sin(x)) \, dx
+    &= \int \sin(u) \, du \\
     &= - \cos(u) + C \\
     &= - \cos(\sin(x)) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\ln x}{x} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{\ln x}{x} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= \ln x \\
-    du &= \frac{1}{x} \ dx
+    du &= \frac{1}{x} \, dx
 \end{align*}
 \]
 
@@ -950,20 +950,20 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{\ln x}{x} \ dx
-    &= \int u \ du \\
+    \int \frac{\ln x}{x} \, dx
+    &= \int u \, du \\
     &= \frac{1}{2} u^2 + C \\
     &= \frac{1}{2} (\ln x)^2 + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x \ln x} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x \ln x} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= \ln x \\
-    du &= \frac{1}{x} \ dx
+    du &= \frac{1}{x} \, dx
 \end{align*}
 \]
 
@@ -972,13 +972,13 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{1}{x \ln x} \ dx
-    &= \int \frac{1}{u} \ du \\
+    \int \frac{1}{x \ln x} \, dx
+    &= \int \frac{1}{u} \, du \\
     &= \ln |u| + C \\
     &= \ln | \ln x | + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{\sqrt{x + 1}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{\sqrt{x + 1}} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
@@ -995,23 +995,23 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{x}{\sqrt{x + 1}} \ dx
-    &= \int \frac{u - 1}{\sqrt{u}} \ du \\
-    &= \int \frac{u}{\sqrt{u}} \ du - \int \frac{1}{\sqrt{u}} \ du \\
-    &= \int u^{1/2} \ du - \int u^{-1/2} \ du \\
+    \int \frac{x}{\sqrt{x + 1}} \, dx
+    &= \int \frac{u - 1}{\sqrt{u}} \, du \\
+    &= \int \frac{u}{\sqrt{u}} \, du - \int \frac{1}{\sqrt{u}} \, du \\
+    &= \int u^{1/2} \, du - \int u^{-1/2} \, du \\
     &= \frac{2}{3} u^{\frac{3}{2}} - 2u^{\frac{1}{2}} + C \\
     &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{1 + x^4} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{x}{1 + x^4} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= x^2 \\
-    du &= 2x \ dx \\
-    \frac{1}{2} du &= x \ dx
+    du &= 2x \, dx \\
+    \frac{1}{2} du &= x \, dx
 \end{align*}
 \]
 
@@ -1020,13 +1020,13 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{x}{1 + x^4} \ dx
-    &= \frac{1}{2} \int \frac{1}{1 + u^2} \ du \\
+    \int \frac{x}{1 + x^4} \, dx
+    &= \frac{1}{2} \int \frac{1}{1 + u^2} \, du \\
     &= \frac{1}{2} \tan^{-1}(u) + C \\
     &= \frac{1}{2} \tan^{-1}(x^2) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int (x + 1) \sqrt{x - 1} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int (x + 1) \sqrt{x - 1} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
@@ -1043,16 +1043,16 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int (x + 1) \sqrt{x - 1} \ dx
-    &= \int (u + 2) \sqrt{u} \ du \\
-    &= \int (u \sqrt{u} + 2 \sqrt{u}) \ du \\
-    &= \int (u^{\frac{3}{2}} + 2 u^{\frac{1}{2}}) \ du \\
-    &= \int u^{\frac{3}{2}} \ du + 2 \int u^{\frac{1}{2}} \ du \\
+    \int (x + 1) \sqrt{x - 1} \, dx
+    &= \int (u + 2) \sqrt{u} \, du \\
+    &= \int (u \sqrt{u} + 2 \sqrt{u}) \, du \\
+    &= \int (u^{\frac{3}{2}} + 2 u^{\frac{1}{2}}) \, du \\
+    &= \int u^{\frac{3}{2}} \, du + 2 \int u^{\frac{1}{2}} \, du \\
     &= \frac{2}{5} u^{\frac{5}{2}} + \frac{4}{3} u^{\frac{3}{2}} + C \\
     &= \frac{2}{5} (x - 1)^{\frac{5}{2}} + \frac{4}{3} (x - 1)^{\frac{3}{2}} + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x^2 + 4x + 8} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{x^2 + 4x + 8} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution after completing the square:</p>
 
 
@@ -1069,13 +1069,13 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{1}{x^2 + 4x + 8} \ dx
-    &= \int \frac{1}{u^2 + 2^2} \ du \\
+    \int \frac{1}{x^2 + 4x + 8} \, dx
+    &= \int \frac{1}{u^2 + 2^2} \, du \\
     &= \frac{1}{2} \tan^{-1} \left( \frac{u}{2} \right) + C \\
     &= \frac{1}{2} \tan^{-1} \left( \frac{x + 2}{2} \right) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{2x}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{2x}} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
@@ -1083,8 +1083,8 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 \begin{align*}
     u &= 1 + \sqrt{2x} \\
       &= 1 + (2x)^\frac{1}{2} \\
-    du &= (2x)^{-\frac{1}{2}} \ dx \\
-    dx &= (2x)^\frac{1}{2} \ du \\
+    du &= (2x)^{-\frac{1}{2}} \, dx \\
+    dx &= (2x)^\frac{1}{2} \, du \\
 \end{align*}
 \]
 
@@ -1093,16 +1093,16 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{1}{1 + \sqrt{2x}} \ dx
-    &= \int \frac{1}{u} (2x)^\frac{1}{2} \ du, \quad (2x)^\frac{1}{2} = u - 1 \\
-    &= \int \frac{1}{u} (u - 1) \ du \\
-    &= \int \frac{u}{u} - \frac{1}{u} \ du \\
-    &= \int du - \int \frac{1}{u} \ du \\
+    \int \frac{1}{1 + \sqrt{2x}} \, dx
+    &= \int \frac{1}{u} (2x)^\frac{1}{2} \, du, \quad (2x)^\frac{1}{2} = u - 1 \\
+    &= \int \frac{1}{u} (u - 1) \, du \\
+    &= \int \frac{u}{u} - \frac{1}{u} \, du \\
+    &= \int du - \int \frac{1}{u} \, du \\
     &= u - \ln |u| + C \\
     &= (1 + \sqrt{2x}) - \ln(1 + \sqrt{2x}) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\sqrt{x}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int e^{\sqrt{x}} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
@@ -1110,8 +1110,8 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 \begin{align*}
     u &= \sqrt{x} \\
     du &= \frac{1}{2 \sqrt{x}} dx \\
-       &= \frac{1}{2 u} \ dx \\
-    dx &= 2u \ du
+       &= \frac{1}{2 u} \, dx \\
+    dx &= 2u \, du
 \end{align*}
 \]
 
@@ -1120,22 +1120,22 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int e^{\sqrt{x}} \ dx
-    &= 2 \int u e^u \ du \\
+    \int e^{\sqrt{x}} \, dx
+    &= 2 \int u e^u \, du \\
     &= 2 u e^u - 2 e^u + C \\
     &= 2 e^u (u - 1) + C \\
     &= 2 e^\sqrt{x} ( \sqrt{x} - 1 ) + C
 \end{align*}
 \]"
-Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{x}} \ dx \]
+Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int \frac{1}{1 + \sqrt{x}} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
 
 \[
 \begin{align*}
     u &= \sqrt{x} \\
-    du &= \frac{1}{2 \sqrt{x}} \ dx \\& = \frac{1}{2 u} \ dx \\
-    dx &= 2u \ du
+    du &= \frac{1}{2 \sqrt{x}} \, dx \\& = \frac{1}{2 u} \, dx \\
+    dx &= 2u \, du
 \end{align*}
 \]
 
@@ -1144,16 +1144,16 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 
 \[
 \begin{align*}
-    \int \frac{1}{1 + \sqrt{x}} \ dx
-    &= 2 \int \frac{u}{u + 1} \ du \\
-    &= 2 \int \frac{u + 1 - 1}{u + 1} \ du \\
-    &= 2 \int 1 - \frac{1}{u + 1} \ du \\
+    \int \frac{1}{1 + \sqrt{x}} \, dx
+    &= 2 \int \frac{u}{u + 1} \, du \\
+    &= 2 \int \frac{u + 1 - 1}{u + 1} \, du \\
+    &= 2 \int 1 - \frac{1}{u + 1} \, du \\
     &= 2 \left( u - \ln |u + 1| \right) + C \\
     &= 2 \left( \sqrt{x} - \ln |\sqrt{x} + 1| \right) + C
 \end{align*}
 \]"
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ 1 \} \];\[ \frac{1}{s} \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ t^n, \ n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{s^{n+1}} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ t^n, \, n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{s^{n+1}} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sin(at) \} \];\[ \frac{a}{s^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \cos(at) \} \];\[ \frac{s}{s^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sin(at + b) \} \];\[ \frac{s \sin(b) + a \cos(b)}{s^2 + a^2} \]
@@ -1163,7 +1163,7 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \math
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sinh(at) \} \];\[ \frac{a}{s^2 - a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \cosh(at) \} \];\[ \frac{s}{s^2 - a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \} \];\[ \frac{1}{s - c} \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n, \ n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{(s - c)^{n + 1}} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n, \, n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{(s - c)^{n + 1}} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sin(at) \} \];\[ \frac{a}{(s - c)^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cos(at) \} \];\[ \frac{s - c}{(s - c)^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sinh(at) \} \];\[ \frac{a}{(s - c)^2 - a^2} \]
@@ -1172,14 +1172,14 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \math
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \delta (t - c) \} \];\[ e^{-cs} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ u(t - c) \} \];\[ e^{-cs} \frac{1}{s} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ u(t - c) f(t - c) \} \];\[ e^{-cs} F(s) \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \frac{f(t)}{t} \right\} \];\[ \int_{s}^{\infty} F(u) \ du \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \ du \right\} \];\[ \frac{F(s)}{s} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \frac{f(t)}{t} \right\} \];\[ \int_{s}^{\infty} F(u) \, du \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \, du \right\} \];\[ \frac{F(s)}{s} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f'(t) \} \];\[ s F(s) - f(0) \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f''(t) \} \];\[ s^2 F(s) - s f(0) - f'(0) \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the definition of the Laplace transform?</p>;"<p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
 
 
-\[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \ dt \]
+\[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \, dt \]
 
 <p>where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).</p>"
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
@@ -1202,9 +1202,9 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What 
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
 
 
-\[ \mathscr{L}\{f(t - c) \ u(t - c)\} = e^{-cs} F(s) \]
+\[ \mathscr{L}\{f(t - c) \, u(t - c)\} = e^{-cs} F(s) \]
 
-\[ \mathscr{L}^{-1}\{e^{-cs} F(s)\} = f(t - c) \ u(t - c) \]
+\[ \mathscr{L}^{-1}\{e^{-cs} F(s)\} = f(t - c) \, u(t - c) \]
 
 <p>where \(u(t - c)\) is the unit step function, which is defined as</p>
 
@@ -1225,7 +1225,7 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What 
 <p>we have</p>
 
 
-\[ \mathscr{L}\{ f(t - 2) \ u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]"
+\[ \mathscr{L}\{ f(t - 2) \, u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]"
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the change of scale property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
 
 

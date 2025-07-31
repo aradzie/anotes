@@ -403,28 +403,28 @@
     "deck": "Math::Calculus::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\left( \\tanh x \\right) \\]",
-    "back": "\\[ \\text{sech}^2 \\ x = 1 - \\tanh^2 x \\]"
+    "back": "\\[ \\text{sech}^2 \\, x = 1 - \\tanh^2 x \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic",
     "front": "\\[ \\frac{d}{dx} \\left( \\coth x \\right) \\]",
-    "back": "\\[ - \\text{csch}^2 \\ x = 1 - \\coth^2 x \\]"
+    "back": "\\[ - \\text{csch}^2 \\, x = 1 - \\coth^2 x \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech} \\ x \\right) \\]",
-    "back": "\\[ - \\text{sech} \\ x \\tanh x \\]"
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech} \\, x \\right) \\]",
+    "back": "\\[ - \\text{sech} \\, x \\tanh x \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch} \\ x \\right) \\]",
-    "back": "\\[ - \\text{csch} \\ x \\coth x \\]"
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch} \\, x \\right) \\]",
+    "back": "\\[ - \\text{csch} \\, x \\coth x \\]"
   },
   {
     "type": "Basic",
@@ -458,189 +458,189 @@
     "type": "Basic",
     "deck": "Math::Calculus::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech}^{-1} \\ x \\right) \\]",
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{sech}^{-1} \\, x \\right) \\]",
     "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic",
-    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch}^{-1} \\ x \\right) \\]",
+    "front": "\\[ \\frac{d}{dx} \\left( \\text{csch}^{-1} \\, x \\right) \\]",
     "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral",
-    "front": "\\[ \\int u^n \\ du \\]",
+    "front": "\\[ \\int u^n \\, du \\]",
     "back": "\\[ \\frac{u^{n + 1}}{n + 1} + C, \\quad n \\neq -1 \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral",
-    "front": "\\[ \\int \\frac{1}{u} \\ du \\]",
+    "front": "\\[ \\int \\frac{1}{u} \\, du \\]",
     "back": "\\[ \\ln |u| + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral",
-    "front": "\\[ \\int e^u \\ du \\]",
+    "front": "\\[ \\int e^u \\, du \\]",
     "back": "\\[ e^u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral",
-    "front": "\\[ \\int a^u \\ du \\]",
+    "front": "\\[ \\int a^u \\, du \\]",
     "back": "\\[ \\frac{a^u}{\\ln a} + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sin u \\ du \\]",
+    "front": "\\[ \\int \\sin u \\, du \\]",
     "back": "\\[ - \\cos u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\cos u \\ du \\]",
+    "front": "\\[ \\int \\cos u \\, du \\]",
     "back": "\\[ \\sin u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sec^2 u \\ du \\]",
+    "front": "\\[ \\int \\sec^2 u \\, du \\]",
     "back": "\\[ \\tan u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\csc^2 u \\ du \\]",
+    "front": "\\[ \\int \\csc^2 u \\, du \\]",
     "back": "\\[ - \\cot u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sec u \\tan u \\ du \\]",
+    "front": "\\[ \\int \\sec u \\tan u \\, du \\]",
     "back": "\\[ \\sec u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\csc u \\cot u \\ du \\]",
+    "front": "\\[ \\int \\csc u \\cot u \\, du \\]",
     "back": "\\[ - \\csc u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\tan u \\ du \\]",
+    "front": "\\[ \\int \\tan u \\, du \\]",
     "back": "\\[ - \\ln | \\cos u | + C \\]\n\\[ \\ln | \\sec u | + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\cot u \\ du \\]",
+    "front": "\\[ \\int \\cot u \\, du \\]",
     "back": "\\[ \\ln | \\sin u | + C \\]\n\\[ - \\ln | \\csc u | + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\sec u \\ du \\]",
+    "front": "\\[ \\int \\sec u \\, du \\]",
     "back": "\\[ \\ln | \\sec u + \\tan u | + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\csc u \\ du \\]",
+    "front": "\\[ \\int \\csc u \\, du \\]",
     "back": "\\[ \\ln | \\csc u - \\cot u | + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 - u^2}} \\ du \\]",
+    "front": "\\[ \\int \\frac{1}{\\sqrt{a^2 - u^2}} \\, du \\]",
     "back": "\\[ \\sin^{-1} \\frac{u}{a} + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\frac{1}{a^2 + u^2} \\ du \\]",
+    "front": "\\[ \\int \\frac{1}{a^2 + u^2} \\, du \\]",
     "back": "\\[ \\tan^{-1} \\frac{u}{a} + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Trigonometric",
-    "front": "\\[ \\int \\frac{1}{u \\sqrt{u^2 - a^2}} \\ du \\]",
+    "front": "\\[ \\int \\frac{1}{u \\sqrt{u^2 - a^2}} \\, du \\]",
     "back": "\\[ \\frac{1}{a} \\sec^{-1} \\frac{u}{a} + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\sinh u \\ du \\]",
+    "front": "\\[ \\int \\sinh u \\, du \\]",
     "back": "\\[ \\cosh u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\cosh u \\ du \\]",
+    "front": "\\[ \\int \\cosh u \\, du \\]",
     "back": "\\[ \\sinh u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{sech}^2 \\ u \\ du \\]",
+    "front": "\\[ \\int \\text{sech}^2 \\, u \\, du \\]",
     "back": "\\[ \\tanh u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{csch}^2 \\ u \\ du \\]",
+    "front": "\\[ \\int \\text{csch}^2 \\, u \\, du \\]",
     "back": "\\[ - \\coth u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{sech} \\ u \\tanh u \\ du \\]",
-    "back": "\\[ - \\text{sech} \\ u + C \\]"
+    "front": "\\[ \\int \\text{sech} \\, u \\tanh u \\, du \\]",
+    "back": "\\[ - \\text{sech} \\, u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral Hyperbolic",
-    "front": "\\[ \\int \\text{csch} \\ u \\coth u \\ du \\]",
-    "back": "\\[ - \\text{csch} \\ u + C \\]"
+    "front": "\\[ \\int \\text{csch} \\, u \\coth u \\, du \\]",
+    "back": "\\[ - \\text{csch} \\, u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral",
-    "front": "\\[ \\int u e^u \\ du \\]",
+    "front": "\\[ \\int u e^u \\, du \\]",
     "back": "\\[ u e^u - e^u + C \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Integrals",
     "tags": "Math Calculus Integral",
-    "front": "\\[ \\int \\ln u \\ du \\]",
+    "front": "\\[ \\int \\ln u \\, du \\]",
     "back": "\\[ u \\ln u - u + C \\]"
   },
   {
@@ -795,7 +795,7 @@
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the integral test?</p>",
-    "back": "<p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li>\\(f\\) is continuous,</li>\n<li>\\(f\\) is decreasing, and</li>\n<li>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\ dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p>"
+    "back": "<p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li>\\(f\\) is continuous,</li>\n<li>\\(f\\) is decreasing, and</li>\n<li>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\, dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p>"
   },
   {
     "type": "Basic",
@@ -830,7 +830,7 @@
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the alternating series test?</p>",
-    "back": "<p>An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\ a_n\\) or \\(\\sum_{n=1}^{\\infty} (-1)^{n} \\ a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\).</p>"
+    "back": "<p>An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\, a_n\\) or \\(\\sum_{n=1}^{\\infty} (-1)^{n} \\, a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\).</p>"
   },
   {
     "type": "Basic",
@@ -871,15 +871,15 @@
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Integration-by-Parts",
-    "front": "\\[ \\int \\ln x \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Integrate by parts:</p>\n\n\n\\[ u \\ dv = uv - \\int v \\ du \\]\n\n\\[\n\\begin{align*}\n     u &= \\ln x            & dv &= dx \\\\\n    du &= \\frac{1}{x} \\ dx &  v &= x\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\ln x \\ dx\n    &= x \\ln x - \\int x \\frac{1}{x} \\ dx \\\\\n    &= x \\ln x - \\int dx \\\\\n    &= x \\ln x - x + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\ln x \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Integrate by parts:</p>\n\n\n\\[ u \\, dv = uv - \\int v \\, du \\]\n\n\\[\n\\begin{align*}\n     u &= \\ln x            & dv &= dx \\\\\n    du &= \\frac{1}{x} \\, dx &  v &= x\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\ln x \\, dx\n    &= x \\ln x - \\int x \\frac{1}{x} \\, dx \\\\\n    &= x \\ln x - \\int dx \\\\\n    &= x \\ln x - x + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Integration-by-Parts",
-    "front": "\\[ \\int (\\ln x)^2 \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Integrate by parts:</p>\n\n\n\\[ u \\ dv = uv - \\int v \\ du \\]\n\n\\[\n\\begin{align*}\n     u &= (\\ln x)^2              & dv &= dx \\\\\n    du &= \\frac{2 \\ln x}{x} \\ dx &  v &= x\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (\\ln x)^2 \\ dx\n    &= x (\\ln x)^2 - \\int x \\frac{2 \\ln x}{x} \\ dx \\\\\n    &= x (\\ln x)^2 - 2 \\int \\ln x \\ dx \\\\\n    &= x (\\ln x)^2 - 2 (x \\ln x - x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int (\\ln x)^2 \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Integrate by parts:</p>\n\n\n\\[ u \\, dv = uv - \\int v \\, du \\]\n\n\\[\n\\begin{align*}\n     u &= (\\ln x)^2              & dv &= dx \\\\\n    du &= \\frac{2 \\ln x}{x} \\, dx &  v &= x\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (\\ln x)^2 \\, dx\n    &= x (\\ln x)^2 - \\int x \\frac{2 \\ln x}{x} \\, dx \\\\\n    &= x (\\ln x)^2 - 2 \\int \\ln x \\, dx \\\\\n    &= x (\\ln x)^2 - 2 (x \\ln x - x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
@@ -892,8 +892,8 @@
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
-    "front": "\\[ \\int W(x) \\ dx \\]\n<p>Find the anti-derivative of the Lambert \\(W\\) function.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n     u &= W(x) \\\\\n     x &= u e^u \\\\\n    dx &= (u e^u + e^u) \\ du \\\\\n       &= e^u (u  + 1) \\ du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    &= \\int W(x) \\ dx \\\\\n    &= \\int u e^u(u+1) \\ du \\\\\n    &= \\int e^u (u^2 + u) \\ du, \\quad \\text{Integrate by parts} \\\\\n    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\\\\n    &= u u e^u - u e^u + e^u + C \\\\\n    &= x W(x) - W(x) + e^{W(x)} + C \\\\\n    &= x W(x) - W(x) + \\frac{x}{W(x)} + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int W(x) \\, dx \\]\n<p>Find the anti-derivative of the Lambert \\(W\\) function.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n     u &= W(x) \\\\\n     x &= u e^u \\\\\n    dx &= (u e^u + e^u) \\, du \\\\\n       &= e^u (u  + 1) \\, du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    &= \\int W(x) \\, dx \\\\\n    &= \\int u e^u(u+1) \\, du \\\\\n    &= \\int e^u (u^2 + u) \\, du, \\quad \\text{Integrate by parts} \\\\\n    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\\\\n    &= u u e^u - u e^u + e^u + C \\\\\n    &= x W(x) - W(x) + e^{W(x)} + C \\\\\n    &= x W(x) - W(x) + \\frac{x}{W(x)} + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
@@ -920,190 +920,190 @@
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\sin^2(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\ dx\n    &= \\int \\frac{1-\\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} - \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x - \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\sin^2(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\, dx\n    &= \\int \\frac{1-\\cos(2x)}{2} \\, dx \\\\\n    &= \\int \\frac{1}{2} - \\frac{1}{2} \\cos(2x) \\, dx \\\\\n    &= \\frac{1}{2} x - \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\cos^2(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\ dx\n    &= \\int \\frac{1 + \\cos(2x)}{2} \\ dx \\\\\n    &= \\int \\frac{1}{2} + \\frac{1}{2} \\cos(2x) \\ dx \\\\\n    &= \\frac{1}{2} x + \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\cos^2(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\, dx\n    &= \\int \\frac{1 + \\cos(2x)}{2} \\, dx \\\\\n    &= \\int \\frac{1}{2} + \\frac{1}{2} \\cos(2x) \\, dx \\\\\n    &= \\frac{1}{2} x + \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\sin^3(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = 1 - \\cos^2(2) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^3(x) \\ dx\n    &= \\int \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int (1 - \\cos^2(x)) \\sin(x) \\ dx \\\\\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - (1 - u^2) \\ du \\\\\n    &= \\int u^2 - 1 \\ du \\\\\n    &= \\frac{1}{3} u^3 - u + C \\\\\n    &= \\frac{1}{3} \\cos^3(x) - \\cos(x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\sin^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = 1 - \\cos^2(2) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^3(x) \\, dx\n    &= \\int \\sin^2(x) \\sin(x) \\, dx \\\\\n    &= \\int (1 - \\cos^2(x)) \\sin(x) \\, dx \\\\\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (1 - \\cos^2(x)) \\sin(x) \\, dx\n    &= \\int - (1 - u^2) \\, du \\\\\n    &= \\int u^2 - 1 \\, du \\\\\n    &= \\frac{1}{3} u^3 - u + C \\\\\n    &= \\frac{1}{3} \\cos^3(x) - \\cos(x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\cos^3(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = 1 - \\sin^2(2) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^3(x) \\ dx\n    &= \\int \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int (1 - \\sin^2(x)) \\cos(x) \\ dx \\\\\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x) \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int 1 - u^2 \\ du \\\\\n    &= u - \\frac{1}{3} u^3 + C \\\\\n    &= \\sin(x) - \\frac{1}{3} \\sin^3(x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\cos^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = 1 - \\sin^2(2) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^3(x) \\, dx\n    &= \\int \\cos^2(x) \\cos(x) \\, dx \\\\\n    &= \\int (1 - \\sin^2(x)) \\cos(x) \\, dx \\\\\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (1 - \\sin^2(x)) \\cos(x) \\, dx\n    &= \\int 1 - u^2 \\, du \\\\\n    &= u - \\frac{1}{3} u^3 + C \\\\\n    &= \\sin(x) - \\frac{1}{3} \\sin^3(x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\sin^4(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n\n<p>and</p>\n\n\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 - \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} - 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} - \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x - \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\sin^4(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n\n<p>and</p>\n\n\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^4(x) \\, dx\n    &= \\int \\left[ \\frac{1 - \\cos(2x)}{2} \\right]^2 \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\cos^2(2x) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} - 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\, dx \\\\\n    &= \\int \\frac{3}{8} - \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\, dx \\\\\n    &= \\frac{3}{8} x - \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\cos^4(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n\n<p>and</p>\n\n\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^4(x) \\ dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\ dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\ dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\cos^4(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n\n<p>and</p>\n\n\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^4(x) \\, dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\, dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\, dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\cos^2(x) \\sin^3(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\ dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\ dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\ dx\n    &= \\int - u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^4 - u^2 \\ du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\cos^2(x) \\sin^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\, dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\, dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\, dx\n    &= \\int - u^2 (1 - u^2) \\, du \\\\\n    &= \\int u^4 - u^2 \\, du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\sin^2(x) \\cos^3(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = 1 - \\sin^2(x) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^3(x) \\ dx\n    &= \\int \\sin^2(x) \\cos^2(x) \\cos(x) \\ dx \\\\\n    &= \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x)\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\ dx\n    &= \\int u^2 (1 - u^2) \\ du \\\\\n    &= \\int u^2 - u^4 \\ du \\\\\n    &= \\frac{1}{3} u^3 - \\frac{1}{5} u^5 + C \\\\\n    &= \\frac{1}{3} \\sin^3(x) - \\frac{1}{5} \\sin^5(x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\sin^2(x) \\cos^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = 1 - \\sin^2(x) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^3(x) \\, dx\n    &= \\int \\sin^2(x) \\cos^2(x) \\cos(x) \\, dx \\\\\n    &= \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x)\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\, dx\n    &= \\int u^2 (1 - u^2) \\, du \\\\\n    &= \\int u^2 - u^4 \\, du \\\\\n    &= \\frac{1}{3} u^3 - \\frac{1}{5} u^5 + C \\\\\n    &= \\frac{1}{3} \\sin^3(x) - \\frac{1}{5} \\sin^5(x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin(2x) = 2 \\sin(x) \\cos(x) \\]\n\n<p>and</p>\n\n\n\\[ \\sin^2(2x) = \\frac{1 - \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\ dx\n    &= \\int \\sin(x) \\sin(x) \\cos(x) \\cos(x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\left( 2 \\sin(x) \\cos(x) \\right) \\left( 2 \\sin(x) \\cos(x) \\right) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin(2x) \\sin(2x) \\ dx \\\\\n    &= \\int \\frac{1}{4} \\sin^2(2x) \\ dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\ dx \\\\\n    &= \\frac{1}{8} \\left( \\int dx - \\int \\cos(4x) \\ dx \\right) \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin(2x) = 2 \\sin(x) \\cos(x) \\]\n\n<p>and</p>\n\n\n\\[ \\sin^2(2x) = \\frac{1 - \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\, dx\n    &= \\int \\sin(x) \\sin(x) \\cos(x) \\cos(x) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left( 2 \\sin(x) \\cos(x) \\right) \\left( 2 \\sin(x) \\cos(x) \\right) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\sin(2x) \\sin(2x) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\sin^2(2x) \\, dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\, dx \\\\\n    &= \\frac{1}{8} \\left( \\int dx - \\int \\cos(4x) \\, dx \\right) \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
-    "front": "\\[ \\int \\frac{1}{1 + \\sin(x)} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sin(x)} \\ dx\n    &= \\int \\left( \\frac{1}{1 + \\sin(x)} \\right) \\left( \\frac{1 - \\sin(x)}{1 - \\sin(x)} \\right) \\ dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{1 - \\sin^2(x)} \\ dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{\\cos^2(x)} \\ dx \\\\\n    &= \\int \\frac{1}{\\cos^2(x)} - \\frac{\\sin(x)}{\\cos^2(x)} \\ dx \\\\\n    &= \\int \\sec^2(x) - \\tan(x) \\sec(x) \\ dx \\\\\n    &= \\tan(x) - \\sec(x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{1}{1 + \\sin(x)} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sin(x)} \\, dx\n    &= \\int \\left( \\frac{1}{1 + \\sin(x)} \\right) \\left( \\frac{1 - \\sin(x)}{1 - \\sin(x)} \\right) \\, dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{1 - \\sin^2(x)} \\, dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{\\cos^2(x)} \\, dx \\\\\n    &= \\int \\frac{1}{\\cos^2(x)} - \\frac{\\sin(x)}{\\cos^2(x)} \\, dx \\\\\n    &= \\int \\sec^2(x) - \\tan(x) \\sec(x) \\, dx \\\\\n    &= \\tan(x) - \\sec(x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int 3x^2 \\sqrt {x^3 + 1} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^3 + 1 \\\\\n    du &= 3x^2 \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int 3x^2 \\sqrt{x^3 + 1} \\ dx\n    &= \\int \\sqrt{u} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{3} (x^3 + 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int 3x^2 \\sqrt {x^3 + 1} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^3 + 1 \\\\\n    du &= 3x^2 \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int 3x^2 \\sqrt{x^3 + 1} \\, dx\n    &= \\int \\sqrt{u} \\, du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{3} (x^3 + 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int xe^{-x^2} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= -x^2 \\\\\n    du &= -2x \\ dx \\\\\n    -\\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int xe^{-x^2} \\ dx\n    &= -\\frac{1}{2} \\int e^u \\ du \\\\\n    &= -\\frac{1}{2} e^u + C \\\\\n    &= -\\frac{1}{2} e^{-x^2} + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int xe^{-x^2} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= -x^2 \\\\\n    du &= -2x \\, dx \\\\\n    -\\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int xe^{-x^2} \\, dx\n    &= -\\frac{1}{2} \\int e^u \\, du \\\\\n    &= -\\frac{1}{2} e^u + C \\\\\n    &= -\\frac{1}{2} e^{-x^2} + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{x}{(x^2 + 1)^2} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{(x^2 + 1)^2} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u^2} \\ du \\\\\n    &= -\\frac{1}{2} \\frac{1}{u} + C \\\\\n    &= -\\frac{1}{2} \\frac{1}{x^2 + 1} + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{x}{(x^2 + 1)^2} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{(x^2 + 1)^2} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{u^2} \\, du \\\\\n    &= -\\frac{1}{2} \\frac{1}{u} + C \\\\\n    &= -\\frac{1}{2} \\frac{1}{x^2 + 1} + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int e^{\\cos x} \\sin x \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int e^{\\cos x} \\sin x \\ dx\n    &= - \\int e^u \\ du \\\\\n    &= - e^u + C \\\\\n    &= - e^{\\cos x} + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int e^{\\cos x} \\sin x \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\, dx \\\\\n    - du &= \\sin x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int e^{\\cos x} \\sin x \\, dx\n    &= - \\int e^u \\, du \\\\\n    &= - e^u + C \\\\\n    &= - e^{\\cos x} + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{e^x}{e^x + 1} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= e^x + 1 \\\\\n    du &= e^x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{e^x}{e^x + 1} \\ dx\n    &= \\int \\frac{1}{u} \\ du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln (e^x + 1) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{e^x}{e^x + 1} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= e^x + 1 \\\\\n    du &= e^x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{e^x}{e^x + 1} \\, dx\n    &= \\int \\frac{1}{u} \\, du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln (e^x + 1) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{x}{x^2 + 1} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{x^2 + 1} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{u} \\ du \\\\\n    &= \\frac{1}{2} \\ln |u| + C \\\\\n    &= \\frac{1}{2} \\ln (x^2 + 1) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{x}{x^2 + 1} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{x^2 + 1} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{u} \\, du \\\\\n    &= \\frac{1}{2} \\ln |u| + C \\\\\n    &= \\frac{1}{2} \\ln (x^2 + 1) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\ dx \\\\\n    - du &= \\sin x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{\\sin x}{1 + \\cos^2 x} \\ dx\n    &= - \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= - \\tan^{-1} u + C \\\\\n    &= - \\tan^{-1} (\\cos x) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{\\sin x}{1 + \\cos^2 x} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\, dx \\\\\n    - du &= \\sin x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{\\sin x}{1 + \\cos^2 x} \\, dx\n    &= - \\int \\frac{1}{1 + u^2} \\, du \\\\\n    &= - \\tan^{-1} u + C \\\\\n    &= - \\tan^{-1} (\\cos x) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\cos(x) \\sin(\\sin(x)) \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\ dx\n    &= \\int \\sin(u) \\ du \\\\\n    &= - \\cos(u) + C \\\\\n    &= - \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\cos(x) \\sin(\\sin(x)) \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\, dx\n    &= \\int \\sin(u) \\, du \\\\\n    &= - \\cos(u) + C \\\\\n    &= - \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{\\ln x}{x} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{\\ln x}{x} \\ dx\n    &= \\int u \\ du \\\\\n    &= \\frac{1}{2} u^2 + C \\\\\n    &= \\frac{1}{2} (\\ln x)^2 + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{\\ln x}{x} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{\\ln x}{x} \\, dx\n    &= \\int u \\, du \\\\\n    &= \\frac{1}{2} u^2 + C \\\\\n    &= \\frac{1}{2} (\\ln x)^2 + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{1}{x \\ln x} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x \\ln x} \\ dx\n    &= \\int \\frac{1}{u} \\ du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln | \\ln x | + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{1}{x \\ln x} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x \\ln x} \\, dx\n    &= \\int \\frac{1}{u} \\, du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln | \\ln x | + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{x}{\\sqrt{x + 1}} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    x &= u - 1 \\\\\n    u &= x + 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{\\sqrt{x + 1}} \\ dx\n    &= \\int \\frac{u - 1}{\\sqrt{u}} \\ du \\\\\n    &= \\int \\frac{u}{\\sqrt{u}} \\ du - \\int \\frac{1}{\\sqrt{u}} \\ du \\\\\n    &= \\int u^{1/2} \\ du - \\int u^{-1/2} \\ du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}} + C \\\\\n    &= \\frac{2}{3} (x + 1)^{\\frac{3}{2}} - 2(x + 1)^{\\frac{1}{2}} + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{x}{\\sqrt{x + 1}} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    x &= u - 1 \\\\\n    u &= x + 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{\\sqrt{x + 1}} \\, dx\n    &= \\int \\frac{u - 1}{\\sqrt{u}} \\, du \\\\\n    &= \\int \\frac{u}{\\sqrt{u}} \\, du - \\int \\frac{1}{\\sqrt{u}} \\, du \\\\\n    &= \\int u^{1/2} \\, du - \\int u^{-1/2} \\, du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}} + C \\\\\n    &= \\frac{2}{3} (x + 1)^{\\frac{3}{2}} - 2(x + 1)^{\\frac{1}{2}} + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{x}{1 + x^4} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 \\\\\n    du &= 2x \\ dx \\\\\n    \\frac{1}{2} du &= x \\ dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{1 + x^4} \\ dx\n    &= \\frac{1}{2} \\int \\frac{1}{1 + u^2} \\ du \\\\\n    &= \\frac{1}{2} \\tan^{-1}(u) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1}(x^2) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{x}{1 + x^4} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{1 + x^4} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{1 + u^2} \\, du \\\\\n    &= \\frac{1}{2} \\tan^{-1}(u) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1}(x^2) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int (x + 1) \\sqrt{x - 1} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    x &= u + 1 \\\\\n    u &= x - 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (x + 1) \\sqrt{x - 1} \\ dx\n    &= \\int (u + 2) \\sqrt{u} \\ du \\\\\n    &= \\int (u \\sqrt{u} + 2 \\sqrt{u}) \\ du \\\\\n    &= \\int (u^{\\frac{3}{2}} + 2 u^{\\frac{1}{2}}) \\ du \\\\\n    &= \\int u^{\\frac{3}{2}} \\ du + 2 \\int u^{\\frac{1}{2}} \\ du \\\\\n    &= \\frac{2}{5} u^{\\frac{5}{2}} + \\frac{4}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{5} (x - 1)^{\\frac{5}{2}} + \\frac{4}{3} (x - 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int (x + 1) \\sqrt{x - 1} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    x &= u + 1 \\\\\n    u &= x - 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (x + 1) \\sqrt{x - 1} \\, dx\n    &= \\int (u + 2) \\sqrt{u} \\, du \\\\\n    &= \\int (u \\sqrt{u} + 2 \\sqrt{u}) \\, du \\\\\n    &= \\int (u^{\\frac{3}{2}} + 2 u^{\\frac{1}{2}}) \\, du \\\\\n    &= \\int u^{\\frac{3}{2}} \\, du + 2 \\int u^{\\frac{1}{2}} \\, du \\\\\n    &= \\frac{2}{5} u^{\\frac{5}{2}} + \\frac{4}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{5} (x - 1)^{\\frac{5}{2}} + \\frac{4}{3} (x - 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{1}{x^2 + 4x + 8} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution after completing the square:</p>\n\n\n\\[\n\\begin{align*}\n    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\\\\n    u &= x + 2 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x^2 + 4x + 8} \\ dx\n    &= \\int \\frac{1}{u^2 + 2^2} \\ du \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{u}{2} \\right) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{x + 2}{2} \\right) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{1}{x^2 + 4x + 8} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution after completing the square:</p>\n\n\n\\[\n\\begin{align*}\n    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\\\\n    u &= x + 2 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x^2 + 4x + 8} \\, dx\n    &= \\int \\frac{1}{u^2 + 2^2} \\, du \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{u}{2} \\right) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{x + 2}{2} \\right) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{2x}} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= 1 + \\sqrt{2x} \\\\\n      &= 1 + (2x)^\\frac{1}{2} \\\\\n    du &= (2x)^{-\\frac{1}{2}} \\ dx \\\\\n    dx &= (2x)^\\frac{1}{2} \\ du \\\\\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{2x}} \\ dx\n    &= \\int \\frac{1}{u} (2x)^\\frac{1}{2} \\ du, \\quad (2x)^\\frac{1}{2} = u - 1 \\\\\n    &= \\int \\frac{1}{u} (u - 1) \\ du \\\\\n    &= \\int \\frac{u}{u} - \\frac{1}{u} \\ du \\\\\n    &= \\int du - \\int \\frac{1}{u} \\ du \\\\\n    &= u - \\ln |u| + C \\\\\n    &= (1 + \\sqrt{2x}) - \\ln(1 + \\sqrt{2x}) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{2x}} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= 1 + \\sqrt{2x} \\\\\n      &= 1 + (2x)^\\frac{1}{2} \\\\\n    du &= (2x)^{-\\frac{1}{2}} \\, dx \\\\\n    dx &= (2x)^\\frac{1}{2} \\, du \\\\\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{2x}} \\, dx\n    &= \\int \\frac{1}{u} (2x)^\\frac{1}{2} \\, du, \\quad (2x)^\\frac{1}{2} = u - 1 \\\\\n    &= \\int \\frac{1}{u} (u - 1) \\, du \\\\\n    &= \\int \\frac{u}{u} - \\frac{1}{u} \\, du \\\\\n    &= \\int du - \\int \\frac{1}{u} \\, du \\\\\n    &= u - \\ln |u| + C \\\\\n    &= (1 + \\sqrt{2x}) - \\ln(1 + \\sqrt{2x}) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int e^{\\sqrt{x}} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} dx \\\\\n       &= \\frac{1}{2 u} \\ dx \\\\\n    dx &= 2u \\ du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int e^{\\sqrt{x}} \\ dx\n    &= 2 \\int u e^u \\ du \\\\\n    &= 2 u e^u - 2 e^u + C \\\\\n    &= 2 e^u (u - 1) + C \\\\\n    &= 2 e^\\sqrt{x} ( \\sqrt{x} - 1 ) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int e^{\\sqrt{x}} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} dx \\\\\n       &= \\frac{1}{2 u} \\, dx \\\\\n    dx &= 2u \\, du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int e^{\\sqrt{x}} \\, dx\n    &= 2 \\int u e^u \\, du \\\\\n    &= 2 u e^u - 2 e^u + C \\\\\n    &= 2 e^u (u - 1) + C \\\\\n    &= 2 e^\\sqrt{x} ( \\sqrt{x} - 1 ) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
-    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{x}} \\ dx \\]\n<p>Solve the integral.</p>",
-    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} \\ dx \\\\& = \\frac{1}{2 u} \\ dx \\\\\n    dx &= 2u \\ du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{x}} \\ dx\n    &= 2 \\int \\frac{u}{u + 1} \\ du \\\\\n    &= 2 \\int \\frac{u + 1 - 1}{u + 1} \\ du \\\\\n    &= 2 \\int 1 - \\frac{1}{u + 1} \\ du \\\\\n    &= 2 \\left( u - \\ln |u + 1| \\right) + C \\\\\n    &= 2 \\left( \\sqrt{x} - \\ln |\\sqrt{x} + 1| \\right) + C\n\\end{align*}\n\\]"
+    "front": "\\[ \\int \\frac{1}{1 + \\sqrt{x}} \\, dx \\]\n<p>Solve the integral.</p>",
+    "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} \\, dx \\\\& = \\frac{1}{2 u} \\, dx \\\\\n    dx &= 2u \\, du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{x}} \\, dx\n    &= 2 \\int \\frac{u}{u + 1} \\, du \\\\\n    &= 2 \\int \\frac{u + 1 - 1}{u + 1} \\, du \\\\\n    &= 2 \\int 1 - \\frac{1}{u + 1} \\, du \\\\\n    &= 2 \\left( u - \\ln |u + 1| \\right) + C \\\\\n    &= 2 \\left( \\sqrt{x} - \\ln |\\sqrt{x} + 1| \\right) + C\n\\end{align*}\n\\]"
   },
   {
     "type": "Basic",
@@ -1116,7 +1116,7 @@
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform",
-    "front": "\\[ \\mathscr{L} \\{ t^n, \\ n = 1, 2, 3, \\ldots \\} \\]",
+    "front": "\\[ \\mathscr{L} \\{ t^n, \\, n = 1, 2, 3, \\ldots \\} \\]",
     "back": "\\[ \\frac{n!}{s^{n+1}} \\]"
   },
   {
@@ -1186,7 +1186,7 @@
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform",
-    "front": "\\[ \\mathscr{L} \\{ e^{ct} t^n, \\ n = 1, 2, 3, \\ldots \\} \\]",
+    "front": "\\[ \\mathscr{L} \\{ e^{ct} t^n, \\, n = 1, 2, 3, \\ldots \\} \\]",
     "back": "\\[ \\frac{n!}{(s - c)^{n + 1}} \\]"
   },
   {
@@ -1250,13 +1250,13 @@
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform",
     "front": "\\[ \\mathscr{L} \\left\\{ \\frac{f(t)}{t} \\right\\} \\]",
-    "back": "\\[ \\int_{s}^{\\infty} F(u) \\ du \\]"
+    "back": "\\[ \\int_{s}^{\\infty} F(u) \\, du \\]"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform",
-    "front": "\\[ \\mathscr{L} \\left\\{ \\int_{0}^{t} f(u) \\ du \\right\\} \\]",
+    "front": "\\[ \\mathscr{L} \\left\\{ \\int_{0}^{t} f(u) \\, du \\right\\} \\]",
     "back": "\\[ \\frac{F(s)}{s} \\]"
   },
   {
@@ -1278,7 +1278,7 @@
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform",
     "front": "<p>What is the definition of the Laplace transform?</p>",
-    "back": "<p>The Laplace transform of a function \\(f(t)\\) is a function \\(F(s)\\) defined as</p>\n\n\n\\[ F(s) = \\mathscr{L}\\{f\\} = \\int_0^\\infty e^{-st} f(t) \\ dt \\]\n\n<p>where \\(f(t)\\) is a function of exponential order defined for all \\(t \\ge 0\\).</p>"
+    "back": "<p>The Laplace transform of a function \\(f(t)\\) is a function \\(F(s)\\) defined as</p>\n\n\n\\[ F(s) = \\mathscr{L}\\{f\\} = \\int_0^\\infty e^{-st} f(t) \\, dt \\]\n\n<p>where \\(f(t)\\) is a function of exponential order defined for all \\(t \\ge 0\\).</p>"
   },
   {
     "type": "Basic",
@@ -1292,7 +1292,7 @@
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform",
     "front": "<p>What is the second translation or shifting property of the Laplace transform?</p>",
-    "back": "<p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{f(t - c) \\ u(t - c)\\} = e^{-cs} F(s) \\]\n\n\\[ \\mathscr{L}^{-1}\\{e^{-cs} F(s)\\} = f(t - c) \\ u(t - c) \\]\n\n<p>where \\(u(t - c)\\) is the unit step function, which is defined as</p>\n\n\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t > c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ f(t - 2) \\ u(t - 2) \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]"
+    "back": "<p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{f(t - c) \\, u(t - c)\\} = e^{-cs} F(s) \\]\n\n\\[ \\mathscr{L}^{-1}\\{e^{-cs} F(s)\\} = f(t - c) \\, u(t - c) \\]\n\n<p>where \\(u(t - c)\\) is the unit step function, which is defined as</p>\n\n\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t > c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ f(t - 2) \\, u(t - 2) \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]"
   },
   {
     "type": "Basic",

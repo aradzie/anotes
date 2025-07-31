@@ -9,7 +9,7 @@
 \[ \frac{1}{s} \]
 ===
 
-\[ \mathscr{L} \{ t^n, \ n = 1, 2, 3, \ldots \} \]
+\[ \mathscr{L} \{ t^n, \, n = 1, 2, 3, \ldots \} \]
 ---
 \[ \frac{n!}{s^{n+1}} \]
 ===
@@ -59,7 +59,7 @@
 \[ \frac{1}{s - c} \]
 ===
 
-\[ \mathscr{L} \{ e^{ct} t^n, \ n = 1, 2, 3, \ldots \} \]
+\[ \mathscr{L} \{ e^{ct} t^n, \, n = 1, 2, 3, \ldots \} \]
 ---
 \[ \frac{n!}{(s - c)^{n + 1}} \]
 ===
@@ -106,10 +106,10 @@
 
 \[ \mathscr{L} \left\{ \frac{f(t)}{t} \right\} \]
 ---
-\[ \int_{s}^{\infty} F(u) \ du \]
+\[ \int_{s}^{\infty} F(u) \, du \]
 ===
 
-\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \ du \right\} \]
+\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \, du \right\} \]
 ---
 \[ \frac{F(s)}{s} \]
 ===

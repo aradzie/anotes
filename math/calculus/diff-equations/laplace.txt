@@ -8,7 +8,7 @@ What is the definition of the Laplace transform?
 ---
 The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as
 
-\[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \ dt \]
+\[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \, dt \]
 
 where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).
 ===
@@ -36,9 +36,9 @@ What is the second translation or shifting property of the Laplace transform?
 ---
 If \(f(t)\) has the transform \(F(s)\) then
 
-\[ \mathscr{L}\{f(t - c) \ u(t - c)\} = e^{-cs} F(s) \]
+\[ \mathscr{L}\{f(t - c) \, u(t - c)\} = e^{-cs} F(s) \]
 
-\[ \mathscr{L}^{-1}\{e^{-cs} F(s)\} = f(t - c) \ u(t - c) \]
+\[ \mathscr{L}^{-1}\{e^{-cs} F(s)\} = f(t - c) \, u(t - c) \]
 
 where \(u(t - c)\) is the unit step function, which is defined as
 
@@ -57,7 +57,7 @@ Since
 
 we have
 
-\[ \mathscr{L}\{ f(t - 2) \ u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]
+\[ \mathscr{L}\{ f(t - 2) \, u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]
 ===
 
 What is the change of scale property of the Laplace transform?
