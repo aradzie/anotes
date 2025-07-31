@@ -4,6 +4,8 @@
 
 !tags:Math Calculus Laplace-Transform
 
+!template:Definition
+
 What is the definition of the Laplace transform?
 ---
 The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as

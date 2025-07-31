@@ -215,21 +215,34 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 
 \[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
 
-<p>Each number \(a_n\) is a term of the sequence.
-The subscript \(n\) is the index variable of the sequence.</p>
-<p>Sequences can be defined in various ways:</p>
+<p>denoted as</p>
+
+
+\[ \{ a_n \}_{n=1}^{\infty} \]
+
+<p>or simply</p>
+
+
+\[ \{ a_n \}. \]
+
+<p>Each number \(a_n\) is a term of the sequence.</p>
+<p>The subscript \(n\) is the index variable of the sequence.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What are the different ways to define a sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence can be defined in various ways:</p>
 <ul>
-<li>Listing terms: For instance, \(\{ 2, 4, 6, 8, \ldots \}\).</li>
-<li>Explicit formula: A formula that defines the n-th term directly in terms of n, \(a_n = f(n)\).</li>
-<li>Recurrence relation: A rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</li>
-</ul></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):</p>
+<li><p>By listing terms \(\{ 2, 4, 6, 8, \ldots \}\).</p>
+</li>
+<li><p>By an explicit formula that defines the \(n\)-th term directly in terms of \(n\), \(a_n = f(n)\).</p>
+</li>
+<li><p>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</p>
+</li>
+</ul>
+<p>TODO Add examples.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{ a_n \}\) converges to a real number \(L\) if for all \(\epsilon > 0\), there exists an integer \(N\) such that \(|a_n − L| < \epsilon\) if \(n \ge N\). The number \(L\) is the limit of the sequence and we write</p>
 
 
-\[ \lim_{n \to \infty} a_n = L \]
+\[ \lim_{n \to \infty} a_n = L \text{ or } a_n \to L. \]
 
-<p>If such a finite value \(L\) exists, the sequence is said to <strong>converge</strong> to that limit.</p>
-<p>If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to <strong>diverge</strong>.</p></section>"
+<p>In this case, we say the sequence \(\{a_n\}\) is a <strong>convergent sequence</strong>. If a sequence does not converge, it is a <strong>divergent sequence</strong>, and we say the limit does not exist.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the squeeze theorem for sequences?</p>;"<section style=""text-align: left""><p>Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
 Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
 If there exists a real number \(L\) such that</p>
@@ -241,53 +254,92 @@ If there exists a real number \(L\) such that</p>
 
 
 \[ \lim_{n \to \infty} b_n = L \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is a bounded sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{a_n\}\) is <strong>bounded above</strong> if there exists a real number \(M\) such that</p>
+
+
+\[ a_n \le M \]
+
+<p>for all positive integers \(n\).</p>
+<p>A sequence \(\{a_n\}\) is <em>bounded below</em> if there exists a real number \(M\) such that</p>
+
+
+\[ M \le a_n \]
+
+<p>for all positive integers \(n\).</p>
+<p>A sequence \(\{a_n\}\) is a <em>bounded sequence</em> if it is bounded above and bounded below.</p>
+<p>If a sequence is not bounded, it is an <strong>unbounded sequence</strong>.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the relationship between convergent and bounded sequences?</p>;"<section style=""text-align: left""><p>If a sequence \(\{a_n\}\) converges, then it is bounded.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is a monotone sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{a_n\}\) is <strong>increasing</strong> for all \(n \ge n_0\) if</p>
+
+
+\[ a_n \le a_{n+1} \text{ for all } n \ge n_0. \]
+
+<p>A sequence \(\{a_n\}\) is <strong>decreasing</strong> for all \(n \ge n_0\) if</p>
+
+
+\[ a_n \ge a_{n+1} \text{ for all } n \ge n_0. \]
+
+<p>A sequence \(\{a_n\}\) is a <strong>monotone sequence</strong> for all \(n \ge n_0\) if it is increasing for all \(n \ge n_0\) or decreasing for all \(n \ge n_0\).</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the monotone convergence theorem?</p>;"<section style=""text-align: left""><p>If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite series?</p>;"<section style=""text-align: left""><p>An infinite series is a sum of the terms of an infinite sequnce \(a_n\)</p>
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite series?</p>;"<section style=""text-align: left""><p>An infinite series is a sum of the terms of an infinite sequnce \(a_n\):</p>
 
 
-\[ S = \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]</section>"
+\[ \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]</section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the harmonic series?</p>;"<section style=""text-align: left""><p>The harmonic series is an infinite series of the following form</p>
 
 
 \[ \sum_{n=1}^{\infty} \frac{1}{n} \]
 
-<p>The harmonic series diverges to infinity.</p>
 <p>The harmonic series is a special case of the p-series with \(p = 1\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What does the harmonic series converge to?</p>;"<section style=""text-align: left""><p>The harmonic series \(\sum_{n=1}^{\infty} \frac{1}{n}\) diverges to infinity.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the geometric series?</p>;"<section style=""text-align: left""><p>The geometric series is an infinite series of the following form</p>
 
 
-\[ \sum_{n=1}^{\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \ldots \]
-
-<p>The geometric series converges to</p>
-
-
-\[ \frac{a}{1-r} \]
-
-<p>if \(|r| < 1\).</p></section>"
+\[ \sum_{n=0}^{\infty} a r^{n} = a + ar + ar^2 + ar^3 + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What does the geometric series converge to?</p>;"<section style=""text-align: left""><p>The geometric series \(\sum_{n=0}^{\infty} a r^{n}\) converges to \(\frac{a}{1 - r}\) if \(|r| < 1\), otherwise it diverges.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the p-series?</p>;"<section style=""text-align: left""><p>The p-series series is an infinite series of the following form</p>
 
 
-\[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]
+\[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What does the p-series converge to?</p>;"<section style=""text-align: left""><p>The p-series \(\sum_{n=1}^{\infty} \frac{1}{n^p}\) converges if \(p > 1\), otherwise it diverges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the telescoping series?</p>;"<section style=""text-align: left""><p>The telescoping series is an infinite series of the following form</p>
 
-<p>The p-series converges if \(p > 1\).</p>
-<p>The p-series diverges if \(p \le 1\).</p></section>"
+
+\[ \sum_{n=1}^{\infty} a_n - a_{n+1}. \]
+
+<p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What are the algebraic properties of convergent series?</p>;"<section style=""text-align: left""><p>Let \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) be convergent series. Then the following algebraic properties hold.</p>
+<ul>
+<li><p>Sum Rule: The series \(\sum_{n=1}^{\infty} (a_n + b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n\).</p>
+</li>
+<li><p>Difference Rule: The series \(\sum_{n=1}^{\infty} (a_n - b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n\).</p>
+</li>
+<li><p>Constant Multiple Rule: For any real number \(c\), the series \(\sum_{n=1}^{\infty} c a_n\) converges and \(\sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n\).</p>
+</li>
+</ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the divergence test for a series?</p>;"<section style=""text-align: left""><p>Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
 <p>The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the integral test?</p>;"<section style=""text-align: left""><p>Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:</p>
 <ul>
-<li>\(f\) is continuous,</li>
-<li>\(f\) is decreasing, and</li>
-<li>\(f(n) = a_n\) for all integers \(n \ge N\).</li>
+<li><p>\(f\) is continuous,</p>
+</li>
+<li><p>\(f\) is decreasing, and</p>
+</li>
+<li><p>\(f(n) = a_n\) for all integers \(n \ge N\).</p>
+</li>
 </ul>
 <p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.</p>
 <p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>How to estimate the value of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>How to estimate the remainder of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the direct comparison test?</p>;"<section style=""text-align: left""><p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
+<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
+<p>TODO Add an example.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit comparison test?</p>;"<section style=""text-align: left""><p>Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).</p>
 <p>If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.</p>
 <p>If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
+<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
+<p>TODO Add an example.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series?</p>;"<section style=""text-align: left""><p>The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:</p>
 
 
@@ -297,35 +349,60 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 
 
 \[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]</section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p>
+<p>TODO Add an example.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the remainder of an alternating series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align: left""><p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>absolute convergence</strong> if \(\sum_{n=1}^{\infty} |a_n|\) converges.</p>
+<p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>conditional convergence</strong> if \(\sum_{n=1}^{\infty} a_n\) converges but \(\sum_{n=1}^{\infty} |a_n|\) diverges.</p>
+<p>If \(\sum_{n=1}^{\infty} |a_n|\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the ratio test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let</p>
 
 
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
 
 <ul>
-<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
-<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
-<li>If \(\rho = 1\), the test does not provide any information.</li>
-</ul></section>"
+<li><p>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</p>
+</li>
+<li><p>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
+</li>
+<li><p>If \(\rho = 1\), the test does not provide any information.</p>
+</li>
+</ul>
+<p>TODO Add an example.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the root test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
 
 
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
 
 <ul>
-<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
-<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
-<li>If \(\rho = 1\), the test does not provide any information.</li>
-</ul></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series is an infinite series of the following form</p>
+<li><p>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</p>
+</li>
+<li><p>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
+</li>
+<li><p>If \(\rho = 1\), the test does not provide any information.</p>
+</li>
+</ul>
+<p>TODO Add an example.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series centered at \(x = 0\) is an infinite series of the following form</p>
 
 
 \[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
 
+<p>The power series centered at \(x = a\) is an infinite series of the following form</p>
+
+
+\[ \sum_{n=0}^{\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \ldots \]
+
 <p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What are the convergence properties of a power series?</p>;"<section style=""text-align: left""><p>Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series satisfies exactly one of the following properties:</p>
+<ul>
+<li><p>The series converges at \(x=a\) and diverges for all \(x \ne a\).</p>
+</li>
+<li><p>The series converges for all real numbers \(x\).</p>
+</li>
+<li><p>There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if  \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.</p>
+</li>
+</ul></section>"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int \ln x \, dx \]
 <p>Solve the integral.</p>";"<p>Integrate by parts:</p>
 
@@ -1153,7 +1230,7 @@ Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Subst
 \end{align*}
 \]"
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ 1 \} \];\[ \frac{1}{s} \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ t^n, \, n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{s^{n+1}} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{s^{n+1}} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sin(at) \} \];\[ \frac{a}{s^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \cos(at) \} \];\[ \frac{s}{s^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sin(at + b) \} \];\[ \frac{s \sin(b) + a \cos(b)}{s^2 + a^2} \]
@@ -1163,7 +1240,7 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \math
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \sinh(at) \} \];\[ \frac{a}{s^2 - a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ \cosh(at) \} \];\[ \frac{s}{s^2 - a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \} \];\[ \frac{1}{s - c} \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n, \, n = 1, 2, 3, \ldots \} \];\[ \frac{n!}{(s - c)^{n + 1}} \]
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{(s - c)^{n + 1}} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sin(at) \} \];\[ \frac{a}{(s - c)^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cos(at) \} \];\[ \frac{s - c}{(s - c)^2 + a^2} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sinh(at) \} \];\[ \frac{a}{(s - c)^2 - a^2} \]
@@ -1176,13 +1253,13 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \math
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \, du \right\} \];\[ \frac{F(s)}{s} \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f'(t) \} \];\[ s F(s) - f(0) \]
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;\[ \mathscr{L} \{ f''(t) \} \];\[ s^2 F(s) - s f(0) - f'(0) \]
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the definition of the Laplace transform?</p>;"<p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the definition of the Laplace transform?</p>;"<section style=""text-align: left""><p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
 
 
 \[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \, dt \]
 
-<p>where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).</p>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
+<p>where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).</p></section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
 
 
 \[ \mathscr{L}\{e^{ct} f(t)\} = F(s - c) \]
@@ -1198,8 +1275,8 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What 
 <p>we have</p>
 
 
-\[ \mathscr{L}\{ e^{3t} \cos 2t \} = F(s - 3) = \frac{(s - 3)}{(s - 3)^2 + 4} \]"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
+\[ \mathscr{L}\{ e^{3t} \cos 2t \} = F(s - 3) = \frac{(s - 3)}{(s - 3)^2 + 4} \]</section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
 
 
 \[ \mathscr{L}\{f(t - c) \, u(t - c)\} = e^{-cs} F(s) \]
@@ -1225,8 +1302,8 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What 
 <p>we have</p>
 
 
-\[ \mathscr{L}\{ f(t - 2) \, u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the change of scale property of the Laplace transform?</p>;"<p>If \(f(t)\) has the transform \(F(s)\) then</p>
+\[ \mathscr{L}\{ f(t - 2) \, u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]</section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What is the change of scale property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
 
 
 \[ \mathscr{L}\{ f(ct) \} = \frac{1}{c} F \left( \frac{s}{c} \right) \]
@@ -1242,7 +1319,7 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform;<p>What 
 <p>we have</p>
 
 
-\[ \mathscr{L}\{ \sin 3t \} = \frac{1}{3} F \left( \frac{s}{3} \right) = \frac{1}{3} \frac{1}{(s/3)^2 + 1} = \frac{3}{s^2 + 9} \]"
+\[ \mathscr{L}\{ \sin 3t \} = \frac{1}{3} F \left( \frac{s}{3} \right) = \frac{1}{3} \frac{1}{(s/3)^2 + 1} = \frac{3}{s^2 + 9} \]</section>"
 Basic;Math::Algebra;Math Algebra Identity;<p>Quadratic formula</p>;"<p>If</p>
 
 
