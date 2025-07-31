@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Calculus::Derivatives
+!deck:Math::Calculus::Identities::Derivatives
 
-!tags:Math Calculus Derivative Identity
+!tags:Math Calculus Identity Derivative
 
 \[ \frac{d}{dx} \left( f(x) g(x) \right) \]
 ---

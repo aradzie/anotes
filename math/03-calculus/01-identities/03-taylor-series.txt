@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Calculus::Taylor Series
+!deck:Math::Calculus::Identities::Taylor Series
 
-!tags:Math Calculus Taylor-Series Identity
+!tags:Math Calculus Identity Taylor-Series
 
 \[ e^x \]
 Taylor series expansion

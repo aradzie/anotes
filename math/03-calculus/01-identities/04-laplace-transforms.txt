@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Calculus::Laplace Transform
+!deck:Math::Calculus::Identities::Laplace Transforms
 
-!tags:Math Calculus Laplace-Transform Identity
+!tags:Math Calculus Identity Laplace-Transform
 
 \[ \mathscr{L} \{ 1 \} \]
 ---

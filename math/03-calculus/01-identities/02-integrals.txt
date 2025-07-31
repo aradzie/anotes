@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Calculus::Integrals
+!deck:Math::Calculus::Identities::Integrals
 
-!tags:Math Calculus Integral Identity
+!tags:Math Calculus Identity Integral
 
 \[ \int u^n \, du \]
 ---

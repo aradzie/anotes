@@ -1,0 +1,7 @@
+!type:Basic
+
+!deck:Math::Calculus::PDE
+
+!tags:Math Calculus PDE Theory
+
+!template:Definition

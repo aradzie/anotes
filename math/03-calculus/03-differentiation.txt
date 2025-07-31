@@ -1,8 +1,8 @@
 !type:Basic
 
-!deck:Math::Calculus::Basic
+!deck:Math::Calculus::Differentiation
 
-!tags:Math Calculus Theory Theorem
+!tags:Math Calculus Differentiation Theory
 
 !template:Definition
 
