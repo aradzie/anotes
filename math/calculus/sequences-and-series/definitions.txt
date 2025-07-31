@@ -4,6 +4,8 @@
 
 !tags:Math Calculus Sequences-and-Series
 
+!template:Definition
+
 What is an infinite sequence?
 ---
 An infinite sequence is an ordered and indexed list of numbers of the form

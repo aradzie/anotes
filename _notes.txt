@@ -178,10 +178,10 @@ Basic;Math::Calculus::Taylor Series;Math Calculus Taylor-Series Hyperbolic;"\[ \
     &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
 \end{align*}
 \]"
-Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the extreme value theorem (EVT).</p>;"<p>The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.</p>
+Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the extreme value theorem (EVT).</p>;"<section style=""text-align: left""><p>The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.</p>
 <p>That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).</p>
-<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p>"
-Basic;Math::Calculus::Basic;Math Calculus Theorem;"<p>The definition of the Rolle&#39;s theorem.</p>";"<p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>
+<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
+Basic;Math::Calculus::Basic;Math Calculus Theorem;"<p>The definition of the Rolle&#39;s theorem.</p>";"<section style=""text-align: left""><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>
 <p>The Rolle&#39;s theorem states that if a function \(f(x)\) is:</p>
 <ul>
 <li>Continuous on a closed interval \([a,b]\)</li>
@@ -189,8 +189,8 @@ Basic;Math::Calculus::Basic;Math Calculus Theorem;"<p>The definition of the Roll
 <li>\(f(a)=f(b)\) (the function has the same value at the endpoints)</li>
 </ul>
 <p>Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).</p>
-<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p>"
-Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the mean value theorem (MVT).</p>;"<p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>
+<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
+Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the mean value theorem (MVT).</p>;"<section style=""text-align: left""><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>
 <p>The mean value theorem states that if a function \(f(x)\) is:</p>
 <ul>
 <li>Continuous on a closed interval \([a,b]\)</li>
@@ -207,10 +207,10 @@ Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the mean 
 
 \[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
 
-<p>which means \(f'(c)=0\).</p>"
-Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the intermediate value theorem (IVT).</p>;"<p>The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).</p>
-<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite sequence?</p>;"<p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
+<p>which means \(f'(c)=0\).</p></section>"
+Basic;Math::Calculus::Basic;Math Calculus Theorem;<p>The definition of the intermediate value theorem (IVT).</p>;"<section style=""text-align: left""><p>The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).</p>
+<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
 
 
 \[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
@@ -222,15 +222,15 @@ The subscript \(n\) is the index variable of the sequence.</p>
 <li>Listing terms: For instance, \(\{ 2, 4, 6, 8, \ldots \}\).</li>
 <li>Explicit formula: A formula that defines the n-th term directly in terms of n, \(a_n = f(n)\).</li>
 <li>Recurrence relation: A rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</li>
-</ul>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit of a sequence?</p>;"<p>A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):</p>
+</ul></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A real number \(L\) is called the limit of a sequence \(\{a_n\}\) if, for every positive real number \(\epsilon\), there exists a natural number \(N\) such that for all \(n > N\), the absolute difference between \(a_n\) and \(L\) is less than \(\epsilon\):</p>
 
 
 \[ \lim_{n \to \infty} a_n = L \]
 
 <p>If such a finite value \(L\) exists, the sequence is said to <strong>converge</strong> to that limit.</p>
-<p>If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to <strong>diverge</strong>.</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the squeeze theorem for sequences?</p>;"<p>Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
+<p>If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to <strong>diverge</strong>.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the squeeze theorem for sequences?</p>;"<section style=""text-align: left""><p>Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
 Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
 If there exists a real number \(L\) such that</p>
 
@@ -240,20 +240,20 @@ If there exists a real number \(L\) such that</p>
 <p>then \(\{b_n\}\) converges and</p>
 
 
-\[ \lim_{n \to \infty} b_n = L \]"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the monotone convergence theorem?</p>;<p>If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.</p>
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite series?</p>;"<p>An infinite series is a sum of the terms of an infinite sequnce \(a_n\)</p>
+\[ \lim_{n \to \infty} b_n = L \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the monotone convergence theorem?</p>;"<section style=""text-align: left""><p>If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is an infinite series?</p>;"<section style=""text-align: left""><p>An infinite series is a sum of the terms of an infinite sequnce \(a_n\)</p>
 
 
-\[ S = \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the harmonic series?</p>;"<p>The harmonic series is an infinite series of the following form</p>
+\[ S = \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the harmonic series?</p>;"<section style=""text-align: left""><p>The harmonic series is an infinite series of the following form</p>
 
 
 \[ \sum_{n=1}^{\infty} \frac{1}{n} \]
 
 <p>The harmonic series diverges to infinity.</p>
-<p>The harmonic series is a special case of the p-series with \(p = 1\).</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the geometric series?</p>;"<p>The geometric series is an infinite series of the following form</p>
+<p>The harmonic series is a special case of the p-series with \(p = 1\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the geometric series?</p>;"<section style=""text-align: left""><p>The geometric series is an infinite series of the following form</p>
 
 
 \[ \sum_{n=1}^{\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \ldots \]
@@ -263,32 +263,32 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 
 \[ \frac{a}{1-r} \]
 
-<p>if \(|r| < 1\).</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the p-series?</p>;"<p>The p-series series is an infinite series of the following form</p>
+<p>if \(|r| < 1\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the p-series?</p>;"<section style=""text-align: left""><p>The p-series series is an infinite series of the following form</p>
 
 
 \[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]
 
 <p>The p-series converges if \(p > 1\).</p>
-<p>The p-series diverges if \(p \le 1\).</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the divergence test for a series?</p>;"<p>Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
-<p>The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the integral test?</p>;"<p>Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:</p>
+<p>The p-series diverges if \(p \le 1\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the divergence test for a series?</p>;"<section style=""text-align: left""><p>Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
+<p>The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the integral test?</p>;"<section style=""text-align: left""><p>Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:</p>
 <ul>
 <li>\(f\) is continuous,</li>
 <li>\(f\) is decreasing, and</li>
 <li>\(f(n) = a_n\) for all integers \(n \ge N\).</li>
 </ul>
 <p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.</p>
-<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>How to estimate the remainder of a series?</p>;<p>TODO</p>
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the direct comparison test?</p>;"<p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit comparison test?</p>;"<p>Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).</p>
+<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>How to estimate the remainder of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the direct comparison test?</p>;"<section style=""text-align: left""><p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
+<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the limit comparison test?</p>;"<section style=""text-align: left""><p>Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).</p>
 <p>If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.</p>
 <p>If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series?</p>;"<p>The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:</p>
+<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series?</p>;"<section style=""text-align: left""><p>The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:</p>
 
 
 \[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
@@ -296,11 +296,11 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 <p>or</p>
 
 
-\[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series test?</p>;<p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p>
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the remainder of an alternating series?</p>;<p>TODO</p>
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the relationship between absolute and conditional convergence?</p>;<p>TODO</p>
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the ratio test?</p>;"<p>Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let</p>
+\[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the remainder of an alternating series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the ratio test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let</p>
 
 
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
@@ -309,8 +309,8 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 <li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
 <li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
 <li>If \(\rho = 1\), the test does not provide any information.</li>
-</ul>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the root test?</p>;"<p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
+</ul></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the root test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
 
 
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
@@ -319,13 +319,13 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p
 <li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
 <li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
 <li>If \(\rho = 1\), the test does not provide any information.</li>
-</ul>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the power series?</p>;"<p>The power series is an infinite series of the following form</p>
+</ul></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series is an infinite series of the following form</p>
 
 
 \[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
 
-<p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p>"
+<p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p></section>"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral Integration-by-Parts;"\[ \int \ln x \, dx \]
 <p>Solve the integral.</p>";"<p>Integrate by parts:</p>
 

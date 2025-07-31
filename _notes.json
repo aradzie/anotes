@@ -704,168 +704,168 @@
     "deck": "Math::Calculus::Basic",
     "tags": "Math Calculus Theorem",
     "front": "<p>The definition of the extreme value theorem (EVT).</p>",
-    "back": "<p>The extreme value theorem states that if a real-valued function \\(f\\) is continuous on the closed and bounded interval \\([a,b]\\), then \\(f\\) must attain a maximum and a minimum, each at least once.</p>\n<p>That is, there exist numbers \\(c\\) and \\(d\\) in \\([a,b]\\) such that: \\(f(c) \\leq f(x) \\leq f(d) \\quad \\forall x \\in [a,b]\\).</p>\n<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p>"
+    "back": "<section style=\"text-align: left\"><p>The extreme value theorem states that if a real-valued function \\(f\\) is continuous on the closed and bounded interval \\([a,b]\\), then \\(f\\) must attain a maximum and a minimum, each at least once.</p>\n<p>That is, there exist numbers \\(c\\) and \\(d\\) in \\([a,b]\\) such that: \\(f(c) \\leq f(x) \\leq f(d) \\quad \\forall x \\in [a,b]\\).</p>\n<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
     "tags": "Math Calculus Theorem",
     "front": "<p>The definition of the Rolle&#39;s theorem.</p>",
-    "back": "<p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>\n<p>The Rolle&#39;s theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n<li>\\(f(a)=f(b)\\) (the function has the same value at the endpoints)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that \\(f'(c) = 0\\).</p>\n<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p>"
+    "back": "<section style=\"text-align: left\"><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>\n<p>The Rolle&#39;s theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n<li>\\(f(a)=f(b)\\) (the function has the same value at the endpoints)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that \\(f'(c) = 0\\).</p>\n<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
     "tags": "Math Calculus Theorem",
     "front": "<p>The definition of the mean value theorem (MVT).</p>",
-    "back": "<p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>\n<p>The mean value theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that the instantaneous rate of change (the derivative \\(f'(c)\\)) is equal to the average rate of change over the interval.</p>\n<p>Mathematically, this is expressed as:</p>\n\n\n\\[ f'(c) = \\frac{f(b) - f(a)}{b - a} \\]\n\n<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \\(f(a) = f(b)\\), then the right side of the mean value theorem equation becomes</p>\n\n\n\\[ f'(c) = \\frac{f(a) - f(a)}{b - a} = \\frac{0}{b - a} \\]\n\n<p>which means \\(f'(c)=0\\).</p>"
+    "back": "<section style=\"text-align: left\"><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>\n<p>The mean value theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that the instantaneous rate of change (the derivative \\(f'(c)\\)) is equal to the average rate of change over the interval.</p>\n<p>Mathematically, this is expressed as:</p>\n\n\n\\[ f'(c) = \\frac{f(b) - f(a)}{b - a} \\]\n\n<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \\(f(a) = f(b)\\), then the right side of the mean value theorem equation becomes</p>\n\n\n\\[ f'(c) = \\frac{f(a) - f(a)}{b - a} = \\frac{0}{b - a} \\]\n\n<p>which means \\(f'(c)=0\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Basic",
     "tags": "Math Calculus Theorem",
     "front": "<p>The definition of the intermediate value theorem (IVT).</p>",
-    "back": "<p>The intermediate value theorem states that if a function \\(f(x)\\) is continuous on a closed interval \\([a,b]\\), and \\(L\\) is any value between \\(f(a)\\) and \\(f(b)\\), then there exists at least one number \\(c\\) in the interval \\([a,b]\\) such that \\(f(c)=L\\).</p>\n<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p>"
+    "back": "<section style=\"text-align: left\"><p>The intermediate value theorem states that if a function \\(f(x)\\) is continuous on a closed interval \\([a,b]\\), and \\(L\\) is any value between \\(f(a)\\) and \\(f(b)\\), then there exists at least one number \\(c\\) in the interval \\([a,b]\\) such that \\(f(c)=L\\).</p>\n<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is an infinite sequence?</p>",
-    "back": "<p>An infinite sequence is an ordered and indexed list of numbers of the form</p>\n\n\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\n\n<p>Each number \\(a_n\\) is a term of the sequence.\nThe subscript \\(n\\) is the index variable of the sequence.</p>\n<p>Sequences can be defined in various ways:</p>\n<ul>\n<li>Listing terms: For instance, \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).</li>\n<li>Explicit formula: A formula that defines the n-th term directly in terms of n, \\(a_n = f(n)\\).</li>\n<li>Recurrence relation: A rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\).</li>\n</ul>"
+    "back": "<section style=\"text-align: left\"><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>\n\n\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\n\n<p>Each number \\(a_n\\) is a term of the sequence.\nThe subscript \\(n\\) is the index variable of the sequence.</p>\n<p>Sequences can be defined in various ways:</p>\n<ul>\n<li>Listing terms: For instance, \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).</li>\n<li>Explicit formula: A formula that defines the n-th term directly in terms of n, \\(a_n = f(n)\\).</li>\n<li>Recurrence relation: A rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\).</li>\n</ul></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the limit of a sequence?</p>",
-    "back": "<p>A real number \\(L\\) is called the limit of a sequence \\(\\{a_n\\}\\) if, for every positive real number \\(\\epsilon\\), there exists a natural number \\(N\\) such that for all \\(n > N\\), the absolute difference between \\(a_n\\) and \\(L\\) is less than \\(\\epsilon\\):</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L \\]\n\n<p>If such a finite value \\(L\\) exists, the sequence is said to <strong>converge</strong> to that limit.</p>\n<p>If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to <strong>diverge</strong>.</p>"
+    "back": "<section style=\"text-align: left\"><p>A real number \\(L\\) is called the limit of a sequence \\(\\{a_n\\}\\) if, for every positive real number \\(\\epsilon\\), there exists a natural number \\(N\\) such that for all \\(n > N\\), the absolute difference between \\(a_n\\) and \\(L\\) is less than \\(\\epsilon\\):</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L \\]\n\n<p>If such a finite value \\(L\\) exists, the sequence is said to <strong>converge</strong> to that limit.</p>\n<p>If the terms of the sequence do not approach a single finite value (e.g., they grow infinitely large or oscillate without settling), then the sequence is said to <strong>diverge</strong>.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the squeeze theorem for sequences?</p>",
-    "back": "<p>Consider sequences \\(\\{a_n\\}\\), \\(\\{b_n\\}\\), and \\(\\{c_n\\}\\).\nSuppose there exists an integer \\(N\\) such that \\(a_n \\le b_n \\le c_n\\) for all \\(n \\ge N\\).\nIf there exists a real number \\(L\\) such that</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\n\n<p>then \\(\\{b_n\\}\\) converges and</p>\n\n\n\\[ \\lim_{n \\to \\infty} b_n = L \\]"
+    "back": "<section style=\"text-align: left\"><p>Consider sequences \\(\\{a_n\\}\\), \\(\\{b_n\\}\\), and \\(\\{c_n\\}\\).\nSuppose there exists an integer \\(N\\) such that \\(a_n \\le b_n \\le c_n\\) for all \\(n \\ge N\\).\nIf there exists a real number \\(L\\) such that</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\n\n<p>then \\(\\{b_n\\}\\) converges and</p>\n\n\n\\[ \\lim_{n \\to \\infty} b_n = L \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the monotone convergence theorem?</p>",
-    "back": "<p>If \\(\\{a_n\\}\\) is a bounded sequence and there exists a positive integer \\(n_0\\) such that \\(\\{a_n\\}\\) is monotone for all \\(n \\ge n_0\\), then \\(\\{a_n\\}\\) converges.</p>"
+    "back": "<section style=\"text-align: left\"><p>If \\(\\{a_n\\}\\) is a bounded sequence and there exists a positive integer \\(n_0\\) such that \\(\\{a_n\\}\\) is monotone for all \\(n \\ge n_0\\), then \\(\\{a_n\\}\\) converges.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is an infinite series?</p>",
-    "back": "<p>An infinite series is a sum of the terms of an infinite sequnce \\(a_n\\)</p>\n\n\n\\[ S = \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]"
+    "back": "<section style=\"text-align: left\"><p>An infinite series is a sum of the terms of an infinite sequnce \\(a_n\\)</p>\n\n\n\\[ S = \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the harmonic series?</p>",
-    "back": "<p>The harmonic series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\n\n<p>The harmonic series diverges to infinity.</p>\n<p>The harmonic series is a special case of the p-series with \\(p = 1\\).</p>"
+    "back": "<section style=\"text-align: left\"><p>The harmonic series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\n\n<p>The harmonic series diverges to infinity.</p>\n<p>The harmonic series is a special case of the p-series with \\(p = 1\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the geometric series?</p>",
-    "back": "<p>The geometric series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \\ldots \\]\n\n<p>The geometric series converges to</p>\n\n\n\\[ \\frac{a}{1-r} \\]\n\n<p>if \\(|r| < 1\\).</p>"
+    "back": "<section style=\"text-align: left\"><p>The geometric series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} a r^{n-1} = a + ar + ar^2 + ar^3 + \\ldots \\]\n\n<p>The geometric series converges to</p>\n\n\n\\[ \\frac{a}{1-r} \\]\n\n<p>if \\(|r| < 1\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the p-series?</p>",
-    "back": "<p>The p-series series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]\n\n<p>The p-series converges if \\(p > 1\\).</p>\n<p>The p-series diverges if \\(p \\le 1\\).</p>"
+    "back": "<section style=\"text-align: left\"><p>The p-series series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]\n\n<p>The p-series converges if \\(p > 1\\).</p>\n<p>The p-series diverges if \\(p \\le 1\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the divergence test for a series?</p>",
-    "back": "<p>Consider the sequence \\(a_n\\). If \\(\\lim_{n \\to \\infty} a_n \\neq 0\\) or \\(\\lim_{n \\to \\infty} a_n\\) does not exist, then the series \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n<p>The converse is not true. That is, if \\(\\lim_{n \\to \\infty} a_n = 0\\), we cannot make any conclusion about the convergence of \\(\\sum_{n=1}^{\\infty} a_n\\).</p>"
+    "back": "<section style=\"text-align: left\"><p>Consider the sequence \\(a_n\\). If \\(\\lim_{n \\to \\infty} a_n \\neq 0\\) or \\(\\lim_{n \\to \\infty} a_n\\) does not exist, then the series \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n<p>The converse is not true. That is, if \\(\\lim_{n \\to \\infty} a_n = 0\\), we cannot make any conclusion about the convergence of \\(\\sum_{n=1}^{\\infty} a_n\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the integral test?</p>",
-    "back": "<p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li>\\(f\\) is continuous,</li>\n<li>\\(f\\) is decreasing, and</li>\n<li>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\, dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p>"
+    "back": "<section style=\"text-align: left\"><p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li>\\(f\\) is continuous,</li>\n<li>\\(f\\) is decreasing, and</li>\n<li>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\, dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>How to estimate the remainder of a series?</p>",
-    "back": "<p>TODO</p>"
+    "back": "<section style=\"text-align: left\"><p>TODO</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the direct comparison test?</p>",
-    "back": "<p>Suppose there exists an integer \\(N\\) such that \\(0 \\le a_n \\le b_n\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>Suppose there exists an integer \\(N\\) such that \\(a_n \\ge b_n \\ge 0\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>"
+    "back": "<section style=\"text-align: left\"><p>Suppose there exists an integer \\(N\\) such that \\(0 \\le a_n \\le b_n\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>Suppose there exists an integer \\(N\\) such that \\(a_n \\ge b_n \\ge 0\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the limit comparison test?</p>",
-    "back": "<p>Let \\(a_n\\), \\(b_n \\ge 0\\) for all \\(n \\ge 1\\).</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = L \\ne 0\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) both converge or both diverge.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = 0\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = \\infty\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>"
+    "back": "<section style=\"text-align: left\"><p>Let \\(a_n\\), \\(b_n \\ge 0\\) for all \\(n \\ge 1\\).</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = L \\ne 0\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) both converge or both diverge.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = 0\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = \\infty\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the alternating series?</p>",
-    "back": "<p>The alternating series is a sum of the terms of an infinite sequnce \\(a_n\\) whose terms alternate between positive and negative values:</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\n\n<p>or</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]"
+    "back": "<section style=\"text-align: left\"><p>The alternating series is a sum of the terms of an infinite sequnce \\(a_n\\) whose terms alternate between positive and negative values:</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\n\n<p>or</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]</section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the alternating series test?</p>",
-    "back": "<p>An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\, a_n\\) or \\(\\sum_{n=1}^{\\infty} (-1)^{n} \\, a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\).</p>"
+    "back": "<section style=\"text-align: left\"><p>An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\, a_n\\) or \\(\\sum_{n=1}^{\\infty} (-1)^{n} \\, a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\).</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the remainder of an alternating series?</p>",
-    "back": "<p>TODO</p>"
+    "back": "<section style=\"text-align: left\"><p>TODO</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the relationship between absolute and conditional convergence?</p>",
-    "back": "<p>TODO</p>"
+    "back": "<section style=\"text-align: left\"><p>TODO</p></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the ratio test?</p>",
-    "back": "<p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul>"
+    "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the root test?</p>",
-    "back": "<p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul>"
+    "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul></section>"
   },
   {
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series",
     "front": "<p>What is the power series?</p>",
-    "back": "<p>The power series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\n\n<p>where \\(x\\) is a variable and the coefficients \\(c_n\\) are constants.</p>"
+    "back": "<section style=\"text-align: left\"><p>The power series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\n\n<p>where \\(x\\) is a variable and the coefficients \\(c_n\\) are constants.</p></section>"
   },
   {
     "type": "Basic",

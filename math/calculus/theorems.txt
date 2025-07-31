@@ -4,6 +4,8 @@
 
 !tags:Math Calculus Theorem
 
+!template:Definition
+
 The definition of the extreme value theorem (EVT).
 ---
 The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.
