@@ -307,6 +307,15 @@
   },
   {
     "type": "Basic",
+    "deck": "Math::Calculus::Limits",
+    "tags": "Math Calculus Limits Theory",
+    "fields": {
+      "front": "<p>What is a continuous function?</p>",
+      "back": "<section style=\"text-align: left\"><p>A function \\(f(x)\\) is <strong>continuous at a point</strong> \\(x = c\\) if:</p>\n<ul>\n<li>\\( f(c) \\) exists: The function is defined at the point \\(c\\).</li>\n<li>\\( \\lim_{x \\to c} f(x) \\) exists: The limit of the function as \\(x\\) approaches \\(c\\) from both the left and right sides is the same.</li>\n<li>\\( \\lim_{x \\to c} f(x) = f(c) \\): The limit of the function as \\(x\\) approaches \\(c\\) is equal to the actual value of the function at \\(c\\).</li>\n</ul>\n<p>If a function is continuous at every point in its domain, it is called a <strong>continuous</strong> function.</p></section>"
+    }
+  },
+  {
+    "type": "Basic",
     "deck": "Math::Calculus::Differentiation",
     "tags": "Math Calculus Differentiation Theory",
     "fields": {
@@ -356,7 +365,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What are the different ways to define a sequence?</p>",
-      "back": "<section style=\"text-align: left\"><p>An infinite sequence can be defined in various ways:</p>\n<ul>\n<li><p>By listing terms \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).</p>\n</li>\n<li><p>By an explicit formula that defines the \\(n\\)-th term directly in terms of \\(n\\), \\(a_n = f(n)\\).</p>\n</li>\n<li><p>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\).</p>\n</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>An infinite sequence can be defined in various ways:</p>\n<ul>\n<li>By listing terms \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).</li>\n<li>By an explicit formula that defines the \\(n\\)-th term directly in terms of \\(n\\), \\(a_n = f(n)\\).</li>\n<li>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\).</li>\n</ul></section>"
     }
   },
   {
@@ -491,7 +500,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What are the algebraic properties of convergent series?</p>",
-      "back": "<section style=\"text-align: left\"><p>Let \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) be convergent series. Then the following algebraic properties hold.</p>\n<ul>\n<li><p>Sum Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n + b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n + b_n) = \\sum_{n=1}^{\\infty} a_n + \\sum_{n=1}^{\\infty} b_n\\).</p>\n</li>\n<li><p>Difference Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n - b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n - b_n) = \\sum_{n=1}^{\\infty} a_n - \\sum_{n=1}^{\\infty} b_n\\).</p>\n</li>\n<li><p>Constant Multiple Rule: For any real number \\(c\\), the series \\(\\sum_{n=1}^{\\infty} c a_n\\) converges and \\(\\sum_{n=1}^{\\infty} c a_n = c \\sum_{n=1}^{\\infty} a_n\\).</p>\n</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Let \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) be convergent series. Then the following algebraic properties hold.</p>\n<ul>\n<li>Sum Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n + b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n + b_n) = \\sum_{n=1}^{\\infty} a_n + \\sum_{n=1}^{\\infty} b_n\\).</li>\n<li>Difference Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n - b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n - b_n) = \\sum_{n=1}^{\\infty} a_n - \\sum_{n=1}^{\\infty} b_n\\).</li>\n<li>Constant Multiple Rule: For any real number \\(c\\), the series \\(\\sum_{n=1}^{\\infty} c a_n\\) converges and \\(\\sum_{n=1}^{\\infty} c a_n = c \\sum_{n=1}^{\\infty} a_n\\).</li>\n</ul></section>"
     }
   },
   {
@@ -509,7 +518,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the integral test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li><p>\\(f\\) is continuous,</p>\n</li>\n<li><p>\\(f\\) is decreasing, and</p>\n</li>\n<li><p>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</p>\n</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\, dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li>\\(f\\) is continuous,</li>\n<li>\\(f\\) is decreasing, and</li>\n<li>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\, dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
     }
   },
   {
@@ -590,7 +599,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the ratio test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n\n<ul>\n<li><p>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</p>\n</li>\n<li><p>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n</li>\n<li><p>If \\(\\rho = 1\\), the test does not provide any information.</p>\n</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul></section>"
     }
   },
   {
@@ -599,7 +608,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the root test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n\n<ul>\n<li><p>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</p>\n</li>\n<li><p>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n</li>\n<li><p>If \\(\\rho = 1\\), the test does not provide any information.</p>\n</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul></section>"
     }
   },
   {
@@ -617,7 +626,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What are the convergence properties of a power series?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider the power series \\(\\sum_{n=0}^{\\infty} c_n (x - a)^n\\). The series satisfies exactly one of the following properties:</p>\n<ul>\n<li><p>The series converges at \\(x=a\\) and diverges for all \\(x \\ne a\\).</p>\n</li>\n<li><p>The series converges for all real numbers \\(x\\).</p>\n</li>\n<li><p>There exists a real number \\(R>0\\) such that the series converges if \\(|x − a| < R\\) and diverges if \\(|x − a| > R\\). At the values \\(x\\) where \\(|x − a| = R\\), the series may converge or diverge.</p>\n</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider the power series \\(\\sum_{n=0}^{\\infty} c_n (x - a)^n\\). The series satisfies exactly one of the following properties:</p>\n<ul>\n<li>The series converges at \\(x=a\\) and diverges for all \\(x \\ne a\\).</li>\n<li>The series converges for all real numbers \\(x\\).</li>\n<li>There exists a real number \\(R>0\\) such that the series converges if \\(|x − a| < R\\) and diverges if \\(|x − a| > R\\). At the values \\(x\\) where \\(|x − a| = R\\), the series may converge or diverge.</li>\n</ul></section>"
     }
   },
   {

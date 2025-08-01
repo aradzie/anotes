@@ -29,9 +29,7 @@ The subscript \(n\) is the index variable of the sequence.
 An infinite sequence can be defined in various ways:
 
 - By listing terms \(\{ 2, 4, 6, 8, \ldots \}\).
-
 - By an explicit formula that defines the \(n\)-th term directly in terms of \(n\), \(a_n = f(n)\).
-
 - By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).
 ~~~
 
@@ -168,9 +166,7 @@ In other words, the telescoping series is a series in which most of the terms ca
 Let \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) be convergent series. Then the following algebraic properties hold.
 
 - Sum Rule: The series \(\sum_{n=1}^{\infty} (a_n + b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n\).
-
 - Difference Rule: The series \(\sum_{n=1}^{\infty} (a_n - b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n\).
-
 - Constant Multiple Rule: For any real number \(c\), the series \(\sum_{n=1}^{\infty} c a_n\) converges and \(\sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n\).
 ~~~
 
@@ -188,9 +184,7 @@ The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot
 Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:
 
 - \(f\) is continuous,
-
 - \(f\) is decreasing, and
-
 - \(f(n) = a_n\) for all integers \(n \ge N\).
 
 Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.
@@ -268,9 +262,7 @@ Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
 
 - If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
-
 - If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
-
 - If \(\rho = 1\), the test does not provide any information.
 ~~~
 
@@ -282,9 +274,7 @@ Consider the series \(\sum_{n=1}^{\infty} a_n\). Let
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
 
 - If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.
-
 - If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.
-
 - If \(\rho = 1\), the test does not provide any information.
 ~~~
 
@@ -308,8 +298,6 @@ where \(x\) is a variable and the coefficients \(c_n\) are constants.
 Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series satisfies exactly one of the following properties:
 
 - The series converges at \(x=a\) and diverges for all \(x \ne a\).
-
 - The series converges for all real numbers \(x\).
-
 - There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.
 ~~~

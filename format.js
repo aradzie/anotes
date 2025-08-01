@@ -1,14 +1,12 @@
 import { randomUUID } from "node:crypto";
-import { globSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { readFileSync, writeFileSync } from "node:fs";
 import { parseNotes } from "./lib/anki.js";
+import { findNoteFiles } from "./lib/io.js";
 
 main();
 
 function main() {
-  const cwd = process.cwd();
-  for (const item of globSync("notes/**/*.note", { cwd })) {
-    const file = join(cwd, item);
+  for (const file of findNoteFiles()) {
     console.log(`Converting file "${file}"`);
     const text = readFileSync(file, "utf-8");
     const notes = [];

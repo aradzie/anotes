@@ -1,20 +1,20 @@
 /**
- * A script that processes the input text files and compiles the output deck file.
- * The input files are formatted in a user-readable form.
- * The output file can be imported in Anki.
+ * A script that processes input text files and compiles an output deck file.
+ * The input files are formatted in a user-readable format.
+ * The output file can be imported into Anki.
  */
 
-import { globSync, readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { formatNotes, formatNotesJson, parseNotes } from "./lib/anki.js";
+import { findNoteFiles } from "./lib/io.js";
 
 main();
 
 function main() {
   const notes = [];
   const cwd = process.cwd();
-  for (const item of globSync("notes/**/*.note", { cwd })) {
-    const file = join(cwd, item);
+  for (const file of findNoteFiles()) {
     console.log(`Parsing file "${file}"`);
     const text = readFileSync(file, "utf-8");
     parseNotes(file, text, notes);

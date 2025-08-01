@@ -829,6 +829,13 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(e
          x &= 1
 \end{align*}
 \]"
+Basic;Math::Calculus::Limits;Math Calculus Limits Theory;<p>What is a continuous function?</p>;"<section style=""text-align: left""><p>A function \(f(x)\) is <strong>continuous at a point</strong> \(x = c\) if:</p>
+<ul>
+<li>\( f(c) \) exists: The function is defined at the point \(c\).</li>
+<li>\( \lim_{x \to c} f(x) \) exists: The limit of the function as \(x\) approaches \(c\) from both the left and right sides is the same.</li>
+<li>\( \lim_{x \to c} f(x) = f(c) \): The limit of the function as \(x\) approaches \(c\) is equal to the actual value of the function at \(c\).</li>
+</ul>
+<p>If a function is continuous at every point in its domain, it is called a <strong>continuous</strong> function.</p></section>"
 Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the extreme value theorem (EVT).</p>;"<section style=""text-align: left""><p>The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.</p>
 <p>That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).</p>
 <p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
@@ -880,12 +887,9 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 <p>The subscript \(n\) is the index variable of the sequence.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the different ways to define a sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence can be defined in various ways:</p>
 <ul>
-<li><p>By listing terms \(\{ 2, 4, 6, 8, \ldots \}\).</p>
-</li>
-<li><p>By an explicit formula that defines the \(n\)-th term directly in terms of \(n\), \(a_n = f(n)\).</p>
-</li>
-<li><p>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</p>
-</li>
+<li>By listing terms \(\{ 2, 4, 6, 8, \ldots \}\).</li>
+<li>By an explicit formula that defines the \(n\)-th term directly in terms of \(n\), \(a_n = f(n)\).</li>
+<li>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</li>
 </ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{ a_n \}\) converges to a real number \(L\) if for all \(\epsilon > 0\), there exists an integer \(N\) such that \(|a_n − L| < \epsilon\) if \(n \ge N\). The number \(L\) is the limit of the sequence and we write</p>
 
@@ -960,23 +964,17 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 <p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the algebraic properties of convergent series?</p>;"<section style=""text-align: left""><p>Let \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) be convergent series. Then the following algebraic properties hold.</p>
 <ul>
-<li><p>Sum Rule: The series \(\sum_{n=1}^{\infty} (a_n + b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n\).</p>
-</li>
-<li><p>Difference Rule: The series \(\sum_{n=1}^{\infty} (a_n - b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n\).</p>
-</li>
-<li><p>Constant Multiple Rule: For any real number \(c\), the series \(\sum_{n=1}^{\infty} c a_n\) converges and \(\sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n\).</p>
-</li>
+<li>Sum Rule: The series \(\sum_{n=1}^{\infty} (a_n + b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n\).</li>
+<li>Difference Rule: The series \(\sum_{n=1}^{\infty} (a_n - b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n\).</li>
+<li>Constant Multiple Rule: For any real number \(c\), the series \(\sum_{n=1}^{\infty} c a_n\) converges and \(\sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n\).</li>
 </ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the divergence test for a series?</p>;"<section style=""text-align: left""><p>Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
 <p>The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the integral test?</p>;"<section style=""text-align: left""><p>Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:</p>
 <ul>
-<li><p>\(f\) is continuous,</p>
-</li>
-<li><p>\(f\) is decreasing, and</p>
-</li>
-<li><p>\(f(n) = a_n\) for all integers \(n \ge N\).</p>
-</li>
+<li>\(f\) is continuous,</li>
+<li>\(f\) is decreasing, and</li>
+<li>\(f(n) = a_n\) for all integers \(n \ge N\).</li>
 </ul>
 <p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.</p>
 <p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
@@ -1008,12 +1006,9 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
 
 <ul>
-<li><p>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</p>
-</li>
-<li><p>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
-</li>
-<li><p>If \(\rho = 1\), the test does not provide any information.</p>
-</li>
+<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
+<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
+<li>If \(\rho = 1\), the test does not provide any information.</li>
 </ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the root test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
 
@@ -1021,12 +1016,9 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
 
 <ul>
-<li><p>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</p>
-</li>
-<li><p>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
-</li>
-<li><p>If \(\rho = 1\), the test does not provide any information.</p>
-</li>
+<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
+<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
+<li>If \(\rho = 1\), the test does not provide any information.</li>
 </ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series centered at \(x = 0\) is an infinite series of the following form</p>
 
@@ -1041,12 +1033,9 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 <p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the convergence properties of a power series?</p>;"<section style=""text-align: left""><p>Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series satisfies exactly one of the following properties:</p>
 <ul>
-<li><p>The series converges at \(x=a\) and diverges for all \(x \ne a\).</p>
-</li>
-<li><p>The series converges for all real numbers \(x\).</p>
-</li>
-<li><p>There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.</p>
-</li>
+<li>The series converges at \(x=a\) and diverges for all \(x \ne a\).</li>
+<li>The series converges for all real numbers \(x\).</li>
+<li>There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.</li>
 </ul></section>"
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the definition of the Laplace transform?</p>;"<section style=""text-align: left""><p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
 

@@ -6,17 +6,16 @@
     "anki",
     "math"
   ],
-  "homepage": "https://github.com/aradzie/anki#readme",
+  "homepage": "https://github.com/aradzie/anki-math-notes#readme",
   "bugs": {
-    "url": "https://github.com/aradzie/anki/issues"
+    "url": "https://github.com/aradzie/anki-math-notes/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aradzie/anki.git"
+    "url": "git+https://github.com/aradzie/anki-math-notes.git"
   },
   "license": "ISC",
   "type": "module",
-  "main": "index.js",
   "dependencies": {
     "better-sqlite3": "^12.2.0",
     "jszip": "^3.10.1",

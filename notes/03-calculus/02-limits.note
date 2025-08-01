@@ -9,9 +9,7 @@
 A function \(f(x)\) is **continuous at a point** \(x = c\) if:
 
 - \( f(c) \) exists: The function is defined at the point \(c\).
-
 - \( \lim_{x \to c} f(x) \) exists: The limit of the function as \(x\) approaches \(c\) from both the left and right sides is the same.
-
 - \( \lim_{x \to c} f(x) = f(c) \): The limit of the function as \(x\) approaches \(c\) is equal to the actual value of the function at \(c\).
 
 If a function is continuous at every point in its domain, it is called a **continuous** function.
