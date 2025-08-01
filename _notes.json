@@ -1,5 +1,6 @@
 [
   {
+    "id": "5bd92c71-c20e-42e0-bbc2-c6bb761fb7f7",
     "type": "Basic",
     "deck": "Math::Algebra",
     "tags": "Math Algebra Identity",
@@ -9,6 +10,7 @@
     }
   },
   {
+    "id": "ae785c87-6dd7-4627-bd48-842f2e7955f4",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -18,6 +20,7 @@
     }
   },
   {
+    "id": "321001c9-c9bd-400f-967f-5d871c046979",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -27,6 +30,7 @@
     }
   },
   {
+    "id": "54605ec1-da86-4db9-92f1-b155d4110f10",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -36,6 +40,7 @@
     }
   },
   {
+    "id": "adb027c7-f30d-4024-b356-3a243d650788",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -45,6 +50,7 @@
     }
   },
   {
+    "id": "400c6172-fe3c-44f5-bc28-123ede29adf3",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -54,6 +60,7 @@
     }
   },
   {
+    "id": "972c3d2b-7b38-4d55-a892-318955c86cbb",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -63,6 +70,7 @@
     }
   },
   {
+    "id": "9aa6f8fc-e1f1-4bcb-829c-d04a713e1092",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -72,6 +80,7 @@
     }
   },
   {
+    "id": "da5039c2-ca54-4f99-99a8-e0d9947b924e",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -81,6 +90,7 @@
     }
   },
   {
+    "id": "d1c98904-370b-4517-957b-6763e10553d7",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -90,6 +100,7 @@
     }
   },
   {
+    "id": "cba164f0-0e0b-49d4-b07d-0d5cfd606b0b",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -99,6 +110,7 @@
     }
   },
   {
+    "id": "dfb0a6f0-52bb-4ec8-acd9-3ba9557ca1bb",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -108,6 +120,7 @@
     }
   },
   {
+    "id": "65746dff-b0d4-43bc-9b85-0b41a6ea194b",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -117,6 +130,7 @@
     }
   },
   {
+    "id": "12235490-96e6-4a74-9b2f-037ef05847aa",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -126,6 +140,7 @@
     }
   },
   {
+    "id": "de1d55e2-5ce2-4137-86b6-c38548c0cf78",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -135,6 +150,7 @@
     }
   },
   {
+    "id": "cb0c0bfc-be0f-45a7-871f-979b4d6b016e",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -144,6 +160,7 @@
     }
   },
   {
+    "id": "816b1427-7e2e-471a-9a9f-c5eb7362bd5e",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -153,6 +170,7 @@
     }
   },
   {
+    "id": "2e6a3423-1a04-4d16-8878-92d900e3b9d7",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -162,6 +180,7 @@
     }
   },
   {
+    "id": "05152939-aae0-4f9b-b3b7-f642c2b1445a",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -171,6 +190,7 @@
     }
   },
   {
+    "id": "35ca7698-0b12-4e39-8092-b1b4f9d11bb2",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -180,6 +200,7 @@
     }
   },
   {
+    "id": "a5edfd36-530b-4531-8aa9-e509f3d7f1e9",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -189,6 +210,7 @@
     }
   },
   {
+    "id": "acbc1dc7-1ed0-43ca-889d-d353cde28c67",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -198,6 +220,7 @@
     }
   },
   {
+    "id": "1f854f7f-eefe-490b-b6fe-c79cf729b4c6",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -207,6 +230,7 @@
     }
   },
   {
+    "id": "3f74ae49-26be-44af-b320-43e97a5df59b",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Identity",
@@ -216,6 +240,7 @@
     }
   },
   {
+    "id": "f0fe1221-7652-4146-bda0-b5c89bd18c8d",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -225,6 +250,7 @@
     }
   },
   {
+    "id": "c03b5eb3-ef5a-47de-87d7-dc083b3f3ed6",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -234,6 +260,7 @@
     }
   },
   {
+    "id": "b76f8f39-1907-4817-969e-7d26614b6af9",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -243,6 +270,7 @@
     }
   },
   {
+    "id": "1366c8bc-2b6c-43bf-912a-8c7807b33049",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -252,6 +280,7 @@
     }
   },
   {
+    "id": "7500ce37-3508-47d6-95c2-9f8aaf0474a2",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -261,6 +290,7 @@
     }
   },
   {
+    "id": "4f8750dc-645c-43f7-b62e-3fac49a2b9b3",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -270,6 +300,7 @@
     }
   },
   {
+    "id": "a608ae39-3619-4f06-98b2-50d0dc55e91d",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -279,6 +310,7 @@
     }
   },
   {
+    "id": "446a7b80-f983-481e-866e-07bd3b9841b0",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -288,6 +320,7 @@
     }
   },
   {
+    "id": "f0d785e5-9f17-45e3-97b3-3ea6d54d867d",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -297,6 +330,7 @@
     }
   },
   {
+    "id": "d20d08e4-0d63-4f72-a59c-dc8435f99ea3",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -306,6 +340,7 @@
     }
   },
   {
+    "id": "f2eeba1c-39cf-4771-b4a7-5337a4225b7d",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -315,6 +350,7 @@
     }
   },
   {
+    "id": "65efe777-8b72-42d5-9b47-7d9566c23b52",
     "type": "Basic",
     "deck": "Math::Trigonometry",
     "tags": "Math Trigonometric Hyperbolic Identity",
@@ -324,6 +360,7 @@
     }
   },
   {
+    "id": "e9e0d7ec-b982-4bfe-968a-62bece71e5b2",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -333,6 +370,7 @@
     }
   },
   {
+    "id": "10ea3e4e-0837-4eb7-ac2c-d7939d41ec9e",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -342,6 +380,7 @@
     }
   },
   {
+    "id": "8c36a710-5152-459e-aa8d-d17ee1f5780c",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -351,6 +390,7 @@
     }
   },
   {
+    "id": "7a3c2fd7-6fea-482d-8a2c-c7e02b56cc58",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -360,6 +400,7 @@
     }
   },
   {
+    "id": "20b545c9-64c1-437e-9699-95656eef1ce6",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -369,6 +410,7 @@
     }
   },
   {
+    "id": "88e365f5-7197-4027-938a-d8e6c25d59eb",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -378,6 +420,7 @@
     }
   },
   {
+    "id": "d908fbe0-8ffd-4ede-a523-1a27f5c17a6e",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -387,6 +430,7 @@
     }
   },
   {
+    "id": "44510897-1944-4bce-8176-a0695016702e",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Identity Derivative",
@@ -396,6 +440,7 @@
     }
   },
   {
+    "id": "8e66781a-c572-408c-b92c-7d8bd6316c56",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -405,6 +450,7 @@
     }
   },
   {
+    "id": "234ac8b4-f6d9-49d3-81e2-a91647c3042a",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -414,6 +460,7 @@
     }
   },
   {
+    "id": "ab19592b-6cf5-4421-8602-4a446ef8b799",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -423,6 +470,7 @@
     }
   },
   {
+    "id": "adc20ba9-525b-4933-8b7e-252085766218",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -432,6 +480,7 @@
     }
   },
   {
+    "id": "fc9e5514-e0a6-4425-bb13-e77551d4a503",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -441,6 +490,7 @@
     }
   },
   {
+    "id": "77a13a66-5599-4df6-9baa-ef5538e24078",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -450,6 +500,7 @@
     }
   },
   {
+    "id": "b8ef42b1-346b-4d72-abf5-ef52983b9118",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -459,6 +510,7 @@
     }
   },
   {
+    "id": "f019416a-f621-4344-9a9b-41d2e5d09249",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -468,6 +520,7 @@
     }
   },
   {
+    "id": "00de7e5f-34f2-468b-9fa4-6e5709722f74",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -477,6 +530,7 @@
     }
   },
   {
+    "id": "e0c32a32-a2ef-4b6b-bae5-3b31a855ffd9",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -486,6 +540,7 @@
     }
   },
   {
+    "id": "c0599645-f16c-41c4-a84a-176a96387794",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -495,6 +550,7 @@
     }
   },
   {
+    "id": "af922d06-2efd-45d6-a539-ae7b45c50222",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Trigonometric Identity",
@@ -504,6 +560,7 @@
     }
   },
   {
+    "id": "d6c570ff-6074-4a17-85e4-d6839fc9bf16",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -513,6 +570,7 @@
     }
   },
   {
+    "id": "0ef4ab32-1bb0-44fe-ad4d-6212d727acb1",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -522,6 +580,7 @@
     }
   },
   {
+    "id": "7224cae0-60bc-41d4-a407-2b1f766e0371",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -531,6 +590,7 @@
     }
   },
   {
+    "id": "159d441e-3514-44cf-9d46-52cd6b86605c",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -540,6 +600,7 @@
     }
   },
   {
+    "id": "e90f3b21-07ae-434a-9b87-e1e2b924e036",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -549,6 +610,7 @@
     }
   },
   {
+    "id": "64ba1d36-2c06-47f2-a398-69c44fe1d176",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -558,6 +620,7 @@
     }
   },
   {
+    "id": "0b419e22-05b1-46ec-915c-bacd5719f0d7",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -567,6 +630,7 @@
     }
   },
   {
+    "id": "694fb729-173d-4e1d-bf79-8b471e757621",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -576,6 +640,7 @@
     }
   },
   {
+    "id": "9f86d49b-6eee-4c7f-b925-562a1c0d024a",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -585,6 +650,7 @@
     }
   },
   {
+    "id": "ed97e31c-4979-4290-9409-b20d32cf4e2c",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -594,6 +660,7 @@
     }
   },
   {
+    "id": "aea00c4d-669e-4754-92d5-2e1c72a318de",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -603,6 +670,7 @@
     }
   },
   {
+    "id": "dc872bac-9b32-44d0-ab57-f95348ce0f93",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Derivatives",
     "tags": "Math Calculus Derivative Hyperbolic Identity",
@@ -612,6 +680,7 @@
     }
   },
   {
+    "id": "c7cc99d3-8505-4ee0-ba69-ee3c729d389a",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Identity Integral",
@@ -621,6 +690,7 @@
     }
   },
   {
+    "id": "8c1312fd-0ffe-4be4-8b0e-b5c0832afdb6",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Identity Integral",
@@ -630,6 +700,7 @@
     }
   },
   {
+    "id": "d906b906-6d4d-46c6-87f7-293d203a3467",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Identity Integral",
@@ -639,6 +710,7 @@
     }
   },
   {
+    "id": "4f7ac29a-778d-4f59-b247-162022fb2a98",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Identity Integral",
@@ -648,6 +720,7 @@
     }
   },
   {
+    "id": "eac90910-892b-48c2-b1db-d1bf8918a7e3",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -657,6 +730,7 @@
     }
   },
   {
+    "id": "09f42a6a-4ce1-46e1-ba18-b25ff926bd7b",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -666,6 +740,7 @@
     }
   },
   {
+    "id": "530561fc-8779-49cd-ba26-3566fdf70981",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -675,6 +750,7 @@
     }
   },
   {
+    "id": "8f2cc5ed-7012-495b-bb71-e83aeecd6625",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -684,6 +760,7 @@
     }
   },
   {
+    "id": "76780feb-ea12-4162-aac8-b2c20acbffc2",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -693,6 +770,7 @@
     }
   },
   {
+    "id": "c2f70c1f-a0f2-4aae-aa76-f29f1bdc974f",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -702,6 +780,7 @@
     }
   },
   {
+    "id": "61faccd0-b630-43e7-8c42-8a31fcb65aea",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -711,6 +790,7 @@
     }
   },
   {
+    "id": "c3f703c7-ce9f-466f-82be-fba234d1716c",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -720,6 +800,7 @@
     }
   },
   {
+    "id": "c847eeb4-6e6a-41bb-8736-40ae53f1e0f4",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -729,6 +810,7 @@
     }
   },
   {
+    "id": "b1438d5d-7568-4be1-b3db-79cf37ef765b",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -738,6 +820,7 @@
     }
   },
   {
+    "id": "16026032-2920-48fb-b6b1-ce3186c88656",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -747,6 +830,7 @@
     }
   },
   {
+    "id": "15fc41b9-b2c2-4ad8-964e-885692b1ad14",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -756,6 +840,7 @@
     }
   },
   {
+    "id": "2e7ec589-936a-46a4-9c49-88941cc51dde",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Trigonometric Identity",
@@ -765,6 +850,7 @@
     }
   },
   {
+    "id": "78122891-fc05-4cee-bd20-547126878e34",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Hyperbolic Identity",
@@ -774,6 +860,7 @@
     }
   },
   {
+    "id": "56e8b0bc-36fb-4e14-b772-e34008c3e837",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Hyperbolic Identity",
@@ -783,6 +870,7 @@
     }
   },
   {
+    "id": "a1837781-cb05-4f5e-852c-caba50c4f3e1",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Hyperbolic Identity",
@@ -792,6 +880,7 @@
     }
   },
   {
+    "id": "c08b07c3-b75f-40de-a447-86f02eb43509",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Hyperbolic Identity",
@@ -801,6 +890,7 @@
     }
   },
   {
+    "id": "5ceb3461-bcc3-42ff-a535-6fb433a1552d",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Hyperbolic Identity",
@@ -810,6 +900,7 @@
     }
   },
   {
+    "id": "7708860f-4764-47a0-a7b8-2c0c07dfc8d2",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Hyperbolic Identity",
@@ -819,6 +910,7 @@
     }
   },
   {
+    "id": "94c0c470-d18e-4e04-930c-16202b44aeda",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Identity",
@@ -828,6 +920,7 @@
     }
   },
   {
+    "id": "a8f7b141-9950-4f5f-be3a-32040190b414",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Integrals",
     "tags": "Math Calculus Integral Identity",
@@ -837,6 +930,7 @@
     }
   },
   {
+    "id": "3b556a07-7f54-47f6-b112-7eb38ec6f23c",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Identity Taylor-Series",
@@ -846,6 +940,7 @@
     }
   },
   {
+    "id": "77d6362f-6b41-4bcf-90ab-80ec4224bd11",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Identity Taylor-Series",
@@ -855,6 +950,7 @@
     }
   },
   {
+    "id": "4abf3654-ac19-4f0c-92c2-36eb55bf17b3",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Identity Taylor-Series",
@@ -864,6 +960,7 @@
     }
   },
   {
+    "id": "7816c6bb-f456-4adb-adec-00682e1df439",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Identity Taylor-Series",
@@ -873,6 +970,7 @@
     }
   },
   {
+    "id": "b8d48c1b-3a5a-4021-a28b-927494aa1058",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Taylor-Series Trigonometric Identity",
@@ -882,6 +980,7 @@
     }
   },
   {
+    "id": "229e4d40-048c-4fe9-869d-f219e780007d",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Taylor-Series Trigonometric Identity",
@@ -891,6 +990,7 @@
     }
   },
   {
+    "id": "33b476da-dd07-4615-8532-a58e05b453b9",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Taylor-Series Hyperbolic Identity",
@@ -900,6 +1000,7 @@
     }
   },
   {
+    "id": "e9407069-de8f-46a4-8019-e507885ab220",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Taylor Series",
     "tags": "Math Calculus Taylor-Series Hyperbolic Identity",
@@ -909,6 +1010,7 @@
     }
   },
   {
+    "id": "13ddf24b-1725-47d1-b44a-4098eee9875f",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -918,6 +1020,7 @@
     }
   },
   {
+    "id": "a894ea81-632a-429a-b4ba-993ef1fcb7b3",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -927,6 +1030,7 @@
     }
   },
   {
+    "id": "a228d1d5-90a7-49e4-81bf-64cfe1942a1c",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -936,6 +1040,7 @@
     }
   },
   {
+    "id": "37d5a7b2-a6f6-47c0-962c-b3cdb4951e60",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -945,6 +1050,7 @@
     }
   },
   {
+    "id": "5a9f6f89-d217-4cb8-8fd8-ce42643d9804",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -954,6 +1060,7 @@
     }
   },
   {
+    "id": "4b445c99-e993-417d-8786-116018e3090c",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -963,6 +1070,7 @@
     }
   },
   {
+    "id": "4797cbc3-cb24-4b20-8206-6c334ae331eb",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -972,6 +1080,7 @@
     }
   },
   {
+    "id": "edc4eca8-7117-4f22-bd06-4b7334b6772e",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -981,6 +1090,7 @@
     }
   },
   {
+    "id": "a96668b7-9f08-427e-8da4-5623298bef26",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -990,6 +1100,7 @@
     }
   },
   {
+    "id": "0c92ece3-6d4a-4ff2-8199-a3eb3946b4e0",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -999,6 +1110,7 @@
     }
   },
   {
+    "id": "47a6a041-d0f8-42d3-a393-0b90404d490a",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1008,6 +1120,7 @@
     }
   },
   {
+    "id": "459add09-a4b6-4b3b-922b-089d9c28ffbc",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1017,6 +1130,7 @@
     }
   },
   {
+    "id": "c47fac91-bb25-4074-bace-1137eec2bb10",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1026,6 +1140,7 @@
     }
   },
   {
+    "id": "afedda42-8e51-4e5e-8dbe-f118da9d1f72",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1035,6 +1150,7 @@
     }
   },
   {
+    "id": "5102e311-3c3b-441f-a1a7-9a46cde22d36",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1044,6 +1160,7 @@
     }
   },
   {
+    "id": "069748b7-83bd-4b37-8cea-72d80996b9c1",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1053,6 +1170,7 @@
     }
   },
   {
+    "id": "4d33bcbb-9b5e-421a-8b63-8ac8419024c1",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1062,6 +1180,7 @@
     }
   },
   {
+    "id": "f7af4a98-af54-4da0-bb9d-43fd7018dc7f",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1071,6 +1190,7 @@
     }
   },
   {
+    "id": "1c67e854-4fd4-4d62-8312-ff4d74a6e7df",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1080,6 +1200,7 @@
     }
   },
   {
+    "id": "b0391e6a-206c-4005-b719-07328470fd49",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1089,6 +1210,7 @@
     }
   },
   {
+    "id": "4e918848-fbe6-414c-8abc-b109b4330965",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1098,6 +1220,7 @@
     }
   },
   {
+    "id": "d4f4ed39-34d2-4696-a654-15994fced1b9",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1107,6 +1230,7 @@
     }
   },
   {
+    "id": "efe5461c-0756-4078-b74d-4a22fd909a38",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1116,6 +1240,7 @@
     }
   },
   {
+    "id": "8477c86f-4d6b-4ea4-93c9-12f47fbc70e1",
     "type": "Basic",
     "deck": "Math::Calculus::Identities::Laplace Transforms",
     "tags": "Math Calculus Identity Laplace-Transform",
@@ -1125,6 +1250,7 @@
     }
   },
   {
+    "id": "ebdd5628-7ae7-4805-bda4-51c16529b65e",
     "type": "Basic",
     "deck": "Math::Calculus::Limits",
     "tags": "Math Calculus Limits Theory",
@@ -1134,6 +1260,7 @@
     }
   },
   {
+    "id": "ebddf2d2-f380-49bc-9d98-47d69966ce7f",
     "type": "Basic",
     "deck": "Math::Calculus::Differentiation",
     "tags": "Math Calculus Differentiation Theory",
@@ -1143,6 +1270,7 @@
     }
   },
   {
+    "id": "9df36d9d-546f-45e6-b2dc-3b5159b6bf72",
     "type": "Basic",
     "deck": "Math::Calculus::Differentiation",
     "tags": "Math Calculus Differentiation Theory",
@@ -1152,6 +1280,7 @@
     }
   },
   {
+    "id": "b4edd171-5748-42bd-8392-c5d010a1cfa0",
     "type": "Basic",
     "deck": "Math::Calculus::Differentiation",
     "tags": "Math Calculus Differentiation Theory",
@@ -1161,6 +1290,7 @@
     }
   },
   {
+    "id": "965f6c49-3485-45d0-8590-b369246d02b6",
     "type": "Basic",
     "deck": "Math::Calculus::Differentiation",
     "tags": "Math Calculus Differentiation Theory",
@@ -1170,6 +1300,7 @@
     }
   },
   {
+    "id": "68c2408d-7e8a-45b4-9a2d-9288a59f1565",
     "type": "Basic",
     "deck": "Math::Calculus::Integration",
     "tags": "Math Calculus Integration Theory",
@@ -1179,6 +1310,7 @@
     }
   },
   {
+    "id": "d2206553-b315-40f9-bb47-389c25dcaea9",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1188,6 +1320,7 @@
     }
   },
   {
+    "id": "9d5e6a84-15b9-4171-8b90-99eb976db0e1",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1197,6 +1330,7 @@
     }
   },
   {
+    "id": "9e4e5bb5-2daf-41bd-a9b4-dd6e59d971bd",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1206,6 +1340,7 @@
     }
   },
   {
+    "id": "3a4cf6e0-462b-4936-a83e-d73a974361f7",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1215,6 +1350,7 @@
     }
   },
   {
+    "id": "2d03f4a3-8fbd-47e3-802b-45e07dfbd591",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1224,6 +1360,7 @@
     }
   },
   {
+    "id": "0d35933e-044b-4372-a9d9-35feeac16d5d",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1233,6 +1370,7 @@
     }
   },
   {
+    "id": "50e78fcd-dee3-42fd-8780-957495e269e0",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1242,6 +1380,7 @@
     }
   },
   {
+    "id": "0bf2e096-b7b1-4adc-8707-3d1e44270212",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1251,6 +1390,7 @@
     }
   },
   {
+    "id": "58cab50f-a723-480d-bf0d-3106488662e3",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1260,6 +1400,7 @@
     }
   },
   {
+    "id": "93f248cd-b3a3-4dda-bc04-226c19150d29",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1269,6 +1410,7 @@
     }
   },
   {
+    "id": "87b92c0f-529b-48f1-a746-b2353f79c5e0",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1278,6 +1420,7 @@
     }
   },
   {
+    "id": "a41bf7c5-f5bf-4b2b-93f5-33bf47d34534",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1287,6 +1430,7 @@
     }
   },
   {
+    "id": "dcceaa97-335a-4e0f-a7e1-2bcb44fa9b31",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1296,6 +1440,7 @@
     }
   },
   {
+    "id": "eea1c4ce-a96a-4596-8e5e-a67cb648ac49",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1305,6 +1450,7 @@
     }
   },
   {
+    "id": "f96fd296-19af-4207-8f66-f89f8a78f834",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1314,6 +1460,7 @@
     }
   },
   {
+    "id": "d6710fcd-97c7-40dc-9d00-4e7b53e085a5",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1323,6 +1470,7 @@
     }
   },
   {
+    "id": "3e5a7aed-308d-47dd-af71-b29df020ec1b",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1332,6 +1480,7 @@
     }
   },
   {
+    "id": "8b230000-c558-4a4d-9e72-dde74e800a3c",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1341,6 +1490,7 @@
     }
   },
   {
+    "id": "6193cc59-333f-4fc3-93f1-a2fcf2ae66c2",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1350,6 +1500,7 @@
     }
   },
   {
+    "id": "5efda830-4a1d-4034-9fe8-5ce6c01727a4",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1359,6 +1510,7 @@
     }
   },
   {
+    "id": "ec76c348-38c2-496b-b913-8a6d8fa30c46",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1368,6 +1520,7 @@
     }
   },
   {
+    "id": "5d500a14-517b-4770-a0d4-99193cc658fe",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1377,6 +1530,7 @@
     }
   },
   {
+    "id": "80c0f022-dce7-4522-8911-c264fc044cd9",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1386,6 +1540,7 @@
     }
   },
   {
+    "id": "9b3422e3-6fd1-47e1-8c1a-0e07faca391d",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1395,6 +1550,7 @@
     }
   },
   {
+    "id": "3316723a-346e-480d-aa82-7255f731909b",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1404,6 +1560,7 @@
     }
   },
   {
+    "id": "e5825e9a-a1c8-4e17-9591-102ed7f6bb72",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1413,6 +1570,7 @@
     }
   },
   {
+    "id": "cc1cac4a-aeae-4629-9052-058ffe55fdfc",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1422,6 +1580,7 @@
     }
   },
   {
+    "id": "90ae712b-a1a7-491c-b221-7fe0d9feb589",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1431,6 +1590,7 @@
     }
   },
   {
+    "id": "b59ec2f4-4814-43e0-834f-5ce63e389835",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1440,6 +1600,7 @@
     }
   },
   {
+    "id": "4a903ff1-242d-4f52-80af-1bfbaeb46c0a",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1449,6 +1610,7 @@
     }
   },
   {
+    "id": "1a794726-d3d3-47ca-9a3a-850ea9f2b75b",
     "type": "Basic",
     "deck": "Math::Calculus::Sequences and Series",
     "tags": "Math Calculus Sequences-and-Series Theory",
@@ -1458,6 +1620,7 @@
     }
   },
   {
+    "id": "e304cc52-6040-4bc0-98ea-edd399f56746",
     "type": "Basic",
     "deck": "Math::Calculus",
     "tags": "Math Calculus Vectors Theory",
@@ -1467,6 +1630,7 @@
     }
   },
   {
+    "id": "8d73624b-56e4-47b7-b6cc-34f17d1a740a",
     "type": "Basic",
     "deck": "Math::Calculus::ODE",
     "tags": "Math Calculus Differential-Equation ODE Theory",
@@ -1476,6 +1640,7 @@
     }
   },
   {
+    "id": "8d7d62ea-207c-4014-ac47-501c77a67f4b",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1485,6 +1650,7 @@
     }
   },
   {
+    "id": "43a42217-1482-4ab0-8079-f7f96de5c025",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1494,6 +1660,7 @@
     }
   },
   {
+    "id": "3cc7581d-2936-4cb0-b698-5dd80e0fc009",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1503,6 +1670,7 @@
     }
   },
   {
+    "id": "39a2b3cf-dfbe-46cf-91ab-33a532832f8f",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1512,6 +1680,7 @@
     }
   },
   {
+    "id": "eac4b24c-640b-4fc1-84fb-824606f2f347",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1521,6 +1690,7 @@
     }
   },
   {
+    "id": "916a6953-0bc7-4fec-af26-c4e3d98ce08c",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1530,6 +1700,7 @@
     }
   },
   {
+    "id": "d9403f39-2452-4940-855d-86a86391fe40",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1539,6 +1710,7 @@
     }
   },
   {
+    "id": "fdaf1b7b-fe9b-4efc-af85-fa35f0c3dab2",
     "type": "Basic",
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
@@ -1548,6 +1720,7 @@
     }
   },
   {
+    "id": "205a5237-31f0-4e31-867b-a9f6b6f02dca",
     "type": "Basic",
     "deck": "Math::Calculus::PDE",
     "tags": "Math Calculus Differential-Equation PDE Theory",
@@ -1557,6 +1730,7 @@
     }
   },
   {
+    "id": "21e20935-2ed8-4144-a9b0-a247f82535a0",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1566,6 +1740,7 @@
     }
   },
   {
+    "id": "095a7c7f-5dcd-44dc-a276-8a61e1c34dd3",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1575,6 +1750,7 @@
     }
   },
   {
+    "id": "875a83ec-f114-43bf-a5ef-219477ce77d8",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1584,6 +1760,7 @@
     }
   },
   {
+    "id": "2e6da6b5-3de2-479a-9b13-b1e1fe86b9b7",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1593,6 +1770,7 @@
     }
   },
   {
+    "id": "53c54cce-59f7-47bc-a703-a916f15db9ee",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1602,6 +1780,7 @@
     }
   },
   {
+    "id": "af58e2f4-828b-464b-8139-534b1f6ebc5b",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1611,6 +1790,7 @@
     }
   },
   {
+    "id": "4e4c917d-5a19-40ef-b0f4-a163a104209d",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1620,6 +1800,7 @@
     }
   },
   {
+    "id": "e15c5451-debd-4eb0-a04f-057cd6a09661",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1629,6 +1810,7 @@
     }
   },
   {
+    "id": "7714e486-03b1-4921-91e2-24a6640529f8",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1638,6 +1820,7 @@
     }
   },
   {
+    "id": "a54b54e4-8831-4778-93b0-aeec6d7bb8f1",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1647,6 +1830,7 @@
     }
   },
   {
+    "id": "d9967aa0-ec9a-4acd-bb5d-35ff13611644",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1656,6 +1840,7 @@
     }
   },
   {
+    "id": "a26b21bd-f40a-438c-90c3-307eb26f8b30",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1665,6 +1850,7 @@
     }
   },
   {
+    "id": "fe8a68aa-f984-4c66-b65d-31add3a41293",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1674,6 +1860,7 @@
     }
   },
   {
+    "id": "2703d5f7-559b-4c5d-bebe-05edebcab79d",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1683,6 +1870,7 @@
     }
   },
   {
+    "id": "59ea35e9-0260-44ef-b3bc-8791008c58cf",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1692,6 +1880,7 @@
     }
   },
   {
+    "id": "8b1e06b5-0760-4e3d-839a-c7a0999b2cd6",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1701,6 +1890,7 @@
     }
   },
   {
+    "id": "5147ac21-173d-4937-9d7d-3098459298ce",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral U-Substitution",
@@ -1710,6 +1900,7 @@
     }
   },
   {
+    "id": "4697d3e0-b843-4930-8c67-c8b87408b425",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Integration-by-Parts",
@@ -1719,6 +1910,7 @@
     }
   },
   {
+    "id": "5ada51e2-d0cd-4f17-ba24-685a8f15acea",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Integration-by-Parts",
@@ -1728,6 +1920,7 @@
     }
   },
   {
+    "id": "38794083-9136-4872-b62d-6044448f5960",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1737,6 +1930,7 @@
     }
   },
   {
+    "id": "78a93759-5471-47f3-a2e1-ef6a860be3fe",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1746,6 +1940,7 @@
     }
   },
   {
+    "id": "f10d04e9-a289-4f57-ba28-cca5afdbdddc",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1755,6 +1950,7 @@
     }
   },
   {
+    "id": "52adb0e8-77fe-477c-beba-820d892a97ff",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1764,6 +1960,7 @@
     }
   },
   {
+    "id": "ae6c9b95-12c0-430a-89f6-55235028d6be",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1773,6 +1970,7 @@
     }
   },
   {
+    "id": "d384c39f-6a5e-498f-82a4-7884be478494",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1782,6 +1980,7 @@
     }
   },
   {
+    "id": "1461d591-63ab-4dc3-b5c3-7b8fbb3b3fe6",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1791,6 +1990,7 @@
     }
   },
   {
+    "id": "ae4365c3-b580-4030-9fa1-30447a25a03f",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1800,6 +2000,7 @@
     }
   },
   {
+    "id": "3e4d9a96-dced-4235-a855-8e5c6ad4eede",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1809,6 +2010,7 @@
     }
   },
   {
+    "id": "655bcf51-399d-4a47-a350-86c92749d2e1",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Integrals",
     "tags": "Math Calculus Problem Integral Trigonometric",
@@ -1818,6 +2020,7 @@
     }
   },
   {
+    "id": "fa0dc99b-15ef-42ec-9857-2728870e0ff0",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
@@ -1827,6 +2030,7 @@
     }
   },
   {
+    "id": "565be5dc-1e64-4913-824c-1e979361b6e7",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
@@ -1836,6 +2040,7 @@
     }
   },
   {
+    "id": "f28da862-a812-4071-9b08-bb0c6c43bef8",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
@@ -1845,6 +2050,7 @@
     }
   },
   {
+    "id": "c30ed21c-1d57-4a98-b395-34af78fd9e84",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
@@ -1854,6 +2060,7 @@
     }
   },
   {
+    "id": "826768c2-2478-4428-b450-0359dc04f94e",
     "type": "Basic",
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
