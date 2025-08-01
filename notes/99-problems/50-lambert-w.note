@@ -1,16 +1,12 @@
 !type:Basic
-
 !deck:Math::Calculus::Problems::Lambert W
-
 !tags:Math Calculus Problem Lambert-W
+!template:Basic
 
-# https://www.youtube.com/watch?v=LyEPB6Wxc_U
-# https://math.stackexchange.com/questions/1473437/derivative-of-lambert-w-function
-
+!front:
 \[ \frac{d}{dx} W(x) \]
 Find the derivative of the Lambert \(W\) function.
----
-
+!back:
 Use implicit differentiation:
 
 \[
@@ -44,13 +40,12 @@ Then:
     &= \frac{W(x)}{x (W(x) + 1)}
 \end{align*}
 \]
-===
+~~~
 
-# https://www.youtube.com/watch?v=l0Ucr7Oah4c
-
+!front:
 \[ \int W(x) \, dx \]
 Find the anti-derivative of the Lambert \(W\) function.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -75,12 +70,10 @@ Then:
     &= x W(x) - W(x) + \frac{x}{W(x)} + C
 \end{align*}
 \]
-===
+~~~
 
-# https://www.youtube.com/watch?v=elkUO6eRMvM
-
-\[ W(W(x)) = 1 \]
----
+!front: \[ W(W(x)) = 1 \]
+!back:
 \[
 \begin{align*}
     W(W(x)) &= 1 \\
@@ -90,10 +83,10 @@ Then:
             &= e^{e+1}
 \end{align*}
 \]
-===
+~~~
 
-\[ W(x) = \ln(2x) \]
----
+!front: \[ W(x) = \ln(2x) \]
+!back:
 \[
 \begin{align*}
     W(x) &= \ln(2x) \\
@@ -111,10 +104,10 @@ Then:
               x &= \frac{1}{2} e^{\frac{1}{2}}
 \end{align*}
 \]
-===
+~~~
 
-\[ W(e^x) = (W(e))^x \]
----
+!front: \[ W(e^x) = (W(e))^x \]
+!back:
 \[
 \begin{align*}
     W(e^x) &= (W(e))^x \\
@@ -125,6 +118,4 @@ Then:
          x &= 1
 \end{align*}
 \]
-===
-
-# TODO The remaining problems from the video.
+~~~

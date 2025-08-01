@@ -1,13 +1,10 @@
 !type:Basic
-
 !deck:Math::Calculus::Sequences and Series
-
 !tags:Math Calculus Sequences-and-Series Theory
-
 !template:Definition
 
-What is an infinite sequence?
----
+!front: What is an infinite sequence?
+!back:
 An infinite sequence is an ordered and indexed list of numbers of the form
 
 \[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
@@ -23,10 +20,10 @@ or simply
 Each number \(a_n\) is a term of the sequence.
 
 The subscript \(n\) is the index variable of the sequence.
-===
+~~~
 
-What are the different ways to define a sequence?
----
+!front: What are the different ways to define a sequence?
+!back:
 An infinite sequence can be defined in various ways:
 
 - By listing terms \(\{ 2, 4, 6, 8, \ldots \}\).
@@ -35,20 +32,20 @@ An infinite sequence can be defined in various ways:
 
 - By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).
 
-TODO Add examples.
-===
+!#example TODO Add an example
+~~~
 
-What is the limit of a sequence?
----
+!front: What is the limit of a sequence?
+!back:
 A sequence \(\{ a_n \}\) converges to a real number \(L\) if for all \(\epsilon > 0\), there exists an integer \(N\) such that \(|a_n − L| < \epsilon\) if \(n \ge N\). The number \(L\) is the limit of the sequence and we write
 
 \[ \lim_{n \to \infty} a_n = L \text{ or } a_n \to L. \]
 
 In this case, we say the sequence \(\{a_n\}\) is a **convergent sequence**. If a sequence does not converge, it is a **divergent sequence**, and we say the limit does not exist.
-===
+~~~
 
-What is the squeeze theorem for sequences?
----
+!front: What is the squeeze theorem for sequences?
+!back:
 Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
 Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
 If there exists a real number \(L\) such that
@@ -58,10 +55,10 @@ If there exists a real number \(L\) such that
 then \(\{b_n\}\) converges and
 
 \[ \lim_{n \to \infty} b_n = L \]
-===
+~~~
 
-What is a bounded sequence?
----
+!front: What is a bounded sequence?
+!back:
 A sequence \(\{a_n\}\) is **bounded above** if there exists a real number \(M\) such that
 
 \[ a_n \le M \]
@@ -77,15 +74,14 @@ for all positive integers \(n\).
 A sequence \(\{a_n\}\) is a *bounded sequence* if it is bounded above and bounded below.
 
 If a sequence is not bounded, it is an **unbounded sequence**.
-===
+~~~
 
-What is the relationship between convergent and bounded sequences?
----
-If a sequence \(\{a_n\}\) converges, then it is bounded.
-===
+!front: What is the relationship between convergent and bounded sequences?
+!back: If a sequence \(\{a_n\}\) converges, then it is bounded.
+~~~
 
-What is a monotone sequence?
----
+!front: What is a monotone sequence?
+!back:
 A sequence \(\{a_n\}\) is **increasing** for all \(n \ge n_0\) if
 
 \[ a_n \le a_{n+1} \text{ for all } n \ge n_0. \]
@@ -95,69 +91,65 @@ A sequence \(\{a_n\}\) is **decreasing** for all \(n \ge n_0\) if
 \[ a_n \ge a_{n+1} \text{ for all } n \ge n_0. \]
 
 A sequence \(\{a_n\}\) is a **monotone sequence** for all \(n \ge n_0\) if it is increasing for all \(n \ge n_0\) or decreasing for all \(n \ge n_0\).
-===
+~~~
 
-What is the monotone convergence theorem?
----
-If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.
-===
+!front: What is the monotone convergence theorem?
+!back: If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.
+~~~
 
-What is an infinite series?
----
+!front: What is an infinite series?
+!back:
 An infinite series is a sum of the terms of an infinite sequnce \(a_n\):
 
 \[ \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]
-===
+~~~
 
-What is the harmonic series?
----
+!front: What is the harmonic series?
+!back:
 The harmonic series is an infinite series of the following form
 
 \[ \sum_{n=1}^{\infty} \frac{1}{n} \]
 
 The harmonic series is a special case of the p-series with \(p = 1\).
-===
+~~~
 
-What does the harmonic series converge to?
----
-The harmonic series \(\sum_{n=1}^{\infty} \frac{1}{n}\) diverges to infinity.
-===
+!front: What does the harmonic series converge to?
+!back: The harmonic series \(\sum_{n=1}^{\infty} \frac{1}{n}\) diverges to infinity.
+~~~
 
-What is the geometric series?
----
+!front: What is the geometric series?
+!back:
 The geometric series is an infinite series of the following form
 
 \[ \sum_{n=0}^{\infty} a r^{n} = a + ar + ar^2 + ar^3 + \ldots \]
-===
+~~~
 
-What does the geometric series converge to?
----
-The geometric series \(\sum_{n=0}^{\infty} a r^{n}\) converges to \(\frac{a}{1 - r}\) if \(|r| < 1\), otherwise it diverges.
-===
+!front: What does the geometric series converge to?
+!back: The geometric series \(\sum_{n=0}^{\infty} a r^{n}\) converges to \(\frac{a}{1 - r}\) if \(|r| < 1\), otherwise it diverges.
+~~~
 
-What is the p-series?
----
+!front: What is the p-series?
+!back:
 The p-series series is an infinite series of the following form
 
 \[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]
-===
+~~~
 
-What does the p-series converge to?
----
-The p-series \(\sum_{n=1}^{\infty} \frac{1}{n^p}\) converges if \(p > 1\), otherwise it diverges.
-===
+!front: What does the p-series converge to?
+!back: The p-series \(\sum_{n=1}^{\infty} \frac{1}{n^p}\) converges if \(p > 1\), otherwise it diverges.
+~~~
 
-What is the telescoping series?
----
+!front: What is the telescoping series?
+!back:
 The telescoping series is an infinite series of the following form
 
 \[ \sum_{n=1}^{\infty} a_n - a_{n+1}. \]
 
 In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.
-===
+~~~
 
-What are the algebraic properties of convergent series?
----
+!front: What are the algebraic properties of convergent series?
+!back:
 Let \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) be convergent series. Then the following algebraic properties hold.
 
 - Sum Rule: The series \(\sum_{n=1}^{\infty} (a_n + b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n\).
@@ -165,17 +157,17 @@ Let \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) be convergent se
 - Difference Rule: The series \(\sum_{n=1}^{\infty} (a_n - b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n\).
 
 - Constant Multiple Rule: For any real number \(c\), the series \(\sum_{n=1}^{\infty} c a_n\) converges and \(\sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n\).
-===
+~~~
 
-What is the divergence test for a series?
----
+!front: What is the divergence test for a series?
+!back:
 Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.
 
 The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).
-===
+~~~
 
-What is the integral test?
----
+!front: What is the integral test?
+!back:
 Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:
 
 - \(f\) is continuous,
@@ -187,29 +179,27 @@ Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). S
 Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.
 
 Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.
-===
+~~~
 
-How to estimate the value of a series?
----
-TODO
-===
+!front: How to estimate the value of a series?
+!back: TODO
+~~~
 
-How to estimate the remainder of a series?
----
-TODO
-===
+!front: How to estimate the remainder of a series?
+!back: TODO
+~~~
 
-What is the direct comparison test?
----
+!front: What is the direct comparison test?
+!back:
 Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
 
 Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.
 
-TODO Add an example.
-===
+!#example TODO Add an example
+~~~
 
-What is the limit comparison test?
----
+!front: What is the limit comparison test?
+!back:
 Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).
 
 If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.
@@ -218,11 +208,11 @@ If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges
 
 If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.
 
-TODO Add an example.
-===
+!#example TODO Add an example
+~~~
 
-What is the alternating series?
----
+!front: What is the alternating series?
+!back:
 The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:
 
 \[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
@@ -230,31 +220,30 @@ The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whos
 or
 
 \[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]
-===
+~~~
 
-What is the alternating series test?
----
+!front: What is the alternating series test?
+!back:
 An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).
 
-TODO Add an example.
-===
+!#example TODO Add an example
+~~~
 
-What is the remainder of an alternating series?
----
-TODO
-===
+!front: What is the remainder of an alternating series?
+!back: TODO
+~~~
 
-What is the relationship between absolute and conditional convergence?
----
+!front: What is the relationship between absolute and conditional convergence?
+!back:
 A series \(\sum_{n=1}^{\infty} a_n\) exhibits **absolute convergence** if \(\sum_{n=1}^{\infty} |a_n|\) converges.
 
 A series \(\sum_{n=1}^{\infty} a_n\) exhibits **conditional convergence** if \(\sum_{n=1}^{\infty} a_n\) converges but \(\sum_{n=1}^{\infty} |a_n|\) diverges.
 
 If \(\sum_{n=1}^{\infty} |a_n|\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.
-===
+~~~
 
-What is the ratio test?
----
+!front: What is the ratio test?
+!back:
 Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
 
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
@@ -265,11 +254,11 @@ Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
 
 - If \(\rho = 1\), the test does not provide any information.
 
-TODO Add an example.
-===
+!#example TODO Add an example
+~~~
 
-What is the root test?
----
+!front: What is the root test?
+!back:
 Consider the series \(\sum_{n=1}^{\infty} a_n\). Let
 
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
@@ -280,11 +269,11 @@ Consider the series \(\sum_{n=1}^{\infty} a_n\). Let
 
 - If \(\rho = 1\), the test does not provide any information.
 
-TODO Add an example.
-===
+!#example: TODO Add an example
+~~~
 
-What is the power series?
----
+!front: What is the power series?
+!back:
 The power series centered at \(x = 0\) is an infinite series of the following form
 
 \[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
@@ -294,10 +283,10 @@ The power series centered at \(x = a\) is an infinite series of the following fo
 \[ \sum_{n=0}^{\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \ldots \]
 
 where \(x\) is a variable and the coefficients \(c_n\) are constants.
-===
+~~~
 
-What are the convergence properties of a power series?
----
+!front: What are the convergence properties of a power series?
+!back:
 Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series satisfies exactly one of the following properties:
 
 - The series converges at \(x=a\) and diverges for all \(x \ne a\).
@@ -305,4 +294,4 @@ Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series sati
 - The series converges for all real numbers \(x\).
 
 - There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.
-===
+~~~

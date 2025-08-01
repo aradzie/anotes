@@ -4,26 +4,22 @@
  * The output file can be imported in Anki.
  */
 
-import { marked } from "marked";
 import { globSync, readFileSync, writeFileSync } from "node:fs";
-import { formatNotes, parseNotes } from "./lib/anki.js";
-import { latexOptions } from "./lib/latex.js";
+import { join } from "node:path";
+import { formatNotes, formatNotesJson, parseNotes } from "./lib/anki.js";
 
-marked.use(latexOptions);
+main();
 
-main("_notes.txt");
-
-function main(deckFile) {
+function main() {
   const notes = [];
-  for (const inputFile of globSync("**/*.txt", {
-    exclude: [deckFile, "tmp"],
-  })) {
-    console.log(`Parsing file "${inputFile}"`);
-    const text = readFileSync(inputFile, "utf-8");
-    parseNotes(text, notes);
+  const cwd = process.cwd();
+  for (const item of globSync("notes/**/*.note", { cwd })) {
+    const file = join(cwd, item);
+    console.log(`Parsing file "${file}"`);
+    const text = readFileSync(file, "utf-8");
+    parseNotes(file, text, notes);
   }
   console.log(`Parsed ${notes.length} note(s)`);
-  console.log(`Writing file "${deckFile}"`);
-  writeFileSync(deckFile, formatNotes(notes));
-  writeFileSync("_notes.json", JSON.stringify(notes, null, 2));
+  writeFileSync(join(cwd, "_notes.txt"), formatNotes(notes));
+  writeFileSync(join(cwd, "_notes.json"), JSON.stringify(formatNotesJson(notes), null, 2));
 }

@@ -1,7 +1,0 @@
-!type:Basic
-
-!deck:Math::Calculus::ODE
-
-!tags:Math Calculus ODE Theory
-
-!template:Definition

@@ -1,11 +1,9 @@
 !type:Basic
-
 !deck:Math::Algebra
-
 !tags:Math Algebra Identity
 
-Quadratic formula
----
+!front: Quadratic formula
+!back:
 If
 
 \[ a x^2 + b x + c = 0 \]
@@ -13,4 +11,4 @@ If
 then
 
 \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
-===
+~~~

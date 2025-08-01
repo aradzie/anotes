@@ -1,0 +1,64 @@
+!type:Basic
+!deck:Math::Trigonometry
+!tags:Math Trigonometric Hyperbolic Identity
+!template:Basic
+
+!front:
+\[ \sinh x \]
+The definition of
+!back: \[ \frac{e^{x} - e^{-x}}{2} \]
+~~~
+
+!front:
+\[ \cosh x \]
+The definition of
+!back: \[ \frac{e^{x} + e^{-x}}{2} \]
+~~~
+
+!front:
+\[ \tanh x \]
+The definition of
+!back: \[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
+~~~
+
+!front:
+\[ e^{x} = \ldots \]
+Hyperbolic identity
+!back: \[ \cosh x + \sinh x \]
+~~~
+
+!front:
+\[ e^{-x} = \ldots \]
+Hyperbolic identity
+!back: \[ \cosh x - \sinh x \]
+~~~
+
+!front:
+\[ 1 = \ldots \]
+Hyperbolic identity
+!back: \[ \cosh^2 x - \sinh^2 x \]
+~~~
+
+!front:
+\[ \sin x = \ldots \]
+Express as a hyperbolic function
+!back: \[ -i \sinh(ix) = \frac{e^{ix} - e^{-ix}}{2i} \]
+~~~
+
+!front:
+\[ \sinh x = \ldots \]
+Express as a trigonometric function
+!back: \[ -i \sin(ix) = \frac{e^{x} - e^{-x}}{2} \]
+~~~
+
+!front:
+\[ \cos x = \ldots \]
+Express as a hyperbolic function
+!back: \[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
+~~~
+
+!front:
+\[ \cosh x = \ldots \]
+Express as a trigonometric function
+!back: \[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
+~~~

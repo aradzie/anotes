@@ -1,7 +1,0 @@
-!type:Basic
-
-!deck:Math::Calculus::Integration
-
-!tags:Math Calculus Integration Theory
-
-!template:Definition

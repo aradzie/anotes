@@ -1,13 +1,12 @@
 !type:Basic
-
 !deck:Math::Calculus::Problems::Integrals
-
 !tags:Math Calculus Problem Integral Integration-by-Parts
+!template:Basic
 
+!front:
 \[ \int \ln x \, dx \]
 Solve the integral.
----
-
+!back:
 Integrate by parts:
 
 \[ u \, dv = uv - \int v \, du \]
@@ -29,12 +28,12 @@ Then:
     &= x \ln x - x + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int (\ln x)^2 \, dx \]
 Solve the integral.
----
-
+!back:
 Integrate by parts:
 
 \[ u \, dv = uv - \int v \, du \]
@@ -56,4 +55,4 @@ Then:
     &= x (\ln x)^2 - 2 (x \ln x - x) + C
 \end{align*}
 \]
-===
+~~~

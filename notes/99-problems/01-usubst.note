@@ -1,12 +1,12 @@
 !type:Basic
-
 !deck:Math::Calculus::Problems::Integrals
-
 !tags:Math Calculus Problem Integral U-Substitution
+!template:Basic
 
+!front:
 \[ \int 3x^2 \sqrt {x^3 + 1} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -26,11 +26,12 @@ Then:
     &= \frac{2}{3} (x^3 + 1)^{\frac{3}{2}} + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int xe^{-x^2} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -51,11 +52,12 @@ Then:
     &= -\frac{1}{2} e^{-x^2} + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{x}{(x^2 + 1)^2} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -76,11 +78,12 @@ Then:
     &= -\frac{1}{2} \frac{1}{x^2 + 1} + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int e^{\cos x} \sin x \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -101,11 +104,12 @@ Then:
     &= - e^{\cos x} + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{e^x}{e^x + 1} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -125,11 +129,12 @@ Then:
     &= \ln (e^x + 1) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{x}{x^2 + 1} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -150,11 +155,12 @@ Then:
     &= \frac{1}{2} \ln (x^2 + 1) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{\sin x}{1 + \cos^2 x} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -175,11 +181,12 @@ Then:
     &= - \tan^{-1} (\cos x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \cos(x) \sin(\sin(x)) \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -199,12 +206,12 @@ Then:
     &= - \cos(\sin(x)) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{\ln x}{x} \, dx \]
 Solve the integral.
----
-
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -224,12 +231,12 @@ Then:
     &= \frac{1}{2} (\ln x)^2 + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{1}{x \ln x} \, dx \]
 Solve the integral.
----
-
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -249,11 +256,12 @@ Then:
     &= \ln | \ln x | + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{x}{\sqrt{x + 1}} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -276,11 +284,12 @@ Then:
     &= \frac{2}{3} (x + 1)^{\frac{3}{2}} - 2(x + 1)^{\frac{1}{2}} + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{x}{1 + x^4} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -301,11 +310,12 @@ Then:
     &= \frac{1}{2} \tan^{-1}(x^2) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int (x + 1) \sqrt{x - 1} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -329,11 +339,12 @@ Then:
     &= \frac{2}{5} (x - 1)^{\frac{5}{2}} + \frac{4}{3} (x - 1)^{\frac{3}{2}} + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{1}{x^2 + 4x + 8} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution after completing the square:
 
 \[
@@ -354,12 +365,12 @@ Then:
     &= \frac{1}{2} \tan^{-1} \left( \frac{x + 2}{2} \right) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{1}{1 + \sqrt{2x}} \, dx \]
 Solve the integral.
----
-
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -384,11 +395,12 @@ Then:
     &= (1 + \sqrt{2x}) - \ln(1 + \sqrt{2x}) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int e^{\sqrt{x}} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -411,11 +423,12 @@ Then:
     &= 2 e^\sqrt{x} ( \sqrt{x} - 1 ) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{1}{1 + \sqrt{x}} \, dx \]
 Solve the integral.
----
+!back:
 Apply \(u\)-substitution:
 
 \[
@@ -438,4 +451,4 @@ Then:
     &= 2 \left( \sqrt{x} - \ln |\sqrt{x} + 1| \right) + C
 \end{align*}
 \]
-===
+~~~

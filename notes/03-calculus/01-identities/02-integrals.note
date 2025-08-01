@@ -1,0 +1,111 @@
+!type:Basic
+!deck:Math::Calculus::Identities::Integrals
+!tags:Math Calculus Identity Integral
+!template:Basic
+
+!front: \[ \int u^n \, du \]
+!back: \[ \frac{u^{n + 1}}{n + 1} + C, \quad n \neq -1 \]
+~~~
+
+!front: \[ \int \frac{1}{u} \, du \]
+!back: \[ \ln |u| + C \]
+~~~
+
+!front: \[ \int e^u \, du \]
+!back: \[ e^u + C \]
+~~~
+
+!front: \[ \int a^u \, du \]
+!back: \[ \frac{a^u}{\ln a} + C \]
+~~~
+!tags:Math Calculus Integral Trigonometric Identity
+
+!front: \[ \int \sin u \, du \]
+!back: \[ - \cos u + C \]
+~~~
+
+!front: \[ \int \cos u \, du \]
+!back: \[ \sin u + C \]
+~~~
+
+!front: \[ \int \sec^2 u \, du \]
+!back: \[ \tan u + C \]
+~~~
+
+!front: \[ \int \csc^2 u \, du \]
+!back: \[ - \cot u + C \]
+~~~
+
+!front: \[ \int \sec u \tan u \, du \]
+!back: \[ \sec u + C \]
+~~~
+
+!front: \[ \int \csc u \cot u \, du \]
+!back: \[ - \csc u + C \]
+~~~
+
+!front: \[ \int \tan u \, du \]
+!back:
+\[ - \ln | \cos u | + C \]
+\[ \ln | \sec u | + C \]
+~~~
+
+!front: \[ \int \cot u \, du \]
+!back:
+\[ \ln | \sin u | + C \]
+\[ - \ln | \csc u | + C \]
+~~~
+
+!front: \[ \int \sec u \, du \]
+!back: \[ \ln | \sec u + \tan u | + C \]
+~~~
+
+!front: \[ \int \csc u \, du \]
+!back: \[ \ln | \csc u - \cot u | + C \]
+~~~
+
+!front: \[ \int \frac{1}{\sqrt{a^2 - u^2}} \, du \]
+!back: \[ \sin^{-1} \frac{u}{a} + C \]
+~~~
+
+!front: \[ \int \frac{1}{a^2 + u^2} \, du \]
+!back: \[ \tan^{-1} \frac{u}{a} + C \]
+~~~
+
+!front: \[ \int \frac{1}{u \sqrt{u^2 - a^2}} \, du \]
+!back: \[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
+~~~
+!tags:Math Calculus Integral Hyperbolic Identity
+
+!front: \[ \int \sinh u \, du \]
+!back: \[ \cosh u + C \]
+~~~
+
+!front: \[ \int \cosh u \, du \]
+!back: \[ \sinh u + C \]
+~~~
+
+!front: \[ \int \text{sech}^2 \, u \, du \]
+!back: \[ \tanh u + C \]
+~~~
+
+!front: \[ \int \text{csch}^2 \, u \, du \]
+!back: \[ - \coth u + C \]
+~~~
+
+!front: \[ \int \text{sech} \, u \tanh u \, du \]
+!back: \[ - \text{sech} \, u + C \]
+~~~
+
+!front: \[ \int \text{csch} \, u \coth u \, du \]
+!back: \[ - \text{csch} \, u + C \]
+~~~
+!tags:Math Calculus Integral Identity
+
+!front: \[ \int u e^u \, du \]
+!back: \[ u e^u - e^u + C \]
+~~~
+
+!front: \[ \int \ln u \, du \]
+!back: \[ u \ln u - u + C \]
+~~~

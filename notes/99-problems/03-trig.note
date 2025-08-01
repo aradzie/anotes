@@ -1,12 +1,12 @@
 !type:Basic
-
 !deck:Math::Calculus::Problems::Integrals
-
 !tags:Math Calculus Problem Integral Trigonometric
+!template:Basic
 
+!front:
 \[ \int \sin^2(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
@@ -21,11 +21,12 @@ Then:
     &= \frac{1}{2} x - \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \cos^2(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
@@ -40,11 +41,12 @@ Then:
     &= \frac{1}{2} x + \frac{1}{4} \sin(2x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \sin^3(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \sin^2(x) = 1 - \cos^2(2) \]
@@ -79,11 +81,12 @@ Then:
     &= \frac{1}{3} \cos^3(x) - \cos(x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \cos^3(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \cos^2(x) = 1 - \sin^2(2) \]
@@ -117,11 +120,12 @@ Then:
     &= \sin(x) - \frac{1}{3} \sin^3(x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \sin^4(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \sin^2(x) = \frac{1 - \cos(2x)}{2} \]
@@ -143,11 +147,12 @@ Then:
     &= \frac{3}{8} x - \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \cos^4(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \cos^2(x) = \frac{1 + \cos(2x)}{2} \]
@@ -169,11 +174,12 @@ Then:
     &= \frac{3}{8} x + \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \cos^2(x) \sin^3(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \sin^2(x) = 1 - \cos^2(x) \]
@@ -208,11 +214,12 @@ Then:
     &= \frac{1}{5} \cos^5(x) - \frac{1}{3} \cos^3(x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \sin^2(x) \cos^3(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \cos^2(x) = 1 - \sin^2(x) \]
@@ -247,11 +254,12 @@ Then:
     &= \frac{1}{3} \sin^3(x) - \frac{1}{5} \sin^5(x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \sin^2(x) \cos^2(x) \, dx \]
 Solve the integral.
----
+!back:
 Apply trigonometric identity:
 
 \[ \sin(2x) = 2 \sin(x) \cos(x) \]
@@ -275,11 +283,12 @@ Then:
     &= \frac{1}{8} x - \frac{1}{32} \sin(4x) + C
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \int \frac{1}{1 + \sin(x)} \, dx \]
 Solve the integral.
----
+!back:
 \[
 \begin{align*}
     \int \frac{1}{1 + \sin(x)} \, dx
@@ -291,4 +300,4 @@ Solve the integral.
     &= \tan(x) - \sec(x) + C
 \end{align*}
 \]
-===
+~~~

@@ -1,0 +1,104 @@
+!type:Basic
+!deck:Math::Trigonometry
+!tags:Math Trigonometric Identity
+!template:Basic
+
+!front: \[ \sin (\alpha + \beta) \]
+!back: \[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
+~~~
+
+!front: \[ \sin (\alpha - \beta) \]
+!back: \[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
+~~~
+
+!front: \[ \cos (\alpha + \beta) \]
+!back: \[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+~~~
+
+!front: \[ \cos (\alpha - \beta) \]
+!back: \[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+~~~
+
+!front: \[ \tan (\alpha + \beta) \]
+!back: \[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+~~~
+
+!front: \[ \tan (\alpha - \beta) \]
+!back: \[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+~~~
+
+!front: \[ \sin \frac{\theta}{2} \]
+!back: \[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
+~~~
+
+!front: \[ \cos \frac{\theta}{2} \]
+!back: \[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+~~~
+
+!front: \[ \tan \frac{\theta}{2} \]
+!back:
+\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
+\[ \frac{\sin \theta}{1 + \cos \theta} \]
+\[ \frac{1 - \cos \theta}{\sin \theta} \]
+~~~
+
+!front: \[ \sin^2 \theta \]
+!back: \[ \frac{1 - \cos 2 \theta}{2} \]
+~~~
+
+!front: \[ \cos^2 \theta \]
+!back: \[ \frac{1 + \cos 2 \theta}{2} \]
+~~~
+
+!front: \[ \tan^2 \theta \]
+!back: \[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
+~~~
+
+!front: \[ \sin 2 \theta \]
+!back: \[ 2 \sin \theta \cos \theta \]
+~~~
+
+!front: \[ \cos 2 \theta \]
+!back:
+\[ \cos^2 \theta - \sin^2 \theta \]
+\[ 1 - 2 \sin^2 \theta \]
+\[ 2 \cos^2 \theta - 1 \]
+~~~
+
+!front: \[ \tan 2 \theta \]
+!back:
+\[ \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
+\[ \frac{2}{\cot \theta - \tan \theta} \]
+~~~
+
+!front: \[ \sin \alpha \cdot \sin \beta \]
+!back: \[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
+~~~
+
+!front: \[ \cos \alpha \cdot \cos \beta \]
+!back: \[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
+~~~
+
+!front: \[ \sin \alpha \cdot \cos \beta \]
+!back: \[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
+~~~
+
+!front: \[ \cos \alpha \cdot \sin \beta \]
+!back: \[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
+~~~
+
+!front: \[ \sin \alpha + \sin \beta \]
+!back: \[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+~~~
+
+!front: \[ \sin \alpha - \sin \beta \]
+!back: \[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+~~~
+
+!front: \[ \cos \alpha + \cos \beta \]
+!back: \[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+~~~
+
+!front: \[ \cos \alpha - \cos \beta \]
+!back: \[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+~~~

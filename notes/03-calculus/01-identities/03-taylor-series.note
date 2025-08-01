@@ -1,12 +1,12 @@
 !type:Basic
-
 !deck:Math::Calculus::Identities::Taylor Series
-
 !tags:Math Calculus Identity Taylor-Series
+!template:Basic
 
+!front:
 \[ e^x \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     e^x
@@ -14,11 +14,12 @@ Taylor series expansion
     &= \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \ln(x) \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     \ln(x)
@@ -26,11 +27,12 @@ Taylor series expansion
     &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{(x-1)^{n}}{n}
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \ln(1-x) \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     \ln(1-x)
@@ -38,11 +40,12 @@ Taylor series expansion
     &= -\sum_{n=1}^{\infty} \frac{x^{n}}{n}
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \ln(1+x) \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     \ln(1+x)
@@ -50,13 +53,13 @@ Taylor series expansion
     &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
 \end{align*}
 \]
-===
-
+~~~
 !tags:Math Calculus Taylor-Series Trigonometric Identity
 
+!front:
 \[ \sin(x) \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     \sin(x)
@@ -64,11 +67,12 @@ Taylor series expansion
     &= \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n+1}}{(2n+1)!}
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \cos(x) \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     \cos(x)
@@ -76,13 +80,13 @@ Taylor series expansion
     &= \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n}}{(2n)!}
 \end{align*}
 \]
-===
-
+~~~
 !tags:Math Calculus Taylor-Series Hyperbolic Identity
 
+!front:
 \[ \sinh x \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     \sinh x
@@ -90,11 +94,12 @@ Taylor series expansion
     &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
 \end{align*}
 \]
-===
+~~~
 
+!front:
 \[ \cosh x \]
 Taylor series expansion
----
+!back:
 \[
 \begin{align*}
     \cosh x
@@ -102,4 +107,4 @@ Taylor series expansion
     &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
 \end{align*}
 \]
-===
+~~~

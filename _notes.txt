@@ -886,8 +886,7 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 </li>
 <li><p>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</p>
 </li>
-</ul>
-<p>TODO Add examples.</p></section>"
+</ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{ a_n \}\) converges to a real number \(L\) if for all \(\epsilon > 0\), there exists an integer \(N\) such that \(|a_n − L| < \epsilon\) if \(n \ge N\). The number \(L\) is the limit of the sequence and we write</p>
 
 
@@ -984,13 +983,11 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the value of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the remainder of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the direct comparison test?</p>;"<section style=""text-align: left""><p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
-<p>TODO Add an example.</p></section>"
+<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit comparison test?</p>;"<section style=""text-align: left""><p>Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).</p>
 <p>If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.</p>
 <p>If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
-<p>TODO Add an example.</p></section>"
+<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series?</p>;"<section style=""text-align: left""><p>The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:</p>
 
 
@@ -1000,8 +997,7 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 
 
 \[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]</section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p>
-<p>TODO Add an example.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the remainder of an alternating series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align: left""><p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>absolute convergence</strong> if \(\sum_{n=1}^{\infty} |a_n|\) converges.</p>
 <p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>conditional convergence</strong> if \(\sum_{n=1}^{\infty} a_n\) converges but \(\sum_{n=1}^{\infty} |a_n|\) diverges.</p>
@@ -1018,8 +1014,7 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 </li>
 <li><p>If \(\rho = 1\), the test does not provide any information.</p>
 </li>
-</ul>
-<p>TODO Add an example.</p></section>"
+</ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the root test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
 
 
@@ -1032,8 +1027,7 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 </li>
 <li><p>If \(\rho = 1\), the test does not provide any information.</p>
 </li>
-</ul>
-<p>TODO Add an example.</p></section>"
+</ul></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series centered at \(x = 0\) is an infinite series of the following form</p>
 
 
