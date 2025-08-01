@@ -634,6 +634,12 @@ Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>Th
 <p>which means \(f'(c)=0\).</p></section>"
 Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the intermediate value theorem (IVT).</p>;"<section style=""text-align: left""><p>The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).</p>
 <p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
+Basic;Math::Calculus::Integration;Math Calculus Integration Theory;<p>What is the fundamental theorem of calculus (FTC)?</p>;"<section style=""text-align: left""><p>Consider a function \(f\) which is continuous on \([a,b]\).</p>
+<ul>
+<li>If \(F(x) = \int_a^x (t) \, dt\), then \(F'(x) = f(x)\) on \((a,b)\).</li>
+<li>If \(F\) is any antiderivative of \(f\) on \([a,b]\) (i.e., \(F'(x)=f(x)\)), then \(\int_a^b f(x) \, dx = F(b) - F(a)\).</li>
+</ul>
+<p>The fundamental theorem of calculus is arguably the most important theorem in elementary calculus, as it establishes the profound connection between differentiation and integration.</p></section>"
 Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
 
 
@@ -803,6 +809,39 @@ Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Th
 <li>The series converges for all real numbers \(x\).</li>
 <li>There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.</li>
 </ul></section>"
+Basic;Math::Calculus;Math Calculus Vectors Theory;<p>What is the dot product?</p>;"<section style=""text-align: left""><p>Consider two vectors \(\mathbf{a}\) and \(\mathbf{b}\) in an \(n\)-dimensional space \(\mathbf{a} = [a_1, a_2, \ldots, a_n]\), \(\mathbf{b} = [b_1, b_2, \ldots, b_n]\).</p>
+<p><strong>Algebraic Definition</strong></p>
+<p>The dot product of \(\mathbf{a}\) and \(\mathbf{b}\) is computed as the sum of the products of the corresponding components:</p>
+
+
+\[ \mathbf{a} \cdot \mathbf{b} = a_1 b_1 + a_2 b_2 + \ldots + a_n b_n = \sum_{i = 1}^{n} a_i b_i \]
+
+<p><strong>Geometric Definition</strong></p>
+<p>The dot product of \(\mathbf{a}\) and \(\mathbf{b}\) is defined in terms of the magnitudes (lengths) of the vectors and the angle between them:</p>
+
+
+\[ \mathbf{a} \cdot \mathbf{b} = \| \mathbf{a} \| \, \| \mathbf{b} \| \, \cos \theta \]
+
+<p>where</p>
+<ul>
+<li>\(\| \mathbf{a} \|\) is the magnitude (length) of vector \(\mathbf{a}\).</li>
+<li>\(\| \mathbf{a} \|\) is the magnitude (length) of vector \(\mathbf{b}\).</li>
+<li>\(\theta\) is the angle between the two vectors.</li>
+</ul></section>"
+Basic;Math::Calculus::ODE;Math Calculus Differential-Equation ODE Theory;<p>What is an ordinary differential equation (ODE)?</p>;"<section style=""text-align: left""><p>An ordinary differential equation is a mathematical equation that relates an unknown function of a single independent variable to its derivatives with respect to that variable.</p>
+<p>A general \(n\)-th order ordinary differential equation can be expressed as</p>
+
+
+\[ F(x, y, y', y'', \ldots, y^{(n)}) = 0 \]
+
+<p>where</p>
+<ul>
+<li>\(x\) is the independent variable.</li>
+<li>\(y\) is the unknown function of \(x\), i.e., \(y = y(x)\).</li>
+<li>\(y', y'', \ldots, y^{(n)}\) are the first, second, ..., \(n\)-th derivatives of \(y\) with respect to \(x\).</li>
+<li>\(F\) is a given function relating all these variables and derivatives.</li>
+</ul>
+<p>The solution for a differential equation is a function which satisfies the above expression.</p></section>"
 Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the definition of the Laplace transform?</p>;"<section style=""text-align: left""><p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
 
 
@@ -910,6 +949,20 @@ Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<
 
 
 \[ \frac{d}{dt} u(t) = \delta(t) \]</section>"
+Basic;Math::Calculus::PDE;Math Calculus Differential-Equation PDE Theory;<p>What is an partial differential equation (PDE)?</p>;"<section style=""text-align: left""><p>A partial differential equation is a mathematical equation that involves an unknown function of multiple independent variables and its partial derivatives with respect to those variables.</p>
+<p>A general \(k\)-th order partial differential equation involving an unknown function \(u\) of \(n\) independent variables \(x_1, x_2, \dots, x_n\) can be expressed as</p>
+
+
+\[ F\left( x_1, x_2, \dots, x_n, u, \frac{\partial u}{\partial x_1}, \dots, \frac{\partial u}{\partial x_n}, \frac{\partial^2 u}{\partial x_1^2}, \dots, \frac{\partial^k u}{\partial x_{i_1} \partial x_{i_2} \dots \partial x_{i_k}} \right) = 0 \]
+
+<p>where</p>
+<ul>
+<li>\(x_1, x_2, \dots, x_n\) are the independent variables.</li>
+<li>\(u = u(x_1, x_2, \dots, x_n)\) is the unknown function.</li>
+<li>\(\frac{\partial^k u}{\partial x_{i_1} \partial x_{i_2} \dots \partial x_{i_k}}\) denotes a \(k\)-th order partial derivative.</li>
+<li>\(F\) is a given function relating all these variables and derivatives.</li>
+</ul>
+<p>The solution for a differential equation is a function which satisfies the above expression.</p></section>"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int 3x^2 \sqrt {x^3 + 1} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 

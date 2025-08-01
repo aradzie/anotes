@@ -1,4 +1,28 @@
-!#type: Basic
-!#deck: Math::Calculus
-!#tags: Math Calculus Vectors Theory
-!#template: Definition
+!type: Basic
+!deck: Math::Calculus
+!tags: Math Calculus Vectors Theory
+!template: Definition
+
+!id: e304cc52-6040-4bc0-98ea-edd399f56746
+!front: What is the dot product?
+!back:
+Consider two vectors \(\mathbf{a}\) and \(\mathbf{b}\) in an \(n\)-dimensional space \(\mathbf{a} = [a_1, a_2, \ldots, a_n]\), \(\mathbf{b} = [b_1, b_2, \ldots, b_n]\).
+
+**Algebraic Definition**
+
+The dot product of \(\mathbf{a}\) and \(\mathbf{b}\) is computed as the sum of the products of the corresponding components:
+
+\[ \mathbf{a} \cdot \mathbf{b} = a_1 b_1 + a_2 b_2 + \ldots + a_n b_n = \sum_{i = 1}^{n} a_i b_i \]
+
+**Geometric Definition**
+
+The dot product of \(\mathbf{a}\) and \(\mathbf{b}\) is defined in terms of the magnitudes (lengths) of the vectors and the angle between them:
+
+\[ \mathbf{a} \cdot \mathbf{b} = \| \mathbf{a} \| \, \| \mathbf{b} \| \, \cos \theta \]
+
+where
+
+- \(\| \mathbf{a} \|\) is the magnitude (length) of vector \(\mathbf{a}\).
+- \(\| \mathbf{a} \|\) is the magnitude (length) of vector \(\mathbf{b}\).
+- \(\theta\) is the angle between the two vectors.
+~~~
