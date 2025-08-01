@@ -1,8 +1,9 @@
-!type:Basic
-!deck:Math::Calculus::Problems::Integrals
-!tags:Math Calculus Problem Integral Trigonometric
-!template:Basic
+!type: Basic
+!deck: Math::Calculus::Problems::Integrals
+!tags: Math Calculus Problem Integral Trigonometric
+!template: Basic
 
+!id: 38794083-9136-4872-b62d-6044448f5960
 !front:
 \[ \int \sin^2(x) \, dx \]
 Solve the integral.
@@ -23,6 +24,7 @@ Then:
 \]
 ~~~
 
+!id: 78a93759-5471-47f3-a2e1-ef6a860be3fe
 !front:
 \[ \int \cos^2(x) \, dx \]
 Solve the integral.
@@ -43,6 +45,7 @@ Then:
 \]
 ~~~
 
+!id: f10d04e9-a289-4f57-ba28-cca5afdbdddc
 !front:
 \[ \int \sin^3(x) \, dx \]
 Solve the integral.
@@ -83,6 +86,7 @@ Then:
 \]
 ~~~
 
+!id: 52adb0e8-77fe-477c-beba-820d892a97ff
 !front:
 \[ \int \cos^3(x) \, dx \]
 Solve the integral.
@@ -122,6 +126,7 @@ Then:
 \]
 ~~~
 
+!id: ae6c9b95-12c0-430a-89f6-55235028d6be
 !front:
 \[ \int \sin^4(x) \, dx \]
 Solve the integral.
@@ -149,6 +154,7 @@ Then:
 \]
 ~~~
 
+!id: d384c39f-6a5e-498f-82a4-7884be478494
 !front:
 \[ \int \cos^4(x) \, dx \]
 Solve the integral.
@@ -176,6 +182,7 @@ Then:
 \]
 ~~~
 
+!id: 1461d591-63ab-4dc3-b5c3-7b8fbb3b3fe6
 !front:
 \[ \int \cos^2(x) \sin^3(x) \, dx \]
 Solve the integral.
@@ -216,6 +223,7 @@ Then:
 \]
 ~~~
 
+!id: ae4365c3-b580-4030-9fa1-30447a25a03f
 !front:
 \[ \int \sin^2(x) \cos^3(x) \, dx \]
 Solve the integral.
@@ -256,6 +264,7 @@ Then:
 \]
 ~~~
 
+!id: 3e4d9a96-dced-4235-a855-8e5c6ad4eede
 !front:
 \[ \int \sin^2(x) \cos^2(x) \, dx \]
 Solve the integral.
@@ -285,6 +294,7 @@ Then:
 \]
 ~~~
 
+!id: 655bcf51-399d-4a47-a350-86c92749d2e1
 !front:
 \[ \int \frac{1}{1 + \sin(x)} \, dx \]
 Solve the integral.

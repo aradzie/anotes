@@ -1,8 +1,9 @@
-!type:Basic
-!deck:Math::Calculus::Identities::Taylor Series
-!tags:Math Calculus Identity Taylor-Series
-!template:Basic
+!type: Basic
+!deck: Math::Calculus::Identities::Taylor Series
+!tags: Math Calculus Identity Taylor-Series
+!template: Basic
 
+!id: 3b556a07-7f54-47f6-b112-7eb38ec6f23c
 !front:
 \[ e^x \]
 Taylor series expansion
@@ -16,6 +17,7 @@ Taylor series expansion
 \]
 ~~~
 
+!id: 77d6362f-6b41-4bcf-90ab-80ec4224bd11
 !front:
 \[ \ln(x) \]
 Taylor series expansion
@@ -29,6 +31,7 @@ Taylor series expansion
 \]
 ~~~
 
+!id: 4abf3654-ac19-4f0c-92c2-36eb55bf17b3
 !front:
 \[ \ln(1-x) \]
 Taylor series expansion
@@ -42,6 +45,7 @@ Taylor series expansion
 \]
 ~~~
 
+!id: 7816c6bb-f456-4adb-adec-00682e1df439
 !front:
 \[ \ln(1+x) \]
 Taylor series expansion
@@ -54,8 +58,9 @@ Taylor series expansion
 \end{align*}
 \]
 ~~~
-!tags:Math Calculus Taylor-Series Trigonometric Identity
+!tags: Math Calculus Taylor-Series Trigonometric Identity
 
+!id: b8d48c1b-3a5a-4021-a28b-927494aa1058
 !front:
 \[ \sin(x) \]
 Taylor series expansion
@@ -69,6 +74,7 @@ Taylor series expansion
 \]
 ~~~
 
+!id: 229e4d40-048c-4fe9-869d-f219e780007d
 !front:
 \[ \cos(x) \]
 Taylor series expansion
@@ -81,8 +87,9 @@ Taylor series expansion
 \end{align*}
 \]
 ~~~
-!tags:Math Calculus Taylor-Series Hyperbolic Identity
+!tags: Math Calculus Taylor-Series Hyperbolic Identity
 
+!id: 33b476da-dd07-4615-8532-a58e05b453b9
 !front:
 \[ \sinh x \]
 Taylor series expansion
@@ -96,6 +103,7 @@ Taylor series expansion
 \]
 ~~~
 
+!id: e9407069-de8f-46a4-8019-e507885ab220
 !front:
 \[ \cosh x \]
 Taylor series expansion

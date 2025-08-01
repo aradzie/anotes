@@ -1,14 +1,16 @@
-!type:Basic
-!deck:Math::Trigonometry
-!tags:Math Trigonometric Hyperbolic Identity
-!template:Basic
+!type: Basic
+!deck: Math::Trigonometry
+!tags: Math Trigonometric Hyperbolic Identity
+!template: Basic
 
+!id: f2eeba1c-39cf-4771-b4a7-5337a4225b7d
 !front: Euler's formula
 !back:
 \[ e^{ix} = \cos x + i \sin x \]
 \[ e^{-ix} = \cos x - i \sin x \]
 ~~~
 
+!id: 65efe777-8b72-42d5-9b47-7d9566c23b52
 !front: De Moivre's formula
 !back:
 \[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]

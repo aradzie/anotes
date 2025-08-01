@@ -1,8 +1,9 @@
-!type:Basic
-!deck:Math::Calculus::Problems::Integrals
-!tags:Math Calculus Problem Integral Integration-by-Parts
-!template:Basic
+!type: Basic
+!deck: Math::Calculus::Problems::Integrals
+!tags: Math Calculus Problem Integral Integration-by-Parts
+!template: Basic
 
+!id: 4697d3e0-b843-4930-8c67-c8b87408b425
 !front:
 \[ \int \ln x \, dx \]
 Solve the integral.
@@ -30,6 +31,7 @@ Then:
 \]
 ~~~
 
+!id: 5ada51e2-d0cd-4f17-ba24-685a8f15acea
 !front:
 \[ \int (\ln x)^2 \, dx \]
 Solve the integral.

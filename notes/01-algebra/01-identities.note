@@ -1,7 +1,9 @@
-!type:Basic
-!deck:Math::Algebra
-!tags:Math Algebra Identity
+!type: Basic
+!deck: Math::Algebra
+!tags: Math Algebra Identity
+!template: Basic
 
+!id: 5bd92c71-c20e-42e0-bbc2-c6bb761fb7f7
 !front: Quadratic formula
 !back:
 If

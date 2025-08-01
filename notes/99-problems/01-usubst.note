@@ -1,8 +1,9 @@
-!type:Basic
-!deck:Math::Calculus::Problems::Integrals
-!tags:Math Calculus Problem Integral U-Substitution
-!template:Basic
+!type: Basic
+!deck: Math::Calculus::Problems::Integrals
+!tags: Math Calculus Problem Integral U-Substitution
+!template: Basic
 
+!id: 21e20935-2ed8-4144-a9b0-a247f82535a0
 !front:
 \[ \int 3x^2 \sqrt {x^3 + 1} \, dx \]
 Solve the integral.
@@ -28,6 +29,7 @@ Then:
 \]
 ~~~
 
+!id: 095a7c7f-5dcd-44dc-a276-8a61e1c34dd3
 !front:
 \[ \int xe^{-x^2} \, dx \]
 Solve the integral.
@@ -54,6 +56,7 @@ Then:
 \]
 ~~~
 
+!id: 875a83ec-f114-43bf-a5ef-219477ce77d8
 !front:
 \[ \int \frac{x}{(x^2 + 1)^2} \, dx \]
 Solve the integral.
@@ -80,6 +83,7 @@ Then:
 \]
 ~~~
 
+!id: 2e6da6b5-3de2-479a-9b13-b1e1fe86b9b7
 !front:
 \[ \int e^{\cos x} \sin x \, dx \]
 Solve the integral.
@@ -106,6 +110,7 @@ Then:
 \]
 ~~~
 
+!id: 53c54cce-59f7-47bc-a703-a916f15db9ee
 !front:
 \[ \int \frac{e^x}{e^x + 1} \, dx \]
 Solve the integral.
@@ -131,6 +136,7 @@ Then:
 \]
 ~~~
 
+!id: af58e2f4-828b-464b-8139-534b1f6ebc5b
 !front:
 \[ \int \frac{x}{x^2 + 1} \, dx \]
 Solve the integral.
@@ -157,6 +163,7 @@ Then:
 \]
 ~~~
 
+!id: 4e4c917d-5a19-40ef-b0f4-a163a104209d
 !front:
 \[ \int \frac{\sin x}{1 + \cos^2 x} \, dx \]
 Solve the integral.
@@ -183,6 +190,7 @@ Then:
 \]
 ~~~
 
+!id: e15c5451-debd-4eb0-a04f-057cd6a09661
 !front:
 \[ \int \cos(x) \sin(\sin(x)) \, dx \]
 Solve the integral.
@@ -208,6 +216,7 @@ Then:
 \]
 ~~~
 
+!id: 7714e486-03b1-4921-91e2-24a6640529f8
 !front:
 \[ \int \frac{\ln x}{x} \, dx \]
 Solve the integral.
@@ -233,6 +242,7 @@ Then:
 \]
 ~~~
 
+!id: a54b54e4-8831-4778-93b0-aeec6d7bb8f1
 !front:
 \[ \int \frac{1}{x \ln x} \, dx \]
 Solve the integral.
@@ -258,6 +268,7 @@ Then:
 \]
 ~~~
 
+!id: d9967aa0-ec9a-4acd-bb5d-35ff13611644
 !front:
 \[ \int \frac{x}{\sqrt{x + 1}} \, dx \]
 Solve the integral.
@@ -286,6 +297,7 @@ Then:
 \]
 ~~~
 
+!id: a26b21bd-f40a-438c-90c3-307eb26f8b30
 !front:
 \[ \int \frac{x}{1 + x^4} \, dx \]
 Solve the integral.
@@ -312,6 +324,7 @@ Then:
 \]
 ~~~
 
+!id: fe8a68aa-f984-4c66-b65d-31add3a41293
 !front:
 \[ \int (x + 1) \sqrt{x - 1} \, dx \]
 Solve the integral.
@@ -341,6 +354,7 @@ Then:
 \]
 ~~~
 
+!id: 2703d5f7-559b-4c5d-bebe-05edebcab79d
 !front:
 \[ \int \frac{1}{x^2 + 4x + 8} \, dx \]
 Solve the integral.
@@ -367,6 +381,7 @@ Then:
 \]
 ~~~
 
+!id: 59ea35e9-0260-44ef-b3bc-8791008c58cf
 !front:
 \[ \int \frac{1}{1 + \sqrt{2x}} \, dx \]
 Solve the integral.
@@ -397,6 +412,7 @@ Then:
 \]
 ~~~
 
+!id: 8b1e06b5-0760-4e3d-839a-c7a0999b2cd6
 !front:
 \[ \int e^{\sqrt{x}} \, dx \]
 Solve the integral.
@@ -425,6 +441,7 @@ Then:
 \]
 ~~~
 
+!id: 5147ac21-173d-4937-9d7d-3098459298ce
 !front:
 \[ \int \frac{1}{1 + \sqrt{x}} \, dx \]
 Solve the integral.

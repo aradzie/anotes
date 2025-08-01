@@ -1,8 +1,9 @@
-!type:Basic
-!deck:Math::Calculus::Differentiation
-!tags:Math Calculus Differentiation Theory
-!template:Definition
+!type: Basic
+!deck: Math::Calculus::Differentiation
+!tags: Math Calculus Differentiation Theory
+!template: Definition
 
+!id: ebddf2d2-f380-49bc-9d98-47d69966ce7f
 !front: The definition of the extreme value theorem (EVT).
 !back:
 The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.
@@ -12,6 +13,7 @@ That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq
 In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.
 ~~~
 
+!id: 9df36d9d-546f-45e6-b2dc-3b5159b6bf72
 !front: The definition of the Rolle's theorem.
 !back:
 The Rolle's theorem is a special case of the mean value theorem.
@@ -27,6 +29,7 @@ Then there exists at least one point \(c\) in the open interval \((a,b)\) such t
 Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).
 ~~~
 
+!id: b4edd171-5748-42bd-8392-c5d010a1cfa0
 !front: The definition of the mean value theorem (MVT).
 !back:
 The mean value theorem is a generalization of Rolle's theorem.
@@ -49,6 +52,7 @@ The Rolle's theorem can be derived from the mean value theorem: if \(f(a) = f(b)
 which means \(f'(c)=0\).
 ~~~
 
+!id: 965f6c49-3485-45d0-8590-b369246d02b6
 !front: The definition of the intermediate value theorem (IVT).
 !back:
 The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).

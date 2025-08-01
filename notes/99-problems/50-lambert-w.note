@@ -1,8 +1,9 @@
-!type:Basic
-!deck:Math::Calculus::Problems::Lambert W
-!tags:Math Calculus Problem Lambert-W
-!template:Basic
+!type: Basic
+!deck: Math::Calculus::Problems::Lambert W
+!tags: Math Calculus Problem Lambert-W
+!template: Basic
 
+!id: fa0dc99b-15ef-42ec-9857-2728870e0ff0
 !front:
 \[ \frac{d}{dx} W(x) \]
 Find the derivative of the Lambert \(W\) function.
@@ -42,6 +43,7 @@ Then:
 \]
 ~~~
 
+!id: 565be5dc-1e64-4913-824c-1e979361b6e7
 !front:
 \[ \int W(x) \, dx \]
 Find the anti-derivative of the Lambert \(W\) function.
@@ -72,6 +74,7 @@ Then:
 \]
 ~~~
 
+!id: f28da862-a812-4071-9b08-bb0c6c43bef8
 !front: \[ W(W(x)) = 1 \]
 !back:
 \[
@@ -85,6 +88,7 @@ Then:
 \]
 ~~~
 
+!id: c30ed21c-1d57-4a98-b395-34af78fd9e84
 !front: \[ W(x) = \ln(2x) \]
 !back:
 \[
@@ -106,6 +110,7 @@ Then:
 \]
 ~~~
 
+!id: 826768c2-2478-4428-b450-0359dc04f94e
 !front: \[ W(e^x) = (W(e))^x \]
 !back:
 \[
