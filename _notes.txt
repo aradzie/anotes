@@ -12,19 +12,127 @@ Basic;Math::Algebra;Math Algebra Identity;<p>Quadratic formula</p>;"<p>If</p>
 
 
 \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]"
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha - \beta) \];\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha + \beta) \];\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha - \beta) \];\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha + \beta) \];"\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha - \beta) \];"\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha + \beta) \];"\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha - \beta) \];"\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha + \beta) \];"\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \tan (\alpha + \beta) &= \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \\
+    \tan (\alpha - \beta) &= \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta}
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha - \beta) \];"\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \tan (\alpha + \beta) &= \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \\
+    \tan (\alpha - \beta) &= \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta}
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin \frac{\theta}{2} &= \pm \sqrt{ \frac{1 - \cos \theta}{2} } \\
+    \cos \frac{\theta}{2} &= \pm \sqrt{ \frac{1 + \cos \theta}{2} }
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin \frac{\theta}{2} &= \pm \sqrt{ \frac{1 - \cos \theta}{2} } \\
+    \cos \frac{\theta}{2} &= \pm \sqrt{ \frac{1 + \cos \theta}{2} }
+\end{align*}
+\]"
 Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
 \[ \frac{\sin \theta}{1 + \cos \theta} \]
 \[ \frac{1 - \cos \theta}{\sin \theta} \]"
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin^2 \theta \];\[ \frac{1 - \cos 2 \theta}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos^2 \theta \];\[ \frac{1 + \cos 2 \theta}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin^2 \theta \];"\[ \frac{1 - \cos 2 \theta}{2} \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin^2 \theta &= \frac{1 - \cos 2 \theta}{2} \\
+    \cos^2 \theta &= \frac{1 + \cos 2 \theta}{2}
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos^2 \theta \];"\[ \frac{1 + \cos 2 \theta}{2} \]
+
+<p>Related:</p>
+
+
+\[
+\begin{align*}
+    \sin^2 \theta &= \frac{1 - \cos 2 \theta}{2} \\
+    \cos^2 \theta &= \frac{1 + \cos 2 \theta}{2}
+\end{align*}
+\]"
 Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan^2 \theta \];\[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
 Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin 2 \theta \];\[ 2 \sin \theta \cos \theta \]
 Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos 2 \theta \];"\[ \cos^2 \theta - \sin^2 \theta \]
@@ -60,10 +168,18 @@ Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cos x = \ld
 <p>Express as a hyperbolic function</p>";\[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
 Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cosh x = \ldots \]
 <p>Express as a trigonometric function</p>";\[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>Euler&#39;s formula</p>";"\[ e^{ix} = \cos x + i \sin x \]
-\[ e^{-ix} = \cos x - i \sin x \]"
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>De Moivre&#39;s formula</p>";"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
-\[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) \]"
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>Euler&#39;s formula</p>";"\[
+\begin{align*}
+    e^{ix} &= \cos x + i \sin x \\
+    e^{-ix} &= \cos x - i \sin x
+\end{align*}
+\]"
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>De Moivre&#39;s formula</p>";"\[
+\begin{align*}
+    \left( \cos(x) + i \sin(x) \right)^n &= \cos(nx) + i \sin(nx) \\
+    \left( \cosh(x) + i \sinh(x) \right)^n &= \cosh(nx) + i \sinh(nx)
+\end{align*}
+\]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( f(x) g(x) \right) \];\[ f'(x) g(x) + f(x) g'(x) \]
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \frac{f(x)}{g(x)} \right) \];\[ \frac{f'(x) g(x) - f(x) g'(x)}{(g(x)^2)} \]
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( x^n \right) \];\[ nx^{n-1} \]
@@ -74,7 +190,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \log_b x \right) \];\[ \frac{1}{x \ln b} \]
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sin x ) \];"\[ \cos x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -87,7 +203,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cos x ) \];"\[ - \sin x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -100,7 +216,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \tan x ) \];"\[ \sec^2 x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -113,7 +229,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cot x ) \];"\[ - \csc^2 x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -126,7 +242,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sec x ) \];"\[ \sec x \tan x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -139,7 +255,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \csc x ) \];"\[ - \csc x \cot x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -152,7 +268,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sin^{-1} x ) \];"\[ \frac{1}{\sqrt{1 - x^2}} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -165,7 +281,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cos^{-1} x ) \];"\[ \frac{-1}{\sqrt{1 - x^2}} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -178,7 +294,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \tan^{-1} x ) \];"\[ \frac{1}{1 + x^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -191,7 +307,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cot^{-1} x ) \];"\[ \frac{-1}{1 + x^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -204,7 +320,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sec^{-1} x ) \];"\[ \frac{1}{|x| \sqrt{x^2 - 1}} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -217,7 +333,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \csc^{-1} x ) \];"\[ \frac{-1}{|x| \sqrt{x^2 - 1}} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -230,7 +346,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonome
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \sinh ) x \];"\[ \cosh x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -243,7 +359,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \cosh ) x \];"\[ \sinh x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -256,7 +372,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \tanh x ) \];"\[ \text{sech}^2 \, x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -269,7 +385,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \coth x ) \];"\[ - \text{csch}^2 \, x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -282,7 +398,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{sech} \, x ) \];"\[ - \text{sech} \, x \tanh x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -295,7 +411,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{csch} \, x ) \];"\[ - \text{csch} \, x \coth x \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -308,7 +424,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \sinh^{-1} x ) \];"\[ \frac{1}{\sqrt{x^2 + 1}} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -321,7 +437,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \cosh^{-1} x ) \];"\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -334,7 +450,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \tanh^{-1} x ) \];"\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -347,7 +463,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \coth^{-1} x ) \];"\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -360,7 +476,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{sech}^{-1} \, x ) \];"\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -373,7 +489,7 @@ Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperboli
 \]"
 Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{csch}^{-1} \, x ) \];"\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -479,7 +595,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{s^{n+1}} \]
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sin(at) \} \];"\[ \frac{a}{s^2 + a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -492,7 +608,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 \]"
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cos(at) \} \];"\[ \frac{s}{s^2 + a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -509,7 +625,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t \cos(at) \} \];\[ \frac{s^2 - a^2}{(s^2 + a^2)^2} \]
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sinh(at) \} \];"\[ \frac{a}{s^2 - a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -522,7 +638,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 \]"
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cosh(at) \} \];"\[ \frac{s}{s^2 - a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -537,7 +653,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{(s - c)^{n + 1}} \]
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sin(at) \} \];"\[ \frac{a}{(s - c)^2 + a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -550,7 +666,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 \]"
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cos(at) \} \];"\[ \frac{s - c}{(s - c)^2 + a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -563,7 +679,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 \]"
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sinh(at) \} \];"\[ \frac{a}{(s - c)^2 - a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[
@@ -576,7 +692,7 @@ Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Lapl
 \]"
 Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cosh(at) \} \];"\[ \frac{s - c}{(s - c)^2 - a^2} \]
 
-<p>Compare with</p>
+<p>Related:</p>
 
 
 \[

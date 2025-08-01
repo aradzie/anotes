@@ -5,42 +5,130 @@
 
 !id: ae785c87-6dd7-4627-bd48-842f2e7955f4
 !front: \[ \sin (\alpha + \beta) \]
-!back: \[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
+!back:
+\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]
 ~~~
 
 !id: 321001c9-c9bd-400f-967f-5d871c046979
 !front: \[ \sin (\alpha - \beta) \]
-!back: \[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
+!back:
+\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]
 ~~~
 
 !id: 54605ec1-da86-4db9-92f1-b155d4110f10
 !front: \[ \cos (\alpha + \beta) \]
-!back: \[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+!back:
+\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]
 ~~~
 
 !id: adb027c7-f30d-4024-b356-3a243d650788
 !front: \[ \cos (\alpha - \beta) \]
-!back: \[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+!back:
+\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin (\alpha + \beta) &= \sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+    \sin (\alpha - \beta) &= \sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+    \cos (\alpha + \beta) &= \cos \alpha \cos \beta - \sin \alpha \sin \beta \\
+    \cos (\alpha - \beta) &= \cos \alpha \cos \beta + \sin \alpha \sin \beta
+\end{align*}
+\]
 ~~~
 
 !id: 400c6172-fe3c-44f5-bc28-123ede29adf3
 !front: \[ \tan (\alpha + \beta) \]
-!back: \[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+!back:
+\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+
+Related:
+
+\[
+\begin{align*}
+    \tan (\alpha + \beta) &= \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \\
+    \tan (\alpha - \beta) &= \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta}
+\end{align*}
+\]
 ~~~
 
 !id: 972c3d2b-7b38-4d55-a892-318955c86cbb
 !front: \[ \tan (\alpha - \beta) \]
-!back: \[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+!back:
+\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+
+Related:
+
+\[
+\begin{align*}
+    \tan (\alpha + \beta) &= \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \\
+    \tan (\alpha - \beta) &= \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta}
+\end{align*}
+\]
 ~~~
 
 !id: 9aa6f8fc-e1f1-4bcb-829c-d04a713e1092
 !front: \[ \sin \frac{\theta}{2} \]
-!back: \[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
+!back:
+\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \frac{\theta}{2} &= \pm \sqrt{ \frac{1 - \cos \theta}{2} } \\
+    \cos \frac{\theta}{2} &= \pm \sqrt{ \frac{1 + \cos \theta}{2} }
+\end{align*}
+\]
 ~~~
 
 !id: da5039c2-ca54-4f99-99a8-e0d9947b924e
 !front: \[ \cos \frac{\theta}{2} \]
-!back: \[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+!back:
+\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \frac{\theta}{2} &= \pm \sqrt{ \frac{1 - \cos \theta}{2} } \\
+    \cos \frac{\theta}{2} &= \pm \sqrt{ \frac{1 + \cos \theta}{2} }
+\end{align*}
+\]
 ~~~
 
 !id: d1c98904-370b-4517-957b-6763e10553d7
@@ -53,12 +141,32 @@
 
 !id: cba164f0-0e0b-49d4-b07d-0d5cfd606b0b
 !front: \[ \sin^2 \theta \]
-!back: \[ \frac{1 - \cos 2 \theta}{2} \]
+!back:
+\[ \frac{1 - \cos 2 \theta}{2} \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin^2 \theta &= \frac{1 - \cos 2 \theta}{2} \\
+    \cos^2 \theta &= \frac{1 + \cos 2 \theta}{2}
+\end{align*}
+\]
 ~~~
 
 !id: dfb0a6f0-52bb-4ec8-acd9-3ba9557ca1bb
 !front: \[ \cos^2 \theta \]
-!back: \[ \frac{1 + \cos 2 \theta}{2} \]
+!back:
+\[ \frac{1 + \cos 2 \theta}{2} \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin^2 \theta &= \frac{1 - \cos 2 \theta}{2} \\
+    \cos^2 \theta &= \frac{1 + \cos 2 \theta}{2}
+\end{align*}
+\]
 ~~~
 
 !id: 65746dff-b0d4-43bc-9b85-0b41a6ea194b

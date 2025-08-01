@@ -49,7 +49,7 @@
 !back:
 \[ \cos x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -66,7 +66,7 @@ Compare with
 !back:
 \[ - \sin x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -83,7 +83,7 @@ Compare with
 !back:
 \[ \sec^2 x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -100,7 +100,7 @@ Compare with
 !back:
 \[ - \csc^2 x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -117,7 +117,7 @@ Compare with
 !back:
 \[ \sec x \tan x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -134,7 +134,7 @@ Compare with
 !back:
 \[ - \csc x \cot x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -151,7 +151,7 @@ Compare with
 !back:
 \[ \frac{1}{\sqrt{1 - x^2}} \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -168,7 +168,7 @@ Compare with
 !back:
 \[ \frac{-1}{\sqrt{1 - x^2}} \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -185,7 +185,7 @@ Compare with
 !back:
 \[ \frac{1}{1 + x^2} \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -202,7 +202,7 @@ Compare with
 !back:
 \[ \frac{-1}{1 + x^2} \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -219,7 +219,7 @@ Compare with
 !back:
 \[ \frac{1}{|x| \sqrt{x^2 - 1}} \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -236,7 +236,7 @@ Compare with
 !back:
 \[ \frac{-1}{|x| \sqrt{x^2 - 1}} \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -254,7 +254,7 @@ Compare with
 !back:
 \[ \cosh x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -271,7 +271,7 @@ Compare with
 !back:
 \[ \sinh x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -288,7 +288,7 @@ Compare with
 !back:
 \[ \text{sech}^2 \, x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -305,7 +305,7 @@ Compare with
 !back:
 \[ - \text{csch}^2 \, x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -322,7 +322,7 @@ Compare with
 !back:
 \[ - \text{sech} \, x \tanh x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -339,7 +339,7 @@ Compare with
 !back:
 \[ - \text{csch} \, x \coth x \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -356,7 +356,7 @@ Compare with
 !back:
 \[ \frac{1}{\sqrt{x^2 + 1}} \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -373,7 +373,7 @@ Compare with
 !back:
 \[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -390,7 +390,7 @@ Compare with
 !back:
 \[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -407,7 +407,7 @@ Compare with
 !back:
 \[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -424,7 +424,7 @@ Compare with
 !back:
 \[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
@@ -441,7 +441,7 @@ Compare with
 !back:
 \[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
 
-Compare with
+Related:
 
 \[
 \begin{align*}
