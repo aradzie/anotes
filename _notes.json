@@ -1622,7 +1622,7 @@
   {
     "id": "e304cc52-6040-4bc0-98ea-edd399f56746",
     "type": "Basic",
-    "deck": "Math::Calculus",
+    "deck": "Math::Calculus::Vector Calculus",
     "tags": "Math Calculus Vectors Theory",
     "fields": {
       "front": "<p>What is the dot product?</p>",
