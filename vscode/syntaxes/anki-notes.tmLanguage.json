@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Anki Notes",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#inline-latex"
+    },
+    {
+      "include": "#block-latex"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "name": "comment.anki-notes",
+      "match": "^!#.*$"
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.anki-notes",
+          "match": "^!(type|deck|tags|template):"
+        },
+        {
+          "name": "keyword.anki-notes",
+          "match": "^![a-zA-Z]+:"
+        },
+        {
+          "name": "keyword.anki-notes",
+          "match": "^~~~$"
+        }
+      ]
+    },
+    "inline-latex": {
+      "name": "string",
+      "begin": "\\\\\\(",
+      "end": "\\\\\\)",
+      "patterns": [
+        {
+          "name": "constant.character.escape.anki-notes",
+          "match": "\\\\[a-zA-Z]+"
+        }
+      ]
+    },
+    "block-latex": {
+      "name": "string",
+      "begin": "\\\\\\[",
+      "end": "\\\\\\]",
+      "patterns": [
+        {
+          "name": "constant.character.escape.anki-notes",
+          "match": "\\\\[a-zA-Z]+"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.anki-notes"
+}

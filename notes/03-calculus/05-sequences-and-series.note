@@ -32,7 +32,7 @@ An infinite sequence can be defined in various ways:
 
 - By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).
 
-!#example TODO Add an example
+!#example: TODO Add an example
 ~~~
 
 !front: What is the limit of a sequence?
@@ -195,7 +195,7 @@ Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(
 
 Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.
 
-!#example TODO Add an example
+!#example: TODO Add an example
 ~~~
 
 !front: What is the limit comparison test?
@@ -208,7 +208,7 @@ If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges
 
 If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.
 
-!#example TODO Add an example
+!#example: TODO Add an example
 ~~~
 
 !front: What is the alternating series?
@@ -226,7 +226,7 @@ or
 !back:
 An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).
 
-!#example TODO Add an example
+!#example: TODO Add an example
 ~~~
 
 !front: What is the remainder of an alternating series?
@@ -254,7 +254,7 @@ Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let
 
 - If \(\rho = 1\), the test does not provide any information.
 
-!#example TODO Add an example
+!#example: TODO Add an example
 ~~~
 
 !front: What is the root test?

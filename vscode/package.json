@@ -1,0 +1,33 @@
+{
+  "name": "anki-notes",
+  "displayName": "anki-notes",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "anki-notes",
+        "aliases": [
+          "Anki Notes",
+          "anki-notes"
+        ],
+        "extensions": [
+          ".note"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "anki-notes",
+        "scopeName": "source.anki-notes",
+        "path": "./syntaxes/anki-notes.tmLanguage.json"
+      }
+    ]
+  }
+}
