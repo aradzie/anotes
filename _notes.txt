@@ -3,6 +3,913 @@
 #notetype column:1
 #deck column:2
 #tags column:3
+Basic;Math::Algebra;Math Algebra Identity;<p>Quadratic formula</p>;"<p>If</p>
+
+
+\[ a x^2 + b x + c = 0 \]
+
+<p>then</p>
+
+
+\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha - \beta) \];\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha + \beta) \];\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha - \beta) \];\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
+\[ \frac{\sin \theta}{1 + \cos \theta} \]
+\[ \frac{1 - \cos \theta}{\sin \theta} \]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin^2 \theta \];\[ \frac{1 - \cos 2 \theta}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos^2 \theta \];\[ \frac{1 + \cos 2 \theta}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan^2 \theta \];\[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin 2 \theta \];\[ 2 \sin \theta \cos \theta \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos 2 \theta \];"\[ \cos^2 \theta - \sin^2 \theta \]
+\[ 1 - 2 \sin^2 \theta \]
+\[ 2 \cos^2 \theta - 1 \]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan 2 \theta \];"\[ \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
+\[ \frac{2}{\cot \theta - \tan \theta} \]"
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha + \sin \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha - \sin \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha + \cos \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha - \cos \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sinh x \]
+<p>The definition of</p>";\[ \frac{e^{x} - e^{-x}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cosh x \]
+<p>The definition of</p>";\[ \frac{e^{x} + e^{-x}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \tanh x \]
+<p>The definition of</p>";\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{x} = \ldots \]
+<p>Hyperbolic identity</p>";\[ \cosh x + \sinh x \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{-x} = \ldots \]
+<p>Hyperbolic identity</p>";\[ \cosh x - \sinh x \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ 1 = \ldots \]
+<p>Hyperbolic identity</p>";\[ \cosh^2 x - \sinh^2 x \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sin x = \ldots \]
+<p>Express as a hyperbolic function</p>";\[ -i \sinh(ix) = \frac{e^{ix} - e^{-ix}}{2i} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sinh x = \ldots \]
+<p>Express as a trigonometric function</p>";\[ -i \sin(ix) = \frac{e^{x} - e^{-x}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cos x = \ldots \]
+<p>Express as a hyperbolic function</p>";\[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cosh x = \ldots \]
+<p>Express as a trigonometric function</p>";\[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>Euler&#39;s formula</p>";"\[ e^{ix} = \cos x + i \sin x \]
+\[ e^{-ix} = \cos x - i \sin x \]"
+Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>De Moivre&#39;s formula</p>";"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
+\[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) \]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( f(x) g(x) \right) \];\[ f'(x) g(x) + f(x) g'(x) \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \frac{f(x)}{g(x)} \right) \];\[ \frac{f'(x) g(x) - f(x) g'(x)}{(g(x)^2)} \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( x^n \right) \];\[ nx^{n-1} \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \sqrt{x} \right) \];\[ \frac{1}{2 \sqrt{x}} \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( e^x \right) \];\[ e^x \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( a^x \right) \];\[ a^x \ln a \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \ln x \right) \];\[ \frac{1}{x} \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \log_b x \right) \];\[ \frac{1}{x \ln b} \]
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sin x ) \];"\[ \cos x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cos x ) \];"\[ - \sin x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \tan x ) \];"\[ \sec^2 x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cot x ) \];"\[ - \csc^2 x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sec x ) \];"\[ \sec x \tan x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \csc x ) \];"\[ - \csc x \cot x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sin^{-1} x ) \];"\[ \frac{1}{\sqrt{1 - x^2}} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cos^{-1} x ) \];"\[ \frac{-1}{\sqrt{1 - x^2}} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \tan^{-1} x ) \];"\[ \frac{1}{1 + x^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cot^{-1} x ) \];"\[ \frac{-1}{1 + x^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sec^{-1} x ) \];"\[ \frac{1}{|x| \sqrt{x^2 - 1}} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \csc^{-1} x ) \];"\[ \frac{-1}{|x| \sqrt{x^2 - 1}} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \sinh ) x \];"\[ \cosh x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \cosh ) x \];"\[ \sinh x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin x ) &= \cos x \\
+    \frac{d}{dx} ( \cos x ) &= - \sin x \\
+    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
+    \frac{d}{dx} ( \cosh x ) &= \sinh x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \tanh x ) \];"\[ \text{sech}^2 \, x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \coth x ) \];"\[ - \text{csch}^2 \, x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
+    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
+    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
+    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{sech} \, x ) \];"\[ - \text{sech} \, x \tanh x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{csch} \, x ) \];"\[ - \text{csch} \, x \coth x \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
+    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
+    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
+    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \sinh^{-1} x ) \];"\[ \frac{1}{\sqrt{x^2 + 1}} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \cosh^{-1} x ) \];"\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
+    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
+    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \tanh^{-1} x ) \];"\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \coth^{-1} x ) \];"\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
+    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
+    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
+    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{sech}^{-1} \, x ) \];"\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{csch}^{-1} \, x ) \];"\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
+    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
+    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int u^n \, du \];\[ \frac{u^{n + 1}}{n + 1} + C, \quad n \neq -1 \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int \frac{1}{u} \, du \];\[ \ln |u| + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int e^u \, du \];\[ e^u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int a^u \, du \];\[ \frac{a^u}{\ln a} + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sin u \, du \];\[ - \cos u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \cos u \, du \];\[ \sin u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sec^2 u \, du \];\[ \tan u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \csc^2 u \, du \];\[ - \cot u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sec u \tan u \, du \];\[ \sec u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \csc u \cot u \, du \];\[ - \csc u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \tan u \, du \];"\[ - \ln | \cos u | + C \]
+\[ \ln | \sec u | + C \]"
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \cot u \, du \];"\[ \ln | \sin u | + C \]
+\[ - \ln | \csc u | + C \]"
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sec u \, du \];\[ \ln | \sec u + \tan u | + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \csc u \, du \];\[ \ln | \csc u - \cot u | + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \frac{1}{\sqrt{a^2 - u^2}} \, du \];\[ \sin^{-1} \frac{u}{a} + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \frac{1}{a^2 + u^2} \, du \];\[ \tan^{-1} \frac{u}{a} + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \frac{1}{u \sqrt{u^2 - a^2}} \, du \];\[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \sinh u \, du \];\[ \cosh u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \cosh u \, du \];\[ \sinh u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{sech}^2 \, u \, du \];\[ \tanh u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{csch}^2 \, u \, du \];\[ - \coth u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{sech} \, u \tanh u \, du \];\[ - \text{sech} \, u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{csch} \, u \coth u \, du \];\[ - \text{csch} \, u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Identity;\[ \int u e^u \, du \];\[ u e^u - e^u + C \]
+Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Identity;\[ \int \ln u \, du \];\[ u \ln u - u + C \]
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ e^x \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    e^x
+    &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ \ln(x) \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    \ln(x)
+    &= (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \\
+    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{(x-1)^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ \ln(1-x) \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    \ln(1-x)
+    &= - x - \frac{x^2}{2} - \frac{x^3}{3} - \frac{x^4}{4} - \cdots \\
+    &= -\sum_{n=1}^{\infty} \frac{x^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ \ln(1+x) \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    \ln(1+x)
+    &= x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots \\
+    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Trigonometric Identity;"\[ \sin(x) \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    \sin(x)
+    &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n+1}}{(2n+1)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Trigonometric Identity;"\[ \cos(x) \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    \cos(x)
+    &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n}}{(2n)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Hyperbolic Identity;"\[ \sinh x \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    \sinh x
+    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Hyperbolic Identity;"\[ \cosh x \]
+<p>Taylor series expansion</p>";"\[
+\begin{align*}
+    \cosh x
+    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
+    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ 1 \} \];\[ \frac{1}{s} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{s^{n+1}} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sin(at) \} \];"\[ \frac{a}{s^2 + a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
+    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
+    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
+    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cos(at) \} \];"\[ \frac{s}{s^2 + a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
+    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
+    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
+    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sin(at + b) \} \];\[ \frac{s \sin(b) + a \cos(b)}{s^2 + a^2} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cos(at + b) \} \];\[ \frac{s \cos(b) - a \sin(b)}{s^2 + a^2} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t \sin(at) \} \];\[ \frac{2as}{(s^2 + a^2)^2} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t \cos(at) \} \];\[ \frac{s^2 - a^2}{(s^2 + a^2)^2} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sinh(at) \} \];"\[ \frac{a}{s^2 - a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
+    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
+    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
+    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cosh(at) \} \];"\[ \frac{s}{s^2 - a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
+    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
+    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
+    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \} \];\[ \frac{1}{s - c} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{(s - c)^{n + 1}} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sin(at) \} \];"\[ \frac{a}{(s - c)^2 + a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
+    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cos(at) \} \];"\[ \frac{s - c}{(s - c)^2 + a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
+    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sinh(at) \} \];"\[ \frac{a}{(s - c)^2 - a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
+    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cosh(at) \} \];"\[ \frac{s - c}{(s - c)^2 - a^2} \]
+
+<p>Compare with</p>
+
+
+\[
+\begin{align*}
+    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
+    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
+    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
+\end{align*}
+\]"
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} f(t) \} \];\[ F(s - c) \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \delta (t - c) \} \];\[ e^{-cs} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ u(t - c) \} \];\[ e^{-cs} \frac{1}{s} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ u(t - c) f(t - c) \} \];\[ e^{-cs} F(s) \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \left\{ \frac{f(t)}{t} \right\} \];\[ \int_{s}^{\infty} F(u) \, du \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \, du \right\} \];\[ \frac{F(s)}{s} \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ f'(t) \} \];\[ s F(s) - f(0) \]
+Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ f''(t) \} \];\[ s^2 F(s) - s f(0) - f'(0) \]
+Basic;Math::Calculus::Limits;Math Calculus Limits Theory;<p>What is a continuous function?</p>;"<section style=""text-align: left""><p>A function \(f(x)\) is <strong>continuous at a point</strong> \(x = c\) if:</p>
+<ul>
+<li>\( f(c) \) exists: The function is defined at the point \(c\).</li>
+<li>\( \lim_{x \to c} f(x) \) exists: The limit of the function as \(x\) approaches \(c\) from both the left and right sides is the same.</li>
+<li>\( \lim_{x \to c} f(x) = f(c) \): The limit of the function as \(x\) approaches \(c\) is equal to the actual value of the function at \(c\).</li>
+</ul>
+<p>If a function is continuous at every point in its domain, it is called a <strong>continuous</strong> function.</p></section>"
+Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the extreme value theorem (EVT).</p>;"<section style=""text-align: left""><p>The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.</p>
+<p>That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).</p>
+<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
+Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;"<p>The definition of the Rolle&#39;s theorem.</p>";"<section style=""text-align: left""><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>
+<p>The Rolle&#39;s theorem states that if a function \(f(x)\) is:</p>
+<ul>
+<li>Continuous on a closed interval \([a,b]\)</li>
+<li>Differentiable on the open interval \((a,b)\)</li>
+<li>\(f(a)=f(b)\) (the function has the same value at the endpoints)</li>
+</ul>
+<p>Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).</p>
+<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
+Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the mean value theorem (MVT).</p>;"<section style=""text-align: left""><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>
+<p>The mean value theorem states that if a function \(f(x)\) is:</p>
+<ul>
+<li>Continuous on a closed interval \([a,b]\)</li>
+<li>Differentiable on the open interval \((a,b)\)</li>
+</ul>
+<p>Then there exists at least one point \(c\) in the open interval \((a,b)\) such that the instantaneous rate of change (the derivative \(f'(c)\)) is equal to the average rate of change over the interval.</p>
+<p>Mathematically, this is expressed as:</p>
+
+
+\[ f'(c) = \frac{f(b) - f(a)}{b - a} \]
+
+<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \(f(a) = f(b)\), then the right side of the mean value theorem equation becomes</p>
+
+
+\[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
+
+<p>which means \(f'(c)=0\).</p></section>"
+Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the intermediate value theorem (IVT).</p>;"<section style=""text-align: left""><p>The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).</p>
+<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
+
+
+\[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
+
+<p>denoted as</p>
+
+
+\[ \{ a_n \}_{n=1}^{\infty} \]
+
+<p>or simply</p>
+
+
+\[ \{ a_n \}. \]
+
+<p>Each number \(a_n\) is a term of the sequence.</p>
+<p>The subscript \(n\) is the index variable of the sequence.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the different ways to define a sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence can be defined in various ways:</p>
+<ul>
+<li>By listing terms \(\{ 2, 4, 6, 8, \ldots \}\).</li>
+<li>By an explicit formula that defines the \(n\)-th term directly in terms of \(n\), \(a_n = f(n)\).</li>
+<li>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</li>
+</ul></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{ a_n \}\) converges to a real number \(L\) if for all \(\epsilon > 0\), there exists an integer \(N\) such that \(|a_n − L| < \epsilon\) if \(n \ge N\). The number \(L\) is the limit of the sequence and we write</p>
+
+
+\[ \lim_{n \to \infty} a_n = L \text{ or } a_n \to L. \]
+
+<p>In this case, we say the sequence \(\{a_n\}\) is a <strong>convergent sequence</strong>. If a sequence does not converge, it is a <strong>divergent sequence</strong>, and we say the limit does not exist.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the squeeze theorem for sequences?</p>;"<section style=""text-align: left""><p>Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
+Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
+If there exists a real number \(L\) such that</p>
+
+
+\[ \lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n, \]
+
+<p>then \(\{b_n\}\) converges and</p>
+
+
+\[ \lim_{n \to \infty} b_n = L \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a bounded sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{a_n\}\) is <strong>bounded above</strong> if there exists a real number \(M\) such that</p>
+
+
+\[ a_n \le M \]
+
+<p>for all positive integers \(n\).</p>
+<p>A sequence \(\{a_n\}\) is <em>bounded below</em> if there exists a real number \(M\) such that</p>
+
+
+\[ M \le a_n \]
+
+<p>for all positive integers \(n\).</p>
+<p>A sequence \(\{a_n\}\) is a <em>bounded sequence</em> if it is bounded above and bounded below.</p>
+<p>If a sequence is not bounded, it is an <strong>unbounded sequence</strong>.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between convergent and bounded sequences?</p>;"<section style=""text-align: left""><p>If a sequence \(\{a_n\}\) converges, then it is bounded.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a monotone sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{a_n\}\) is <strong>increasing</strong> for all \(n \ge n_0\) if</p>
+
+
+\[ a_n \le a_{n+1} \text{ for all } n \ge n_0. \]
+
+<p>A sequence \(\{a_n\}\) is <strong>decreasing</strong> for all \(n \ge n_0\) if</p>
+
+
+\[ a_n \ge a_{n+1} \text{ for all } n \ge n_0. \]
+
+<p>A sequence \(\{a_n\}\) is a <strong>monotone sequence</strong> for all \(n \ge n_0\) if it is increasing for all \(n \ge n_0\) or decreasing for all \(n \ge n_0\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the monotone convergence theorem?</p>;"<section style=""text-align: left""><p>If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite series?</p>;"<section style=""text-align: left""><p>An infinite series is a sum of the terms of an infinite sequnce \(a_n\):</p>
+
+
+\[ \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the harmonic series?</p>;"<section style=""text-align: left""><p>The harmonic series is an infinite series of the following form</p>
+
+
+\[ \sum_{n=1}^{\infty} \frac{1}{n} \]
+
+<p>The harmonic series is a special case of the p-series with \(p = 1\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the harmonic series converge to?</p>;"<section style=""text-align: left""><p>The harmonic series \(\sum_{n=1}^{\infty} \frac{1}{n}\) diverges to infinity.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the geometric series?</p>;"<section style=""text-align: left""><p>The geometric series is an infinite series of the following form</p>
+
+
+\[ \sum_{n=0}^{\infty} a r^{n} = a + ar + ar^2 + ar^3 + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the geometric series converge to?</p>;"<section style=""text-align: left""><p>The geometric series \(\sum_{n=0}^{\infty} a r^{n}\) converges to \(\frac{a}{1 - r}\) if \(|r| < 1\), otherwise it diverges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the p-series?</p>;"<section style=""text-align: left""><p>The p-series series is an infinite series of the following form</p>
+
+
+\[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the p-series converge to?</p>;"<section style=""text-align: left""><p>The p-series \(\sum_{n=1}^{\infty} \frac{1}{n^p}\) converges if \(p > 1\), otherwise it diverges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the telescoping series?</p>;"<section style=""text-align: left""><p>The telescoping series is an infinite series of the following form</p>
+
+
+\[ \sum_{n=1}^{\infty} a_n - a_{n+1}. \]
+
+<p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the algebraic properties of convergent series?</p>;"<section style=""text-align: left""><p>Let \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) be convergent series. Then the following algebraic properties hold.</p>
+<ul>
+<li>Sum Rule: The series \(\sum_{n=1}^{\infty} (a_n + b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n\).</li>
+<li>Difference Rule: The series \(\sum_{n=1}^{\infty} (a_n - b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n\).</li>
+<li>Constant Multiple Rule: For any real number \(c\), the series \(\sum_{n=1}^{\infty} c a_n\) converges and \(\sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n\).</li>
+</ul></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the divergence test for a series?</p>;"<section style=""text-align: left""><p>Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
+<p>The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the integral test?</p>;"<section style=""text-align: left""><p>Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:</p>
+<ul>
+<li>\(f\) is continuous,</li>
+<li>\(f\) is decreasing, and</li>
+<li>\(f(n) = a_n\) for all integers \(n \ge N\).</li>
+</ul>
+<p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.</p>
+<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the value of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the remainder of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the direct comparison test?</p>;"<section style=""text-align: left""><p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
+<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit comparison test?</p>;"<section style=""text-align: left""><p>Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).</p>
+<p>If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.</p>
+<p>If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
+<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series?</p>;"<section style=""text-align: left""><p>The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:</p>
+
+
+\[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
+
+<p>or</p>
+
+
+\[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]</section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the remainder of an alternating series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align: left""><p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>absolute convergence</strong> if \(\sum_{n=1}^{\infty} |a_n|\) converges.</p>
+<p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>conditional convergence</strong> if \(\sum_{n=1}^{\infty} a_n\) converges but \(\sum_{n=1}^{\infty} |a_n|\) diverges.</p>
+<p>If \(\sum_{n=1}^{\infty} |a_n|\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the ratio test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let</p>
+
+
+\[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
+
+<ul>
+<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
+<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
+<li>If \(\rho = 1\), the test does not provide any information.</li>
+</ul></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the root test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
+
+
+\[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
+
+<ul>
+<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
+<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
+<li>If \(\rho = 1\), the test does not provide any information.</li>
+</ul></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series centered at \(x = 0\) is an infinite series of the following form</p>
+
+
+\[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
+
+<p>The power series centered at \(x = a\) is an infinite series of the following form</p>
+
+
+\[ \sum_{n=0}^{\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \ldots \]
+
+<p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p></section>"
+Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the convergence properties of a power series?</p>;"<section style=""text-align: left""><p>Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series satisfies exactly one of the following properties:</p>
+<ul>
+<li>The series converges at \(x=a\) and diverges for all \(x \ne a\).</li>
+<li>The series converges for all real numbers \(x\).</li>
+<li>There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.</li>
+</ul></section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the definition of the Laplace transform?</p>;"<section style=""text-align: left""><p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
+
+
+\[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \, dt \]
+
+<p>where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).</p></section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
+
+
+\[ \mathscr{L}\{e^{ct} f(t)\} = F(s - c) \]
+
+\[ \mathscr{L}^{-1}\{F(s - c)\} = e^{ct} f(t) \]
+
+<p>Example:</p>
+<p>Since</p>
+
+
+\[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4} \]
+
+<p>we have</p>
+
+
+\[ \mathscr{L}\{ e^{3t} \cos 2t \} = F(s - 3) = \frac{(s - 3)}{(s - 3)^2 + 4} \]</section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
+
+
+\[ \mathscr{L}\{f(t - c) \, u(t - c)\} = e^{-cs} F(s) \]
+
+\[ \mathscr{L}^{-1}\{e^{-cs} F(s)\} = f(t - c) \, u(t - c) \]
+
+<p>where \(u(t - c)\) is the unit step function, which is defined as</p>
+
+
+\[ u(t - c) = \left\{
+\begin{array}{ll}
+    1 & t \ge c \\
+    0 & t < c
+\end{array}
+\right. \]
+
+<p>Example:</p>
+<p>Since</p>
+
+
+\[ \mathscr{L}\{ t^3 \} = \frac{6}{s^4} \]
+
+<p>we have</p>
+
+
+\[ \mathscr{L}\{ f(t - 2) \, u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]</section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the change of scale property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
+
+
+\[ \mathscr{L}\{ f(ct) \} = \frac{1}{c} F \left( \frac{s}{c} \right) \]
+
+\[ \mathscr{L}^{-1} \left\{ \frac{1}{c} F \left( \frac{s}{c} \right) \right\} = f(ct) \]
+
+<p>Example:</p>
+<p>Since</p>
+
+
+\[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1} \]
+
+<p>we have</p>
+
+
+\[ \mathscr{L}\{ \sin 3t \} = \frac{1}{3} F \left( \frac{s}{3} \right) = \frac{1}{3} \frac{1}{(s/3)^2 + 1} = \frac{3}{s^2 + 9} \]</section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit step function \(u(t - c)\)?</p>;"<section style=""text-align: left""><p>The unit step function (Heaviside function) \(u(t - c)\) is defined as</p>
+
+
+\[ u(t - c) = \left\{
+\begin{array}{ll}
+    1 & t \ge c \\
+    0 & t < c
+\end{array}
+\right. \]</section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the effect of multiplying by the unit step function \(u(t - c)\)?</p>;"<section style=""text-align: left""><p>Let \(f(t) = 0\) for all \(t < 0\).</p>
+<ul>
+<li>\(f(t) u(t - c)\) with \(c > 0\) is \(f(t)\) switched on at the point \(c\).</li>
+<li>\(f(t - c) u(t - c)\) with \(c > 0\) is \(f(t)\) shifted (translated) to the right by the amount \(c\).</li>
+</ul></section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit impulse function \(\delta(t - c)\)?</p>;"<section style=""text-align: left""><p>The unit impulse function (Dirac delta function) \(\delta(t - c)\) is a function that has the following properties.</p>
+<p><strong>Infinite at the origin \(c\), zero everywhere else:</strong></p>
+
+
+\[ \delta(t - c) = \left\{
+\begin{array}{ll}
+    \infty & t = c \\
+    0 & t \ne c
+\end{array}
+\right. \]
+
+<p><strong>Area of unity:</strong></p>
+
+
+\[ \int_0^\infty \delta (t - c) \, dt = 1 \]
+
+<p><strong>Shifting or sampling property:</strong></p>
+
+
+\[ \int_{-\infty}^{\infty} f(t) \delta (t - c) \, dt = f(c) \]
+
+<p>The unit impulse function is technically not a function but a <strong>generalized function</strong> or <strong>distribution</strong>.</p></section>"
+Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the derivative of the unit step function?</p>;"<section style=""text-align: left""><p>The derivative of the unit step function (Heaviside function) is the unit impulse function (Dirac delta function);</p>
+
+
+\[ \frac{d}{dt} u(t) = \delta(t) \]</section>"
 Basic;Math::Calculus::Problems::Integrals;Math Calculus Problem Integral U-Substitution;"\[ \int 3x^2 \sqrt {x^3 + 1} \, dx \]
 <p>Solve the integral.</p>";"<p>Apply \(u\)-substitution:</p>
 
@@ -829,910 +1736,3 @@ Basic;Math::Calculus::Problems::Lambert W;Math Calculus Problem Lambert-W;\[ W(e
          x &= 1
 \end{align*}
 \]"
-Basic;Math::Calculus::Limits;Math Calculus Limits Theory;<p>What is a continuous function?</p>;"<section style=""text-align: left""><p>A function \(f(x)\) is <strong>continuous at a point</strong> \(x = c\) if:</p>
-<ul>
-<li>\( f(c) \) exists: The function is defined at the point \(c\).</li>
-<li>\( \lim_{x \to c} f(x) \) exists: The limit of the function as \(x\) approaches \(c\) from both the left and right sides is the same.</li>
-<li>\( \lim_{x \to c} f(x) = f(c) \): The limit of the function as \(x\) approaches \(c\) is equal to the actual value of the function at \(c\).</li>
-</ul>
-<p>If a function is continuous at every point in its domain, it is called a <strong>continuous</strong> function.</p></section>"
-Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the extreme value theorem (EVT).</p>;"<section style=""text-align: left""><p>The extreme value theorem states that if a real-valued function \(f\) is continuous on the closed and bounded interval \([a,b]\), then \(f\) must attain a maximum and a minimum, each at least once.</p>
-<p>That is, there exist numbers \(c\) and \(d\) in \([a,b]\) such that: \(f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b]\).</p>
-<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
-Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;"<p>The definition of the Rolle&#39;s theorem.</p>";"<section style=""text-align: left""><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>
-<p>The Rolle&#39;s theorem states that if a function \(f(x)\) is:</p>
-<ul>
-<li>Continuous on a closed interval \([a,b]\)</li>
-<li>Differentiable on the open interval \((a,b)\)</li>
-<li>\(f(a)=f(b)\) (the function has the same value at the endpoints)</li>
-</ul>
-<p>Then there exists at least one point \(c\) in the open interval \((a,b)\) such that \(f'(c) = 0\).</p>
-<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
-Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the mean value theorem (MVT).</p>;"<section style=""text-align: left""><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>
-<p>The mean value theorem states that if a function \(f(x)\) is:</p>
-<ul>
-<li>Continuous on a closed interval \([a,b]\)</li>
-<li>Differentiable on the open interval \((a,b)\)</li>
-</ul>
-<p>Then there exists at least one point \(c\) in the open interval \((a,b)\) such that the instantaneous rate of change (the derivative \(f'(c)\)) is equal to the average rate of change over the interval.</p>
-<p>Mathematically, this is expressed as:</p>
-
-
-\[ f'(c) = \frac{f(b) - f(a)}{b - a} \]
-
-<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \(f(a) = f(b)\), then the right side of the mean value theorem equation becomes</p>
-
-
-\[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
-
-<p>which means \(f'(c)=0\).</p></section>"
-Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the intermediate value theorem (IVT).</p>;"<section style=""text-align: left""><p>The intermediate value theorem states that if a function \(f(x)\) is continuous on a closed interval \([a,b]\), and \(L\) is any value between \(f(a)\) and \(f(b)\), then there exists at least one number \(c\) in the interval \([a,b]\) such that \(f(c)=L\).</p>
-<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
-
-
-\[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
-
-<p>denoted as</p>
-
-
-\[ \{ a_n \}_{n=1}^{\infty} \]
-
-<p>or simply</p>
-
-
-\[ \{ a_n \}. \]
-
-<p>Each number \(a_n\) is a term of the sequence.</p>
-<p>The subscript \(n\) is the index variable of the sequence.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the different ways to define a sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence can be defined in various ways:</p>
-<ul>
-<li>By listing terms \(\{ 2, 4, 6, 8, \ldots \}\).</li>
-<li>By an explicit formula that defines the \(n\)-th term directly in terms of \(n\), \(a_n = f(n)\).</li>
-<li>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \(a_n = f(a_{n-1}, a_{n-2}, \ldots)\).</li>
-</ul></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{ a_n \}\) converges to a real number \(L\) if for all \(\epsilon > 0\), there exists an integer \(N\) such that \(|a_n − L| < \epsilon\) if \(n \ge N\). The number \(L\) is the limit of the sequence and we write</p>
-
-
-\[ \lim_{n \to \infty} a_n = L \text{ or } a_n \to L. \]
-
-<p>In this case, we say the sequence \(\{a_n\}\) is a <strong>convergent sequence</strong>. If a sequence does not converge, it is a <strong>divergent sequence</strong>, and we say the limit does not exist.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the squeeze theorem for sequences?</p>;"<section style=""text-align: left""><p>Consider sequences \(\{a_n\}\), \(\{b_n\}\), and \(\{c_n\}\).
-Suppose there exists an integer \(N\) such that \(a_n \le b_n \le c_n\) for all \(n \ge N\).
-If there exists a real number \(L\) such that</p>
-
-
-\[ \lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n, \]
-
-<p>then \(\{b_n\}\) converges and</p>
-
-
-\[ \lim_{n \to \infty} b_n = L \]</section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a bounded sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{a_n\}\) is <strong>bounded above</strong> if there exists a real number \(M\) such that</p>
-
-
-\[ a_n \le M \]
-
-<p>for all positive integers \(n\).</p>
-<p>A sequence \(\{a_n\}\) is <em>bounded below</em> if there exists a real number \(M\) such that</p>
-
-
-\[ M \le a_n \]
-
-<p>for all positive integers \(n\).</p>
-<p>A sequence \(\{a_n\}\) is a <em>bounded sequence</em> if it is bounded above and bounded below.</p>
-<p>If a sequence is not bounded, it is an <strong>unbounded sequence</strong>.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between convergent and bounded sequences?</p>;"<section style=""text-align: left""><p>If a sequence \(\{a_n\}\) converges, then it is bounded.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a monotone sequence?</p>;"<section style=""text-align: left""><p>A sequence \(\{a_n\}\) is <strong>increasing</strong> for all \(n \ge n_0\) if</p>
-
-
-\[ a_n \le a_{n+1} \text{ for all } n \ge n_0. \]
-
-<p>A sequence \(\{a_n\}\) is <strong>decreasing</strong> for all \(n \ge n_0\) if</p>
-
-
-\[ a_n \ge a_{n+1} \text{ for all } n \ge n_0. \]
-
-<p>A sequence \(\{a_n\}\) is a <strong>monotone sequence</strong> for all \(n \ge n_0\) if it is increasing for all \(n \ge n_0\) or decreasing for all \(n \ge n_0\).</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the monotone convergence theorem?</p>;"<section style=""text-align: left""><p>If \(\{a_n\}\) is a bounded sequence and there exists a positive integer \(n_0\) such that \(\{a_n\}\) is monotone for all \(n \ge n_0\), then \(\{a_n\}\) converges.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite series?</p>;"<section style=""text-align: left""><p>An infinite series is a sum of the terms of an infinite sequnce \(a_n\):</p>
-
-
-\[ \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]</section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the harmonic series?</p>;"<section style=""text-align: left""><p>The harmonic series is an infinite series of the following form</p>
-
-
-\[ \sum_{n=1}^{\infty} \frac{1}{n} \]
-
-<p>The harmonic series is a special case of the p-series with \(p = 1\).</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the harmonic series converge to?</p>;"<section style=""text-align: left""><p>The harmonic series \(\sum_{n=1}^{\infty} \frac{1}{n}\) diverges to infinity.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the geometric series?</p>;"<section style=""text-align: left""><p>The geometric series is an infinite series of the following form</p>
-
-
-\[ \sum_{n=0}^{\infty} a r^{n} = a + ar + ar^2 + ar^3 + \ldots \]</section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the geometric series converge to?</p>;"<section style=""text-align: left""><p>The geometric series \(\sum_{n=0}^{\infty} a r^{n}\) converges to \(\frac{a}{1 - r}\) if \(|r| < 1\), otherwise it diverges.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the p-series?</p>;"<section style=""text-align: left""><p>The p-series series is an infinite series of the following form</p>
-
-
-\[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]</section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the p-series converge to?</p>;"<section style=""text-align: left""><p>The p-series \(\sum_{n=1}^{\infty} \frac{1}{n^p}\) converges if \(p > 1\), otherwise it diverges.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the telescoping series?</p>;"<section style=""text-align: left""><p>The telescoping series is an infinite series of the following form</p>
-
-
-\[ \sum_{n=1}^{\infty} a_n - a_{n+1}. \]
-
-<p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the algebraic properties of convergent series?</p>;"<section style=""text-align: left""><p>Let \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) be convergent series. Then the following algebraic properties hold.</p>
-<ul>
-<li>Sum Rule: The series \(\sum_{n=1}^{\infty} (a_n + b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n\).</li>
-<li>Difference Rule: The series \(\sum_{n=1}^{\infty} (a_n - b_n)\) converges and \(\sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n\).</li>
-<li>Constant Multiple Rule: For any real number \(c\), the series \(\sum_{n=1}^{\infty} c a_n\) converges and \(\sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n\).</li>
-</ul></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the divergence test for a series?</p>;"<section style=""text-align: left""><p>Consider the sequence \(a_n\). If \(\lim_{n \to \infty} a_n \neq 0\) or \(\lim_{n \to \infty} a_n\) does not exist, then the series \(\sum_{n=1}^{\infty} a_n\) diverges.</p>
-<p>The converse is not true. That is, if \(\lim_{n \to \infty} a_n = 0\), we cannot make any conclusion about the convergence of \(\sum_{n=1}^{\infty} a_n\).</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the integral test?</p>;"<section style=""text-align: left""><p>Suppose \(\sum_{n = 0}^{\infty} a_n\) is a series with positive terms \(a_n\). Suppose there exists a function \(f\) and a positive integer \(N\) such that the following three conditions are satisfied:</p>
-<ul>
-<li>\(f\) is continuous,</li>
-<li>\(f\) is decreasing, and</li>
-<li>\(f(n) = a_n\) for all integers \(n \ge N\).</li>
-</ul>
-<p>Then \(\sum_{n=1}^{\infty} a_n\) and \(\int_{N}^{\infty} f(x) \, dx\) both converge or both diverge.</p>
-<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the value of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the remainder of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the direct comparison test?</p>;"<section style=""text-align: left""><p>Suppose there exists an integer \(N\) such that \(0 \le a_n \le b_n\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>Suppose there exists an integer \(N\) such that \(a_n \ge b_n \ge 0\) for all \(n \ge N\). If \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit comparison test?</p>;"<section style=""text-align: left""><p>Let \(a_n\), \(b_n \ge 0\) for all \(n \ge 1\).</p>
-<p>If \(\lim_{n \to \infty} a_n/b_n = L \ne 0\), then \(\sum_{n=1}^{\infty} a_n\) and \(\sum_{n=1}^{\infty} b_n\) both converge or both diverge.</p>
-<p>If \(\lim_{n \to \infty} a_n/b_n = 0\) and \(\sum_{n=1}^{\infty} b_n\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p>
-<p>If \(\lim_{n \to \infty} a_n/b_n = \infty\) and \(\sum_{n=1}^{\infty} b_n\) diverges, then \(\sum_{n=1}^{\infty} a_n\) diverges.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series?</p>;"<section style=""text-align: left""><p>The alternating series is a sum of the terms of an infinite sequnce \(a_n\) whose terms alternate between positive and negative values:</p>
-
-
-\[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
-
-<p>or</p>
-
-
-\[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]</section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \(\sum_{n=1}^{\infty} (-1)^{n+1} \, a_n\) or \(\sum_{n=1}^{\infty} (-1)^{n} \, a_n\) converges if \(0 < a_{n+1} \le a_n\) for all \(n \ge 1\) and \(\lim_{n \to \infty} a_n = 0\).</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the remainder of an alternating series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align: left""><p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>absolute convergence</strong> if \(\sum_{n=1}^{\infty} |a_n|\) converges.</p>
-<p>A series \(\sum_{n=1}^{\infty} a_n\) exhibits <strong>conditional convergence</strong> if \(\sum_{n=1}^{\infty} a_n\) converges but \(\sum_{n=1}^{\infty} |a_n|\) diverges.</p>
-<p>If \(\sum_{n=1}^{\infty} |a_n|\) converges, then \(\sum_{n=1}^{\infty} a_n\) converges.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the ratio test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\) with nonzero terms. Let</p>
-
-
-\[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
-
-<ul>
-<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
-<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
-<li>If \(\rho = 1\), the test does not provide any information.</li>
-</ul></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the root test?</p>;"<section style=""text-align: left""><p>Consider the series \(\sum_{n=1}^{\infty} a_n\). Let</p>
-
-
-\[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
-
-<ul>
-<li>If \(0 \le \rho < 1\), then \(\sum_{n=1}^{\infty} a_n\) converges absolutely.</li>
-<li>If \(\rho > 1\) or \(\rho = \infty\), then \(\sum_{n=1}^{\infty} a_n\) diverges.</li>
-<li>If \(\rho = 1\), the test does not provide any information.</li>
-</ul></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series centered at \(x = 0\) is an infinite series of the following form</p>
-
-
-\[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
-
-<p>The power series centered at \(x = a\) is an infinite series of the following form</p>
-
-
-\[ \sum_{n=0}^{\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \ldots \]
-
-<p>where \(x\) is a variable and the coefficients \(c_n\) are constants.</p></section>"
-Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the convergence properties of a power series?</p>;"<section style=""text-align: left""><p>Consider the power series \(\sum_{n=0}^{\infty} c_n (x - a)^n\). The series satisfies exactly one of the following properties:</p>
-<ul>
-<li>The series converges at \(x=a\) and diverges for all \(x \ne a\).</li>
-<li>The series converges for all real numbers \(x\).</li>
-<li>There exists a real number \(R>0\) such that the series converges if \(|x − a| < R\) and diverges if \(|x − a| > R\). At the values \(x\) where \(|x − a| = R\), the series may converge or diverge.</li>
-</ul></section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the definition of the Laplace transform?</p>;"<section style=""text-align: left""><p>The Laplace transform of a function \(f(t)\) is a function \(F(s)\) defined as</p>
-
-
-\[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \, dt \]
-
-<p>where \(f(t)\) is a function of exponential order defined for all \(t \ge 0\).</p></section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
-
-
-\[ \mathscr{L}\{e^{ct} f(t)\} = F(s - c) \]
-
-\[ \mathscr{L}^{-1}\{F(s - c)\} = e^{ct} f(t) \]
-
-<p>Example:</p>
-<p>Since</p>
-
-
-\[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4} \]
-
-<p>we have</p>
-
-
-\[ \mathscr{L}\{ e^{3t} \cos 2t \} = F(s - 3) = \frac{(s - 3)}{(s - 3)^2 + 4} \]</section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
-
-
-\[ \mathscr{L}\{f(t - c) \, u(t - c)\} = e^{-cs} F(s) \]
-
-\[ \mathscr{L}^{-1}\{e^{-cs} F(s)\} = f(t - c) \, u(t - c) \]
-
-<p>where \(u(t - c)\) is the unit step function, which is defined as</p>
-
-
-\[ u(t - c) = \left\{
-\begin{array}{ll}
-    1 & t \ge c \\
-    0 & t < c
-\end{array}
-\right. \]
-
-<p>Example:</p>
-<p>Since</p>
-
-
-\[ \mathscr{L}\{ t^3 \} = \frac{6}{s^4} \]
-
-<p>we have</p>
-
-
-\[ \mathscr{L}\{ f(t - 2) \, u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]</section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the change of scale property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \(f(t)\) has the transform \(F(s)\) then</p>
-
-
-\[ \mathscr{L}\{ f(ct) \} = \frac{1}{c} F \left( \frac{s}{c} \right) \]
-
-\[ \mathscr{L}^{-1} \left\{ \frac{1}{c} F \left( \frac{s}{c} \right) \right\} = f(ct) \]
-
-<p>Example:</p>
-<p>Since</p>
-
-
-\[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1} \]
-
-<p>we have</p>
-
-
-\[ \mathscr{L}\{ \sin 3t \} = \frac{1}{3} F \left( \frac{s}{3} \right) = \frac{1}{3} \frac{1}{(s/3)^2 + 1} = \frac{3}{s^2 + 9} \]</section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit step function \(u(t - c)\)?</p>;"<section style=""text-align: left""><p>The unit step function (Heaviside function) \(u(t - c)\) is defined as</p>
-
-
-\[ u(t - c) = \left\{
-\begin{array}{ll}
-    1 & t \ge c \\
-    0 & t < c
-\end{array}
-\right. \]</section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the effect of multiplying by the unit step function \(u(t - c)\)?</p>;"<section style=""text-align: left""><p>Let \(f(t) = 0\) for all \(t < 0\).</p>
-<ul>
-<li>\(f(t) u(t - c)\) with \(c > 0\) is \(f(t)\) switched on at the point \(c\).</li>
-<li>\(f(t - c) u(t - c)\) with \(c > 0\) is \(f(t)\) shifted (translated) to the right by the amount \(c\).</li>
-</ul></section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit impulse function \(\delta(t - c)\)?</p>;"<section style=""text-align: left""><p>The unit impulse function (Dirac delta function) \(\delta(t - c)\) is a function that has the following properties.</p>
-<p><strong>Infinite at the origin \(c\), zero everywhere else:</strong></p>
-
-
-\[ \delta(t - c) = \left\{
-\begin{array}{ll}
-    \infty & t = c \\
-    0 & t \ne c
-\end{array}
-\right. \]
-
-<p><strong>Area of unity:</strong></p>
-
-
-\[ \int_0^\infty \delta (t - c) \, dt = 1 \]
-
-<p><strong>Shifting or sampling property:</strong></p>
-
-
-\[ \int_{-\infty}^{\infty} f(t) \delta (t - c) \, dt = f(c) \]
-
-<p>The unit impulse function is technically not a function but a <strong>generalized function</strong> or <strong>distribution</strong>.</p></section>"
-Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the derivative of the unit step function?</p>;"<section style=""text-align: left""><p>The derivative of the unit step function (Heaviside function) is the unit impulse function (Dirac delta function);</p>
-
-
-\[ \frac{d}{dt} u(t) = \delta(t) \]</section>"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( f(x) g(x) \right) \];\[ f'(x) g(x) + f(x) g'(x) \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \frac{f(x)}{g(x)} \right) \];\[ \frac{f'(x) g(x) - f(x) g'(x)}{(g(x)^2)} \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( x^n \right) \];\[ nx^{n-1} \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \sqrt{x} \right) \];\[ \frac{1}{2 \sqrt{x}} \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( e^x \right) \];\[ e^x \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( a^x \right) \];\[ a^x \ln a \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \ln x \right) \];\[ \frac{1}{x} \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Identity Derivative;\[ \frac{d}{dx} \left( \log_b x \right) \];\[ \frac{1}{x \ln b} \]
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sin x ) \];"\[ \cos x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin x ) &= \cos x \\
-    \frac{d}{dx} ( \cos x ) &= - \sin x \\
-    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
-    \frac{d}{dx} ( \cosh x ) &= \sinh x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cos x ) \];"\[ - \sin x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin x ) &= \cos x \\
-    \frac{d}{dx} ( \cos x ) &= - \sin x \\
-    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
-    \frac{d}{dx} ( \cosh x ) &= \sinh x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \tan x ) \];"\[ \sec^2 x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
-    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
-    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
-    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cot x ) \];"\[ - \csc^2 x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
-    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
-    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
-    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sec x ) \];"\[ \sec x \tan x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
-    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
-    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
-    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \csc x ) \];"\[ - \csc x \cot x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
-    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
-    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
-    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sin^{-1} x ) \];"\[ \frac{1}{\sqrt{1 - x^2}} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
-    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cos^{-1} x ) \];"\[ \frac{-1}{\sqrt{1 - x^2}} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
-    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \tan^{-1} x ) \];"\[ \frac{1}{1 + x^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
-    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
-    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
-    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \cot^{-1} x ) \];"\[ \frac{-1}{1 + x^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
-    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
-    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
-    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \sec^{-1} x ) \];"\[ \frac{1}{|x| \sqrt{x^2 - 1}} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
-    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Trigonometric Identity;\[ \frac{d}{dx} ( \csc^{-1} x ) \];"\[ \frac{-1}{|x| \sqrt{x^2 - 1}} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
-    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \sinh ) x \];"\[ \cosh x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin x ) &= \cos x \\
-    \frac{d}{dx} ( \cos x ) &= - \sin x \\
-    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
-    \frac{d}{dx} ( \cosh x ) &= \sinh x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \cosh ) x \];"\[ \sinh x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin x ) &= \cos x \\
-    \frac{d}{dx} ( \cos x ) &= - \sin x \\
-    \frac{d}{dx} ( \sinh x ) &= \cosh x \\
-    \frac{d}{dx} ( \cosh x ) &= \sinh x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \tanh x ) \];"\[ \text{sech}^2 \, x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
-    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
-    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
-    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \coth x ) \];"\[ - \text{csch}^2 \, x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan x ) &= \sec^2 x \\
-    \frac{d}{dx} ( \cot x ) &= - \csc^2 x \\
-    \frac{d}{dx} ( \tanh x ) &= \text{sech}^2 \, x \\
-    \frac{d}{dx} ( \coth x ) &= - \text{csch}^2 \, x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{sech} \, x ) \];"\[ - \text{sech} \, x \tanh x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
-    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
-    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
-    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{csch} \, x ) \];"\[ - \text{csch} \, x \coth x \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec x ) &= \sec x \tan x \\
-    \frac{d}{dx} ( \csc x ) &= - \csc x \cot x \\
-    \frac{d}{dx} ( \text{sech} \, x ) &= - \text{sech} \, x \tanh x \\
-    \frac{d}{dx} ( \text{csch} \, x ) &= - \text{csch} \, x \coth x
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \sinh^{-1} x ) \];"\[ \frac{1}{\sqrt{x^2 + 1}} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
-    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \cosh^{-1} x ) \];"\[ \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1) \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sin^{-1} x ) &= \frac{1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \cos^{-1} x ) &= \frac{-1}{\sqrt{1 - x^2}} \\
-    \frac{d}{dx} ( \sinh^{-1} x ) &= \frac{1}{\sqrt{x^2 + 1}} \\
-    \frac{d}{dx} ( \cosh^{-1} x ) &= \frac{1}{\sqrt{x^2 - 1}}, \quad (x > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \tanh^{-1} x ) \];"\[ \frac{1}{1 - x^2}, \quad (|x| < 1) \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
-    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
-    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
-    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \coth^{-1} x ) \];"\[ \frac{1}{1 - x^2}, \quad (|x| > 1) \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \tan^{-1} x ) &= \frac{1}{1 + x^2} \\
-    \frac{d}{dx} ( \cot^{-1} x ) &= \frac{-1}{1 + x^2} \\
-    \frac{d}{dx} ( \tanh^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| < 1) \\
-    \frac{d}{dx} ( \coth^{-1} x ) &= \frac{1}{1 - x^2}, \quad (|x| > 1)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{sech}^{-1} \, x ) \];"\[ \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
-    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Derivatives;Math Calculus Derivative Hyperbolic Identity;\[ \frac{d}{dx} ( \text{csch}^{-1} \, x ) \];"\[ \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0) \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \frac{d}{dx} ( \sec^{-1} x ) &= \frac{1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \csc^{-1} x ) &= \frac{-1}{|x| \sqrt{x^2 - 1}} \\
-    \frac{d}{dx} ( \text{sech}^{-1} \, x ) &= \frac{-1}{x \sqrt{1 - x^2}}, \quad (0 < x < 1) \\
-    \frac{d}{dx} ( \text{csch}^{-1} \, x ) &= \frac{-1}{|x| \sqrt{1 + x^2}}, \quad (x \neq 0)
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int u^n \, du \];\[ \frac{u^{n + 1}}{n + 1} + C, \quad n \neq -1 \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int \frac{1}{u} \, du \];\[ \ln |u| + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int e^u \, du \];\[ e^u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Identity Integral;\[ \int a^u \, du \];\[ \frac{a^u}{\ln a} + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sin u \, du \];\[ - \cos u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \cos u \, du \];\[ \sin u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sec^2 u \, du \];\[ \tan u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \csc^2 u \, du \];\[ - \cot u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sec u \tan u \, du \];\[ \sec u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \csc u \cot u \, du \];\[ - \csc u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \tan u \, du \];"\[ - \ln | \cos u | + C \]
-\[ \ln | \sec u | + C \]"
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \cot u \, du \];"\[ \ln | \sin u | + C \]
-\[ - \ln | \csc u | + C \]"
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \sec u \, du \];\[ \ln | \sec u + \tan u | + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \csc u \, du \];\[ \ln | \csc u - \cot u | + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \frac{1}{\sqrt{a^2 - u^2}} \, du \];\[ \sin^{-1} \frac{u}{a} + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \frac{1}{a^2 + u^2} \, du \];\[ \tan^{-1} \frac{u}{a} + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Trigonometric Identity;\[ \int \frac{1}{u \sqrt{u^2 - a^2}} \, du \];\[ \frac{1}{a} \sec^{-1} \frac{u}{a} + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \sinh u \, du \];\[ \cosh u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \cosh u \, du \];\[ \sinh u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{sech}^2 \, u \, du \];\[ \tanh u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{csch}^2 \, u \, du \];\[ - \coth u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{sech} \, u \tanh u \, du \];\[ - \text{sech} \, u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Hyperbolic Identity;\[ \int \text{csch} \, u \coth u \, du \];\[ - \text{csch} \, u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Identity;\[ \int u e^u \, du \];\[ u e^u - e^u + C \]
-Basic;Math::Calculus::Identities::Integrals;Math Calculus Integral Identity;\[ \int \ln u \, du \];\[ u \ln u - u + C \]
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ e^x \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    e^x
-    &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ \ln(x) \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    \ln(x)
-    &= (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \\
-    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{(x-1)^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ \ln(1-x) \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    \ln(1-x)
-    &= - x - \frac{x^2}{2} - \frac{x^3}{3} - \frac{x^4}{4} - \cdots \\
-    &= -\sum_{n=1}^{\infty} \frac{x^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Identity Taylor-Series;"\[ \ln(1+x) \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    \ln(1+x)
-    &= x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots \\
-    &= \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^{n}}{n}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Trigonometric Identity;"\[ \sin(x) \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    \sin(x)
-    &= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n+1}}{(2n+1)!}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Trigonometric Identity;"\[ \cos(x) \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    \cos(x)
-    &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n}}{(2n)!}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Hyperbolic Identity;"\[ \sinh x \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    \sinh x
-    &= x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Taylor Series;Math Calculus Taylor-Series Hyperbolic Identity;"\[ \cosh x \]
-<p>Taylor series expansion</p>";"\[
-\begin{align*}
-    \cosh x
-    &= 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots \\
-    &= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ 1 \} \];\[ \frac{1}{s} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{s^{n+1}} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sin(at) \} \];"\[ \frac{a}{s^2 + a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
-    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
-    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
-    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cos(at) \} \];"\[ \frac{s}{s^2 + a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
-    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
-    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
-    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sin(at + b) \} \];\[ \frac{s \sin(b) + a \cos(b)}{s^2 + a^2} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cos(at + b) \} \];\[ \frac{s \cos(b) - a \sin(b)}{s^2 + a^2} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t \sin(at) \} \];\[ \frac{2as}{(s^2 + a^2)^2} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ t \cos(at) \} \];\[ \frac{s^2 - a^2}{(s^2 + a^2)^2} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \sinh(at) \} \];"\[ \frac{a}{s^2 - a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
-    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
-    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
-    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \cosh(at) \} \];"\[ \frac{s}{s^2 - a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ \sin(at) \} &= \frac{a}{s^2 + a^2} \\
-    \mathscr{L} \{ \cos(at) \} &= \frac{s}{s^2 + a^2} \\
-    \mathscr{L} \{ \sinh(at) \} &= \frac{a}{s^2 - a^2} \\
-    \mathscr{L} \{ \cosh(at) \} &= \frac{s}{s^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \} \];\[ \frac{1}{s - c} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} t^n \}, \, n = 1, 2, 3, \ldots \];\[ \frac{n!}{(s - c)^{n + 1}} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sin(at) \} \];"\[ \frac{a}{(s - c)^2 + a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
-    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cos(at) \} \];"\[ \frac{s - c}{(s - c)^2 + a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
-    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \sinh(at) \} \];"\[ \frac{a}{(s - c)^2 - a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
-    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} \cosh(at) \} \];"\[ \frac{s - c}{(s - c)^2 - a^2} \]
-
-<p>Compare with</p>
-
-
-\[
-\begin{align*}
-    \mathscr{L} \{ e^{ct} \sin(at) \} &= \frac{a}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \cos(at) \} &= \frac{s - c}{(s - c)^2 + a^2} \\
-    \mathscr{L} \{ e^{ct} \sinh(at) \} &= \frac{a}{(s - c)^2 - a^2} \\
-    \mathscr{L} \{ e^{ct} \cosh(at) \} &= \frac{s - c}{(s - c)^2 - a^2}
-\end{align*}
-\]"
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ e^{ct} f(t) \} \];\[ F(s - c) \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ \delta (t - c) \} \];\[ e^{-cs} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ u(t - c) \} \];\[ e^{-cs} \frac{1}{s} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ u(t - c) f(t - c) \} \];\[ e^{-cs} F(s) \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \left\{ \frac{f(t)}{t} \right\} \];\[ \int_{s}^{\infty} F(u) \, du \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \, du \right\} \];\[ \frac{F(s)}{s} \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ f'(t) \} \];\[ s F(s) - f(0) \]
-Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ f''(t) \} \];\[ s^2 F(s) - s f(0) - f'(0) \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha + \beta) \];\[ \sin \alpha \cos \beta + \cos \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin (\alpha - \beta) \];\[ \sin \alpha \cos \beta - \cos \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha + \beta) \];\[ \cos \alpha \cos \beta - \sin \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos (\alpha - \beta) \];\[ \cos \alpha \cos \beta + \sin \alpha \sin \beta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha + \beta) \];\[ \frac{\tan \alpha + \tan \beta}{1 - \tan \alpha \tan \beta} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan (\alpha - \beta) \];\[ \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 - \cos \theta}{2} } \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \frac{\theta}{2} \];\[ \pm \sqrt{ \frac{1 + \cos \theta}{2} } \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan \frac{\theta}{2} \];"\[ \pm \sqrt{ \frac{1 - \cos \theta}{1 + \cos \theta} } \]
-\[ \frac{\sin \theta}{1 + \cos \theta} \]
-\[ \frac{1 - \cos \theta}{\sin \theta} \]"
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin^2 \theta \];\[ \frac{1 - \cos 2 \theta}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos^2 \theta \];\[ \frac{1 + \cos 2 \theta}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan^2 \theta \];\[ \frac{1 - \cos 2 \theta}{1 + \cos 2 \theta} \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin 2 \theta \];\[ 2 \sin \theta \cos \theta \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos 2 \theta \];"\[ \cos^2 \theta - \sin^2 \theta \]
-\[ 1 - 2 \sin^2 \theta \]
-\[ 2 \cos^2 \theta - 1 \]"
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \tan 2 \theta \];"\[ \frac{2 \tan \theta}{1 - \tan^2 \theta} \]
-\[ \frac{2}{\cot \theta - \tan \theta} \]"
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha \cdot \cos \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha \cdot \sin \beta \];\[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha + \sin \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \sin \alpha - \sin \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha + \cos \beta \];\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trigonometry;Math Trigonometric Identity;\[ \cos \alpha - \cos \beta \];\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sinh x \]
-<p>The definition of</p>";\[ \frac{e^{x} - e^{-x}}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cosh x \]
-<p>The definition of</p>";\[ \frac{e^{x} + e^{-x}}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \tanh x \]
-<p>The definition of</p>";\[ \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{x} = \ldots \]
-<p>Hyperbolic identity</p>";\[ \cosh x + \sinh x \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ e^{-x} = \ldots \]
-<p>Hyperbolic identity</p>";\[ \cosh x - \sinh x \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ 1 = \ldots \]
-<p>Hyperbolic identity</p>";\[ \cosh^2 x - \sinh^2 x \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sin x = \ldots \]
-<p>Express as a hyperbolic function</p>";\[ -i \sinh(ix) = \frac{e^{ix} - e^{-ix}}{2i} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \sinh x = \ldots \]
-<p>Express as a trigonometric function</p>";\[ -i \sin(ix) = \frac{e^{x} - e^{-x}}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cos x = \ldots \]
-<p>Express as a hyperbolic function</p>";\[ \cosh(ix) = \frac{e^{ix} + e^{-ix}}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"\[ \cosh x = \ldots \]
-<p>Express as a trigonometric function</p>";\[ \cos(ix) = \frac{e^{x} + e^{-x}}{2} \]
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>Euler&#39;s formula</p>";"\[ e^{ix} = \cos x + i \sin x \]
-\[ e^{-ix} = \cos x - i \sin x \]"
-Basic;Math::Trigonometry;Math Trigonometric Hyperbolic Identity;"<p>De Moivre&#39;s formula</p>";"\[ \left( \cos(x) + i \sin(x) \right)^n = \cos(nx) + i \sin(nx) \]
-\[ \left( \cosh(x) + i \sinh(x) \right)^n = \cosh(nx) + i \sinh(nx) \]"
-Basic;Math::Algebra;Math Algebra Identity;<p>Quadratic formula</p>;"<p>If</p>
-
-
-\[ a x^2 + b x + c = 0 \]
-
-<p>then</p>
-
-
-\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]"
