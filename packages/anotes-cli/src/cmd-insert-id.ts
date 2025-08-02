@@ -1,4 +1,4 @@
-import { formatNotes, type Note, parseNotes } from "@anki-xyz/notes-format";
+import { formatNotes, type Note, parseNotes } from "@anotes/core";
 import { randomUUID } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { findNoteFiles } from "./io.js";

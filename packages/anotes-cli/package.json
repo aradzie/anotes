@@ -1,11 +1,12 @@
 {
-  "name": "@anki-xyz/cli",
+  "name": "@anotes/cli",
   "version": "0.0.1",
   "type": "module",
   "bin": {
     "anotes": "anotes.js"
   },
   "dependencies": {
+    "@anotes/core": "*",
     "chalk": "^5.4.1",
     "commander": "^14.0.0"
   },

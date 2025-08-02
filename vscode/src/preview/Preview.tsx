@@ -1,4 +1,4 @@
-import { allFields, Note, renderer } from "@anki-xyz/notes-format";
+import { allFields, Note, renderer } from "@anotes/core";
 
 export function Preview({ notes }: { notes: Note[] }) {
   return (

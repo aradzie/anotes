@@ -1,5 +1,5 @@
 {
-  "name": "@anki-xyz/notes-format",
+  "name": "@anotes/core",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",

@@ -42,8 +42,8 @@
     "url": "git+https://github.com/aradzie/anki-math-notes.git"
   },
   "dependencies": {
-    "@anki-xyz/anki-export": "*",
-    "@anki-xyz/notes-format": "*",
+    "@anotes/anki-export": "*",
+    "@anotes/core": "*",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
