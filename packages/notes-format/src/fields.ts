@@ -1,16 +1,14 @@
 import { Marked } from "marked";
-import { latexExtension } from "./marked-latex.js";
+import { latexExtension, type Renderer } from "./marked-latex.js";
 
 type FieldConfig = {
-  type: "html" | "text";
-  format: (value: string, template: string) => string;
+  format: (value: string, template: string, renderer?: Renderer) => string;
 };
 
 const frontField = {
-  type: "html",
-  format: (value: string, template: string) => {
+  format: (value: string, template: string, renderer?: Renderer) => {
     const parser = new Marked();
-    parser.use(latexExtension);
+    parser.use(latexExtension(renderer));
     value = parser.parse(value.trim(), { async: false }).trim();
     switch (template) {
       case "Basic":
@@ -24,10 +22,9 @@ const frontField = {
 } satisfies FieldConfig;
 
 const backField = {
-  type: "html",
-  format: (value: string, template: string) => {
+  format: (value: string, template: string, renderer?: Renderer) => {
     const parser = new Marked();
-    parser.use(latexExtension);
+    parser.use(latexExtension(renderer));
     value = parser.parse(value.trim(), { async: false }).trim();
     switch (template) {
       case "Basic":
@@ -41,10 +38,9 @@ const backField = {
 } satisfies FieldConfig;
 
 const exampleField = {
-  type: "html",
-  format: (value: string, template: string) => {
+  format: (value: string, template: string, renderer?: Renderer) => {
     const parser = new Marked();
-    parser.use(latexExtension);
+    parser.use(latexExtension(renderer));
     value = parser.parse(value.trim(), { async: false }).trim();
     switch (template) {
       case "Basic":

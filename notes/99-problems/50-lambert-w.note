@@ -6,7 +6,7 @@
 !id: fa0dc99b-15ef-42ec-9857-2728870e0ff0
 !front:
 \[ \frac{d}{dx} W(x) \]
-Find the derivative of the Lambert \(W\) function.
+Find the derivative of the Lambert \( W \) function.
 !back:
 Use implicit differentiation:
 
@@ -46,9 +46,9 @@ Then:
 !id: 565be5dc-1e64-4913-824c-1e979361b6e7
 !front:
 \[ \int W(x) \, dx \]
-Find the anti-derivative of the Lambert \(W\) function.
+Find the anti-derivative of the Lambert \( W \) function.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}

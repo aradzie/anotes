@@ -8,7 +8,7 @@
 \[ \int 3x^2 \sqrt {x^3 + 1} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -34,7 +34,7 @@ Then:
 \[ \int xe^{-x^2} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -61,7 +61,7 @@ Then:
 \[ \int \frac{x}{(x^2 + 1)^2} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -88,7 +88,7 @@ Then:
 \[ \int e^{\cos x} \sin x \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -115,7 +115,7 @@ Then:
 \[ \int \frac{e^x}{e^x + 1} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -141,7 +141,7 @@ Then:
 \[ \int \frac{x}{x^2 + 1} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -168,7 +168,7 @@ Then:
 \[ \int \frac{\sin x}{1 + \cos^2 x} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -195,7 +195,7 @@ Then:
 \[ \int \cos(x) \sin(\sin(x)) \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -221,7 +221,7 @@ Then:
 \[ \int \frac{\ln x}{x} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -247,7 +247,7 @@ Then:
 \[ \int \frac{1}{x \ln x} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -273,7 +273,7 @@ Then:
 \[ \int \frac{x}{\sqrt{x + 1}} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -302,7 +302,7 @@ Then:
 \[ \int \frac{x}{1 + x^4} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -329,7 +329,7 @@ Then:
 \[ \int (x + 1) \sqrt{x - 1} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -359,7 +359,7 @@ Then:
 \[ \int \frac{1}{x^2 + 4x + 8} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution after completing the square:
+Apply \( u \)-substitution after completing the square:
 
 \[
 \begin{align*}
@@ -386,7 +386,7 @@ Then:
 \[ \int \frac{1}{1 + \sqrt{2x}} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -417,7 +417,7 @@ Then:
 \[ \int e^{\sqrt{x}} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}
@@ -446,7 +446,7 @@ Then:
 \[ \int \frac{1}{1 + \sqrt{x}} \, dx \]
 Solve the integral.
 !back:
-Apply \(u\)-substitution:
+Apply \( u \)-substitution:
 
 \[
 \begin{align*}

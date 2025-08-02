@@ -6,7 +6,7 @@
     "tags": "Math Algebra Identity",
     "fields": {
       "front": "<p>Quadratic formula</p>",
-      "back": "<p>If</p>\n\n\n\\[ a x^2 + b x + c = 0 \\]\n\n<p>then</p>\n\n\n\\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]"
+      "back": "<p>If</p>\n\\[ a x^2 + b x + c = 0 \\]\n<p>then</p>\n\\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]"
     }
   },
   {
@@ -16,7 +16,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\sin (\\alpha + \\beta) \\]",
-      "back": "\\[ \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*}\n\\]"
+      "back": "\\[ \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*} \\]"
     }
   },
   {
@@ -26,7 +26,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\sin (\\alpha - \\beta) \\]",
-      "back": "\\[ \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*}\n\\]"
+      "back": "\\[ \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*} \\]"
     }
   },
   {
@@ -36,7 +36,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\cos (\\alpha + \\beta) \\]",
-      "back": "\\[ \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*}\n\\]"
+      "back": "\\[ \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*} \\]"
     }
   },
   {
@@ -46,7 +46,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\cos (\\alpha - \\beta) \\]",
-      "back": "\\[ \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*}\n\\]"
+      "back": "\\[ \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin (\\alpha + \\beta) &= \\sin \\alpha \\cos \\beta + \\cos \\alpha \\sin \\beta \\\\\n    \\sin (\\alpha - \\beta) &= \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha + \\beta) &= \\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta \\\\\n    \\cos (\\alpha - \\beta) &= \\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\n\\end{align*} \\]"
     }
   },
   {
@@ -56,7 +56,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\tan (\\alpha + \\beta) \\]",
-      "back": "\\[ \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\tan (\\alpha + \\beta) &= \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\\\\n    \\tan (\\alpha - \\beta) &= \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\tan (\\alpha + \\beta) &= \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\\\\n    \\tan (\\alpha - \\beta) &= \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta}\n\\end{align*} \\]"
     }
   },
   {
@@ -66,7 +66,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\tan (\\alpha - \\beta) \\]",
-      "back": "\\[ \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\tan (\\alpha + \\beta) &= \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\\\\n    \\tan (\\alpha - \\beta) &= \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\tan (\\alpha + \\beta) &= \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\tan \\beta} \\\\\n    \\tan (\\alpha - \\beta) &= \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta}\n\\end{align*} \\]"
     }
   },
   {
@@ -76,7 +76,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\sin \\frac{\\theta}{2} \\]",
-      "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\\\\n    \\cos \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} }\n\\end{align*}\n\\]"
+      "back": "\\[ \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\\\\n    \\cos \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} }\n\\end{align*} \\]"
     }
   },
   {
@@ -86,7 +86,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\cos \\frac{\\theta}{2} \\]",
-      "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} } \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\\\\n    \\cos \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} }\n\\end{align*}\n\\]"
+      "back": "\\[ \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} } \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 - \\cos \\theta}{2} } \\\\\n    \\cos \\frac{\\theta}{2} &= \\pm \\sqrt{ \\frac{1 + \\cos \\theta}{2} }\n\\end{align*} \\]"
     }
   },
   {
@@ -106,7 +106,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\sin^2 \\theta \\]",
-      "back": "\\[ \\frac{1 - \\cos 2 \\theta}{2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin^2 \\theta &= \\frac{1 - \\cos 2 \\theta}{2} \\\\\n    \\cos^2 \\theta &= \\frac{1 + \\cos 2 \\theta}{2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1 - \\cos 2 \\theta}{2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin^2 \\theta &= \\frac{1 - \\cos 2 \\theta}{2} \\\\\n    \\cos^2 \\theta &= \\frac{1 + \\cos 2 \\theta}{2}\n\\end{align*} \\]"
     }
   },
   {
@@ -116,7 +116,7 @@
     "tags": "Math Trigonometric Identity",
     "fields": {
       "front": "\\[ \\cos^2 \\theta \\]",
-      "back": "\\[ \\frac{1 + \\cos 2 \\theta}{2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\sin^2 \\theta &= \\frac{1 - \\cos 2 \\theta}{2} \\\\\n    \\cos^2 \\theta &= \\frac{1 + \\cos 2 \\theta}{2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1 + \\cos 2 \\theta}{2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\sin^2 \\theta &= \\frac{1 - \\cos 2 \\theta}{2} \\\\\n    \\cos^2 \\theta &= \\frac{1 + \\cos 2 \\theta}{2}\n\\end{align*} \\]"
     }
   },
   {
@@ -346,7 +346,7 @@
     "tags": "Math Trigonometric Hyperbolic Identity",
     "fields": {
       "front": "<p>Euler&#39;s formula</p>",
-      "back": "\\[\n\\begin{align*}\n    e^{ix} &= \\cos x + i \\sin x \\\\\n    e^{-ix} &= \\cos x - i \\sin x\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    e^{ix} &= \\cos x + i \\sin x \\\\\n    e^{-ix} &= \\cos x - i \\sin x\n\\end{align*} \\]"
     }
   },
   {
@@ -356,7 +356,7 @@
     "tags": "Math Trigonometric Hyperbolic Identity",
     "fields": {
       "front": "<p>De Moivre&#39;s formula</p>",
-      "back": "\\[\n\\begin{align*}\n    \\left( \\cos(x) + i \\sin(x) \\right)^n &= \\cos(nx) + i \\sin(nx) \\\\\n    \\left( \\cosh(x) + i \\sinh(x) \\right)^n &= \\cosh(nx) + i \\sinh(nx)\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\left( \\cos(x) + i \\sin(x) \\right)^n &= \\cos(nx) + i \\sin(nx) \\\\\n    \\left( \\cosh(x) + i \\sinh(x) \\right)^n &= \\cosh(nx) + i \\sinh(nx)\n\\end{align*} \\]"
     }
   },
   {
@@ -446,7 +446,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\sin x ) \\]",
-      "back": "\\[ \\cos x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
+      "back": "\\[ \\cos x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*} \\]"
     }
   },
   {
@@ -456,7 +456,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\cos x ) \\]",
-      "back": "\\[ - \\sin x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
+      "back": "\\[ - \\sin x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*} \\]"
     }
   },
   {
@@ -466,7 +466,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\tan x ) \\]",
-      "back": "\\[ \\sec^2 x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
+      "back": "\\[ \\sec^2 x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*} \\]"
     }
   },
   {
@@ -476,7 +476,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\cot x ) \\]",
-      "back": "\\[ - \\csc^2 x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
+      "back": "\\[ - \\csc^2 x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*} \\]"
     }
   },
   {
@@ -486,7 +486,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\sec x ) \\]",
-      "back": "\\[ \\sec x \\tan x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
+      "back": "\\[ \\sec x \\tan x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*} \\]"
     }
   },
   {
@@ -496,7 +496,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\csc x ) \\]",
-      "back": "\\[ - \\csc x \\cot x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
+      "back": "\\[ - \\csc x \\cot x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*} \\]"
     }
   },
   {
@@ -506,7 +506,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\sin^{-1} x ) \\]",
-      "back": "\\[ \\frac{1}{\\sqrt{1 - x^2}} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1}{\\sqrt{1 - x^2}} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -516,7 +516,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\cos^{-1} x ) \\]",
-      "back": "\\[ \\frac{-1}{\\sqrt{1 - x^2}} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{-1}{\\sqrt{1 - x^2}} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -526,7 +526,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\tan^{-1} x ) \\]",
-      "back": "\\[ \\frac{1}{1 + x^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1}{1 + x^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -536,7 +536,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\cot^{-1} x ) \\]",
-      "back": "\\[ \\frac{-1}{1 + x^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{-1}{1 + x^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -546,7 +546,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\sec^{-1} x ) \\]",
-      "back": "\\[ \\frac{1}{|x| \\sqrt{x^2 - 1}} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1}{|x| \\sqrt{x^2 - 1}} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*} \\]"
     }
   },
   {
@@ -556,7 +556,7 @@
     "tags": "Math Calculus Derivative Trigonometric Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\csc^{-1} x ) \\]",
-      "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*} \\]"
     }
   },
   {
@@ -566,7 +566,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\sinh ) x \\]",
-      "back": "\\[ \\cosh x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
+      "back": "\\[ \\cosh x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*} \\]"
     }
   },
   {
@@ -576,7 +576,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\cosh ) x \\]",
-      "back": "\\[ \\sinh x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*}\n\\]"
+      "back": "\\[ \\sinh x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin x ) &= \\cos x \\\\\n    \\frac{d}{dx} ( \\cos x ) &= - \\sin x \\\\\n    \\frac{d}{dx} ( \\sinh x ) &= \\cosh x \\\\\n    \\frac{d}{dx} ( \\cosh x ) &= \\sinh x\n\\end{align*} \\]"
     }
   },
   {
@@ -586,7 +586,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\tanh x ) \\]",
-      "back": "\\[ \\text{sech}^2 \\, x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
+      "back": "\\[ \\text{sech}^2 \\, x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*} \\]"
     }
   },
   {
@@ -596,7 +596,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\coth x ) \\]",
-      "back": "\\[ - \\text{csch}^2 \\, x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*}\n\\]"
+      "back": "\\[ - \\text{csch}^2 \\, x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan x ) &= \\sec^2 x \\\\\n    \\frac{d}{dx} ( \\cot x ) &= - \\csc^2 x \\\\\n    \\frac{d}{dx} ( \\tanh x ) &= \\text{sech}^2 \\, x \\\\\n    \\frac{d}{dx} ( \\coth x ) &= - \\text{csch}^2 \\, x\n\\end{align*} \\]"
     }
   },
   {
@@ -606,7 +606,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\text{sech} \\, x ) \\]",
-      "back": "\\[ - \\text{sech} \\, x \\tanh x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
+      "back": "\\[ - \\text{sech} \\, x \\tanh x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*} \\]"
     }
   },
   {
@@ -616,7 +616,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\text{csch} \\, x ) \\]",
-      "back": "\\[ - \\text{csch} \\, x \\coth x \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*}\n\\]"
+      "back": "\\[ - \\text{csch} \\, x \\coth x \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec x ) &= \\sec x \\tan x \\\\\n    \\frac{d}{dx} ( \\csc x ) &= - \\csc x \\cot x \\\\\n    \\frac{d}{dx} ( \\text{sech} \\, x ) &= - \\text{sech} \\, x \\tanh x \\\\\n    \\frac{d}{dx} ( \\text{csch} \\, x ) &= - \\text{csch} \\, x \\coth x\n\\end{align*} \\]"
     }
   },
   {
@@ -626,7 +626,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\sinh^{-1} x ) \\]",
-      "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1}{\\sqrt{x^2 + 1}} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -636,7 +636,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\cosh^{-1} x ) \\]",
-      "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1) \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sin^{-1} x ) &= \\frac{1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\cos^{-1} x ) &= \\frac{-1}{\\sqrt{1 - x^2}} \\\\\n    \\frac{d}{dx} ( \\sinh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 + 1}} \\\\\n    \\frac{d}{dx} ( \\cosh^{-1} x ) &= \\frac{1}{\\sqrt{x^2 - 1}}, \\quad (x > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -646,7 +646,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\tanh^{-1} x ) \\]",
-      "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -656,7 +656,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\coth^{-1} x ) \\]",
-      "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{1}{1 - x^2}, \\quad (|x| > 1) \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\tan^{-1} x ) &= \\frac{1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\cot^{-1} x ) &= \\frac{-1}{1 + x^2} \\\\\n    \\frac{d}{dx} ( \\tanh^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| < 1) \\\\\n    \\frac{d}{dx} ( \\coth^{-1} x ) &= \\frac{1}{1 - x^2}, \\quad (|x| > 1)\n\\end{align*} \\]"
     }
   },
   {
@@ -666,7 +666,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) \\]",
-      "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*} \\]"
     }
   },
   {
@@ -676,7 +676,7 @@
     "tags": "Math Calculus Derivative Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) \\]",
-      "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0) \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\frac{d}{dx} ( \\sec^{-1} x ) &= \\frac{1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\csc^{-1} x ) &= \\frac{-1}{|x| \\sqrt{x^2 - 1}} \\\\\n    \\frac{d}{dx} ( \\text{sech}^{-1} \\, x ) &= \\frac{-1}{x \\sqrt{1 - x^2}}, \\quad (0 < x < 1) \\\\\n    \\frac{d}{dx} ( \\text{csch}^{-1} \\, x ) &= \\frac{-1}{|x| \\sqrt{1 + x^2}}, \\quad (x \\neq 0)\n\\end{align*} \\]"
     }
   },
   {
@@ -936,7 +936,7 @@
     "tags": "Math Calculus Identity Taylor-Series",
     "fields": {
       "front": "\\[ e^x \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    e^x\n    &= 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    e^x\n    &= 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!}\n\\end{align*} \\]"
     }
   },
   {
@@ -946,7 +946,7 @@
     "tags": "Math Calculus Identity Taylor-Series",
     "fields": {
       "front": "\\[ \\ln(x) \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    \\ln(x)\n    &= (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} - \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{(x-1)^{n}}{n}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\ln(x)\n    &= (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} - \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{(x-1)^{n}}{n}\n\\end{align*} \\]"
     }
   },
   {
@@ -956,7 +956,7 @@
     "tags": "Math Calculus Identity Taylor-Series",
     "fields": {
       "front": "\\[ \\ln(1-x) \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    \\ln(1-x)\n    &= - x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} - \\cdots \\\\\n    &= -\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\ln(1-x)\n    &= - x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} - \\cdots \\\\\n    &= -\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}\n\\end{align*} \\]"
     }
   },
   {
@@ -966,7 +966,7 @@
     "tags": "Math Calculus Identity Taylor-Series",
     "fields": {
       "front": "\\[ \\ln(1+x) \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    \\ln(1+x)\n    &= x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{x^{n}}{n}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\ln(1+x)\n    &= x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots \\\\\n    &= \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{x^{n}}{n}\n\\end{align*} \\]"
     }
   },
   {
@@ -976,7 +976,7 @@
     "tags": "Math Calculus Taylor-Series Trigonometric Identity",
     "fields": {
       "front": "\\[ \\sin(x) \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n+1}}{(2n+1)!}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\sin(x)\n    &= x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n+1}}{(2n+1)!}\n\\end{align*} \\]"
     }
   },
   {
@@ -986,7 +986,7 @@
     "tags": "Math Calculus Taylor-Series Trigonometric Identity",
     "fields": {
       "front": "\\[ \\cos(x) \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\cos(x)\n    &= 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n}}{(2n)!}\n\\end{align*} \\]"
     }
   },
   {
@@ -996,7 +996,7 @@
     "tags": "Math Calculus Taylor-Series Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\sinh x \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\sinh x\n    &= x + \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\frac{x^7}{7!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n + 1}}{(2n + 1)!}\n\\end{align*} \\]"
     }
   },
   {
@@ -1006,7 +1006,7 @@
     "tags": "Math Calculus Taylor-Series Hyperbolic Identity",
     "fields": {
       "front": "\\[ \\cosh x \\]\n<p>Taylor series expansion</p>",
-      "back": "\\[\n\\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\cosh x\n    &= 1 + \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\frac{x^6}{6!} + \\cdots \\\\\n    &= \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}\n\\end{align*} \\]"
     }
   },
   {
@@ -1036,7 +1036,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ \\sin(at) \\} \\]",
-      "back": "\\[ \\frac{a}{s^2 + a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{a}{s^2 + a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1046,7 +1046,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ \\cos(at) \\} \\]",
-      "back": "\\[ \\frac{s}{s^2 + a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{s}{s^2 + a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1096,7 +1096,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ \\sinh(at) \\} \\]",
-      "back": "\\[ \\frac{a}{s^2 - a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{a}{s^2 - a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1106,7 +1106,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ \\cosh(at) \\} \\]",
-      "back": "\\[ \\frac{s}{s^2 - a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{s}{s^2 - a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ \\sin(at) \\} &= \\frac{a}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\cos(at) \\} &= \\frac{s}{s^2 + a^2} \\\\\n    \\mathscr{L} \\{ \\sinh(at) \\} &= \\frac{a}{s^2 - a^2} \\\\\n    \\mathscr{L} \\{ \\cosh(at) \\} &= \\frac{s}{s^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1136,7 +1136,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sin(at) \\} \\]",
-      "back": "\\[ \\frac{a}{(s - c)^2 + a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{a}{(s - c)^2 + a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1146,7 +1146,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cos(at) \\} \\]",
-      "back": "\\[ \\frac{s - c}{(s - c)^2 + a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{s - c}{(s - c)^2 + a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1156,7 +1156,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} \\]",
-      "back": "\\[ \\frac{a}{(s - c)^2 - a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{a}{(s - c)^2 - a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1166,7 +1166,7 @@
     "tags": "Math Calculus Identity Laplace-Transform",
     "fields": {
       "front": "\\[ \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} \\]",
-      "back": "\\[ \\frac{s - c}{(s - c)^2 - a^2} \\]\n\n<p>Related:</p>\n\n\n\\[\n\\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*}\n\\]"
+      "back": "\\[ \\frac{s - c}{(s - c)^2 - a^2} \\]\n<p>Related:</p>\n\\[ \\begin{align*}\n    \\mathscr{L} \\{ e^{ct} \\sin(at) \\} &= \\frac{a}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cos(at) \\} &= \\frac{s - c}{(s - c)^2 + a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\sinh(at) \\} &= \\frac{a}{(s - c)^2 - a^2} \\\\\n    \\mathscr{L} \\{ e^{ct} \\cosh(at) \\} &= \\frac{s - c}{(s - c)^2 - a^2}\n\\end{align*} \\]"
     }
   },
   {
@@ -1256,7 +1256,7 @@
     "tags": "Math Calculus Limits Theory",
     "fields": {
       "front": "<p>What is a continuous function?</p>",
-      "back": "<section style=\"text-align: left\"><p>A function \\(f(x)\\) is <strong>continuous at a point</strong> \\(x = c\\) if:</p>\n<ul>\n<li>\\( f(c) \\) exists: The function is defined at the point \\(c\\).</li>\n<li>\\( \\lim_{x \\to c} f(x) \\) exists: The limit of the function as \\(x\\) approaches \\(c\\) from both the left and right sides is the same.</li>\n<li>\\( \\lim_{x \\to c} f(x) = f(c) \\): The limit of the function as \\(x\\) approaches \\(c\\) is equal to the actual value of the function at \\(c\\).</li>\n</ul>\n<p>If a function is continuous at every point in its domain, it is called a <strong>continuous</strong> function.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>A function \\( f(x) \\) is <strong>continuous at a point</strong> \\( x = c \\) if:</p>\n<ul>\n<li>\\( f(c) \\) exists: The function is defined at the point \\( c \\).</li>\n<li>\\( \\lim_{x \\to c} f(x) \\) exists: The limit of the function as \\( x \\) approaches \\( c \\) from both the left and right sides is the same.</li>\n<li>\\( \\lim_{x \\to c} f(x) = f(c) \\): The limit of the function as \\( x \\) approaches \\( c \\) is equal to the actual value of the function at \\( c \\).</li>\n</ul>\n<p>If a function is continuous at every point in its domain, it is called a <strong>continuous</strong> function.</p></section>"
     }
   },
   {
@@ -1266,7 +1266,7 @@
     "tags": "Math Calculus Differentiation Theory",
     "fields": {
       "front": "<p>The definition of the extreme value theorem (EVT).</p>",
-      "back": "<section style=\"text-align: left\"><p>The extreme value theorem states that if a real-valued function \\(f\\) is continuous on the closed and bounded interval \\([a,b]\\), then \\(f\\) must attain a maximum and a minimum, each at least once.</p>\n<p>That is, there exist numbers \\(c\\) and \\(d\\) in \\([a,b]\\) such that: \\(f(c) \\leq f(x) \\leq f(d) \\quad \\forall x \\in [a,b]\\).</p>\n<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The extreme value theorem states that if a real-valued function \\( f \\) is continuous on the closed and bounded interval \\( [a,b] \\), then \\( f \\) must attain a maximum and a minimum, each at least once.</p>\n<p>That is, there exist numbers \\( c \\) and \\( d \\) in \\( [a,b] \\) such that: \\( f(c) \\leq f(x) \\leq f(d) \\quad \\forall x \\in [a,b] \\).</p>\n<p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
     }
   },
   {
@@ -1276,7 +1276,7 @@
     "tags": "Math Calculus Differentiation Theory",
     "fields": {
       "front": "<p>The definition of the Rolle&#39;s theorem.</p>",
-      "back": "<section style=\"text-align: left\"><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>\n<p>The Rolle&#39;s theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n<li>\\(f(a)=f(b)\\) (the function has the same value at the endpoints)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that \\(f'(c) = 0\\).</p>\n<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>\n<p>The Rolle&#39;s theorem states that if a function \\( f(x) \\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\( [a,b] \\)</li>\n<li>Differentiable on the open interval \\( (a,b) \\)</li>\n<li>\\( f(a)=f(b) \\) (the function has the same value at the endpoints)</li>\n</ul>\n<p>Then there exists at least one point \\( c \\) in the open interval \\( (a,b) \\) such that \\( f'(c) = 0 \\).</p>\n<p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
     }
   },
   {
@@ -1286,7 +1286,7 @@
     "tags": "Math Calculus Differentiation Theory",
     "fields": {
       "front": "<p>The definition of the mean value theorem (MVT).</p>",
-      "back": "<section style=\"text-align: left\"><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>\n<p>The mean value theorem states that if a function \\(f(x)\\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\([a,b]\\)</li>\n<li>Differentiable on the open interval \\((a,b)\\)</li>\n</ul>\n<p>Then there exists at least one point \\(c\\) in the open interval \\((a,b)\\) such that the instantaneous rate of change (the derivative \\(f'(c)\\)) is equal to the average rate of change over the interval.</p>\n<p>Mathematically, this is expressed as:</p>\n\n\n\\[ f'(c) = \\frac{f(b) - f(a)}{b - a} \\]\n\n<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \\(f(a) = f(b)\\), then the right side of the mean value theorem equation becomes</p>\n\n\n\\[ f'(c) = \\frac{f(a) - f(a)}{b - a} = \\frac{0}{b - a} \\]\n\n<p>which means \\(f'(c)=0\\).</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>\n<p>The mean value theorem states that if a function \\( f(x) \\) is:</p>\n<ul>\n<li>Continuous on a closed interval \\( [a,b] \\)</li>\n<li>Differentiable on the open interval \\( (a,b) \\)</li>\n</ul>\n<p>Then there exists at least one point \\( c \\) in the open interval \\( (a,b) \\) such that the instantaneous rate of change (the derivative \\( f'(c) \\)) is equal to the average rate of change over the interval.</p>\n<p>Mathematically, this is expressed as:</p>\n\\[ f'(c) = \\frac{f(b) - f(a)}{b - a} \\]\n<p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \\( f(a) = f(b) \\), then the right side of the mean value theorem equation becomes</p>\n\\[ f'(c) = \\frac{f(a) - f(a)}{b - a} = \\frac{0}{b - a} \\]\n<p>which means \\( f'(c)=0 \\).</p></section>"
     }
   },
   {
@@ -1296,7 +1296,7 @@
     "tags": "Math Calculus Differentiation Theory",
     "fields": {
       "front": "<p>The definition of the intermediate value theorem (IVT).</p>",
-      "back": "<section style=\"text-align: left\"><p>The intermediate value theorem states that if a function \\(f(x)\\) is continuous on a closed interval \\([a,b]\\), and \\(L\\) is any value between \\(f(a)\\) and \\(f(b)\\), then there exists at least one number \\(c\\) in the interval \\([a,b]\\) such that \\(f(c)=L\\).</p>\n<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The intermediate value theorem states that if a function \\( f(x) \\) is continuous on a closed interval \\( [a,b] \\), and \\( L \\) is any value between \\( f(a) \\) and \\( f(b) \\), then there exists at least one number \\( c \\) in the interval \\( [a,b] \\) such that \\( f(c)=L \\).</p>\n<p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
     }
   },
   {
@@ -1306,7 +1306,7 @@
     "tags": "Math Calculus Integration Theory",
     "fields": {
       "front": "<p>What is the fundamental theorem of calculus (FTC)?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider a function \\(f\\) which is continuous on \\([a,b]\\).</p>\n<ul>\n<li>If \\(F(x) = \\int_a^x (t) \\, dt\\), then \\(F'(x) = f(x)\\) on \\((a,b)\\).</li>\n<li>If \\(F\\) is any antiderivative of \\(f\\) on \\([a,b]\\) (i.e., \\(F'(x)=f(x)\\)), then \\(\\int_a^b f(x) \\, dx = F(b) - F(a)\\).</li>\n</ul>\n<p>The fundamental theorem of calculus is arguably the most important theorem in elementary calculus, as it establishes the profound connection between differentiation and integration.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider a function \\( f \\) which is continuous on \\( [a,b] \\).</p>\n<ul>\n<li>If \\( F(x) = \\int_a^x (t) \\, dt \\), then \\( F'(x) = f(x) \\) on \\( (a,b) \\).</li>\n<li>If \\( F \\) is any antiderivative of \\( f \\) on \\( [a,b] \\) (i.e., \\( F'(x)=f(x) \\)), then \\( \\int_a^b f(x) \\, dx = F(b) - F(a) \\).</li>\n</ul>\n<p>The fundamental theorem of calculus is arguably the most important theorem in elementary calculus, as it establishes the profound connection between differentiation and integration.</p></section>"
     }
   },
   {
@@ -1316,7 +1316,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is an infinite sequence?</p>",
-      "back": "<section style=\"text-align: left\"><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>\n\n\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\n\n<p>denoted as</p>\n\n\n\\[ \\{ a_n \\}_{n=1}^{\\infty} \\]\n\n<p>or simply</p>\n\n\n\\[ \\{ a_n \\}. \\]\n\n<p>Each number \\(a_n\\) is a term of the sequence.</p>\n<p>The subscript \\(n\\) is the index variable of the sequence.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>\n\\[ a_1, a_2, a_3, \\ldots, a_n, \\ldots \\]\n<p>denoted as</p>\n\\[ \\{ a_n \\}_{n=1}^{\\infty} \\]\n<p>or simply</p>\n\\[ \\{ a_n \\}. \\]\n<p>Each number \\( a_n \\) is a term of the sequence.</p>\n<p>The subscript \\( n \\) is the index variable of the sequence.</p></section>"
     }
   },
   {
@@ -1326,7 +1326,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What are the different ways to define a sequence?</p>",
-      "back": "<section style=\"text-align: left\"><p>An infinite sequence can be defined in various ways:</p>\n<ul>\n<li>By listing terms \\(\\{ 2, 4, 6, 8, \\ldots \\}\\).</li>\n<li>By an explicit formula that defines the \\(n\\)-th term directly in terms of \\(n\\), \\(a_n = f(n)\\).</li>\n<li>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \\(a_n = f(a_{n-1}, a_{n-2}, \\ldots)\\).</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>An infinite sequence can be defined in various ways:</p>\n<ul>\n<li>By listing terms \\( \\{ 2, 4, 6, 8, \\ldots \\} \\).</li>\n<li>By an explicit formula that defines the \\( n \\)-th term directly in terms of \\( n \\), \\( a_n = f(n) \\).</li>\n<li>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \\( a_n = f(a_{n-1}, a_{n-2}, \\ldots) \\).</li>\n</ul></section>"
     }
   },
   {
@@ -1336,7 +1336,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the limit of a sequence?</p>",
-      "back": "<section style=\"text-align: left\"><p>A sequence \\(\\{ a_n \\}\\) converges to a real number \\(L\\) if for all \\(\\epsilon > 0\\), there exists an integer \\(N\\) such that \\(|a_n − L| < \\epsilon\\) if \\(n \\ge N\\). The number \\(L\\) is the limit of the sequence and we write</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L \\text{ or } a_n \\to L. \\]\n\n<p>In this case, we say the sequence \\(\\{a_n\\}\\) is a <strong>convergent sequence</strong>. If a sequence does not converge, it is a <strong>divergent sequence</strong>, and we say the limit does not exist.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>A sequence \\( \\{ a_n \\} \\) converges to a real number \\( L \\) if for all \\( \\epsilon > 0 \\), there exists an integer \\( N \\) such that \\( |a_n − L| < \\epsilon \\) if \\( n \\ge N \\). The number \\( L \\) is the limit of the sequence and we write</p>\n\\[ \\lim_{n \\to \\infty} a_n = L \\text{ or } a_n \\to L. \\]\n<p>In this case, we say the sequence \\( \\{a_n\\} \\) is a <strong>convergent sequence</strong>. If a sequence does not converge, it is a <strong>divergent sequence</strong>, and we say the limit does not exist.</p></section>"
     }
   },
   {
@@ -1346,7 +1346,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the squeeze theorem for sequences?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider sequences \\(\\{a_n\\}\\), \\(\\{b_n\\}\\), and \\(\\{c_n\\}\\).\nSuppose there exists an integer \\(N\\) such that \\(a_n \\le b_n \\le c_n\\) for all \\(n \\ge N\\).\nIf there exists a real number \\(L\\) such that</p>\n\n\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\n\n<p>then \\(\\{b_n\\}\\) converges and</p>\n\n\n\\[ \\lim_{n \\to \\infty} b_n = L \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>Consider sequences \\( \\{a_n\\} \\), \\( \\{b_n\\} \\), and \\( \\{c_n\\} \\).\nSuppose there exists an integer \\( N \\) such that \\( a_n \\le b_n \\le c_n \\) for all \\( n \\ge N \\).\nIf there exists a real number \\( L \\) such that</p>\n\\[ \\lim_{n \\to \\infty} a_n = L = \\lim_{n \\to \\infty} c_n, \\]\n<p>then \\( \\{b_n\\} \\) converges and</p>\n\\[ \\lim_{n \\to \\infty} b_n = L \\]</section>"
     }
   },
   {
@@ -1356,7 +1356,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is a bounded sequence?</p>",
-      "back": "<section style=\"text-align: left\"><p>A sequence \\(\\{a_n\\}\\) is <strong>bounded above</strong> if there exists a real number \\(M\\) such that</p>\n\n\n\\[ a_n \\le M \\]\n\n<p>for all positive integers \\(n\\).</p>\n<p>A sequence \\(\\{a_n\\}\\) is <em>bounded below</em> if there exists a real number \\(M\\) such that</p>\n\n\n\\[ M \\le a_n \\]\n\n<p>for all positive integers \\(n\\).</p>\n<p>A sequence \\(\\{a_n\\}\\) is a <em>bounded sequence</em> if it is bounded above and bounded below.</p>\n<p>If a sequence is not bounded, it is an <strong>unbounded sequence</strong>.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>A sequence \\( \\{a_n\\} \\) is <strong>bounded above</strong> if there exists a real number \\( M \\) such that</p>\n\\[ a_n \\le M \\]\n<p>for all positive integers \\( n \\).</p>\n<p>A sequence \\( \\{a_n\\} \\) is <em>bounded below</em> if there exists a real number \\( M \\) such that</p>\n\\[ M \\le a_n \\]\n<p>for all positive integers \\( n \\).</p>\n<p>A sequence \\( \\{a_n\\} \\) is a <em>bounded sequence</em> if it is bounded above and bounded below.</p>\n<p>If a sequence is not bounded, it is an <strong>unbounded sequence</strong>.</p></section>"
     }
   },
   {
@@ -1366,7 +1366,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the relationship between convergent and bounded sequences?</p>",
-      "back": "<section style=\"text-align: left\"><p>If a sequence \\(\\{a_n\\}\\) converges, then it is bounded.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>If a sequence \\( \\{a_n\\} \\) converges, then it is bounded.</p></section>"
     }
   },
   {
@@ -1376,7 +1376,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is a monotone sequence?</p>",
-      "back": "<section style=\"text-align: left\"><p>A sequence \\(\\{a_n\\}\\) is <strong>increasing</strong> for all \\(n \\ge n_0\\) if</p>\n\n\n\\[ a_n \\le a_{n+1} \\text{ for all } n \\ge n_0. \\]\n\n<p>A sequence \\(\\{a_n\\}\\) is <strong>decreasing</strong> for all \\(n \\ge n_0\\) if</p>\n\n\n\\[ a_n \\ge a_{n+1} \\text{ for all } n \\ge n_0. \\]\n\n<p>A sequence \\(\\{a_n\\}\\) is a <strong>monotone sequence</strong> for all \\(n \\ge n_0\\) if it is increasing for all \\(n \\ge n_0\\) or decreasing for all \\(n \\ge n_0\\).</p></section>"
+      "back": "<section style=\"text-align: left\"><p>A sequence \\( \\{a_n\\} \\) is <strong>increasing</strong> for all \\( n \\ge n_0 \\) if</p>\n\\[ a_n \\le a_{n+1} \\text{ for all } n \\ge n_0. \\]\n<p>A sequence \\( \\{a_n\\} \\) is <strong>decreasing</strong> for all \\( n \\ge n_0 \\) if</p>\n\\[ a_n \\ge a_{n+1} \\text{ for all } n \\ge n_0. \\]\n<p>A sequence \\( \\{a_n\\} \\) is a <strong>monotone sequence</strong> for all \\( n \\ge n_0 \\) if it is increasing for all \\( n \\ge n_0 \\) or decreasing for all \\( n \\ge n_0 \\).</p></section>"
     }
   },
   {
@@ -1386,7 +1386,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the monotone convergence theorem?</p>",
-      "back": "<section style=\"text-align: left\"><p>If \\(\\{a_n\\}\\) is a bounded sequence and there exists a positive integer \\(n_0\\) such that \\(\\{a_n\\}\\) is monotone for all \\(n \\ge n_0\\), then \\(\\{a_n\\}\\) converges.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>If \\( \\{a_n\\} \\) is a bounded sequence and there exists a positive integer \\( n_0 \\) such that \\( \\{a_n\\} \\) is monotone for all \\( n \\ge n_0 \\), then \\( \\{a_n\\} \\) converges.</p></section>"
     }
   },
   {
@@ -1396,7 +1396,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is an infinite series?</p>",
-      "back": "<section style=\"text-align: left\"><p>An infinite series is a sum of the terms of an infinite sequnce \\(a_n\\):</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>An infinite series is a sum of the terms of an infinite sequnce \\( a_n \\):</p>\n\\[ \\sum_{n=1}^{\\infty} a_n = a_1 + a_2 + a_3 + \\ldots \\]</section>"
     }
   },
   {
@@ -1406,7 +1406,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the harmonic series?</p>",
-      "back": "<section style=\"text-align: left\"><p>The harmonic series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\n\n<p>The harmonic series is a special case of the p-series with \\(p = 1\\).</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The harmonic series is an infinite series of the following form</p>\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n} \\]\n<p>The harmonic series is a special case of the p-series with \\( p = 1 \\).</p></section>"
     }
   },
   {
@@ -1416,7 +1416,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What does the harmonic series converge to?</p>",
-      "back": "<section style=\"text-align: left\"><p>The harmonic series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n}\\) diverges to infinity.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The harmonic series \\( \\sum_{n=1}^{\\infty} \\frac{1}{n} \\) diverges to infinity.</p></section>"
     }
   },
   {
@@ -1426,7 +1426,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the geometric series?</p>",
-      "back": "<section style=\"text-align: left\"><p>The geometric series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} a r^{n} = a + ar + ar^2 + ar^3 + \\ldots \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>The geometric series is an infinite series of the following form</p>\n\\[ \\sum_{n=0}^{\\infty} a r^{n} = a + ar + ar^2 + ar^3 + \\ldots \\]</section>"
     }
   },
   {
@@ -1436,7 +1436,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What does the geometric series converge to?</p>",
-      "back": "<section style=\"text-align: left\"><p>The geometric series \\(\\sum_{n=0}^{\\infty} a r^{n}\\) converges to \\(\\frac{a}{1 - r}\\) if \\(|r| < 1\\), otherwise it diverges.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The geometric series \\( \\sum_{n=0}^{\\infty} a r^{n} \\) converges to \\( \\frac{a}{1 - r} \\) if \\( |r| < 1 \\), otherwise it diverges.</p></section>"
     }
   },
   {
@@ -1446,7 +1446,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the p-series?</p>",
-      "back": "<section style=\"text-align: left\"><p>The p-series series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>The p-series series is an infinite series of the following form</p>\n\\[ \\sum_{n=1}^{\\infty} \\frac{1}{n^p} = \\frac{1}{1^p} + \\frac{1}{2^p} + \\frac{1}{3^p} + \\ldots \\]</section>"
     }
   },
   {
@@ -1456,7 +1456,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What does the p-series converge to?</p>",
-      "back": "<section style=\"text-align: left\"><p>The p-series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^p}\\) converges if \\(p > 1\\), otherwise it diverges.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The p-series \\( \\sum_{n=1}^{\\infty} \\frac{1}{n^p} \\) converges if \\( p > 1 \\), otherwise it diverges.</p></section>"
     }
   },
   {
@@ -1466,7 +1466,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the telescoping series?</p>",
-      "back": "<section style=\"text-align: left\"><p>The telescoping series is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} a_n - a_{n+1}. \\]\n\n<p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The telescoping series is an infinite series of the following form</p>\n\\[ \\sum_{n=1}^{\\infty} a_n - a_{n+1}. \\]\n<p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
     }
   },
   {
@@ -1476,7 +1476,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What are the algebraic properties of convergent series?</p>",
-      "back": "<section style=\"text-align: left\"><p>Let \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) be convergent series. Then the following algebraic properties hold.</p>\n<ul>\n<li>Sum Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n + b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n + b_n) = \\sum_{n=1}^{\\infty} a_n + \\sum_{n=1}^{\\infty} b_n\\).</li>\n<li>Difference Rule: The series \\(\\sum_{n=1}^{\\infty} (a_n - b_n)\\) converges and \\(\\sum_{n=1}^{\\infty} (a_n - b_n) = \\sum_{n=1}^{\\infty} a_n - \\sum_{n=1}^{\\infty} b_n\\).</li>\n<li>Constant Multiple Rule: For any real number \\(c\\), the series \\(\\sum_{n=1}^{\\infty} c a_n\\) converges and \\(\\sum_{n=1}^{\\infty} c a_n = c \\sum_{n=1}^{\\infty} a_n\\).</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Let \\( \\sum_{n=1}^{\\infty} a_n \\) and \\( \\sum_{n=1}^{\\infty} b_n \\) be convergent series. Then the following algebraic properties hold.</p>\n<ul>\n<li>Sum Rule: The series \\( \\sum_{n=1}^{\\infty} (a_n + b_n) \\) converges and \\( \\sum_{n=1}^{\\infty} (a_n + b_n) = \\sum_{n=1}^{\\infty} a_n + \\sum_{n=1}^{\\infty} b_n \\).</li>\n<li>Difference Rule: The series \\( \\sum_{n=1}^{\\infty} (a_n - b_n) \\) converges and \\( \\sum_{n=1}^{\\infty} (a_n - b_n) = \\sum_{n=1}^{\\infty} a_n - \\sum_{n=1}^{\\infty} b_n \\).</li>\n<li>Constant Multiple Rule: For any real number \\( c \\), the series \\( \\sum_{n=1}^{\\infty} c a_n \\) converges and \\( \\sum_{n=1}^{\\infty} c a_n = c \\sum_{n=1}^{\\infty} a_n \\).</li>\n</ul></section>"
     }
   },
   {
@@ -1486,7 +1486,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the divergence test for a series?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider the sequence \\(a_n\\). If \\(\\lim_{n \\to \\infty} a_n \\neq 0\\) or \\(\\lim_{n \\to \\infty} a_n\\) does not exist, then the series \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p>\n<p>The converse is not true. That is, if \\(\\lim_{n \\to \\infty} a_n = 0\\), we cannot make any conclusion about the convergence of \\(\\sum_{n=1}^{\\infty} a_n\\).</p></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider the sequence \\( a_n \\). If \\( \\lim_{n \\to \\infty} a_n \\neq 0 \\) or \\( \\lim_{n \\to \\infty} a_n \\) does not exist, then the series \\( \\sum_{n=1}^{\\infty} a_n \\) diverges.</p>\n<p>The converse is not true. That is, if \\( \\lim_{n \\to \\infty} a_n = 0 \\), we cannot make any conclusion about the convergence of \\( \\sum_{n=1}^{\\infty} a_n \\).</p></section>"
     }
   },
   {
@@ -1496,7 +1496,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the integral test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Suppose \\(\\sum_{n = 0}^{\\infty} a_n\\) is a series with positive terms \\(a_n\\). Suppose there exists a function \\(f\\) and a positive integer \\(N\\) such that the following three conditions are satisfied:</p>\n<ul>\n<li>\\(f\\) is continuous,</li>\n<li>\\(f\\) is decreasing, and</li>\n<li>\\(f(n) = a_n\\) for all integers \\(n \\ge N\\).</li>\n</ul>\n<p>Then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\int_{N}^{\\infty} f(x) \\, dx\\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>Suppose \\( \\sum_{n = 0}^{\\infty} a_n \\) is a series with positive terms \\( a_n \\). Suppose there exists a function \\( f \\) and a positive integer \\( N \\) such that the following three conditions are satisfied:</p>\n<ul>\n<li>\\( f \\) is continuous,</li>\n<li>\\( f \\) is decreasing, and</li>\n<li>\\( f(n) = a_n \\) for all integers \\( n \\ge N \\).</li>\n</ul>\n<p>Then \\( \\sum_{n=1}^{\\infty} a_n \\) and \\( \\int_{N}^{\\infty} f(x) \\, dx \\) both converge or both diverge.</p>\n<p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
     }
   },
   {
@@ -1526,7 +1526,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the direct comparison test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Suppose there exists an integer \\(N\\) such that \\(0 \\le a_n \\le b_n\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>Suppose there exists an integer \\(N\\) such that \\(a_n \\ge b_n \\ge 0\\) for all \\(n \\ge N\\). If \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>Suppose there exists an integer \\( N \\) such that \\( 0 \\le a_n \\le b_n \\) for all \\( n \\ge N \\). If \\( \\sum_{n=1}^{\\infty} b_n \\) converges, then \\( \\sum_{n=1}^{\\infty} a_n \\) converges.</p>\n<p>Suppose there exists an integer \\( N \\) such that \\( a_n \\ge b_n \\ge 0 \\) for all \\( n \\ge N \\). If \\( \\sum_{n=1}^{\\infty} b_n \\) diverges, then \\( \\sum_{n=1}^{\\infty} a_n \\) diverges.</p></section>"
     }
   },
   {
@@ -1536,7 +1536,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the limit comparison test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Let \\(a_n\\), \\(b_n \\ge 0\\) for all \\(n \\ge 1\\).</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = L \\ne 0\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) both converge or both diverge.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = 0\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p>\n<p>If \\(\\lim_{n \\to \\infty} a_n/b_n = \\infty\\) and \\(\\sum_{n=1}^{\\infty} b_n\\) diverges, then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>Let \\( a_n \\), \\( b_n \\ge 0 \\) for all \\( n \\ge 1 \\).</p>\n<p>If \\( \\lim_{n \\to \\infty} a_n/b_n = L \\ne 0 \\), then \\( \\sum_{n=1}^{\\infty} a_n \\) and \\( \\sum_{n=1}^{\\infty} b_n \\) both converge or both diverge.</p>\n<p>If \\( \\lim_{n \\to \\infty} a_n/b_n = 0 \\) and \\( \\sum_{n=1}^{\\infty} b_n \\) converges, then \\( \\sum_{n=1}^{\\infty} a_n \\) converges.</p>\n<p>If \\( \\lim_{n \\to \\infty} a_n/b_n = \\infty \\) and \\( \\sum_{n=1}^{\\infty} b_n \\) diverges, then \\( \\sum_{n=1}^{\\infty} a_n \\) diverges.</p></section>"
     }
   },
   {
@@ -1546,7 +1546,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the alternating series?</p>",
-      "back": "<section style=\"text-align: left\"><p>The alternating series is a sum of the terms of an infinite sequnce \\(a_n\\) whose terms alternate between positive and negative values:</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\n\n<p>or</p>\n\n\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>The alternating series is a sum of the terms of an infinite sequnce \\( a_n \\) whose terms alternate between positive and negative values:</p>\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \\ldots \\]\n<p>or</p>\n\\[ \\sum_{n=1}^{\\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \\ldots \\]</section>"
     }
   },
   {
@@ -1556,7 +1556,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the alternating series test?</p>",
-      "back": "<section style=\"text-align: left\"><p>An alternating series of the form \\(\\sum_{n=1}^{\\infty} (-1)^{n+1} \\, a_n\\) or \\(\\sum_{n=1}^{\\infty} (-1)^{n} \\, a_n\\) converges if \\(0 < a_{n+1} \\le a_n\\) for all \\(n \\ge 1\\) and \\(\\lim_{n \\to \\infty} a_n = 0\\).</p></section>"
+      "back": "<section style=\"text-align: left\"><p>An alternating series of the form \\( \\sum_{n=1}^{\\infty} (-1)^{n+1} \\, a_n \\) or \\( \\sum_{n=1}^{\\infty} (-1)^{n} \\, a_n \\) converges if \\( 0 < a_{n+1} \\le a_n \\) for all \\( n \\ge 1 \\) and \\( \\lim_{n \\to \\infty} a_n = 0 \\).</p></section>"
     }
   },
   {
@@ -1576,7 +1576,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the relationship between absolute and conditional convergence?</p>",
-      "back": "<section style=\"text-align: left\"><p>A series \\(\\sum_{n=1}^{\\infty} a_n\\) exhibits <strong>absolute convergence</strong> if \\(\\sum_{n=1}^{\\infty} |a_n|\\) converges.</p>\n<p>A series \\(\\sum_{n=1}^{\\infty} a_n\\) exhibits <strong>conditional convergence</strong> if \\(\\sum_{n=1}^{\\infty} a_n\\) converges but \\(\\sum_{n=1}^{\\infty} |a_n|\\) diverges.</p>\n<p>If \\(\\sum_{n=1}^{\\infty} |a_n|\\) converges, then \\(\\sum_{n=1}^{\\infty} a_n\\) converges.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>A series \\( \\sum_{n=1}^{\\infty} a_n \\) exhibits <strong>absolute convergence</strong> if \\( \\sum_{n=1}^{\\infty} |a_n| \\) converges.</p>\n<p>A series \\( \\sum_{n=1}^{\\infty} a_n \\) exhibits <strong>conditional convergence</strong> if \\( \\sum_{n=1}^{\\infty} a_n \\) converges but \\( \\sum_{n=1}^{\\infty} |a_n| \\) diverges.</p>\n<p>If \\( \\sum_{n=1}^{\\infty} |a_n| \\) converges, then \\( \\sum_{n=1}^{\\infty} a_n \\) converges.</p></section>"
     }
   },
   {
@@ -1586,7 +1586,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the ratio test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\) with nonzero terms. Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider the series \\( \\sum_{n=1}^{\\infty} a_n \\) with nonzero terms. Let</p>\n\\[ \\rho = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| \\]\n<ul>\n<li>If \\( 0 \\le \\rho < 1 \\), then \\( \\sum_{n=1}^{\\infty} a_n \\) converges absolutely.</li>\n<li>If \\( \\rho > 1 \\) or \\( \\rho = \\infty \\), then \\( \\sum_{n=1}^{\\infty} a_n \\) diverges.</li>\n<li>If \\( \\rho = 1 \\), the test does not provide any information.</li>\n</ul></section>"
     }
   },
   {
@@ -1596,7 +1596,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the root test?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider the series \\(\\sum_{n=1}^{\\infty} a_n\\). Let</p>\n\n\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n\n<ul>\n<li>If \\(0 \\le \\rho < 1\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) converges absolutely.</li>\n<li>If \\(\\rho > 1\\) or \\(\\rho = \\infty\\), then \\(\\sum_{n=1}^{\\infty} a_n\\) diverges.</li>\n<li>If \\(\\rho = 1\\), the test does not provide any information.</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider the series \\( \\sum_{n=1}^{\\infty} a_n \\). Let</p>\n\\[ \\rho = \\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} \\]\n<ul>\n<li>If \\( 0 \\le \\rho < 1 \\), then \\( \\sum_{n=1}^{\\infty} a_n \\) converges absolutely.</li>\n<li>If \\( \\rho > 1 \\) or \\( \\rho = \\infty \\), then \\( \\sum_{n=1}^{\\infty} a_n \\) diverges.</li>\n<li>If \\( \\rho = 1 \\), the test does not provide any information.</li>\n</ul></section>"
     }
   },
   {
@@ -1606,7 +1606,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What is the power series?</p>",
-      "back": "<section style=\"text-align: left\"><p>The power series centered at \\(x = 0\\) is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\n\n<p>The power series centered at \\(x = a\\) is an infinite series of the following form</p>\n\n\n\\[ \\sum_{n=0}^{\\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \\ldots \\]\n\n<p>where \\(x\\) is a variable and the coefficients \\(c_n\\) are constants.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The power series centered at \\( x = 0 \\) is an infinite series of the following form</p>\n\\[ \\sum_{n=0}^{\\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \\ldots \\]\n<p>The power series centered at \\( x = a \\) is an infinite series of the following form</p>\n\\[ \\sum_{n=0}^{\\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \\ldots \\]\n<p>where \\( x \\) is a variable and the coefficients \\( c_n \\) are constants.</p></section>"
     }
   },
   {
@@ -1616,7 +1616,7 @@
     "tags": "Math Calculus Sequences-and-Series Theory",
     "fields": {
       "front": "<p>What are the convergence properties of a power series?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider the power series \\(\\sum_{n=0}^{\\infty} c_n (x - a)^n\\). The series satisfies exactly one of the following properties:</p>\n<ul>\n<li>The series converges at \\(x=a\\) and diverges for all \\(x \\ne a\\).</li>\n<li>The series converges for all real numbers \\(x\\).</li>\n<li>There exists a real number \\(R>0\\) such that the series converges if \\(|x − a| < R\\) and diverges if \\(|x − a| > R\\). At the values \\(x\\) where \\(|x − a| = R\\), the series may converge or diverge.</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider the power series \\( \\sum_{n=0}^{\\infty} c_n (x - a)^n \\). The series satisfies exactly one of the following properties:</p>\n<ul>\n<li>The series converges at \\( x=a \\) and diverges for all \\( x \\ne a \\).</li>\n<li>The series converges for all real numbers \\( x \\).</li>\n<li>There exists a real number \\( R>0 \\) such that the series converges if \\( |x − a| < R \\) and diverges if \\( |x − a| > R \\). At the values \\( x \\) where \\( |x − a| = R \\), the series may converge or diverge.</li>\n</ul></section>"
     }
   },
   {
@@ -1626,7 +1626,7 @@
     "tags": "Math Calculus Vectors Theory",
     "fields": {
       "front": "<p>What is the dot product?</p>",
-      "back": "<section style=\"text-align: left\"><p>Consider two vectors \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) in an \\(n\\)-dimensional space \\(\\mathbf{a} = [a_1, a_2, \\ldots, a_n]\\), \\(\\mathbf{b} = [b_1, b_2, \\ldots, b_n]\\).</p>\n<p><strong>Algebraic Definition</strong></p>\n<p>The dot product of \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) is computed as the sum of the products of the corresponding components:</p>\n\n\n\\[ \\mathbf{a} \\cdot \\mathbf{b} = a_1 b_1 + a_2 b_2 + \\ldots + a_n b_n = \\sum_{i = 1}^{n} a_i b_i \\]\n\n<p><strong>Geometric Definition</strong></p>\n<p>The dot product of \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) is defined in terms of the magnitudes (lengths) of the vectors and the angle between them:</p>\n\n\n\\[ \\mathbf{a} \\cdot \\mathbf{b} = \\| \\mathbf{a} \\| \\, \\| \\mathbf{b} \\| \\, \\cos \\theta \\]\n\n<p>where</p>\n<ul>\n<li>\\(\\| \\mathbf{a} \\|\\) is the magnitude (length) of vector \\(\\mathbf{a}\\).</li>\n<li>\\(\\| \\mathbf{a} \\|\\) is the magnitude (length) of vector \\(\\mathbf{b}\\).</li>\n<li>\\(\\theta\\) is the angle between the two vectors.</li>\n</ul></section>"
+      "back": "<section style=\"text-align: left\"><p>Consider two vectors \\( \\mathbf{a} \\) and \\( \\mathbf{b} \\) in an \\( n \\)-dimensional space \\( \\mathbf{a} = [a_1, a_2, \\ldots, a_n] \\), \\( \\mathbf{b} = [b_1, b_2, \\ldots, b_n] \\).</p>\n<p><strong>Algebraic Definition</strong></p>\n<p>The dot product of \\( \\mathbf{a} \\) and \\( \\mathbf{b} \\) is computed as the sum of the products of the corresponding components:</p>\n\\[ \\mathbf{a} \\cdot \\mathbf{b} = a_1 b_1 + a_2 b_2 + \\ldots + a_n b_n = \\sum_{i = 1}^{n} a_i b_i \\]\n<p><strong>Geometric Definition</strong></p>\n<p>The dot product of \\( \\mathbf{a} \\) and \\( \\mathbf{b} \\) is defined in terms of the magnitudes (lengths) of the vectors and the angle between them:</p>\n\\[ \\mathbf{a} \\cdot \\mathbf{b} = \\| \\mathbf{a} \\| \\, \\| \\mathbf{b} \\| \\, \\cos \\theta \\]\n<p>where</p>\n<ul>\n<li>\\( \\| \\mathbf{a} \\| \\) is the magnitude (length) of vector \\( \\mathbf{a} \\).</li>\n<li>\\( \\| \\mathbf{a} \\| \\) is the magnitude (length) of vector \\( \\mathbf{b} \\).</li>\n<li>\\( \\theta \\) is the angle between the two vectors.</li>\n</ul></section>"
     }
   },
   {
@@ -1636,7 +1636,7 @@
     "tags": "Math Calculus Differential-Equation ODE Theory",
     "fields": {
       "front": "<p>What is an ordinary differential equation (ODE)?</p>",
-      "back": "<section style=\"text-align: left\"><p>An ordinary differential equation is a mathematical equation that relates an unknown function of a single independent variable to its derivatives with respect to that variable.</p>\n<p>A general \\(n\\)-th order ordinary differential equation can be expressed as</p>\n\n\n\\[ F(x, y, y', y'', \\ldots, y^{(n)}) = 0 \\]\n\n<p>where</p>\n<ul>\n<li>\\(x\\) is the independent variable.</li>\n<li>\\(y\\) is the unknown function of \\(x\\), i.e., \\(y = y(x)\\).</li>\n<li>\\(y', y'', \\ldots, y^{(n)}\\) are the first, second, ..., \\(n\\)-th derivatives of \\(y\\) with respect to \\(x\\).</li>\n<li>\\(F\\) is a given function relating all these variables and derivatives.</li>\n</ul>\n<p>The solution for a differential equation is a function which satisfies the above expression.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>An ordinary differential equation is a mathematical equation that relates an unknown function of a single independent variable to its derivatives with respect to that variable.</p>\n<p>A general \\( n \\)-th order ordinary differential equation can be expressed as</p>\n\\[ F(x, y, y', y'', \\ldots, y^{(n)}) = 0 \\]\n<p>where</p>\n<ul>\n<li>\\( x \\) is the independent variable.</li>\n<li>\\( y \\) is the unknown function of \\( x \\), i.e., \\( y = y(x) \\).</li>\n<li>\\( y', y'', \\ldots, y^{(n)} \\) are the first, second, ..., \\( n \\)-th derivatives of \\( y \\) with respect to \\( x \\).</li>\n<li>\\( F \\) is a given function relating all these variables and derivatives.</li>\n</ul>\n<p>The solution for a differential equation is a function which satisfies the above expression.</p></section>"
     }
   },
   {
@@ -1646,7 +1646,7 @@
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
       "front": "<p>What is the definition of the Laplace transform?</p>",
-      "back": "<section style=\"text-align: left\"><p>The Laplace transform of a function \\(f(t)\\) is a function \\(F(s)\\) defined as</p>\n\n\n\\[ F(s) = \\mathscr{L}\\{f\\} = \\int_0^\\infty e^{-st} f(t) \\, dt \\]\n\n<p>where \\(f(t)\\) is a function of exponential order defined for all \\(t \\ge 0\\).</p></section>"
+      "back": "<section style=\"text-align: left\"><p>The Laplace transform of a function \\( f(t) \\) is a function \\( F(s) \\) defined as</p>\n\\[ F(s) = \\mathscr{L}\\{f\\} = \\int_0^\\infty e^{-st} f(t) \\, dt \\]\n<p>where \\( f(t) \\) is a function of exponential order defined for all \\( t \\ge 0 \\).</p></section>"
     }
   },
   {
@@ -1656,7 +1656,7 @@
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
       "front": "<p>What is the first translation or shifting property of the Laplace transform?</p>",
-      "back": "<section style=\"text-align: left\"><p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{e^{ct} f(t)\\} = F(s - c) \\]\n\n\\[ \\mathscr{L}^{-1}\\{F(s - c)\\} = e^{ct} f(t) \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ \\cos 2t \\} = \\frac{s}{s^2 + 4} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ e^{3t} \\cos 2t \\} = F(s - 3) = \\frac{(s - 3)}{(s - 3)^2 + 4} \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>If \\( f(t) \\) has the transform \\( F(s) \\) then</p>\n\\[ \\mathscr{L}\\{e^{ct} f(t)\\} = F(s - c) \\]\n\\[ \\mathscr{L}^{-1}\\{F(s - c)\\} = e^{ct} f(t) \\]\n<p>Example:</p>\n<p>Since</p>\n\\[ \\mathscr{L}\\{ \\cos 2t \\} = \\frac{s}{s^2 + 4} \\]\n<p>we have</p>\n\\[ \\mathscr{L}\\{ e^{3t} \\cos 2t \\} = F(s - 3) = \\frac{(s - 3)}{(s - 3)^2 + 4} \\]</section>"
     }
   },
   {
@@ -1666,7 +1666,7 @@
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
       "front": "<p>What is the second translation or shifting property of the Laplace transform?</p>",
-      "back": "<section style=\"text-align: left\"><p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{f(t - c) \\, u(t - c)\\} = e^{-cs} F(s) \\]\n\n\\[ \\mathscr{L}^{-1}\\{e^{-cs} F(s)\\} = f(t - c) \\, u(t - c) \\]\n\n<p>where \\(u(t - c)\\) is the unit step function, which is defined as</p>\n\n\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t \\ge c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ f(t - 2) \\, u(t - 2) \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>If \\( f(t) \\) has the transform \\( F(s) \\) then</p>\n\\[ \\mathscr{L}\\{f(t - c) \\, u(t - c)\\} = e^{-cs} F(s) \\]\n\\[ \\mathscr{L}^{-1}\\{e^{-cs} F(s)\\} = f(t - c) \\, u(t - c) \\]\n<p>where \\( u(t - c) \\) is the unit step function, which is defined as</p>\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t \\ge c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]\n<p>Example:</p>\n<p>Since</p>\n\\[ \\mathscr{L}\\{ t^3 \\} = \\frac{6}{s^4} \\]\n<p>we have</p>\n\\[ \\mathscr{L}\\{ f(t - 2) \\, u(t - 2) \\} = e^{-2s} F(s) = e^{-2s} \\frac{6}{s^4} \\]</section>"
     }
   },
   {
@@ -1676,7 +1676,7 @@
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
       "front": "<p>What is the change of scale property of the Laplace transform?</p>",
-      "back": "<section style=\"text-align: left\"><p>If \\(f(t)\\) has the transform \\(F(s)\\) then</p>\n\n\n\\[ \\mathscr{L}\\{ f(ct) \\} = \\frac{1}{c} F \\left( \\frac{s}{c} \\right) \\]\n\n\\[ \\mathscr{L}^{-1} \\left\\{ \\frac{1}{c} F \\left( \\frac{s}{c} \\right) \\right\\} = f(ct) \\]\n\n<p>Example:</p>\n<p>Since</p>\n\n\n\\[ \\mathscr{L}\\{ \\sin t \\} = \\frac{1}{s^2 + 1} \\]\n\n<p>we have</p>\n\n\n\\[ \\mathscr{L}\\{ \\sin 3t \\} = \\frac{1}{3} F \\left( \\frac{s}{3} \\right) = \\frac{1}{3} \\frac{1}{(s/3)^2 + 1} = \\frac{3}{s^2 + 9} \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>If \\( f(t) \\) has the transform \\( F(s) \\) then</p>\n\\[ \\mathscr{L}\\{ f(ct) \\} = \\frac{1}{c} F \\left( \\frac{s}{c} \\right) \\]\n\\[ \\mathscr{L}^{-1} \\left\\{ \\frac{1}{c} F \\left( \\frac{s}{c} \\right) \\right\\} = f(ct) \\]\n<p>Example:</p>\n<p>Since</p>\n\\[ \\mathscr{L}\\{ \\sin t \\} = \\frac{1}{s^2 + 1} \\]\n<p>we have</p>\n\\[ \\mathscr{L}\\{ \\sin 3t \\} = \\frac{1}{3} F \\left( \\frac{s}{3} \\right) = \\frac{1}{3} \\frac{1}{(s/3)^2 + 1} = \\frac{3}{s^2 + 9} \\]</section>"
     }
   },
   {
@@ -1685,8 +1685,8 @@
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
-      "front": "<p>What is the unit step function \\(u(t - c)\\)?</p>",
-      "back": "<section style=\"text-align: left\"><p>The unit step function (Heaviside function) \\(u(t - c)\\) is defined as</p>\n\n\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t \\ge c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]</section>"
+      "front": "<p>What is the unit step function \\( u(t - c) \\)?</p>",
+      "back": "<section style=\"text-align: left\"><p>The unit step function (Heaviside function) \\( u(t - c) \\) is defined as</p>\n\\[ u(t - c) = \\left\\{\n\\begin{array}{ll}\n    1 & t \\ge c \\\\\n    0 & t < c\n\\end{array}\n\\right. \\]</section>"
     }
   },
   {
@@ -1695,8 +1695,8 @@
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
-      "front": "<p>What is the effect of multiplying by the unit step function \\(u(t - c)\\)?</p>",
-      "back": "<section style=\"text-align: left\"><p>Let \\(f(t) = 0\\) for all \\(t < 0\\).</p>\n<ul>\n<li>\\(f(t) u(t - c)\\) with \\(c > 0\\) is \\(f(t)\\) switched on at the point \\(c\\).</li>\n<li>\\(f(t - c) u(t - c)\\) with \\(c > 0\\) is \\(f(t)\\) shifted (translated) to the right by the amount \\(c\\).</li>\n</ul></section>"
+      "front": "<p>What is the effect of multiplying by the unit step function \\( u(t - c) \\)?</p>",
+      "back": "<section style=\"text-align: left\"><p>Let \\( f(t) = 0 \\) for all \\( t < 0 \\).</p>\n<ul>\n<li>\\( f(t) u(t - c) \\) with \\( c > 0 \\) is \\( f(t) \\) switched on at the point \\( c \\).</li>\n<li>\\( f(t - c) u(t - c) \\) with \\( c > 0 \\) is \\( f(t) \\) shifted (translated) to the right by the amount \\( c \\).</li>\n</ul></section>"
     }
   },
   {
@@ -1705,8 +1705,8 @@
     "deck": "Math::Calculus::Laplace Transform",
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
-      "front": "<p>What is the unit impulse function \\(\\delta(t - c)\\)?</p>",
-      "back": "<section style=\"text-align: left\"><p>The unit impulse function (Dirac delta function) \\(\\delta(t - c)\\) is a function that has the following properties.</p>\n<p><strong>Infinite at the origin \\(c\\), zero everywhere else:</strong></p>\n\n\n\\[ \\delta(t - c) = \\left\\{\n\\begin{array}{ll}\n    \\infty & t = c \\\\\n    0 & t \\ne c\n\\end{array}\n\\right. \\]\n\n<p><strong>Area of unity:</strong></p>\n\n\n\\[ \\int_0^\\infty \\delta (t - c) \\, dt = 1 \\]\n\n<p><strong>Shifting or sampling property:</strong></p>\n\n\n\\[ \\int_{-\\infty}^{\\infty} f(t) \\delta (t - c) \\, dt = f(c) \\]\n\n<p>The unit impulse function is technically not a function but a <strong>generalized function</strong> or <strong>distribution</strong>.</p></section>"
+      "front": "<p>What is the unit impulse function \\( \\delta(t - c) \\)?</p>",
+      "back": "<section style=\"text-align: left\"><p>The unit impulse function (Dirac delta function) \\( \\delta(t - c) \\) is a function that has the following properties.</p>\n<p><strong>Infinite at the origin \\( c \\), zero everywhere else:</strong></p>\n\\[ \\delta(t - c) = \\left\\{\n\\begin{array}{ll}\n    \\infty & t = c \\\\\n    0 & t \\ne c\n\\end{array}\n\\right. \\]\n<p><strong>Area of unity:</strong></p>\n\\[ \\int_0^\\infty \\delta (t - c) \\, dt = 1 \\]\n<p><strong>Shifting or sampling property:</strong></p>\n\\[ \\int_{-\\infty}^{\\infty} f(t) \\delta (t - c) \\, dt = f(c) \\]\n<p>The unit impulse function is technically not a function but a <strong>generalized function</strong> or <strong>distribution</strong>.</p></section>"
     }
   },
   {
@@ -1716,7 +1716,7 @@
     "tags": "Math Calculus Laplace-Transform Theory",
     "fields": {
       "front": "<p>What is the derivative of the unit step function?</p>",
-      "back": "<section style=\"text-align: left\"><p>The derivative of the unit step function (Heaviside function) is the unit impulse function (Dirac delta function);</p>\n\n\n\\[ \\frac{d}{dt} u(t) = \\delta(t) \\]</section>"
+      "back": "<section style=\"text-align: left\"><p>The derivative of the unit step function (Heaviside function) is the unit impulse function (Dirac delta function);</p>\n\\[ \\frac{d}{dt} u(t) = \\delta(t) \\]</section>"
     }
   },
   {
@@ -1726,7 +1726,7 @@
     "tags": "Math Calculus Differential-Equation PDE Theory",
     "fields": {
       "front": "<p>What is an partial differential equation (PDE)?</p>",
-      "back": "<section style=\"text-align: left\"><p>A partial differential equation is a mathematical equation that involves an unknown function of multiple independent variables and its partial derivatives with respect to those variables.</p>\n<p>A general \\(k\\)-th order partial differential equation involving an unknown function \\(u\\) of \\(n\\) independent variables \\(x_1, x_2, \\dots, x_n\\) can be expressed as</p>\n\n\n\\[ F\\left( x_1, x_2, \\dots, x_n, u, \\frac{\\partial u}{\\partial x_1}, \\dots, \\frac{\\partial u}{\\partial x_n}, \\frac{\\partial^2 u}{\\partial x_1^2}, \\dots, \\frac{\\partial^k u}{\\partial x_{i_1} \\partial x_{i_2} \\dots \\partial x_{i_k}} \\right) = 0 \\]\n\n<p>where</p>\n<ul>\n<li>\\(x_1, x_2, \\dots, x_n\\) are the independent variables.</li>\n<li>\\(u = u(x_1, x_2, \\dots, x_n)\\) is the unknown function.</li>\n<li>\\(\\frac{\\partial^k u}{\\partial x_{i_1} \\partial x_{i_2} \\dots \\partial x_{i_k}}\\) denotes a \\(k\\)-th order partial derivative.</li>\n<li>\\(F\\) is a given function relating all these variables and derivatives.</li>\n</ul>\n<p>The solution for a differential equation is a function which satisfies the above expression.</p></section>"
+      "back": "<section style=\"text-align: left\"><p>A partial differential equation is a mathematical equation that involves an unknown function of multiple independent variables and its partial derivatives with respect to those variables.</p>\n<p>A general \\( k \\)-th order partial differential equation involving an unknown function \\( u \\) of \\( n \\) independent variables \\( x_1, x_2, \\dots, x_n \\) can be expressed as</p>\n\\[ F\\left( x_1, x_2, \\dots, x_n, u, \\frac{\\partial u}{\\partial x_1}, \\dots, \\frac{\\partial u}{\\partial x_n}, \\frac{\\partial^2 u}{\\partial x_1^2}, \\dots, \\frac{\\partial^k u}{\\partial x_{i_1} \\partial x_{i_2} \\dots \\partial x_{i_k}} \\right) = 0 \\]\n<p>where</p>\n<ul>\n<li>\\( x_1, x_2, \\dots, x_n \\) are the independent variables.</li>\n<li>\\( u = u(x_1, x_2, \\dots, x_n) \\) is the unknown function.</li>\n<li>\\( \\frac{\\partial^k u}{\\partial x_{i_1} \\partial x_{i_2} \\dots \\partial x_{i_k}} \\) denotes a \\( k \\)-th order partial derivative.</li>\n<li>\\( F \\) is a given function relating all these variables and derivatives.</li>\n</ul>\n<p>The solution for a differential equation is a function which satisfies the above expression.</p></section>"
     }
   },
   {
@@ -1736,7 +1736,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int 3x^2 \\sqrt {x^3 + 1} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^3 + 1 \\\\\n    du &= 3x^2 \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int 3x^2 \\sqrt{x^3 + 1} \\, dx\n    &= \\int \\sqrt{u} \\, du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{3} (x^3 + 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= x^3 + 1 \\\\\n    du &= 3x^2 \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int 3x^2 \\sqrt{x^3 + 1} \\, dx\n    &= \\int \\sqrt{u} \\, du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{3} (x^3 + 1)^{\\frac{3}{2}} + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1746,7 +1746,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int xe^{-x^2} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= -x^2 \\\\\n    du &= -2x \\, dx \\\\\n    -\\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int xe^{-x^2} \\, dx\n    &= -\\frac{1}{2} \\int e^u \\, du \\\\\n    &= -\\frac{1}{2} e^u + C \\\\\n    &= -\\frac{1}{2} e^{-x^2} + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= -x^2 \\\\\n    du &= -2x \\, dx \\\\\n    -\\frac{1}{2} du &= x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int xe^{-x^2} \\, dx\n    &= -\\frac{1}{2} \\int e^u \\, du \\\\\n    &= -\\frac{1}{2} e^u + C \\\\\n    &= -\\frac{1}{2} e^{-x^2} + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1756,7 +1756,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{x}{(x^2 + 1)^2} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{(x^2 + 1)^2} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{u^2} \\, du \\\\\n    &= -\\frac{1}{2} \\frac{1}{u} + C \\\\\n    &= -\\frac{1}{2} \\frac{1}{x^2 + 1} + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{x}{(x^2 + 1)^2} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{u^2} \\, du \\\\\n    &= -\\frac{1}{2} \\frac{1}{u} + C \\\\\n    &= -\\frac{1}{2} \\frac{1}{x^2 + 1} + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1766,7 +1766,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int e^{\\cos x} \\sin x \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\, dx \\\\\n    - du &= \\sin x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int e^{\\cos x} \\sin x \\, dx\n    &= - \\int e^u \\, du \\\\\n    &= - e^u + C \\\\\n    &= - e^{\\cos x} + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\, dx \\\\\n    - du &= \\sin x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int e^{\\cos x} \\sin x \\, dx\n    &= - \\int e^u \\, du \\\\\n    &= - e^u + C \\\\\n    &= - e^{\\cos x} + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1776,7 +1776,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{e^x}{e^x + 1} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= e^x + 1 \\\\\n    du &= e^x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{e^x}{e^x + 1} \\, dx\n    &= \\int \\frac{1}{u} \\, du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln (e^x + 1) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= e^x + 1 \\\\\n    du &= e^x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{e^x}{e^x + 1} \\, dx\n    &= \\int \\frac{1}{u} \\, du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln (e^x + 1) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1786,7 +1786,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{x}{x^2 + 1} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{x^2 + 1} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{u} \\, du \\\\\n    &= \\frac{1}{2} \\ln |u| + C \\\\\n    &= \\frac{1}{2} \\ln (x^2 + 1) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= x^2 + 1 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{x}{x^2 + 1} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{u} \\, du \\\\\n    &= \\frac{1}{2} \\ln |u| + C \\\\\n    &= \\frac{1}{2} \\ln (x^2 + 1) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1796,7 +1796,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{\\sin x}{1 + \\cos^2 x} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\, dx \\\\\n    - du &= \\sin x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{\\sin x}{1 + \\cos^2 x} \\, dx\n    &= - \\int \\frac{1}{1 + u^2} \\, du \\\\\n    &= - \\tan^{-1} u + C \\\\\n    &= - \\tan^{-1} (\\cos x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\cos x \\\\\n    du &= - \\sin x \\, dx \\\\\n    - du &= \\sin x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{\\sin x}{1 + \\cos^2 x} \\, dx\n    &= - \\int \\frac{1}{1 + u^2} \\, du \\\\\n    &= - \\tan^{-1} u + C \\\\\n    &= - \\tan^{-1} (\\cos x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1806,7 +1806,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\cos(x) \\sin(\\sin(x)) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\, dx\n    &= \\int \\sin(u) \\, du \\\\\n    &= - \\cos(u) + C \\\\\n    &= - \\cos(\\sin(x)) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\sin x \\\\\n    du &= \\cos x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\cos(x) \\sin(\\sin(x)) \\, dx\n    &= \\int \\sin(u) \\, du \\\\\n    &= - \\cos(u) + C \\\\\n    &= - \\cos(\\sin(x)) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1816,7 +1816,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{\\ln x}{x} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{\\ln x}{x} \\, dx\n    &= \\int u \\, du \\\\\n    &= \\frac{1}{2} u^2 + C \\\\\n    &= \\frac{1}{2} (\\ln x)^2 + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{\\ln x}{x} \\, dx\n    &= \\int u \\, du \\\\\n    &= \\frac{1}{2} u^2 + C \\\\\n    &= \\frac{1}{2} (\\ln x)^2 + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1826,7 +1826,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{1}{x \\ln x} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x \\ln x} \\, dx\n    &= \\int \\frac{1}{u} \\, du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln | \\ln x | + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\ln x \\\\\n    du &= \\frac{1}{x} \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{1}{x \\ln x} \\, dx\n    &= \\int \\frac{1}{u} \\, du \\\\\n    &= \\ln |u| + C \\\\\n    &= \\ln | \\ln x | + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1836,7 +1836,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{x}{\\sqrt{x + 1}} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    x &= u - 1 \\\\\n    u &= x + 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{\\sqrt{x + 1}} \\, dx\n    &= \\int \\frac{u - 1}{\\sqrt{u}} \\, du \\\\\n    &= \\int \\frac{u}{\\sqrt{u}} \\, du - \\int \\frac{1}{\\sqrt{u}} \\, du \\\\\n    &= \\int u^{1/2} \\, du - \\int u^{-1/2} \\, du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}} + C \\\\\n    &= \\frac{2}{3} (x + 1)^{\\frac{3}{2}} - 2(x + 1)^{\\frac{1}{2}} + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    x &= u - 1 \\\\\n    u &= x + 1 \\\\\n    du &= dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{x}{\\sqrt{x + 1}} \\, dx\n    &= \\int \\frac{u - 1}{\\sqrt{u}} \\, du \\\\\n    &= \\int \\frac{u}{\\sqrt{u}} \\, du - \\int \\frac{1}{\\sqrt{u}} \\, du \\\\\n    &= \\int u^{1/2} \\, du - \\int u^{-1/2} \\, du \\\\\n    &= \\frac{2}{3} u^{\\frac{3}{2}} - 2u^{\\frac{1}{2}} + C \\\\\n    &= \\frac{2}{3} (x + 1)^{\\frac{3}{2}} - 2(x + 1)^{\\frac{1}{2}} + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1846,7 +1846,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{x}{1 + x^4} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= x^2 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{x}{1 + x^4} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{1 + u^2} \\, du \\\\\n    &= \\frac{1}{2} \\tan^{-1}(u) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1}(x^2) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= x^2 \\\\\n    du &= 2x \\, dx \\\\\n    \\frac{1}{2} du &= x \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{x}{1 + x^4} \\, dx\n    &= \\frac{1}{2} \\int \\frac{1}{1 + u^2} \\, du \\\\\n    &= \\frac{1}{2} \\tan^{-1}(u) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1}(x^2) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1856,7 +1856,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int (x + 1) \\sqrt{x - 1} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    x &= u + 1 \\\\\n    u &= x - 1 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (x + 1) \\sqrt{x - 1} \\, dx\n    &= \\int (u + 2) \\sqrt{u} \\, du \\\\\n    &= \\int (u \\sqrt{u} + 2 \\sqrt{u}) \\, du \\\\\n    &= \\int (u^{\\frac{3}{2}} + 2 u^{\\frac{1}{2}}) \\, du \\\\\n    &= \\int u^{\\frac{3}{2}} \\, du + 2 \\int u^{\\frac{1}{2}} \\, du \\\\\n    &= \\frac{2}{5} u^{\\frac{5}{2}} + \\frac{4}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{5} (x - 1)^{\\frac{5}{2}} + \\frac{4}{3} (x - 1)^{\\frac{3}{2}} + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    x &= u + 1 \\\\\n    u &= x - 1 \\\\\n    du &= dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int (x + 1) \\sqrt{x - 1} \\, dx\n    &= \\int (u + 2) \\sqrt{u} \\, du \\\\\n    &= \\int (u \\sqrt{u} + 2 \\sqrt{u}) \\, du \\\\\n    &= \\int (u^{\\frac{3}{2}} + 2 u^{\\frac{1}{2}}) \\, du \\\\\n    &= \\int u^{\\frac{3}{2}} \\, du + 2 \\int u^{\\frac{1}{2}} \\, du \\\\\n    &= \\frac{2}{5} u^{\\frac{5}{2}} + \\frac{4}{3} u^{\\frac{3}{2}} + C \\\\\n    &= \\frac{2}{5} (x - 1)^{\\frac{5}{2}} + \\frac{4}{3} (x - 1)^{\\frac{3}{2}} + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1866,7 +1866,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{1}{x^2 + 4x + 8} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution after completing the square:</p>\n\n\n\\[\n\\begin{align*}\n    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\\\\n    u &= x + 2 \\\\\n    du &= dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{x^2 + 4x + 8} \\, dx\n    &= \\int \\frac{1}{u^2 + 2^2} \\, du \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{u}{2} \\right) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{x + 2}{2} \\right) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution after completing the square:</p>\n\\[ \\begin{align*}\n    x^2 + 4x + 8 &= (x + 2)^2 + 2^2 \\\\\n    u &= x + 2 \\\\\n    du &= dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{1}{x^2 + 4x + 8} \\, dx\n    &= \\int \\frac{1}{u^2 + 2^2} \\, du \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{u}{2} \\right) + C \\\\\n    &= \\frac{1}{2} \\tan^{-1} \\left( \\frac{x + 2}{2} \\right) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1876,7 +1876,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{1}{1 + \\sqrt{2x}} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= 1 + \\sqrt{2x} \\\\\n      &= 1 + (2x)^\\frac{1}{2} \\\\\n    du &= (2x)^{-\\frac{1}{2}} \\, dx \\\\\n    dx &= (2x)^\\frac{1}{2} \\, du \\\\\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{2x}} \\, dx\n    &= \\int \\frac{1}{u} (2x)^\\frac{1}{2} \\, du, \\quad (2x)^\\frac{1}{2} = u - 1 \\\\\n    &= \\int \\frac{1}{u} (u - 1) \\, du \\\\\n    &= \\int \\frac{u}{u} - \\frac{1}{u} \\, du \\\\\n    &= \\int du - \\int \\frac{1}{u} \\, du \\\\\n    &= u - \\ln |u| + C \\\\\n    &= (1 + \\sqrt{2x}) - \\ln(1 + \\sqrt{2x}) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= 1 + \\sqrt{2x} \\\\\n      &= 1 + (2x)^\\frac{1}{2} \\\\\n    du &= (2x)^{-\\frac{1}{2}} \\, dx \\\\\n    dx &= (2x)^\\frac{1}{2} \\, du \\\\\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{2x}} \\, dx\n    &= \\int \\frac{1}{u} (2x)^\\frac{1}{2} \\, du, \\quad (2x)^\\frac{1}{2} = u - 1 \\\\\n    &= \\int \\frac{1}{u} (u - 1) \\, du \\\\\n    &= \\int \\frac{u}{u} - \\frac{1}{u} \\, du \\\\\n    &= \\int du - \\int \\frac{1}{u} \\, du \\\\\n    &= u - \\ln |u| + C \\\\\n    &= (1 + \\sqrt{2x}) - \\ln(1 + \\sqrt{2x}) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1886,7 +1886,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int e^{\\sqrt{x}} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} dx \\\\\n       &= \\frac{1}{2 u} \\, dx \\\\\n    dx &= 2u \\, du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int e^{\\sqrt{x}} \\, dx\n    &= 2 \\int u e^u \\, du \\\\\n    &= 2 u e^u - 2 e^u + C \\\\\n    &= 2 e^u (u - 1) + C \\\\\n    &= 2 e^\\sqrt{x} ( \\sqrt{x} - 1 ) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} dx \\\\\n       &= \\frac{1}{2 u} \\, dx \\\\\n    dx &= 2u \\, du\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int e^{\\sqrt{x}} \\, dx\n    &= 2 \\int u e^u \\, du \\\\\n    &= 2 u e^u - 2 e^u + C \\\\\n    &= 2 e^u (u - 1) + C \\\\\n    &= 2 e^\\sqrt{x} ( \\sqrt{x} - 1 ) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1896,7 +1896,7 @@
     "tags": "Math Calculus Problem Integral U-Substitution",
     "fields": {
       "front": "\\[ \\int \\frac{1}{1 + \\sqrt{x}} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} \\, dx \\\\& = \\frac{1}{2 u} \\, dx \\\\\n    dx &= 2u \\, du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{x}} \\, dx\n    &= 2 \\int \\frac{u}{u + 1} \\, du \\\\\n    &= 2 \\int \\frac{u + 1 - 1}{u + 1} \\, du \\\\\n    &= 2 \\int 1 - \\frac{1}{u + 1} \\, du \\\\\n    &= 2 \\left( u - \\ln |u + 1| \\right) + C \\\\\n    &= 2 \\left( \\sqrt{x} - \\ln |\\sqrt{x} + 1| \\right) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\sqrt{x} \\\\\n    du &= \\frac{1}{2 \\sqrt{x}} \\, dx \\\\& = \\frac{1}{2 u} \\, dx \\\\\n    dx &= 2u \\, du\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\frac{1}{1 + \\sqrt{x}} \\, dx\n    &= 2 \\int \\frac{u}{u + 1} \\, du \\\\\n    &= 2 \\int \\frac{u + 1 - 1}{u + 1} \\, du \\\\\n    &= 2 \\int 1 - \\frac{1}{u + 1} \\, du \\\\\n    &= 2 \\left( u - \\ln |u + 1| \\right) + C \\\\\n    &= 2 \\left( \\sqrt{x} - \\ln |\\sqrt{x} + 1| \\right) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1906,7 +1906,7 @@
     "tags": "Math Calculus Problem Integral Integration-by-Parts",
     "fields": {
       "front": "\\[ \\int \\ln x \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Integrate by parts:</p>\n\n\n\\[ u \\, dv = uv - \\int v \\, du \\]\n\n\\[\n\\begin{align*}\n     u &= \\ln x            & dv &= dx \\\\\n    du &= \\frac{1}{x} \\, dx &  v &= x\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\ln x \\, dx\n    &= x \\ln x - \\int x \\frac{1}{x} \\, dx \\\\\n    &= x \\ln x - \\int dx \\\\\n    &= x \\ln x - x + C\n\\end{align*}\n\\]"
+      "back": "<p>Integrate by parts:</p>\n\\[ u \\, dv = uv - \\int v \\, du \\]\n\\[ \\begin{align*}\n     u &= \\ln x            & dv &= dx \\\\\n    du &= \\frac{1}{x} \\, dx &  v &= x\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\ln x \\, dx\n    &= x \\ln x - \\int x \\frac{1}{x} \\, dx \\\\\n    &= x \\ln x - \\int dx \\\\\n    &= x \\ln x - x + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1916,7 +1916,7 @@
     "tags": "Math Calculus Problem Integral Integration-by-Parts",
     "fields": {
       "front": "\\[ \\int (\\ln x)^2 \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Integrate by parts:</p>\n\n\n\\[ u \\, dv = uv - \\int v \\, du \\]\n\n\\[\n\\begin{align*}\n     u &= (\\ln x)^2              & dv &= dx \\\\\n    du &= \\frac{2 \\ln x}{x} \\, dx &  v &= x\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (\\ln x)^2 \\, dx\n    &= x (\\ln x)^2 - \\int x \\frac{2 \\ln x}{x} \\, dx \\\\\n    &= x (\\ln x)^2 - 2 \\int \\ln x \\, dx \\\\\n    &= x (\\ln x)^2 - 2 (x \\ln x - x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Integrate by parts:</p>\n\\[ u \\, dv = uv - \\int v \\, du \\]\n\\[ \\begin{align*}\n     u &= (\\ln x)^2              & dv &= dx \\\\\n    du &= \\frac{2 \\ln x}{x} \\, dx &  v &= x\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int (\\ln x)^2 \\, dx\n    &= x (\\ln x)^2 - \\int x \\frac{2 \\ln x}{x} \\, dx \\\\\n    &= x (\\ln x)^2 - 2 \\int \\ln x \\, dx \\\\\n    &= x (\\ln x)^2 - 2 (x \\ln x - x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1926,7 +1926,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\sin^2(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\, dx\n    &= \\int \\frac{1-\\cos(2x)}{2} \\, dx \\\\\n    &= \\int \\frac{1}{2} - \\frac{1}{2} \\cos(2x) \\, dx \\\\\n    &= \\frac{1}{2} x - \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\sin^2(x) \\, dx\n    &= \\int \\frac{1-\\cos(2x)}{2} \\, dx \\\\\n    &= \\int \\frac{1}{2} - \\frac{1}{2} \\cos(2x) \\, dx \\\\\n    &= \\frac{1}{2} x - \\frac{1}{4} \\sin(2x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1936,7 +1936,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\cos^2(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\, dx\n    &= \\int \\frac{1 + \\cos(2x)}{2} \\, dx \\\\\n    &= \\int \\frac{1}{2} + \\frac{1}{2} \\cos(2x) \\, dx \\\\\n    &= \\frac{1}{2} x + \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\cos^2(x) \\, dx\n    &= \\int \\frac{1 + \\cos(2x)}{2} \\, dx \\\\\n    &= \\int \\frac{1}{2} + \\frac{1}{2} \\cos(2x) \\, dx \\\\\n    &= \\frac{1}{2} x + \\frac{1}{4} \\sin(2x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1946,7 +1946,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\sin^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = 1 - \\cos^2(2) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^3(x) \\, dx\n    &= \\int \\sin^2(x) \\sin(x) \\, dx \\\\\n    &= \\int (1 - \\cos^2(x)) \\sin(x) \\, dx \\\\\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (1 - \\cos^2(x)) \\sin(x) \\, dx\n    &= \\int - (1 - u^2) \\, du \\\\\n    &= \\int u^2 - 1 \\, du \\\\\n    &= \\frac{1}{3} u^3 - u + C \\\\\n    &= \\frac{1}{3} \\cos^3(x) - \\cos(x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\sin^2(x) = 1 - \\cos^2(2) \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\sin^3(x) \\, dx\n    &= \\int \\sin^2(x) \\sin(x) \\, dx \\\\\n    &= \\int (1 - \\cos^2(x)) \\sin(x) \\, dx \\\\\n\\end{align*} \\]\n<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int (1 - \\cos^2(x)) \\sin(x) \\, dx\n    &= \\int - (1 - u^2) \\, du \\\\\n    &= \\int u^2 - 1 \\, du \\\\\n    &= \\frac{1}{3} u^3 - u + C \\\\\n    &= \\frac{1}{3} \\cos^3(x) - \\cos(x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1956,7 +1956,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\cos^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = 1 - \\sin^2(2) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^3(x) \\, dx\n    &= \\int \\cos^2(x) \\cos(x) \\, dx \\\\\n    &= \\int (1 - \\sin^2(x)) \\cos(x) \\, dx \\\\\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int (1 - \\sin^2(x)) \\cos(x) \\, dx\n    &= \\int 1 - u^2 \\, du \\\\\n    &= u - \\frac{1}{3} u^3 + C \\\\\n    &= \\sin(x) - \\frac{1}{3} \\sin^3(x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\cos^2(x) = 1 - \\sin^2(2) \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\cos^3(x) \\, dx\n    &= \\int \\cos^2(x) \\cos(x) \\, dx \\\\\n    &= \\int (1 - \\sin^2(x)) \\cos(x) \\, dx \\\\\n\\end{align*} \\]\n<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x) \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int (1 - \\sin^2(x)) \\cos(x) \\, dx\n    &= \\int 1 - u^2 \\, du \\\\\n    &= u - \\frac{1}{3} u^3 + C \\\\\n    &= \\sin(x) - \\frac{1}{3} \\sin^3(x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1966,7 +1966,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\sin^4(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n\n<p>and</p>\n\n\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^4(x) \\, dx\n    &= \\int \\left[ \\frac{1 - \\cos(2x)}{2} \\right]^2 \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\cos^2(2x) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} - 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\, dx \\\\\n    &= \\int \\frac{3}{8} - \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\, dx \\\\\n    &= \\frac{3}{8} x - \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\sin^2(x) = \\frac{1 - \\cos(2x)}{2} \\]\n<p>and</p>\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\sin^4(x) \\, dx\n    &= \\int \\left[ \\frac{1 - \\cos(2x)}{2} \\right]^2 \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\cos^2(2x) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 - 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} - 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\, dx \\\\\n    &= \\int \\frac{3}{8} - \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\, dx \\\\\n    &= \\frac{3}{8} x - \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1976,7 +1976,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\cos^4(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n\n<p>and</p>\n\n\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^4(x) \\, dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\, dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\, dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\]\n<p>and</p>\n\\[ \\cos^2(2x) = \\frac{1 + \\cos(4x)}{2} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\cos^4(x) \\, dx\n    &= \\int \\left[ \\frac{1 + \\cos(2x)}{2} \\right]^2 \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\cos^2(2x) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ 1 + 2\\cos(2x) + \\frac{1}{2}(1 + \\cos(4x)) \\right] \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left[ \\frac{3}{2} + 2\\cos(2x) + \\frac{1}{2} \\cos(4x) \\right] \\, dx \\\\\n    &= \\int \\frac{3}{8} + \\frac{1}{2} \\cos(2x) + \\frac{1}{8} \\cos(4x) \\, dx \\\\\n    &= \\frac{3}{8} x + \\frac{1}{4} \\sin(2x) + \\frac{1}{32} \\sin(4x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1986,7 +1986,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\cos^2(x) \\sin^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\, dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\, dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\, dx\n    &= \\int - u^2 (1 - u^2) \\, du \\\\\n    &= \\int u^4 - u^2 \\, du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\sin^2(x) = 1 - \\cos^2(x) \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\cos^2(x) \\sin^3(x) \\, dx\n    &= \\int \\cos^2(x) \\sin^2(x) \\sin(x) \\, dx \\\\\n    &= \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\, dx\n\\end{align*} \\]\n<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\cos(x) \\\\\n    - du &= \\sin(x) \\, dx\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\cos^2(x) (1 - \\cos^2(x)) \\sin(x) \\, dx\n    &= \\int - u^2 (1 - u^2) \\, du \\\\\n    &= \\int u^4 - u^2 \\, du \\\\\n    &= \\frac{1}{5} u^5 - \\frac{1}{3} u^3 + C \\\\\n    &= \\frac{1}{5} \\cos^5(x) - \\frac{1}{3} \\cos^3(x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -1996,7 +1996,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\sin^2(x) \\cos^3(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\cos^2(x) = 1 - \\sin^2(x) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^3(x) \\, dx\n    &= \\int \\sin^2(x) \\cos^2(x) \\cos(x) \\, dx \\\\\n    &= \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\, dx\n\\end{align*}\n\\]\n\n<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x)\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\, dx\n    &= \\int u^2 (1 - u^2) \\, du \\\\\n    &= \\int u^2 - u^4 \\, du \\\\\n    &= \\frac{1}{3} u^3 - \\frac{1}{5} u^5 + C \\\\\n    &= \\frac{1}{3} \\sin^3(x) - \\frac{1}{5} \\sin^5(x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\cos^2(x) = 1 - \\sin^2(x) \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\sin^2(x) \\cos^3(x) \\, dx\n    &= \\int \\sin^2(x) \\cos^2(x) \\cos(x) \\, dx \\\\\n    &= \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\, dx\n\\end{align*} \\]\n<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n    u &= \\sin(x) \\\\\n    du &= \\cos(x)\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\sin^2(x) (1 - \\sin^2(x)) \\cos(x) \\, dx\n    &= \\int u^2 (1 - u^2) \\, du \\\\\n    &= \\int u^2 - u^4 \\, du \\\\\n    &= \\frac{1}{3} u^3 - \\frac{1}{5} u^5 + C \\\\\n    &= \\frac{1}{3} \\sin^3(x) - \\frac{1}{5} \\sin^5(x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -2006,7 +2006,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\sin^2(x) \\cos^2(x) \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "<p>Apply trigonometric identity:</p>\n\n\n\\[ \\sin(2x) = 2 \\sin(x) \\cos(x) \\]\n\n<p>and</p>\n\n\n\\[ \\sin^2(2x) = \\frac{1 - \\cos(4x)}{2} \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\, dx\n    &= \\int \\sin(x) \\sin(x) \\cos(x) \\cos(x) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left( 2 \\sin(x) \\cos(x) \\right) \\left( 2 \\sin(x) \\cos(x) \\right) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\sin(2x) \\sin(2x) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\sin^2(2x) \\, dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\, dx \\\\\n    &= \\frac{1}{8} \\left( \\int dx - \\int \\cos(4x) \\, dx \\right) \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*}\n\\]"
+      "back": "<p>Apply trigonometric identity:</p>\n\\[ \\sin(2x) = 2 \\sin(x) \\cos(x) \\]\n<p>and</p>\n\\[ \\sin^2(2x) = \\frac{1 - \\cos(4x)}{2} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    \\int \\sin^2(x) \\cos^2(x) \\, dx\n    &= \\int \\sin(x) \\sin(x) \\cos(x) \\cos(x) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\left( 2 \\sin(x) \\cos(x) \\right) \\left( 2 \\sin(x) \\cos(x) \\right) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\sin(2x) \\sin(2x) \\, dx \\\\\n    &= \\int \\frac{1}{4} \\sin^2(2x) \\, dx \\\\\n    &= \\int \\frac{1}{8} \\left( 1 - \\cos(4x) \\right) \\, dx \\\\\n    &= \\frac{1}{8} \\left( \\int dx - \\int \\cos(4x) \\, dx \\right) \\\\\n    &= \\frac{1}{8} \\left( x - \\frac{1}{4} \\sin(4x) \\right) + C \\\\\n    &= \\frac{1}{8} x - \\frac{1}{32} \\sin(4x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -2016,7 +2016,7 @@
     "tags": "Math Calculus Problem Integral Trigonometric",
     "fields": {
       "front": "\\[ \\int \\frac{1}{1 + \\sin(x)} \\, dx \\]\n<p>Solve the integral.</p>",
-      "back": "\\[\n\\begin{align*}\n    \\int \\frac{1}{1 + \\sin(x)} \\, dx\n    &= \\int \\left( \\frac{1}{1 + \\sin(x)} \\right) \\left( \\frac{1 - \\sin(x)}{1 - \\sin(x)} \\right) \\, dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{1 - \\sin^2(x)} \\, dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{\\cos^2(x)} \\, dx \\\\\n    &= \\int \\frac{1}{\\cos^2(x)} - \\frac{\\sin(x)}{\\cos^2(x)} \\, dx \\\\\n    &= \\int \\sec^2(x) - \\tan(x) \\sec(x) \\, dx \\\\\n    &= \\tan(x) - \\sec(x) + C\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    \\int \\frac{1}{1 + \\sin(x)} \\, dx\n    &= \\int \\left( \\frac{1}{1 + \\sin(x)} \\right) \\left( \\frac{1 - \\sin(x)}{1 - \\sin(x)} \\right) \\, dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{1 - \\sin^2(x)} \\, dx \\\\\n    &= \\int \\frac{1 - \\sin(x)}{\\cos^2(x)} \\, dx \\\\\n    &= \\int \\frac{1}{\\cos^2(x)} - \\frac{\\sin(x)}{\\cos^2(x)} \\, dx \\\\\n    &= \\int \\sec^2(x) - \\tan(x) \\sec(x) \\, dx \\\\\n    &= \\tan(x) - \\sec(x) + C\n\\end{align*} \\]"
     }
   },
   {
@@ -2025,8 +2025,8 @@
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
     "fields": {
-      "front": "\\[ \\frac{d}{dx} W(x) \\]\n<p>Find the derivative of the Lambert \\(W\\) function.</p>",
-      "back": "<p>Use implicit differentiation:</p>\n\n\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} &= x \\\\\n    \\frac{d}{dx} \\left( W(x) e^{W(x)} \\right) &= \\frac{d}{dx} x\n\\end{align*}\n\\]\n\n<p>Use the chain rule:</p>\n\n\n\\[\n\\begin{align*}\n    W(x) e^{W(x)} \\cdot W'(x) + e^{W(x)} \\cdot W'(x) &= 1 \\\\\n    W'(x) ( W(x) e^{W(x)} + e^{W(x)} ) &= 1 \\\\\n    W'(x) ( x + e^{W(x)} ) &= 1\n\\end{align*}\n\\]\n\n<p>Since</p>\n\n\n\\[ W(x)e^{W(x)} = x \\implies e^{W(x)} = x/W(x) \\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    W'(x) &= \\frac{1}{x + e^{W(x)}}  \\\\\n    &= \\frac{1}{x + x/W(x)} \\\\\n    &= \\frac{W(x)}{x W(x) + x} \\\\\n    &= \\frac{W(x)}{x (W(x) + 1)}\n\\end{align*}\n\\]"
+      "front": "\\[ \\frac{d}{dx} W(x) \\]\n<p>Find the derivative of the Lambert \\( W \\) function.</p>",
+      "back": "<p>Use implicit differentiation:</p>\n\\[ \\begin{align*}\n    W(x) e^{W(x)} &= x \\\\\n    \\frac{d}{dx} \\left( W(x) e^{W(x)} \\right) &= \\frac{d}{dx} x\n\\end{align*} \\]\n<p>Use the chain rule:</p>\n\\[ \\begin{align*}\n    W(x) e^{W(x)} \\cdot W'(x) + e^{W(x)} \\cdot W'(x) &= 1 \\\\\n    W'(x) ( W(x) e^{W(x)} + e^{W(x)} ) &= 1 \\\\\n    W'(x) ( x + e^{W(x)} ) &= 1\n\\end{align*} \\]\n<p>Since</p>\n\\[ W(x)e^{W(x)} = x \\implies e^{W(x)} = x/W(x) \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    W'(x) &= \\frac{1}{x + e^{W(x)}}  \\\\\n    &= \\frac{1}{x + x/W(x)} \\\\\n    &= \\frac{W(x)}{x W(x) + x} \\\\\n    &= \\frac{W(x)}{x (W(x) + 1)}\n\\end{align*} \\]"
     }
   },
   {
@@ -2035,8 +2035,8 @@
     "deck": "Math::Calculus::Problems::Lambert W",
     "tags": "Math Calculus Problem Lambert-W",
     "fields": {
-      "front": "\\[ \\int W(x) \\, dx \\]\n<p>Find the anti-derivative of the Lambert \\(W\\) function.</p>",
-      "back": "<p>Apply \\(u\\)-substitution:</p>\n\n\n\\[\n\\begin{align*}\n     u &= W(x) \\\\\n     x &= u e^u \\\\\n    dx &= (u e^u + e^u) \\, du \\\\\n       &= e^u (u  + 1) \\, du\n\\end{align*}\n\\]\n\n<p>Then:</p>\n\n\n\\[\n\\begin{align*}\n    &= \\int W(x) \\, dx \\\\\n    &= \\int u e^u(u+1) \\, du \\\\\n    &= \\int e^u (u^2 + u) \\, du, \\quad \\text{Integrate by parts} \\\\\n    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\\\\n    &= u u e^u - u e^u + e^u + C \\\\\n    &= x W(x) - W(x) + e^{W(x)} + C \\\\\n    &= x W(x) - W(x) + \\frac{x}{W(x)} + C\n\\end{align*}\n\\]"
+      "front": "\\[ \\int W(x) \\, dx \\]\n<p>Find the anti-derivative of the Lambert \\( W \\) function.</p>",
+      "back": "<p>Apply \\( u \\)-substitution:</p>\n\\[ \\begin{align*}\n     u &= W(x) \\\\\n     x &= u e^u \\\\\n    dx &= (u e^u + e^u) \\, du \\\\\n       &= e^u (u  + 1) \\, du\n\\end{align*} \\]\n<p>Then:</p>\n\\[ \\begin{align*}\n    &= \\int W(x) \\, dx \\\\\n    &= \\int u e^u(u+1) \\, du \\\\\n    &= \\int e^u (u^2 + u) \\, du, \\quad \\text{Integrate by parts} \\\\\n    &= (u^2 + u) e^u - (2u + 1) e^u + 2e^u + C \\\\\n    &= u u e^u - u e^u + e^u + C \\\\\n    &= x W(x) - W(x) + e^{W(x)} + C \\\\\n    &= x W(x) - W(x) + \\frac{x}{W(x)} + C\n\\end{align*} \\]"
     }
   },
   {
@@ -2046,7 +2046,7 @@
     "tags": "Math Calculus Problem Lambert-W",
     "fields": {
       "front": "\\[ W(W(x)) = 1 \\]",
-      "back": "\\[\n\\begin{align*}\n    W(W(x)) &= 1 \\\\\n       W(x) &= 1 e^1 \\\\\n            &= e \\\\\n          x &= e e^e \\\\\n            &= e^{e+1}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    W(W(x)) &= 1 \\\\\n       W(x) &= 1 e^1 \\\\\n            &= e \\\\\n          x &= e e^e \\\\\n            &= e^{e+1}\n\\end{align*} \\]"
     }
   },
   {
@@ -2056,7 +2056,7 @@
     "tags": "Math Calculus Problem Lambert-W",
     "fields": {
       "front": "\\[ W(x) = \\ln(2x) \\]",
-      "back": "\\[\n\\begin{align*}\n    W(x) &= \\ln(2x) \\\\\n       x &= \\ln(2x) e^{\\ln(2x)} \\\\\n         &= 2x \\ln(2x) \\\\\n\\end{align*}\n\\]\n\n\\[\n\\begin{align*}\n     2x \\ln(2x) &= x \\\\\n        \\ln(2x) &= \\frac{1}{2} \\\\\n    e^{\\ln(2x)} &= e^{\\frac{1}{2}} \\\\\n             2x &= e^{\\frac{1}{2}} \\\\\n              x &= \\frac{1}{2} e^{\\frac{1}{2}}\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    W(x) &= \\ln(2x) \\\\\n       x &= \\ln(2x) e^{\\ln(2x)} \\\\\n         &= 2x \\ln(2x) \\\\\n\\end{align*} \\]\n\\[ \\begin{align*}\n     2x \\ln(2x) &= x \\\\\n        \\ln(2x) &= \\frac{1}{2} \\\\\n    e^{\\ln(2x)} &= e^{\\frac{1}{2}} \\\\\n             2x &= e^{\\frac{1}{2}} \\\\\n              x &= \\frac{1}{2} e^{\\frac{1}{2}}\n\\end{align*} \\]"
     }
   },
   {
@@ -2066,7 +2066,7 @@
     "tags": "Math Calculus Problem Lambert-W",
     "fields": {
       "front": "\\[ W(e^x) = (W(e))^x \\]",
-      "back": "\\[\n\\begin{align*}\n    W(e^x) &= (W(e))^x \\\\\n    W(e^x) &= (W(1 e^1))^x \\\\\n    W(e^x) &= (1)^x \\\\\n    W(e^x) &= 1 \\\\\n       e^x &= 1 e^1 \\\\\n         x &= 1\n\\end{align*}\n\\]"
+      "back": "\\[ \\begin{align*}\n    W(e^x) &= (W(e))^x \\\\\n    W(e^x) &= (W(1 e^1))^x \\\\\n    W(e^x) &= (1)^x \\\\\n    W(e^x) &= 1 \\\\\n       e^x &= 1 e^1 \\\\\n         x &= 1\n\\end{align*} \\]"
     }
   }
 ]
