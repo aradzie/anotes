@@ -1,6 +1,6 @@
+import { parseNotes } from "@anki-xyz/notes-format";
 import { randomUUID } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
-import { parseNotes } from "./lib/anki.js";
 import { findNoteFiles } from "./lib/io.js";
 
 main();

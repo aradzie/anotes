@@ -39,11 +39,15 @@
   },
   "scripts": {
     "compile": "tsc",
-    "watch": "tsc --watch"
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js --production"
+  },
+  "dependencies": {
+    "@anki-xyz/anki-export": "*",
+    "@anki-xyz/notes-format": "*"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
-    "@types/vscode": "^1.102.0",
-    "typescript": "^5.9.2"
+    "@types/vscode": "^1.102.0"
   }
 }

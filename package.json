@@ -15,12 +15,16 @@
   },
   "license": "ISC",
   "type": "module",
-  "dependencies": {
-    "better-sqlite3": "^12.2.0",
-    "jszip": "^3.10.1",
-    "marked": "^16.1.1"
-  },
+  "workspaces": [
+    "packages/*",
+    "vscode"
+  ],
   "devDependencies": {
-    "prettier": "^3.6.2"
+    "esbuild": "^0.25.8",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "marked": "^16.1.1"
   }
 }

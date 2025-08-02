@@ -4,8 +4,8 @@
  * The output file can be imported into Anki.
  */
 
+import { formatNotes, formatNotesJson, parseNotes } from "@anki-xyz/notes-format";
 import { readFileSync, writeFileSync } from "node:fs";
-import { formatNotes, formatNotesJson, parseNotes } from "./lib/anki.js";
 import { findNoteFiles, pathTo } from "./lib/io.js";
 
 main();
