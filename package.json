@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A collection of math notes for Anki.",
   "keywords": [
-    "anki",
-    "math"
+    "anki"
   ],
   "homepage": "https://github.com/aradzie/anki-math-notes#readme",
   "bugs": {
@@ -20,5 +19,8 @@
     "better-sqlite3": "^12.2.0",
     "jszip": "^3.10.1",
     "marked": "^16.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }

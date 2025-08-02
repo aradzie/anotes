@@ -6,8 +6,9 @@
     "vscode": "^1.102.0"
   },
   "categories": [
-    "Programming Languages"
+    "Other"
   ],
+  "main": "./dist/extension.js",
   "contributes": {
     "languages": [
       {
@@ -28,6 +29,21 @@
         "scopeName": "source.anki-notes",
         "path": "./syntaxes/anki-notes.tmLanguage.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "anki-notes.showPreview",
+        "title": "Show Preview of Anki Notes"
+      }
     ]
+  },
+  "scripts": {
+    "compile": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/vscode": "^1.102.0",
+    "typescript": "^5.9.2"
   }
 }
