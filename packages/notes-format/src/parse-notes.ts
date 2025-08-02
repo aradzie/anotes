@@ -1,15 +1,16 @@
 import { allFields } from "./fields.js";
+import type { Note } from "./note.js";
 
 const pattern = /^!(?<name>[a-zA-Z0-9]+):(?<value>.*)$/;
 
-function parseNotes(source, text, notes) {
+function parseNotes(source: string, text: string, notes: Note[]): void {
   let lineIndex = 0;
 
-  function errorMessage(message) {
+  function errorMessage(message: string) {
     return `[${source}:${lineIndex}]: ${message}`;
   }
 
-  function blank() {
+  function blank(): Pick<Note, "id" | "fields"> {
     return {
       id: null,
       fields: Object.fromEntries([...allFields.keys()].map((name) => [name, ""])),
@@ -22,20 +23,20 @@ function parseNotes(source, text, notes) {
     tags: "",
     template: "Basic",
     ...blank(),
-  };
+  } satisfies Note;
 
   let state = "card";
   let field = "";
   let seen = new Set();
 
-  function checkUnique(name) {
+  function checkUnique(name: string) {
     if (seen.has(name)) {
       throw new SyntaxError(errorMessage(`Duplicate property [${name}]`));
     }
     seen.add(name);
   }
 
-  function setProperty(name, value) {
+  function setProperty(name: string, value: string) {
     switch (name) {
       case "type":
         checkUnique(name);
@@ -61,7 +62,7 @@ function parseNotes(source, text, notes) {
     return false;
   }
 
-  function setField(name, value) {
+  function setField(name: string, value: string) {
     if (allFields.has(name)) {
       checkUnique(name);
       field = name;
@@ -71,7 +72,7 @@ function parseNotes(source, text, notes) {
     return false;
   }
 
-  function appendField(name, value) {
+  function appendField(name: string, value: string) {
     if (allFields.has(name)) {
       current.fields[name] += "\n" + value;
       return true;
@@ -106,7 +107,7 @@ function parseNotes(source, text, notes) {
 
       const m = pattern.exec(line);
       if (m) {
-        const { name, value } = m.groups;
+        const { name, value } = m.groups as { name: string; value: string };
 
         if (setProperty(name, value)) {
           state = "card";
@@ -127,7 +128,7 @@ function parseNotes(source, text, notes) {
     if (state === "field") {
       const m = pattern.exec(line);
       if (m) {
-        const { name, value } = m.groups;
+        const { name, value } = m.groups as { name: string; value: string };
 
         if (setProperty(name, value)) {
           state = "card";

@@ -1,13 +1,17 @@
-import { marked } from "marked";
-import { latexOptions } from "./marked-latex.js";
+import { Marked } from "marked";
+import { latexExtension } from "./marked-latex.js";
 
-marked.use(latexOptions);
+type FieldConfig = {
+  type: "html" | "text";
+  format: (value: string, template: string) => string;
+};
 
 const frontField = {
   type: "html",
-  latex: true,
-  format: (value, template) => {
-    value = marked.parse(value.trim(), {}).trim();
+  format: (value: string, template: string) => {
+    const parser = new Marked();
+    parser.use(latexExtension);
+    value = parser.parse(value.trim(), { async: false }).trim();
     switch (template) {
       case "Basic":
         return `${value}`;
@@ -17,13 +21,14 @@ const frontField = {
         throw new Error(`Unknown template: ${template}`);
     }
   },
-};
+} satisfies FieldConfig;
 
 const backField = {
   type: "html",
-  latex: true,
-  format: (value, template) => {
-    value = marked.parse(value.trim(), {}).trim();
+  format: (value: string, template: string) => {
+    const parser = new Marked();
+    parser.use(latexExtension);
+    value = parser.parse(value.trim(), { async: false }).trim();
     switch (template) {
       case "Basic":
         return `${value}`;
@@ -33,13 +38,14 @@ const backField = {
         throw new Error(`Unknown template: ${template}`);
     }
   },
-};
+} satisfies FieldConfig;
 
 const exampleField = {
   type: "html",
-  latex: true,
-  format: (value, template) => {
-    value = marked.parse(value.trim(), {}).trim();
+  format: (value: string, template: string) => {
+    const parser = new Marked();
+    parser.use(latexExtension);
+    value = parser.parse(value.trim(), { async: false }).trim();
     switch (template) {
       case "Basic":
         return `<section style="text-align: left">${value}</section>`;
@@ -49,10 +55,12 @@ const exampleField = {
         throw new Error(`Unknown template: ${template}`);
     }
   },
-};
+} satisfies FieldConfig;
 
-export const allFields = new Map([
+const allFields = new Map<string, FieldConfig>([
   ["front", frontField],
   ["back", backField],
   // ["example", exampleField],
 ]);
+
+export { type FieldConfig, allFields };

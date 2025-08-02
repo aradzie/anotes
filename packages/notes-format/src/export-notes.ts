@@ -1,6 +1,7 @@
 import { allFields } from "./fields.js";
+import type { Note } from "./note.js";
 
-function exportNotes(notes) {
+function exportNotes(notes: readonly Note[]): string {
   const lines = [];
   lines.push(`#separator:semicolon`);
   lines.push(`#html:true`);
@@ -20,17 +21,19 @@ function exportNotes(notes) {
   return lines.join("\n");
 }
 
-function formatField(value) {
+function formatField(value: string | null): string {
+  if (value === null) {
+    return "";
+  }
   if (value.includes(";") || value.includes("\n") || value.includes('"')) {
     return `"${value.replaceAll('"', '""')}"`;
-  } else {
-    return value;
   }
+  return value;
 }
 
-function exportNotesJson(notes) {
+function exportNotesJson(notes: readonly Note[]): unknown {
   return notes.map(({ type, deck, tags, template, id, fields }) => {
-    const fmt = {};
+    const fmt: Record<string, string> = {};
     for (const [name, config] of allFields) {
       const value = fields[name];
       fmt[name] = value ? config.format(value, template) : "";

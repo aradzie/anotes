@@ -1,4 +1,6 @@
-function formatNotes(notes) {
+import type { Note } from "./note.js";
+
+function formatNotes(notes: readonly Note[]): string {
   const lines = [];
   let type0 = "";
   let deck0 = "";
@@ -10,7 +12,7 @@ function formatNotes(notes) {
     tags,
     template,
     id,
-    fields: { front, back },
+    fields: { front = "", back = "" },
   } of notes) {
     if (type !== type0) {
       lines.push(`!type: ${type}`);
@@ -57,7 +59,7 @@ function formatNotes(notes) {
   return lines.join("\n");
 }
 
-function isMultiline(value) {
+function isMultiline(value: string): boolean {
   return value.includes("\n");
 }
 
