@@ -37,10 +37,9 @@
       }
     ]
   },
-  "scripts": {
-    "compile": "tsc",
-    "watch": "node esbuild.js --watch",
-    "build": "node esbuild.js --production"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aradzie/anki-math-notes.git"
   },
   "dependencies": {
     "@anki-xyz/anki-export": "*",
@@ -49,5 +48,11 @@
   "devDependencies": {
     "@types/node": "^24.1.0",
     "@types/vscode": "^1.102.0"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js --production",
+    "package": "npx @vscode/vsce package"
   }
 }

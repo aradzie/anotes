@@ -4,7 +4,7 @@
  * The output file can be imported into Anki.
  */
 
-import { formatNotes, formatNotesJson, parseNotes } from "@anki-xyz/notes-format";
+import { exportNotes, exportNotesJson, parseNotes } from "@anki-xyz/notes-format";
 import { readFileSync, writeFileSync } from "node:fs";
 import { findNoteFiles, pathTo } from "./lib/io.js";
 
@@ -18,6 +18,6 @@ function main() {
     parseNotes(file, text, notes);
   }
   console.log(`Parsed ${notes.length} note(s)`);
-  writeFileSync(pathTo("_notes.txt"), formatNotes(notes));
-  writeFileSync(pathTo("_notes.json"), JSON.stringify(formatNotesJson(notes), null, 2));
+  writeFileSync(pathTo("_notes.txt"), exportNotes(notes));
+  writeFileSync(pathTo("_notes.json"), JSON.stringify(exportNotesJson(notes), null, 2));
 }

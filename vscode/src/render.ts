@@ -1,4 +1,4 @@
-export function renderFooToHtml(content: string): string {
+export function renderNotesToHtml(content: string): string {
   // Simple example: wrap lines in <p>, escape HTML.
   const escaped = content.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const paragraphs = escaped

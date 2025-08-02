@@ -2,5 +2,9 @@
   "name": "@anki-xyz/notes-format",
   "version": "0.0.1",
   "type": "module",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "katex": "^0.16.22",
+    "marked": "^16.1.1"
+  }
 }

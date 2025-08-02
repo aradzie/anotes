@@ -23,8 +23,5 @@
     "esbuild": "^0.25.8",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
-  },
-  "dependencies": {
-    "marked": "^16.1.1"
   }
 }

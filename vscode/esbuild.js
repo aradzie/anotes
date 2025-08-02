@@ -8,7 +8,6 @@ const watch = process.argv.includes("--watch");
  */
 const esbuildProblemMatcherPlugin = {
   name: "esbuild-problem-matcher",
-
   setup(build) {
     build.onStart(() => {
       console.log("[watch] build started");
