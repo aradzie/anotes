@@ -477,17 +477,17 @@ b0391e6a-206c-4005-b719-07328470fd49;Basic;Math::Calculus::Identities::Laplace T
 d4f4ed39-34d2-4696-a654-15994fced1b9;Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \left\{ \int_{0}^{t} f(u) \, du \right\} \];\[ \frac{F(s)}{s} \]
 efe5461c-0756-4078-b74d-4a22fd909a38;Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ f'(t) \} \];\[ s F(s) - f(0) \]
 8477c86f-4d6b-4ea4-93c9-12f47fbc70e1;Basic;Math::Calculus::Identities::Laplace Transforms;Math Calculus Identity Laplace-Transform;\[ \mathscr{L} \{ f''(t) \} \];\[ s^2 F(s) - s f(0) - f'(0) \]
-ebdd5628-7ae7-4805-bda4-51c16529b65e;Basic;Math::Calculus::Limits;Math Calculus Limits Theory;<p>What is a continuous function?</p>;"<section style=""text-align: left""><p>A function \( f(x) \) is <strong>continuous at a point</strong> \( x = c \) if:</p>
+ebdd5628-7ae7-4805-bda4-51c16529b65e;Basic;Math::Calculus::Limits;Math Calculus Limits Theory;<p>What is a continuous function?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>A function \( f(x) \) is <strong>continuous at a point</strong> \( x = c \) if:</p>
 <ul>
 <li>\( f(c) \) exists: The function is defined at the point \( c \).</li>
 <li>\( \lim_{x \to c} f(x) \) exists: The limit of the function as \( x \) approaches \( c \) from both the left and right sides is the same.</li>
 <li>\( \lim_{x \to c} f(x) = f(c) \): The limit of the function as \( x \) approaches \( c \) is equal to the actual value of the function at \( c \).</li>
 </ul>
 <p>If a function is continuous at every point in its domain, it is called a <strong>continuous</strong> function.</p></section>"
-ebddf2d2-f380-49bc-9d98-47d69966ce7f;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the extreme value theorem (EVT).</p>;"<section style=""text-align: left""><p>The extreme value theorem states that if a real-valued function \( f \) is continuous on the closed and bounded interval \( [a,b] \), then \( f \) must attain a maximum and a minimum, each at least once.</p>
+ebddf2d2-f380-49bc-9d98-47d69966ce7f;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the extreme value theorem (EVT).</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The extreme value theorem states that if a real-valued function \( f \) is continuous on the closed and bounded interval \( [a,b] \), then \( f \) must attain a maximum and a minimum, each at least once.</p>
 <p>That is, there exist numbers \( c \) and \( d \) in \( [a,b] \) such that: \( f(c) \leq f(x) \leq f(d) \quad \forall x \in [a,b] \).</p>
 <p>In simpler terms, a continuous function on a closed interval will always have a highest point and a lowest point.</p></section>"
-9df36d9d-546f-45e6-b2dc-3b5159b6bf72;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;"<p>The definition of the Rolle&#39;s theorem.</p>";"<section style=""text-align: left""><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>
+9df36d9d-546f-45e6-b2dc-3b5159b6bf72;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;"<p>The definition of the Rolle&#39;s theorem.</p>";"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The Rolle&#39;s theorem is a special case of the mean value theorem.</p>
 <p>The Rolle&#39;s theorem states that if a function \( f(x) \) is:</p>
 <ul>
 <li>Continuous on a closed interval \( [a,b] \)</li>
@@ -496,7 +496,7 @@ ebddf2d2-f380-49bc-9d98-47d69966ce7f;Basic;Math::Calculus::Differentiation;Math 
 </ul>
 <p>Then there exists at least one point \( c \) in the open interval \( (a,b) \) such that \( f'(c) = 0 \).</p>
 <p>Geometrically, this means if a continuous and differentiable curve starts and ends at the same height, there must be at least one point in between where the tangent line is horizontal (i.e., the slope is zero).</p></section>"
-b4edd171-5748-42bd-8392-c5d010a1cfa0;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the mean value theorem (MVT).</p>;"<section style=""text-align: left""><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>
+b4edd171-5748-42bd-8392-c5d010a1cfa0;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the mean value theorem (MVT).</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The mean value theorem is a generalization of Rolle&#39;s theorem.</p>
 <p>The mean value theorem states that if a function \( f(x) \) is:</p>
 <ul>
 <li>Continuous on a closed interval \( [a,b] \)</li>
@@ -508,15 +508,15 @@ b4edd171-5748-42bd-8392-c5d010a1cfa0;Basic;Math::Calculus::Differentiation;Math 
 <p>The Rolle&#39;s theorem can be derived from the mean value theorem: if \( f(a) = f(b) \), then the right side of the mean value theorem equation becomes</p>
 \[ f'(c) = \frac{f(a) - f(a)}{b - a} = \frac{0}{b - a} \]
 <p>which means \( f'(c)=0 \).</p></section>"
-965f6c49-3485-45d0-8590-b369246d02b6;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the intermediate value theorem (IVT).</p>;"<section style=""text-align: left""><p>The intermediate value theorem states that if a function \( f(x) \) is continuous on a closed interval \( [a,b] \), and \( L \) is any value between \( f(a) \) and \( f(b) \), then there exists at least one number \( c \) in the interval \( [a,b] \) such that \( f(c)=L \).</p>
+965f6c49-3485-45d0-8590-b369246d02b6;Basic;Math::Calculus::Differentiation;Math Calculus Differentiation Theory;<p>The definition of the intermediate value theorem (IVT).</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The intermediate value theorem states that if a function \( f(x) \) is continuous on a closed interval \( [a,b] \), and \( L \) is any value between \( f(a) \) and \( f(b) \), then there exists at least one number \( c \) in the interval \( [a,b] \) such that \( f(c)=L \).</p>
 <p>Intuitively, if you can draw the graph of a function without lifting your pencil, and it goes from one y-value to another, it must pass through all the y-values in between.</p></section>"
-68c2408d-7e8a-45b4-9a2d-9288a59f1565;Basic;Math::Calculus::Integration;Math Calculus Integration Theory;<p>What is the fundamental theorem of calculus (FTC)?</p>;"<section style=""text-align: left""><p>Consider a function \( f \) which is continuous on \( [a,b] \).</p>
+68c2408d-7e8a-45b4-9a2d-9288a59f1565;Basic;Math::Calculus::Integration;Math Calculus Integration Theory;<p>What is the fundamental theorem of calculus (FTC)?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Consider a function \( f \) which is continuous on \( [a,b] \).</p>
 <ul>
 <li>If \( F(x) = \int_a^x (t) \, dt \), then \( F'(x) = f(x) \) on \( (a,b) \).</li>
 <li>If \( F \) is any antiderivative of \( f \) on \( [a,b] \) (i.e., \( F'(x)=f(x) \)), then \( \int_a^b f(x) \, dx = F(b) - F(a) \).</li>
 </ul>
 <p>The fundamental theorem of calculus is arguably the most important theorem in elementary calculus, as it establishes the profound connection between differentiation and integration.</p></section>"
-d2206553-b315-40f9-bb47-389c25dcaea9;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
+d2206553-b315-40f9-bb47-389c25dcaea9;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite sequence?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>An infinite sequence is an ordered and indexed list of numbers of the form</p>
 \[ a_1, a_2, a_3, \ldots, a_n, \ldots \]
 <p>denoted as</p>
 \[ \{ a_n \}_{n=1}^{\infty} \]
@@ -524,22 +524,22 @@ d2206553-b315-40f9-bb47-389c25dcaea9;Basic;Math::Calculus::Sequences and Series;
 \[ \{ a_n \}. \]
 <p>Each number \( a_n \) is a term of the sequence.</p>
 <p>The subscript \( n \) is the index variable of the sequence.</p></section>"
-9d5e6a84-15b9-4171-8b90-99eb976db0e1;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the different ways to define a sequence?</p>;"<section style=""text-align: left""><p>An infinite sequence can be defined in various ways:</p>
+9d5e6a84-15b9-4171-8b90-99eb976db0e1;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the different ways to define a sequence?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>An infinite sequence can be defined in various ways:</p>
 <ul>
 <li>By listing terms \( \{ 2, 4, 6, 8, \ldots \} \).</li>
 <li>By an explicit formula that defines the \( n \)-th term directly in terms of \( n \), \( a_n = f(n) \).</li>
 <li>By a recurrence relation, a rule that defines a term based on previous terms in the sequence, \( a_n = f(a_{n-1}, a_{n-2}, \ldots) \).</li>
 </ul></section>"
-9e4e5bb5-2daf-41bd-a9b4-dd6e59d971bd;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit of a sequence?</p>;"<section style=""text-align: left""><p>A sequence \( \{ a_n \} \) converges to a real number \( L \) if for all \( \epsilon > 0 \), there exists an integer \( N \) such that \( |a_n − L| < \epsilon \) if \( n \ge N \). The number \( L \) is the limit of the sequence and we write</p>
+9e4e5bb5-2daf-41bd-a9b4-dd6e59d971bd;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit of a sequence?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>A sequence \( \{ a_n \} \) converges to a real number \( L \) if for all \( \epsilon > 0 \), there exists an integer \( N \) such that \( |a_n − L| < \epsilon \) if \( n \ge N \). The number \( L \) is the limit of the sequence and we write</p>
 \[ \lim_{n \to \infty} a_n = L \text{ or } a_n \to L. \]
 <p>In this case, we say the sequence \( \{a_n\} \) is a <strong>convergent sequence</strong>. If a sequence does not converge, it is a <strong>divergent sequence</strong>, and we say the limit does not exist.</p></section>"
-3a4cf6e0-462b-4936-a83e-d73a974361f7;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the squeeze theorem for sequences?</p>;"<section style=""text-align: left""><p>Consider sequences \( \{a_n\} \), \( \{b_n\} \), and \( \{c_n\} \).
+3a4cf6e0-462b-4936-a83e-d73a974361f7;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the squeeze theorem for sequences?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Consider sequences \( \{a_n\} \), \( \{b_n\} \), and \( \{c_n\} \).
 Suppose there exists an integer \( N \) such that \( a_n \le b_n \le c_n \) for all \( n \ge N \).
 If there exists a real number \( L \) such that</p>
 \[ \lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n, \]
 <p>then \( \{b_n\} \) converges and</p>
 \[ \lim_{n \to \infty} b_n = L \]</section>"
-2d03f4a3-8fbd-47e3-802b-45e07dfbd591;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a bounded sequence?</p>;"<section style=""text-align: left""><p>A sequence \( \{a_n\} \) is <strong>bounded above</strong> if there exists a real number \( M \) such that</p>
+2d03f4a3-8fbd-47e3-802b-45e07dfbd591;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a bounded sequence?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>A sequence \( \{a_n\} \) is <strong>bounded above</strong> if there exists a real number \( M \) such that</p>
 \[ a_n \le M \]
 <p>for all positive integers \( n \).</p>
 <p>A sequence \( \{a_n\} \) is <em>bounded below</em> if there exists a real number \( M \) such that</p>
@@ -547,37 +547,37 @@ If there exists a real number \( L \) such that</p>
 <p>for all positive integers \( n \).</p>
 <p>A sequence \( \{a_n\} \) is a <em>bounded sequence</em> if it is bounded above and bounded below.</p>
 <p>If a sequence is not bounded, it is an <strong>unbounded sequence</strong>.</p></section>"
-0d35933e-044b-4372-a9d9-35feeac16d5d;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between convergent and bounded sequences?</p>;"<section style=""text-align: left""><p>If a sequence \( \{a_n\} \) converges, then it is bounded.</p></section>"
-50e78fcd-dee3-42fd-8780-957495e269e0;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a monotone sequence?</p>;"<section style=""text-align: left""><p>A sequence \( \{a_n\} \) is <strong>increasing</strong> for all \( n \ge n_0 \) if</p>
+0d35933e-044b-4372-a9d9-35feeac16d5d;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between convergent and bounded sequences?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>If a sequence \( \{a_n\} \) converges, then it is bounded.</p></section>"
+50e78fcd-dee3-42fd-8780-957495e269e0;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is a monotone sequence?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>A sequence \( \{a_n\} \) is <strong>increasing</strong> for all \( n \ge n_0 \) if</p>
 \[ a_n \le a_{n+1} \text{ for all } n \ge n_0. \]
 <p>A sequence \( \{a_n\} \) is <strong>decreasing</strong> for all \( n \ge n_0 \) if</p>
 \[ a_n \ge a_{n+1} \text{ for all } n \ge n_0. \]
 <p>A sequence \( \{a_n\} \) is a <strong>monotone sequence</strong> for all \( n \ge n_0 \) if it is increasing for all \( n \ge n_0 \) or decreasing for all \( n \ge n_0 \).</p></section>"
-0bf2e096-b7b1-4adc-8707-3d1e44270212;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the monotone convergence theorem?</p>;"<section style=""text-align: left""><p>If \( \{a_n\} \) is a bounded sequence and there exists a positive integer \( n_0 \) such that \( \{a_n\} \) is monotone for all \( n \ge n_0 \), then \( \{a_n\} \) converges.</p></section>"
-58cab50f-a723-480d-bf0d-3106488662e3;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite series?</p>;"<section style=""text-align: left""><p>An infinite series is a sum of the terms of an infinite sequnce \( a_n \):</p>
+0bf2e096-b7b1-4adc-8707-3d1e44270212;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the monotone convergence theorem?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>If \( \{a_n\} \) is a bounded sequence and there exists a positive integer \( n_0 \) such that \( \{a_n\} \) is monotone for all \( n \ge n_0 \), then \( \{a_n\} \) converges.</p></section>"
+58cab50f-a723-480d-bf0d-3106488662e3;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is an infinite series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>An infinite series is a sum of the terms of an infinite sequnce \( a_n \):</p>
 \[ \sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]</section>"
-93f248cd-b3a3-4dda-bc04-226c19150d29;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the harmonic series?</p>;"<section style=""text-align: left""><p>The harmonic series is an infinite series of the following form</p>
+93f248cd-b3a3-4dda-bc04-226c19150d29;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the harmonic series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The harmonic series is an infinite series of the following form</p>
 \[ \sum_{n=1}^{\infty} \frac{1}{n} \]
 <p>The harmonic series is a special case of the p-series with \( p = 1 \).</p></section>"
-87b92c0f-529b-48f1-a746-b2353f79c5e0;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the harmonic series converge to?</p>;"<section style=""text-align: left""><p>The harmonic series \( \sum_{n=1}^{\infty} \frac{1}{n} \) diverges to infinity.</p></section>"
-a41bf7c5-f5bf-4b2b-93f5-33bf47d34534;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the geometric series?</p>;"<section style=""text-align: left""><p>The geometric series is an infinite series of the following form</p>
+87b92c0f-529b-48f1-a746-b2353f79c5e0;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the harmonic series converge to?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The harmonic series \( \sum_{n=1}^{\infty} \frac{1}{n} \) diverges to infinity.</p></section>"
+a41bf7c5-f5bf-4b2b-93f5-33bf47d34534;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the geometric series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The geometric series is an infinite series of the following form</p>
 \[ \sum_{n=0}^{\infty} a r^{n} = a + ar + ar^2 + ar^3 + \ldots \]</section>"
-dcceaa97-335a-4e0f-a7e1-2bcb44fa9b31;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the geometric series converge to?</p>;"<section style=""text-align: left""><p>The geometric series \( \sum_{n=0}^{\infty} a r^{n} \) converges to \( \frac{a}{1 - r} \) if \( |r| < 1 \), otherwise it diverges.</p></section>"
-eea1c4ce-a96a-4596-8e5e-a67cb648ac49;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the p-series?</p>;"<section style=""text-align: left""><p>The p-series series is an infinite series of the following form</p>
+dcceaa97-335a-4e0f-a7e1-2bcb44fa9b31;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the geometric series converge to?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The geometric series \( \sum_{n=0}^{\infty} a r^{n} \) converges to \( \frac{a}{1 - r} \) if \( |r| < 1 \), otherwise it diverges.</p></section>"
+eea1c4ce-a96a-4596-8e5e-a67cb648ac49;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the p-series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The p-series series is an infinite series of the following form</p>
 \[ \sum_{n=1}^{\infty} \frac{1}{n^p} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \ldots \]</section>"
-f96fd296-19af-4207-8f66-f89f8a78f834;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the p-series converge to?</p>;"<section style=""text-align: left""><p>The p-series \( \sum_{n=1}^{\infty} \frac{1}{n^p} \) converges if \( p > 1 \), otherwise it diverges.</p></section>"
-d6710fcd-97c7-40dc-9d00-4e7b53e085a5;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the telescoping series?</p>;"<section style=""text-align: left""><p>The telescoping series is an infinite series of the following form</p>
+f96fd296-19af-4207-8f66-f89f8a78f834;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What does the p-series converge to?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The p-series \( \sum_{n=1}^{\infty} \frac{1}{n^p} \) converges if \( p > 1 \), otherwise it diverges.</p></section>"
+d6710fcd-97c7-40dc-9d00-4e7b53e085a5;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the telescoping series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The telescoping series is an infinite series of the following form</p>
 \[ \sum_{n=1}^{\infty} a_n - a_{n+1}. \]
 <p>In other words, the telescoping series is a series in which most of the terms cancel in each of the partial sums, leaving only some of the first terms and some of the last terms.</p></section>"
-3e5a7aed-308d-47dd-af71-b29df020ec1b;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the algebraic properties of convergent series?</p>;"<section style=""text-align: left""><p>Let \( \sum_{n=1}^{\infty} a_n \) and \( \sum_{n=1}^{\infty} b_n \) be convergent series. Then the following algebraic properties hold.</p>
+3e5a7aed-308d-47dd-af71-b29df020ec1b;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the algebraic properties of convergent series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Let \( \sum_{n=1}^{\infty} a_n \) and \( \sum_{n=1}^{\infty} b_n \) be convergent series. Then the following algebraic properties hold.</p>
 <ul>
 <li>Sum Rule: The series \( \sum_{n=1}^{\infty} (a_n + b_n) \) converges and \( \sum_{n=1}^{\infty} (a_n + b_n) = \sum_{n=1}^{\infty} a_n + \sum_{n=1}^{\infty} b_n \).</li>
 <li>Difference Rule: The series \( \sum_{n=1}^{\infty} (a_n - b_n) \) converges and \( \sum_{n=1}^{\infty} (a_n - b_n) = \sum_{n=1}^{\infty} a_n - \sum_{n=1}^{\infty} b_n \).</li>
 <li>Constant Multiple Rule: For any real number \( c \), the series \( \sum_{n=1}^{\infty} c a_n \) converges and \( \sum_{n=1}^{\infty} c a_n = c \sum_{n=1}^{\infty} a_n \).</li>
 </ul></section>"
-8b230000-c558-4a4d-9e72-dde74e800a3c;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the divergence test for a series?</p>;"<section style=""text-align: left""><p>Consider the sequence \( a_n \). If \( \lim_{n \to \infty} a_n \neq 0 \) or \( \lim_{n \to \infty} a_n \) does not exist, then the series \( \sum_{n=1}^{\infty} a_n \) diverges.</p>
+8b230000-c558-4a4d-9e72-dde74e800a3c;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the divergence test for a series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Consider the sequence \( a_n \). If \( \lim_{n \to \infty} a_n \neq 0 \) or \( \lim_{n \to \infty} a_n \) does not exist, then the series \( \sum_{n=1}^{\infty} a_n \) diverges.</p>
 <p>The converse is not true. That is, if \( \lim_{n \to \infty} a_n = 0 \), we cannot make any conclusion about the convergence of \( \sum_{n=1}^{\infty} a_n \).</p></section>"
-6193cc59-333f-4fc3-93f1-a2fcf2ae66c2;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the integral test?</p>;"<section style=""text-align: left""><p>Suppose \( \sum_{n = 0}^{\infty} a_n \) is a series with positive terms \( a_n \). Suppose there exists a function \( f \) and a positive integer \( N \) such that the following three conditions are satisfied:</p>
+6193cc59-333f-4fc3-93f1-a2fcf2ae66c2;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the integral test?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Suppose \( \sum_{n = 0}^{\infty} a_n \) is a series with positive terms \( a_n \). Suppose there exists a function \( f \) and a positive integer \( N \) such that the following three conditions are satisfied:</p>
 <ul>
 <li>\( f \) is continuous,</li>
 <li>\( f \) is decreasing, and</li>
@@ -585,49 +585,49 @@ d6710fcd-97c7-40dc-9d00-4e7b53e085a5;Basic;Math::Calculus::Sequences and Series;
 </ul>
 <p>Then \( \sum_{n=1}^{\infty} a_n \) and \( \int_{N}^{\infty} f(x) \, dx \) both converge or both diverge.</p>
 <p>Although convergence of the integral implies convergence of the related series, it does not imply that the value of the integral and the series are the same.</p></section>"
-5efda830-4a1d-4034-9fe8-5ce6c01727a4;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the value of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
-ec76c348-38c2-496b-b913-8a6d8fa30c46;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the remainder of a series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
-5d500a14-517b-4770-a0d4-99193cc658fe;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the direct comparison test?</p>;"<section style=""text-align: left""><p>Suppose there exists an integer \( N \) such that \( 0 \le a_n \le b_n \) for all \( n \ge N \). If \( \sum_{n=1}^{\infty} b_n \) converges, then \( \sum_{n=1}^{\infty} a_n \) converges.</p>
+5efda830-4a1d-4034-9fe8-5ce6c01727a4;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the value of a series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>TODO</p></section>"
+ec76c348-38c2-496b-b913-8a6d8fa30c46;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>How to estimate the remainder of a series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>TODO</p></section>"
+5d500a14-517b-4770-a0d4-99193cc658fe;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the direct comparison test?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Suppose there exists an integer \( N \) such that \( 0 \le a_n \le b_n \) for all \( n \ge N \). If \( \sum_{n=1}^{\infty} b_n \) converges, then \( \sum_{n=1}^{\infty} a_n \) converges.</p>
 <p>Suppose there exists an integer \( N \) such that \( a_n \ge b_n \ge 0 \) for all \( n \ge N \). If \( \sum_{n=1}^{\infty} b_n \) diverges, then \( \sum_{n=1}^{\infty} a_n \) diverges.</p></section>"
-80c0f022-dce7-4522-8911-c264fc044cd9;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit comparison test?</p>;"<section style=""text-align: left""><p>Let \( a_n \), \( b_n \ge 0 \) for all \( n \ge 1 \).</p>
+80c0f022-dce7-4522-8911-c264fc044cd9;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the limit comparison test?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Let \( a_n \), \( b_n \ge 0 \) for all \( n \ge 1 \).</p>
 <p>If \( \lim_{n \to \infty} a_n/b_n = L \ne 0 \), then \( \sum_{n=1}^{\infty} a_n \) and \( \sum_{n=1}^{\infty} b_n \) both converge or both diverge.</p>
 <p>If \( \lim_{n \to \infty} a_n/b_n = 0 \) and \( \sum_{n=1}^{\infty} b_n \) converges, then \( \sum_{n=1}^{\infty} a_n \) converges.</p>
 <p>If \( \lim_{n \to \infty} a_n/b_n = \infty \) and \( \sum_{n=1}^{\infty} b_n \) diverges, then \( \sum_{n=1}^{\infty} a_n \) diverges.</p></section>"
-9b3422e3-6fd1-47e1-8c1a-0e07faca391d;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series?</p>;"<section style=""text-align: left""><p>The alternating series is a sum of the terms of an infinite sequnce \( a_n \) whose terms alternate between positive and negative values:</p>
+9b3422e3-6fd1-47e1-8c1a-0e07faca391d;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The alternating series is a sum of the terms of an infinite sequnce \( a_n \) whose terms alternate between positive and negative values:</p>
 \[ \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - \ldots \]
 <p>or</p>
 \[ \sum_{n=1}^{\infty} (-1)^{n} a_n = - a_1 + a_2 - a_3 + \ldots \]</section>"
-3316723a-346e-480d-aa82-7255f731909b;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series test?</p>;"<section style=""text-align: left""><p>An alternating series of the form \( \sum_{n=1}^{\infty} (-1)^{n+1} \, a_n \) or \( \sum_{n=1}^{\infty} (-1)^{n} \, a_n \) converges if \( 0 < a_{n+1} \le a_n \) for all \( n \ge 1 \) and \( \lim_{n \to \infty} a_n = 0 \).</p></section>"
-e5825e9a-a1c8-4e17-9591-102ed7f6bb72;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the remainder of an alternating series?</p>;"<section style=""text-align: left""><p>TODO</p></section>"
-cc1cac4a-aeae-4629-9052-058ffe55fdfc;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align: left""><p>A series \( \sum_{n=1}^{\infty} a_n \) exhibits <strong>absolute convergence</strong> if \( \sum_{n=1}^{\infty} |a_n| \) converges.</p>
+3316723a-346e-480d-aa82-7255f731909b;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the alternating series test?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>An alternating series of the form \( \sum_{n=1}^{\infty} (-1)^{n+1} \, a_n \) or \( \sum_{n=1}^{\infty} (-1)^{n} \, a_n \) converges if \( 0 < a_{n+1} \le a_n \) for all \( n \ge 1 \) and \( \lim_{n \to \infty} a_n = 0 \).</p></section>"
+e5825e9a-a1c8-4e17-9591-102ed7f6bb72;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the remainder of an alternating series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>TODO</p></section>"
+cc1cac4a-aeae-4629-9052-058ffe55fdfc;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the relationship between absolute and conditional convergence?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>A series \( \sum_{n=1}^{\infty} a_n \) exhibits <strong>absolute convergence</strong> if \( \sum_{n=1}^{\infty} |a_n| \) converges.</p>
 <p>A series \( \sum_{n=1}^{\infty} a_n \) exhibits <strong>conditional convergence</strong> if \( \sum_{n=1}^{\infty} a_n \) converges but \( \sum_{n=1}^{\infty} |a_n| \) diverges.</p>
 <p>If \( \sum_{n=1}^{\infty} |a_n| \) converges, then \( \sum_{n=1}^{\infty} a_n \) converges.</p></section>"
-90ae712b-a1a7-491c-b221-7fe0d9feb589;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the ratio test?</p>;"<section style=""text-align: left""><p>Consider the series \( \sum_{n=1}^{\infty} a_n \) with nonzero terms. Let</p>
+90ae712b-a1a7-491c-b221-7fe0d9feb589;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the ratio test?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Consider the series \( \sum_{n=1}^{\infty} a_n \) with nonzero terms. Let</p>
 \[ \rho = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
 <ul>
 <li>If \( 0 \le \rho < 1 \), then \( \sum_{n=1}^{\infty} a_n \) converges absolutely.</li>
 <li>If \( \rho > 1 \) or \( \rho = \infty \), then \( \sum_{n=1}^{\infty} a_n \) diverges.</li>
 <li>If \( \rho = 1 \), the test does not provide any information.</li>
 </ul></section>"
-b59ec2f4-4814-43e0-834f-5ce63e389835;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the root test?</p>;"<section style=""text-align: left""><p>Consider the series \( \sum_{n=1}^{\infty} a_n \). Let</p>
+b59ec2f4-4814-43e0-834f-5ce63e389835;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the root test?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Consider the series \( \sum_{n=1}^{\infty} a_n \). Let</p>
 \[ \rho = \lim_{n \to \infty} \sqrt[n]{|a_n|} \]
 <ul>
 <li>If \( 0 \le \rho < 1 \), then \( \sum_{n=1}^{\infty} a_n \) converges absolutely.</li>
 <li>If \( \rho > 1 \) or \( \rho = \infty \), then \( \sum_{n=1}^{\infty} a_n \) diverges.</li>
 <li>If \( \rho = 1 \), the test does not provide any information.</li>
 </ul></section>"
-4a903ff1-242d-4f52-80af-1bfbaeb46c0a;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the power series?</p>;"<section style=""text-align: left""><p>The power series centered at \( x = 0 \) is an infinite series of the following form</p>
+4a903ff1-242d-4f52-80af-1bfbaeb46c0a;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What is the power series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The power series centered at \( x = 0 \) is an infinite series of the following form</p>
 \[ \sum_{n=0}^{\infty} c_n x^n = c_0 + c_1 x + c_2 x^2 + \ldots \]
 <p>The power series centered at \( x = a \) is an infinite series of the following form</p>
 \[ \sum_{n=0}^{\infty} c_n (x - a)^n = c_0 + c_1 (x - a) + c_2 (x - a)^2 + \ldots \]
 <p>where \( x \) is a variable and the coefficients \( c_n \) are constants.</p></section>"
-1a794726-d3d3-47ca-9a3a-850ea9f2b75b;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the convergence properties of a power series?</p>;"<section style=""text-align: left""><p>Consider the power series \( \sum_{n=0}^{\infty} c_n (x - a)^n \). The series satisfies exactly one of the following properties:</p>
+1a794726-d3d3-47ca-9a3a-850ea9f2b75b;Basic;Math::Calculus::Sequences and Series;Math Calculus Sequences-and-Series Theory;<p>What are the convergence properties of a power series?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Consider the power series \( \sum_{n=0}^{\infty} c_n (x - a)^n \). The series satisfies exactly one of the following properties:</p>
 <ul>
 <li>The series converges at \( x=a \) and diverges for all \( x \ne a \).</li>
 <li>The series converges for all real numbers \( x \).</li>
 <li>There exists a real number \( R>0 \) such that the series converges if \( |x − a| < R \) and diverges if \( |x − a| > R \). At the values \( x \) where \( |x − a| = R \), the series may converge or diverge.</li>
 </ul></section>"
-e304cc52-6040-4bc0-98ea-edd399f56746;Basic;Math::Calculus::Vector Calculus;Math Calculus Vectors Theory;<p>What is the dot product?</p>;"<section style=""text-align: left""><p>Consider two vectors \( \mathbf{a} \) and \( \mathbf{b} \) in an \( n \)-dimensional space \( \mathbf{a} = [a_1, a_2, \ldots, a_n] \), \( \mathbf{b} = [b_1, b_2, \ldots, b_n] \).</p>
+e304cc52-6040-4bc0-98ea-edd399f56746;Basic;Math::Calculus::Vector Calculus;Math Calculus Vectors Theory;<p>What is the dot product?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Consider two vectors \( \mathbf{a} \) and \( \mathbf{b} \) in an \( n \)-dimensional space \( \mathbf{a} = [a_1, a_2, \ldots, a_n] \), \( \mathbf{b} = [b_1, b_2, \ldots, b_n] \).</p>
 <p><strong>Algebraic Definition</strong></p>
 <p>The dot product of \( \mathbf{a} \) and \( \mathbf{b} \) is computed as the sum of the products of the corresponding components:</p>
 \[ \mathbf{a} \cdot \mathbf{b} = a_1 b_1 + a_2 b_2 + \ldots + a_n b_n = \sum_{i = 1}^{n} a_i b_i \]
@@ -640,7 +640,7 @@ e304cc52-6040-4bc0-98ea-edd399f56746;Basic;Math::Calculus::Vector Calculus;Math 
 <li>\( \| \mathbf{a} \| \) is the magnitude (length) of vector \( \mathbf{b} \).</li>
 <li>\( \theta \) is the angle between the two vectors.</li>
 </ul></section>"
-8d73624b-56e4-47b7-b6cc-34f17d1a740a;Basic;Math::Calculus::ODE;Math Calculus Differential-Equation ODE Theory;<p>What is an ordinary differential equation (ODE)?</p>;"<section style=""text-align: left""><p>An ordinary differential equation is a mathematical equation that relates an unknown function of a single independent variable to its derivatives with respect to that variable.</p>
+8d73624b-56e4-47b7-b6cc-34f17d1a740a;Basic;Math::Calculus::ODE;Math Calculus Differential-Equation ODE Theory;<p>What is an ordinary differential equation (ODE)?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>An ordinary differential equation is a mathematical equation that relates an unknown function of a single independent variable to its derivatives with respect to that variable.</p>
 <p>A general \( n \)-th order ordinary differential equation can be expressed as</p>
 \[ F(x, y, y', y'', \ldots, y^{(n)}) = 0 \]
 <p>where</p>
@@ -651,10 +651,10 @@ e304cc52-6040-4bc0-98ea-edd399f56746;Basic;Math::Calculus::Vector Calculus;Math 
 <li>\( F \) is a given function relating all these variables and derivatives.</li>
 </ul>
 <p>The solution for a differential equation is a function which satisfies the above expression.</p></section>"
-8d7d62ea-207c-4014-ac47-501c77a67f4b;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the definition of the Laplace transform?</p>;"<section style=""text-align: left""><p>The Laplace transform of a function \( f(t) \) is a function \( F(s) \) defined as</p>
+8d7d62ea-207c-4014-ac47-501c77a67f4b;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the definition of the Laplace transform?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The Laplace transform of a function \( f(t) \) is a function \( F(s) \) defined as</p>
 \[ F(s) = \mathscr{L}\{f\} = \int_0^\infty e^{-st} f(t) \, dt \]
 <p>where \( f(t) \) is a function of exponential order defined for all \( t \ge 0 \).</p></section>"
-43a42217-1482-4ab0-8079-f7f96de5c025;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \( f(t) \) has the transform \( F(s) \) then</p>
+43a42217-1482-4ab0-8079-f7f96de5c025;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the first translation or shifting property of the Laplace transform?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>If \( f(t) \) has the transform \( F(s) \) then</p>
 \[ \mathscr{L}\{e^{ct} f(t)\} = F(s - c) \]
 \[ \mathscr{L}^{-1}\{F(s - c)\} = e^{ct} f(t) \]
 <p>Example:</p>
@@ -662,7 +662,7 @@ e304cc52-6040-4bc0-98ea-edd399f56746;Basic;Math::Calculus::Vector Calculus;Math 
 \[ \mathscr{L}\{ \cos 2t \} = \frac{s}{s^2 + 4} \]
 <p>we have</p>
 \[ \mathscr{L}\{ e^{3t} \cos 2t \} = F(s - 3) = \frac{(s - 3)}{(s - 3)^2 + 4} \]</section>"
-3cc7581d-2936-4cb0-b698-5dd80e0fc009;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \( f(t) \) has the transform \( F(s) \) then</p>
+3cc7581d-2936-4cb0-b698-5dd80e0fc009;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the second translation or shifting property of the Laplace transform?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>If \( f(t) \) has the transform \( F(s) \) then</p>
 \[ \mathscr{L}\{f(t - c) \, u(t - c)\} = e^{-cs} F(s) \]
 \[ \mathscr{L}^{-1}\{e^{-cs} F(s)\} = f(t - c) \, u(t - c) \]
 <p>where \( u(t - c) \) is the unit step function, which is defined as</p>
@@ -677,7 +677,7 @@ e304cc52-6040-4bc0-98ea-edd399f56746;Basic;Math::Calculus::Vector Calculus;Math 
 \[ \mathscr{L}\{ t^3 \} = \frac{6}{s^4} \]
 <p>we have</p>
 \[ \mathscr{L}\{ f(t - 2) \, u(t - 2) \} = e^{-2s} F(s) = e^{-2s} \frac{6}{s^4} \]</section>"
-39a2b3cf-dfbe-46cf-91ab-33a532832f8f;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the change of scale property of the Laplace transform?</p>;"<section style=""text-align: left""><p>If \( f(t) \) has the transform \( F(s) \) then</p>
+39a2b3cf-dfbe-46cf-91ab-33a532832f8f;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the change of scale property of the Laplace transform?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>If \( f(t) \) has the transform \( F(s) \) then</p>
 \[ \mathscr{L}\{ f(ct) \} = \frac{1}{c} F \left( \frac{s}{c} \right) \]
 \[ \mathscr{L}^{-1} \left\{ \frac{1}{c} F \left( \frac{s}{c} \right) \right\} = f(ct) \]
 <p>Example:</p>
@@ -685,19 +685,19 @@ e304cc52-6040-4bc0-98ea-edd399f56746;Basic;Math::Calculus::Vector Calculus;Math 
 \[ \mathscr{L}\{ \sin t \} = \frac{1}{s^2 + 1} \]
 <p>we have</p>
 \[ \mathscr{L}\{ \sin 3t \} = \frac{1}{3} F \left( \frac{s}{3} \right) = \frac{1}{3} \frac{1}{(s/3)^2 + 1} = \frac{3}{s^2 + 9} \]</section>"
-eac4b24c-640b-4fc1-84fb-824606f2f347;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit step function \( u(t - c) \)?</p>;"<section style=""text-align: left""><p>The unit step function (Heaviside function) \( u(t - c) \) is defined as</p>
+eac4b24c-640b-4fc1-84fb-824606f2f347;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit step function \( u(t - c) \)?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The unit step function (Heaviside function) \( u(t - c) \) is defined as</p>
 \[ u(t - c) = \left\{
 \begin{array}{ll}
     1 & t \ge c \\
     0 & t < c
 \end{array}
 \right. \]</section>"
-916a6953-0bc7-4fec-af26-c4e3d98ce08c;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the effect of multiplying by the unit step function \( u(t - c) \)?</p>;"<section style=""text-align: left""><p>Let \( f(t) = 0 \) for all \( t < 0 \).</p>
+916a6953-0bc7-4fec-af26-c4e3d98ce08c;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the effect of multiplying by the unit step function \( u(t - c) \)?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>Let \( f(t) = 0 \) for all \( t < 0 \).</p>
 <ul>
 <li>\( f(t) u(t - c) \) with \( c > 0 \) is \( f(t) \) switched on at the point \( c \).</li>
 <li>\( f(t - c) u(t - c) \) with \( c > 0 \) is \( f(t) \) shifted (translated) to the right by the amount \( c \).</li>
 </ul></section>"
-d9403f39-2452-4940-855d-86a86391fe40;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit impulse function \( \delta(t - c) \)?</p>;"<section style=""text-align: left""><p>The unit impulse function (Dirac delta function) \( \delta(t - c) \) is a function that has the following properties.</p>
+d9403f39-2452-4940-855d-86a86391fe40;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the unit impulse function \( \delta(t - c) \)?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The unit impulse function (Dirac delta function) \( \delta(t - c) \) is a function that has the following properties.</p>
 <p><strong>Infinite at the origin \( c \), zero everywhere else:</strong></p>
 \[ \delta(t - c) = \left\{
 \begin{array}{ll}
@@ -710,9 +710,9 @@ d9403f39-2452-4940-855d-86a86391fe40;Basic;Math::Calculus::Laplace Transform;Mat
 <p><strong>Shifting or sampling property:</strong></p>
 \[ \int_{-\infty}^{\infty} f(t) \delta (t - c) \, dt = f(c) \]
 <p>The unit impulse function is technically not a function but a <strong>generalized function</strong> or <strong>distribution</strong>.</p></section>"
-fdaf1b7b-fe9b-4efc-af85-fa35f0c3dab2;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the derivative of the unit step function?</p>;"<section style=""text-align: left""><p>The derivative of the unit step function (Heaviside function) is the unit impulse function (Dirac delta function);</p>
+fdaf1b7b-fe9b-4efc-af85-fa35f0c3dab2;Basic;Math::Calculus::Laplace Transform;Math Calculus Laplace-Transform Theory;<p>What is the derivative of the unit step function?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>The derivative of the unit step function (Heaviside function) is the unit impulse function (Dirac delta function);</p>
 \[ \frac{d}{dt} u(t) = \delta(t) \]</section>"
-205a5237-31f0-4e31-867b-a9f6b6f02dca;Basic;Math::Calculus::PDE;Math Calculus Differential-Equation PDE Theory;<p>What is an partial differential equation (PDE)?</p>;"<section style=""text-align: left""><p>A partial differential equation is a mathematical equation that involves an unknown function of multiple independent variables and its partial derivatives with respect to those variables.</p>
+205a5237-31f0-4e31-867b-a9f6b6f02dca;Basic;Math::Calculus::PDE;Math Calculus Differential-Equation PDE Theory;<p>What is an partial differential equation (PDE)?</p>;"<section style=""text-align:left;margin:0 auto;max-width:40rem""><p>A partial differential equation is a mathematical equation that involves an unknown function of multiple independent variables and its partial derivatives with respect to those variables.</p>
 <p>A general \( k \)-th order partial differential equation involving an unknown function \( u \) of \( n \) independent variables \( x_1, x_2, \dots, x_n \) can be expressed as</p>
 \[ F\left( x_1, x_2, \dots, x_n, u, \frac{\partial u}{\partial x_1}, \dots, \frac{\partial u}{\partial x_n}, \frac{\partial^2 u}{\partial x_1^2}, \dots, \frac{\partial^k u}{\partial x_{i_1} \partial x_{i_2} \dots \partial x_{i_k}} \right) = 0 \]
 <p>where</p>

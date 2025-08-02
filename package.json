@@ -23,5 +23,9 @@
     "esbuild": "^0.25.8",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "export": "anotes export --dir=notes",
+    "insert-id": "anotes insert-id --dir=notes"
   }
 }
