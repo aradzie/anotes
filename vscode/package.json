@@ -43,10 +43,14 @@
   },
   "dependencies": {
     "@anki-xyz/anki-export": "*",
-    "@anki-xyz/notes-format": "*"
+    "@anki-xyz/notes-format": "*",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
     "@types/vscode": "^1.102.0"
   },
   "scripts": {

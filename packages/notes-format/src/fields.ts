@@ -5,7 +5,7 @@ type FieldConfig = {
   format: (value: string, template: string, renderer?: Renderer) => string;
 };
 
-const frontField = {
+const frontField: FieldConfig = {
   format: (value: string, template: string, renderer?: Renderer) => {
     const parser = new Marked();
     parser.use(latexExtension(renderer));
@@ -19,9 +19,9 @@ const frontField = {
         throw new Error(`Unknown template: ${template}`);
     }
   },
-} satisfies FieldConfig;
+};
 
-const backField = {
+const backField: FieldConfig = {
   format: (value: string, template: string, renderer?: Renderer) => {
     const parser = new Marked();
     parser.use(latexExtension(renderer));
@@ -30,14 +30,14 @@ const backField = {
       case "Basic":
         return `${value}`;
       case "Definition":
-        return `<section style="text-align: left">${value}</section>`;
+        return `<section style="text-align:left;margin:0 auto;max-width:40rem">${value}</section>`;
       default:
         throw new Error(`Unknown template: ${template}`);
     }
   },
-} satisfies FieldConfig;
+};
 
-const exampleField = {
+const exampleField: FieldConfig = {
   format: (value: string, template: string, renderer?: Renderer) => {
     const parser = new Marked();
     parser.use(latexExtension(renderer));
@@ -51,7 +51,7 @@ const exampleField = {
         throw new Error(`Unknown template: ${template}`);
     }
   },
-} satisfies FieldConfig;
+};
 
 const allFields = new Map<string, FieldConfig>([
   ["front", frontField],

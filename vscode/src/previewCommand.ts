@@ -1,5 +1,5 @@
 import { ViewColumn, WebviewPanel, window, workspace } from "vscode";
-import { renderNotesToHtml } from "./render.js";
+import { renderNotesToHtml } from "./preview/render.js";
 import { debounce } from "./util.js";
 
 const previewPanels = new Map<string, WebviewPanel>();
@@ -41,7 +41,7 @@ export function previewCommand() {
 
   const update = () => {
     if (panel) {
-      panel.webview.html = renderNotesToHtml(document.getText());
+      panel.webview.html = renderNotesToHtml(docUri, document.getText());
     }
   };
 

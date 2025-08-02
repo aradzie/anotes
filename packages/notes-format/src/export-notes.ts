@@ -12,7 +12,7 @@ function exportNotes(notes: readonly Note[]): string {
   for (const { type, deck, tags, template, id, fields } of notes) {
     const fmt = [];
     for (const [name, config] of allFields) {
-      const value = fields[name];
+      const value = fields[name]?.trim();
       fmt.push(value ? config.format(value, template) : "");
     }
     lines.push([id, type, deck, tags, ...fmt].map(formatField).join(";"));
@@ -35,7 +35,7 @@ function exportNotesJson(notes: readonly Note[]): unknown {
   return notes.map(({ type, deck, tags, template, id, fields }) => {
     const fmt: Record<string, string> = {};
     for (const [name, config] of allFields) {
-      const value = fields[name];
+      const value = fields[name]?.trim();
       fmt[name] = value ? config.format(value, template) : "";
     }
     return { id, type, deck, tags, fields: fmt };
