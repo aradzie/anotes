@@ -1,4 +1,4 @@
-import { allFields, Note, renderer } from "@anotes/core";
+import { allFields, type Note, renderHtml } from "@anotes/core";
 
 export function Preview({ notes }: { notes: Note[] }) {
   return (
@@ -76,7 +76,7 @@ function Field({ template, name, config, value }: { template: string; name: stri
       </p>
       <div
         dangerouslySetInnerHTML={{
-          __html: config.format(value, template, renderer.toHtml({ output: "html" })),
+          __html: config.format(value, template, renderHtml({ output: "html" })),
         }}
       />
     </div>
