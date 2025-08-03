@@ -1,10 +1,10 @@
 import { ViewColumn, WebviewPanel, window, workspace } from "vscode";
-import { renderNotesToHtml } from "./preview/render.js";
-import { debounce } from "./util.js";
+import { renderNotesToHtml } from "../preview/render.js";
+import { debounce } from "../util.js";
 
 const previewPanels = new Map<string, WebviewPanel>();
 
-export function previewCommand() {
+export function openPreview() {
   const editor = window.activeTextEditor;
   if (!editor) {
     window.showErrorMessage("No active editor to preview from.");
