@@ -13,6 +13,11 @@ export function Note1({ note }: { note: Note }) {
         color: "black",
         border: "1px dotted gray",
       }}
+      data-note-id={note.id}
+      data-note-type={note.type}
+      data-note-deck={note.deck}
+      data-note-tags={note.tags}
+      data-note-template={note.template}
     >
       <Meta note={note} />
       <FieldList note={note} />

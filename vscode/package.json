@@ -2,6 +2,7 @@
   "name": "anki-notes",
   "displayName": "anki-notes",
   "version": "0.0.1",
+  "publisher": "master",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -9,6 +10,10 @@
     "Other"
   ],
   "main": "./dist/extension.js",
+  "activationEvents": [
+    "onLanguage:anki-notes",
+    "onWebviewPanel:anki-notes.preview"
+  ],
   "contributes": {
     "languages": [
       {
@@ -32,13 +37,18 @@
     ],
     "commands": [
       {
-        "command": "anki-notes.openPreviewToTheSide",
-        "title": "Anki Notes: Open Preview to the Side",
+        "command": "anki-notes.showPreview",
+        "title": "Anki Notes: Show Preview",
         "category": "Anki Notes"
       },
       {
-        "command": "anki-notes.openPreview",
-        "title": "Anki Notes: Open Preview",
+        "command": "anki-notes.showPreviewToTheSide",
+        "title": "Anki Notes: Show Preview to the Side",
+        "category": "Anki Notes"
+      },
+      {
+        "command": "anki-notes.showLockedPreviewToTheSide",
+        "title": "Anki Notes: Show Locked Preview to the Side",
         "category": "Anki Notes"
       },
       {
@@ -49,22 +59,27 @@
     ],
     "keybindings": [
       {
-        "command": "anki-notes.openPreviewToTheSide",
-        "key": "ctrl+k v",
-        "mac": "cmd+k v",
+        "command": "anki-notes.showPreview",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
         "when": "editorLangId == anki-notes"
       },
       {
-        "command": "anki-notes.openPreview",
-        "key": "ctrl+shift+v",
-        "mac": "cmd+shift+v",
+        "command": "anki-notes.showPreviewToTheSide",
+        "key": "ctrl+k v",
+        "mac": "cmd+k v",
         "when": "editorLangId == anki-notes"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "anki-notes.openPreviewToTheSide",
+          "command": "anki-notes.showPreviewToTheSide",
+          "when": "editorLangId == anki-notes",
+          "group": "anki-notes"
+        },
+        {
+          "command": "anki-notes.showPreview",
           "when": "editorLangId == anki-notes",
           "group": "anki-notes"
         },
@@ -74,11 +89,11 @@
           "group": "anki-notes"
         }
       ],
-      "editor/title": [
+      "explorer/context": [
         {
-          "command": "anki-notes.openPreviewToTheSide",
-          "when": "editorLangId == anki-notes",
-          "group": "navigation"
+          "command": "anki-notes.showPreview",
+          "when": "resourceLangId == anki-notes",
+          "group": "anki-notes"
         }
       ]
     },
@@ -90,26 +105,6 @@
           "description": "Automatically insert unique note identifiers on save.",
           "default": true,
           "type": "boolean"
-        },
-        "anki-notes.liveUpdate": {
-          "description": "Re-render the preview as the contents of the source changes, without requiring the source buffer to be saved. If disabled, the preview is re-rendered only when the buffer is saved to disk.",
-          "default": true,
-          "type": "boolean"
-        },
-        "anki-notes.scrollSync": {
-          "description": "Automatic scroll sync.",
-          "default": true,
-          "type": "boolean"
-        },
-        "anki-notes.previewMode": {
-          "markdownDescription": "- **Single Preview**: Only one preview will be shown for all editors.\n- **Multiple Previews**: Multiple previews will be shown. Each editor has its own preview.\n- **Previews Only**: No editor will be shown. Only previews will be shown. You can use the in-preview editor to edit the markdown.\n\nRestart is required after changes.",
-          "type": "string",
-          "enum": [
-            "Single Preview",
-            "Multiple Previews",
-            "Previews Only"
-          ],
-          "default": "Single Preview"
         }
       }
     }
