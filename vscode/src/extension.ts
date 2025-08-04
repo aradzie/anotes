@@ -1,5 +1,5 @@
 import vscode from "vscode";
-import { insertId } from "./insertId.js";
+import { insertIdCommand, insertIdOnSave } from "./note-id.js";
 import { PreviewManager } from "./preview.js";
 
 export function activate(context: vscode.ExtensionContext) {
@@ -20,7 +20,8 @@ export function activate(context: vscode.ExtensionContext) {
       manager.showPreview(/* sideBySide = */ true, /* locked= */ true),
     ),
   );
-  context.subscriptions.push(vscode.commands.registerCommand("anki-notes.insertId", insertId));
+  context.subscriptions.push(vscode.commands.registerCommand("anki-notes.insertId", insertIdCommand));
+  context.subscriptions.push(vscode.workspace.onWillSaveTextDocument(insertIdOnSave));
 }
 
 export function deactivate() {}
