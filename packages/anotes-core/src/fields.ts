@@ -1,62 +1,10 @@
 import { Marked } from "marked";
 import { latexExtension, type Renderer } from "./marked-latex.js";
 
-type FieldConfig = {
-  format: (value: string, template: string, renderer?: Renderer) => string;
-};
+function formatField(value: string, renderer?: Renderer): string {
+  const parser = new Marked();
+  parser.use(latexExtension(renderer));
+  return parser.parse(value.trim(), { async: false }).trim();
+}
 
-const frontField: FieldConfig = {
-  format: (value: string, template: string, renderer?: Renderer) => {
-    const parser = new Marked();
-    parser.use(latexExtension(renderer));
-    value = parser.parse(value.trim(), { async: false }).trim();
-    switch (template) {
-      case "Basic":
-        return `${value}`;
-      case "Definition":
-        return `${value}`;
-      default:
-        throw new Error(`Unknown template: ${template}`);
-    }
-  },
-};
-
-const backField: FieldConfig = {
-  format: (value: string, template: string, renderer?: Renderer) => {
-    const parser = new Marked();
-    parser.use(latexExtension(renderer));
-    value = parser.parse(value.trim(), { async: false }).trim();
-    switch (template) {
-      case "Basic":
-        return `${value}`;
-      case "Definition":
-        return `<section style="text-align:left;margin:0 auto;max-width:40rem">${value}</section>`;
-      default:
-        throw new Error(`Unknown template: ${template}`);
-    }
-  },
-};
-
-const exampleField: FieldConfig = {
-  format: (value: string, template: string, renderer?: Renderer) => {
-    const parser = new Marked();
-    parser.use(latexExtension(renderer));
-    value = parser.parse(value.trim(), { async: false }).trim();
-    switch (template) {
-      case "Basic":
-        return `<section style="text-align: left">${value}</section>`;
-      case "Definition":
-        return `<section style="text-align: left">${value}</section>`;
-      default:
-        throw new Error(`Unknown template: ${template}`);
-    }
-  },
-};
-
-const allFields = new Map<string, FieldConfig>([
-  ["front", frontField],
-  ["back", backField],
-  // ["example", exampleField],
-]);
-
-export { type FieldConfig, allFields };
+export { formatField };

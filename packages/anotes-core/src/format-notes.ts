@@ -1,21 +1,14 @@
 import type { Note } from "./note.js";
 
-function formatNotes(notes: readonly Note[]): string {
+function formatNotes(notes: readonly Readonly<Note>[]): string {
   const lines = [];
-  let type0 = "";
-  let deck0 = "";
-  let tags0 = "";
-  let template0 = "";
-  for (let {
-    type,
-    deck,
-    tags,
-    template,
-    id,
-    fields: { front = "", back = "" },
-  } of notes) {
-    if (type !== type0) {
-      lines.push(`!type: ${type}`);
+  let type0 = null;
+  let deck0 = null;
+  let tags0 = null;
+  let template0 = null;
+  for (let { type, deck, tags, template, id, fields } of notes) {
+    if (type.name !== type0) {
+      lines.push(`!type: ${type.name}`);
     }
     if (deck !== deck0) {
       lines.push(`!deck: ${deck}`);
@@ -27,30 +20,22 @@ function formatNotes(notes: readonly Note[]): string {
       lines.push(`!template: ${template}`);
     }
     lines.push("");
-
     if (id) {
       lines.push(`!id: ${id}`);
     }
-
-    front = front.trim();
-    if (isMultiline(front)) {
-      lines.push(`!front:`);
-      lines.push(front);
-    } else {
-      lines.push(`!front: ${front}`);
+    for (const { name } of type.fields) {
+      const value = fields[name]?.trim();
+      if (value) {
+        if (isMultiline(value)) {
+          lines.push(`!${name.toLowerCase()}:`);
+          lines.push(value);
+        } else {
+          lines.push(`!${name.toLowerCase()}: ${value}`);
+        }
+      }
     }
-
-    back = back.trim();
-    if (isMultiline(back)) {
-      lines.push(`!back:`);
-      lines.push(back);
-    } else {
-      lines.push(`!back: ${back}`);
-    }
-
     lines.push("~~~");
-
-    type0 = type;
+    type0 = type.name;
     deck0 = deck;
     tags0 = tags;
     template0 = template;

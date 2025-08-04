@@ -1,5 +1,4 @@
-import { allFields } from "./fields.js";
-import type { Note } from "./note.js";
+import { basicNoteType, findByName, type Note, noteTypes } from "./note.js";
 
 const pattern = /^!(?<name>[a-zA-Z0-9]+):(?<value>.*)$/;
 
@@ -10,23 +9,17 @@ function parseNotes(source: string, text: string, notes: Note[]): void {
     return `[${source}:${lineIndex}]: ${message}`;
   }
 
-  function blank(): Pick<Note, "id" | "fields"> {
-    return {
-      id: null,
-      fields: Object.fromEntries([...allFields.keys()].map((name) => [name, ""])),
-    };
-  }
-
-  let current = {
-    type: "Basic",
+  let note: Note = {
+    type: basicNoteType,
     deck: "",
     tags: "",
     template: "Basic",
-    ...blank(),
-  } satisfies Note;
+    id: null,
+    fields: {},
+  };
 
   let state = "card";
-  let field = "";
+  let fieldName = "";
   let seen = new Set();
 
   function checkUnique(name: string) {
@@ -40,44 +33,45 @@ function parseNotes(source: string, text: string, notes: Note[]): void {
     switch (name) {
       case "type":
         checkUnique(name);
-        current.type = value.trim();
+        const type = findByName(noteTypes, value);
+        if (type == null) {
+          throw new SyntaxError(errorMessage(`Unknown note type [${value}]`));
+        }
+        note.type = type;
         return true;
       case "deck":
         checkUnique(name);
-        current.deck = value.trim();
+        note.deck = value;
         return true;
       case "tags":
         checkUnique(name);
-        current.tags = value.trim();
+        note.tags = value;
         return true;
       case "template":
         checkUnique(name);
-        current.template = value.trim();
+        note.template = value;
         return true;
       case "id":
         checkUnique(name);
-        current.id = value.trim();
+        note.id = value;
         return true;
     }
     return false;
   }
 
   function setField(name: string, value: string) {
-    if (allFields.has(name)) {
-      checkUnique(name);
-      field = name;
-      current.fields[field] = value;
+    const field = findByName(note.type.fields, name);
+    if (field != null) {
+      checkUnique(field.name);
+      fieldName = field.name;
+      note.fields[fieldName] = value;
       return true;
     }
     return false;
   }
 
-  function appendField(name: string, value: string) {
-    if (allFields.has(name)) {
-      current.fields[name] += "\n" + value;
-      return true;
-    }
-    return false;
+  function appendField(value: string) {
+    note.fields[fieldName] += "\n" + value;
   }
 
   for (let line of text.split(/\n/g)) {
@@ -89,13 +83,14 @@ function parseNotes(source: string, text: string, notes: Note[]): void {
 
     if (line.startsWith("~~~")) {
       // Finalize a card.
-      notes.push(current);
-      current = {
-        ...current, // Retain shared properties.
-        ...blank(), // Reset fields.
+      notes.push(note);
+      note = {
+        ...note, // Retain shared properties.
+        id: null,
+        fields: {},
       };
       state = "card";
-      field = "";
+      fieldName = "";
       seen.clear();
       continue;
     }
@@ -109,7 +104,7 @@ function parseNotes(source: string, text: string, notes: Note[]): void {
       if (m) {
         const { name, value } = m.groups as { name: string; value: string };
 
-        if (setProperty(name, value)) {
+        if (setProperty(name, value.trim())) {
           state = "card";
           continue;
         }
@@ -130,7 +125,7 @@ function parseNotes(source: string, text: string, notes: Note[]): void {
       if (m) {
         const { name, value } = m.groups as { name: string; value: string };
 
-        if (setProperty(name, value)) {
+        if (setProperty(name, value.trim())) {
           state = "card";
           continue;
         }
@@ -143,7 +138,7 @@ function parseNotes(source: string, text: string, notes: Note[]): void {
         throw new SyntaxError(errorMessage(`Unknown property [${name}]`));
       }
 
-      appendField(field, line);
+      appendField(line);
     }
   }
 

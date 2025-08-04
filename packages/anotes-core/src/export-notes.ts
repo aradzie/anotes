@@ -1,7 +1,7 @@
-import { allFields } from "./fields.js";
-import type { Note } from "./note.js";
+import { formatField } from "./fields.js";
+import { type Note } from "./note.js";
 
-function exportNotes(notes: readonly Note[]): string {
+function exportNotes(notes: readonly Readonly<Note>[]): string {
   const lines = [];
   lines.push(`#separator:semicolon`);
   lines.push(`#html:true`);
@@ -9,19 +9,19 @@ function exportNotes(notes: readonly Note[]): string {
   lines.push(`#notetype column:2`);
   lines.push(`#deck column:3`);
   lines.push(`#tags column:4`);
-  for (const { type, deck, tags, template, id, fields } of notes) {
+  for (const { type, deck, tags, id, fields } of notes) {
     const fmt = [];
-    for (const [name, config] of allFields) {
+    for (const { name } of type.fields) {
       const value = fields[name]?.trim();
-      fmt.push(value ? config.format(value, template) : "");
+      fmt.push(value ? formatField(value) : "");
     }
-    lines.push([id, type, deck, tags, ...fmt].map(formatField).join(";"));
+    lines.push([id, type.name, deck, tags, ...fmt].map(escape).join(";"));
   }
   lines.push("");
   return lines.join("\n");
 }
 
-function formatField(value: string | null): string {
+function escape(value: string | null): string {
   if (value === null) {
     return "";
   }
@@ -31,15 +31,4 @@ function formatField(value: string | null): string {
   return value;
 }
 
-function exportNotesJson(notes: readonly Note[]): unknown {
-  return notes.map(({ type, deck, tags, template, id, fields }) => {
-    const fmt: Record<string, string> = {};
-    for (const [name, config] of allFields) {
-      const value = fields[name]?.trim();
-      fmt[name] = value ? config.format(value, template) : "";
-    }
-    return { id, type, deck, tags, fields: fmt };
-  });
-}
-
-export { exportNotes, exportNotesJson };
+export { exportNotes };

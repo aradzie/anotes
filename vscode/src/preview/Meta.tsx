@@ -7,7 +7,7 @@ export function Meta({ note }: { note: Note }) {
         <strong>id</strong>: {note.id}
       </p>
       <p style={{ borderBottom: "1px dotted lightgray" }}>
-        <strong>type</strong>: {note.type}
+        <strong>type</strong>: {note.type.name}
       </p>
       <p style={{ borderBottom: "1px dotted lightgray" }}>
         <strong>deck</strong>: {note.deck}
