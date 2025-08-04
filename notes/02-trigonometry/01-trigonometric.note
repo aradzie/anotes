@@ -196,40 +196,136 @@ Related:
 
 !id: 816b1427-7e2e-471a-9a9f-c5eb7362bd5e
 !front: \[ \sin \alpha \cdot \sin \beta \]
-!back: \[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
+!back:
+\[ \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) ] \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha \cdot \sin \beta &= \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) \\
+    \cos \alpha \cdot \cos \beta &= \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) \\
+    \sin \alpha \cdot \cos \beta &= \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) \\
+    \cos \alpha \cdot \sin \beta &= \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta)
+\end{align*}
+\]
 ~~~
 
 !id: 2e6a3423-1a04-4d16-8878-92d900e3b9d7
 !front: \[ \cos \alpha \cdot \cos \beta \]
-!back: \[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
+!back:
+\[ \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) ] \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha \cdot \sin \beta &= \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) \\
+    \cos \alpha \cdot \cos \beta &= \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) \\
+    \sin \alpha \cdot \cos \beta &= \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) \\
+    \cos \alpha \cdot \sin \beta &= \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta)
+\end{align*}
+\]
 ~~~
 
 !id: 05152939-aae0-4f9b-b3b7-f642c2b1445a
 !front: \[ \sin \alpha \cdot \cos \beta \]
-!back: \[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
+!back:
+\[ \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) ] \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha \cdot \sin \beta &= \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) \\
+    \cos \alpha \cdot \cos \beta &= \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) \\
+    \sin \alpha \cdot \cos \beta &= \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) \\
+    \cos \alpha \cdot \sin \beta &= \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta)
+\end{align*}
+\]
 ~~~
 
 !id: 35ca7698-0b12-4e39-8092-b1b4f9d11bb2
 !front: \[ \cos \alpha \cdot \sin \beta \]
-!back: \[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
+!back:
+\[ \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta) ] \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha \cdot \sin \beta &= \frac{1}{2} [ \cos (\alpha - \beta) - \cos (\alpha + \beta) \\
+    \cos \alpha \cdot \cos \beta &= \frac{1}{2} [ \cos (\alpha - \beta) + \cos (\alpha + \beta) \\
+    \sin \alpha \cdot \cos \beta &= \frac{1}{2} [ \sin (\alpha + \beta) + \sin (\alpha - \beta) \\
+    \cos \alpha \cdot \sin \beta &= \frac{1}{2} [ \sin (\alpha + \beta) - \sin (\alpha - \beta)
+\end{align*}
+\]
 ~~~
 
 !id: a5edfd36-530b-4531-8aa9-e509f3d7f1e9
 !front: \[ \sin \alpha + \sin \beta \]
-!back: \[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+!back:
+\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha + \sin \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \sin \alpha - \sin \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha + \cos \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha - \cos \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right)
+\end{align*}
+\]
 ~~~
 
 !id: acbc1dc7-1ed0-43ca-889d-d353cde28c67
 !front: \[ \sin \alpha - \sin \beta \]
-!back: \[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+!back:
+\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha + \sin \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \sin \alpha - \sin \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha + \cos \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha - \cos \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right)
+\end{align*}
+\]
 ~~~
 
 !id: 1f854f7f-eefe-490b-b6fe-c79cf729b4c6
 !front: \[ \cos \alpha + \cos \beta \]
-!back: \[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+!back:
+\[ 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha + \sin \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \sin \alpha - \sin \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha + \cos \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha - \cos \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right)
+\end{align*}
+\]
 ~~~
 
 !id: 3f74ae49-26be-44af-b320-43e97a5df59b
 !front: \[ \cos \alpha - \cos \beta \]
-!back: \[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+!back:
+\[ 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \]
+
+Related:
+
+\[
+\begin{align*}
+    \sin \alpha + \sin \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \sin \alpha - \sin \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha + \cos \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2} \right) \\
+    \cos \alpha - \cos \beta &= 2 \sin \left( \frac{\alpha + \beta}{2} \right) \sin \left( \frac{\alpha - \beta}{2} \right)
+\end{align*}
+\]
 ~~~
