@@ -1,4 +1,4 @@
-import { formatNotes, Note, parseNotes } from "@anotes/core";
+import { formatNotes, NoteList, parseNotes } from "@anotes/core";
 import vscode from "vscode";
 
 export async function insertIdCommand() {
@@ -31,14 +31,12 @@ function editDocument(document: vscode.TextDocument): vscode.TextEdit[] {
   const start = document.positionAt(0);
   const end = document.positionAt(text.length);
   const range = new vscode.Range(start, end);
-  const notes: Note[] = [];
+  const notes = new NoteList();
   try {
     parseNotes(uri, text, notes);
   } catch {
     return [];
   }
-  for (const note of notes) {
-    note.id ??= crypto.randomUUID();
-  }
+  notes.insertId();
   return [vscode.TextEdit.replace(range, formatNotes(notes))];
 }

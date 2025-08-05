@@ -1,8 +1,8 @@
-import { formatField, Note, renderHtml } from "@anotes/core";
+import { formatMath, Note, renderHtml } from "@anotes/core";
 
 export function Field({ name, value }: { note: Note; name: string; value: string }) {
   try {
-    const html = formatField(value, renderHtml({ output: "html", throwOnError: false }));
+    const html = formatMath(value, renderHtml({ output: "html", throwOnError: false }));
     return (
       <div>
         <p style={{ borderBottom: "1px dotted lightgray" }}>

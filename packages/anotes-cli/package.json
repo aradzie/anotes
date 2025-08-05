@@ -11,6 +11,6 @@
     "commander": "^14.0.0"
   },
   "scripts": {
-    "compile": "tsc"
+    "compile": "rm -fr dist; tsc"
   }
 }

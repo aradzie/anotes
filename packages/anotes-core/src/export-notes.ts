@@ -1,7 +1,7 @@
-import { formatField } from "./fields.js";
-import { type Note } from "./note.js";
+import { formatMath } from "./math/index.js";
+import type { Note } from "./note.js";
 
-function exportNotes(notes: readonly Readonly<Note>[]): string {
+function exportNotes(notes: Iterable<Readonly<Note>>): string {
   const lines = [];
   lines.push(`#separator:semicolon`);
   lines.push(`#html:true`);
@@ -13,7 +13,7 @@ function exportNotes(notes: readonly Readonly<Note>[]): string {
     const fmt = [];
     for (const { name } of type.fields) {
       const value = fields[name]?.trim();
-      fmt.push(value ? formatField(value) : "");
+      fmt.push(value ? formatMath(value) : "");
     }
     lines.push([id, type.name, deck, tags, ...fmt].map(escape).join(";"));
   }

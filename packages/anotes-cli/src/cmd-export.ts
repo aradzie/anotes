@@ -1,10 +1,10 @@
-import { exportNotes, type Note, parseNotes } from "@anotes/core";
+import { exportNotes, NoteList, parseNotes } from "@anotes/core";
 import { readFileSync, writeFileSync } from "node:fs";
 import { findNoteFiles } from "./io.js";
 
 export function exportCmd({ dir, out }: { dir: string; out: string }) {
   console.log(`Scanning directory "${dir}"...`);
-  const notes: Note[] = [];
+  const notes = new NoteList();
   for (const file of findNoteFiles(dir)) {
     console.log(`Parsing file "${file}"...`);
     const text = readFileSync(file, "utf-8");

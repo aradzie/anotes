@@ -1,6 +1,6 @@
 import type { Note } from "./note.js";
 
-function formatNotes(notes: readonly Readonly<Note>[]): string {
+function formatNotes(notes: Iterable<Readonly<Note>>): string {
   const lines = [];
   let type0 = null;
   let deck0 = null;

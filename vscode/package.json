@@ -127,8 +127,7 @@
   },
   "scripts": {
     "compile": "tsc",
-    "watch": "node esbuild.js --watch",
-    "build": "node esbuild.js --production",
-    "package": "npx @vscode/vsce package"
+    "watch": "rm -fr dist; node esbuild.js --watch",
+    "build": "rm -fr dist; node esbuild.js --production; npx @vscode/vsce package"
   }
 }

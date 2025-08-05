@@ -1,8 +1,8 @@
-import { basicNoteType, findByName, type Note, noteTypes } from "./note.js";
+import { basicNoteType, findByName, type Note, NoteList, noteTypes } from "./note.js";
 
 const pattern = /^!(?<name>[a-zA-Z0-9]+):(?<value>.*)$/;
 
-function parseNotes(source: string, text: string, notes: Note[]): void {
+function parseNotes(source: string, text: string, notes: NoteList): void {
   let lineIndex = 0;
 
   function errorMessage(message: string) {
@@ -83,7 +83,7 @@ function parseNotes(source: string, text: string, notes: Note[]): void {
 
     if (line.startsWith("~~~")) {
       // Finalize a card.
-      notes.push(note);
+      notes.add(note);
       note = {
         ...note, // Retain shared properties.
         id: null,

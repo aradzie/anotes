@@ -1,3 +1,26 @@
+class NoteList implements Iterable<Note> {
+  readonly #notes: Note[] = [];
+
+  add(note: Note): this {
+    this.#notes.push(note);
+    return this;
+  }
+
+  get length(): number {
+    return this.#notes.length;
+  }
+
+  [Symbol.iterator](): Iterator<Note> {
+    return this.#notes[Symbol.iterator]();
+  }
+
+  insertId() {
+    for (const note of this.#notes) {
+      note.id ??= crypto.randomUUID();
+    }
+  }
+}
+
 type Note = {
   type: NoteType;
   deck: string;
@@ -89,6 +112,7 @@ function findByName<T extends { readonly name: string }>(list: readonly T[], nam
 }
 
 export {
+  NoteList,
   type Note,
   type NoteType,
   type NoteField,

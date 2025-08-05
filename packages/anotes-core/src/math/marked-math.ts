@@ -1,33 +1,6 @@
-import { type KatexOptions } from "katex";
-import { type MarkedExtension, type TokenizerAndRendererExtension, type Tokens } from "marked";
-import { katexBlock, katexInline } from "./katex.js";
-
-type Renderer = {
-  block: (code: string) => string;
-  inline: (code: string) => string;
-};
-
-const renderLatex = (): Renderer => {
-  return {
-    block: (code: string): string => {
-      return `\\[ ${code.trim()} \\]\n`;
-    },
-    inline: (code: string): string => {
-      return `\\( ${code.trim()} \\)`;
-    },
-  };
-};
-
-const renderHtml = (options: KatexOptions = {}): Renderer => {
-  return {
-    block: (code: string): string => {
-      return katexBlock(code, options);
-    },
-    inline: (code: string): string => {
-      return katexInline(code, options);
-    },
-  };
-};
+import type { MarkedExtension, TokenizerAndRendererExtension, Tokens } from "marked";
+import type { MathRenderer } from "./math-renderer.js";
+import { renderTex } from "./math-renderer.js";
 
 /**
  * Tests if the given text begins with "\[".
@@ -247,7 +220,7 @@ function findInlineEndAlt(src: string, start: number): number {
   return -1;
 }
 
-const latexExtension = (renderer: Renderer = renderLatex()): MarkedExtension => {
+function mathExtension(renderer: MathRenderer = renderTex()): MarkedExtension {
   // Common syntax.
 
   type LatexToken = Tokens.Generic & {
@@ -370,6 +343,6 @@ const latexExtension = (renderer: Renderer = renderLatex()): MarkedExtension => 
       inlineLatexAlt,
     ],
   };
-};
+}
 
-export { type Renderer, latexExtension, renderHtml, renderLatex };
+export { mathExtension };
