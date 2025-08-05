@@ -1,4 +1,4 @@
-import { basicNoteType, findByName, type Note, NoteList, noteTypes } from "./note.js";
+import { type Note, NoteList, noteTypes } from "./note.js";
 
 const pattern = /^!(?<name>[a-zA-Z0-9]+):(?<value>.*)$/;
 
@@ -10,7 +10,7 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
   }
 
   let note: Note = {
-    type: basicNoteType,
+    type: noteTypes.basic,
     deck: "",
     tags: "",
     template: "Basic",
@@ -33,7 +33,7 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
     switch (name) {
       case "type":
         checkUnique(name);
-        const type = findByName(noteTypes, value);
+        const type = noteTypes.get(value);
         if (type == null) {
           throw new SyntaxError(errorMessage(`Unknown note type [${value}]`));
         }
@@ -145,6 +145,20 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
   if (seen.size > 0) {
     throw new SyntaxError(errorMessage(`Unfinished card`));
   }
+}
+
+function findByName<T extends { readonly name: string }>(list: readonly T[], name: string): T | null {
+  for (const item of list) {
+    if (item.name === name) {
+      return item;
+    }
+  }
+  for (const item of list) {
+    if (item.name.toLowerCase() === name.toLowerCase()) {
+      return item;
+    }
+  }
+  return null;
 }
 
 export { parseNotes };

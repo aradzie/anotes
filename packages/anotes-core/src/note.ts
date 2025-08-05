@@ -31,44 +31,89 @@ type Note = {
 };
 
 type NoteType = {
-  name: string;
-  fields: NoteField[];
+  readonly name: string;
+  readonly fields: readonly {
+    readonly name: string;
+    readonly required?: boolean;
+  }[];
 };
 
-type NoteField = {
-  name: string;
-  required?: boolean;
-};
+class NoteTypeMap implements Iterable<NoteType> {
+  static readonly #basic: NoteType = {
+    name: "Basic",
+    fields: [
+      { name: "Front", required: true }, //
+      { name: "Back", required: true },
+    ],
+  };
 
-const basicNoteType = {
-  name: "Basic",
-  fields: [
-    { name: "Front", required: true }, //
-    { name: "Back", required: true },
-  ],
-} as const satisfies NoteType;
+  static readonly #basicAndReversedCard: NoteType = {
+    name: "Basic (and reversed card)",
+    fields: [
+      { name: "Front", required: true }, //
+      { name: "Back", required: true },
+    ],
+  };
 
-const basicReversedNoteType = {
-  name: "Basic (and reversed card)",
-  fields: [
-    { name: "Front", required: true }, //
-    { name: "Back", required: true },
-  ],
-} as const satisfies NoteType;
+  static readonly #basicOptionalReversedCard: NoteType = {
+    name: "Basic (optional reversed card)",
+    fields: [
+      { name: "Front", required: true }, //
+      { name: "Back", required: true },
+      { name: "Add Reverse" },
+    ],
+  };
 
-const clozeNoteType = {
-  name: "Cloze",
-  fields: [
-    { name: "Text", required: true }, //
-    { name: "Back Extra" },
-  ],
-} as const satisfies NoteType;
+  static readonly #basicTypeInAnswer: NoteType = {
+    name: "Basic (type in the answer)",
+    fields: [
+      { name: "Front", required: true }, //
+      { name: "Back", required: true },
+    ],
+  };
 
-const noteTypes: readonly NoteType[] = [
-  basicNoteType,
-  basicReversedNoteType,
-  clozeNoteType,
-  {
+  static readonly #cloze: NoteType = {
+    name: "Cloze",
+    fields: [
+      { name: "Text", required: true }, //
+      { name: "Back Extra" },
+    ],
+  };
+
+  readonly #map = new Map<string, NoteType>();
+
+  constructor() {
+    this.add(NoteTypeMap.#basic);
+    this.add(NoteTypeMap.#basicAndReversedCard);
+    this.add(NoteTypeMap.#basicOptionalReversedCard);
+    this.add(NoteTypeMap.#basicTypeInAnswer);
+    this.add(NoteTypeMap.#cloze);
+  }
+
+  [Symbol.iterator](): Iterator<NoteType> {
+    return this.#map.values();
+  }
+
+  add(type: NoteType): this {
+    this.#map.set(type.name.toLowerCase(), type);
+    return this;
+  }
+
+  has(name: string): boolean {
+    return this.#map.has(name.toLowerCase());
+  }
+
+  get(name: string): NoteType | null {
+    return this.#map.get(name.toLowerCase()) ?? null;
+  }
+
+  get basic(): NoteType {
+    return NoteTypeMap.#basic;
+  }
+}
+
+const noteTypes = new NoteTypeMap()
+  .add({
     name: "Math",
     fields: [
       { name: "Front", required: true }, //
@@ -76,8 +121,8 @@ const noteTypes: readonly NoteType[] = [
       { name: "Related" },
       { name: "Example" },
     ],
-  },
-  {
+  })
+  .add({
     name: "Math Identity",
     fields: [
       { name: "Front", required: true }, //
@@ -85,8 +130,8 @@ const noteTypes: readonly NoteType[] = [
       { name: "Related" },
       { name: "Example" },
     ],
-  },
-  {
+  })
+  .add({
     name: "Math Definition",
     fields: [
       { name: "Front", required: true }, //
@@ -94,31 +139,6 @@ const noteTypes: readonly NoteType[] = [
       { name: "Related" },
       { name: "Example" },
     ],
-  },
-];
+  });
 
-function findByName<T extends { readonly name: string }>(list: readonly T[], name: string): T | null {
-  for (const item of list) {
-    if (item.name === name) {
-      return item;
-    }
-  }
-  for (const item of list) {
-    if (item.name.toLowerCase() === name.toLowerCase()) {
-      return item;
-    }
-  }
-  return null;
-}
-
-export {
-  NoteList,
-  type Note,
-  type NoteType,
-  type NoteField,
-  noteTypes,
-  basicNoteType,
-  basicReversedNoteType,
-  clozeNoteType,
-  findByName,
-};
+export { NoteList, type Note, type NoteType, NoteTypeMap, noteTypes };
