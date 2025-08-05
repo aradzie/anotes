@@ -1,0 +1,14 @@
+!type: Basic
+!deck: Math
+!tags: Math Equation
+
+!id: 44011d69-198a-4800-8597-5889ab90c6d2
+!front: Euler's formula
+!back:
+$$
+\begin{align}
+    e^{ix}  &= \cos x + i \sin x \\
+    e^{-ix} &= \cos x - i \sin x
+\end{align*}
+$$
+~~~

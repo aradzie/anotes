@@ -11,9 +11,9 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
 
   let note: Note = {
     type: noteTypes.basic,
-    deck: "",
-    tags: "",
-    template: "Basic",
+    deck: null,
+    tags: null,
+    template: null,
     id: null,
     fields: {},
   };
@@ -41,19 +41,19 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
         return true;
       case "deck":
         checkUnique(name);
-        note.deck = value;
+        note.deck = value || null;
         return true;
       case "tags":
         checkUnique(name);
-        note.tags = value;
+        note.tags = value || null;
         return true;
       case "template":
         checkUnique(name);
-        note.template = value;
+        note.template = value || null;
         return true;
       case "id":
         checkUnique(name);
-        note.id = value;
+        note.id = value || null;
         return true;
     }
     return false;

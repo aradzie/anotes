@@ -23,9 +23,9 @@ class NoteList implements Iterable<Note> {
 
 type Note = {
   type: NoteType;
-  deck: string;
-  tags: string;
-  template: string;
+  deck: string | null;
+  tags: string | null;
+  template: string | null;
   id: string | null;
   fields: Record<string, string>;
 };

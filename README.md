@@ -9,16 +9,16 @@ The notes are defined in a simple human readable text format, like in the follwi
 File `geography.note`:
 
 ```
-!type: Basic
+!type: Cloze
 !deck: Geography
 !tags: Geography Capital
 
-!front: The capital of Mongolia
-!back: Ulaanbaatar
+!id: 8ed2ae0e-4141-4969-bbac-b2190c46b8dd
+!text: The capital of {{c1::Mongolia::country}} is {{c2::Ulaanbaatar::city}}.
 ~~~
 
-!front: The capital of Syria
-!back: Damascus
+!id: bd35b5d7-1964-4b2a-a9a9-d7cc44e8283a
+!text: The capital of {{c1::Syria::country}} is {{c2::Damascus::city}}.
 ~~~
 ```
 
@@ -28,13 +28,6 @@ File `math.note`:
 !type: Basic
 !deck: Math
 !tags: Math Equation
-
-!front: The quadratic equation
-!back:
-If $$ ax^2 + bx + c = 0 $$ then $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}. $$
-
-If $b^2 < 4ac$ then there are no real solutions.
-~~~
 
 !front: Euler's formula
 !back:
@@ -53,7 +46,7 @@ The tool `anotes` scans the given directory for all `*.note` files and compiles 
 imported into Anki.
 
 ```shell
-$ npm install @anotes/cli
+$ npm install -g @anotes/cli
 $ anotes export --dir=notes --out=notes.txt
 ```
 

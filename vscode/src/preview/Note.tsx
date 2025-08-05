@@ -9,8 +9,6 @@ export function Note1({ note }: { note: Note }) {
         margin: "1rem",
         paddingLeft: "1rem",
         paddingRight: "1rem",
-        backgroundColor: "white",
-        color: "black",
         border: "1px dotted gray",
       }}
       data-note-id={note.id}

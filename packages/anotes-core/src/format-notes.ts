@@ -11,13 +11,13 @@ function formatNotes(notes: Iterable<Readonly<Note>>): string {
       lines.push(`!type: ${type.name}`);
     }
     if (deck !== deck0) {
-      lines.push(`!deck: ${deck}`);
+      lines.push(`!deck: ${deck ?? ""}`);
     }
     if (tags !== tags0) {
-      lines.push(`!tags: ${tags}`);
+      lines.push(`!tags: ${tags ?? ""}`);
     }
     if (template !== template0) {
-      lines.push(`!template: ${template}`);
+      lines.push(`!template: ${template ?? ""}`);
     }
     lines.push("");
     if (id) {
