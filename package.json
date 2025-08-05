@@ -5,13 +5,13 @@
   "keywords": [
     "anki"
   ],
-  "homepage": "https://github.com/aradzie/anki-math-notes#readme",
+  "homepage": "https://github.com/aradzie/anotes#readme",
   "bugs": {
-    "url": "https://github.com/aradzie/anki-math-notes/issues"
+    "url": "https://github.com/aradzie/anotes/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aradzie/anki-math-notes.git"
+    "url": "git+https://github.com/aradzie/anotes.git"
   },
   "license": "ISC",
   "type": "module",

@@ -111,7 +111,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aradzie/anki-math-notes.git"
+    "url": "git+https://github.com/aradzie/anotes.git"
   },
   "dependencies": {
     "@anotes/anki-export": "*",
