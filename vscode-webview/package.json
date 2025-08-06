@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "anki-notes-webview",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@anotes/core": "*",
+    "clsx": "^2.1.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "watch": "node esbuild.cjs --watch",
+    "build": "node esbuild.cjs --production"
+  }
+}

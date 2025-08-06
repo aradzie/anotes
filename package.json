@@ -16,7 +16,10 @@
   "license": "ISC",
   "type": "module",
   "workspaces": [
-    "packages/*",
+    "packages/anki-export",
+    "packages/anotes-core",
+    "packages/anotes-cli",
+    "vscode-webview",
     "vscode"
   ],
   "devDependencies": {
@@ -25,7 +28,8 @@
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "export": "anotes export --dir=notes",
-    "insert-id": "anotes insert-id --dir=notes"
+    "compile": "npm run compile --workspaces --if-present",
+    "prebuild": "npm run compile",
+    "build": "npm run build --workspaces --if-present"
   }
 }

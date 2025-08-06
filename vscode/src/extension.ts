@@ -3,7 +3,7 @@ import { insertIdCommand, insertIdOnSave } from "./note-id.js";
 import { PreviewManager } from "./preview.js";
 
 export function activate(context: vscode.ExtensionContext) {
-  const manager = new PreviewManager();
+  const manager = new PreviewManager(context);
   context.subscriptions.push(manager);
   context.subscriptions.push(
     vscode.commands.registerCommand("anki-notes.showPreview", () =>

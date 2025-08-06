@@ -1,7 +1,8 @@
 {
+  "private": true,
   "name": "anki-notes",
   "displayName": "anki-notes",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "publisher": "master",
   "engines": {
     "vscode": "^1.102.0"
@@ -114,24 +115,20 @@
   },
   "dependencies": {
     "@anotes/anki-export": "*",
-    "@anotes/core": "*",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "@anotes/core": "*"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
+    "@types/node": "^24.2.0",
     "@types/vscode": "^1.102.0"
   },
   "scripts": {
     "compile": "tsc",
-    "watch": "rm -fr dist; node esbuild.js --watch",
-    "build": "rm -fr dist; node esbuild.js --production",
-    "prepackage": "npm run build",
-    "package": "npx @vscode/vsce package --out=anki-notes.vsix",
-    "preinstall": "npm run package",
-    "install": "code --install-extension anki-notes.vsix",
-    "uninstall": "code --uninstall-extension master.anki-notes"
+    "watch": "rm -fr dist; node esbuild.cjs --watch",
+    "build": "rm -fr dist; node esbuild.cjs --production",
+    "prepackageext": "npm run build",
+    "packageext": "npx @vscode/vsce package --out=anki-notes.vsix",
+    "preinstallext": "npm run packageext",
+    "installext": "code --install-extension anki-notes.vsix --force",
+    "uninstallext": "code --uninstall-extension master.anki-notes"
   }
 }

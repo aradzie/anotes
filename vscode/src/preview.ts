@@ -1,6 +1,39 @@
-import vscode, { ViewColumn, WebviewPanel, window } from "vscode";
-import { renderNotesToHtml } from "./preview/render.js";
-import { debounce } from "./util.js";
+import vscode from "vscode";
+
+class Assets {
+  readonly #context: vscode.ExtensionContext;
+
+  constructor(context: vscode.ExtensionContext) {
+    this.#context = context;
+  }
+
+  getWebviewOptions(): vscode.WebviewOptions {
+    return {
+      enableScripts: true,
+      enableForms: true,
+      localResourceRoots: [this.#getPath("assets")],
+    };
+  }
+
+  getWebviewContent(webview: vscode.Webview) {
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anki Cards Preview</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossOrigin="anonymous">
+  <link rel="stylesheet" href="${webview.asWebviewUri(this.#getPath("assets", "preview.css"))}">
+  <script src="${webview.asWebviewUri(this.#getPath("assets", "preview.js"))}" type="module"></script>
+</head>
+<body>
+  <div id="main"></div>
+</body>
+</html>`;
+  }
+
+  #getPath(...segments: string[]) {
+    return vscode.Uri.joinPath(this.#context.extensionUri, ...segments);
+  }
+}
 
 class Preview {
   static #viewType = "anki-notes.preview";
@@ -14,17 +47,23 @@ class Preview {
    */
   readonly #uri: string | null;
 
-  constructor(column: vscode.ViewColumn, uri: string | null) {
-    this.#panel = window.createWebviewPanel(Preview.#viewType, Preview.#title, column);
+  constructor(assets: Assets, column: vscode.ViewColumn, uri: string | null) {
+    this.#panel = vscode.window.createWebviewPanel(
+      Preview.#viewType,
+      Preview.#title,
+      { viewColumn: column, preserveFocus: true },
+      assets.getWebviewOptions(),
+    );
+    this.#panel.webview.html = assets.getWebviewContent(this.#panel.webview);
     this.#column = column;
     this.#uri = uri;
   }
 
-  get panel(): WebviewPanel {
+  get panel(): vscode.WebviewPanel {
     return this.#panel;
   }
 
-  get column(): ViewColumn {
+  get column(): vscode.ViewColumn {
     return this.#column;
   }
 
@@ -38,7 +77,7 @@ class Preview {
 
   render(uri: string, text: string) {
     this.#panel.title = `${Preview.#title}: ${uri.split("/").pop()}`;
-    this.#panel.webview.html = renderNotesToHtml(uri, text);
+    this.#panel.webview.postMessage({ type: "update", uri, text }).then(() => {});
   }
 
   dispose() {
@@ -47,21 +86,22 @@ class Preview {
 }
 
 class PreviewManager {
-  #subscriptions: { dispose(): void }[] = [];
+  #context: vscode.ExtensionContext;
   #previews = new Set<Preview>();
 
-  constructor() {
-    this.#subscriptions.push(
+  constructor(context: vscode.ExtensionContext) {
+    this.#context = context;
+    this.#context.subscriptions.push(
       vscode.workspace.onDidChangeTextDocument(({ document }) => {
         if (document.languageId === "anki-notes") {
-          this.#updateDebounced(document);
+          this.#update(document);
         }
       }),
     );
-    this.#subscriptions.push(
+    this.#context.subscriptions.push(
       vscode.window.onDidChangeActiveTextEditor((editor) => {
         if (editor?.document.languageId === "anki-notes") {
-          this.#updateDebounced(editor.document);
+          this.#update(editor.document);
         }
       }),
     );
@@ -70,7 +110,7 @@ class PreviewManager {
   showPreview(sideBySide: boolean, locked: boolean) {
     const document = vscode.window.activeTextEditor?.document;
     if (document?.languageId === "anki-notes") {
-      const column = sideBySide ? ViewColumn.Beside : ViewColumn.Active;
+      const column = sideBySide ? vscode.ViewColumn.Beside : vscode.ViewColumn.Active;
       const uri = locked ? String(document.uri) : null;
       for (const preview of this.#previews) {
         if (preview.column === column && preview.uri === uri) {
@@ -78,13 +118,13 @@ class PreviewManager {
           return;
         }
       }
-      this.#createPanel(document, column, uri);
+      this.#createPanel(column, uri);
       this.#update(document);
     }
   }
 
-  #createPanel(document: vscode.TextDocument, column: vscode.ViewColumn, uri: string | null) {
-    const preview = new Preview(column, uri);
+  #createPanel(column: vscode.ViewColumn, uri: string | null) {
+    const preview = new Preview(new Assets(this.#context), column, uri);
     this.#previews.add(preview);
     preview.panel.onDidDispose(() => {
       this.#previews.delete(preview);
@@ -102,14 +142,7 @@ class PreviewManager {
     }
   }
 
-  #updateDebounced = debounce((document: vscode.TextDocument) => {
-    this.#update(document);
-  }, 300);
-
   dispose() {
-    for (const subscription of this.#subscriptions) {
-      subscription.dispose();
-    }
     for (const preview of this.#previews) {
       preview.dispose();
     }
