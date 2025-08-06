@@ -1,23 +1,11 @@
 {
+  "extends": "../../tsconfig-template.json",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "target": "esnext",
-    "lib": ["esnext"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "strict": true,
-    "exactOptionalPropertyTypes": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUncheckedSideEffectImports": true,
-    "skipLibCheck": true,
     "verbatimModuleSyntax": true
   }
 }
