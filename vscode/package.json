@@ -127,6 +127,11 @@
   "scripts": {
     "compile": "tsc",
     "watch": "rm -fr dist; node esbuild.js --watch",
-    "build": "rm -fr dist; node esbuild.js --production; npx @vscode/vsce package"
+    "build": "rm -fr dist; node esbuild.js --production",
+    "prepackage": "npm run build",
+    "package": "npx @vscode/vsce package --out=anki-notes.vsix",
+    "preinstall": "npm run package",
+    "install": "code --install-extension anki-notes.vsix",
+    "uninstall": "code --uninstall-extension master.anki-notes"
   }
 }

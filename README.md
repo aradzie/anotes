@@ -35,7 +35,7 @@ $$
 \begin{align}
     e^{ix}  &= \cos x + i \sin x \\
     e^{-ix} &= \cos x - i \sin x
-\end{align*}
+\end{align}
 $$
 ~~~
 ```
