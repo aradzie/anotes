@@ -1,21 +1,16 @@
 import { Note } from "@anotes/core";
 import { FieldList } from "./FieldList.js";
 import { Meta } from "./Meta.js";
+import * as cn from "./Note.module.css";
 
 export function Note1({ note }: { note: Note }) {
   return (
     <section
-      style={{
-        margin: "1rem",
-        paddingLeft: "1rem",
-        paddingRight: "1rem",
-        border: "1px dotted gray",
-      }}
+      className={cn.root}
       data-note-id={note.id}
-      data-note-type={note.type}
+      data-note-type={note.type.name}
       data-note-deck={note.deck}
       data-note-tags={note.tags}
-      data-note-template={note.template}
     >
       <Meta note={note} />
       <FieldList note={note} />

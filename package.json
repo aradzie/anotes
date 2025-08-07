@@ -16,6 +16,7 @@
   "license": "ISC",
   "type": "module",
   "workspaces": [
+    "scripts",
     "packages/anki-export",
     "packages/anotes-core",
     "packages/anotes-cli",
@@ -25,11 +26,17 @@
   "devDependencies": {
     "esbuild": "^0.25.8",
     "prettier": "^3.6.2",
+    "stylelint": "^16.23.0",
+    "stylelint-config-recommended": "^17.0.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-plugin-logical-css": "^1.2.3",
     "typescript": "^5.9.2"
   },
   "scripts": {
     "compile": "npm run compile --workspaces --if-present",
     "prebuild": "npm run compile",
-    "build": "npm run build --workspaces --if-present"
+    "build": "npm run build --workspaces --if-present",
+    "stylelint": "stylelint '**/*.css'",
+    "stylelint-fix": "stylelint '**.css' --fix"
   }
 }

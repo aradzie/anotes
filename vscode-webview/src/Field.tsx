@@ -1,17 +1,19 @@
-import { formatMath, Note, renderHtml } from "@anotes/core";
+import { formatMath, renderHtml } from "@anotes/core";
+import { memo } from "react";
+import * as cn from "./Field.module.css";
 
-export function Field({ name, value }: { note: Note; name: string; value: string }) {
+export const Field = memo(function Field({ name, value }: { name: string; value: string }) {
   try {
     const html = formatMath(value, renderHtml({ output: "html", throwOnError: false }));
     return (
-      <div>
-        <p style={{ borderBottom: "1px dotted lightgray" }}>
-          <strong style={{ color: "blue" }}>{name}</strong>:
+      <div className={cn.root}>
+        <p className={cn.field}>
+          <span className={cn.fieldName}>{name}</span>:
         </p>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className={cn.fieldValue} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     );
   } catch (err) {
     return <pre style={{ color: "red" }}>{String(err)}</pre>;
   }
-}
+});

@@ -123,8 +123,8 @@
   },
   "scripts": {
     "compile": "tsc",
-    "watch": "rm -fr dist; node esbuild.cjs --watch",
-    "build": "rm -fr dist; node esbuild.cjs --production",
+    "watch": "rm -fr dist; node esbuild.mjs --watch",
+    "build": "rm -fr dist; node esbuild.mjs --production",
     "prepackageext": "npm run build",
     "packageext": "npx @vscode/vsce package --out=anki-notes.vsix",
     "preinstallext": "npm run packageext",

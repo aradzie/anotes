@@ -1,5 +1,11 @@
 import vscode from "vscode";
 
+export type UpdateMessage = { type: "update"; uri: string; text: string };
+
+export type FocusMessage = { type: "focus"; id: string; field: string | null };
+
+export type Message = UpdateMessage | FocusMessage;
+
 class Assets {
   readonly #context: vscode.ExtensionContext;
 
@@ -15,8 +21,8 @@ class Assets {
     };
   }
 
-  getWebviewContent(webview: vscode.Webview) {
-    return `<!DOCTYPE html>
+  setWebviewContent(webview: vscode.Webview) {
+    webview.html = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Anki Cards Preview</title>
@@ -36,8 +42,8 @@ class Assets {
 }
 
 class Preview {
-  static #viewType = "anki-notes.preview";
-  static #title = "Anki Notes Preview";
+  static viewType = "anki-notes.preview";
+  static title = "Anki Notes Preview";
 
   readonly #panel: vscode.WebviewPanel;
   readonly #column: vscode.ViewColumn;
@@ -49,14 +55,14 @@ class Preview {
 
   constructor(assets: Assets, column: vscode.ViewColumn, uri: string | null) {
     this.#panel = vscode.window.createWebviewPanel(
-      Preview.#viewType,
-      Preview.#title,
+      Preview.viewType,
+      Preview.title,
       { viewColumn: column, preserveFocus: true },
       assets.getWebviewOptions(),
     );
-    this.#panel.webview.html = assets.getWebviewContent(this.#panel.webview);
     this.#column = column;
     this.#uri = uri;
+    assets.setWebviewContent(this.#panel.webview);
   }
 
   get panel(): vscode.WebviewPanel {
@@ -76,7 +82,7 @@ class Preview {
   }
 
   render(uri: string, text: string) {
-    this.#panel.title = `${Preview.#title}: ${uri.split("/").pop()}`;
+    this.#panel.title = `${Preview.title}: ${uri.split("/").pop()}`;
     this.#panel.webview.postMessage({ type: "update", uri, text }).then(() => {});
   }
 
@@ -85,12 +91,29 @@ class Preview {
   }
 }
 
+class PreviewSerializer implements vscode.WebviewPanelSerializer {
+  readonly #assets: Assets;
+
+  constructor(assets: Assets) {
+    this.#assets = assets;
+  }
+
+  async deserializeWebviewPanel(panel: vscode.WebviewPanel, state: UpdateMessage) {
+    this.#assets.setWebviewContent(panel.webview);
+    if (state.type === "update") {
+      panel.webview.postMessage(state).then(() => {});
+    }
+  }
+}
+
 class PreviewManager {
-  #context: vscode.ExtensionContext;
-  #previews = new Set<Preview>();
+  readonly #context: vscode.ExtensionContext;
+  readonly #assets: Assets;
+  readonly #previews = new Set<Preview>();
 
   constructor(context: vscode.ExtensionContext) {
     this.#context = context;
+    this.#assets = new Assets(context);
     this.#context.subscriptions.push(
       vscode.workspace.onDidChangeTextDocument(({ document }) => {
         if (document.languageId === "anki-notes") {
@@ -105,6 +128,7 @@ class PreviewManager {
         }
       }),
     );
+    vscode.window.registerWebviewPanelSerializer(Preview.viewType, new PreviewSerializer(this.#assets));
   }
 
   showPreview(sideBySide: boolean, locked: boolean) {
@@ -124,7 +148,7 @@ class PreviewManager {
   }
 
   #createPanel(column: vscode.ViewColumn, uri: string | null) {
-    const preview = new Preview(new Assets(this.#context), column, uri);
+    const preview = new Preview(this.#assets, column, uri);
     this.#previews.add(preview);
     preview.panel.onDidDispose(() => {
       this.#previews.delete(preview);

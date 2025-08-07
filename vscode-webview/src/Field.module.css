@@ -1,0 +1,36 @@
+.root {
+  margin-inline-start: -0.5rem;
+  padding-inline-start: 0.5rem;
+}
+
+:global .vscode-light :local .root {
+  border-inline-start: 2px solid lightgray;
+}
+
+:global .vscode-dark :local .root {
+  border-inline-start: 2px solid darkgray;
+}
+
+:global .vscode-light :local .field {
+  border-block-end: 1px dotted lightgray;
+}
+
+:global .vscode-dark :local .field {
+  border-block-end: 1px dotted darkgray;
+}
+
+.fieldName {
+  font-weight: bold;
+}
+
+:global .vscode-light :local .fieldName {
+  color: blue;
+}
+
+:global .vscode-dark :local .fieldName {
+  color: lightblue;
+}
+
+.fieldValue {
+  text-align: start;
+}

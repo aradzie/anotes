@@ -1,0 +1,13 @@
+.root {
+  margin-inline: -1rem;
+  margin-block: 1rem;
+  padding-inline: 1rem;
+}
+
+:global .vscode-light :local .root {
+  border: 1px dotted lightgray;
+}
+
+:global .vscode-dark :local .root {
+  border: 1px dotted darkgray;
+}

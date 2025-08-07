@@ -11,11 +11,12 @@
   },
   "devDependencies": {
     "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7"
+    "@types/react-dom": "^19.1.7",
+    "@types/vscode-webview": "^1.57.5"
   },
   "scripts": {
     "compile": "tsc",
-    "watch": "node esbuild.cjs --watch",
-    "build": "node esbuild.cjs --production"
+    "watch": "node esbuild.mjs --watch",
+    "build": "node esbuild.mjs --production"
   }
 }

@@ -2,4 +2,3 @@ build/
 dist/
 out/
 tmp/
-package-lock.json
