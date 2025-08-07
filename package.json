@@ -44,6 +44,7 @@
     "lint": "eslint '{**/*,*}.{js,ts,tsx}'",
     "lint-fix": "eslint '{**/*,*}.{js,ts,tsx}' --fix",
     "stylelint": "stylelint '**/*.css'",
-    "stylelint-fix": "stylelint '**.css' --fix"
+    "stylelint-fix": "stylelint '**.css' --fix",
+    "format": "prettier '{**/*,*}.{js,ts,tsx,css}' --write"
   }
 }

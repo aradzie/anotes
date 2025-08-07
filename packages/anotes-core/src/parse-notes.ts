@@ -1,154 +1,66 @@
-import { type Note, type NoteList, noteTypes } from "./note.js";
-
-const pattern = /^!(?<name>[a-zA-Z0-9]+):(?<value>.*)$/;
+import { type NoteNode } from "./nodes.js";
+import { type NoteList, noteTypes } from "./note.js";
+import { parse, SyntaxError } from "./parser.js";
 
 function parseNotes(source: string, text: string, notes: NoteList): void {
-  let lineIndex = 0;
+  mapNodes(makeNodes(source, text), notes);
+}
 
-  function errorMessage(message: string) {
-    return `[${source}:${lineIndex}]: ${message}`;
-  }
+function makeNodes(source: string, text: string): NoteNode[] {
+  return parse(text, { grammarSource: source }) as NoteNode[];
+}
 
-  let note: Note = {
-    type: noteTypes.basic,
-    deck: null,
-    tags: null,
-    template: null,
-    id: null,
-    fields: {},
-  };
+function mapNodes(nodes: NoteNode[], notes: NoteList): void {
+  let type = noteTypes.basic;
+  let deck = null;
+  let tags = null;
+  let template = null;
 
-  let state = "card";
-  let fieldName = "";
-  const seen = new Set();
+  for (const noteNode of nodes) {
+    let id = null;
+    const fields: Record<string, string> = {};
 
-  function checkUnique(name: string) {
-    if (seen.has(name)) {
-      throw new SyntaxError(errorMessage(`Duplicate property [${name}]`));
-    }
-    seen.add(name);
-  }
-
-  function setProperty(name: string, value: string) {
-    switch (name) {
-      case "type": {
-        checkUnique(name);
-        const type = noteTypes.get(value);
-        if (type == null) {
-          throw new SyntaxError(errorMessage(`Unknown note type [${value}]`));
+    // Set note properties.
+    for (const { name, value, loc } of noteNode.properties) {
+      switch (name) {
+        case "type": {
+          const t = noteTypes.get(value);
+          if (t == null) {
+            throw new SyntaxError(`Unknown note type: "${value}"`, [], null, loc);
+          }
+          type = t;
+          break;
         }
-        note.type = type;
-        return true;
-      }
-      case "deck": {
-        checkUnique(name);
-        note.deck = value || null;
-        return true;
-      }
-      case "tags": {
-        checkUnique(name);
-        note.tags = value || null;
-        return true;
-      }
-      case "template": {
-        checkUnique(name);
-        note.template = value || null;
-        return true;
-      }
-      case "id": {
-        checkUnique(name);
-        note.id = value || null;
-        return true;
+        case "deck":
+          deck = value || null;
+          break;
+        case "tags":
+          tags = value || null;
+          break;
+        case "template":
+          template = value || null;
+          break;
+        case "id":
+          id = value || null;
+          break;
       }
     }
-    return false;
-  }
 
-  function setField(name: string, value: string) {
-    const field = findByName(note.type.fields, name);
-    if (field != null) {
-      checkUnique(field.name);
-      fieldName = field.name;
-      note.fields[fieldName] = value;
-      return true;
-    }
-    return false;
-  }
-
-  function appendField(value: string) {
-    note.fields[fieldName] += "\n" + value;
-  }
-
-  for (const line of text.split(/\n/g)) {
-    lineIndex += 1;
-
-    if (line.startsWith("!#")) {
-      continue; // Ignore comment lines.
+    // Initialize fields.
+    for (const field of type.fields) {
+      fields[field.name] = "";
     }
 
-    if (line.startsWith("~~~")) {
-      // Finalize a card.
-      notes.add(note);
-      note = {
-        ...note, // Retain shared properties.
-        id: null,
-        fields: {},
-      };
-      state = "card";
-      fieldName = "";
-      seen.clear();
-      continue;
-    }
-
-    if (state === "card") {
-      if (line.trim() === "") {
-        continue; // Skip empty lines.
+    // Set note fields.
+    for (const { name, value, loc } of noteNode.fields) {
+      const field = findByName(type.fields, name);
+      if (field == null) {
+        throw new SyntaxError(`Unknown field "${name}"`, [], null, loc);
       }
-
-      const m = pattern.exec(line);
-      if (m) {
-        const { name, value } = m.groups as { name: string; value: string };
-
-        if (setProperty(name, value.trim())) {
-          state = "card";
-          continue;
-        }
-
-        if (setField(name, value)) {
-          state = "field";
-          continue;
-        }
-
-        throw new SyntaxError(errorMessage(`Unknown property [${name}]`));
-      }
-
-      throw new SyntaxError(errorMessage(`Line is not a part of a field`));
+      fields[field.name] = value;
     }
 
-    if (state === "field") {
-      const m = pattern.exec(line);
-      if (m) {
-        const { name, value } = m.groups as { name: string; value: string };
-
-        if (setProperty(name, value.trim())) {
-          state = "card";
-          continue;
-        }
-
-        if (setField(name, value)) {
-          state = "field";
-          continue;
-        }
-
-        throw new SyntaxError(errorMessage(`Unknown property [${name}]`));
-      }
-
-      appendField(line);
-    }
-  }
-
-  if (seen.size > 0) {
-    throw new SyntaxError(errorMessage(`Unfinished card`));
+    notes.add({ type, deck, tags, template, id, fields, node: noteNode });
   }
 }
 
@@ -166,4 +78,4 @@ function findByName<T extends { readonly name: string }>(list: readonly T[], nam
   return null;
 }
 
-export { parseNotes };
+export { makeNodes, mapNodes, parseNotes };

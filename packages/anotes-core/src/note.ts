@@ -1,3 +1,5 @@
+import { type NoteNode } from "./nodes.js";
+
 class NoteList implements Iterable<Note> {
   readonly #notes: Note[] = [];
 
@@ -28,6 +30,7 @@ type Note = {
   template: string | null;
   id: string | null;
   fields: Record<string, string>;
+  node?: NoteNode;
 };
 
 type NoteType = {
