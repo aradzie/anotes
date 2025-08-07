@@ -4,13 +4,11 @@
   "type": "module",
   "main": "dist/index.js",
   "dependencies": {
+    "@anotes/parser": "*",
     "katex": "^0.16.22",
     "marked": "^16.1.2"
   },
-  "devDependencies": {
-    "peggy": "^5.0.6"
-  },
   "scripts": {
-    "compile": "rm -fr dist; peggy --format=es --dts ./src/parser.peggy; tsc"
+    "compile": "rm -fr dist; tsc"
   }
 }

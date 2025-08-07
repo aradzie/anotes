@@ -1,6 +1,5 @@
 export * from "./export-notes.js";
 export * from "./format-notes.js";
 export * from "./math/index.js";
-export * from "./nodes.js";
 export * from "./note.js";
 export * from "./parse-notes.js";

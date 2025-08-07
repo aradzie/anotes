@@ -1,6 +1,5 @@
-import { type NoteNode } from "./nodes.js";
+import { type NoteNode, parse, SyntaxError } from "@anotes/parser";
 import { type NoteList, noteTypes } from "./note.js";
-import { parse, SyntaxError } from "./parser.js";
 
 function parseNotes(source: string, text: string, notes: NoteList): void {
   mapNodes(makeNodes(source, text), notes);
@@ -19,9 +18,14 @@ function mapNodes(nodes: NoteNode[], notes: NoteList): void {
   for (const noteNode of nodes) {
     let id = null;
     const fields: Record<string, string> = {};
+    const seen = new Set<string>();
 
     // Set note properties.
     for (const { name, value, loc } of noteNode.properties) {
+      if (seen.has(name)) {
+        throw new SyntaxError(`Duplicate property: "${name}"`, [], null, loc);
+      }
+      seen.add(name);
       switch (name) {
         case "type": {
           const t = noteTypes.get(value);
@@ -53,6 +57,10 @@ function mapNodes(nodes: NoteNode[], notes: NoteList): void {
 
     // Set note fields.
     for (const { name, value, loc } of noteNode.fields) {
+      if (seen.has(name)) {
+        throw new SyntaxError(`Duplicate field: "${name}"`, [], null, loc);
+      }
+      seen.add(name);
       const field = findByName(type.fields, name);
       if (field == null) {
         throw new SyntaxError(`Unknown field "${name}"`, [], null, loc);
@@ -78,4 +86,4 @@ function findByName<T extends { readonly name: string }>(list: readonly T[], nam
   return null;
 }
 
-export { makeNodes, mapNodes, parseNotes };
+export { makeNodes, mapNodes, parseNotes, SyntaxError };

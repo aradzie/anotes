@@ -1,4 +1,4 @@
-import type { Note } from "./note.js";
+import { type Note } from "./note.js";
 
 function formatNotes(notes: Iterable<Readonly<Note>>): string {
   const lines = [];

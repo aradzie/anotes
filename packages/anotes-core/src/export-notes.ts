@@ -1,5 +1,5 @@
 import { formatMath } from "./math/index.js";
-import type { Note } from "./note.js";
+import { type Note } from "./note.js";
 
 function exportNotes(notes: Iterable<Readonly<Note>>): string {
   const lines = [];

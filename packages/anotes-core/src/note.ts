@@ -1,4 +1,4 @@
-import { type NoteNode } from "./nodes.js";
+import { type NoteNode } from "@anotes/parser";
 
 class NoteList implements Iterable<Note> {
   readonly #notes: Note[] = [];

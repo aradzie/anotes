@@ -1,4 +1,4 @@
-import { type LocationRange } from "peggy";
+import { type LocationRange } from "./parser.js";
 
 export type NoteNode = {
   properties: PropertyNode[];
