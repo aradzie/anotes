@@ -1,10 +1,10 @@
 import vscode from "vscode";
 
-export type UpdateMessage = { type: "update"; uri: string; text: string };
+type UpdateMessage = { type: "update"; uri: string; text: string };
 
-export type FocusMessage = { type: "focus"; id: string; field: string | null };
+type FocusMessage = { type: "focus"; noteIndex: number; fieldIndex: number };
 
-export type Message = UpdateMessage | FocusMessage;
+type Message = UpdateMessage | FocusMessage;
 
 class Assets {
   readonly #context: vscode.ExtensionContext;

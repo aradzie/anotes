@@ -3,11 +3,11 @@
   padding-inline-start: 0.5rem;
 }
 
-:global .vscode-light :local .root {
+:global .vscode-light :local .active {
   border-inline-start: 2px solid lightgray;
 }
 
-:global .vscode-dark :local .root {
+:global .vscode-dark :local .active {
   border-inline-start: 2px solid darkgray;
 }
 
@@ -19,18 +19,14 @@
   border-block-end: 1px dotted darkgray;
 }
 
-.fieldName {
-  font-weight: bold;
-}
-
-:global .vscode-light :local .fieldName {
+:global .vscode-light :local .name {
   color: blue;
 }
 
-:global .vscode-dark :local .fieldName {
+:global .vscode-dark :local .name {
   color: lightblue;
 }
 
-.fieldValue {
-  text-align: start;
+.value {
+  /* Empty. */
 }

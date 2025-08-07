@@ -1,0 +1,17 @@
+.root {
+  padding-inline: 1rem;
+}
+
+.alignLeft {
+  max-inline-size: 40rem;
+  margin: 0;
+}
+
+.alignCenter {
+  max-inline-size: 40rem;
+  margin: 0 auto;
+}
+
+.alignWidth {
+  margin: 0;
+}

@@ -2,8 +2,10 @@ import { Note } from "@anotes/core";
 import { FieldList } from "./FieldList.js";
 import { Meta } from "./Meta.js";
 import * as cn from "./Note.module.css";
+import { useView } from "./view.js";
 
 export function Note1({ note }: { note: Note }) {
+  const { view } = useView();
   return (
     <section
       className={cn.root}
@@ -12,7 +14,7 @@ export function Note1({ note }: { note: Note }) {
       data-note-deck={note.deck}
       data-note-tags={note.tags}
     >
-      <Meta note={note} />
+      {view.view === "details" && <Meta note={note} />}
       <FieldList note={note} />
     </section>
   );
