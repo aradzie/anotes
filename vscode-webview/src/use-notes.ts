@@ -1,4 +1,4 @@
-import { Note, NoteList, parseNotes } from "@anotes/core";
+import { type Note, NoteList, parseNotes } from "@anotes/core";
 import { useEffect, useState } from "react";
 import { queue } from "./messages.js";
 import { vscode } from "./vscode.js";
@@ -8,7 +8,7 @@ export function useNotes() {
   useEffect(() => {
     return queue.subscribe((message) => {
       switch (message.type) {
-        case "update":
+        case "update": {
           // Remember the last message to be able to restore the preview.
           vscode.setState(message);
 
@@ -22,8 +22,10 @@ export function useNotes() {
             console.error("Error parsing notes", err);
           }
           break;
-        case "focus":
+        }
+        case "focus": {
           break;
+        }
       }
     });
   }, []);

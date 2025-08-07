@@ -6,7 +6,7 @@ function formatNotes(notes: Iterable<Readonly<Note>>): string {
   let deck0 = null;
   let tags0 = null;
   let template0 = null;
-  for (let { type, deck, tags, template, id, fields } of notes) {
+  for (const { type, deck, tags, template, id, fields } of notes) {
     if (type.name !== type0) {
       lines.push(`!type: ${type.name}`);
     }

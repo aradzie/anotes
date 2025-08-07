@@ -1,8 +1,8 @@
-import Database from "better-sqlite3";
-import JSZip from "jszip";
 import { readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import Database from "better-sqlite3";
+import JSZip from "jszip";
 import { ankiTime } from "./utils.js";
 
 /**
@@ -101,7 +101,9 @@ export class Package {
       db.close();
       try {
         unlinkSync(tmp);
-      } catch {}
+      } catch {
+        /* Empty */
+      }
       throw err;
     }
   }

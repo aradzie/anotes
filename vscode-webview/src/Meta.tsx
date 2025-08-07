@@ -1,4 +1,4 @@
-import { Note } from "@anotes/core";
+import { type Note } from "@anotes/core";
 import * as cn from "./Meta.module.css";
 
 export function Meta({ note }: { note: Note }) {

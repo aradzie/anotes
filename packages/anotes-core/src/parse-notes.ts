@@ -1,4 +1,4 @@
-import { type Note, NoteList, noteTypes } from "./note.js";
+import { type Note, type NoteList, noteTypes } from "./note.js";
 
 const pattern = /^!(?<name>[a-zA-Z0-9]+):(?<value>.*)$/;
 
@@ -20,7 +20,7 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
 
   let state = "card";
   let fieldName = "";
-  let seen = new Set();
+  const seen = new Set();
 
   function checkUnique(name: string) {
     if (seen.has(name)) {
@@ -31,7 +31,7 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
 
   function setProperty(name: string, value: string) {
     switch (name) {
-      case "type":
+      case "type": {
         checkUnique(name);
         const type = noteTypes.get(value);
         if (type == null) {
@@ -39,22 +39,27 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
         }
         note.type = type;
         return true;
-      case "deck":
+      }
+      case "deck": {
         checkUnique(name);
         note.deck = value || null;
         return true;
-      case "tags":
+      }
+      case "tags": {
         checkUnique(name);
         note.tags = value || null;
         return true;
-      case "template":
+      }
+      case "template": {
         checkUnique(name);
         note.template = value || null;
         return true;
-      case "id":
+      }
+      case "id": {
         checkUnique(name);
         note.id = value || null;
         return true;
+      }
     }
     return false;
   }
@@ -74,7 +79,7 @@ function parseNotes(source: string, text: string, notes: NoteList): void {
     note.fields[fieldName] += "\n" + value;
   }
 
-  for (let line of text.split(/\n/g)) {
+  for (const line of text.split(/\n/g)) {
     lineIndex += 1;
 
     if (line.startsWith("!#")) {

@@ -1,4 +1,4 @@
-import { Note } from "@anotes/core";
+import { type Note } from "@anotes/core";
 import { FieldList } from "./FieldList.js";
 import { Meta } from "./Meta.js";
 import * as cn from "./Note.module.css";

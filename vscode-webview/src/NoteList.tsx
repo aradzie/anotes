@@ -1,4 +1,4 @@
-import { Note } from "@anotes/core";
+import { type Note } from "@anotes/core";
 import { clsx } from "clsx";
 import { Note1 } from "./Note.js";
 import * as cn from "./NoteList.module.css";

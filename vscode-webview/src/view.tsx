@@ -22,4 +22,4 @@ function ViewProvider({ children }: { children: any }) {
   return <ViewContext value={{ view, setView }}>{children}</ViewContext>;
 }
 
-export { type ViewValue, useView, ViewProvider };
+export { useView, ViewProvider, type ViewValue };

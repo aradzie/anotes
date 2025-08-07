@@ -28,4 +28,4 @@ const renderHtml = (options: KatexOptions = {}): MathRenderer => {
   };
 };
 
-export { type MathRenderer, renderTex, renderHtml };
+export { type MathRenderer, renderHtml, renderTex };

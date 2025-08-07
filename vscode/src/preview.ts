@@ -154,7 +154,7 @@ class PreviewManager {
     if (document.languageId === "anki-notes") {
       const uri = String(document.uri);
       for (const preview of this.#previews) {
-        if (preview.uri === null || preview.uri === uri) {
+        if (preview.uri == null || preview.uri === uri) {
           preview.render(uri, document.getText());
         }
       }

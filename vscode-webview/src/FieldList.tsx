@@ -1,4 +1,4 @@
-import { Note } from "@anotes/core";
+import { type Note } from "@anotes/core";
 import { Field } from "./Field.js";
 
 export function FieldList({ note }: { note: Note }) {

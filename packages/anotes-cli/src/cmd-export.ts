@@ -1,5 +1,5 @@
-import { exportNotes, NoteList, parseNotes } from "@anotes/core";
 import { readFileSync, writeFileSync } from "node:fs";
+import { exportNotes, NoteList, parseNotes } from "@anotes/core";
 import { findNoteFiles } from "./io.js";
 
 export function exportCmd({ dir, out }: { dir: string; out: string }) {

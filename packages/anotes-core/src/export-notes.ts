@@ -22,7 +22,7 @@ function exportNotes(notes: Iterable<Readonly<Note>>): string {
 }
 
 function escape(value: string | null): string {
-  if (value === null) {
+  if (value == null) {
     return "";
   }
   if (value.includes(";") || value.includes("\n") || value.includes('"')) {

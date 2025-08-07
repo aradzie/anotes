@@ -141,4 +141,4 @@ const noteTypes = new NoteTypeMap()
     ],
   });
 
-export { NoteList, type Note, type NoteType, NoteTypeMap, noteTypes };
+export { type Note, NoteList, type NoteType, NoteTypeMap, noteTypes };
