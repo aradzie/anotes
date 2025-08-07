@@ -55,6 +55,11 @@
         "command": "anki-notes.insertId",
         "title": "Anki Notes: Insert Uinique Note Identifiers",
         "category": "Anki Notes"
+      },
+      {
+        "command": "anki-notes.exportNotes",
+        "title": "Anki Notes: Export Compiled Notes",
+        "category": "Anki Notes"
       }
     ],
     "keybindings": [
@@ -114,7 +119,6 @@
     "url": "git+https://github.com/aradzie/anotes.git"
   },
   "dependencies": {
-    "@anotes/anki-export": "*",
     "@anotes/core": "*"
   },
   "devDependencies": {

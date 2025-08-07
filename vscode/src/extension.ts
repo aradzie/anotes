@@ -1,4 +1,5 @@
 import vscode from "vscode";
+import { exportNotesCommand } from "./export-notes.js";
 import { insertIdCommand, insertIdOnSave } from "./note-id.js";
 import { PreviewManager } from "./preview.js";
 
@@ -21,6 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
     ),
   );
   context.subscriptions.push(vscode.commands.registerCommand("anki-notes.insertId", insertIdCommand));
+  context.subscriptions.push(vscode.commands.registerCommand("anki-notes.exportNotes", exportNotesCommand));
   context.subscriptions.push(vscode.workspace.onWillSaveTextDocument(insertIdOnSave));
 }
 

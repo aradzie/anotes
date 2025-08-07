@@ -13,15 +13,12 @@ class Assets {
     this.#context = context;
   }
 
-  getWebviewOptions(): vscode.WebviewOptions {
-    return {
+  setWebviewContent(webview: vscode.Webview) {
+    webview.options = {
       enableScripts: true,
       enableForms: true,
       localResourceRoots: [this.#getPath("assets")],
     };
-  }
-
-  setWebviewContent(webview: vscode.Webview) {
     webview.html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,12 +51,10 @@ class Preview {
   readonly #uri: string | null;
 
   constructor(assets: Assets, column: vscode.ViewColumn, uri: string | null) {
-    this.#panel = vscode.window.createWebviewPanel(
-      Preview.viewType,
-      Preview.title,
-      { viewColumn: column, preserveFocus: true },
-      assets.getWebviewOptions(),
-    );
+    this.#panel = vscode.window.createWebviewPanel(Preview.viewType, Preview.title, {
+      viewColumn: column,
+      preserveFocus: true,
+    });
     this.#column = column;
     this.#uri = uri;
     assets.setWebviewContent(this.#panel.webview);
