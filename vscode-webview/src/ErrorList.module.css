@@ -1,0 +1,12 @@
+.root {
+  position: fixed;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  padding-inline: 1rem;
+  background-color: #eee;
+}
+
+.error {
+  color: red;
+}

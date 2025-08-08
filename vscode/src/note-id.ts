@@ -1,4 +1,4 @@
-import { formatNotes, NoteList, parseNotes } from "@anotes/core";
+import { formatNotes, NoteParser } from "@anotes/core";
 import vscode from "vscode";
 
 export async function insertIdCommand() {
@@ -28,15 +28,16 @@ export function insertIdOnSave(event: vscode.TextDocumentWillSaveEvent) {
 function editDocument(document: vscode.TextDocument): vscode.TextEdit[] {
   const uri = String(document.uri);
   const text = document.getText();
-  const start = document.positionAt(0);
-  const end = document.positionAt(text.length);
-  const range = new vscode.Range(start, end);
-  const notes = new NoteList();
-  try {
-    parseNotes(uri, text, notes);
-  } catch {
+  const parser = new NoteParser();
+  parser.parse(uri, text);
+  const { notes, errors } = parser;
+  if (errors.length > 0) {
     return [];
+  } else {
+    notes.insertId();
+    const start = document.positionAt(0);
+    const end = document.positionAt(text.length);
+    const range = new vscode.Range(start, end);
+    return [vscode.TextEdit.replace(range, formatNotes(notes))];
   }
-  notes.insertId();
-  return [vscode.TextEdit.replace(range, formatNotes(notes))];
 }

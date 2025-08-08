@@ -1,10 +1,11 @@
-import { type Note, NoteList, parseNotes } from "@anotes/core";
+import { type Note, type NoteError, NoteParser } from "@anotes/core";
 import { useEffect, useState } from "react";
 import { queue } from "./messages.js";
 import { vscode } from "./vscode.js";
 
 export function useNotes() {
   const [notes, setNotes] = useState<Note[]>([]);
+  const [errors, setErrors] = useState<NoteError[]>([]);
   useEffect(() => {
     return queue.subscribe((message) => {
       switch (message.type) {
@@ -14,12 +15,14 @@ export function useNotes() {
 
           // Parse and render the notes.
           const { uri, text } = message;
-          try {
-            const notes = new NoteList();
-            parseNotes(uri, text, notes);
+          const parser = new NoteParser();
+          parser.parse(uri, text);
+          const { notes, errors } = parser;
+          if (errors.length > 0) {
+            setErrors([...errors]);
+          } else {
             setNotes([...notes]);
-          } catch (err) {
-            console.error("Error parsing notes", err);
+            setErrors([]);
           }
           break;
         }
@@ -29,5 +32,5 @@ export function useNotes() {
       }
     });
   }, []);
-  return notes;
+  return [notes, errors] as const;
 }

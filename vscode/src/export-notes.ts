@@ -1,21 +1,21 @@
-import { exportNotes, NoteList, parseNotes } from "@anotes/core";
+import { exportNotes, NoteParser } from "@anotes/core";
 import vscode from "vscode";
 
 export async function exportNotesCommand() {
   const [dir] = vscode.workspace.workspaceFolders ?? [];
   if (dir) {
+    const parser = new NoteParser();
     const files = await vscode.workspace.findFiles("**/*.note", "**/node_modules/**");
-    const notes = new NoteList();
     for (const file of files.sort(sortFiles)) {
       const data = await vscode.workspace.fs.readFile(file);
       const text = Buffer.from(data).toString("utf-8");
-      try {
-        parseNotes(file.fsPath, text, notes);
-      } catch (err) {
+      parser.parse(file.fsPath, text);
+      if (parser.errors.length > 0) {
         vscode.window.showErrorMessage(`Error parsing note file "${file.fsPath}".`);
         return;
       }
     }
+    const { notes } = parser;
     if (notes.length > 0) {
       const out = vscode.Uri.joinPath(dir.uri, "notes.txt");
       await vscode.workspace.fs.writeFile(out, Buffer.from(exportNotes(notes)));

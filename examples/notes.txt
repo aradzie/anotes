@@ -9,4 +9,4 @@ bd35b5d7-1964-4b2a-a9a9-d7cc44e8283a;Cloze;Geography;Geography Capital;<p>The ca
 44011d69-198a-4800-8597-5889ab90c6d2;Basic;Math;Math Equation;"<p>Euler&#39;s formula</p>";"\[ \begin{align}
     e^{ix}  &= \cos x + i \sin x \\
     e^{-ix} &= \cos x - i \sin x
-\end{align*} \]"
+\end{align} \]"

@@ -1,3 +1,4 @@
+import { ParseError } from "@anotes/core";
 import { Command } from "commander";
 import { exportCmd } from "./cmd-export.js";
 import { insertIdCmd } from "./cmd-insert-id.js";
@@ -23,7 +24,20 @@ program
   .option("--dir <dir>", "name of the directory with note source files", parsePath, parsePath("."))
   .action(insertIdCmd);
 
-program.parse();
+try {
+  program.parse();
+} catch (err) {
+  if (err instanceof ParseError) {
+    for (const {
+      message,
+      location: { source, start },
+    } of err.errors) {
+      console.error(`Error: ${message} at ${String(source)}:${start.line}:${start.column}`);
+    }
+  } else {
+    throw err;
+  }
+}
 
 function parsePath(value: string): string {
   return pathTo(value);
