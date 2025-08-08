@@ -1,14 +1,22 @@
 import { type NoteError } from "@anotes/core";
 import * as cn from "./ErrorList.module.css";
+import { revealRange } from "./navigate.js";
 
 export function ErrorList({ errors }: { errors: NoteError[] }) {
   return (
     <div className={cn.root}>
-      {errors.map(({ message, location: { source, start } }, index) => (
-        <p key={index} className={cn.error}>
+      {errors.map(({ message, location }, index) => (
+        <p
+          key={index}
+          className={cn.error}
+          onClick={(ev) => {
+            ev.preventDefault();
+            revealRange(location);
+          }}
+        >
           <strong>{message}</strong>
           {" at "}
-          {String(source)}:{start.line}:{start.column}
+          {String(location.source)}:{location.start.line}:{location.start.column}
         </p>
       ))}
     </div>

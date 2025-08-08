@@ -28,7 +28,7 @@
         },
         {
           "name": "keyword.anki-notes",
-          "match": "^![a-zA-Z]+:"
+          "match": "^![- _a-zA-Z0-9]+:"
         },
         {
           "name": "keyword.anki-notes",

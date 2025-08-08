@@ -28,11 +28,8 @@ try {
   program.parse();
 } catch (err) {
   if (err instanceof ParseError) {
-    for (const {
-      message,
-      location: { source, start },
-    } of err.errors) {
-      console.error(`Error: ${message} at ${String(source)}:${start.line}:${start.column}`);
+    for (const { message, location } of err.errors) {
+      console.error(`Error: ${message} at ${String(location.source)}:${location.start.line}:${location.start.column}`);
     }
   } else {
     throw err;

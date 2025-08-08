@@ -9,4 +9,5 @@
 
 .error {
   color: red;
+  cursor: pointer;
 }

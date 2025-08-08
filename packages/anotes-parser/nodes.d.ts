@@ -17,3 +17,8 @@ export type FieldNode = {
   value: string;
   loc: LocationRange;
 };
+
+export type Token = {
+  text: string;
+  loc: LocationRange;
+};

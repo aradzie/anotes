@@ -1,10 +1,10 @@
 export type UpdateMessage = { type: "update"; uri: string; text: string };
-
 export type FocusMessage = { type: "focus"; noteIndex: number; fieldIndex: number };
+export type IncomingMessage = UpdateMessage | FocusMessage;
+export type RevealRangeMessage = { type: "reveal-range"; uri: string; start: number; end: number };
+export type OutgoingMessage = RevealRangeMessage;
 
-export type Message = UpdateMessage | FocusMessage;
-
-type Callback = (message: Message) => void;
+type Callback = (message: IncomingMessage) => void;
 
 /**
  * The global message handler is ready to receive messages right away,
@@ -12,14 +12,14 @@ type Callback = (message: Message) => void;
  * to the React app once it is mounted.
  */
 class MessageQueue {
-  readonly #queue: Message[] = [];
+  readonly #queue: IncomingMessage[] = [];
   #callback: Callback | null = null;
 
   constructor() {
     addEventListener("message", this.#handleMessage);
   }
 
-  #handleMessage = ({ data }: MessageEvent<Message>) => {
+  #handleMessage = ({ data }: MessageEvent<IncomingMessage>) => {
     if (this.#callback != null) {
       this.#callback(data);
     } else {

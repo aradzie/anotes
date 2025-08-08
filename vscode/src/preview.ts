@@ -1,10 +1,11 @@
 import vscode from "vscode";
+import { revealEditor } from "./util.js";
 
 type UpdateMessage = { type: "update"; uri: string; text: string };
-
 type FocusMessage = { type: "focus"; noteIndex: number; fieldIndex: number };
-
-type Message = UpdateMessage | FocusMessage;
+type OutgoingMessage = UpdateMessage | FocusMessage;
+type RevealRangeMessage = { type: "reveal-range"; uri: string; start: number; end: number };
+type IncomingMessage = RevealRangeMessage;
 
 class Assets {
   readonly #context: vscode.ExtensionContext;
@@ -58,6 +59,7 @@ class Preview {
     this.#column = column;
     this.#uri = uri;
     assets.setWebviewContent(this.#panel.webview);
+    this.#panel.webview.onDidReceiveMessage(this.#onIncomingMessage); // TODO Dispose.
   }
 
   get panel(): vscode.WebviewPanel {
@@ -79,6 +81,23 @@ class Preview {
   render(uri: string, text: string) {
     this.#panel.title = `${Preview.title}: ${uri.split("/").pop()}`;
     this.#panel.webview.postMessage({ type: "update", uri, text }).then(() => {});
+  }
+
+  #onIncomingMessage = (message: IncomingMessage): void => {
+    switch (message.type) {
+      case "reveal-range": {
+        const { uri, start, end } = message;
+        this.#revealRange(uri, start, end).catch((err) => {});
+        break;
+      }
+    }
+  };
+
+  async #revealRange(uri: string, start: number, end: number) {
+    const editor = await revealEditor(uri);
+    const range = new vscode.Range(editor.document.positionAt(start), editor.document.positionAt(end));
+    editor.selection = new vscode.Selection(range.start, range.start);
+    editor.revealRange(range);
   }
 
   dispose() {
