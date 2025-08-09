@@ -62,6 +62,19 @@ test("parse field values", () => {
   like(parse("!a: \t abc\nxyz \n\n~~~"), [{ fields: [{ name: "a", value: "abc\nxyz" }] }]);
 });
 
+test("parse note list", () => {
+  like(parse(""), []);
+  like(parse(" \n \n "), []);
+  like(parse("!a:1\n~~~\n!a:2\n~~~"), [
+    { fields: [{ name: "a", value: "1" }] },
+    { fields: [{ name: "a", value: "2" }] },
+  ]);
+  like(parse(" \n\n!a:1\n~~~ \n\n!a:2\n~~~ \n\n"), [
+    { fields: [{ name: "a", value: "1" }] },
+    { fields: [{ name: "a", value: "2" }] },
+  ]);
+});
+
 test("report errors", () => {
   throws(
     () => {
@@ -77,14 +90,26 @@ test("report errors", () => {
   );
   throws(
     () => {
-      parse("!a:abc\n x");
+      parse("!a:abc");
     },
-    { message: 'Expected "~~~" or field but " " found.' },
+    { message: "Expected newline but end of input found." },
   );
   throws(
     () => {
-      parse("!a:abc\n~~~ x");
+      parse("!a:abc\n x");
     },
-    { message: 'Expected newline but "x" found.' },
+    { message: "Expected newline but end of input found." },
+  );
+  throws(
+    () => {
+      parse("!a:abc\n~~~x");
+    },
+    { message: 'Expected end of input or newline but "x" found.' },
+  );
+  throws(
+    () => {
+      parse("~~~");
+    },
+    { message: 'Expected end of input, field, newline, or property but "~" found.' },
   );
 });

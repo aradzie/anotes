@@ -1,8 +1,25 @@
-NoteList = notes:( Blank @Note _ ( Newline / !. ) )* Blank _ { return notes; }
+NoteList =
+  list:(
+    ( _ Newline )*
+    head:Note
+    tail:(
+      ( _ Newline )+ @Note
+    )*
+    { return [head, ...tail]; }
+  )?
+  ( _ Newline )* _
+  { return list ?? []; }
 
-Note = properties:Property* fields:Field+ NoteEnd { return { properties, fields, loc: location() }; }
+Note =
+  properties:( @Property Newline ( _ Newline )* )*
+  fields:( @Field Newline ( _ Newline )* )+
+  NoteEnd
+  { return { properties, fields, loc: location() }; }
 
-Property "property" = @( name:PropertyName value:PropertyValue { return { name, value, loc: location() }; } ) Newline ( _ Newline )*
+Property "property" =
+  name:PropertyName
+  value:PropertyValue
+  { return { name, value, loc: location() }; }
 
 PropertyName "property name" =
     "!type:"i { return "type"; }
@@ -11,23 +28,32 @@ PropertyName "property name" =
   / "!template:"i { return "template"; }
   / "!id:"i { return "id"; }
 
-PropertyValue "property value" = value:Text { return value.trim(); }
+PropertyValue =
+  value:Text
+  { return value.trim(); }
 
-Field "field" = name:FieldName value:FieldValue { return { name, value, loc: location() }; }
+Field "field" =
+  name:FieldName
+  value:FieldValue
+  { return { name, value, loc: location() }; }
 
-FieldName "field name" = "!" name:$[- _a-z0-9]i+ ":" { return name; }
+FieldName "field name" =
+  "!" name:$[- _a-z0-9]i+ ":"
+  { return name; }
 
-FieldValue "field value" =
-  head:$( Text Newline )
-  tail:$( !( PropertyName / FieldName / NoteEnd ) Text Newline )*
+FieldValue =
+  head:$( Text )
+  tail:$( !( Newline ( PropertyName / FieldName / NoteEnd ) ) Newline Text )*
   { return [head, ...tail].join("").trim(); }
 
-NoteEnd = "~~~" { return null; }
+NoteEnd =
+  "~~~"
 
-Text "text" = $( !Newline . )*
+Text "text" =
+  $( !Newline . )*
 
-Blank = ( _ Newline )* { return null; }
+Newline "newline" =
+  $( "\r\n" / "\n" )
 
-Newline "newline" = $( "\r\n" / "\n" ) { return null; }
-
-_ "whitespace" = $[ \t]* { return null; }
+_ "whitespace" =
+  $[ \t]*
