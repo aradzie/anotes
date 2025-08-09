@@ -59,9 +59,9 @@ test("parse", () => {
 test("error: syntax", () => {
   const parser = new NoteParser();
 
-  parser.parse("example.notes", `!type: basic\n!a:1\n!b:2\n`);
+  parser.parse("example.notes", `!type: basic\n!front:1`);
 
-  like([...parser.errors], [{ message: 'Expected "~~~" or field but end of input found.' }]);
+  like([...parser.errors], [{ message: "Expected newline but end of input found." }]);
 });
 
 test("error: unknown note type", () => {

@@ -199,7 +199,7 @@ function peg$parse(input, options) {
 
   function peg$f0(head, tail) {    return [head, ...tail];  }
   function peg$f1(list) {    return list ?? [];  }
-  function peg$f2(properties, fields) {    return { properties, fields, loc: location() };  }
+  function peg$f2(properties, fields, end) {    return { properties, fields, end, loc: location() };  }
   function peg$f3(name, value) {    return { name, value, loc: location() };  }
   function peg$f4() {    return "type";  }
   function peg$f5() {    return "deck";  }
@@ -210,6 +210,7 @@ function peg$parse(input, options) {
   function peg$f10(name, value) {    return { name, value, loc: location() };  }
   function peg$f11(name) {    return name;  }
   function peg$f12(head, tail) {    return [head, ...tail].join("").trim();  }
+  function peg$f13() {    return { text: text(), loc: location() };  }
   let peg$currPos = options.peg$currPos | 0;
   let peg$savedPos = peg$currPos;
   const peg$posDetailsCache = [{ line: 1, column: 1 }];
@@ -709,7 +710,7 @@ function peg$parse(input, options) {
       s3 = peg$parseNoteEnd();
       if (s3 !== peg$FAILED) {
         peg$savedPos = s0;
-        s0 = peg$f2(s1, s2);
+        s0 = peg$f2(s1, s2, s3);
       } else {
         peg$currPos = s0;
         s0 = peg$FAILED;
@@ -1049,15 +1050,21 @@ function peg$parse(input, options) {
   }
 
   function peg$parseNoteEnd() {
-    let s0;
+    let s0, s1;
 
+    s0 = peg$currPos;
     if (input.substr(peg$currPos, 3) === peg$c7) {
-      s0 = peg$c7;
+      s1 = peg$c7;
       peg$currPos += 3;
     } else {
-      s0 = peg$FAILED;
+      s1 = peg$FAILED;
       if (peg$silentFails === 0) { peg$fail(peg$e12); }
     }
+    if (s1 !== peg$FAILED) {
+      peg$savedPos = s0;
+      s1 = peg$f13();
+    }
+    s0 = s1;
 
     return s0;
   }

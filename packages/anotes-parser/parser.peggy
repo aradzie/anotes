@@ -13,8 +13,8 @@ NoteList =
 Note =
   properties:( @Property Newline ( _ Newline )* )*
   fields:( @Field Newline ( _ Newline )* )+
-  NoteEnd
-  { return { properties, fields, loc: location() }; }
+  end:NoteEnd
+  { return { properties, fields, end, loc: location() }; }
 
 Property "property" =
   name:PropertyName
@@ -48,6 +48,7 @@ FieldValue =
 
 NoteEnd =
   "~~~"
+  { return { text: text(), loc: location() }; }
 
 Text "text" =
   $( !Newline . )*

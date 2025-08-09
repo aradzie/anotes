@@ -102,6 +102,12 @@ test("report errors", () => {
   );
   throws(
     () => {
+      parse("!a:abc\n");
+    },
+    { message: "Expected newline but end of input found." }, // This does not look good.
+  );
+  throws(
+    () => {
       parse("!a:abc\n~~~x");
     },
     { message: 'Expected end of input or newline but "x" found.' },
