@@ -1,3 +1,5 @@
+import { type LocationRange } from "@anotes/parser";
+
 class NoteList implements Iterable<Note> {
   readonly #notes: Note[] = [];
 
@@ -21,7 +23,19 @@ class NoteList implements Iterable<Note> {
   }
 }
 
-class Note implements Iterable<NoteField> {
+class Node {
+  #loc: LocationRange | null = null;
+
+  get loc(): LocationRange | null {
+    return this.#loc;
+  }
+
+  set loc(value: LocationRange | null) {
+    this.#loc = value;
+  }
+}
+
+class Note extends Node implements Iterable<NoteField> {
   readonly #type: NoteType;
   #deck: string = "";
   #tags: string = "";
@@ -30,6 +44,7 @@ class Note implements Iterable<NoteField> {
   readonly #fields = new Map<string, NoteField>();
 
   constructor(type: NoteType) {
+    super();
     this.#type = type;
     for (const field of type.fields) {
       this.#fields.set(field.name.toLowerCase(), new NoteField(field));
@@ -97,11 +112,12 @@ class Note implements Iterable<NoteField> {
   }
 }
 
-class NoteField {
+class NoteField extends Node {
   readonly #type: NoteFieldType;
   #value: string = "";
 
   constructor(type: NoteFieldType) {
+    super();
     this.#type = type;
   }
 
