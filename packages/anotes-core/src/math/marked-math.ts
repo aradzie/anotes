@@ -115,9 +115,10 @@ function findInlineEnd(src: string, start: number): number {
  */
 function isBlockStartAlt(src: string): boolean {
   return (
-    src.length >= 4 && //
+    src.length >= 5 && // $$x$$
     src.charCodeAt(0) === /* "$" */ 0x0024 &&
-    src.charCodeAt(1) === /* "$" */ 0x0024
+    src.charCodeAt(1) === /* "$" */ 0x0024 &&
+    src.charCodeAt(2) !== /* "$" */ 0x0024
   );
 }
 
@@ -125,12 +126,16 @@ function isBlockStartAlt(src: string): boolean {
  * Finds the position of the opening "$$" in the given text.
  */
 function findBlockStartAlt(src: string, start: number): number {
-  for (let i = start; i < src.length - 1; i += 1) {
+  for (let i = start; i < src.length - 4; i += 1) {
     if (src.charCodeAt(i) === /* "\" */ 0x005c) {
       i += 1; // Skip the escaped character.
       continue;
     }
-    if (src.charCodeAt(i) === /* "$" */ 0x0024 && src.charCodeAt(i + 1) === /* "$" */ 0x0024) {
+    if (
+      src.charCodeAt(i) === /* "$" */ 0x0024 &&
+      src.charCodeAt(i + 1) === /* "$" */ 0x0024 &&
+      src.charCodeAt(i + 2) !== /* "$" */ 0x0024
+    ) {
       return i;
     }
   }
@@ -171,8 +176,9 @@ function findBlockEndAlt(src: string, start: number): number {
  */
 function isInlineStartAlt(src: string): boolean {
   return (
-    src.length >= 2 && //
-    src.charCodeAt(0) === /* "$" */ 0x0024
+    src.length >= 3 && // $x$
+    src.charCodeAt(0) === /* "$" */ 0x0024 &&
+    src.charCodeAt(1) !== /* "$" */ 0x0024
   );
 }
 
@@ -180,12 +186,15 @@ function isInlineStartAlt(src: string): boolean {
  * Finds the position of the opening "$" in the given text.
  */
 function findInlineStartAlt(src: string, start: number): number {
-  for (let i = start; i < src.length; i += 1) {
+  for (let i = start; i < src.length - 2; i += 1) {
     if (src.charCodeAt(i) === /* "\" */ 0x005c) {
       i += 1; // Skip the escaped character.
       continue;
     }
-    if (src.charCodeAt(i) === /* "$" */ 0x0024) {
+    if (
+      src.charCodeAt(i) === /* "$" */ 0x0024 && //
+      src.charCodeAt(i + 1) !== /* "$" */ 0x0024
+    ) {
       return i;
     }
   }

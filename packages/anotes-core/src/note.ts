@@ -74,7 +74,7 @@ class Note extends Node implements Iterable<NoteField> {
   }
 
   set deck(value: string | null) {
-    this.#deck = value?.trim() ?? "";
+    this.#deck = value ?? "";
   }
 
   get tags(): string {
@@ -82,7 +82,7 @@ class Note extends Node implements Iterable<NoteField> {
   }
 
   set tags(value: string | null) {
-    this.#tags = value?.trim() ?? "";
+    this.#tags = value ?? "";
   }
 
   get template(): string {
@@ -90,7 +90,7 @@ class Note extends Node implements Iterable<NoteField> {
   }
 
   set template(value: string | null) {
-    this.#template = value?.trim() ?? "";
+    this.#template = value ?? "";
   }
 
   get id(): string {
@@ -98,7 +98,7 @@ class Note extends Node implements Iterable<NoteField> {
   }
 
   set id(value: string | null) {
-    this.#id = value?.trim() ?? "";
+    this.#id = value ?? "";
   }
 
   [Symbol.iterator](): Iterator<NoteField> {
@@ -148,7 +148,7 @@ class NoteField extends Node {
   }
 
   set value(value: string | null) {
-    this.#value = value?.trim() ?? "";
+    this.#value = value ?? "";
   }
 }
 
@@ -236,33 +236,6 @@ class NoteTypeMap implements Iterable<NoteType> {
   }
 }
 
-const noteTypes = new NoteTypeMap()
-  .add({
-    name: "Math",
-    fields: [
-      { name: "Front", required: true }, //
-      { name: "Back", required: true },
-      { name: "Related" },
-      { name: "Example" },
-    ],
-  })
-  .add({
-    name: "Math Identity",
-    fields: [
-      { name: "Front", required: true }, //
-      { name: "Back", required: true },
-      { name: "Related" },
-      { name: "Example" },
-    ],
-  })
-  .add({
-    name: "Math Definition",
-    fields: [
-      { name: "Front", required: true }, //
-      { name: "Back", required: true },
-      { name: "Related" },
-      { name: "Example" },
-    ],
-  });
+const noteTypes = new NoteTypeMap();
 
 export { Note, NoteField, type NoteFieldType, NoteList, type NoteType, NoteTypeMap, noteTypes };

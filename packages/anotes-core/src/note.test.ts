@@ -1,0 +1,93 @@
+import { test } from "node:test";
+import { deepEqual, equal, isFalse, isTrue, like } from "rich-assert";
+import { Note, NoteList, noteTypes } from "./note.js";
+
+test("note list", () => {
+  const a = new Note(noteTypes.basic);
+  a.id = "1";
+  const b = new Note(noteTypes.basic);
+  b.id = "2";
+  const c = new Note(noteTypes.basic);
+
+  const list = new NoteList();
+
+  deepEqual([...list], []);
+  isFalse(list.has("1"));
+  isFalse(list.has("2"));
+  isFalse(list.has("3"));
+
+  list.add(a);
+  list.add(b);
+  list.add(c);
+
+  deepEqual([...list], [a, b, c]);
+  equal(a.id, "1");
+  equal(b.id, "2");
+  equal(c.id, "");
+  isTrue(list.has("1"));
+  isTrue(list.has("2"));
+  isFalse(list.has("3"));
+
+  list.insertId(() => "3");
+
+  deepEqual([...list], [a, b, c]);
+  equal(a.id, "1");
+  equal(b.id, "2");
+  equal(c.id, "3");
+  isTrue(list.has("1"));
+  isTrue(list.has("2"));
+  isTrue(list.has("3"));
+});
+
+test("note fields", () => {
+  const note = new Note(noteTypes.basic);
+
+  isTrue(note.has("front"));
+  isTrue(note.has("Front"));
+  isTrue(note.has("back"));
+  isTrue(note.has("Back"));
+  isFalse(note.has("xyz"));
+
+  equal(note.get("front"), note.get("FRONT"));
+  equal(note.get("back"), note.get("BACK"));
+
+  like(
+    [...note],
+    [
+      { name: "Front", value: "" },
+      { name: "Back", value: "" },
+    ],
+  );
+  like(note.get("front"), { name: "Front", value: "" });
+  like(note.get("back"), { name: "Back", value: "" });
+
+  note.set("front", "a");
+
+  like(
+    [...note],
+    [
+      { name: "Front", value: "a" },
+      { name: "Back", value: "" },
+    ],
+  );
+  like(note.get("front"), { name: "Front", value: "a" });
+  like(note.get("back"), { name: "Back", value: "" });
+});
+
+test("note type", () => {
+  like(
+    [...noteTypes],
+    [
+      { name: "Basic" },
+      { name: "Basic (and reversed card)" },
+      { name: "Basic (optional reversed card)" },
+      { name: "Basic (type in the answer)" },
+      { name: "Cloze" },
+    ],
+  );
+  isFalse(noteTypes.has("abc"));
+  equal(noteTypes.get("abc"), null);
+  isTrue(noteTypes.has("basic"));
+  isTrue(noteTypes.has("BASIC"));
+  equal(noteTypes.get("basic"), noteTypes.get("BASIC"));
+});

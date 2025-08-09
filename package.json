@@ -24,6 +24,9 @@
     "vscode-webview",
     "vscode"
   ],
+  "dependencies": {
+    "rich-assert": "^0.0.3"
+  },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "esbuild": "^0.25.8",
@@ -42,6 +45,8 @@
     "compile": "npm run compile --workspaces --if-present",
     "prebuild": "npm run compile",
     "build": "npm run build --workspaces --if-present",
+    "pretest": "npm run compile",
+    "test": "npm run test --workspaces --if-present",
     "lint": "eslint '{**/*,*}.{js,ts,tsx}'",
     "lint-fix": "eslint '{**/*,*}.{js,ts,tsx}' --fix",
     "stylelint": "stylelint '**/*.css'",

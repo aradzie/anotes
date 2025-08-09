@@ -7,6 +7,7 @@
     "peggy": "^5.0.6"
   },
   "scripts": {
-    "compile": "peggy --format=es --dts ./parser.peggy"
+    "compile": "peggy --format=es --dts ./parser.peggy",
+    "test": "node --test '**/*.test.js'"
   }
 }

@@ -9,6 +9,7 @@
     "marked": "^16.1.2"
   },
   "scripts": {
-    "compile": "rm -fr dist; tsc"
+    "compile": "rm -fr dist; tsc",
+    "test": "node --test 'dist/**/*.test.js'"
   }
 }

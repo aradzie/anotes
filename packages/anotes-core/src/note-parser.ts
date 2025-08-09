@@ -130,7 +130,7 @@ class NoteParser {
           field.value = value;
           field.loc = loc;
         } else {
-          this.#errors.push({ message: `Unknown field "${name}"`, location: loc });
+          this.#errors.push({ message: `Unknown field: "${name}"`, location: loc });
           continue;
         }
       }

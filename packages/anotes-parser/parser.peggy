@@ -1,8 +1,8 @@
-NoteList = ( _ Newline )* notes:( @Note ( _ Newline )* )* { return notes; }
+NoteList = notes:( Blank @Note _ ( Newline / !. ) )* Blank _ { return notes; }
 
-Note = properties:Property* fields:Field* NoteEnd { return { properties, fields, loc: location() }; }
+Note = properties:Property* fields:Field+ NoteEnd { return { properties, fields, loc: location() }; }
 
-Property "property" = @( name:PropertyName value:PropertyValue { return { name, value, loc: location() }; } ) Newline+
+Property "property" = @( name:PropertyName value:PropertyValue { return { name, value, loc: location() }; } ) Newline ( _ Newline )*
 
 PropertyName "property name" =
     "!type:"i { return "type"; }
@@ -22,9 +22,11 @@ FieldValue "field value" =
   tail:$( !( PropertyName / FieldName / NoteEnd ) Text Newline )*
   { return [head, ...tail].join("").trim(); }
 
-NoteEnd "~~~" = "~~~" _ ( Newline / !. ) { return null; }
+NoteEnd = "~~~" { return null; }
 
 Text "text" = $( !Newline . )*
+
+Blank = ( _ Newline )* { return null; }
 
 Newline "newline" = $( "\r\n" / "\n" ) { return null; }
 
