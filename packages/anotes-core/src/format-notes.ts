@@ -1,30 +1,36 @@
-import { type Note } from "./note.js";
+import { type Note, type NoteType } from "./note.js";
 
 function formatNotes(notes: Iterable<Readonly<Note>>): string {
   const lines = [];
-  let type0 = null;
-  let deck0 = null;
-  let tags0 = null;
-  let template0 = null;
-  for (const { type, deck, tags, template, id, fields } of notes) {
-    if (type.name !== type0) {
+  const state = {
+    type: { name: "", fields: [] } as NoteType,
+    deck: "",
+    tags: "",
+    template: "",
+  };
+  for (const note of notes) {
+    const { type, deck, tags, template, id } = note;
+    if (type !== state.type) {
       lines.push(`!type: ${type.name}`);
+      state.type = type;
     }
-    if (deck !== deck0) {
+    if (deck !== state.deck) {
       lines.push(`!deck: ${deck ?? ""}`);
+      state.deck = deck;
     }
-    if (tags !== tags0) {
+    if (tags !== state.tags) {
       lines.push(`!tags: ${tags ?? ""}`);
+      state.tags = tags;
     }
-    if (template !== template0) {
+    if (template !== state.template) {
       lines.push(`!template: ${template ?? ""}`);
+      state.template = template;
     }
     lines.push("");
     if (id) {
       lines.push(`!id: ${id}`);
     }
-    for (const { name } of type.fields) {
-      const value = fields[name]?.trim();
+    for (const { name, value } of note) {
       if (value) {
         if (isMultiline(value)) {
           lines.push(`!${name.toLowerCase()}:`);
@@ -35,10 +41,6 @@ function formatNotes(notes: Iterable<Readonly<Note>>): string {
       }
     }
     lines.push("~~~");
-    type0 = type.name;
-    deck0 = deck;
-    tags0 = tags;
-    template0 = template;
   }
   lines.push("");
   return lines.join("\n");

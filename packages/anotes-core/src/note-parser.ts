@@ -1,5 +1,5 @@
 import { type LocationRange, type NoteNode, parse, SyntaxError } from "@anotes/parser";
-import { NoteList, noteTypes } from "./note.js";
+import { Note, NoteList, type NoteType, noteTypes } from "./note.js";
 
 type NoteError = {
   message: string;
@@ -16,6 +16,13 @@ class ParseError extends Error {
     this.errors = [...errors];
   }
 }
+
+type ParseState = {
+  type: NoteType;
+  deck: string;
+  tags: string;
+  template: string;
+};
 
 class NoteParser {
   readonly #notes: NoteList;
@@ -46,46 +53,53 @@ class NoteParser {
     }
   }
 
-  mapNodes(nodes: NoteNode[]): void {
-    let type = noteTypes.basic;
-    let deck = null;
-    let tags = null;
-    let template = null;
-
+  mapNodes(
+    nodes: NoteNode[],
+    state: ParseState = {
+      type: noteTypes.basic,
+      deck: "",
+      tags: "",
+      template: "",
+    },
+  ): void {
     for (const noteNode of nodes) {
-      let id = null;
-      const fields: Record<string, string> = {};
       const seen = new Set<string>();
+
+      let id = "";
 
       // Set note properties.
       for (const { name, value, loc } of noteNode.properties) {
-        if (seen.has(name)) {
+        const nameLc = name.toLowerCase();
+        if (seen.has(nameLc)) {
           this.#errors.push({ message: `Duplicate property: "${name}"`, location: loc });
           continue;
         }
-        seen.add(name);
-        switch (name) {
+        seen.add(nameLc);
+
+        switch (nameLc) {
           case "type": {
-            const t = noteTypes.get(value);
-            if (t == null) {
+            const type = noteTypes.get(value);
+            if (type == null) {
               this.#errors.push({ message: `Unknown note type: "${value}"`, location: loc });
               continue;
             }
-            type = t;
+            state.type = type;
             break;
           }
-          case "deck":
-            deck = value || null;
+          case "deck": {
+            state.deck = value;
             break;
-          case "tags":
-            tags = value || null;
+          }
+          case "tags": {
+            state.tags = value;
             break;
-          case "template":
-            template = value || null;
+          }
+          case "template": {
+            state.template = value;
             break;
-          case "id":
-            id = value || null;
-            if (id) {
+          }
+          case "id": {
+            if ((id = value)) {
               if (this.#id.has(id)) {
                 this.#errors.push({ message: `Duplicate ID: "${id}"`, location: loc });
                 continue;
@@ -94,30 +108,34 @@ class NoteParser {
               }
             }
             break;
+          }
         }
       }
 
-      // Initialize fields.
-      for (const field of type.fields) {
-        fields[field.name] = "";
-      }
+      const note = new Note(state.type);
+      note.deck = state.deck;
+      note.tags = state.tags;
+      note.template = state.template;
+      note.id = id;
 
       // Set note fields.
       for (const { name, value, loc } of noteNode.fields) {
-        if (seen.has(name)) {
+        const nameLc = name.toLowerCase();
+        if (seen.has(nameLc)) {
           this.#errors.push({ message: `Duplicate field: "${name}"`, location: loc });
           continue;
         }
-        seen.add(name);
-        const field = findByName(type.fields, name);
-        if (field == null) {
+        seen.add(nameLc);
+
+        if (note.has(nameLc)) {
+          note.set(nameLc, value);
+        } else {
           this.#errors.push({ message: `Unknown field "${name}"`, location: loc });
           continue;
         }
-        fields[field.name] = value;
       }
 
-      this.#notes.add({ type, deck, tags, template, id, fields, node: noteNode });
+      this.#notes.add(note);
     }
   }
 
@@ -139,20 +157,6 @@ class NoteParser {
     this.checkErrors();
     return this.#notes;
   }
-}
-
-function findByName<T extends { readonly name: string }>(list: readonly T[], name: string): T | null {
-  for (const item of list) {
-    if (item.name === name) {
-      return item;
-    }
-  }
-  for (const item of list) {
-    if (item.name.toLowerCase() === name.toLowerCase()) {
-      return item;
-    }
-  }
-  return null;
 }
 
 export { type NoteError, NoteParser, ParseError };

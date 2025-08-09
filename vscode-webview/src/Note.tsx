@@ -1,5 +1,5 @@
 import { type Note } from "@anotes/core";
-import { FieldList } from "./FieldList.js";
+import { FieldList1 } from "./FieldList.js";
 import { Meta } from "./Meta.js";
 import * as cn from "./Note.module.css";
 import { useView } from "./view.js";
@@ -15,7 +15,7 @@ export function Note1({ note }: { note: Note }) {
       data-note-tags={note.tags}
     >
       {view.view === "details" && <Meta note={note} />}
-      <FieldList note={note} />
+      <FieldList1 note={note} />
     </section>
   );
 }

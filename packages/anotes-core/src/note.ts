@@ -1,5 +1,3 @@
-import { type NoteNode } from "@anotes/parser";
-
 class NoteList implements Iterable<Note> {
   readonly #notes: Note[] = [];
 
@@ -23,22 +21,115 @@ class NoteList implements Iterable<Note> {
   }
 }
 
-type Note = {
-  type: NoteType;
-  deck: string | null;
-  tags: string | null;
-  template: string | null;
-  id: string | null;
-  fields: Record<string, string>;
-  node?: NoteNode;
-};
+class Note implements Iterable<NoteField> {
+  readonly #type: NoteType;
+  #deck: string = "";
+  #tags: string = "";
+  #template: string = "";
+  #id: string = "";
+  readonly #fields = new Map<string, NoteField>();
+
+  constructor(type: NoteType) {
+    this.#type = type;
+    for (const field of type.fields) {
+      this.#fields.set(field.name.toLowerCase(), new NoteField(field));
+    }
+  }
+
+  get type(): NoteType {
+    return this.#type;
+  }
+
+  get deck(): string {
+    return this.#deck;
+  }
+
+  set deck(value: string | null) {
+    this.#deck = value?.trim() ?? "";
+  }
+
+  get tags(): string {
+    return this.#tags;
+  }
+
+  set tags(value: string | null) {
+    this.#tags = value?.trim() ?? "";
+  }
+
+  get template(): string {
+    return this.#template;
+  }
+
+  set template(value: string | null) {
+    this.#template = value?.trim() ?? "";
+  }
+
+  get id(): string {
+    return this.#id;
+  }
+
+  set id(value: string | null) {
+    this.#id = value?.trim() ?? "";
+  }
+
+  [Symbol.iterator](): Iterator<NoteField> {
+    return this.#fields.values();
+  }
+
+  has(fieldName: string): boolean {
+    return this.#fields.has(fieldName.toLowerCase());
+  }
+
+  get(fieldName: string): NoteField {
+    const field = this.#fields.get(fieldName.toLowerCase());
+    if (field == null) {
+      throw new Error(`Unknown field: "${fieldName}"`);
+    }
+    return field;
+  }
+
+  set(fieldName: string, value: string | null): void {
+    const field = this.#fields.get(fieldName.toLowerCase());
+    if (field == null) {
+      throw new Error(`Unknown field: "${fieldName}"`);
+    }
+    field.value = value;
+  }
+}
+
+class NoteField {
+  readonly #type: NoteFieldType;
+  #value: string = "";
+
+  constructor(type: NoteFieldType) {
+    this.#type = type;
+  }
+
+  get name(): string {
+    return this.#type.name;
+  }
+
+  get required(): boolean {
+    return this.#type.required ?? false;
+  }
+
+  get value(): string {
+    return this.#value;
+  }
+
+  set value(value: string | null) {
+    this.#value = value?.trim() ?? "";
+  }
+}
 
 type NoteType = {
   readonly name: string;
-  readonly fields: readonly {
-    readonly name: string;
-    readonly required?: boolean;
-  }[];
+  readonly fields: readonly NoteFieldType[];
+};
+
+type NoteFieldType = {
+  readonly name: string;
+  readonly required?: boolean;
 };
 
 class NoteTypeMap implements Iterable<NoteType> {
@@ -144,4 +235,4 @@ const noteTypes = new NoteTypeMap()
     ],
   });
 
-export { type Note, NoteList, type NoteType, NoteTypeMap, noteTypes };
+export { Note, NoteField, type NoteFieldType, NoteList, type NoteType, NoteTypeMap, noteTypes };

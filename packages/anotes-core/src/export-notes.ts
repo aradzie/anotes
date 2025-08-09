@@ -9,13 +9,12 @@ function exportNotes(notes: Iterable<Readonly<Note>>): string {
   lines.push(`#notetype column:2`);
   lines.push(`#deck column:3`);
   lines.push(`#tags column:4`);
-  for (const { type, deck, tags, id, fields } of notes) {
-    const fmt = [];
-    for (const { name } of type.fields) {
-      const value = fields[name]?.trim();
-      fmt.push(value ? formatMath(value) : "");
-    }
-    lines.push([id, type.name, deck, tags, ...fmt].map(escape).join(";"));
+  for (const note of notes) {
+    lines.push(
+      [note.id, note.type.name, note.deck, note.tags, ...[...note].map(({ value }) => formatMath(value))]
+        .map(escape)
+        .join(";"),
+    );
   }
   lines.push("");
   return lines.join("\n");

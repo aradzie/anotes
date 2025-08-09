@@ -1,13 +1,6 @@
 import { type Note } from "@anotes/core";
-import { Field } from "./Field.js";
+import { Field1 } from "./Field.js";
 
-export function FieldList({ note }: { note: Note }) {
-  return note.type.fields.map(({ name }, index) => {
-    const value = note.fields[name]?.trim();
-    if (value) {
-      return <Field key={index} name={name} value={value} />;
-    } else {
-      return null;
-    }
-  });
+export function FieldList1({ note }: { note: Note }) {
+  return [...note].map((field, index) => (field.value ? <Field1 key={index} field={field} /> : null));
 }
