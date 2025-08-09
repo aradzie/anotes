@@ -27,7 +27,6 @@ type ParseState = {
 class NoteParser {
   readonly #notes: NoteList;
   readonly #errors: NoteError[];
-  readonly #id = new Map<string, LocationRange>();
 
   constructor(notes = new NoteList()) {
     this.#notes = notes;
@@ -100,11 +99,9 @@ class NoteParser {
           }
           case "id": {
             if ((id = value)) {
-              if (this.#id.has(id)) {
+              if (this.#notes.has(id)) {
                 this.#errors.push({ message: `Duplicate ID: "${id}"`, location: loc });
                 continue;
-              } else {
-                this.#id.set(id, loc);
               }
             }
             break;

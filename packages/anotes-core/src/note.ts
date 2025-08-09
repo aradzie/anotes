@@ -2,23 +2,37 @@ import { type LocationRange } from "@anotes/parser";
 
 class NoteList implements Iterable<Note> {
   readonly #notes: Note[] = [];
+  readonly #map = new Map<string, Note>();
 
-  add(note: Note): this {
-    this.#notes.push(note);
-    return this;
+  [Symbol.iterator](): Iterator<Note> {
+    return this.#notes[Symbol.iterator]();
   }
 
   get length(): number {
     return this.#notes.length;
   }
 
-  [Symbol.iterator](): Iterator<Note> {
-    return this.#notes[Symbol.iterator]();
+  has(id: string): boolean {
+    return this.#map.has(id);
   }
 
-  insertId() {
+  get(id: string): Note | null {
+    return this.#map.get(id) || null;
+  }
+
+  add(note: Note): void {
+    this.#notes.push(note);
+    if (note.id) {
+      this.#map.set(note.id, note);
+    }
+  }
+
+  insertId(gen: () => string = crypto.randomUUID): void {
     for (const note of this.#notes) {
-      note.id ??= crypto.randomUUID();
+      if (!note.id) {
+        note.id = gen();
+        this.#map.set(note.id, note);
+      }
     }
   }
 }
