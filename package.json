@@ -22,7 +22,8 @@
     "packages/anotes-core",
     "packages/anotes-cli",
     "vscode-webview",
-    "vscode"
+    "vscode",
+    "examples"
   ],
   "dependencies": {
     "rich-assert": "^0.0.3"

@@ -3,12 +3,20 @@
 !tags: Math Equation
 
 !id: 44011d69-198a-4800-8597-5889ab90c6d2
-!front: Euler's formula
+!front: Euler's Formula
 !back:
 $$
-\begin{align}
+\begin{align*}
     e^{ix}  &= \cos x + i \sin x \\
     e^{-ix} &= \cos x - i \sin x
-\end{align}
+\end{align*}
 $$
+~~~
+
+!id: 521c65f9-e0e1-4fa6-8033-21c9fff6aac9
+!front: Mean Value Theorem
+!back:
+The **Mean Value Theorem** states that if a function $f$ is continuous on the closed interval $[a, b]$ and differentiable on the open interval $(a, b)$, then there exists at least one $c \in (a, b)$ such that
+
+$$ f'(c) = \frac{f(b) - f(a)}{b - a} $$
 ~~~

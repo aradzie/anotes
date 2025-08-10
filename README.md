@@ -13,11 +13,9 @@ File `geography.note`:
 !deck: Geography
 !tags: Geography Capital
 
-!id: 8ed2ae0e-4141-4969-bbac-b2190c46b8dd
 !text: The capital of {{c1::Mongolia::country}} is {{c2::Ulaanbaatar::city}}.
 ~~~
 
-!id: bd35b5d7-1964-4b2a-a9a9-d7cc44e8283a
 !text: The capital of {{c1::Syria::country}} is {{c2::Damascus::city}}.
 ~~~
 ```
@@ -29,14 +27,21 @@ File `math.note`:
 !deck: Math
 !tags: Math Equation
 
-!front: Euler's formula
+!front: Euler's Formula
 !back:
 $$
-\begin{align}
+\begin{align*}
     e^{ix}  &= \cos x + i \sin x \\
     e^{-ix} &= \cos x - i \sin x
-\end{align}
+\end{align*}
 $$
+~~~
+
+!front: Mean Value Theorem
+!back:
+The **Mean Value Theorem** states that if a function $f$ is continuous on the closed interval $[a, b]$ and differentiable on the open interval $(a, b)$, then there exists at least one $c \in (a, b)$ such that
+
+$$ f'(c) = \frac{f(b) - f(a)}{b - a} $$
 ~~~
 ```
 
