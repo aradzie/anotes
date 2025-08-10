@@ -27,7 +27,7 @@ class NoteList implements Iterable<Note> {
     }
   }
 
-  insertId(gen: () => string = crypto.randomUUID): void {
+  insertId(gen: () => string = () => crypto.randomUUID()): void {
     for (const note of this.#notes) {
       if (!note.id) {
         note.id = gen();
