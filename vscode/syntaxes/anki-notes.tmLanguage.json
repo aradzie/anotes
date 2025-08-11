@@ -1,21 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "Anki Notes",
+  "scopeName": "source.anki-notes",
   "patterns": [
     {
       "include": "#keywords"
     },
     {
-      "include": "#block-latex"
+      "include": "#cloze"
     },
     {
-      "include": "#inline-latex"
-    },
-    {
-      "include": "#block-latex-alt"
-    },
-    {
-      "include": "#inline-latex-alt"
+      "include": "#latex"
     }
   ],
   "repository": {
@@ -35,26 +30,75 @@
         }
       ]
     },
-    "block-latex": {
-      "name": "string",
-      "begin": "\\\\\\[",
-      "end": "\\\\\\]"
+    "cloze": {
+      "name": "string.other.anki-lang",
+      "begin": "\\{\\{(c[1-9])::",
+      "end": "\\}\\}|(?=^![-_a-zA-Z0-9]+([ \t]+[-_a-zA-Z0-9]+)*:)|(?=^~~~[ \t]*$)",
+      "patterns": [{ "include": "#cloze" }]
     },
-    "inline-latex": {
-      "name": "string",
-      "begin": "\\\\\\(",
-      "end": "\\\\\\)"
+    "latex": {
+      "patterns": [
+        {
+          "name": "string.other.anki-lang",
+          "begin": "\\\\\\[",
+          "end": "\\\\\\]|(?=^![-_a-zA-Z0-9]+([ \t]+[-_a-zA-Z0-9]+)*:)|(?=^~~~[ \t]*$)",
+          "patterns": [
+            {
+              "include": "#inner-latex"
+            }
+          ]
+        },
+        {
+          "name": "string.other.anki-lang",
+          "begin": "\\\\\\(",
+          "end": "\\\\\\)|(?=^![-_a-zA-Z0-9]+([ \t]+[-_a-zA-Z0-9]+)*:)|(?=^~~~[ \t]*$)",
+          "patterns": [
+            {
+              "include": "#inner-latex"
+            }
+          ]
+        },
+        {
+          "name": "string.other.anki-lang",
+          "begin": "(?<!\\\\)\\$\\$(?!\\$)",
+          "end": "\\$\\$|(?=^![-_a-zA-Z0-9]+([ \t]+[-_a-zA-Z0-9]+)*:)|(?=^~~~[ \t]*$)",
+          "patterns": [
+            {
+              "include": "#inner-latex"
+            }
+          ]
+        },
+        {
+          "name": "string.other.anki-lang",
+          "begin": "(?<!\\\\)\\$(?!\\$)",
+          "end": "\\$|(?=^![-_a-zA-Z0-9]+([ \t]+[-_a-zA-Z0-9]+)*:)|(?=^~~~[ \t]*$)",
+          "patterns": [
+            {
+              "include": "#inner-latex"
+            }
+          ]
+        }
+      ]
     },
-    "block-latex-alt": {
-      "name": "string",
-      "begin": "\\$\\$(?!\\$)",
-      "end": "\\$\\$"
-    },
-    "inline-latex-alt": {
-      "name": "string",
-      "begin": "\\$(?!\\$)",
-      "end": "\\$"
+    "inner-latex": {
+      "patterns": [
+        {
+          "name": "entity.name.function.anki-notes",
+          "match": "(?<!\\\\)\\\\(begin|end)\\s*\\{[a-zA-Z]+\\*?\\}"
+        },
+        {
+          "name": "entity.name.function.anki-notes",
+          "match": "(?<!\\\\)\\\\[a-zA-Z]+"
+        },
+        {
+          "match": "([0-9]*\\.[0-9]+)|[0-9]+",
+          "name": "constant.numeric.anki-notes"
+        },
+        {
+          "match": "[a-zA-Z]+",
+          "name": "variable.other.anki-notes"
+        }
+      ]
     }
-  },
-  "scopeName": "source.anki-notes"
+  }
 }
