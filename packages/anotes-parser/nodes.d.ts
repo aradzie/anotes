@@ -11,13 +11,13 @@ export type NoteNode = {
 } & Node;
 
 export type PropertyNode = {
-  name: "type" | "deck" | "tags" | "template" | "id";
-  value: string;
+  name: Token;
+  value: Token;
 } & Node;
 
 export type FieldNode = {
-  name: string;
-  value: string;
+  name: Token;
+  value: Token;
 } & Node;
 
 export type Token = {

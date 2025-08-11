@@ -1,57 +1,55 @@
 NoteList =
   list:(
-    ( _ Newline )*
-    head:Note
-    tail:(
-      ( _ Newline )+ @Note
-    )*
+    head:( ( _ Newline )* @Note )
+    tail:( ( _ Newline )+ @Note )*
     { return [head, ...tail]; }
   )?
   ( _ Newline )* _
   { return list ?? []; }
 
 Note =
-  properties:( @Property Newline ( _ Newline )* )*
-  fields:( @Field Newline ( _ Newline )* )+
+  properties:( ( _ Newline )* @Property _ Newline )*
+  fields:( ( _ Newline )* @Field _ Newline )+
   end:NoteEnd
   { return { properties, fields, end, loc: location() }; }
 
 Property "property" =
-  name:PropertyName
-  value:PropertyValue
+  name:PropertyName _ value:PropertyValue
   { return { name, value, loc: location() }; }
 
-PropertyName "property name" =
+PropertyName =
+  text:(
     "!type:"i { return "type"; }
   / "!deck:"i { return "deck"; }
   / "!tags:"i { return "tags"; }
   / "!template:"i { return "template"; }
   / "!id:"i { return "id"; }
+  )
+  { return { text, loc: location() }; }
 
 PropertyValue =
-  value:Text
-  { return value.trim(); }
+  text:Text
+  { return { text: text.trim(), loc: location() }; }
 
 Field "field" =
-  name:FieldName
-  value:FieldValue
+  name:FieldName _ value:FieldValue
   { return { name, value, loc: location() }; }
 
-FieldName "field name" =
-  "!" name:$[- _a-z0-9]i+ ":"
-  { return name; }
+FieldName =
+  "!" text:$[- _a-z0-9]i+ ":"
+  { return { text, loc: location() }; }
 
 FieldValue =
-  head:$( Text )
-  tail:$( !( Newline ( PropertyName / FieldName / NoteEnd ) ) Newline Text )*
-  { return [head, ...tail].join("").trim(); }
+  head:$( Text _ )
+  tail:$( !( Newline ( PropertyName / FieldName / NoteEnd / !. ) ) Newline Text _ )*
+  { return { text: [head, ...tail].join("").trim(), loc: location() }; }
 
 NoteEnd =
-  "~~~"
-  { return { text: text(), loc: location() }; }
+  text:"~~~"
+  { return { text, loc: location() }; }
 
 Text "text" =
-  $( !Newline . )*
+  $( !( _ Newline ) . )*
 
 Newline "newline" =
   $( "\r\n" / "\n" )

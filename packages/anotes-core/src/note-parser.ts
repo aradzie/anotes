@@ -67,40 +67,40 @@ class NoteParser {
       let id = "";
 
       // Set note properties.
-      for (const { name, value, loc } of node.properties) {
-        const nameLc = name.toLowerCase();
+      for (const { name, value } of node.properties) {
+        const nameLc = name.text.toLowerCase();
         if (seen.has(nameLc)) {
-          this.#errors.push({ message: `Duplicate property: "${name}"`, location: loc });
+          this.#errors.push({ message: `Duplicate property: "${name.text}"`, location: name.loc });
           continue;
         }
         seen.add(nameLc);
 
         switch (nameLc) {
           case "type": {
-            const type = noteTypes.get(value);
+            const type = noteTypes.get(value.text);
             if (type == null) {
-              this.#errors.push({ message: `Unknown note type: "${value}"`, location: loc });
+              this.#errors.push({ message: `Unknown note type: "${value.text}"`, location: value.loc });
               continue;
             }
             state.type = type;
             break;
           }
           case "deck": {
-            state.deck = value;
+            state.deck = value.text;
             break;
           }
           case "tags": {
-            state.tags = value;
+            state.tags = value.text;
             break;
           }
           case "template": {
-            state.template = value;
+            state.template = value.text;
             break;
           }
           case "id": {
-            if ((id = value)) {
+            if ((id = value.text)) {
               if (this.#notes.has(id)) {
-                this.#errors.push({ message: `Duplicate ID: "${id}"`, location: loc });
+                this.#errors.push({ message: `Duplicate ID: "${value.text}"`, location: value.loc });
                 continue;
               }
             }
@@ -118,19 +118,19 @@ class NoteParser {
 
       // Set note fields.
       for (const { name, value, loc } of node.fields) {
-        const nameLc = name.toLowerCase();
+        const nameLc = name.text.toLowerCase();
         if (seen.has(nameLc)) {
-          this.#errors.push({ message: `Duplicate field: "${name}"`, location: loc });
+          this.#errors.push({ message: `Duplicate field: "${name.text}"`, location: name.loc });
           continue;
         }
         seen.add(nameLc);
 
         if (note.has(nameLc)) {
           const field = note.get(nameLc);
-          field.value = value;
+          field.value = value.text;
           field.loc = loc;
         } else {
-          this.#errors.push({ message: `Unknown field: "${name}"`, location: loc });
+          this.#errors.push({ message: `Unknown field: "${name.text}"`, location: name.loc });
           continue;
         }
       }
