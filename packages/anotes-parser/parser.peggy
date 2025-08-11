@@ -29,20 +29,23 @@ PropertyName =
 
 PropertyValue =
   text:Text
-  { return { text: text.trim(), loc: location() }; }
+  { return { text, loc: location() }; }
 
 Field "field" =
   name:FieldName _ value:FieldValue
   { return { name, value, loc: location() }; }
 
 FieldName =
-  "!" text:$[- _a-z0-9]i+ ":"
+  "!" text:( part:( $[-_a-z0-9]i+ )|1.., _| { return part.join(" "); } ) ":"
   { return { text, loc: location() }; }
 
 FieldValue =
-  head:$( Text _ )
-  tail:$( !( Newline ( PropertyName / FieldName / NoteEnd / !. ) ) Newline Text _ )*
-  { return { text: [head, ...tail].join("").trim(), loc: location() }; }
+  text:(
+    ( Text _ )
+    ( !( Newline ( PropertyName / FieldName / NoteEnd / !. ) ) Newline Text _ )*
+    { return text().trim(); }
+  )
+  { return { text, loc: location() }; }
 
 NoteEnd =
   text:"~~~"

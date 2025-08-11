@@ -108,11 +108,11 @@ test("parse field names", () => {
       ],
     },
   ]);
-  like(parse("!A_B C 0-9:1\n~~~"), [
+  like(parse("!A_B \t C \t 0-9:1\n~~~"), [
     {
       fields: [
         {
-          name: { text: "A_B C 0-9", loc: { start: { offset: 0 }, end: { offset: 11 } } },
+          name: { text: "A_B C 0-9", loc: { start: { offset: 0 }, end: { offset: 15 } } },
           value: { text: "1" },
         },
       ],
