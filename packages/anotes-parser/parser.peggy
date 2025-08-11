@@ -1,11 +1,8 @@
 NoteList =
-  list:(
-    head:( ( _ Newline )* @Note )
-    tail:( ( _ Newline )+ @Note )*
-    { return [head, ...tail]; }
-  )?
+  ( _ Newline )*
+  nodes:Note|0.., ( _ Newline )+|
   ( _ Newline )* _
-  { return list ?? []; }
+  { return nodes; }
 
 Note =
   properties:( ( _ Newline )* @Property _ Newline )*
