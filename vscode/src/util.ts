@@ -1,8 +1,13 @@
 import vscode from "vscode";
 
-export async function revealEditor(uri: string): Promise<vscode.TextEditor> {
-  return await vscode.window.showTextDocument(await vscode.workspace.openTextDocument(vscode.Uri.parse(uri)), {
-    preview: false,
-    preserveFocus: false,
-  });
+export async function revealRange(uri: vscode.Uri, column: vscode.ViewColumn, start: number, end: number) {
+  const document = await vscode.workspace.openTextDocument(uri);
+  const editor = await vscode.window.showTextDocument(document, column);
+  const range = new vscode.Range(editor.document.positionAt(start), editor.document.positionAt(end));
+  editor.selection = new vscode.Selection(range.start, range.start);
+  editor.revealRange(range);
+}
+
+export function reportError(err: unknown) {
+  console.error(err);
 }

@@ -1,43 +1,11 @@
 import vscode from "vscode";
-import { revealEditor } from "./util.js";
+import { reportError, revealRange } from "./util.js";
 
 type UpdateMessage = { type: "update"; uri: string; text: string };
 type FocusMessage = { type: "focus"; noteIndex: number; fieldIndex: number };
 type OutgoingMessage = UpdateMessage | FocusMessage;
 type RevealRangeMessage = { type: "reveal-range"; uri: string; start: number; end: number };
 type IncomingMessage = RevealRangeMessage;
-
-class Assets {
-  readonly #context: vscode.ExtensionContext;
-
-  constructor(context: vscode.ExtensionContext) {
-    this.#context = context;
-  }
-
-  setWebviewContent(webview: vscode.Webview) {
-    webview.options = {
-      enableScripts: true,
-      enableForms: true,
-      localResourceRoots: [this.#getPath("assets")],
-    };
-    webview.html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Anki Cards Preview</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossOrigin="anonymous">
-  <link rel="stylesheet" href="${webview.asWebviewUri(this.#getPath("assets", "preview.css"))}">
-  <script src="${webview.asWebviewUri(this.#getPath("assets", "preview.js"))}" type="module"></script>
-</head>
-<body>
-  <div id="main"></div>
-</body>
-</html>`;
-  }
-
-  #getPath(...segments: string[]) {
-    return vscode.Uri.joinPath(this.#context.extensionUri, ...segments);
-  }
-}
 
 class Preview {
   static viewType = "anki-notes.preview";
@@ -51,14 +19,14 @@ class Preview {
    */
   readonly #uri: string | null;
 
-  constructor(assets: Assets, column: vscode.ViewColumn, uri: string | null) {
+  constructor(manager: PreviewManager, column: vscode.ViewColumn, uri: string | null) {
     this.#panel = vscode.window.createWebviewPanel(Preview.viewType, Preview.title, {
       viewColumn: column,
       preserveFocus: true,
     });
     this.#column = column;
     this.#uri = uri;
-    assets.setWebviewContent(this.#panel.webview);
+    manager.setWebviewContent(this.#panel.webview);
     this.#panel.webview.onDidReceiveMessage(this.#onIncomingMessage); // TODO Dispose.
   }
 
@@ -87,47 +55,24 @@ class Preview {
     switch (message.type) {
       case "reveal-range": {
         const { uri, start, end } = message;
-        this.#revealRange(uri, start, end).catch((err) => {});
+        revealRange(vscode.Uri.parse(uri), vscode.ViewColumn.One, start, end).catch(reportError);
         break;
       }
     }
   };
-
-  async #revealRange(uri: string, start: number, end: number) {
-    const editor = await revealEditor(uri);
-    const range = new vscode.Range(editor.document.positionAt(start), editor.document.positionAt(end));
-    editor.selection = new vscode.Selection(range.start, range.start);
-    editor.revealRange(range);
-  }
 
   dispose() {
     this.#panel.dispose();
   }
 }
 
-class PreviewSerializer implements vscode.WebviewPanelSerializer {
-  readonly #assets: Assets;
-
-  constructor(assets: Assets) {
-    this.#assets = assets;
-  }
-
-  async deserializeWebviewPanel(panel: vscode.WebviewPanel, state: UpdateMessage) {
-    this.#assets.setWebviewContent(panel.webview);
-    if (state.type === "update") {
-      panel.webview.postMessage(state).then(() => {});
-    }
-  }
-}
-
-class PreviewManager {
+class PreviewManager implements vscode.WebviewPanelSerializer {
   readonly #context: vscode.ExtensionContext;
-  readonly #assets: Assets;
   readonly #previews = new Set<Preview>();
 
   constructor(context: vscode.ExtensionContext) {
     this.#context = context;
-    this.#assets = new Assets(context);
+    this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(
       vscode.workspace.onDidChangeTextDocument(({ document }) => {
         if (document.languageId === "anki-notes") {
@@ -142,27 +87,38 @@ class PreviewManager {
         }
       }),
     );
-    vscode.window.registerWebviewPanelSerializer(Preview.viewType, new PreviewSerializer(this.#assets));
+    vscode.window.registerWebviewPanelSerializer(Preview.viewType, this);
   }
 
   showPreview(sideBySide: boolean, locked: boolean) {
-    const document = vscode.window.activeTextEditor?.document;
-    if (document?.languageId === "anki-notes") {
-      const column = sideBySide ? vscode.ViewColumn.Beside : vscode.ViewColumn.Active;
-      const uri = locked ? String(document.uri) : null;
-      for (const preview of this.#previews) {
-        if (preview.column === column && preview.uri === uri) {
-          preview.reveal();
-          return;
+    const editor = vscode.window.activeTextEditor;
+    if (editor) {
+      const document = editor.document;
+      const documentColumn = editor.viewColumn ?? vscode.ViewColumn.One;
+      if (document.languageId === "anki-notes") {
+        const column = sideBySide ? vscode.ViewColumn.Beside : documentColumn;
+        const uri = locked ? String(document.uri) : null;
+        for (const preview of this.#previews) {
+          if (preview.column === column && preview.uri === uri) {
+            preview.reveal();
+            return;
+          }
         }
+        this.#createPanel(column, uri);
+        this.#update(document);
       }
-      this.#createPanel(column, uri);
-      this.#update(document);
+    }
+  }
+
+  async deserializeWebviewPanel(panel: vscode.WebviewPanel, state: UpdateMessage) {
+    this.setWebviewContent(panel.webview);
+    if (state.type === "update") {
+      panel.webview.postMessage(state).then(() => {});
     }
   }
 
   #createPanel(column: vscode.ViewColumn, uri: string | null) {
-    const preview = new Preview(this.#assets, column, uri);
+    const preview = new Preview(this, column, uri);
     this.#previews.add(preview);
     preview.panel.onDidDispose(() => {
       this.#previews.delete(preview);
@@ -178,6 +134,30 @@ class PreviewManager {
         }
       }
     }
+  }
+
+  setWebviewContent(webview: vscode.Webview) {
+    webview.options = {
+      enableScripts: true,
+      enableForms: true,
+      localResourceRoots: [this.#getAssetsPath("assets")],
+    };
+    webview.html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anki Cards Preview</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossOrigin="anonymous">
+  <link rel="stylesheet" href="${webview.asWebviewUri(this.#getAssetsPath("assets", "preview.css"))}">
+  <script src="${webview.asWebviewUri(this.#getAssetsPath("assets", "preview.js"))}" type="module"></script>
+</head>
+<body>
+  <div id="main"></div>
+</body>
+</html>`;
+  }
+
+  #getAssetsPath(...segments: string[]): vscode.Uri {
+    return vscode.Uri.joinPath(this.#context.extensionUri, ...segments);
   }
 
   dispose() {
