@@ -7,24 +7,30 @@ function formatNotes(notes: Iterable<Readonly<Note>>): string {
     deck: "",
     tags: "",
     template: "",
+    count: 1,
   };
   for (const note of notes) {
     const { type, deck, tags, template, id } = note;
-    if (type !== state.type) {
-      lines.push(`!type: ${type.name}`);
-      state.type = type;
-    }
-    if (deck !== state.deck) {
-      lines.push(`!deck: ${deck ?? ""}`);
-      state.deck = deck;
-    }
-    if (tags !== state.tags) {
-      lines.push(`!tags: ${tags ?? ""}`);
-      state.tags = tags;
-    }
-    if (template !== state.template) {
-      lines.push(`!template: ${template ?? ""}`);
-      state.template = template;
+    if (type !== state.type || deck !== state.deck || tags !== state.tags || template !== state.template) {
+      if (state.count > 1) {
+        lines.push("");
+      }
+      if (type !== state.type) {
+        lines.push(`!type: ${type.name}`);
+        state.type = type;
+      }
+      if (deck !== state.deck) {
+        lines.push(`!deck: ${deck ?? ""}`);
+        state.deck = deck;
+      }
+      if (tags !== state.tags) {
+        lines.push(`!tags: ${tags ?? ""}`);
+        state.tags = tags;
+      }
+      if (template !== state.template) {
+        lines.push(`!template: ${template ?? ""}`);
+        state.template = template;
+      }
     }
     lines.push("");
     if (id) {
@@ -41,6 +47,7 @@ function formatNotes(notes: Iterable<Readonly<Note>>): string {
       }
     }
     lines.push("~~~");
+    state.count += 1;
   }
   lines.push("");
   return lines.join("\n");

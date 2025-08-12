@@ -10,5 +10,5 @@ bd35b5d7-1964-4b2a-a9a9-d7cc44e8283a;Cloze;Geography;Geography Capital;<p>The ca
     e^{ix}  &= \cos x + i \sin x \\
     e^{-ix} &= \cos x - i \sin x
 \end{align*} \]"
-521c65f9-e0e1-4fa6-8033-21c9fff6aac9;Basic;Math;Math Equation;<p>Mean Value Theorem</p>;"<p>The <strong>Mean Value Theorem</strong> states that if a function \( f \) is continuous on the closed interval \( [a, b] \) and differentiable on the open interval \( (a, b) \), then there exists at least one \( c \in (a, b) \) such that</p>
+521c65f9-e0e1-4fa6-8033-21c9fff6aac9;Basic;Math;Math Definition;<p>Mean Value Theorem</p>;"<p>The <strong>Mean Value Theorem</strong> states that if a function \( f \) is continuous on the closed interval \( [a, b] \) and differentiable on the open interval \( (a, b) \), then there exists at least one \( c \in (a, b) \) such that</p>
 \[ f'(c) = \frac{f(b) - f(a)}{b - a} \]"
