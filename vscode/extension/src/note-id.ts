@@ -2,8 +2,9 @@ import { formatNotes, NoteParser } from "@anotes/core";
 import vscode from "vscode";
 
 export async function insertIdCommand() {
-  const document = vscode.window.activeTextEditor?.document;
-  if (document?.languageId === "anki-notes") {
+  const editor = vscode.window.activeTextEditor;
+  if (editor != null && editor.document.languageId === "anki-notes") {
+    const { document } = editor;
     const edit = new vscode.WorkspaceEdit();
     for (const { range, newText } of editDocument(document)) {
       edit.replace(document.uri, range, newText);
