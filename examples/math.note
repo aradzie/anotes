@@ -2,6 +2,11 @@
 !deck: Math
 !tags: Math Equation
 
+!id: d48924b0-56da-4cfe-9869-7e7e88a5d93d
+!front: Quadratic Formula
+!back: $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+~~~
+
 !id: 44011d69-198a-4800-8597-5889ab90c6d2
 !front: Euler's Formula
 !back:

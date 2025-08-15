@@ -2,9 +2,10 @@ import { type Note } from "@anotes/core";
 import { clsx } from "clsx";
 import { Note1 } from "./Note.js";
 import * as cn from "./NoteList.module.css";
+import { type Selection } from "./selection.js";
 import { useView } from "./view.js";
 
-export function NoteList1({ notes }: { notes: Note[] }) {
+export function NoteList1({ notes, selection }: { notes: Note[]; selection: Selection }) {
   const { view } = useView();
   return (
     <div className={cn.root}>
@@ -17,7 +18,7 @@ export function NoteList1({ notes }: { notes: Note[] }) {
       >
         <p>{notes.length} note(s)</p>
         {notes.map((value, index) => (
-          <Note1 key={index} note={value} />
+          <Note1 key={index} note={value} selection={selection} />
         ))}
       </div>
     </div>

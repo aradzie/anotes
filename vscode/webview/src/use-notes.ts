@@ -2,10 +2,12 @@ import { type Note, type NoteError, NoteParser } from "@anotes/core";
 import { type ReviveState } from "@anotes/vscode-protocol";
 import { useEffect, useState } from "react";
 import { queue } from "./messages.js";
+import { type Selection } from "./selection.js";
 import { vscode } from "./vscode.js";
 
 export function useNotes() {
   const [notes, setNotes] = useState<Note[]>([]);
+  const [selection, setSelection] = useState<Selection>({ start: 0, end: 0 });
   const [errors, setErrors] = useState<NoteError[]>([]);
   useEffect(() => {
     return queue.subscribe((message) => {
@@ -21,19 +23,22 @@ export function useNotes() {
           parser.parse(uri, text);
           const { notes, errors } = parser;
           if (errors.length > 0) {
+            setSelection({ start: 0, end: 0 });
             setErrors([...errors]);
           } else {
             setNotes([...notes]);
+            setSelection({ start: 0, end: 0 });
             setErrors([]);
           }
           break;
         }
         case "select": {
           const { start, end } = message;
+          setSelection({ start, end });
           break;
         }
       }
     });
   }, []);
-  return [notes, errors] as const;
+  return { notes, selection, errors };
 }

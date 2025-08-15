@@ -61,13 +61,13 @@ class NoteParser {
       template: "",
     },
   ): void {
-    for (const node of nodes) {
+    for (const noteNode of nodes) {
       const seen = new Set<string>();
 
       let id = "";
 
       // Set note properties.
-      for (const { name, value } of node.properties) {
+      for (const { name, value } of noteNode.properties) {
         const nameLc = name.text.toLowerCase();
         if (seen.has(nameLc)) {
           this.#errors.push({ message: `Duplicate property: "${name.text}"`, location: name.loc });
@@ -114,10 +114,11 @@ class NoteParser {
       note.tags = state.tags;
       note.template = state.template;
       note.id = id;
-      note.loc = node.loc;
+      note.node = noteNode;
 
       // Set note fields.
-      for (const { name, value, loc } of node.fields) {
+      for (const fieldNode of noteNode.fields) {
+        const { name, value } = fieldNode;
         const nameLc = name.text.toLowerCase();
         if (seen.has(nameLc)) {
           this.#errors.push({ message: `Duplicate field: "${name.text}"`, location: name.loc });
@@ -128,7 +129,7 @@ class NoteParser {
         if (note.has(nameLc)) {
           const field = note.get(nameLc);
           field.value = value.text;
-          field.loc = loc;
+          field.node = fieldNode;
         } else {
           this.#errors.push({ message: `Unknown field: "${name.text}"`, location: name.loc });
           continue;

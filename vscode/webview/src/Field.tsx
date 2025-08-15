@@ -1,15 +1,37 @@
 import { formatMath, type NoteField, renderHtml } from "@anotes/core";
-import { useMemo } from "react";
+import { clsx } from "clsx";
+import { memo, useEffect, useRef } from "react";
 import * as cn from "./Field.module.css";
 import { revealRange } from "./navigate.js";
+import { isVisible, type Selection } from "./selection.js";
 
-export function Field1({ field }: { field: NoteField }) {
+const FieldValue = memo(function FieldValue({ value }: { value: string }) {
+  const html = formatMath(value, renderHtml({ output: "html", throwOnError: false }));
+  return <div className={cn.value} dangerouslySetInnerHTML={{ __html: html }} />;
+});
+
+export function Field1({ field, selection }: { field: NoteField; selection: Selection }) {
+  const loc = field.node?.loc ?? null;
+  const ref = useRef<HTMLDivElement>(null);
+  const visible = isVisible(loc, selection);
+  useEffect(() => {
+    if (visible) {
+      const { current } = ref;
+      if (current != null) {
+        current.scrollIntoView({
+          behavior: "instant",
+          block: "nearest",
+          inline: "nearest",
+        });
+      }
+    }
+  }, [visible]);
   return (
     <div
-      className={cn.root}
+      ref={ref}
+      className={clsx(cn.root, { [cn.active]: visible })}
       onClick={() => {
-        const { loc } = field;
-        if (loc) {
+        if (loc != null) {
           revealRange(loc);
         }
       }}
@@ -20,9 +42,4 @@ export function Field1({ field }: { field: NoteField }) {
       <FieldValue value={field.value} />
     </div>
   );
-}
-
-function FieldValue({ value }: { value: string }) {
-  const html = useMemo(() => formatMath(value, renderHtml({ output: "html", throwOnError: false })), [value]);
-  return <div className={cn.value} dangerouslySetInnerHTML={{ __html: html }} />;
 }

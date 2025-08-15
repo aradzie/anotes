@@ -1,14 +1,25 @@
 .root {
-  margin-inline-start: -0.5rem;
+  margin-inline-start: -1rem;
   padding-inline-start: 0.5rem;
+  border-inline-start: 0.5rem solid transparent;
+  cursor: pointer;
+  scroll-margin: 1rem;
+}
+
+:global .vscode-light :local .root:hover {
+  border-inline-start: 0.5rem solid lightgray;
+}
+
+:global .vscode-dark :local .root:hover {
+  border-inline-start: 0.5rem solid darkgray;
 }
 
 :global .vscode-light :local .active {
-  border-inline-start: 2px solid lightgray;
+  border-inline-start: 0.5rem solid lightgray;
 }
 
 :global .vscode-dark :local .active {
-  border-inline-start: 2px solid darkgray;
+  border-inline-start: 0.5rem solid darkgray;
 }
 
 :global .vscode-light :local .field {

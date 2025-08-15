@@ -39,7 +39,9 @@ $$
 
 !front: Mean Value Theorem
 !back:
-The **Mean Value Theorem** states that if a function $f$ is continuous on the closed interval $[a, b]$ and differentiable on the open interval $(a, b)$, then there exists at least one $c \in (a, b)$ such that
+The **Mean Value Theorem** states that if a function $f$ is continuous on the closed
+interval $[a, b]$ and differentiable on the open interval $(a, b)$, then there exists
+at least one $c \in (a, b)$ such that
 
 $$ f'(c) = \frac{f(b) - f(a)}{b - a} $$
 ~~~

@@ -1,4 +1,4 @@
-import { type LocationRange } from "@anotes/parser";
+import { type FieldNode, type NoteNode } from "@anotes/parser";
 
 class NoteList implements Iterable<Note> {
   readonly #notes: Note[] = [];
@@ -37,28 +37,16 @@ class NoteList implements Iterable<Note> {
   }
 }
 
-class Node {
-  #loc: LocationRange | null = null;
-
-  get loc(): LocationRange | null {
-    return this.#loc;
-  }
-
-  set loc(value: LocationRange | null) {
-    this.#loc = value;
-  }
-}
-
-class Note extends Node implements Iterable<NoteField> {
+class Note implements Iterable<NoteField> {
   readonly #type: NoteType;
   #deck: string = "";
   #tags: string = "";
   #template: string = "";
   #id: string = "";
   readonly #fields = new Map<string, NoteField>();
+  #node: NoteNode | null = null;
 
   constructor(type: NoteType) {
-    super();
     this.#type = type;
     for (const field of type.fields) {
       this.#fields.set(field.name.toLowerCase(), new NoteField(field));
@@ -124,14 +112,22 @@ class Note extends Node implements Iterable<NoteField> {
     }
     field.value = value;
   }
+
+  get node(): NoteNode | null {
+    return this.#node;
+  }
+
+  set node(value: NoteNode | null) {
+    this.#node = value;
+  }
 }
 
-class NoteField extends Node {
+class NoteField {
   readonly #type: NoteFieldType;
   #value: string = "";
+  #node: FieldNode | null = null;
 
   constructor(type: NoteFieldType) {
-    super();
     this.#type = type;
   }
 
@@ -149,6 +145,14 @@ class NoteField extends Node {
 
   set value(value: string | null) {
     this.#value = value ?? "";
+  }
+
+  get node(): FieldNode | null {
+    return this.#node;
+  }
+
+  set node(value: FieldNode | null) {
+    this.#node = value;
   }
 }
 
