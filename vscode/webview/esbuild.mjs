@@ -7,7 +7,7 @@ const watch = process.argv.includes("--watch");
 async function main() {
   const ctx = await esbuild.context({
     entryPoints: ["src/index.tsx"],
-    outfile: "../vscode/assets/preview.js",
+    outfile: "../extension/assets/preview.js",
     bundle: true,
     format: "esm",
     target: "esnext",

@@ -1,10 +1,11 @@
 {
   "private": true,
-  "name": "anki-notes-webview",
+  "name": "@anotes/vscode-webview",
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
     "@anotes/core": "*",
+    "@anotes/vscode-protocol": "*",
     "clsx": "^2.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"

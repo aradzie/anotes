@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "@anotes/vscode-protocol",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "rm -fr dist; tsc",
+    "pretest": "npm run compile",
+    "test": "node --test 'dist/**/*.test.js'"
+  }
+}

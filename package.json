@@ -21,8 +21,9 @@
     "packages/anotes-parser",
     "packages/anotes-core",
     "packages/anotes-cli",
-    "vscode-webview",
-    "vscode",
+    "vscode/protocol",
+    "vscode/webview",
+    "vscode/extension",
     "examples"
   ],
   "dependencies": {

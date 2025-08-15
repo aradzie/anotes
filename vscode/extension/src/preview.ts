@@ -1,11 +1,6 @@
+import { type ToExtensionMessage, type UpdateMessage } from "@anotes/vscode-protocol";
 import vscode from "vscode";
 import { reportError, revealRange } from "./util.js";
-
-type UpdateMessage = { type: "update"; uri: string; text: string };
-type FocusMessage = { type: "focus"; noteIndex: number; fieldIndex: number };
-type OutgoingMessage = UpdateMessage | FocusMessage;
-type RevealRangeMessage = { type: "reveal-range"; uri: string; start: number; end: number };
-type IncomingMessage = RevealRangeMessage;
 
 class Preview {
   static viewType = "anki-notes.preview";
@@ -51,7 +46,7 @@ class Preview {
     this.#panel.webview.postMessage({ type: "update", uri, text }).then(() => {});
   }
 
-  #onIncomingMessage = (message: IncomingMessage): void => {
+  #onIncomingMessage = (message: ToExtensionMessage): void => {
     switch (message.type) {
       case "reveal-range": {
         const { uri, start, end } = message;
