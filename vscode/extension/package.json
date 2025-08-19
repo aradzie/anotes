@@ -25,7 +25,18 @@
         "extensions": [
           ".note"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration-notes.json"
+      },
+      {
+        "id": "anki-types",
+        "aliases": [
+          "Anki Types",
+          "anki-types"
+        ],
+        "extensions": [
+          ".anki"
+        ],
+        "configuration": "./language-configuration-types.json"
       }
     ],
     "grammars": [
@@ -33,6 +44,15 @@
         "language": "anki-notes",
         "scopeName": "source.anki-notes",
         "path": "./syntaxes/anki-notes.tmLanguage.json"
+      },
+      {
+        "language": "anki-types",
+        "scopeName": "source.anki-types",
+        "path": "./syntaxes/anki-types.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.block.html": "html",
+          "meta.block.css": "css"
+        }
       }
     ],
     "commands": [

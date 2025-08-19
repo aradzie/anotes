@@ -1,6 +1,5 @@
 **/dist/
-**/tmp/
-**/parser.js
-**/parser.d.ts
-vscode/assets
+**/assets/
+**/parser$.*
 package-lock.json
+**/tmp/

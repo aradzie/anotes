@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Anki Types",
+  "scopeName": "source.anki-types",
+  "patterns": [
+    {
+      "name": "meta.name-value-pair.anki-types",
+      "match": "^(type)[ \\t]+(.*?)[ \\t]*$",
+      "captures": {
+        "1": { "name": "keyword.control.anki-types" },
+        "2": { "name": "string.unquoted.value.anki-types" }
+      }
+    },
+    {
+      "name": "meta.name-value-pair.anki-types",
+      "match": "^(id)[ \\t]+(.*?)[ \\t]*$",
+      "captures": {
+        "1": { "name": "keyword.control.anki-types" },
+        "2": { "name": "string.unquoted.value.anki-types" }
+      }
+    },
+    {
+      "name": "meta.name-value-pair.anki-types",
+      "match": "^(field)[ \\t]+(.*?)[ \\t]*$",
+      "captures": {
+        "1": { "name": "keyword.control.anki-types" },
+        "2": { "name": "string.unquoted.value.anki-types" }
+      }
+    },
+    {
+      "name": "meta.name-value-pair.anki-types",
+      "match": "^(card)[ \\t]+(.*?)[ \\t]*$",
+      "captures": {
+        "1": { "name": "keyword.control.anki-types" },
+        "2": { "name": "string.unquoted.value.anki-types" }
+      }
+    },
+    {
+      "name": "meta.block.html",
+      "begin": "^(front)[ \\t]*\\n",
+      "beginCaptures": {
+        "1": { "name": "keyword.control.anki-types" }
+      },
+      "end": "^(~~~)[ \\t]*\\n",
+      "endCaptures": {
+        "1": { "name": "keyword.control.anki-types" }
+      },
+      "patterns": [{ "include": "text.html.basic" }]
+    },
+    {
+      "name": "meta.block.html",
+      "begin": "^(back)[ \\t]*\\n",
+      "beginCaptures": {
+        "1": { "name": "keyword.control.anki-types" }
+      },
+      "end": "^(~~~)[ \\t]*\\n",
+      "endCaptures": {
+        "1": { "name": "keyword.control.anki-types" }
+      },
+      "patterns": [{ "include": "text.html.basic" }]
+    },
+    {
+      "name": "meta.block.css",
+      "begin": "^(styling)[ \\t]*\\n",
+      "beginCaptures": {
+        "1": { "name": "keyword.control.anki-types" }
+      },
+      "end": "^(~~~)[ \\t]*\\n",
+      "endCaptures": {
+        "1": { "name": "keyword.control.anki-types" }
+      },
+      "patterns": [{ "include": "source.css" }]
+    }
+  ],
+  "repository": {}
+}

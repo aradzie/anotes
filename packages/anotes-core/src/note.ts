@@ -163,7 +163,7 @@ type NoteType = {
 
 type NoteFieldType = {
   readonly name: string;
-  readonly required?: boolean;
+  readonly required: boolean;
 };
 
 class NoteTypeMap implements Iterable<NoteType> {
@@ -188,7 +188,7 @@ class NoteTypeMap implements Iterable<NoteType> {
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
-      { name: "Add Reverse" },
+      { name: "Add Reverse", required: false },
     ],
   };
 
@@ -204,7 +204,7 @@ class NoteTypeMap implements Iterable<NoteType> {
     name: "Cloze",
     fields: [
       { name: "Text", required: true }, //
-      { name: "Back Extra" },
+      { name: "Back Extra", required: false },
     ],
   };
 

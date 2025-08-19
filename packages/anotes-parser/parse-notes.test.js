@@ -1,41 +1,41 @@
 import { test } from "node:test";
 import { like, throws } from "rich-assert";
-import { parse } from "./parser.js";
+import { parseNoteList } from "./parser.js";
 
 test("parse whitespace", () => {
-  like(parse(""), []);
-  like(parse(" "), []);
-  like(parse("\t"), []);
-  like(parse(" \n"), []);
-  like(parse("\t\n"), []);
-  like(parse(" \n \n \n "), []);
-  like(parse("\t\n\t\n\t\n\t"), []);
-  like(parse("!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("\n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("\n \n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("\n\t\n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("!a:1\n~~~ "), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("!a:1\n~~~\n"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("!a:1\n~~~\n\n"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("!a:1\n~~~ \n \n"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("!a:1\n~~~ \n \n "), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("\n!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("\n \n!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("\n\t\n!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parse("\n\t\n!a:1\n~~~\n!a:2\n~~~\t\n\t\n\t"), [
+  like(parseNoteList(""), []);
+  like(parseNoteList(" "), []);
+  like(parseNoteList("\t"), []);
+  like(parseNoteList(" \n"), []);
+  like(parseNoteList("\t\n"), []);
+  like(parseNoteList(" \n \n \n "), []);
+  like(parseNoteList("\t\n\t\n\t\n\t"), []);
+  like(parseNoteList("!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("\n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("\n \n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("\n\t\n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("!a:1\n~~~ "), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("!a:1\n~~~\n"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("!a:1\n~~~\n\n"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("!a:1\n~~~ \n \n"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("!a:1\n~~~ \n \n "), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("\n!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("\n \n!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("\n\t\n!a:1\n~~~\t\n\t\n\t"), [{ fields: [{ name: { text: "a" } }] }]);
+  like(parseNoteList("\n\t\n!a:1\n~~~\n!a:2\n~~~\t\n\t\n\t"), [
     { fields: [{ name: { text: "a" }, value: { text: "1" } }] },
     { fields: [{ name: { text: "a" }, value: { text: "2" } }] },
   ]);
-  like(parse("\n\t\n!a:1\n \t \n~~~ \t \n!a:2\n~~~\t\n\t\n\t"), [
+  like(parseNoteList("\n\t\n!a:1\n \t \n~~~ \t \n!a:2\n~~~\t\n\t\n\t"), [
     { fields: [{ name: { text: "a" }, value: { text: "1" } }] },
     { fields: [{ name: { text: "a" }, value: { text: "2" } }] },
   ]);
 });
 
 test("parse cr lf", () => {
-  like(parse("\r\n!a:1\r\n!b:2\r\n~~~\r\n"), [
+  like(parseNoteList("\r\n!a:1\r\n!b:2\r\n~~~\r\n"), [
     {
       fields: [
         { name: { text: "a" }, value: { text: "1" } },
@@ -46,37 +46,37 @@ test("parse cr lf", () => {
 });
 
 test("parse properties", () => {
-  like(parse("!id:\n!a:1\n~~~"), [
+  like(parseNoteList("!id:\n!a:1\n~~~"), [
     {
       properties: [{ name: { text: "id" }, value: { text: "" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parse("!id: \t xyz \t \n!a:1\n~~~"), [
+  like(parseNoteList("!id: \t xyz \t \n!a:1\n~~~"), [
     {
       properties: [{ name: { text: "id" }, value: { text: "xyz" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parse("!tags:x\n!a:1\n~~~"), [
+  like(parseNoteList("!tags:x\n!a:1\n~~~"), [
     {
       properties: [{ name: { text: "tags" }, value: { text: "x" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parse("!Tags:x\n!a:1\n~~~"), [
+  like(parseNoteList("!Tags:x\n!a:1\n~~~"), [
     {
       properties: [{ name: { text: "tags" }, value: { text: "x" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parse("!TAGS:x\n!a:1\n~~~"), [
+  like(parseNoteList("!TAGS:x\n!a:1\n~~~"), [
     {
       properties: [{ name: { text: "tags" }, value: { text: "x" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parse("!deck:a\n \n!tags:b\n \n!a:1\n~~~"), [
+  like(parseNoteList("!deck:a\n \n!tags:b\n \n!a:1\n~~~"), [
     {
       properties: [
         { name: { text: "deck" }, value: { text: "a" } },
@@ -88,7 +88,7 @@ test("parse properties", () => {
 });
 
 test("parse field names", () => {
-  like(parse("!a:1\n~~~"), [
+  like(parseNoteList("!a:1\n~~~"), [
     {
       fields: [
         {
@@ -98,7 +98,7 @@ test("parse field names", () => {
       ],
     },
   ]);
-  like(parse("!a b:1\n~~~"), [
+  like(parseNoteList("!a b:1\n~~~"), [
     {
       fields: [
         {
@@ -108,7 +108,7 @@ test("parse field names", () => {
       ],
     },
   ]);
-  like(parse("!A_B \t C \t 0-9:1\n~~~"), [
+  like(parseNoteList("!A_B \t C \t 0-9:1\n~~~"), [
     {
       fields: [
         {
@@ -121,7 +121,7 @@ test("parse field names", () => {
 });
 
 test("parse field values", () => {
-  like(parse("!a:\n~~~"), [
+  like(parseNoteList("!a:\n~~~"), [
     {
       fields: [
         {
@@ -131,7 +131,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parse("!a: \t \n\n~~~"), [
+  like(parseNoteList("!a: \t \n\n~~~"), [
     {
       fields: [
         {
@@ -141,7 +141,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parse("!a:abc\n~~~"), [
+  like(parseNoteList("!a:abc\n~~~"), [
     {
       fields: [
         {
@@ -151,7 +151,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parse("!a: \t abc \n\n~~~"), [
+  like(parseNoteList("!a: \t abc \n\n~~~"), [
     {
       fields: [
         {
@@ -161,7 +161,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parse("!a:abc\nxyz\n~~~"), [
+  like(parseNoteList("!a:abc\nxyz\n~~~"), [
     {
       fields: [
         {
@@ -171,7 +171,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parse("!a: \t abc\nxyz \n\n~~~"), [
+  like(parseNoteList("!a: \t abc\nxyz \n\n~~~"), [
     {
       fields: [
         {
@@ -181,7 +181,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parse("!a: \t abc\nxyz \n \n~~~"), [
+  like(parseNoteList("!a: \t abc\nxyz \n \n~~~"), [
     {
       fields: [
         {
@@ -194,7 +194,7 @@ test("parse field values", () => {
 });
 
 test("provide locations", () => {
-  like(parse("!id:1\n!a:1\n~~~"), [
+  like(parseNoteList("!id:1\n!a:1\n~~~"), [
     {
       properties: [
         {
@@ -231,43 +231,43 @@ test("provide locations", () => {
 test("report errors", () => {
   throws(
     () => {
-      parse(" x");
+      parseNoteList(" x");
     },
     { message: 'Expected end of input or newline but "x" found.' },
   );
   throws(
     () => {
-      parse(" \n x");
+      parseNoteList(" \n x");
     },
     { message: 'Expected end of input or newline but "x" found.' },
   );
   throws(
     () => {
-      parse("!a:abc");
+      parseNoteList("!a:abc");
     },
     { message: "Expected newline but end of input found." },
   );
   throws(
     () => {
-      parse("!a:abc\n x");
+      parseNoteList("!a:abc\n x");
     },
     { message: "Expected newline but end of input found." },
   );
   throws(
     () => {
-      parse("!a:abc\n");
+      parseNoteList("!a:abc\n");
     },
     { message: 'Expected "~~~", field, or newline but end of input found.' },
   );
   throws(
     () => {
-      parse("!a:abc\n~~~x");
+      parseNoteList("!a:abc\n~~~x");
     },
     { message: 'Expected end of input or newline but "x" found.' },
   );
   throws(
     () => {
-      parse("~~~");
+      parseNoteList("~~~");
     },
     { message: 'Expected end of input, field, newline, or property but "~" found.' },
   );

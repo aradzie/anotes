@@ -6,6 +6,7 @@
 #tags column:4
 8ed2ae0e-4141-4969-bbac-b2190c46b8dd;Cloze;Geography;Geography Capital;<p>The capital of {{c1::Mongolia::country}} is {{c2::Ulaanbaatar::city}}.</p>;
 bd35b5d7-1964-4b2a-a9a9-d7cc44e8283a;Cloze;Geography;Geography Capital;<p>The capital of {{c1::Syria::country}} is {{c2::Damascus::city}}.</p>;
+d48924b0-56da-4cfe-9869-7e7e88a5d93d;Basic;Math;Math Equation;<p>Quadratic Formula</p>;\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
 44011d69-198a-4800-8597-5889ab90c6d2;Basic;Math;Math Equation;"<p>Euler&#39;s Formula</p>";"\[ \begin{align*}
     e^{ix}  &= \cos x + i \sin x \\
     e^{-ix} &= \cos x - i \sin x

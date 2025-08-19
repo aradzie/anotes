@@ -1,4 +1,4 @@
-import { type LocationRange, type NoteNode, parse, SyntaxError } from "@anotes/parser";
+import { type LocationRange, type NoteNode, parseNoteList, SyntaxError } from "@anotes/parser";
 import { Note, NoteList, type NoteType, noteTypes } from "./note.js";
 
 type NoteError = {
@@ -40,7 +40,7 @@ class NoteParser {
 
   parseNodes(source: string, text: string): NoteNode[] {
     try {
-      return parse(text, { grammarSource: source });
+      return parseNoteList(text, source);
     } catch (err) {
       if (err instanceof SyntaxError) {
         const { message, location } = err;

@@ -9,7 +9,7 @@ export default [
     files: ["**/*.{js,ts,tsx}"],
   },
   {
-    ignores: ["**/dist/", "**/tmp/", "**/parser.js", "**/parser.d.ts", "vscode/assets"],
+    ignores: ["**/dist/", "**/assets/", "**/parser$.*", "**/tmp/"],
   },
   js.configs["recommended"],
   ...ts.configs["recommended"],
