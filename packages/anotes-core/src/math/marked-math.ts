@@ -1,6 +1,5 @@
-import type { MarkedExtension, TokenizerAndRendererExtension, Tokens } from "marked";
-import type { MathRenderer } from "./math-renderer.js";
-import { renderTex } from "./math-renderer.js";
+import { type MarkedExtension, type TokenizerAndRendererExtension, type Tokens } from "marked";
+import { type MathRenderer, renderTex } from "./math-renderer.js";
 
 /**
  * Tests if the given text begins with "\[".
@@ -229,7 +228,7 @@ function findInlineEndAlt(src: string, start: number): number {
   return -1;
 }
 
-function mathExtension(renderer: MathRenderer = renderTex()): MarkedExtension {
+export function mathExtension(renderer: MathRenderer = renderTex()): MarkedExtension {
   // Common syntax.
 
   type LatexToken = Tokens.Generic & {
@@ -353,5 +352,3 @@ function mathExtension(renderer: MathRenderer = renderTex()): MarkedExtension {
     ],
   };
 }
-
-export { mathExtension };

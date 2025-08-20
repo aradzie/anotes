@@ -1,7 +1,7 @@
 import { formatMath } from "./math/index.js";
 import { type Note } from "./note.js";
 
-function exportNotes(notes: Iterable<Readonly<Note>>): string {
+export function exportNotes(notes: Iterable<Note>): string {
   const lines = [];
   lines.push(`#separator:semicolon`);
   lines.push(`#html:true`);
@@ -29,5 +29,3 @@ function escape(value: string | null): string {
   }
   return value;
 }
-
-export { exportNotes };

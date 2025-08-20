@@ -1,6 +1,6 @@
 import { type NoteNode } from "@anotes/parser";
 
-function formatNotes(nodes: Iterable<NoteNode>): string {
+export function printNodes(nodes: Iterable<NoteNode>): string {
   const lines = [];
   for (const node of nodes) {
     const { properties, fields, end } = node;
@@ -23,5 +23,3 @@ function formatNotes(nodes: Iterable<NoteNode>): string {
   lines.push("");
   return lines.join("\n");
 }
-
-export { formatNotes };

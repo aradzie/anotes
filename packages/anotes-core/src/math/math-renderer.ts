@@ -1,12 +1,12 @@
-import type { KatexOptions } from "katex";
+import { type KatexOptions } from "katex";
 import { katexBlock, katexInline } from "./katex.js";
 
-type MathRenderer = {
+export type MathRenderer = {
   block: (code: string) => string;
   inline: (code: string) => string;
 };
 
-const renderTex = (): MathRenderer => {
+export const renderTex = (): MathRenderer => {
   return {
     block: (code) => {
       return `\\[ ${code.trim()} \\]\n`;
@@ -17,7 +17,7 @@ const renderTex = (): MathRenderer => {
   };
 };
 
-const renderHtml = (options: KatexOptions = {}): MathRenderer => {
+export const renderHtml = (options: KatexOptions = {}): MathRenderer => {
   return {
     block: (code) => {
       return katexBlock(code, options);
@@ -27,5 +27,3 @@ const renderHtml = (options: KatexOptions = {}): MathRenderer => {
     },
   };
 };
-
-export { type MathRenderer, renderHtml, renderTex };

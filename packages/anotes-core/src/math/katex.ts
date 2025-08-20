@@ -6,7 +6,7 @@ const defaultOptions = {
   throwOnError: false,
 } as const satisfies KatexOptions;
 
-function katexBlock(value: string, options: KatexOptions): string {
+export function katexBlock(value: string, options: KatexOptions): string {
   options = { ...defaultOptions, ...options, displayMode: true };
   try {
     return renderToString(value, options) + "\n";
@@ -21,7 +21,7 @@ function katexBlock(value: string, options: KatexOptions): string {
   }
 }
 
-function katexInline(value: string, options: KatexOptions): string {
+export function katexInline(value: string, options: KatexOptions): string {
   options = { ...defaultOptions, ...options, displayMode: false };
   try {
     return renderToString(value, options);
@@ -35,5 +35,3 @@ function katexInline(value: string, options: KatexOptions): string {
     }
   }
 }
-
-export { katexBlock, katexInline };

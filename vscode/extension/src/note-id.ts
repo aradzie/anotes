@@ -1,4 +1,4 @@
-import { formatNotes, insertNoteId, NoteParser } from "@anotes/core";
+import { insertNoteId, NoteParser, printNodes } from "@anotes/core";
 import vscode from "vscode";
 
 export async function insertIdCommand() {
@@ -38,6 +38,6 @@ function editDocument(document: vscode.TextDocument): vscode.TextEdit[] {
     const start = document.positionAt(0);
     const end = document.positionAt(text.length);
     const range = new vscode.Range(start, end);
-    return [vscode.TextEdit.replace(range, formatNotes(insertNoteId(nodes)))];
+    return [vscode.TextEdit.replace(range, printNodes(insertNoteId(nodes)))];
   }
 }

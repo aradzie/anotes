@@ -1,4 +1,4 @@
-import type { FieldNode, NoteNode } from "@anotes/parser";
+import { type FieldNode, type NoteNode } from "@anotes/parser";
 
 export class NoteList implements Iterable<Note> {
   readonly #types: NoteTypeMap;

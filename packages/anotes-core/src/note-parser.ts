@@ -8,12 +8,12 @@ import {
 } from "@anotes/parser";
 import { Note, NoteList, type NoteType, NoteTypeMap } from "./note.js";
 
-type NoteError = {
+export type NoteError = {
   message: string;
   location: LocationRange;
 };
 
-class ParseError extends Error {
+export class ParseError extends Error {
   errors: NoteError[];
 
   constructor(errors: Iterable<NoteError>) {
@@ -31,7 +31,7 @@ type ParseState = {
   template: string;
 };
 
-class NoteParser {
+export class NoteParser {
   readonly #notes: NoteList;
   readonly #errors: NoteError[];
 
@@ -196,5 +196,3 @@ class NoteParser {
     return this.#notes;
   }
 }
-
-export { type NoteError, NoteParser, ParseError };

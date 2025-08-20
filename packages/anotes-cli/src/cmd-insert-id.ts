@@ -1,4 +1,4 @@
-import { formatNotes, insertNoteId, NoteParser } from "@anotes/core";
+import { insertNoteId, NoteParser, printNodes } from "@anotes/core";
 import { readFileSync, writeFileSync } from "node:fs";
 import { findNoteFiles } from "./io.js";
 
@@ -12,6 +12,6 @@ export function insertIdCmd({ dir }: { dir: string }) {
     const nodes = parser.parseNoteNodes(file, text);
     parser.checkErrors();
     console.log(`Parsed ${nodes.length} note(s).`);
-    writeFileSync(file, formatNotes(insertNoteId(nodes)));
+    writeFileSync(file, printNodes(insertNoteId(nodes)));
   }
 }
