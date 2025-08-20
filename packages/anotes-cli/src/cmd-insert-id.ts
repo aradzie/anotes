@@ -1,5 +1,5 @@
-import { insertNoteId, NoteParser, printNodes } from "@anotes/core";
 import { readFileSync, writeFileSync } from "node:fs";
+import { insertNoteId, NoteParser, printNodes } from "@anotes/core";
 import { findNoteFiles } from "./io.js";
 
 export function insertIdCmd({ dir }: { dir: string }) {

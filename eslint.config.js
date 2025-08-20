@@ -32,8 +32,6 @@ export default [
       // configure @typescript-eslint
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-inferrable-types": ["error", { ignoreParameters: true, ignoreProperties: true }],
-      "@typescript-eslint/no-namespace": "off",
-      "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/no-unused-vars": "off",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/consistent-type-imports": [
