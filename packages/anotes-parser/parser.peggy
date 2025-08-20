@@ -4,15 +4,13 @@ Start = "" { return null; }
 // ----------------
 
 NoteList =
-  ( _ Newline )*
-  nodes:Note|0.., ( _ Newline )+|
-  ( _ Newline )* _
+  nodes:( ( _ Newline )* @Note )* ( _ Newline )* _
   { return nodes; }
 
 Note =
   properties:( ( _ Newline )* @Property _ Newline )*
-  fields:( ( _ Newline )* @Field _ Newline )+
-  end:NoteEnd
+  fields:( ( _ Newline )* @Field _ Newline )*
+  end:( ( _ Newline )* @NoteEnd _ Newline )
   { return { properties, fields, end, loc: location() }; }
 
 Property "property" =
@@ -37,13 +35,13 @@ Field "field" =
   { return { name, value, loc: location() }; }
 
 FieldName =
-  "!" text:( part:( $[-_a-z0-9]i+ )|1.., _| { return part.join(" "); } ) ":"
+  "!" text:NameParts ":"
   { return { text, loc: location() }; }
 
 FieldValue =
   text:(
     ( Text _ )
-    ( !( Newline ( PropertyName / FieldName / NoteEnd / !. ) ) Newline Text _ )*
+    ( !( Newline ( FieldName / NoteEnd / !. ) ) Newline Text _ )*
     { return text().trim(); }
   )
   { return { text, loc: location() }; }
@@ -62,8 +60,8 @@ TypeDefList =
 TypeDef =
   "type" Whitespace name:Name _ Newline
   id:( ( _ Newline )* @TypeId _ Newline )
-  fields:( ( _ Newline )* @FieldDef _ Newline )+
-  cards:( ( _ Newline )* @CardDef )+
+  fields:( ( _ Newline )* @FieldDef _ Newline )*
+  cards:( ( _ Newline )* @CardDef )*
   { return { name, id, fields, cards, loc: location() } }
 
 TypeId =
@@ -100,11 +98,14 @@ CardStyling =
   { return { text, loc: location() } }
 
 Name =
-  text:( part:( $[-_a-z0-9]i+ )|1.., Whitespace| { return part.join(" "); } )
+  text:NameParts
   { return { text, loc: location() }; }
 
 // Shared rules
 // ------------
+
+NameParts =
+  part:( $[-_a-z0-9]i+ )|1.., Whitespace| { return part.join(" "); }
 
 Text "text" =
   $( !( _ Newline ) . )*

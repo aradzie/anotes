@@ -10,12 +10,6 @@ test("parse whitespace", () => {
   like(parseNoteList("\t\n"), []);
   like(parseNoteList(" \n \n \n "), []);
   like(parseNoteList("\t\n\t\n\t\n\t"), []);
-  like(parseNoteList("!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parseNoteList("\n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parseNoteList("\n \n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parseNoteList("\n\t\n!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parseNoteList("!a:1\n~~~"), [{ fields: [{ name: { text: "a" } }] }]);
-  like(parseNoteList("!a:1\n~~~ "), [{ fields: [{ name: { text: "a" } }] }]);
   like(parseNoteList("!a:1\n~~~\n"), [{ fields: [{ name: { text: "a" } }] }]);
   like(parseNoteList("!a:1\n~~~\n\n"), [{ fields: [{ name: { text: "a" } }] }]);
   like(parseNoteList("!a:1\n~~~ \n \n"), [{ fields: [{ name: { text: "a" } }] }]);
@@ -46,25 +40,25 @@ test("parse cr lf", () => {
 });
 
 test("parse properties", () => {
-  like(parseNoteList("!tags:x\n!a:1\n~~~"), [
+  like(parseNoteList("!tags:x\n!a:1\n~~~\n"), [
     {
       properties: [{ name: { text: "tags" }, value: { text: "x" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parseNoteList("!Tags:x\n!a:1\n~~~"), [
+  like(parseNoteList("!Tags:x\n!a:1\n~~~\n"), [
     {
       properties: [{ name: { text: "tags" }, value: { text: "x" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parseNoteList("!TAGS:x\n!a:1\n~~~"), [
+  like(parseNoteList("!TAGS:x\n!a:1\n~~~\n"), [
     {
       properties: [{ name: { text: "tags" }, value: { text: "x" } }],
       fields: [{ name: { text: "a" } }],
     },
   ]);
-  like(parseNoteList("!deck:a\n \n!tags:b\n \n!a:1\n~~~"), [
+  like(parseNoteList("!deck:a\n \n!tags:b\n \n!a:1\n~~~\n"), [
     {
       properties: [
         { name: { text: "deck" }, value: { text: "a" } },
@@ -76,7 +70,7 @@ test("parse properties", () => {
 });
 
 test("parse field names", () => {
-  like(parseNoteList("!a:1\n~~~"), [
+  like(parseNoteList("!a:1\n~~~\n"), [
     {
       fields: [
         {
@@ -86,7 +80,7 @@ test("parse field names", () => {
       ],
     },
   ]);
-  like(parseNoteList("!a b:1\n~~~"), [
+  like(parseNoteList("!a b:1\n~~~\n"), [
     {
       fields: [
         {
@@ -96,7 +90,7 @@ test("parse field names", () => {
       ],
     },
   ]);
-  like(parseNoteList("!A_B \t C \t 0-9:1\n~~~"), [
+  like(parseNoteList("!A_B \t C \t 0-9:1\n~~~\n"), [
     {
       fields: [
         {
@@ -109,7 +103,7 @@ test("parse field names", () => {
 });
 
 test("parse field values", () => {
-  like(parseNoteList("!a:\n~~~"), [
+  like(parseNoteList("!a:\n~~~\n"), [
     {
       fields: [
         {
@@ -119,7 +113,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parseNoteList("!a: \t \n\n~~~"), [
+  like(parseNoteList("!a: \t \n\n~~~\n"), [
     {
       fields: [
         {
@@ -129,7 +123,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parseNoteList("!a:abc\n~~~"), [
+  like(parseNoteList("!a:abc\n~~~\n"), [
     {
       fields: [
         {
@@ -139,7 +133,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parseNoteList("!a: \t abc \n\n~~~"), [
+  like(parseNoteList("!a: \t abc \n\n~~~\n"), [
     {
       fields: [
         {
@@ -149,7 +143,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parseNoteList("!a:abc\nxyz\n~~~"), [
+  like(parseNoteList("!a:abc\nxyz\n~~~\n"), [
     {
       fields: [
         {
@@ -159,7 +153,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parseNoteList("!a: \t abc\nxyz \n\n~~~"), [
+  like(parseNoteList("!a: \t abc\nxyz \n\n~~~\n"), [
     {
       fields: [
         {
@@ -169,7 +163,7 @@ test("parse field values", () => {
       ],
     },
   ]);
-  like(parseNoteList("!a: \t abc\nxyz \n \n~~~"), [
+  like(parseNoteList("!a: \t abc\nxyz \n \n~~~\n"), [
     {
       fields: [
         {
@@ -216,12 +210,6 @@ test("report errors", () => {
     () => {
       parseNoteList("!a:abc\n~~~x");
     },
-    { message: 'Expected end of input or newline but "x" found.' },
-  );
-  throws(
-    () => {
-      parseNoteList("~~~");
-    },
-    { message: 'Expected end of input, field, newline, or property but "~" found.' },
+    { message: 'Expected newline but "x" found.' },
   );
 });

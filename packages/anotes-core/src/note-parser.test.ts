@@ -63,7 +63,8 @@ test("parse notes", () => {
 !id: 456
 !front: 456-abc
 !back: 456-xyz
-~~~`,
+~~~
+`,
   );
 
   like([...parser.errors], []);
@@ -111,7 +112,7 @@ test("error: syntax", () => {
 test("error: unknown note type", () => {
   const parser = new NoteParser();
 
-  parser.parseNotes("example.notes", `!type: haha\n!a:1\n!b:2\n~~~`);
+  parser.parseNotes("example.notes", `!type: haha\n!a:1\n!b:2\n~~~\n`);
 
   like(
     [...parser.errors],
@@ -122,7 +123,7 @@ test("error: unknown note type", () => {
 test("error: unknown field", () => {
   const parser = new NoteParser();
 
-  parser.parseNotes("example.notes", `!type: basic\n!a:1\n!b:2\n~~~`);
+  parser.parseNotes("example.notes", `!type: basic\n!a:1\n!b:2\n~~~\n`);
 
   like([...parser.errors], [{ message: 'Unknown field: "a"' }, { message: 'Unknown field: "b"' }]);
 });
@@ -130,7 +131,7 @@ test("error: unknown field", () => {
 test("error: duplicate field", () => {
   const parser = new NoteParser();
 
-  parser.parseNotes("example.notes", `!type: basic\n!front:1\n!front:2\n~~~`);
+  parser.parseNotes("example.notes", `!type: basic\n!front:1\n!front:2\n~~~\n`);
 
   like([...parser.errors], [{ message: 'Duplicate field: "front"' }]);
 });
@@ -142,7 +143,7 @@ test("error: duplicate id", () => {
   list.add(note);
   const parser = new NoteParser(list);
 
-  parser.parseNotes("example.notes", `!type: basic\n!id:123\n!front:1\n!back:2\n~~~`);
+  parser.parseNotes("example.notes", `!type: basic\n!id:123\n!front:1\n!back:2\n~~~\n`);
 
   like([...parser.errors], [{ message: 'Duplicate ID: "123"' }]);
 });

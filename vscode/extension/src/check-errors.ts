@@ -37,6 +37,22 @@ class CheckErrors {
       }
       this.#diagnosticCollection.set(document.uri, diagnostics);
     }
+    if (document.languageId === "anki-types") {
+      const uri = String(document.uri);
+      const text = document.getText();
+      const parser = new NoteParser();
+      parser.parseTypes(uri, text);
+      const diagnostics: vscode.Diagnostic[] = [];
+      for (const {
+        message,
+        location: { start, end },
+      } of parser.errors) {
+        const range = new vscode.Range(document.positionAt(start.offset), document.positionAt(end.offset));
+        const diagnostic = new vscode.Diagnostic(range, message, vscode.DiagnosticSeverity.Error);
+        diagnostics.push(diagnostic);
+      }
+      this.#diagnosticCollection.set(document.uri, diagnostics);
+    }
   };
 
   dispose() {}
