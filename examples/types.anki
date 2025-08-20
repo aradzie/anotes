@@ -1,6 +1,6 @@
 type Equation
 
-id 111
+id 123
 
 field Front
 field Back
@@ -10,15 +10,24 @@ field Extra
 card Card 1
 
 front
-<header>{{Front}}</header>
+<div class="front">{{Front}}</div>
 ~~~
 
 back
-{{FrontSide{{
-<section>{{Back}}</section>
-<section>{{Related}}</section>
-<section>{{Extra}}</section>
+{{FrontSide}}
+<div class="back">
+<div>{{Back}}</div>
+<div>{{Related}}</div>
+<div>{{Extra}}</div>
+</div>
 ~~~
 
 styling
+.front {
+  text-align: center;
+}
+.back {
+  max-width: 40rem;
+  margin: 0 auto;
+}
 ~~~
