@@ -1,8 +1,19 @@
-import { type FieldNode, type NoteNode } from "@anotes/parser";
+import type { FieldNode, NoteNode } from "@anotes/parser";
 
-class NoteList implements Iterable<Note> {
-  readonly #notes: Note[] = [];
-  readonly #map = new Map<string, Note>();
+export class NoteList implements Iterable<Note> {
+  readonly #types: NoteTypeMap;
+  readonly #notes: Note[];
+  readonly #index: Map<string, Note>;
+
+  constructor(types = new NoteTypeMap()) {
+    this.#types = types;
+    this.#notes = [];
+    this.#index = new Map();
+  }
+
+  get types(): NoteTypeMap {
+    return this.#types;
+  }
 
   [Symbol.iterator](): Iterator<Note> {
     return this.#notes[Symbol.iterator]();
@@ -13,17 +24,17 @@ class NoteList implements Iterable<Note> {
   }
 
   has(id: string): boolean {
-    return this.#map.has(id);
+    return this.#index.has(id);
   }
 
   get(id: string): Note | null {
-    return this.#map.get(id) || null;
+    return this.#index.get(id) || null;
   }
 
   add(note: Note): void {
     this.#notes.push(note);
     if (note.id) {
-      this.#map.set(note.id, note);
+      this.#index.set(note.id, note);
     }
   }
 
@@ -31,13 +42,13 @@ class NoteList implements Iterable<Note> {
     for (const note of this.#notes) {
       if (!note.id) {
         note.id = gen();
-        this.#map.set(note.id, note);
+        this.#index.set(note.id, note);
       }
     }
   }
 }
 
-class Note implements Iterable<NoteField> {
+export class Note implements Iterable<NoteField> {
   readonly #type: NoteType;
   #deck: string = "";
   #tags: string = "";
@@ -122,7 +133,7 @@ class Note implements Iterable<NoteField> {
   }
 }
 
-class NoteField {
+export class NoteField {
   readonly #type: NoteFieldType;
   #value: string = "";
   #node: FieldNode | null = null;
@@ -156,66 +167,72 @@ class NoteField {
   }
 }
 
-type NoteType = {
+export type NoteType = {
   readonly name: string;
+  readonly id: number;
   readonly fields: readonly NoteFieldType[];
 };
 
-type NoteFieldType = {
+export type NoteFieldType = {
   readonly name: string;
   readonly required: boolean;
 };
 
-class NoteTypeMap implements Iterable<NoteType> {
-  static readonly #basic: NoteType = {
+export class NoteTypeMap implements Iterable<NoteType> {
+  static readonly basic = {
     name: "Basic",
+    id: 1607392319,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
     ],
-  };
+  } as const satisfies NoteType;
 
-  static readonly #basicAndReversedCard: NoteType = {
+  static readonly basicAndReversedCard = {
     name: "Basic (and reversed card)",
+    id: 1607392320,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
     ],
-  };
+  } as const satisfies NoteType;
 
-  static readonly #basicOptionalReversedCard: NoteType = {
+  static readonly basicOptionalReversedCard = {
     name: "Basic (optional reversed card)",
+    id: 1607392321,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
       { name: "Add Reverse", required: false },
     ],
-  };
+  } as const satisfies NoteType;
 
-  static readonly #basicTypeInAnswer: NoteType = {
+  static readonly basicTypeInAnswer = {
     name: "Basic (type in the answer)",
+    id: 1607392322,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
     ],
-  };
+  } as const satisfies NoteType;
 
-  static readonly #cloze: NoteType = {
+  static readonly cloze = {
     name: "Cloze",
+    id: 1607392323,
     fields: [
       { name: "Text", required: true }, //
       { name: "Back Extra", required: false },
     ],
-  };
+  } as const satisfies NoteType;
 
   readonly #map = new Map<string, NoteType>();
 
   constructor() {
-    this.add(NoteTypeMap.#basic);
-    this.add(NoteTypeMap.#basicAndReversedCard);
-    this.add(NoteTypeMap.#basicOptionalReversedCard);
-    this.add(NoteTypeMap.#basicTypeInAnswer);
-    this.add(NoteTypeMap.#cloze);
+    this.add(NoteTypeMap.basic);
+    this.add(NoteTypeMap.basicAndReversedCard);
+    this.add(NoteTypeMap.basicOptionalReversedCard);
+    this.add(NoteTypeMap.basicTypeInAnswer);
+    this.add(NoteTypeMap.cloze);
   }
 
   [Symbol.iterator](): Iterator<NoteType> {
@@ -234,12 +251,4 @@ class NoteTypeMap implements Iterable<NoteType> {
   get(name: string): NoteType | null {
     return this.#map.get(name.toLowerCase()) ?? null;
   }
-
-  get basic(): NoteType {
-    return NoteTypeMap.#basic;
-  }
 }
-
-const noteTypes = new NoteTypeMap();
-
-export { Note, NoteField, type NoteFieldType, NoteList, type NoteType, NoteTypeMap, noteTypes };

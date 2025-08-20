@@ -1,13 +1,13 @@
 import { test } from "node:test";
 import { deepEqual, equal, isFalse, isTrue, like } from "rich-assert";
-import { Note, NoteList, noteTypes } from "./note.js";
+import { Note, NoteList, NoteTypeMap } from "./note.js";
 
 test("note list", () => {
-  const a = new Note(noteTypes.basic);
+  const a = new Note(NoteTypeMap.basic);
   a.id = "1";
-  const b = new Note(noteTypes.basic);
+  const b = new Note(NoteTypeMap.basic);
   b.id = "2";
-  const c = new Note(noteTypes.basic);
+  const c = new Note(NoteTypeMap.basic);
 
   const list = new NoteList();
 
@@ -40,7 +40,7 @@ test("note list", () => {
 });
 
 test("note fields", () => {
-  const note = new Note(noteTypes.basic);
+  const note = new Note(NoteTypeMap.basic);
 
   isTrue(note.has("front"));
   isTrue(note.has("Front"));
@@ -75,6 +75,7 @@ test("note fields", () => {
 });
 
 test("note type", () => {
+  const noteTypes = new NoteTypeMap();
   like(
     [...noteTypes],
     [

@@ -25,7 +25,7 @@ class CheckErrors {
       const uri = String(document.uri);
       const text = document.getText();
       const parser = new NoteParser();
-      parser.parse(uri, text);
+      parser.parseNotes(uri, text);
       const diagnostics: vscode.Diagnostic[] = [];
       for (const {
         message,

@@ -30,7 +30,7 @@ function editDocument(document: vscode.TextDocument): vscode.TextEdit[] {
   const uri = String(document.uri);
   const text = document.getText();
   const parser = new NoteParser();
-  parser.parse(uri, text);
+  parser.parseNotes(uri, text);
   const { notes, errors } = parser;
   if (errors.length > 0) {
     return [];

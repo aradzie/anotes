@@ -9,7 +9,7 @@ export async function exportNotesCommand() {
     for (const file of files.sort(sortFiles)) {
       const data = await vscode.workspace.fs.readFile(file);
       const text = Buffer.from(data).toString("utf-8");
-      parser.parse(file.fsPath, text);
+      parser.parseNotes(file.fsPath, text);
       if (parser.errors.length > 0) {
         vscode.window.showErrorMessage(`Error parsing note file "${file.fsPath}".`);
         return;

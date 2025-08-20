@@ -1,0 +1,24 @@
+type Equation
+
+id 111
+
+field Front
+field Back
+field Related
+field Extra
+
+card Card 1
+
+front
+<header>{{Front}}</header>
+~~~
+
+back
+{{FrontSide{{
+<section>{{Back}}</section>
+<section>{{Related}}</section>
+<section>{{Extra}}</section>
+~~~
+
+styling
+~~~

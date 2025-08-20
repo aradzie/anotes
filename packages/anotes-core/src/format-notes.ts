@@ -3,7 +3,7 @@ import { type Note, type NoteType } from "./note.js";
 function formatNotes(notes: Iterable<Readonly<Note>>): string {
   const lines = [];
   const state = {
-    type: { name: "", fields: [] } as NoteType,
+    type: { name: "", id: 0, fields: [] } as NoteType,
     deck: "",
     tags: "",
     template: "",

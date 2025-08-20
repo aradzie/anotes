@@ -1,5 +1,12 @@
-import { type LocationRange, type NoteNode, parseNoteList, SyntaxError } from "@anotes/parser";
-import { Note, NoteList, type NoteType, noteTypes } from "./note.js";
+import {
+  type LocationRange,
+  type NoteNode,
+  parseNoteList,
+  parseTypeDefList,
+  SyntaxError,
+  type TypeDefNode,
+} from "@anotes/parser";
+import { Note, NoteList, type NoteType, NoteTypeMap } from "./note.js";
 
 type NoteError = {
   message: string;
@@ -33,14 +40,14 @@ class NoteParser {
     this.#errors = [];
   }
 
-  parse(source: string, text: string): this {
-    this.mapNodes(this.parseNodes(source, text));
+  parseTypes(path: string, text: string): this {
+    this.walkTypeNodes(this.parseTypeNodes(path, text));
     return this;
   }
 
-  parseNodes(source: string, text: string): NoteNode[] {
+  parseTypeNodes(path: string, text: string): TypeDefNode[] {
     try {
-      return parseNoteList(text, source);
+      return parseTypeDefList(text, path);
     } catch (err) {
       if (err instanceof SyntaxError) {
         const { message, location } = err;
@@ -52,15 +59,45 @@ class NoteParser {
     }
   }
 
-  mapNodes(
+  walkTypeNodes(nodes: TypeDefNode[]) {
+    for (const node of nodes) {
+      const { name, id, fields } = node;
+      this.#notes.types.add({
+        name: name.text,
+        id: id.value,
+        fields: fields.map((node) => ({ name: node.name.text, required: node.required })),
+      });
+    }
+  }
+
+  parseNotes(path: string, text: string): this {
+    this.walkNoteNodes(this.parseNoteNodes(path, text));
+    return this;
+  }
+
+  parseNoteNodes(path: string, text: string): NoteNode[] {
+    try {
+      return parseNoteList(text, path);
+    } catch (err) {
+      if (err instanceof SyntaxError) {
+        const { message, location } = err;
+        this.#errors.push({ message, location });
+      } else {
+        throw err;
+      }
+      return [];
+    }
+  }
+
+  walkNoteNodes(
     nodes: NoteNode[],
     state: ParseState = {
-      type: noteTypes.basic,
+      type: NoteTypeMap.basic,
       deck: "",
       tags: "",
       template: "",
     },
-  ): void {
+  ) {
     for (const noteNode of nodes) {
       const seen = new Set<string>();
 
@@ -77,7 +114,7 @@ class NoteParser {
 
         switch (nameLc) {
           case "type": {
-            const type = noteTypes.get(value.text);
+            const type = this.#notes.types.get(value.text);
             if (type == null) {
               this.#errors.push({ message: `Unknown note type: "${value.text}"`, location: value.loc });
               continue;

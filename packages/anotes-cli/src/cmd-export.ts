@@ -1,14 +1,20 @@
-import { readFileSync, writeFileSync } from "node:fs";
 import { exportNotes, NoteParser } from "@anotes/core";
+import { readFileSync, writeFileSync } from "node:fs";
 import { findNoteFiles } from "./io.js";
 
 export function exportCmd({ dir, out }: { dir: string; out: string }) {
   const parser = new NoteParser();
   console.log(`Scanning directory "${dir}"...`);
-  for (const file of findNoteFiles(dir)) {
-    console.log(`Parsing file "${file}"...`);
-    const text = readFileSync(file, "utf-8");
-    parser.parse(file, text);
+  const { notePaths, typePaths } = findNoteFiles(dir);
+  for (const path of typePaths) {
+    console.log(`Parsing types file "${path}"...`);
+    const text = readFileSync(path, "utf-8");
+    parser.parseTypes(path, text);
+  }
+  for (const path of notePaths) {
+    console.log(`Parsing notes file "${path}"...`);
+    const text = readFileSync(path, "utf-8");
+    parser.parseNotes(path, text);
   }
   parser.checkErrors();
   const { notes } = parser;
