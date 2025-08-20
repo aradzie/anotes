@@ -27,16 +27,6 @@ test("note list", () => {
   isTrue(list.has("1"));
   isTrue(list.has("2"));
   isFalse(list.has("3"));
-
-  list.insertId(() => "3");
-
-  deepEqual([...list], [a, b, c]);
-  equal(a.id, "1");
-  equal(b.id, "2");
-  equal(c.id, "3");
-  isTrue(list.has("1"));
-  isTrue(list.has("2"));
-  isTrue(list.has("3"));
 });
 
 test("note fields", () => {

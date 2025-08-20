@@ -37,15 +37,6 @@ export class NoteList implements Iterable<Note> {
       this.#index.set(note.id, note);
     }
   }
-
-  insertId(gen: () => string = () => crypto.randomUUID()): void {
-    for (const note of this.#notes) {
-      if (!note.id) {
-        note.id = gen();
-        this.#index.set(note.id, note);
-      }
-    }
-  }
 }
 
 export class Note implements Iterable<NoteField> {

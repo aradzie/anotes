@@ -1,60 +1,27 @@
-import { type Note, type NoteType } from "./note.js";
+import { type NoteNode } from "@anotes/parser";
 
-function formatNotes(notes: Iterable<Readonly<Note>>): string {
+function formatNotes(nodes: Iterable<NoteNode>): string {
   const lines = [];
-  const state = {
-    type: { name: "", id: 0, fields: [] } as NoteType,
-    deck: "",
-    tags: "",
-    template: "",
-    count: 1,
-  };
-  for (const note of notes) {
-    const { type, deck, tags, template, id } = note;
-    if (type !== state.type || deck !== state.deck || tags !== state.tags || template !== state.template) {
-      if (state.count > 1) {
-        lines.push("");
-      }
-      if (type !== state.type) {
-        lines.push(`!type: ${type.name}`);
-        state.type = type;
-      }
-      if (deck !== state.deck) {
-        lines.push(`!deck: ${deck ?? ""}`);
-        state.deck = deck;
-      }
-      if (tags !== state.tags) {
-        lines.push(`!tags: ${tags ?? ""}`);
-        state.tags = tags;
-      }
-      if (template !== state.template) {
-        lines.push(`!template: ${template ?? ""}`);
-        state.template = template;
+  for (const node of nodes) {
+    const { properties, fields, end } = node;
+    if (lines.length > 0) {
+      lines.push("");
+    }
+    for (const { name, value } of properties) {
+      lines.push(`!${name.text}: ${value.text}`);
+    }
+    for (const { name, value } of fields) {
+      if (value.text.includes("\n")) {
+        lines.push(`!${name.text}:`);
+        lines.push(value.text);
+      } else {
+        lines.push(`!${name.text}: ${value.text}`);
       }
     }
-    lines.push("");
-    if (id) {
-      lines.push(`!id: ${id}`);
-    }
-    for (const { name, value } of note) {
-      if (value) {
-        if (isMultiline(value)) {
-          lines.push(`!${name.toLowerCase()}:`);
-          lines.push(value);
-        } else {
-          lines.push(`!${name.toLowerCase()}: ${value}`);
-        }
-      }
-    }
-    lines.push("~~~");
-    state.count += 1;
+    lines.push(end.text);
   }
   lines.push("");
   return lines.join("\n");
-}
-
-function isMultiline(value: string): boolean {
-  return value.includes("\n");
 }
 
 export { formatNotes };
