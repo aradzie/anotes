@@ -25,7 +25,6 @@ PropertyName =
   / "!deck:"i { return "deck"; }
   / "!tags:"i { return "tags"; }
   / "!template:"i { return "template"; }
-  / "!id:"i { return "id"; }
   )
   { return { text, loc: location() }; }
 

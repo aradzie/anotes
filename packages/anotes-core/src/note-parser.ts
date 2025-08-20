@@ -101,8 +101,6 @@ export class NoteParser {
     for (const noteNode of nodes) {
       const seen = new Set<string>();
 
-      let id = "";
-
       // Set note properties.
       for (const { name, value } of noteNode.properties) {
         const nameLc = name.text.toLowerCase();
@@ -134,15 +132,6 @@ export class NoteParser {
             state.template = value.text;
             break;
           }
-          case "id": {
-            if ((id = value.text)) {
-              if (this.#notes.has(id)) {
-                this.#errors.push({ message: `Duplicate ID: "${value.text}"`, location: value.loc });
-                continue;
-              }
-            }
-            break;
-          }
         }
       }
 
@@ -150,7 +139,6 @@ export class NoteParser {
       note.deck = state.deck;
       note.tags = state.tags;
       note.template = state.template;
-      note.id = id;
       note.node = noteNode;
 
       // Set note fields.
@@ -167,9 +155,13 @@ export class NoteParser {
           const field = note.get(nameLc);
           field.value = value.text;
           field.node = fieldNode;
+          if (nameLc === "id") {
+            if (this.#notes.has(value.text)) {
+              this.#errors.push({ message: `Duplicate ID: "${value.text}"`, location: value.loc });
+            }
+          }
         } else {
           this.#errors.push({ message: `Unknown field: "${name.text}"`, location: name.loc });
-          continue;
         }
       }
 

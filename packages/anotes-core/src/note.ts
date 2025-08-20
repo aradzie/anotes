@@ -44,7 +44,7 @@ export class Note implements Iterable<NoteField> {
   #deck: string = "";
   #tags: string = "";
   #template: string = "";
-  #id: string = "";
+  readonly #id = new NoteField({ name: "ID", required: false });
   readonly #fields = new Map<string, NoteField>();
   #node: NoteNode | null = null;
 
@@ -84,11 +84,11 @@ export class Note implements Iterable<NoteField> {
   }
 
   get id(): string {
-    return this.#id;
+    return this.#id.value;
   }
 
   set id(value: string | null) {
-    this.#id = value ?? "";
+    this.#id.value = value;
   }
 
   [Symbol.iterator](): Iterator<NoteField> {
@@ -96,23 +96,31 @@ export class Note implements Iterable<NoteField> {
   }
 
   has(fieldName: string): boolean {
-    return this.#fields.has(fieldName.toLowerCase());
+    const key = fieldName.toLowerCase();
+    if (key === "id") {
+      return true;
+    }
+    return this.#fields.has(key);
   }
 
   get(fieldName: string): NoteField {
-    const field = this.#fields.get(fieldName.toLowerCase());
+    return this.#getField(fieldName);
+  }
+
+  set(fieldName: string, value: string | null): void {
+    this.#getField(fieldName).value = value;
+  }
+
+  #getField(fieldName: string): NoteField {
+    const key = fieldName.toLowerCase();
+    if (key === "id") {
+      return this.#id;
+    }
+    const field = this.#fields.get(key);
     if (field == null) {
       throw new Error(`Unknown field: "${fieldName}"`);
     }
     return field;
-  }
-
-  set(fieldName: string, value: string | null): void {
-    const field = this.#fields.get(fieldName.toLowerCase());
-    if (field == null) {
-      throw new Error(`Unknown field: "${fieldName}"`);
-    }
-    field.value = value;
   }
 
   get node(): NoteNode | null {

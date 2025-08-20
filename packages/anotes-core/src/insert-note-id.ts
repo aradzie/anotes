@@ -12,13 +12,13 @@ const loc = {
 
 export function insertNoteId(nodes: NoteNode[], gen: IdGenerator = guidGenerator) {
   for (const node of nodes) {
-    let property = node.properties.find(({ name }) => name.text === "id");
-    if (property == null) {
-      node.properties.push((property = { name: { text: "id", loc }, value: { text: "", loc }, loc }));
+    let field = node.fields.find(({ name }) => name.text === "id");
+    if (field == null) {
+      node.fields.unshift((field = { name: { text: "id", loc }, value: { text: "", loc }, loc }));
     }
-    let id = property.value.text;
+    let id = field.value.text;
     if (id === "") {
-      property.value.text = id = gen(node);
+      field.value.text = id = gen(node);
     }
   }
   return nodes;

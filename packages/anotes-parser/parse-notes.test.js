@@ -46,18 +46,6 @@ test("parse cr lf", () => {
 });
 
 test("parse properties", () => {
-  like(parseNoteList("!id:\n!a:1\n~~~"), [
-    {
-      properties: [{ name: { text: "id" }, value: { text: "" } }],
-      fields: [{ name: { text: "a" } }],
-    },
-  ]);
-  like(parseNoteList("!id: \t xyz \t \n!a:1\n~~~"), [
-    {
-      properties: [{ name: { text: "id" }, value: { text: "xyz" } }],
-      fields: [{ name: { text: "a" } }],
-    },
-  ]);
   like(parseNoteList("!tags:x\n!a:1\n~~~"), [
     {
       properties: [{ name: { text: "tags" }, value: { text: "x" } }],
@@ -189,41 +177,6 @@ test("parse field values", () => {
           value: { text: "abc\nxyz", loc: { start: { offset: 6 }, end: { offset: 16 } } },
         },
       ],
-    },
-  ]);
-});
-
-test("provide locations", () => {
-  like(parseNoteList("!id:1\n!a:1\n~~~"), [
-    {
-      properties: [
-        {
-          name: {
-            text: "id",
-            loc: { start: { offset: 0 }, end: { offset: 4 } },
-          },
-          value: {
-            text: "1",
-            loc: { start: { offset: 4 }, end: { offset: 5 } },
-          },
-          loc: { start: { offset: 0 }, end: { offset: 5 } },
-        },
-      ],
-      fields: [
-        {
-          name: {
-            text: "a",
-            loc: { start: { offset: 6 }, end: { offset: 9 } },
-          },
-          value: {
-            text: "1",
-            loc: { start: { offset: 9 }, end: { offset: 10 } },
-          },
-          loc: { start: { offset: 6 }, end: { offset: 10 } },
-        },
-      ],
-      end: { text: "~~~", loc: { start: { offset: 11 }, end: { offset: 14 } } },
-      loc: { start: { offset: 0 }, end: { offset: 14 } },
     },
   ]);
 });
