@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import { like } from "rich-assert";
-import { Note, NoteList, NoteTypeMap } from "./note.js";
 import { NoteParser } from "./note-parser.js";
+import { Note, NoteList, NoteTypeMap } from "./note.js";
 
 test("parse types", () => {
   const parser = new NoteParser();
@@ -47,22 +47,46 @@ styling
   );
 });
 
+test("type parsing error: syntax", () => {
+  const parser = new NoteParser();
+
+  parser.parseTypes("example.anki", ` omg`);
+
+  like([...parser.errors], [{ message: 'Expected end of input or newline but "o" found.' }]);
+});
+
+test("type parsing error: duplicate type", () => {
+  const parser = new NoteParser();
+
+  parser.parseTypes("example.anki", `type One\nid 1\ntype One\nid 2\n`);
+
+  like([...parser.errors], [{ message: 'Duplicate type: "One"' }]);
+});
+
+test("type parsing error: duplicate field", () => {
+  const parser = new NoteParser();
+
+  parser.parseTypes("example.anki", `type One\nid 1\nfield Front\nfield Front\n`);
+
+  like([...parser.errors], [{ message: 'Duplicate field: "Front"' }]);
+});
+
 test("parse notes", () => {
   const parser = new NoteParser();
 
   parser.parseNotes(
     "example.notes",
     `
-!type: basic
-!deck: example
-!tags: tag1 tag2
-!id: 123
-!front: 123-abc
-!back: 123-xyz
+!TYPE: basic
+!DECK: example
+!TAGS: tag1 tag2
+!ID: 123
+!BACK: 123-xyz
+!FRONT: 123-abc
 ~~~
 !id: 456
-!front: 456-abc
 !back: 456-xyz
+!front: 456-abc
 ~~~
 `,
   );
@@ -101,7 +125,7 @@ test("parse notes", () => {
   );
 });
 
-test("error: syntax", () => {
+test("note parsing error: syntax", () => {
   const parser = new NoteParser();
 
   parser.parseNotes("example.notes", `!type: basic\n!front:1`);
@@ -109,26 +133,23 @@ test("error: syntax", () => {
   like([...parser.errors], [{ message: "Expected newline but end of input found." }]);
 });
 
-test("error: unknown note type", () => {
+test("note parsing error: unknown note type", () => {
   const parser = new NoteParser();
 
   parser.parseNotes("example.notes", `!type: haha\n!a:1\n!b:2\n~~~\n`);
 
-  like(
-    [...parser.errors],
-    [{ message: 'Unknown note type: "haha"' }, { message: 'Unknown field: "a"' }, { message: 'Unknown field: "b"' }],
-  );
+  like([...parser.errors], [{ message: 'Unknown note type: "haha"' }]);
 });
 
-test("error: unknown field", () => {
+test("note parsing error: unknown field", () => {
   const parser = new NoteParser();
 
   parser.parseNotes("example.notes", `!type: basic\n!a:1\n!b:2\n~~~\n`);
 
-  like([...parser.errors], [{ message: 'Unknown field: "a"' }, { message: 'Unknown field: "b"' }]);
+  like([...parser.errors], [{ message: 'Unknown field: "a"' }]);
 });
 
-test("error: duplicate field", () => {
+test("note parsing error: duplicate field", () => {
   const parser = new NoteParser();
 
   parser.parseNotes("example.notes", `!type: basic\n!front:1\n!front:2\n~~~\n`);
@@ -136,7 +157,7 @@ test("error: duplicate field", () => {
   like([...parser.errors], [{ message: 'Duplicate field: "front"' }]);
 });
 
-test("error: duplicate id", () => {
+test("note parsing error: duplicate id", () => {
   const note = new Note(NoteTypeMap.basic);
   note.id = "123";
   const list = new NoteList();

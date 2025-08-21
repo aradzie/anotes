@@ -130,6 +130,10 @@ export class Note implements Iterable<NoteField> {
   set node(value: NoteNode | null) {
     this.#node = value;
   }
+
+  static isIdField(fieldName: string): boolean {
+    return fieldName.toLowerCase() === "id";
+  }
 }
 
 export class NoteField {
@@ -170,11 +174,19 @@ export type NoteType = {
   readonly name: string;
   readonly id: number;
   readonly fields: readonly NoteFieldType[];
+  readonly cards: readonly NoteCardType[];
 };
 
 export type NoteFieldType = {
   readonly name: string;
   readonly required: boolean;
+};
+
+export type NoteCardType = {
+  readonly name: string;
+  readonly front: string;
+  readonly back: string;
+  readonly styling: string;
 };
 
 export class NoteTypeMap implements Iterable<NoteType> {
@@ -185,6 +197,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
       { name: "Front", required: true }, //
       { name: "Back", required: true },
     ],
+    cards: [
+      {
+        name: "Card 1",
+        front: "{{Front}}",
+        back: '{{FrontSide}}<hr id="answer">{{Back}}',
+        styling: "",
+      },
+    ],
   } as const satisfies NoteType;
 
   static readonly basicAndReversedCard = {
@@ -193,6 +213,20 @@ export class NoteTypeMap implements Iterable<NoteType> {
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
+    ],
+    cards: [
+      {
+        name: "Card 1",
+        front: "{{Front}}",
+        back: '{{FrontSide}}<hr id="answer">{{Back}}',
+        styling: "",
+      },
+      {
+        name: "Card 2",
+        front: "{{Back}}",
+        back: '{{FrontSide}}<hr id="answer">{{Front}}',
+        styling: "",
+      },
     ],
   } as const satisfies NoteType;
 
@@ -204,6 +238,20 @@ export class NoteTypeMap implements Iterable<NoteType> {
       { name: "Back", required: true },
       { name: "Add Reverse", required: false },
     ],
+    cards: [
+      {
+        name: "Card 1",
+        front: "{{Front}}",
+        back: '{{FrontSide}}<hr id="answer">{{Back}}',
+        styling: "",
+      },
+      {
+        name: "Card 2",
+        front: "{{#Add Reverse}}{{Back}}{{/Add Reverse}}",
+        back: '{{FrontSide}}<hr id="answer">{{Front}}',
+        styling: "",
+      },
+    ],
   } as const satisfies NoteType;
 
   static readonly basicTypeInAnswer = {
@@ -213,6 +261,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
       { name: "Front", required: true }, //
       { name: "Back", required: true },
     ],
+    cards: [
+      {
+        name: "Card 1",
+        front: "{{Front}}<br>{{type:Back}}",
+        back: '{{Front}}<hr id="answer">{{Back}}',
+        styling: "",
+      },
+    ],
   } as const satisfies NoteType;
 
   static readonly cloze = {
@@ -221,6 +277,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
     fields: [
       { name: "Text", required: true }, //
       { name: "Back Extra", required: false },
+    ],
+    cards: [
+      {
+        name: "Cloze",
+        front: "{{cloze:Text}}",
+        back: "{{cloze:Text}}<br>{{Back Extra}}",
+        styling: "",
+      },
     ],
   } as const satisfies NoteType;
 

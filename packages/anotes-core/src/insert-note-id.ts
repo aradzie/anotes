@@ -1,4 +1,5 @@
 import { type LocationRange, type NoteNode } from "@anotes/parser";
+import { Note } from "./note.js";
 
 export type IdGenerator = (node: NoteNode) => string;
 
@@ -12,7 +13,7 @@ const loc = {
 
 export function insertNoteId(nodes: NoteNode[], gen: IdGenerator = guidGenerator) {
   for (const node of nodes) {
-    let field = node.fields.find(({ name }) => name.text.toLocaleLowerCase() === "id");
+    let field = node.fields.find(({ name }) => Note.isIdField(name.text));
     if (field == null) {
       node.fields.unshift((field = { name: { text: "id", loc }, value: { text: "", loc }, loc }));
     }
