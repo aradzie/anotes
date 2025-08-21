@@ -6,7 +6,7 @@
   "dependencies": {
     "@anotes/parser": "*",
     "katex": "^0.16.22",
-    "marked": "^16.1.2"
+    "marked": "^16.2.0"
   },
   "scripts": {
     "compile": "rm -fr dist; tsc",
