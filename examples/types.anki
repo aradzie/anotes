@@ -17,8 +17,14 @@ back
 {{FrontSide}}
 <div class="back">
 <div>{{Back}}</div>
+{{#Related}}
+<p><strong>Related</strong></p>
 <div>{{Related}}</div>
+{{/Related}}
+{{#Extra}}
+<p><strong>Extra</strong></p>
 <div>{{Extra}}</div>
+{{/Extra}}
 </div>
 ~~~
 
@@ -29,5 +35,6 @@ styling
 .back {
   max-width: 40rem;
   margin: 0 auto;
+  text-align: start;
 }
 ~~~
