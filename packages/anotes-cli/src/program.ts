@@ -1,3 +1,4 @@
+import { styleText } from "node:util";
 import { ParseError } from "@anotes/core";
 import { Command } from "commander";
 import { exportCmd } from "./cmd-export.js";
@@ -5,6 +6,10 @@ import { insertIdCmd } from "./cmd-insert-id.js";
 import { pathTo } from "./io.js";
 
 const program = new Command();
+
+program.configureOutput({
+  outputError: (str, write) => write(styleText("red", str)),
+});
 
 program
   .name("anotes")
@@ -28,9 +33,11 @@ try {
   program.parse();
 } catch (err) {
   if (err instanceof ParseError) {
+    const lines = [];
     for (const { message, location } of err.errors) {
-      console.error(`Error: ${message} at ${String(location.source)}:${location.start.line}:${location.start.column}`);
+      lines.push(`${String(location.source)}:${location.start.line}:${location.start.column}: ${message}`);
     }
+    program.error(lines.join("\n"));
   } else {
     throw err;
   }
