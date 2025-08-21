@@ -158,13 +158,26 @@ test("note parsing error: duplicate field", () => {
 });
 
 test("note parsing error: duplicate id", () => {
-  const note = new Note(NoteTypeMap.basic);
-  note.id = "123";
+  const a = new Note(NoteTypeMap.basic);
+  a.id = "123";
+  a.set("front", "a b c");
+  const b = new Note(NoteTypeMap.basic);
+  b.id = "123";
+  b.set("front", " a  b  c ");
   const list = new NoteList();
-  list.add(note);
+  list.add(a);
+  list.add(b);
   const parser = new NoteParser(list);
 
-  parser.parseNotes("example.notes", `!type: basic\n!id:123\n!front:1\n!back:2\n~~~\n`);
+  parser.checkDuplicates();
 
-  like([...parser.errors], [{ message: 'Duplicate ID: "123"' }]);
+  like(
+    [...parser.errors],
+    [
+      { message: 'Duplicate ID: "123"' },
+      { message: 'Duplicate ID: "123"' },
+      { message: 'Duplicate note: "a b c"' },
+      { message: 'Duplicate note: "a b c"' },
+    ],
+  );
 });

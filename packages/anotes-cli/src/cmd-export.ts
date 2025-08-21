@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync } from "node:fs";
 import { exportNotes, NoteParser } from "@anotes/core";
+import { readFileSync, writeFileSync } from "node:fs";
 import { findNoteFiles } from "./io.js";
 
 export function exportCmd({ dir, out }: { dir: string; out: string }) {
@@ -16,6 +16,7 @@ export function exportCmd({ dir, out }: { dir: string; out: string }) {
     const text = readFileSync(path, "utf-8");
     parser.parseNotes(path, text);
   }
+  parser.checkDuplicates();
   parser.checkErrors();
   const { notes } = parser;
   console.log(`Parsed ${notes.length} note(s).`);

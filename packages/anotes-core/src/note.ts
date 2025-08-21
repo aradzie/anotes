@@ -3,12 +3,10 @@ import { type FieldNode, type NoteNode } from "@anotes/parser";
 export class NoteList implements Iterable<Note> {
   readonly #types: NoteTypeMap;
   readonly #notes: Note[];
-  readonly #index: Map<string, Note>;
 
   constructor(types = new NoteTypeMap()) {
     this.#types = types;
     this.#notes = [];
-    this.#index = new Map();
   }
 
   get types(): NoteTypeMap {
@@ -23,19 +21,8 @@ export class NoteList implements Iterable<Note> {
     return this.#notes.length;
   }
 
-  has(id: string): boolean {
-    return this.#index.has(id);
-  }
-
-  get(id: string): Note | null {
-    return this.#index.get(id) || null;
-  }
-
   add(note: Note): void {
     this.#notes.push(note);
-    if (note.id) {
-      this.#index.set(note.id, note);
-    }
   }
 }
 
@@ -121,6 +108,14 @@ export class Note implements Iterable<NoteField> {
       throw new Error(`Unknown field: "${fieldName}"`);
     }
     return field;
+  }
+
+  get first(): NoteField {
+    const [first] = this.#fields.values();
+    if (first == null) {
+      throw new Error("No fields");
+    }
+    return first;
   }
 
   get node(): NoteNode | null {

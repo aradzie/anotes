@@ -9,6 +9,12 @@ import {
 } from "@anotes/parser";
 import { Note, type NoteCardType, type NoteFieldType, NoteList, type NoteType, NoteTypeMap } from "./note.js";
 
+const unknown = {
+  source: "<unknown>",
+  start: { offset: 0, line: 0, column: 0 },
+  end: { offset: 0, line: 0, column: 0 },
+} as const satisfies LocationRange;
+
 export type NoteError = {
   message: string;
   location: LocationRange;
@@ -52,6 +58,46 @@ export class NoteParser {
   checkErrors(): void | never {
     if (this.#errors.length > 0) {
       throw new ParseError(this.#errors);
+    }
+  }
+
+  checkDuplicates() {
+    const byId = new Map<string, Note[]>();
+    const byTitle = new Map<string, Note[]>();
+    for (const note of this.#notes) {
+      const { id } = note;
+      if (id) {
+        let list = byId.get(id);
+        if (list == null) {
+          byId.set(id, (list = []));
+        }
+        list.push(note);
+      }
+      const { value } = note.first;
+      const title = value.trim().replaceAll(/\s+/g, " ");
+      if (title) {
+        let list = byTitle.get(title);
+        if (list == null) {
+          byTitle.set(title, (list = []));
+        }
+        list.push(note);
+      }
+    }
+    for (const [key, list] of byId) {
+      if (list.length > 1) {
+        for (const note of list) {
+          const { node } = note.get("id");
+          this.#errors.push({ message: `Duplicate ID: "${key}"`, location: node?.value.loc ?? unknown });
+        }
+      }
+    }
+    for (const [key, list] of byTitle) {
+      if (list.length > 1) {
+        for (const note of list) {
+          const { node } = note.first;
+          this.#errors.push({ message: `Duplicate note: "${key}"`, location: node?.value.loc ?? unknown });
+        }
+      }
     }
   }
 
@@ -211,12 +257,6 @@ export class NoteParser {
         const field = note.get(name.text);
         field.value = value.text;
         field.node = fieldNode;
-        if (Note.isIdField(field.name)) {
-          if (this.#notes.has(field.value)) {
-            this.#errors.push({ message: `Duplicate ID: "${value.text}"`, location: value.loc });
-            return;
-          }
-        }
       } else {
         this.#errors.push({ message: `Unknown field: "${name.text}"`, location: name.loc });
         return;

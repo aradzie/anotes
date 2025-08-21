@@ -26,6 +26,7 @@ class CheckErrors {
       const text = document.getText();
       const parser = new NoteParser();
       parser.parseNotes(uri, text);
+      parser.checkDuplicates();
       const diagnostics: vscode.Diagnostic[] = [];
       for (const {
         message,
