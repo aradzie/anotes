@@ -25,6 +25,7 @@ export type TypeDefNode = {
   id: IdNode;
   fields: FieldDefNode[];
   cards: CardDefNode[];
+  styling: CardStylingNode | null;
 } & Node;
 
 export type IdNode = {
@@ -41,7 +42,6 @@ export type CardDefNode = {
   name: Token;
   front: CardFrontNode;
   back: CardBackNode;
-  styling: CardStylingNode | null;
 } & Node;
 
 export type CardFrontNode = {

@@ -170,6 +170,7 @@ export type NoteType = {
   readonly id: number;
   readonly fields: readonly NoteFieldType[];
   readonly cards: readonly NoteCardType[];
+  readonly styling: string;
 };
 
 export type NoteFieldType = {
@@ -181,7 +182,6 @@ export type NoteCardType = {
   readonly name: string;
   readonly front: string;
   readonly back: string;
-  readonly styling: string;
 };
 
 export class NoteTypeMap implements Iterable<NoteType> {
@@ -197,9 +197,9 @@ export class NoteTypeMap implements Iterable<NoteType> {
         name: "Card 1",
         front: "{{Front}}",
         back: '{{FrontSide}}<hr id="answer">{{Back}}',
-        styling: "",
       },
     ],
+    styling: "",
   } as const satisfies NoteType;
 
   static readonly basicAndReversedCard = {
@@ -214,15 +214,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
         name: "Card 1",
         front: "{{Front}}",
         back: '{{FrontSide}}<hr id="answer">{{Back}}',
-        styling: "",
       },
       {
         name: "Card 2",
         front: "{{Back}}",
         back: '{{FrontSide}}<hr id="answer">{{Front}}',
-        styling: "",
       },
     ],
+    styling: "",
   } as const satisfies NoteType;
 
   static readonly basicOptionalReversedCard = {
@@ -238,15 +237,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
         name: "Card 1",
         front: "{{Front}}",
         back: '{{FrontSide}}<hr id="answer">{{Back}}',
-        styling: "",
       },
       {
         name: "Card 2",
         front: "{{#Add Reverse}}{{Back}}{{/Add Reverse}}",
         back: '{{FrontSide}}<hr id="answer">{{Front}}',
-        styling: "",
       },
     ],
+    styling: "",
   } as const satisfies NoteType;
 
   static readonly basicTypeInAnswer = {
@@ -261,9 +259,9 @@ export class NoteTypeMap implements Iterable<NoteType> {
         name: "Card 1",
         front: "{{Front}}<br>{{type:Back}}",
         back: '{{Front}}<hr id="answer">{{Back}}',
-        styling: "",
       },
     ],
+    styling: "",
   } as const satisfies NoteType;
 
   static readonly cloze = {
@@ -278,9 +276,9 @@ export class NoteTypeMap implements Iterable<NoteType> {
         name: "Cloze",
         front: "{{cloze:Text}}",
         back: "{{cloze:Text}}<br>{{Back Extra}}",
-        styling: "",
       },
     ],
+    styling: "",
   } as const satisfies NoteType;
 
   readonly #map = new Map<string, NoteType>();

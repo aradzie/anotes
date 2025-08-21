@@ -62,7 +62,8 @@ TypeDef =
   id:( ( _ Newline )* @TypeId _ Newline )
   fields:( ( _ Newline )* @FieldDef _ Newline )*
   cards:( ( _ Newline )* @CardDef )*
-  { return { name, id, fields, cards, loc: location() } }
+  styling:( ( _ Newline )* @Styling _ Newline )?
+  { return { name, id, fields, cards, styling, loc: location() } }
 
 TypeId =
   "id" Whitespace id:( text:$[0-9]+ { return { text, loc: location() }; } )
@@ -76,8 +77,7 @@ CardDef =
   "card" Whitespace name:Name _ Newline
   front:( ( _ Newline )* @CardFront _ Newline )
   back:( ( _ Newline )* @CardBack _ Newline )
-  styling:( ( _ Newline )* @CardStyling _ Newline )?
-  { return { name, front, back, styling, loc: location() } }
+  { return { name, front, back, loc: location() } }
 
 CardFront =
   "front" _ Newline
@@ -91,7 +91,7 @@ CardBack =
   "~~~"
   { return { text, loc: location() } }
 
-CardStyling =
+Styling =
   "styling" _ Newline
   text:$( !( "~~~" / !. ) Text _ Newline )*
   "~~~"

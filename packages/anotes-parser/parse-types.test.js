@@ -73,11 +73,11 @@ styling
             back: {
               text: "[back]\n",
             },
-            styling: {
-              text: "[styling]\n",
-            },
           },
         ],
+        styling: {
+          text: "[styling]\n",
+        },
       },
     ],
   );

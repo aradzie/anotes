@@ -149,7 +149,7 @@ export class NoteParser {
     const cards: NoteCardType[] = [];
     const seenCards = new SeenNames();
     for (const cardNode of node.cards) {
-      const { name, front, back, styling } = cardNode;
+      const { name, front, back } = cardNode;
       if (seenCards.seen(name)) {
         this.#errors.push({ message: `Duplicate card: "${name.text}"`, location: name.loc });
         return;
@@ -158,7 +158,6 @@ export class NoteParser {
         name: name.text,
         front: front?.text ?? "",
         back: back?.text ?? "",
-        styling: styling?.text ?? "",
       });
     }
 
@@ -167,6 +166,7 @@ export class NoteParser {
       id: node.id.value,
       fields,
       cards,
+      styling: node.styling?.text ?? "",
     });
   }
 
