@@ -1,4 +1,4 @@
-import type { LocationRange } from "@anotes/parser";
+import { type LocationRange } from "@anotes/parser";
 
 export const loc = {
   source: "<unknown>",

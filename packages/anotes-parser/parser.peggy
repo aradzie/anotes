@@ -22,7 +22,6 @@ PropertyName =
     "!type:"i { return "type"; }
   / "!deck:"i { return "deck"; }
   / "!tags:"i { return "tags"; }
-  / "!template:"i { return "template"; }
   )
   { return { text, loc: location() }; }
 

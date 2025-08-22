@@ -1,5 +1,5 @@
 import { type FieldNode, type NoteNode, type PropertyNode } from "@anotes/parser";
-import { loc } from "./loc.js";
+import { loc } from "./nodes.js";
 
 export class NoteList implements Iterable<Note> {
   readonly #types: NoteTypeMap;
@@ -31,7 +31,6 @@ export class Note implements Iterable<NoteField> {
   readonly #type: NoteType;
   #deck: string = "";
   #tags: string = "";
-  #template: string = "";
   readonly #id = new NoteField({ name: "ID", required: false });
   readonly #fields = new Map<string, NoteField>();
   #node: NoteNode | null = null;
@@ -61,14 +60,6 @@ export class Note implements Iterable<NoteField> {
 
   set tags(value: string | null) {
     this.#tags = value ?? "";
-  }
-
-  get template(): string {
-    return this.#template;
-  }
-
-  set template(value: string | null) {
-    this.#template = value ?? "";
   }
 
   get id(): string {

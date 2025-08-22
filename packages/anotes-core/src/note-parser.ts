@@ -35,7 +35,6 @@ type ParseState = {
   type: NoteType;
   deck: string;
   tags: string;
-  template: string;
 };
 
 export class NoteParser {
@@ -195,7 +194,6 @@ export class NoteParser {
       type: NoteTypeMap.basic,
       deck: "",
       tags: "",
-      template: "",
     },
   ) {
     for (const noteNode of nodes) {
@@ -231,17 +229,12 @@ export class NoteParser {
           state.tags = value.text;
           break;
         }
-        case "template": {
-          state.template = value.text;
-          break;
-        }
       }
     }
 
     const note = new Note(state.type);
     note.deck = state.deck;
     note.tags = state.tags;
-    note.template = state.template;
     note.node = noteNode;
 
     // Set note fields.

@@ -1,5 +1,5 @@
 import { type NoteNode } from "@anotes/parser";
-import { loc } from "./loc.js";
+import { loc } from "./nodes.js";
 import { Note } from "./note.js";
 
 export type IdGenerator = (node: NoteNode) => string;
