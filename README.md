@@ -4,7 +4,7 @@ A collection of tools designed for simple and collaborative [Anki](https://apps.
 
 ## Text File Format
 
-The notes are defined in a simple human readable text format, like in the follwing examples.
+The notes are defined in a simple human-readable text format, like in the following examples.
 
 File `geography.note`:
 

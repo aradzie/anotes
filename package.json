@@ -1,7 +1,8 @@
 {
+  "private": true,
   "name": "anotes",
-  "version": "1.0.0",
-  "description": "A collection of math notes for Anki.",
+  "version": "0.0.0",
+  "description": "A collection of tools for creating Anki notes from simple text files.",
   "keywords": [
     "anki"
   ],
