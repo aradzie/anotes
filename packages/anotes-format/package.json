@@ -1,11 +1,11 @@
 {
-  "name": "@anotes/core",
+  "name": "@anotes/format",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
   "dependencies": {
-    "@anotes/format": "*",
-    "@anotes/parser": "*"
+    "katex": "^0.16.22",
+    "marked": "^16.2.0"
   },
   "scripts": {
     "compile": "rm -fr dist; tsc",

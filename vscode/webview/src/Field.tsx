@@ -1,4 +1,5 @@
-import { formatMath, type NoteField, renderHtml } from "@anotes/core";
+import { type NoteField } from "@anotes/core";
+import { formatField, renderHtml } from "@anotes/format";
 import { clsx } from "clsx";
 import { memo, useEffect, useRef } from "react";
 import * as cn from "./Field.module.css";
@@ -6,7 +7,7 @@ import { revealRange } from "./navigate.js";
 import { isVisible, type Selection } from "./selection.js";
 
 const FieldValue = memo(function FieldValue({ value }: { value: string }) {
-  const html = formatMath(value, renderHtml({ output: "html", throwOnError: false }));
+  const html = formatField(value, renderHtml({ output: "html", throwOnError: false }));
   return <div className={cn.value} dangerouslySetInnerHTML={{ __html: html }} />;
 });
 

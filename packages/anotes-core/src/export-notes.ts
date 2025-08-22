@@ -1,4 +1,4 @@
-import { formatMath } from "./math/index.js";
+import { formatField } from "@anotes/format";
 import { type Note } from "./note.js";
 
 export function exportNotes(notes: Iterable<Note>): string {
@@ -11,7 +11,7 @@ export function exportNotes(notes: Iterable<Note>): string {
   lines.push(`#tags column:4`);
   for (const note of notes) {
     lines.push(
-      [note.id, note.type.name, note.deck, note.tags, ...[...note].map(({ value }) => formatMath(value))]
+      [note.id, note.type.name, note.deck, note.tags, ...[...note].map(({ value }) => formatField(value))]
         .map(escape)
         .join(";"),
     );

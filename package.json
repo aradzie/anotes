@@ -20,6 +20,7 @@
     "scripts",
     "packages/anki-export",
     "packages/anotes-parser",
+    "packages/anotes-format",
     "packages/anotes-core",
     "packages/anotes-cli",
     "vscode/protocol",
