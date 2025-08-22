@@ -1,4 +1,5 @@
-import { type FieldNode, type NoteNode } from "@anotes/parser";
+import { type FieldNode, type NoteNode, type PropertyNode } from "@anotes/parser";
+import { loc } from "./loc.js";
 
 export class NoteList implements Iterable<Note> {
   readonly #types: NoteTypeMap;
@@ -104,18 +105,18 @@ export class Note implements Iterable<NoteField> {
       return this.#id;
     }
     const field = this.#fields.get(key);
-    if (field == null) {
-      throw new Error(`Unknown field: "${fieldName}"`);
+    if (field != null) {
+      return field;
     }
-    return field;
+    throw new Error(`Unknown field: "${fieldName}"`);
   }
 
   get first(): NoteField {
     const [first] = this.#fields.values();
-    if (first == null) {
-      throw new Error("No fields");
+    if (first != null) {
+      return first;
     }
-    return first;
+    throw new Error("No fields");
   }
 
   get node(): NoteNode | null {
@@ -124,6 +125,28 @@ export class Note implements Iterable<NoteField> {
 
   set node(value: NoteNode | null) {
     this.#node = value;
+  }
+
+  toNode(): NoteNode {
+    const properties: PropertyNode[] = [];
+    properties.push({ name: { text: "type", loc }, value: { text: this.#type.name, loc }, loc });
+    properties.push({ name: { text: "deck", loc }, value: { text: this.#deck, loc }, loc });
+    properties.push({ name: { text: "tags", loc }, value: { text: this.#tags, loc }, loc });
+    const fields: FieldNode[] = [];
+    if (this.#id.value) {
+      fields.push(this.#id.toNode());
+    }
+    for (const field of this.#fields.values()) {
+      if (field.value) {
+        fields.push(field.toNode());
+      }
+    }
+    return {
+      properties,
+      fields,
+      end: { text: "~~~", loc },
+      loc,
+    };
   }
 
   static isIdField(fieldName: string): boolean {
@@ -162,6 +185,14 @@ export class NoteField {
 
   set node(value: FieldNode | null) {
     this.#node = value;
+  }
+
+  toNode(): FieldNode {
+    return {
+      name: { text: this.#type.name.toLowerCase(), loc },
+      value: { text: this.#value, loc },
+      loc,
+    };
   }
 }
 

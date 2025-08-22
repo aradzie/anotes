@@ -1,15 +1,10 @@
-import { type LocationRange, type NoteNode } from "@anotes/parser";
+import { type NoteNode } from "@anotes/parser";
+import { loc } from "./loc.js";
 import { Note } from "./note.js";
 
 export type IdGenerator = (node: NoteNode) => string;
 
 export const guidGenerator: IdGenerator = () => crypto.randomUUID();
-
-const loc = {
-  source: "<generated>",
-  start: { offset: 0, line: 0, column: 0 },
-  end: { offset: 0, line: 0, column: 0 },
-} as const satisfies LocationRange;
 
 export function insertNoteId(nodes: NoteNode[], gen: IdGenerator = guidGenerator): boolean {
   let changed = false;
