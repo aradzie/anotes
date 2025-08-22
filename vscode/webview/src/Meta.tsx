@@ -5,17 +5,21 @@ export function Meta({ note }: { note: Note }) {
   return (
     <div className={cn.root}>
       <p className={cn.field}>
-        <strong className={cn.name}>id</strong>: <span className={cn.value}>{note.id}</span>
+        <span className={cn.name}>type</span>: {value(note.type.name)}
       </p>
       <p className={cn.field}>
-        <strong className={cn.name}>type</strong>: <span className={cn.value}>{note.type.name}</span>
+        <span className={cn.name}>deck</span>: {value(note.deck)}
       </p>
       <p className={cn.field}>
-        <strong className={cn.name}>deck</strong>: <span className={cn.value}>{note.deck}</span>
+        <span className={cn.name}>tags</span>: {value(note.tags)}
       </p>
       <p className={cn.field}>
-        <strong className={cn.name}>tags</strong>: <span className={cn.value}>{note.tags}</span>
+        <span className={cn.name}>id</span>: {value(note.id)}
       </p>
     </div>
   );
+}
+
+function value(value: string) {
+  return value ? <span className={cn.value}>{value}</span> : <span className={cn.empty}>empty</span>;
 }

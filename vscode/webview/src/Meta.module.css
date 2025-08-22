@@ -19,9 +19,17 @@
 }
 
 .name {
-  /* Empty. */
+  font-weight: bold;
+  font-style: normal;
 }
 
 .value {
-  /* Empty. */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.empty {
+  color: gray;
+  font-weight: normal;
+  font-style: italic;
 }
