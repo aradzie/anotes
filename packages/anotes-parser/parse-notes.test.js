@@ -22,9 +22,9 @@ test("parse whitespace", () => {
     { fields: [{ name: { text: "a" }, value: { text: "1" } }] },
     { fields: [{ name: { text: "a" }, value: { text: "2" } }] },
   ]);
-  like(parseNoteList("\n\t\n!a:1\n \t \n~~~ \t \n!a:2\n~~~\t\n\t\n\t"), [
+  like(parseNoteList("\n\t\n!a:1\n~~~ \t \n!a: \t 1 \t \n \t \n \t 2 \t \n \t \n\n~~~\t\n\t\n\t"), [
     { fields: [{ name: { text: "a" }, value: { text: "1" } }] },
-    { fields: [{ name: { text: "a" }, value: { text: "2" } }] },
+    { fields: [{ name: { text: "a" }, value: { text: "1\n\n \t 2" } }] },
   ]);
 });
 

@@ -68,15 +68,15 @@ styling
               text: "Card 1",
             },
             front: {
-              text: "[front]\n",
+              text: "[front]",
             },
             back: {
-              text: "[back]\n",
+              text: "[back]",
             },
           },
         ],
         styling: {
-          text: "[styling]\n",
+          text: "[styling]",
         },
       },
     ],

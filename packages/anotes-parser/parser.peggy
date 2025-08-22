@@ -40,9 +40,9 @@ FieldName =
 
 FieldValue =
   text:(
-    ( Text _ )
-    ( !( Newline ( FieldName / NoteEnd / !. ) ) Newline Text _ )*
-    { return text().trim(); }
+    head:( @Text _ )
+    lines:( !( Newline ( FieldName / NoteEnd / !. ) ) Newline @Text _ )*
+    { return [head, ...lines].join("\n").trim(); }
   )
   { return { text, loc: location() }; }
 
@@ -81,21 +81,23 @@ CardDef =
 
 CardFront =
   "front" _ Newline
-  text:$( !( "~~~" / !. ) Text _ Newline )*
-  "~~~"
+  text:MultilineText
   { return { text, loc: location() } }
 
 CardBack =
   "back" _ Newline
-  text:$( !( "~~~" / !. ) Text _ Newline )*
-  "~~~"
+  text:MultilineText
   { return { text, loc: location() } }
 
 Styling =
   "styling" _ Newline
-  text:$( !( "~~~" / !. ) Text _ Newline )*
-  "~~~"
+  text:MultilineText
   { return { text, loc: location() } }
+
+MultilineText =
+  lines:( !( "~~~" ) @Text _ Newline )*
+  "~~~"
+  { return lines.join("\n").trim(); }
 
 Name =
   text:NameParts
