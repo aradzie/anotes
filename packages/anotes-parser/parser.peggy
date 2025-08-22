@@ -27,7 +27,7 @@ PropertyName =
   { return { text, loc: location() }; }
 
 PropertyValue =
-  text:Text
+  text:( raw:Text { return raw.replaceAll(/\s+/g, " "); } )
   { return { text, loc: location() }; }
 
 Field "field" =
@@ -70,7 +70,7 @@ TypeId =
   { return { id, value: Number.parseInt(id.text), loc: location() }; }
 
 FieldDef =
-  "field" Whitespace name:Name opt:"?"?
+  "field" Whitespace name:Name _ opt:"?"?
   { return {  name, required: !opt, loc: location() } }
 
 CardDef =

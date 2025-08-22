@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import { like } from "rich-assert";
-import { NoteParser } from "./note-parser.js";
 import { Note, NoteList, NoteTypeMap } from "./note.js";
+import { NoteParser } from "./note-parser.js";
 
 test("parse types", () => {
   const parser = new NoteParser();

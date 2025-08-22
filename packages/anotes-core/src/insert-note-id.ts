@@ -11,13 +11,18 @@ const loc = {
   end: { offset: 0, line: 0, column: 0 },
 } as const satisfies LocationRange;
 
-export function insertNoteId(nodes: NoteNode[], gen: IdGenerator = guidGenerator) {
+export function insertNoteId(nodes: NoteNode[], gen: IdGenerator = guidGenerator): boolean {
+  let changed = false;
   for (const node of nodes) {
     let field = node.fields.find(({ name }) => Note.isIdField(name.text));
     if (field == null) {
       node.fields.unshift((field = { name: { text: "id", loc }, value: { text: "", loc }, loc }));
     }
-    field.value.text ||= gen(node);
+    const { value } = field;
+    if (!value.text) {
+      value.text = gen(node);
+      changed = true;
+    }
   }
-  return nodes;
+  return changed;
 }

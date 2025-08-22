@@ -3,6 +3,7 @@ import { ParseError } from "@anotes/core";
 import { Command } from "commander";
 import { exportCmd } from "./cmd-export.js";
 import { insertIdCmd } from "./cmd-insert-id.js";
+import { reformatCmd } from "./cmd-reformat.js";
 import { pathTo } from "./io.js";
 
 const program = new Command();
@@ -28,6 +29,12 @@ program
   .description("insert unique note id to each Anki note, but only if missing")
   .option("--dir <dir>", "name of the directory with note source files", parsePath, parsePath("."))
   .action(insertIdCmd);
+
+program
+  .command("reformat")
+  .description("reformat Anki notes text files to make them more readable")
+  .option("--dir <dir>", "name of the directory with note source files", parsePath, parsePath("."))
+  .action(reformatCmd);
 
 try {
   program.parse();

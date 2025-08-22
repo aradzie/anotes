@@ -3,6 +3,9 @@
   "name": "@anotes/examples",
   "version": "0.0.0",
   "scripts": {
-    "build": "anotes insert-id && anotes export"
+    "insert-id": "anotes insert-id",
+    "reformat": "anotes reformat",
+    "export": "anotes export",
+    "build": "npm run insert-id && npm run reformat && npm run export"
   }
 }
