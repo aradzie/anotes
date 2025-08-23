@@ -59,14 +59,19 @@ TypeDefList =
 TypeDef =
   "type" Whitespace name:Name _ Newline
   id:( ( _ Newline )* @TypeId _ Newline )
+  cloze:( ( _ Newline )* @Cloze _ Newline )?
   fields:( ( _ Newline )* @FieldDef _ Newline )*
   cards:( ( _ Newline )* @CardDef )*
   styling:( ( _ Newline )* @Styling _ Newline )?
-  { return { name, id, fields, cards, styling, loc: location() } }
+  { return { name, id, cloze, fields, cards, styling, loc: location() } }
 
 TypeId =
   "id" Whitespace id:( text:$[0-9]+ { return { text, loc: location() }; } )
   { return { id, value: Number.parseInt(id.text), loc: location() }; }
+
+Cloze =
+  text:"cloze"
+  { return { text, loc: location() }; }
 
 FieldDef =
   "field" Whitespace name:Name _ opt:"?"?

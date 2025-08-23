@@ -190,6 +190,7 @@ export class NoteField {
 export type NoteType = {
   readonly name: string;
   readonly id: number;
+  readonly cloze: boolean;
   readonly fields: readonly NoteFieldType[];
   readonly cards: readonly NoteCardType[];
   readonly styling: string;
@@ -210,6 +211,7 @@ export class NoteTypeMap implements Iterable<NoteType> {
   static readonly basic = {
     name: "Basic",
     id: 1607392319,
+    cloze: false,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
@@ -227,6 +229,7 @@ export class NoteTypeMap implements Iterable<NoteType> {
   static readonly basicAndReversedCard = {
     name: "Basic (and reversed card)",
     id: 1607392320,
+    cloze: false,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
@@ -249,6 +252,7 @@ export class NoteTypeMap implements Iterable<NoteType> {
   static readonly basicOptionalReversedCard = {
     name: "Basic (optional reversed card)",
     id: 1607392321,
+    cloze: false,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
@@ -272,6 +276,7 @@ export class NoteTypeMap implements Iterable<NoteType> {
   static readonly basicTypeInAnswer = {
     name: "Basic (type in the answer)",
     id: 1607392322,
+    cloze: false,
     fields: [
       { name: "Front", required: true }, //
       { name: "Back", required: true },
@@ -289,6 +294,7 @@ export class NoteTypeMap implements Iterable<NoteType> {
   static readonly cloze = {
     name: "Cloze",
     id: 1607392323,
+    cloze: true,
     fields: [
       { name: "Text", required: true }, //
       { name: "Back Extra", required: false },

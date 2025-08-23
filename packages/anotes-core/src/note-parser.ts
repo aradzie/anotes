@@ -163,6 +163,7 @@ export class NoteParser {
     this.#notes.types.add({
       name: node.name.text,
       id: node.id.value,
+      cloze: node.cloze != null,
       fields,
       cards,
       styling: node.styling?.text ?? "",

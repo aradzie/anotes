@@ -3,11 +3,15 @@ import { Output } from "./output.js";
 
 export function printTypeNodes(nodes: Iterable<TypeDefNode>) {
   const out = new Output();
-  for (const { name, id, fields, cards, styling } of nodes) {
+  for (const { name, id, cloze, fields, cards, styling } of nodes) {
     out.separate();
     out.push(`type ${name.text}`);
     out.separate();
     out.push(`id ${id.value}`);
+    if (cloze != null) {
+      out.separate();
+      out.push("cloze");
+    }
     out.separate();
     for (const { name, required } of fields) {
       out.push(`field ${name.text}${required ? "" : "?"}`);

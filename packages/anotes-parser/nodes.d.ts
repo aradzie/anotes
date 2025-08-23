@@ -23,6 +23,7 @@ export type FieldNode = {
 export type TypeDefNode = {
   name: Token;
   id: IdNode;
+  cloze: Token;
   fields: FieldDefNode[];
   cards: CardDefNode[];
   styling: CardStylingNode | null;
