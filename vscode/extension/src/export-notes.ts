@@ -37,14 +37,15 @@ export class ExportCommand extends Command {
     if (errors.length > 0) {
       this.#errors.showAllErrors(errors);
       vscode.window.showErrorMessage(`Error parsing notes in "${ws.uri.fsPath}".`);
-      return;
-    }
-    if (notes.length > 0) {
-      const out = vscode.Uri.joinPath(ws.uri, "notes.txt");
-      await vscode.workspace.fs.writeFile(out, Buffer.from(exportNotes(notes)));
-      vscode.window.showInformationMessage(`Exported ${notes.length} note(s) to "${out.fsPath}".`);
     } else {
-      vscode.window.showWarningMessage(`No notes found in "${ws.uri.fsPath}".`);
+      this.#errors.clearAllErrors();
+      if (notes.length > 0) {
+        const out = vscode.Uri.joinPath(ws.uri, "notes.txt");
+        await vscode.workspace.fs.writeFile(out, Buffer.from(exportNotes(notes)));
+        vscode.window.showInformationMessage(`Exported ${notes.length} note(s) to "${out.fsPath}".`);
+      } else {
+        vscode.window.showWarningMessage(`No notes found in "${ws.uri.fsPath}".`);
+      }
     }
   }
 }

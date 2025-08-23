@@ -48,6 +48,10 @@ export class ErrorChecker {
     this.#diagnostics.set(document.uri, parser.errors.map(asDiagnostic));
   }
 
+  clearAllErrors() {
+    this.#diagnostics.clear();
+  }
+
   showAllErrors(errors: Iterable<NoteError>) {
     const map = new Map<string, vscode.Diagnostic[]>();
     for (const error of errors) {
