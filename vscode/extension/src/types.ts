@@ -1,16 +1,18 @@
 import { type NoteError, NoteList, NoteParser, NoteTypeMap } from "@anotes/core";
-import vscode, { type TextDocument } from "vscode";
+import vscode from "vscode";
 import { ankiTypes, excludeSearchPath, typesSearchPath } from "./constants.js";
 import { reportError } from "./util.js";
 
 export class TypeManager {
   readonly #context: vscode.ExtensionContext;
+  readonly #log: vscode.LogOutputChannel;
   readonly #onDidChange = new vscode.EventEmitter<null>();
   readonly #documentState = new Map<string, DocumentState>();
   #combinedState: CombinedState | null = null;
 
-  constructor(context: vscode.ExtensionContext) {
+  constructor(context: vscode.ExtensionContext, log: vscode.LogOutputChannel) {
     this.#context = context;
+    this.#log = log;
     this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(this.#onDidChange);
     this.#context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(this.#handleDidOpenTextDocument));
@@ -29,6 +31,7 @@ export class TypeManager {
       this.#documentState.clear();
       this.#combinedState = null;
       for (const uri of await vscode.workspace.findFiles(typesSearchPath, excludeSearchPath)) {
+        this.#log.info("Found types file", uri.fsPath);
         this.#addDocument(await vscode.workspace.openTextDocument(uri));
       }
     })().catch(reportError);
@@ -45,31 +48,33 @@ export class TypeManager {
   #handleDidCloseTextDocument = (document: vscode.TextDocument) => {};
 
   #handleDidChange = (uri: vscode.Uri) => {
+    this.#log.info("File was changed", uri.fsPath);
     vscode.workspace.openTextDocument(uri).then(this.#addDocument, reportError);
   };
 
   #handleDidCreate = (uri: vscode.Uri) => {
+    this.#log.info("File was created", uri.fsPath);
     vscode.workspace.openTextDocument(uri).then(this.#addDocument, reportError);
   };
 
   #handleDidDelete = (uri: vscode.Uri) => {
+    this.#log.info("File was deleted", uri.fsPath);
     this.#documentState.delete(uri.fsPath);
-    this.#combinedState = null;
-    this.#onDidChange.fire(null);
+    this.#notify();
   };
 
-  #addDocument = (document: TextDocument) => {
+  #addDocument = (document: vscode.TextDocument) => {
     if (document.languageId === ankiTypes) {
       const data = this.#documentState.get(pathOf(document));
       if (data == null || data.version !== document.version) {
         this.#documentState.set(pathOf(document), this.#parseDocument(document));
-        this.#onDidChange.fire(null);
+        this.#notify();
       }
-      this.#combinedState = null;
     }
   };
 
   #parseDocument(document: vscode.TextDocument): DocumentState {
+    this.#log.info("Parse types file", document.uri.fsPath);
     const { version } = document;
     const types = new NoteTypeMap([]);
     const notes = new NoteList(types);
@@ -77,6 +82,11 @@ export class TypeManager {
     parser.parseTypes(pathOf(document), document.getText());
     const { errors } = parser;
     return { document, version, types, errors };
+  }
+
+  #notify() {
+    this.#combinedState = null;
+    this.#onDidChange.fire(null);
   }
 
   get onDidChange(): vscode.Event<null> {
@@ -87,7 +97,7 @@ export class TypeManager {
     let state = this.#combinedState;
     if (state == null) {
       const types = new NoteTypeMap();
-      const errors = [] as NoteError[];
+      const errors = [];
       for (const state of this.#documentState.values()) {
         for (const type of state.types) {
           types.add(type);

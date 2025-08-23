@@ -6,10 +6,12 @@ import { type ErrorChecker } from "./errors.js";
 
 export class ExportCommand extends Command {
   readonly #errors: ErrorChecker;
+  readonly #log: vscode.LogOutputChannel;
 
-  constructor(errors: ErrorChecker) {
+  constructor(errors: ErrorChecker, log: vscode.LogOutputChannel) {
     super(cmdExportNotes);
     this.#errors = errors;
+    this.#log = log;
   }
 
   override async execute() {
@@ -37,14 +39,17 @@ export class ExportCommand extends Command {
     if (errors.length > 0) {
       this.#errors.showAllErrors(errors);
       vscode.window.showErrorMessage(`Error parsing notes in "${ws.uri.fsPath}".`);
+      this.#log.error(`Error parsing notes in ${ws.uri.fsPath}`);
     } else {
       this.#errors.clearAllErrors();
       if (notes.length > 0) {
         const out = vscode.Uri.joinPath(ws.uri, "notes.txt");
         await vscode.workspace.fs.writeFile(out, Buffer.from(exportNotes(notes)));
         vscode.window.showInformationMessage(`Exported ${notes.length} note(s) to "${out.fsPath}".`);
+        this.#log.info(`Exported ${notes.length} note(s) to ${out.fsPath}`);
       } else {
         vscode.window.showWarningMessage(`No notes found in "${ws.uri.fsPath}".`);
+        this.#log.warn(`No notes found in ${ws.uri.fsPath}`);
       }
     }
   }
