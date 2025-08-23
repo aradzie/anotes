@@ -1,5 +1,5 @@
+import { NoteParser, printNoteNodes, printTypeNodes, reformatNoteNodes, reformatTypeNodes } from "@anotes/core";
 import { readFileSync, writeFileSync } from "node:fs";
-import { NoteParser, printNoteNodes, printTypeNodes } from "@anotes/core";
 import { findNoteFiles } from "./io.js";
 
 export function reformatCmd({ dir }: { dir: string }) {
@@ -13,7 +13,7 @@ export function reformatCmd({ dir }: { dir: string }) {
     if (parser.errors.length > 0) {
       console.error(`Parse error.`);
     } else {
-      writeFileSync(path, printTypeNodes(nodes));
+      writeFileSync(path, printTypeNodes(reformatTypeNodes(nodes)));
     }
   }
   for (const path of notePaths) {
@@ -24,7 +24,7 @@ export function reformatCmd({ dir }: { dir: string }) {
     if (parser.errors.length > 0) {
       console.error(`Parse error.`);
     } else {
-      writeFileSync(path, printNoteNodes(nodes));
+      writeFileSync(path, printNoteNodes(reformatNoteNodes(nodes)));
     }
   }
 }
