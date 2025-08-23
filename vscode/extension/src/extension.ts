@@ -9,7 +9,6 @@ import { TypeManager } from "./types.js";
 
 export function activate(context: vscode.ExtensionContext) {
   const types = new TypeManager(context);
-  context.subscriptions.push(types.onDidChange(() => {}));
   new ErrorChecker(context, types);
   new Completer(context, new Completions(types));
   new NotesFormatter(context);

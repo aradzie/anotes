@@ -2,8 +2,6 @@ import { type NoteError, NoteList, NoteParser } from "@anotes/core";
 import vscode from "vscode";
 import { type TypeManager } from "./types.js";
 
-const checkOnChange = false;
-
 export class ErrorChecker {
   readonly #context: vscode.ExtensionContext;
   readonly #types: TypeManager;
@@ -17,13 +15,14 @@ export class ErrorChecker {
     this.#context.subscriptions.push(this.#diagnostics);
     this.#context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(this.#checkErrors));
     this.#context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(this.#checkErrors));
-    if (checkOnChange) {
-      this.#context.subscriptions.push(
-        vscode.workspace.onDidChangeTextDocument(({ document }) => {
+    const checkOnChange = false;
+    this.#context.subscriptions.push(
+      vscode.workspace.onDidChangeTextDocument(({ document }) => {
+        if (checkOnChange) {
           this.#checkErrors(document);
-        }),
-      );
-    }
+        }
+      }),
+    );
   }
 
   #checkErrors = (document: vscode.TextDocument) => {
