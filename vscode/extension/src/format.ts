@@ -1,5 +1,6 @@
 import { NoteParser, printNoteNodes, printTypeNodes, reformatNoteNodes, reformatTypeNodes } from "@anotes/core";
 import vscode from "vscode";
+import { replaceDocument } from "./util.js";
 
 export class NotesFormatter implements vscode.DocumentFormattingEditProvider {
   constructor(context: vscode.ExtensionContext) {
@@ -8,17 +9,12 @@ export class NotesFormatter implements vscode.DocumentFormattingEditProvider {
   }
 
   provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
-    const uri = String(document.uri);
-    const text = document.getText();
     const parser = new NoteParser();
-    const nodes = parser.parseNoteNodes(uri, text);
+    const nodes = parser.parseNoteNodes(document.uri.fsPath, document.getText());
     if (parser.errors.length > 0) {
       return [];
     } else {
-      const start = document.positionAt(0);
-      const end = document.positionAt(text.length);
-      const range = new vscode.Range(start, end);
-      return [vscode.TextEdit.replace(range, printNoteNodes(reformatNoteNodes(nodes)))];
+      return replaceDocument(document, printNoteNodes(reformatNoteNodes(nodes)));
     }
   }
 
@@ -32,17 +28,12 @@ export class TypesFormatter implements vscode.DocumentFormattingEditProvider {
   }
 
   provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
-    const uri = String(document.uri);
-    const text = document.getText();
     const parser = new NoteParser();
-    const nodes = parser.parseTypeNodes(uri, text);
+    const nodes = parser.parseTypeNodes(document.uri.fsPath, document.getText());
     if (parser.errors.length > 0) {
       return [];
     } else {
-      const start = document.positionAt(0);
-      const end = document.positionAt(text.length);
-      const range = new vscode.Range(start, end);
-      return [vscode.TextEdit.replace(range, printTypeNodes(reformatTypeNodes(nodes)))];
+      return replaceDocument(document, printTypeNodes(reformatTypeNodes(nodes)));
     }
   }
 

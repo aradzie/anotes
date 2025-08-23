@@ -1,32 +1,72 @@
 import { exportNotes, NoteParser } from "@anotes/core";
 import vscode from "vscode";
+import { Command } from "./command.js";
+import { type ErrorChecker } from "./errors.js";
 
-export async function exportNotesCommand() {
-  const [dir] = vscode.workspace.workspaceFolders ?? [];
-  if (dir) {
-    const parser = new NoteParser();
-    const files = await vscode.workspace.findFiles("**/*.note", "**/node_modules/**");
-    for (const file of files.sort(sortFiles)) {
-      const data = await vscode.workspace.fs.readFile(file);
-      const text = Buffer.from(data).toString("utf-8");
-      parser.parseNotes(file.fsPath, text);
-      if (parser.errors.length > 0) {
-        vscode.window.showErrorMessage(`Error parsing note file "${file.fsPath}".`);
-        return;
-      }
+export class ExportCommand extends Command {
+  readonly #errors: ErrorChecker;
+
+  constructor(errors: ErrorChecker) {
+    super("anki-notes.exportNotes");
+    this.#errors = errors;
+  }
+
+  override async execute() {
+    const [ws] = vscode.workspace.workspaceFolders ?? [];
+    if (ws) {
+      await this.#executeInWorkspace(ws);
     }
-    const { notes } = parser;
+  }
+
+  async #executeInWorkspace(ws: vscode.WorkspaceFolder) {
+    const parser = new NoteParser();
+    const { notePaths, typePaths } = await findNoteFiles();
+    for (const path of typePaths) {
+      const data = await vscode.workspace.fs.readFile(path);
+      const text = Buffer.from(data).toString("utf-8");
+      parser.parseTypes(path.fsPath, text);
+    }
+    for (const path of notePaths) {
+      const data = await vscode.workspace.fs.readFile(path);
+      const text = Buffer.from(data).toString("utf-8");
+      parser.parseNotes(path.fsPath, text);
+    }
+    parser.checkDuplicates();
+    const { notes, errors } = parser;
+    if (errors.length > 0) {
+      this.#errors.showAllErrors(errors);
+      vscode.window.showErrorMessage(`Error parsing notes in "${ws.uri.fsPath}".`);
+      return;
+    }
     if (notes.length > 0) {
-      const out = vscode.Uri.joinPath(dir.uri, "notes.txt");
+      const out = vscode.Uri.joinPath(ws.uri, "notes.txt");
       await vscode.workspace.fs.writeFile(out, Buffer.from(exportNotes(notes)));
       vscode.window.showInformationMessage(`Exported ${notes.length} note(s) to "${out.fsPath}".`);
     } else {
-      vscode.window.showWarningMessage(`No notes found in "${dir.uri.fsPath}".`);
+      vscode.window.showWarningMessage(`No notes found in "${ws.uri.fsPath}".`);
     }
   }
 }
 
-function sortFiles(a: vscode.Uri, b: vscode.Uri): number {
+async function findNoteFiles() {
+  const notePaths: vscode.Uri[] = [];
+  const typePaths: vscode.Uri[] = [];
+  for (const uri of await vscode.workspace.findFiles("**/*.{note,anki}", "**/node_modules/**")) {
+    switch (true) {
+      case uri.fsPath.endsWith(".note"):
+        notePaths.push(uri);
+        break;
+      case uri.fsPath.endsWith(".anki"):
+        typePaths.push(uri);
+        break;
+    }
+  }
+  notePaths.sort(sortPaths);
+  typePaths.sort(sortPaths);
+  return { notePaths, typePaths };
+}
+
+function sortPaths(a: vscode.Uri, b: vscode.Uri): number {
   if (a.fsPath > b.fsPath) {
     return +1;
   }

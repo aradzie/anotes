@@ -35,35 +35,40 @@ export class ErrorChecker {
   };
 
   #checkNotes(document: vscode.TextDocument) {
-    const uri = String(document.uri);
-    const text = document.getText();
     const parser = new NoteParser(new NoteList(this.#types.build().types));
-    parser.parseNotes(uri, text);
+    parser.parseNotes(document.uri.fsPath, document.getText());
     parser.checkDuplicates();
-    this.#showErrors(document, parser.errors);
+    this.#diagnostics.set(document.uri, parser.errors.map(asDiagnostic));
   }
 
   #checkTypes(document: vscode.TextDocument) {
-    const uri = String(document.uri);
-    const text = document.getText();
     const parser = new NoteParser();
-    parser.parseTypes(uri, text);
-    this.#showErrors(document, parser.errors);
+    parser.parseTypes(document.uri.fsPath, document.getText());
+    this.#diagnostics.set(document.uri, parser.errors.map(asDiagnostic));
   }
 
-  #showErrors(document: vscode.TextDocument, errors: NoteError[]) {
-    this.#diagnostics.set(
-      document.uri,
-      errors.map(
-        ({ message, location: { start, end } }) =>
-          new vscode.Diagnostic(
-            new vscode.Range(document.positionAt(start.offset), document.positionAt(end.offset)),
-            message,
-            vscode.DiagnosticSeverity.Error,
-          ),
-      ),
-    );
+  showAllErrors(errors: Iterable<NoteError>) {
+    const map = new Map<string, vscode.Diagnostic[]>();
+    for (const error of errors) {
+      const path = String(error.location.source);
+      let diagnostics = map.get(path);
+      if (diagnostics == null) {
+        map.set(path, (diagnostics = []));
+      }
+      diagnostics.push(asDiagnostic(error));
+    }
+    for (const [path, diagnostics] of map) {
+      this.#diagnostics.set(vscode.Uri.file(path), diagnostics);
+    }
   }
 
   dispose() {}
+}
+
+function asDiagnostic({ message, location: { start, end } }: NoteError) {
+  return new vscode.Diagnostic(
+    new vscode.Range(start.line - 1, start.column - 1, end.line - 1, end.column - 1),
+    message,
+    vscode.DiagnosticSeverity.Error,
+  );
 }

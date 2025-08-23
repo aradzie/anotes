@@ -116,6 +116,21 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
         }
       }),
     );
+    this.#context.subscriptions.push(
+      vscode.commands.registerCommand("anki-notes.showPreview", () =>
+        this.showPreview(/* sideBySide = */ false, /* locked= */ false),
+      ),
+    );
+    this.#context.subscriptions.push(
+      vscode.commands.registerCommand("anki-notes.showPreviewToTheSide", () =>
+        this.showPreview(/* sideBySide = */ true, /* locked= */ false),
+      ),
+    );
+    this.#context.subscriptions.push(
+      vscode.commands.registerCommand("anki-notes.showLockedPreviewToTheSide", () =>
+        this.showPreview(/* sideBySide = */ true, /* locked= */ true),
+      ),
+    );
   }
 
   showPreview(sideBySide: boolean, locked: boolean) {

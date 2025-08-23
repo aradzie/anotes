@@ -1,17 +1,25 @@
 import { insertNoteId, NoteParser, printNoteNodes } from "@anotes/core";
 import vscode from "vscode";
+import { Command } from "./command.js";
+import { replaceDocument } from "./util.js";
 
-export async function insertIdCommand() {
-  const editor = vscode.window.activeTextEditor;
-  if (editor != null && editor.document.languageId === "anki-notes") {
-    const { document } = editor;
-    const edit = new vscode.WorkspaceEdit();
-    for (const { range, newText } of editDocument(document)) {
-      edit.replace(document.uri, range, newText);
-    }
-    if (await vscode.workspace.applyEdit(edit)) {
-      if (document.isDirty) {
-        await document.save();
+export class InsertIdCommand extends Command {
+  constructor() {
+    super("anki-notes.insertId");
+  }
+
+  async execute() {
+    const editor = vscode.window.activeTextEditor;
+    if (editor != null && editor.document.languageId === "anki-notes") {
+      const { document } = editor;
+      const edit = new vscode.WorkspaceEdit();
+      for (const { range, newText } of editDocument(document)) {
+        edit.replace(document.uri, range, newText);
+      }
+      if (await vscode.workspace.applyEdit(edit)) {
+        if (document.isDirty) {
+          await document.save();
+        }
       }
     }
   }
@@ -27,16 +35,11 @@ export function insertIdOnSave(event: vscode.TextDocumentWillSaveEvent) {
 }
 
 function editDocument(document: vscode.TextDocument): vscode.TextEdit[] {
-  const uri = String(document.uri);
-  const text = document.getText();
   const parser = new NoteParser();
-  const nodes = parser.parseNoteNodes(uri, text);
+  const nodes = parser.parseNoteNodes(document.uri.fsPath, document.getText());
   if (parser.errors.length > 0 || !insertNoteId(nodes)) {
     return [];
   } else {
-    const start = document.positionAt(0);
-    const end = document.positionAt(text.length);
-    const range = new vscode.Range(start, end);
-    return [vscode.TextEdit.replace(range, printNoteNodes(nodes))];
+    return replaceDocument(document, printNoteNodes(nodes));
   }
 }

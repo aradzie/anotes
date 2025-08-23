@@ -8,6 +8,14 @@ export async function revealRange(uri: vscode.Uri, column: vscode.ViewColumn, st
   editor.revealRange(range);
 }
 
+export function replaceDocument(document: vscode.TextDocument, newText: string): vscode.TextEdit[] {
+  const { length } = document.getText();
+  const start = document.positionAt(0);
+  const end = document.positionAt(length);
+  const range = new vscode.Range(start, end);
+  return [vscode.TextEdit.replace(range, newText)];
+}
+
 export function reportError(err: unknown) {
   console.error(err);
 }
