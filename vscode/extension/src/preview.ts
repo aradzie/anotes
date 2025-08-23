@@ -86,7 +86,7 @@ class Preview {
   }
 }
 
-class PreviewManager implements vscode.WebviewPanelSerializer {
+export class PreviewManager implements vscode.WebviewPanelSerializer {
   readonly #context: vscode.ExtensionContext;
   readonly #previews = new Set<Preview>();
 
@@ -225,5 +225,3 @@ class PreviewManager implements vscode.WebviewPanelSerializer {
     this.#previews.clear();
   }
 }
-
-export { PreviewManager };
