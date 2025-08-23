@@ -305,12 +305,18 @@ export class NoteTypeMap implements Iterable<NoteType> {
 
   readonly #map = new Map<string, NoteType>();
 
-  constructor() {
-    this.add(NoteTypeMap.basic);
-    this.add(NoteTypeMap.basicAndReversedCard);
-    this.add(NoteTypeMap.basicOptionalReversedCard);
-    this.add(NoteTypeMap.basicTypeInAnswer);
-    this.add(NoteTypeMap.cloze);
+  constructor(
+    initial = [
+      NoteTypeMap.basic,
+      NoteTypeMap.basicAndReversedCard,
+      NoteTypeMap.basicOptionalReversedCard,
+      NoteTypeMap.basicTypeInAnswer,
+      NoteTypeMap.cloze,
+    ],
+  ) {
+    for (const type of initial) {
+      this.add(type);
+    }
   }
 
   [Symbol.iterator](): Iterator<NoteType> {

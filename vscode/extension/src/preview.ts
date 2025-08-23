@@ -5,6 +5,7 @@ import {
   type UpdateMessage,
 } from "@anotes/vscode-protocol";
 import vscode from "vscode";
+import { type TypeManager } from "./types.js";
 import { reportError, revealRange } from "./util.js";
 
 class Preview {
@@ -90,7 +91,7 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
   readonly #context: vscode.ExtensionContext;
   readonly #previews = new Set<Preview>();
 
-  constructor(context: vscode.ExtensionContext) {
+  constructor(context: vscode.ExtensionContext, types: TypeManager) {
     this.#context = context;
     this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(vscode.window.registerWebviewPanelSerializer(Preview.viewType, this));

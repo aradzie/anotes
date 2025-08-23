@@ -58,9 +58,12 @@ test("note fields", () => {
 });
 
 test("note type", () => {
-  const noteTypes = new NoteTypeMap();
+  like([...new NoteTypeMap([])], []);
+  like([...new NoteTypeMap([NoteTypeMap.basic])], [{ name: "Basic" }]);
+
+  const types = new NoteTypeMap();
   like(
-    [...noteTypes],
+    [...types],
     [
       { name: "Basic" },
       { name: "Basic (and reversed card)" },
@@ -69,9 +72,9 @@ test("note type", () => {
       { name: "Cloze" },
     ],
   );
-  isFalse(noteTypes.has("abc"));
-  equal(noteTypes.get("abc"), null);
-  isTrue(noteTypes.has("basic"));
-  isTrue(noteTypes.has("BASIC"));
-  equal(noteTypes.get("basic"), noteTypes.get("BASIC"));
+  isFalse(types.has("abc"));
+  equal(types.get("abc"), null);
+  isTrue(types.has("basic"));
+  isTrue(types.has("BASIC"));
+  equal(types.get("basic"), types.get("BASIC"));
 });

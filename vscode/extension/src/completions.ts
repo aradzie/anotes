@@ -1,11 +1,12 @@
-import { NoteTypeMap } from "@anotes/core";
+import { type NoteTypeMap } from "@anotes/core";
 import vscode from "vscode";
+import { type TypeManager } from "./types.js";
 
 export class Completer implements vscode.CompletionItemProvider {
   readonly #context: vscode.ExtensionContext;
   readonly #completions: Completions;
 
-  constructor(context: vscode.ExtensionContext, completions: Completions = new Completions()) {
+  constructor(context: vscode.ExtensionContext, completions: Completions) {
     this.#context = context;
     this.#completions = completions;
     this.#context.subscriptions.push(this);
@@ -65,10 +66,14 @@ export class Completer implements vscode.CompletionItemProvider {
 }
 
 export class Completions {
-  #types = new NoteTypeMap();
+  #types: TypeManager;
+
+  constructor(types: TypeManager) {
+    this.#types = types;
+  }
 
   types(): NoteTypeMap {
-    return this.#types;
+    return this.#types.build().types;
   }
 
   decks(): string[] {

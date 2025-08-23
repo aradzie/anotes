@@ -1,14 +1,17 @@
-import { NoteParser } from "@anotes/core";
+import { type NoteError, NoteList, NoteParser } from "@anotes/core";
 import vscode from "vscode";
+import { type TypeManager } from "./types.js";
 
 const checkOnChange = false;
 
 export class ErrorChecker {
   readonly #context: vscode.ExtensionContext;
+  readonly #types: TypeManager;
   readonly #diagnostics: vscode.DiagnosticCollection;
 
-  constructor(context: vscode.ExtensionContext) {
+  constructor(context: vscode.ExtensionContext, types: TypeManager) {
     this.#context = context;
+    this.#types = types;
     this.#diagnostics = vscode.languages.createDiagnosticCollection("anki-notes");
     this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(this.#diagnostics);
@@ -35,19 +38,10 @@ export class ErrorChecker {
   #checkNotes(document: vscode.TextDocument) {
     const uri = String(document.uri);
     const text = document.getText();
-    const parser = new NoteParser();
+    const parser = new NoteParser(new NoteList(this.#types.build().types));
     parser.parseNotes(uri, text);
     parser.checkDuplicates();
-    const diagnostics: vscode.Diagnostic[] = [];
-    for (const {
-      message,
-      location: { start, end },
-    } of parser.errors) {
-      const range = new vscode.Range(document.positionAt(start.offset), document.positionAt(end.offset));
-      const diagnostic = new vscode.Diagnostic(range, message, vscode.DiagnosticSeverity.Error);
-      diagnostics.push(diagnostic);
-    }
-    this.#diagnostics.set(document.uri, diagnostics);
+    this.#showErrors(document, parser.errors);
   }
 
   #checkTypes(document: vscode.TextDocument) {
@@ -55,16 +49,21 @@ export class ErrorChecker {
     const text = document.getText();
     const parser = new NoteParser();
     parser.parseTypes(uri, text);
-    const diagnostics: vscode.Diagnostic[] = [];
-    for (const {
-      message,
-      location: { start, end },
-    } of parser.errors) {
-      const range = new vscode.Range(document.positionAt(start.offset), document.positionAt(end.offset));
-      const diagnostic = new vscode.Diagnostic(range, message, vscode.DiagnosticSeverity.Error);
-      diagnostics.push(diagnostic);
-    }
-    this.#diagnostics.set(document.uri, diagnostics);
+    this.#showErrors(document, parser.errors);
+  }
+
+  #showErrors(document: vscode.TextDocument, errors: NoteError[]) {
+    this.#diagnostics.set(
+      document.uri,
+      errors.map(
+        ({ message, location: { start, end } }) =>
+          new vscode.Diagnostic(
+            new vscode.Range(document.positionAt(start.offset), document.positionAt(end.offset)),
+            message,
+            vscode.DiagnosticSeverity.Error,
+          ),
+      ),
+    );
   }
 
   dispose() {}
