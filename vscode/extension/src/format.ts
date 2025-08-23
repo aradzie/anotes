@@ -1,11 +1,12 @@
 import { NoteParser, printNoteNodes, printTypeNodes, reformatNoteNodes, reformatTypeNodes } from "@anotes/core";
 import vscode from "vscode";
+import { ankiNotes, ankiTypes } from "./constants.js";
 import { replaceDocument } from "./util.js";
 
 export class NotesFormatter implements vscode.DocumentFormattingEditProvider {
   constructor(context: vscode.ExtensionContext) {
     context.subscriptions.push(this);
-    context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider("anki-notes", this));
+    context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(ankiNotes, this));
   }
 
   provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
@@ -24,7 +25,7 @@ export class NotesFormatter implements vscode.DocumentFormattingEditProvider {
 export class TypesFormatter implements vscode.DocumentFormattingEditProvider {
   constructor(context: vscode.ExtensionContext) {
     context.subscriptions.push(this);
-    context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider("anki-types", this));
+    context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(ankiTypes, this));
   }
 
   provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {

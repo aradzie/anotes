@@ -1,5 +1,6 @@
 import { type NoteTypeMap } from "@anotes/core";
 import vscode from "vscode";
+import { ankiNotes } from "./constants.js";
 import { type TypeManager } from "./types.js";
 
 export class Completer implements vscode.CompletionItemProvider {
@@ -10,7 +11,7 @@ export class Completer implements vscode.CompletionItemProvider {
     this.#context = context;
     this.#completions = completions;
     this.#context.subscriptions.push(this);
-    this.#context.subscriptions.push(vscode.languages.registerCompletionItemProvider("anki-notes", this));
+    this.#context.subscriptions.push(vscode.languages.registerCompletionItemProvider(ankiNotes, this));
   }
 
   provideCompletionItems(

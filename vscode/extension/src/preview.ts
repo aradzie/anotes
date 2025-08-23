@@ -5,11 +5,18 @@ import {
   type UpdateMessage,
 } from "@anotes/vscode-protocol";
 import vscode from "vscode";
+import {
+  ankiNotes,
+  cmdShowLockedPreviewToTheSide,
+  cmdShowPreview,
+  cmdShowPreviewToTheSide,
+  viewType,
+} from "./constants.js";
 import { type TypeManager } from "./types.js";
 import { reportError, revealRange } from "./util.js";
 
 class Preview {
-  static viewType = "anki-notes.preview";
+  static viewType = viewType;
   static title = "Anki Notes";
 
   readonly #panel: vscode.WebviewPanel;
@@ -97,37 +104,37 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
     this.#context.subscriptions.push(vscode.window.registerWebviewPanelSerializer(Preview.viewType, this));
     this.#context.subscriptions.push(
       vscode.window.onDidChangeActiveTextEditor((editor) => {
-        if (editor != null && editor.document.languageId === "anki-notes") {
+        if (editor != null && editor.document.languageId === ankiNotes) {
           this.#updateDocumentPreviews(editor.document);
         }
       }),
     );
     this.#context.subscriptions.push(
       vscode.workspace.onDidChangeTextDocument(({ document }) => {
-        if (document.languageId === "anki-notes") {
+        if (document.languageId === ankiNotes) {
           this.#updateDocumentPreviews(document);
         }
       }),
     );
     this.#context.subscriptions.push(
       vscode.window.onDidChangeTextEditorSelection(({ textEditor: { document }, selections }) => {
-        if (document.languageId === "anki-notes" && selections.length > 0) {
+        if (document.languageId === ankiNotes && selections.length > 0) {
           this.#updateDocumentSelections(document, selections[0]!);
         }
       }),
     );
     this.#context.subscriptions.push(
-      vscode.commands.registerCommand("anki-notes.showPreview", () =>
+      vscode.commands.registerCommand(cmdShowPreview, () =>
         this.showPreview(/* sideBySide = */ false, /* locked= */ false),
       ),
     );
     this.#context.subscriptions.push(
-      vscode.commands.registerCommand("anki-notes.showPreviewToTheSide", () =>
+      vscode.commands.registerCommand(cmdShowPreviewToTheSide, () =>
         this.showPreview(/* sideBySide = */ true, /* locked= */ false),
       ),
     );
     this.#context.subscriptions.push(
-      vscode.commands.registerCommand("anki-notes.showLockedPreviewToTheSide", () =>
+      vscode.commands.registerCommand(cmdShowLockedPreviewToTheSide, () =>
         this.showPreview(/* sideBySide = */ true, /* locked= */ true),
       ),
     );
@@ -135,7 +142,7 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
 
   showPreview(sideBySide: boolean, locked: boolean) {
     const editor = vscode.window.activeTextEditor;
-    if (editor != null && editor.document.languageId === "anki-notes") {
+    if (editor != null && editor.document.languageId === ankiNotes) {
       const { document } = editor;
       const uri = String(document.uri);
       for (const preview of this.#previews) {

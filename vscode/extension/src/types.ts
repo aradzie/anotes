@@ -1,5 +1,6 @@
 import { type NoteError, NoteList, NoteParser, NoteTypeMap } from "@anotes/core";
 import vscode, { type TextDocument } from "vscode";
+import { ankiTypes, excludeSearchPath, typesSearchPath } from "./constants.js";
 import { reportError } from "./util.js";
 
 export class TypeManager {
@@ -15,7 +16,7 @@ export class TypeManager {
     this.#context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(this.#handleDidOpenTextDocument));
     this.#context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(this.#handleDidSaveTextDocument));
     this.#context.subscriptions.push(vscode.workspace.onDidCloseTextDocument(this.#handleDidCloseTextDocument));
-    const watcher = vscode.workspace.createFileSystemWatcher("**/*.anki");
+    const watcher = vscode.workspace.createFileSystemWatcher(typesSearchPath);
     this.#context.subscriptions.push(watcher);
     this.#context.subscriptions.push(watcher.onDidChange(this.#handleDidChange));
     this.#context.subscriptions.push(watcher.onDidCreate(this.#handleDidCreate));
@@ -27,7 +28,7 @@ export class TypeManager {
     (async () => {
       this.#documentState.clear();
       this.#combinedState = null;
-      for (const uri of await vscode.workspace.findFiles("**/*.anki", "**/node_modules/**")) {
+      for (const uri of await vscode.workspace.findFiles(typesSearchPath, excludeSearchPath)) {
         this.#addDocument(await vscode.workspace.openTextDocument(uri));
       }
     })().catch(reportError);
@@ -58,7 +59,7 @@ export class TypeManager {
   };
 
   #addDocument = (document: TextDocument) => {
-    if (document.languageId === "anki-types") {
+    if (document.languageId === ankiTypes) {
       const data = this.#documentState.get(pathOf(document));
       if (data == null || data.version !== document.version) {
         this.#documentState.set(pathOf(document), this.#parseDocument(document));

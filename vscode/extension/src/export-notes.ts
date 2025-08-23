@@ -1,13 +1,14 @@
 import { exportNotes, NoteParser } from "@anotes/core";
 import vscode from "vscode";
 import { Command } from "./command.js";
+import { allSearchPath, cmdExportNotes, excludeSearchPath, noteExt, typeExt } from "./constants.js";
 import { type ErrorChecker } from "./errors.js";
 
 export class ExportCommand extends Command {
   readonly #errors: ErrorChecker;
 
   constructor(errors: ErrorChecker) {
-    super("anki-notes.exportNotes");
+    super(cmdExportNotes);
     this.#errors = errors;
   }
 
@@ -51,12 +52,12 @@ export class ExportCommand extends Command {
 async function findNoteFiles() {
   const notePaths: vscode.Uri[] = [];
   const typePaths: vscode.Uri[] = [];
-  for (const uri of await vscode.workspace.findFiles("**/*.{note,anki}", "**/node_modules/**")) {
+  for (const uri of await vscode.workspace.findFiles(allSearchPath, excludeSearchPath)) {
     switch (true) {
-      case uri.fsPath.endsWith(".note"):
+      case uri.fsPath.endsWith(noteExt):
         notePaths.push(uri);
         break;
-      case uri.fsPath.endsWith(".anki"):
+      case uri.fsPath.endsWith(typeExt):
         typePaths.push(uri);
         break;
     }

@@ -1,16 +1,17 @@
 import { insertNoteId, NoteParser, printNoteNodes } from "@anotes/core";
 import vscode from "vscode";
 import { Command } from "./command.js";
+import { ankiNotes, cmdInsertId } from "./constants.js";
 import { replaceDocument } from "./util.js";
 
 export class InsertIdCommand extends Command {
   constructor() {
-    super("anki-notes.insertId");
+    super(cmdInsertId);
   }
 
   async execute() {
     const editor = vscode.window.activeTextEditor;
-    if (editor != null && editor.document.languageId === "anki-notes") {
+    if (editor != null && editor.document.languageId === ankiNotes) {
       const { document } = editor;
       const edit = new vscode.WorkspaceEdit();
       for (const { range, newText } of editDocument(document)) {
@@ -27,8 +28,8 @@ export class InsertIdCommand extends Command {
 
 export function insertIdOnSave(event: vscode.TextDocumentWillSaveEvent) {
   const { document } = event;
-  if (document.languageId === "anki-notes") {
-    if (vscode.workspace.getConfiguration("anki-notes").get("insertIdOnSave", true)) {
+  if (document.languageId === ankiNotes) {
+    if (vscode.workspace.getConfiguration(ankiNotes).get("insertIdOnSave", true)) {
       event.waitUntil(Promise.resolve(editDocument(document)));
     }
   }

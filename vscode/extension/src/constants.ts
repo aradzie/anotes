@@ -1,0 +1,14 @@
+export const ankiNotes = "anki-notes";
+export const ankiTypes = "anki-types";
+export const viewType = "anki-notes.preview";
+export const cmdInsertId = "anki-notes.insertId";
+export const cmdExportNotes = "anki-notes.exportNotes";
+export const cmdShowPreview = "anki-notes.showPreview";
+export const cmdShowPreviewToTheSide = "anki-notes.showPreviewToTheSide";
+export const cmdShowLockedPreviewToTheSide = "anki-notes.showLockedPreviewToTheSide";
+export const noteExt = ".note";
+export const typeExt = ".anki";
+export const notesSearchPath = "**/*.note";
+export const typesSearchPath = "**/*.anki";
+export const allSearchPath = "**/*.{note,anki}";
+export const excludeSearchPath = "**/node_modules/**";

@@ -1,5 +1,6 @@
 import { type NoteError, NoteList, NoteParser } from "@anotes/core";
 import vscode from "vscode";
+import { ankiNotes, ankiTypes } from "./constants.js";
 import { type TypeManager } from "./types.js";
 
 export class ErrorChecker {
@@ -10,7 +11,7 @@ export class ErrorChecker {
   constructor(context: vscode.ExtensionContext, types: TypeManager) {
     this.#context = context;
     this.#types = types;
-    this.#diagnostics = vscode.languages.createDiagnosticCollection("anki-notes");
+    this.#diagnostics = vscode.languages.createDiagnosticCollection(ankiNotes);
     this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(this.#diagnostics);
     this.#context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(this.#checkErrors));
@@ -26,10 +27,10 @@ export class ErrorChecker {
   }
 
   #checkErrors = (document: vscode.TextDocument) => {
-    if (document.languageId === "anki-notes") {
+    if (document.languageId === ankiNotes) {
       this.#checkNotes(document);
     }
-    if (document.languageId === "anki-types") {
+    if (document.languageId === ankiTypes) {
       this.#checkTypes(document);
     }
   };
