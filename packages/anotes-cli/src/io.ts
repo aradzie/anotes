@@ -9,20 +9,20 @@ export function pathTo(...file: string[]): string {
 
 export function findNoteFiles(dir: string) {
   const notePaths: string[] = [];
-  const typePaths: string[] = [];
+  const modelPaths: string[] = [];
   const cwd = pathTo(dir);
-  for (const item of globSync("**/*.{note,anki}", { cwd })) {
+  for (const item of globSync("**/*.{note,model}", { cwd })) {
     const path = join(cwd, item);
     switch (true) {
       case item.endsWith(".note"):
         notePaths.push(path);
         break;
-      case item.endsWith(".anki"):
-        typePaths.push(path);
+      case item.endsWith(".model"):
+        modelPaths.push(path);
         break;
     }
   }
   notePaths.sort();
-  typePaths.sort();
-  return { notePaths, typePaths };
+  modelPaths.sort();
+  return { notePaths, modelPaths };
 }

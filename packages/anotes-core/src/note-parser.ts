@@ -2,10 +2,10 @@ import {
   type LocationRange,
   type NoteNode,
   parseNoteList,
-  parseTypeDefList,
+  parseModelList,
   SyntaxError,
   type Token,
-  type TypeDefNode,
+  type ModelNode,
 } from "@anotes/parser";
 import { Note, type NoteCardType, type NoteFieldType, NoteList, type NoteType, NoteTypeMap } from "./note.js";
 
@@ -100,14 +100,14 @@ export class NoteParser {
     }
   }
 
-  parseTypes(path: string, text: string): this {
-    this.walkTypeNodes(this.parseTypeNodes(path, text));
+  parseModels(path: string, text: string): this {
+    this.walkModelNodes(this.parseModelNodes(path, text));
     return this;
   }
 
-  parseTypeNodes(path: string, text: string): TypeDefNode[] {
+  parseModelNodes(path: string, text: string): ModelNode[] {
     try {
-      return parseTypeDefList(text, path);
+      return parseModelList(text, path);
     } catch (err) {
       if (err instanceof SyntaxError) {
         const { message, location } = err;
@@ -119,15 +119,15 @@ export class NoteParser {
     }
   }
 
-  walkTypeNodes(nodes: TypeDefNode[]) {
+  walkModelNodes(nodes: ModelNode[]) {
     for (const node of nodes) {
-      this.walkTypeNode(node);
+      this.walkModelNode(node);
     }
   }
 
-  walkTypeNode(node: TypeDefNode) {
+  walkModelNode(node: ModelNode) {
     if (this.#notes.types.has(node.name.text)) {
-      this.#errors.push({ message: `Duplicate type: "${node.name.text}"`, location: node.name.loc });
+      this.#errors.push({ message: `Duplicate model: "${node.name.text}"`, location: node.name.loc });
       return;
     }
 

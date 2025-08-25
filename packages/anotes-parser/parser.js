@@ -4,8 +4,8 @@ function parseNoteList(input, grammarSource) {
   return parse(input, { grammarSource, startRule: "NoteList" });
 }
 
-function parseTypeDefList(input, grammarSource) {
-  return parse(input, { grammarSource, startRule: "TypeDefList" });
+function parseModelList(input, grammarSource) {
+  return parse(input, { grammarSource, startRule: "ModelList" });
 }
 
-export { parseNoteList, parseTypeDefList, SyntaxError };
+export { parseNoteList, parseModelList, SyntaxError };

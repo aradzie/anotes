@@ -1,7 +1,7 @@
 import { type NoteTypeMap } from "@anotes/core";
 import vscode from "vscode";
 import { ankiNotes } from "./constants.js";
-import { type TypeManager } from "./types.js";
+import { type ModelManager } from "./models.js";
 
 export class Completer implements vscode.CompletionItemProvider {
   readonly #context: vscode.ExtensionContext;
@@ -67,14 +67,14 @@ export class Completer implements vscode.CompletionItemProvider {
 }
 
 export class Completions {
-  #types: TypeManager;
+  #models: ModelManager;
 
-  constructor(types: TypeManager) {
-    this.#types = types;
+  constructor(models: ModelManager) {
+    this.#models = models;
   }
 
   types(): NoteTypeMap {
-    return this.#types.build().types;
+    return this.#models.build().types;
   }
 
   decks(): string[] {

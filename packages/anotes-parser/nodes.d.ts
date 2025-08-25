@@ -20,7 +20,7 @@ export type FieldNode = {
   value: Token;
 } & Node;
 
-export type TypeDefNode = {
+export type ModelNode = {
   name: Token;
   id: IdNode;
   cloze: Token;

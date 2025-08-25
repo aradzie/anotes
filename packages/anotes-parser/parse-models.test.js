@@ -1,21 +1,21 @@
 import { test } from "node:test";
 import { like } from "rich-assert";
-import { parseTypeDefList } from "./parser.js";
+import { parseModelList } from "./parser.js";
 
 test("parse whitespace", () => {
-  like(parseTypeDefList(""), []);
-  like(parseTypeDefList(" "), []);
-  like(parseTypeDefList("\t"), []);
-  like(parseTypeDefList(" \n"), []);
-  like(parseTypeDefList("\t\n"), []);
-  like(parseTypeDefList(" \n \n \n "), []);
-  like(parseTypeDefList("\t\n\t\n\t\n\t"), []);
+  like(parseModelList(""), []);
+  like(parseModelList(" "), []);
+  like(parseModelList("\t"), []);
+  like(parseModelList(" \n"), []);
+  like(parseModelList("\t\n"), []);
+  like(parseModelList(" \n \n \n "), []);
+  like(parseModelList("\t\n\t\n\t\n\t"), []);
 });
 
-test("parse types", () => {
+test("parse models", () => {
   like(
-    parseTypeDefList(`
-type Type 1
+    parseModelList(`
+model Model 1
 id 123
 field Front
 field Back
@@ -34,7 +34,7 @@ styling
     [
       {
         name: {
-          text: "Type 1",
+          text: "Model 1",
         },
         id: {
           id: {

@@ -3,13 +3,13 @@ import { like } from "rich-assert";
 import { Note, NoteList, NoteTypeMap } from "./note.js";
 import { NoteParser } from "./note-parser.js";
 
-test("parse types", () => {
+test("parse models", () => {
   const parser = new NoteParser();
 
-  parser.parseTypes(
-    "example.anki",
+  parser.parseModels(
+    "example.model",
     `
-type Equation
+model Equation
 id 123
 field Front
 field Back
@@ -47,26 +47,26 @@ styling
   );
 });
 
-test("type parsing error: syntax", () => {
+test("model parsing error: syntax", () => {
   const parser = new NoteParser();
 
-  parser.parseTypes("example.anki", ` omg`);
+  parser.parseModels("example.model", ` omg`);
 
   like([...parser.errors], [{ message: 'Expected end of input or newline but "o" found.' }]);
 });
 
-test("type parsing error: duplicate type", () => {
+test("model parsing error: duplicate model", () => {
   const parser = new NoteParser();
 
-  parser.parseTypes("example.anki", `type One\nid 1\ntype One\nid 2\n`);
+  parser.parseModels("example.model", `model One\nid 1\nmodel One\nid 2\n`);
 
-  like([...parser.errors], [{ message: 'Duplicate type: "One"' }]);
+  like([...parser.errors], [{ message: 'Duplicate model: "One"' }]);
 });
 
-test("type parsing error: duplicate field", () => {
+test("model parsing error: duplicate field", () => {
   const parser = new NoteParser();
 
-  parser.parseTypes("example.anki", `type One\nid 1\nfield Front\nfield Front\n`);
+  parser.parseModels("example.model", `model One\nid 1\nfield Front\nfield Front\n`);
 
   like([...parser.errors], [{ message: 'Duplicate field: "Front"' }]);
 });

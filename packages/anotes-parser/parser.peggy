@@ -4,8 +4,8 @@ Start = "" { return null; }
 // ----------------
 
 NoteList =
-  nodes:( ( _ Newline )* @Note )* ( _ Newline )* _
-  { return nodes; }
+  list:( ( _ Newline )* @Note )* ( _ Newline )* _
+  { return list; }
 
 Note =
   properties:( ( _ Newline )* @Property _ Newline )*
@@ -49,23 +49,23 @@ NoteEnd =
   text:"~~~"
   { return { text, loc: location() }; }
 
-// Type file parser
+// Model file parser
 // ----------------
 
-TypeDefList =
-  types:( ( _ Newline )* @TypeDef )* ( _ Newline )* _
-  { return types; }
+ModelList =
+  list:( ( _ Newline )* @Model )* ( _ Newline )* _
+  { return list; }
 
-TypeDef =
-  "type" Whitespace name:Name _ Newline
-  id:( ( _ Newline )* @TypeId _ Newline )
+Model =
+  "model" Whitespace name:Name _ Newline
+  id:( ( _ Newline )* @ModelId _ Newline )
   cloze:( ( _ Newline )* @Cloze _ Newline )?
   fields:( ( _ Newline )* @FieldDef _ Newline )*
   cards:( ( _ Newline )* @CardDef )*
   styling:( ( _ Newline )* @Styling _ Newline )?
   { return { name, id, cloze, fields, cards, styling, loc: location() } }
 
-TypeId =
+ModelId =
   "id" Whitespace id:( text:$[0-9]+ { return { text, loc: location() }; } )
   { return { id, value: Number.parseInt(id.text), loc: location() }; }
 

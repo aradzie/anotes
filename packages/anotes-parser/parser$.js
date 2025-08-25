@@ -162,7 +162,7 @@ function peg$parse(input, options) {
   const peg$startRuleFunctions = {
     Start: peg$parseStart,
     NoteList: peg$parseNoteList,
-    TypeDefList: peg$parseTypeDefList,
+    ModelList: peg$parseModelList,
   };
   let peg$startRuleFunction = peg$parseStart;
 
@@ -172,7 +172,7 @@ function peg$parse(input, options) {
   const peg$c3 = "!";
   const peg$c4 = ":";
   const peg$c5 = "~~~";
-  const peg$c6 = "type";
+  const peg$c6 = "model";
   const peg$c7 = "id";
   const peg$c8 = "cloze";
   const peg$c9 = "field";
@@ -197,7 +197,7 @@ function peg$parse(input, options) {
   const peg$e6 = peg$literalExpectation(":", false);
   const peg$e7 = peg$anyExpectation();
   const peg$e8 = peg$literalExpectation("~~~", false);
-  const peg$e9 = peg$literalExpectation("type", false);
+  const peg$e9 = peg$literalExpectation("model", false);
   const peg$e10 = peg$literalExpectation("id", false);
   const peg$e11 = peg$classExpectation([["0", "9"]], false, false, false);
   const peg$e12 = peg$literalExpectation("cloze", false);
@@ -215,7 +215,7 @@ function peg$parse(input, options) {
   const peg$e24 = peg$classExpectation([" ", "\t"], false, false, false);
 
   function peg$f0() {    return null;  }
-  function peg$f1(nodes) {    return nodes;  }
+  function peg$f1(list) {    return list;  }
   function peg$f2(properties, fields, end) {    return { properties, fields, end, loc: location() };  }
   function peg$f3(name, value) {    return { name, value, loc: location() };  }
   function peg$f4() {    return "type";  }
@@ -229,7 +229,7 @@ function peg$parse(input, options) {
   function peg$f12(head, lines) {    return [head, ...lines].join("\n").trim();  }
   function peg$f13(text) {    return { text, loc: location() };  }
   function peg$f14(text) {    return { text, loc: location() };  }
-  function peg$f15(types) {    return types;  }
+  function peg$f15(list) {    return list;  }
   function peg$f16(name, id, cloze, fields, cards, styling) {    return { name, id, cloze, fields, cards, styling, loc: location() }  }
   function peg$f17(text) {    return { text, loc: location() };  }
   function peg$f18(id) {    return { id, value: Number.parseInt(id.text), loc: location() };  }
@@ -1067,7 +1067,7 @@ function peg$parse(input, options) {
     return s0;
   }
 
-  function peg$parseTypeDefList() {
+  function peg$parseModelList() {
     let s0, s1, s2, s3, s4, s5, s6;
 
     s0 = peg$currPos;
@@ -1097,7 +1097,7 @@ function peg$parse(input, options) {
         s4 = peg$FAILED;
       }
     }
-    s4 = peg$parseTypeDef();
+    s4 = peg$parseModel();
     if (s4 !== peg$FAILED) {
       s2 = s4;
     } else {
@@ -1131,7 +1131,7 @@ function peg$parse(input, options) {
           s4 = peg$FAILED;
         }
       }
-      s4 = peg$parseTypeDef();
+      s4 = peg$parseModel();
       if (s4 !== peg$FAILED) {
         s2 = s4;
       } else {
@@ -1170,13 +1170,13 @@ function peg$parse(input, options) {
     return s0;
   }
 
-  function peg$parseTypeDef() {
+  function peg$parseModel() {
     let s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14;
 
     s0 = peg$currPos;
-    if (input.substr(peg$currPos, 4) === peg$c6) {
+    if (input.substr(peg$currPos, 5) === peg$c6) {
       s1 = peg$c6;
-      peg$currPos += 4;
+      peg$currPos += 5;
     } else {
       s1 = peg$FAILED;
       if (peg$silentFails === 0) { peg$fail(peg$e9); }
@@ -1214,7 +1214,7 @@ function peg$parse(input, options) {
                 s8 = peg$FAILED;
               }
             }
-            s8 = peg$parseTypeId();
+            s8 = peg$parseModelId();
             if (s8 !== peg$FAILED) {
               s9 = peg$parse_();
               s10 = peg$parseNewline();
@@ -1489,7 +1489,7 @@ function peg$parse(input, options) {
     return s0;
   }
 
-  function peg$parseTypeId() {
+  function peg$parseModelId() {
     let s0, s1, s2, s3, s4, s5, s6;
 
     s0 = peg$currPos;
@@ -2284,7 +2284,7 @@ function peg$parse(input, options) {
 const peg$allowedStartRules = [
   "Start",
   "NoteList",
-  "TypeDefList"
+  "ModelList"
 ];
 
 export {

@@ -1,7 +1,7 @@
 import { exportNotes, NoteParser } from "@anotes/core";
 import vscode from "vscode";
 import { Command } from "./command.js";
-import { allSearchPath, cmdExportNotes, excludeSearchPath, noteExt, typeExt } from "./constants.js";
+import { allSearchPath, cmdExportNotes, excludeSearchPath, noteExt, modelExt } from "./constants.js";
 import { type ErrorChecker } from "./errors.js";
 
 export class ExportCommand extends Command {
@@ -23,11 +23,11 @@ export class ExportCommand extends Command {
 
   async #executeInWorkspace(ws: vscode.WorkspaceFolder) {
     const parser = new NoteParser();
-    const { notePaths, typePaths } = await findNoteFiles();
-    for (const path of typePaths) {
+    const { notePaths, modelPaths } = await findNoteFiles();
+    for (const path of modelPaths) {
       const data = await vscode.workspace.fs.readFile(path);
       const text = Buffer.from(data).toString("utf-8");
-      parser.parseTypes(path.fsPath, text);
+      parser.parseModels(path.fsPath, text);
     }
     for (const path of notePaths) {
       const data = await vscode.workspace.fs.readFile(path);
@@ -57,20 +57,20 @@ export class ExportCommand extends Command {
 
 async function findNoteFiles() {
   const notePaths: vscode.Uri[] = [];
-  const typePaths: vscode.Uri[] = [];
+  const modelPaths: vscode.Uri[] = [];
   for (const uri of await vscode.workspace.findFiles(allSearchPath, excludeSearchPath)) {
     switch (true) {
       case uri.fsPath.endsWith(noteExt):
         notePaths.push(uri);
         break;
-      case uri.fsPath.endsWith(typeExt):
-        typePaths.push(uri);
+      case uri.fsPath.endsWith(modelExt):
+        modelPaths.push(uri);
         break;
     }
   }
   notePaths.sort(sortPaths);
-  typePaths.sort(sortPaths);
-  return { notePaths, typePaths };
+  modelPaths.sort(sortPaths);
+  return { notePaths, modelPaths };
 }
 
 function sortPaths(a: vscode.Uri, b: vscode.Uri): number {

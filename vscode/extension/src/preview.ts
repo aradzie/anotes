@@ -12,7 +12,7 @@ import {
   cmdShowPreviewToTheSide,
   viewType,
 } from "./constants.js";
-import { type TypeManager } from "./types.js";
+import { type ModelManager } from "./models.js";
 import { reportError, revealRange } from "./util.js";
 
 class Preview {
@@ -98,7 +98,7 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
   readonly #context: vscode.ExtensionContext;
   readonly #previews = new Set<Preview>();
 
-  constructor(context: vscode.ExtensionContext, types: TypeManager) {
+  constructor(context: vscode.ExtensionContext, models: ModelManager) {
     this.#context = context;
     this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(vscode.window.registerWebviewPanelSerializer(Preview.viewType, this));

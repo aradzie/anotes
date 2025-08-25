@@ -5,11 +5,11 @@ import { findNoteFiles } from "./io.js";
 export function exportCmd({ dir, out }: { dir: string; out: string }) {
   const parser = new NoteParser();
   console.log(`Scanning directory "${dir}"...`);
-  const { notePaths, typePaths } = findNoteFiles(dir);
-  for (const path of typePaths) {
-    console.log(`Parsing types file "${path}"...`);
+  const { notePaths, modelPaths } = findNoteFiles(dir);
+  for (const path of modelPaths) {
+    console.log(`Parsing models file "${path}"...`);
     const text = readFileSync(path, "utf-8");
-    parser.parseTypes(path, text);
+    parser.parseModels(path, text);
   }
   for (const path of notePaths) {
     console.log(`Parsing notes file "${path}"...`);

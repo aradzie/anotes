@@ -1,11 +1,11 @@
-import { type TypeDefNode } from "@anotes/parser";
+import { type ModelNode } from "@anotes/parser";
 import { Output } from "./output.js";
 
-export function printTypeNodes(nodes: Iterable<TypeDefNode>) {
+export function printModelNodes(nodes: Iterable<ModelNode>) {
   const out = new Output();
   for (const { name, id, cloze, fields, cards, styling } of nodes) {
     out.separate();
-    out.push(`type ${name.text}`);
+    out.push(`model ${name.text}`);
     out.separate();
     out.push(`id ${id.value}`);
     if (cloze != null) {

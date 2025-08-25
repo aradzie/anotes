@@ -1,9 +1,9 @@
 import { type NoteError, NoteList, NoteParser, NoteTypeMap } from "@anotes/core";
 import vscode from "vscode";
-import { ankiTypes, excludeSearchPath, typesSearchPath } from "./constants.js";
+import { ankiModels, excludeSearchPath, modelsSearchPath } from "./constants.js";
 import { reportError } from "./util.js";
 
-export class TypeManager {
+export class ModelManager {
   readonly #context: vscode.ExtensionContext;
   readonly #log: vscode.LogOutputChannel;
   readonly #onDidChange = new vscode.EventEmitter<null>();
@@ -18,7 +18,7 @@ export class TypeManager {
     this.#context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(this.#handleDidOpenTextDocument));
     this.#context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(this.#handleDidSaveTextDocument));
     this.#context.subscriptions.push(vscode.workspace.onDidCloseTextDocument(this.#handleDidCloseTextDocument));
-    const watcher = vscode.workspace.createFileSystemWatcher(typesSearchPath);
+    const watcher = vscode.workspace.createFileSystemWatcher(modelsSearchPath);
     this.#context.subscriptions.push(watcher);
     this.#context.subscriptions.push(watcher.onDidChange(this.#handleDidChange));
     this.#context.subscriptions.push(watcher.onDidCreate(this.#handleDidCreate));
@@ -30,8 +30,8 @@ export class TypeManager {
     (async () => {
       this.#documentState.clear();
       this.#combinedState = null;
-      for (const uri of await vscode.workspace.findFiles(typesSearchPath, excludeSearchPath)) {
-        this.#log.info("Found types file", uri.fsPath);
+      for (const uri of await vscode.workspace.findFiles(modelsSearchPath, excludeSearchPath)) {
+        this.#log.info("Found models file", uri.fsPath);
         this.#addDocument(await vscode.workspace.openTextDocument(uri));
       }
     })().catch(reportError);
@@ -64,7 +64,7 @@ export class TypeManager {
   };
 
   #addDocument = (document: vscode.TextDocument) => {
-    if (document.languageId === ankiTypes) {
+    if (document.languageId === ankiModels) {
       const data = this.#documentState.get(pathOf(document));
       if (data == null || data.version !== document.version) {
         this.#documentState.set(pathOf(document), this.#parseDocument(document));
@@ -74,12 +74,12 @@ export class TypeManager {
   };
 
   #parseDocument(document: vscode.TextDocument): DocumentState {
-    this.#log.info("Parse types file", document.uri.fsPath);
+    this.#log.info("Parse models file", document.uri.fsPath);
     const { version } = document;
     const types = new NoteTypeMap([]);
     const notes = new NoteList(types);
     const parser = new NoteParser(notes);
-    parser.parseTypes(pathOf(document), document.getText());
+    parser.parseModels(pathOf(document), document.getText());
     const { errors } = parser;
     return { document, version, types, errors };
   }

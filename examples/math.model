@@ -1,11 +1,11 @@
-type Equation
+model Equation
 
 id 123
 
 field Front
 field Back
-field Related
-field Extra
+field Related?
+field Extra?
 
 card Card 1
 

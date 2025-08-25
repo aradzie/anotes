@@ -1,16 +1,16 @@
 import { type NoteError, NoteList, NoteParser } from "@anotes/core";
 import vscode from "vscode";
-import { ankiNotes, ankiTypes } from "./constants.js";
-import { type TypeManager } from "./types.js";
+import { ankiNotes, ankiModels } from "./constants.js";
+import { type ModelManager } from "./models.js";
 
 export class ErrorChecker {
   readonly #context: vscode.ExtensionContext;
-  readonly #types: TypeManager;
+  readonly #models: ModelManager;
   readonly #diagnostics: vscode.DiagnosticCollection;
 
-  constructor(context: vscode.ExtensionContext, types: TypeManager) {
+  constructor(context: vscode.ExtensionContext, models: ModelManager) {
     this.#context = context;
-    this.#types = types;
+    this.#models = models;
     this.#diagnostics = vscode.languages.createDiagnosticCollection(ankiNotes);
     this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(this.#diagnostics);
@@ -30,21 +30,21 @@ export class ErrorChecker {
     if (document.languageId === ankiNotes) {
       this.#checkNotes(document);
     }
-    if (document.languageId === ankiTypes) {
-      this.#checkTypes(document);
+    if (document.languageId === ankiModels) {
+      this.#checkModels(document);
     }
   };
 
   #checkNotes(document: vscode.TextDocument) {
-    const parser = new NoteParser(new NoteList(this.#types.build().types));
+    const parser = new NoteParser(new NoteList(this.#models.build().types));
     parser.parseNotes(document.uri.fsPath, document.getText());
     parser.checkDuplicates();
     this.#diagnostics.set(document.uri, parser.errors.map(asDiagnostic));
   }
 
-  #checkTypes(document: vscode.TextDocument) {
+  #checkModels(document: vscode.TextDocument) {
     const parser = new NoteParser();
-    parser.parseTypes(document.uri.fsPath, document.getText());
+    parser.parseModels(document.uri.fsPath, document.getText());
     this.#diagnostics.set(document.uri, parser.errors.map(asDiagnostic));
   }
 

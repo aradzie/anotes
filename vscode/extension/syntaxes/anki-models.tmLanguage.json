@@ -1,56 +1,56 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Anki Types",
-  "scopeName": "source.anki-types",
+  "name": "Anki Models",
+  "scopeName": "source.anki-models",
   "patterns": [
     {
-      "name": "meta.tag.anki-types",
-      "match": "^(type)[ \\t]+(.*?)[ \\t]*$",
+      "name": "meta.tag.anki-models",
+      "match": "^(model)[ \\t]+(.*?)[ \\t]*$",
       "captures": {
-        "1": { "name": "keyword.control.anki-types" },
-        "2": { "name": "string.unquoted.value.anki-types" }
+        "1": { "name": "keyword.control.anki-models" },
+        "2": { "name": "string.unquoted.value.anki-models" }
       }
     },
     {
-      "name": "meta.tag.anki-types",
+      "name": "meta.tag.anki-models",
       "match": "^(id)[ \\t]+(.*?)[ \\t]*$",
       "captures": {
-        "1": { "name": "keyword.control.anki-types" },
-        "2": { "name": "string.unquoted.value.anki-types" }
+        "1": { "name": "keyword.control.anki-models" },
+        "2": { "name": "string.unquoted.value.anki-models" }
       }
     },
     {
-      "name": "meta.tag.anki-types",
+      "name": "meta.tag.anki-models",
       "match": "^(cloze)[ \\t]*$",
       "captures": {
-        "1": { "name": "keyword.control.anki-types" }
+        "1": { "name": "keyword.control.anki-models" }
       }
     },
     {
-      "name": "meta.tag.anki-types",
+      "name": "meta.tag.anki-models",
       "match": "^(field)[ \\t]+(.*?)[ \\t]*$",
       "captures": {
-        "1": { "name": "keyword.control.anki-types" },
-        "2": { "name": "string.unquoted.value.anki-types" }
+        "1": { "name": "keyword.control.anki-models" },
+        "2": { "name": "string.unquoted.value.anki-models" }
       }
     },
     {
-      "name": "meta.tag.anki-types",
+      "name": "meta.tag.anki-models",
       "match": "^(card)[ \\t]+(.*?)[ \\t]*$",
       "captures": {
-        "1": { "name": "keyword.control.anki-types" },
-        "2": { "name": "string.unquoted.value.anki-types" }
+        "1": { "name": "keyword.control.anki-models" },
+        "2": { "name": "string.unquoted.value.anki-models" }
       }
     },
     {
       "name": "meta.block.html",
       "begin": "^(front)[ \\t]*\\n",
       "beginCaptures": {
-        "1": { "name": "keyword.control.anki-types" }
+        "1": { "name": "keyword.control.anki-models" }
       },
       "end": "^(~~~)[ \\t]*\\n",
       "endCaptures": {
-        "1": { "name": "keyword.control.anki-types" }
+        "1": { "name": "keyword.control.anki-models" }
       },
       "patterns": [{ "include": "text.html.basic" }]
     },
@@ -58,11 +58,11 @@
       "name": "meta.block.html",
       "begin": "^(back)[ \\t]*\\n",
       "beginCaptures": {
-        "1": { "name": "keyword.control.anki-types" }
+        "1": { "name": "keyword.control.anki-models" }
       },
       "end": "^(~~~)[ \\t]*\\n",
       "endCaptures": {
-        "1": { "name": "keyword.control.anki-types" }
+        "1": { "name": "keyword.control.anki-models" }
       },
       "patterns": [{ "include": "text.html.basic" }]
     },
@@ -70,11 +70,11 @@
       "name": "meta.block.css",
       "begin": "^(styling)[ \\t]*\\n",
       "beginCaptures": {
-        "1": { "name": "keyword.control.anki-types" }
+        "1": { "name": "keyword.control.anki-models" }
       },
       "end": "^(~~~)[ \\t]*\\n",
       "endCaptures": {
-        "1": { "name": "keyword.control.anki-types" }
+        "1": { "name": "keyword.control.anki-models" }
       },
       "patterns": [{ "include": "source.css" }]
     }
