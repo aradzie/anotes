@@ -23,18 +23,15 @@ export class ModelManager {
     this.#context.subscriptions.push(watcher.onDidChange(this.#handleDidChange));
     this.#context.subscriptions.push(watcher.onDidCreate(this.#handleDidCreate));
     this.#context.subscriptions.push(watcher.onDidDelete(this.#handleDidDelete));
-    this.#reset();
   }
 
-  #reset() {
-    (async () => {
-      this.#documentState.clear();
-      this.#combinedState = null;
-      for (const uri of await vscode.workspace.findFiles(modelsSearchPath, excludeSearchPath)) {
-        this.#log.info("Found models file", uri.fsPath);
-        this.#addDocument(await vscode.workspace.openTextDocument(uri));
-      }
-    })().catch(reportError);
+  async reload() {
+    this.#documentState.clear();
+    this.#combinedState = null;
+    for (const uri of await vscode.workspace.findFiles(modelsSearchPath, excludeSearchPath)) {
+      this.#log.info("Found models file", uri.fsPath);
+      this.#addDocument(await vscode.workspace.openTextDocument(uri));
+    }
   }
 
   #handleDidOpenTextDocument = (document: vscode.TextDocument) => {

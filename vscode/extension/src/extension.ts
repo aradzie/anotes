@@ -7,10 +7,11 @@ import { InsertIdCommand, insertIdOnSave } from "./note-id.js";
 import { PreviewManager } from "./preview.js";
 import { ModelManager } from "./models.js";
 
-export function activate(context: vscode.ExtensionContext) {
+export async function activate(context: vscode.ExtensionContext) {
   const log = vscode.window.createOutputChannel("Anki Notes", { log: true });
   context.subscriptions.push(log);
   const models = new ModelManager(context, log);
+  await models.reload();
   const errors = new ErrorChecker(context, models);
   new Completer(context, new Completions(models));
   new NotesFormatter(context);
@@ -21,4 +22,4 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(vscode.workspace.onWillSaveTextDocument(insertIdOnSave));
 }
 
-export function deactivate() {}
+export async function deactivate() {}
