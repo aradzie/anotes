@@ -8,16 +8,16 @@ NoteList =
   { return list; }
 
 Note =
-  properties:( ( _ Newline )* @Property _ Newline )*
-  fields:( ( _ Newline )* @Field _ Newline )*
+  properties:( ( _ Newline )* @NoteProperty _ Newline )*
+  fields:( ( _ Newline )* @NoteField _ Newline )*
   end:( ( _ Newline )* @NoteEnd _ Newline )
   { return { properties, fields, end, loc: location() }; }
 
-Property "property" =
-  name:PropertyName _ value:PropertyValue
+NoteProperty "property" =
+  name:NotePropertyName _ value:NormalText
   { return { name, value, loc: location() }; }
 
-PropertyName =
+NotePropertyName =
   text:(
     "!type:"i { return "type"; }
   / "!deck:"i { return "deck"; }
@@ -25,22 +25,18 @@ PropertyName =
   )
   { return { text, loc: location() }; }
 
-PropertyValue =
-  text:( raw:Text { return raw.replaceAll(/\s+/g, " "); } )
-  { return { text, loc: location() }; }
-
-Field "field" =
-  name:FieldName _ value:FieldValue
+NoteField "field" =
+  name:NoteFieldName _ value:NoteFieldValue
   { return { name, value, loc: location() }; }
 
-FieldName =
-  "!" text:NameParts ":"
+NoteFieldName =
+  "!" text:FieldName ":"
   { return { text, loc: location() }; }
 
-FieldValue =
+NoteFieldValue =
   text:(
     head:( @Text _ )
-    lines:( !( Newline ( FieldName / NoteEnd / !. ) ) Newline @Text _ )*
+    lines:( !( Newline ( NoteFieldName / NoteEnd / !. ) ) Newline @Text _ )*
     { return [head, ...lines].join("\n").trim(); }
   )
   { return { text, loc: location() }; }
@@ -57,43 +53,47 @@ ModelList =
   { return list; }
 
 Model =
-  "model" Whitespace name:Name _ Newline
+  "model" Whitespace name:NormalText _ Newline
   id:( ( _ Newline )* @ModelId _ Newline )
-  cloze:( ( _ Newline )* @Cloze _ Newline )?
-  fields:( ( _ Newline )* @FieldDef _ Newline )*
-  cards:( ( _ Newline )* @CardDef )*
-  styling:( ( _ Newline )* @Styling _ Newline )?
+  cloze:( ( _ Newline )* @ModelCloze _ Newline )?
+  fields:( ( _ Newline )* @ModelField _ Newline )*
+  cards:( ( _ Newline )* @ModelCard )*
+  styling:( ( _ Newline )* @ModelStyling _ Newline )?
   { return { name, id, cloze, fields, cards, styling, loc: location() } }
 
 ModelId =
   "id" Whitespace id:( text:$[0-9]+ { return { text, loc: location() }; } )
   { return { id, value: Number.parseInt(id.text), loc: location() }; }
 
-Cloze =
+ModelCloze =
   text:"cloze"
   { return { text, loc: location() }; }
 
-FieldDef =
-  "field" Whitespace name:Name _ opt:"?"?
-  { return {  name, required: !opt, loc: location() } }
+ModelField =
+  "field" Whitespace name:ModelFieldName _ opt:"?"?
+  { return { name, required: !opt, loc: location() } }
 
-CardDef =
-  "card" Whitespace name:Name _ Newline
-  front:( ( _ Newline )* @CardFront _ Newline )
-  back:( ( _ Newline )* @CardBack _ Newline )
+ModelFieldName =
+  text:FieldName
+  { return { text, loc: location() }; }
+
+ModelCard =
+  "card" Whitespace name:NormalText _ Newline
+  front:( ( _ Newline )* @ModelCardFront _ Newline )
+  back:( ( _ Newline )* @ModelCardBack _ Newline )
   { return { name, front, back, loc: location() } }
 
-CardFront =
+ModelCardFront =
   "front" _ Newline
   text:MultilineText
   { return { text, loc: location() } }
 
-CardBack =
+ModelCardBack =
   "back" _ Newline
   text:MultilineText
   { return { text, loc: location() } }
 
-Styling =
+ModelStyling =
   "styling" _ Newline
   text:MultilineText
   { return { text, loc: location() } }
@@ -103,15 +103,16 @@ MultilineText =
   "~~~"
   { return lines.join("\n").trim(); }
 
-Name =
-  text:NameParts
-  { return { text, loc: location() }; }
-
 // Shared rules
 // ------------
 
-NameParts =
-  part:( $[-_a-z0-9]i+ )|1.., Whitespace| { return part.join(" "); }
+NormalText =
+  text:Text
+  { return { text: text.replaceAll(/\s+/g, " "), loc: location() }; }
+
+FieldName =
+  part:( $[-_a-z0-9]i+ )|1.., Whitespace|
+  { return part.join(" "); }
 
 Text "text" =
   $( !( _ Newline ) . )*

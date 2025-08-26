@@ -22,24 +22,24 @@ export type FieldNode = {
 
 export type ModelNode = {
   name: Token;
-  id: IdNode;
+  id: ModelIdNode;
   cloze: Token;
-  fields: FieldDefNode[];
-  cards: CardDefNode[];
+  fields: ModelFieldNode[];
+  cards: ModelCardNode[];
   styling: CardStylingNode | null;
 } & Node;
 
-export type IdNode = {
+export type ModelIdNode = {
   id: Token;
   value: number;
 } & Node;
 
-export type FieldDefNode = {
+export type ModelFieldNode = {
   name: Token;
   required: boolean;
 } & Node;
 
-export type CardDefNode = {
+export type ModelCardNode = {
   name: Token;
   front: CardFrontNode;
   back: CardBackNode;
