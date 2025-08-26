@@ -1,6 +1,6 @@
-model Equation
+model Basic Math
 
-id 123
+id 7702450
 
 field Front
 field Back
@@ -15,8 +15,73 @@ front
 
 back
 {{FrontSide}}
+<hr>
 <div class="back">
 <div>{{Back}}</div>
+{{#Related}}
+<p><strong>Related</strong></p>
+<div>{{Related}}</div>
+{{/Related}}
+{{#Extra}}
+<p><strong>Extra</strong></p>
+<div>{{Extra}}</div>
+{{/Extra}}
+</div>
+~~~
+
+styling
+.front {
+  text-align: center;
+}
+.back {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: start;
+}
+~~~
+
+model Basic Math (and reversed card)
+
+id 7702451
+
+field Front
+field Back
+field Related?
+field Extra?
+
+card Card 1
+
+front
+<div class="front">{{Front}}</div>
+~~~
+
+back
+{{FrontSide}}
+<hr>
+<div class="back">
+<div>{{Back}}</div>
+{{#Related}}
+<p><strong>Related</strong></p>
+<div>{{Related}}</div>
+{{/Related}}
+{{#Extra}}
+<p><strong>Extra</strong></p>
+<div>{{Extra}}</div>
+{{/Extra}}
+</div>
+~~~
+
+card Card 2
+
+front
+<div class="front">{{Back}}</div>
+~~~
+
+back
+{{FrontSide}}
+<hr>
+<div class="back">
+<div>{{Front}}</div>
 {{#Related}}
 <p><strong>Related</strong></p>
 <div>{{Related}}</div>
