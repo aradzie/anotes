@@ -7,7 +7,7 @@ import {
   type Token,
   type ModelNode,
 } from "@anotes/parser";
-import { Note, type NoteCardType, type NoteFieldType, NoteList, type NoteType, NoteTypeMap } from "./note.js";
+import { Note, type ModelCard, type ModelField, NoteList, type Model, ModelMap } from "./note.js";
 
 const unknown = {
   source: "<unknown>",
@@ -32,7 +32,7 @@ export class ParseError extends Error {
 }
 
 type ParseState = {
-  type: NoteType;
+  type: Model;
   deck: string;
   tags: string;
 };
@@ -131,7 +131,7 @@ export class NoteParser {
       return;
     }
 
-    const fields: NoteFieldType[] = [];
+    const fields: ModelField[] = [];
     const seenFields = new SeenNames();
     for (const fieldNode of node.fields) {
       const { name, required } = fieldNode;
@@ -145,7 +145,7 @@ export class NoteParser {
       });
     }
 
-    const cards: NoteCardType[] = [];
+    const cards: ModelCard[] = [];
     const seenCards = new SeenNames();
     for (const cardNode of node.cards) {
       const { name, front, back } = cardNode;
@@ -192,7 +192,7 @@ export class NoteParser {
   walkNoteNodes(
     nodes: NoteNode[],
     state: ParseState = {
-      type: NoteTypeMap.basic,
+      type: ModelMap.basic,
       deck: "",
       tags: "",
     },

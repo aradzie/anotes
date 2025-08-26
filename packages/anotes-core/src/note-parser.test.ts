@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import { like } from "rich-assert";
-import { Note, NoteList, NoteTypeMap } from "./note.js";
+import { Note, NoteList, ModelMap } from "./note.js";
 import { NoteParser } from "./note-parser.js";
 
 test("parse models", () => {
@@ -158,10 +158,10 @@ test("note parsing error: duplicate field", () => {
 });
 
 test("note parsing error: duplicate id", () => {
-  const a = new Note(NoteTypeMap.basic);
+  const a = new Note(ModelMap.basic);
   a.id = "123";
   a.set("front", "a b c");
-  const b = new Note(NoteTypeMap.basic);
+  const b = new Note(ModelMap.basic);
   b.id = "123";
   b.set("front", " a  b  c ");
   const list = new NoteList();

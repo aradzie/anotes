@@ -2,15 +2,15 @@ import { type FieldNode, type NoteNode, type PropertyNode } from "@anotes/parser
 import { loc } from "./nodes.js";
 
 export class NoteList implements Iterable<Note> {
-  readonly #types: NoteTypeMap;
+  readonly #types: ModelMap;
   readonly #notes: Note[];
 
-  constructor(types = new NoteTypeMap()) {
+  constructor(types = new ModelMap()) {
     this.#types = types;
     this.#notes = [];
   }
 
-  get types(): NoteTypeMap {
+  get types(): ModelMap {
     return this.#types;
   }
 
@@ -28,21 +28,21 @@ export class NoteList implements Iterable<Note> {
 }
 
 export class Note implements Iterable<NoteField> {
-  readonly #type: NoteType;
+  readonly #type: Model;
   #deck: string = "";
   #tags: string = "";
   readonly #id = new NoteField({ name: "ID", required: false });
   readonly #fields = new Map<string, NoteField>();
   #node: NoteNode | null = null;
 
-  constructor(type: NoteType) {
+  constructor(type: Model) {
     this.#type = type;
     for (const field of type.fields) {
       this.#fields.set(field.name.toLowerCase(), new NoteField(field));
     }
   }
 
-  get type(): NoteType {
+  get type(): Model {
     return this.#type;
   }
 
@@ -146,11 +146,11 @@ export class Note implements Iterable<NoteField> {
 }
 
 export class NoteField {
-  readonly #type: NoteFieldType;
+  readonly #type: ModelField;
   #value: string = "";
   #node: FieldNode | null = null;
 
-  constructor(type: NoteFieldType) {
+  constructor(type: ModelField) {
     this.#type = type;
   }
 
@@ -187,33 +187,33 @@ export class NoteField {
   }
 }
 
-export type NoteType = {
+export type Model = {
   readonly name: string;
   readonly id: number;
   readonly cloze: boolean;
-  readonly fields: readonly NoteFieldType[];
-  readonly cards: readonly NoteCardType[];
+  readonly fields: readonly ModelField[];
+  readonly cards: readonly ModelCard[];
   readonly styling: string;
 };
 
-export type NoteFieldType = {
+export type ModelField = {
   readonly name: string;
   readonly required: boolean;
 };
 
-export type NoteCardType = {
+export type ModelCard = {
   readonly name: string;
   readonly front: string;
   readonly back: string;
 };
 
-export class NoteTypeMap implements Iterable<NoteType> {
+export class ModelMap implements Iterable<Model> {
   static readonly basic = {
     name: "Basic",
     id: 1607392319,
     cloze: false,
     fields: [
-      { name: "Front", required: true }, //
+      { name: "Front", required: true },
       { name: "Back", required: true },
     ],
     cards: [
@@ -224,14 +224,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
       },
     ],
     styling: "",
-  } as const satisfies NoteType;
+  } as const satisfies Model;
 
   static readonly basicAndReversedCard = {
     name: "Basic (and reversed card)",
     id: 1607392320,
     cloze: false,
     fields: [
-      { name: "Front", required: true }, //
+      { name: "Front", required: true },
       { name: "Back", required: true },
     ],
     cards: [
@@ -247,14 +247,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
       },
     ],
     styling: "",
-  } as const satisfies NoteType;
+  } as const satisfies Model;
 
   static readonly basicOptionalReversedCard = {
     name: "Basic (optional reversed card)",
     id: 1607392321,
     cloze: false,
     fields: [
-      { name: "Front", required: true }, //
+      { name: "Front", required: true },
       { name: "Back", required: true },
       { name: "Add Reverse", required: false },
     ],
@@ -271,14 +271,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
       },
     ],
     styling: "",
-  } as const satisfies NoteType;
+  } as const satisfies Model;
 
   static readonly basicTypeInAnswer = {
     name: "Basic (type in the answer)",
     id: 1607392322,
     cloze: false,
     fields: [
-      { name: "Front", required: true }, //
+      { name: "Front", required: true },
       { name: "Back", required: true },
     ],
     cards: [
@@ -289,14 +289,14 @@ export class NoteTypeMap implements Iterable<NoteType> {
       },
     ],
     styling: "",
-  } as const satisfies NoteType;
+  } as const satisfies Model;
 
   static readonly cloze = {
     name: "Cloze",
     id: 1607392323,
     cloze: true,
     fields: [
-      { name: "Text", required: true }, //
+      { name: "Text", required: true },
       { name: "Back Extra", required: false },
     ],
     cards: [
@@ -307,17 +307,17 @@ export class NoteTypeMap implements Iterable<NoteType> {
       },
     ],
     styling: "",
-  } as const satisfies NoteType;
+  } as const satisfies Model;
 
-  readonly #map = new Map<string, NoteType>();
+  readonly #map = new Map<string, Model>();
 
   constructor(
     initial = [
-      NoteTypeMap.basic,
-      NoteTypeMap.basicAndReversedCard,
-      NoteTypeMap.basicOptionalReversedCard,
-      NoteTypeMap.basicTypeInAnswer,
-      NoteTypeMap.cloze,
+      ModelMap.basic,
+      ModelMap.basicAndReversedCard,
+      ModelMap.basicOptionalReversedCard,
+      ModelMap.basicTypeInAnswer,
+      ModelMap.cloze,
     ],
   ) {
     for (const type of initial) {
@@ -325,11 +325,11 @@ export class NoteTypeMap implements Iterable<NoteType> {
     }
   }
 
-  [Symbol.iterator](): Iterator<NoteType> {
+  [Symbol.iterator](): Iterator<Model> {
     return this.#map.values();
   }
 
-  add(type: NoteType): this {
+  add(type: Model): this {
     this.#map.set(type.name.toLowerCase(), type);
     return this;
   }
@@ -338,7 +338,7 @@ export class NoteTypeMap implements Iterable<NoteType> {
     return this.#map.has(name.toLowerCase());
   }
 
-  get(name: string): NoteType | null {
+  get(name: string): Model | null {
     return this.#map.get(name.toLowerCase()) ?? null;
   }
 }

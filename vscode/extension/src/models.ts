@@ -1,4 +1,4 @@
-import { type NoteError, NoteList, NoteParser, NoteTypeMap } from "@anotes/core";
+import { type NoteError, NoteList, NoteParser, ModelMap } from "@anotes/core";
 import vscode from "vscode";
 import { ankiModels, excludeSearchPath, modelsSearchPath } from "./constants.js";
 import { reportError } from "./util.js";
@@ -73,7 +73,7 @@ export class ModelManager {
   #parseDocument(document: vscode.TextDocument): DocumentState {
     this.#log.info("Parse models file", document.uri.fsPath);
     const { version } = document;
-    const types = new NoteTypeMap([]);
+    const types = new ModelMap([]);
     const notes = new NoteList(types);
     const parser = new NoteParser(notes);
     parser.parseModels(pathOf(document), document.getText());
@@ -93,7 +93,7 @@ export class ModelManager {
   build(): CombinedState {
     let state = this.#combinedState;
     if (state == null) {
-      const types = new NoteTypeMap();
+      const types = new ModelMap();
       const errors = [];
       for (const state of this.#documentState.values()) {
         for (const type of state.types) {
@@ -121,11 +121,11 @@ function pathOf(document: vscode.TextDocument): string {
 type DocumentState = {
   readonly document: vscode.TextDocument;
   readonly version: number;
-  readonly types: NoteTypeMap;
+  readonly types: ModelMap;
   readonly errors: readonly NoteError[];
 };
 
 type CombinedState = {
-  readonly types: NoteTypeMap;
+  readonly types: ModelMap;
   readonly errors: readonly NoteError[];
 };

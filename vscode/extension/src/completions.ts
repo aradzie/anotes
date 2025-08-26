@@ -1,4 +1,4 @@
-import { type NoteTypeMap } from "@anotes/core";
+import { type ModelMap } from "@anotes/core";
 import vscode from "vscode";
 import { ankiNotes } from "./constants.js";
 import { type ModelManager } from "./models.js";
@@ -73,7 +73,7 @@ export class Completions {
     this.#models = models;
   }
 
-  types(): NoteTypeMap {
+  types(): ModelMap {
     return this.#models.build().types;
   }
 
