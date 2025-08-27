@@ -17,26 +17,40 @@ back
 {{FrontSide}}
 <hr>
 <div class="back">
-<div>{{Back}}</div>
-{{#Related}}
-<p><strong>Related</strong></p>
-<div>{{Related}}</div>
-{{/Related}}
-{{#Extra}}
-<p><strong>Extra</strong></p>
-<div>{{Extra}}</div>
-{{/Extra}}
+  {{Back}}
+
+  {{#Related}}
+    <p class="sub">Related</p>
+    {{Related}}
+  {{/Related}}
+
+  {{#Extra}}
+    <p class="sub">Extra</p>
+    {{Extra}}
+  {{/Extra}}
 </div>
 ~~~
 
 styling
+@media (min-width: 600px) {
+  .card {
+    max-width: 40rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid gray;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  }
+}
 .front {
   text-align: center;
 }
 .back {
-  max-width: 40rem;
-  margin: 0 auto;
   text-align: start;
+}
+.sub {
+  font-weight: bold;
+  color: gray;
+  border-bottom: 1px solid gray;
 }
 ~~~
 
@@ -59,15 +73,17 @@ back
 {{FrontSide}}
 <hr>
 <div class="back">
-<div>{{Back}}</div>
-{{#Related}}
-<p><strong>Related</strong></p>
-<div>{{Related}}</div>
-{{/Related}}
-{{#Extra}}
-<p><strong>Extra</strong></p>
-<div>{{Extra}}</div>
-{{/Extra}}
+  {{Back}}
+
+  {{#Related}}
+    <p class="sub">Related</p>
+    {{Related}}
+  {{/Related}}
+
+  {{#Extra}}
+    <p class="sub">Extra</p>
+    {{Extra}}
+  {{/Extra}}
 </div>
 ~~~
 
@@ -81,25 +97,39 @@ back
 {{FrontSide}}
 <hr>
 <div class="back">
-<div>{{Front}}</div>
-{{#Related}}
-<p><strong>Related</strong></p>
-<div>{{Related}}</div>
-{{/Related}}
-{{#Extra}}
-<p><strong>Extra</strong></p>
-<div>{{Extra}}</div>
-{{/Extra}}
+  {{Front}}
+
+  {{#Related}}
+    <p class="sub">Related</p>
+    {{Related}}
+  {{/Related}}
+
+  {{#Extra}}
+    <p class="sub">Extra</p>
+    {{Extra}}
+  {{/Extra}}
 </div>
 ~~~
 
 styling
+@media (min-width: 600px) {
+  .card {
+    max-width: 40rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid gray;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  }
+}
 .front {
   text-align: center;
 }
 .back {
-  max-width: 40rem;
-  margin: 0 auto;
   text-align: start;
+}
+.sub {
+  font-weight: bold;
+  color: gray;
+  border-bottom: 1px solid gray;
 }
 ~~~
