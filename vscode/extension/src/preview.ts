@@ -14,6 +14,7 @@ import {
 } from "./constants.js";
 import { type ModelManager } from "./models.js";
 import { reportError, revealRange } from "./util.js";
+import { Model } from "@anotes/core";
 
 class Preview {
   static viewType = viewType;
@@ -50,13 +51,14 @@ class Preview {
     this.#locked = value;
   }
 
-  render(text: string) {
+  render(text: string, models: Model[]) {
     this.#panel.title = this.#getTitle();
     this.#panel.webview.postMessage({
       type: "update",
       uri: this.#uri,
       locked: this.#locked,
       text,
+      models,
     } satisfies UpdateMessage);
   }
 
@@ -96,10 +98,12 @@ class Preview {
 
 export class PreviewManager implements vscode.WebviewPanelSerializer {
   readonly #context: vscode.ExtensionContext;
+  readonly #models: ModelManager;
   readonly #previews = new Set<Preview>();
 
   constructor(context: vscode.ExtensionContext, models: ModelManager) {
     this.#context = context;
+    this.#models = models;
     this.#context.subscriptions.push(this);
     this.#context.subscriptions.push(vscode.window.registerWebviewPanelSerializer(Preview.viewType, this));
     this.#context.subscriptions.push(
@@ -169,7 +173,7 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
       const preview = this.#createPreview(panel);
       preview.uri = uri;
       preview.locked = locked;
-      preview.render(document.getText());
+      preview.render(document.getText(), [...this.#models.build().types]);
     }
   }
 
@@ -181,7 +185,7 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
       preview.locked = locked;
       try {
         const document = await vscode.workspace.openTextDocument(vscode.Uri.parse(uri));
-        preview.render(document.getText());
+        preview.render(document.getText(), [...this.#models.build().types]);
       } catch (err) {
         reportError(err);
       }
@@ -202,7 +206,7 @@ export class PreviewManager implements vscode.WebviewPanelSerializer {
     for (const preview of this.#previews) {
       if (!preview.locked || preview.uri === uri) {
         preview.uri = uri;
-        preview.render(document.getText());
+        preview.render(document.getText(), [...this.#models.build().types]);
       }
     }
   }

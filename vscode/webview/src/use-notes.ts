@@ -1,4 +1,4 @@
-import { type Note, type NoteError, NoteParser } from "@anotes/core";
+import { type Note, type Model, type NoteError, NoteList, NoteParser, ModelMap } from "@anotes/core";
 import { type ReviveState } from "@anotes/vscode-protocol";
 import { useEffect, useState } from "react";
 import { queue } from "./messages.js";
@@ -13,13 +13,13 @@ export function useNotes() {
     return queue.subscribe((message) => {
       switch (message.type) {
         case "update": {
-          const { uri, locked, text } = message;
+          const { uri, locked, text, models } = message;
 
           // Remember the preview state to be able to restore the preview by the extension.
           vscode.setState({ type: "revive", uri, locked } as ReviveState);
 
           // Parse and render the notes.
-          const parser = new NoteParser();
+          const parser = new NoteParser(new NoteList(new ModelMap(models)));
           parser.parseNotes(uri, text);
           const { notes, errors } = parser;
           if (errors.length > 0) {

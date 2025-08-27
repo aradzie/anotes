@@ -312,7 +312,7 @@ export class ModelMap implements Iterable<Model> {
   readonly #map = new Map<string, Model>();
 
   constructor(
-    initial = [
+    initial: Iterable<Model> = [
       ModelMap.basic,
       ModelMap.basicAndReversedCard,
       ModelMap.basicOptionalReversedCard,
@@ -320,8 +320,8 @@ export class ModelMap implements Iterable<Model> {
       ModelMap.cloze,
     ],
   ) {
-    for (const type of initial) {
-      this.add(type);
+    for (const model of initial) {
+      this.add(model);
     }
   }
 
@@ -329,8 +329,8 @@ export class ModelMap implements Iterable<Model> {
     return this.#map.values();
   }
 
-  add(type: Model): this {
-    this.#map.set(type.name.toLowerCase(), type);
+  add(model: Model): this {
+    this.#map.set(model.name.toLowerCase(), model);
     return this;
   }
 
