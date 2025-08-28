@@ -1,4 +1,4 @@
-import type { NoteNode, ModelNode } from "./nodes.js";
+import type { ModelNode,NoteNode } from "./nodes.js";
 import type { GrammarSource } from "./parser$.js";
 
 export type { GrammarSource, GrammarSourceObject, Location, LocationRange } from "./parser$.js";

@@ -8,4 +8,4 @@ function parseModelList(input, grammarSource) {
   return parse(input, { grammarSource, startRule: "ModelList" });
 }
 
-export { parseNoteList, parseModelList, SyntaxError };
+export { parseModelList, parseNoteList, SyntaxError };

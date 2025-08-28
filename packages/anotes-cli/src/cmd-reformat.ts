@@ -1,5 +1,5 @@
-import { NoteParser, printNoteNodes, printModelNodes, reformatNoteNodes, reformatModelNodes } from "@anotes/core";
 import { readFileSync, writeFileSync } from "node:fs";
+import { NoteParser, printModelNodes, printNoteNodes, reformatModelNodes,reformatNoteNodes } from "@anotes/core";
 import { findNoteFiles } from "./io.js";
 
 export function reformatCmd({ dir }: { dir: string }) {

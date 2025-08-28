@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import { deepEqual, equal, isFalse, isTrue, like } from "rich-assert";
-import { Note, NoteList, ModelMap } from "./note.js";
+import { ModelMap,Note, NoteList } from "./note.js";
 
 test("note list", () => {
   const a = new Note(ModelMap.basic);

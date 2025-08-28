@@ -1,6 +1,6 @@
-import { NoteParser, printNoteNodes, printModelNodes, reformatNoteNodes, reformatModelNodes } from "@anotes/core";
+import { NoteParser, printModelNodes, printNoteNodes, reformatModelNodes,reformatNoteNodes } from "@anotes/core";
 import vscode from "vscode";
-import { ankiNotes, ankiModels } from "./constants.js";
+import { ankiModels,ankiNotes } from "./constants.js";
 import { replaceDocument } from "./util.js";
 
 export class NotesFormatter implements vscode.DocumentFormattingEditProvider {

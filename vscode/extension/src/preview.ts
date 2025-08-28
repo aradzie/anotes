@@ -1,3 +1,4 @@
+import { type Model } from "@anotes/core";
 import {
   type ReviveState,
   type SelectMessage,
@@ -14,7 +15,6 @@ import {
 } from "./constants.js";
 import { type ModelManager } from "./models.js";
 import { reportError, revealRange } from "./util.js";
-import { Model } from "@anotes/core";
 
 class Preview {
   static viewType = viewType;

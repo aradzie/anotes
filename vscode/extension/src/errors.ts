@@ -1,6 +1,6 @@
 import { type NoteError, NoteList, NoteParser } from "@anotes/core";
 import vscode from "vscode";
-import { ankiNotes, ankiModels } from "./constants.js";
+import { ankiModels,ankiNotes } from "./constants.js";
 import { type ModelManager } from "./models.js";
 
 export class ErrorChecker {

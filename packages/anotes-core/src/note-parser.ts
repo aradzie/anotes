@@ -1,13 +1,13 @@
 import {
   type LocationRange,
+  type ModelNode,
   type NoteNode,
-  parseNoteList,
   parseModelList,
+  parseNoteList,
   SyntaxError,
   type Token,
-  type ModelNode,
 } from "@anotes/parser";
-import { Note, type ModelCard, type ModelField, NoteList, type Model, ModelMap } from "./note.js";
+import { type Model, type ModelCard, type ModelField, ModelMap,Note, NoteList } from "./note.js";
 
 const unknown = {
   source: "<unknown>",
