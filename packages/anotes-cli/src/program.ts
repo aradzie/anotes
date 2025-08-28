@@ -22,6 +22,7 @@ program
   .description("build and export Anki notes from text files")
   .option("--dir <dir>", "name of the directory with note source files", parsePath, parsePath("."))
   .option("--out <file>", "output file name", parsePath, parsePath("notes.txt"))
+  .option("--preview", "whether to generate a preview HTML file", false)
   .action(exportCmd);
 
 program

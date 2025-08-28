@@ -1,8 +1,10 @@
 import { readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
 import { exportNotes, NoteParser } from "@anotes/core";
 import { findNoteFiles } from "./io.js";
+import { generatePreview } from "./preview.js";
 
-export function exportCmd({ dir, out }: { dir: string; out: string }) {
+export function exportCmd({ dir, out, preview }: { dir: string; out: string; preview: boolean }) {
   const parser = new NoteParser();
   console.log(`Scanning directory "${dir}"...`);
   const { notePaths, modelPaths } = findNoteFiles(dir);
@@ -23,6 +25,11 @@ export function exportCmd({ dir, out }: { dir: string; out: string }) {
   if (notes.length > 0) {
     writeFileSync(out, exportNotes(notes));
     console.log(`Exported notes to "${out}".`);
+    if (preview) {
+      const previewOut = path.format({ ...path.parse(out), base: undefined, ext: ".html" });
+      writeFileSync(previewOut, generatePreview(notes));
+      console.log(`Generated preview to "${previewOut}".`);
+    }
   } else {
     console.warn(`No notes found in "${dir}".`);
   }
