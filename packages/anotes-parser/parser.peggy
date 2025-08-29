@@ -46,7 +46,7 @@ NoteEnd =
   { return { text, loc: location() }; }
 
 // Model file parser
-// ----------------
+// -----------------
 
 ModelList =
   list:( ( _ Newline )* @Model )* ( _ Newline )* _
@@ -102,6 +102,42 @@ MultilineText =
   lines:( !( "~~~" ) @Text _ Newline )*
   "~~~"
   { return lines.join("\n").trim(); }
+
+// Card template parser
+// --------------------
+
+Template = ( TempalteText / TemplateBranch / TemplateField )*
+
+TempalteText = $( !( "{{" ) . )+
+
+TemplateBranch =
+  cond:( IfField / IfNotField ) items:Template end:EndIfField
+  {
+    if (cond.field.text !== end.field.text) {
+       error(`Expected "${cond.field.text}" but got "${end.field.text}".`, end.field.loc);
+    }
+    return { type: "branch", cond, items, end, loc: location() };
+  }
+
+TemplateField =
+  "{{" _  !( "#" / "^" / "/" ) field:TemplateFieldName _ "}}"
+  { return { type: "field", field, loc: location() }; }
+
+IfField =
+  "{{" _ "#" field:TemplateFieldName _ "}}"
+  { return { field, not: false, loc: location() }; }
+
+IfNotField =
+  "{{" _ "^" field:TemplateFieldName _ "}}"
+  { return { field, not: true,  loc: location() }; }
+
+EndIfField =
+  "{{" _  "/" field:TemplateFieldName _ "}}"
+  { return { field, loc: location() }; }
+
+TemplateFieldName =
+  text:$( !( _ "}}" ) . )+
+  { return { text: text.replaceAll(/\s+/g, " "), loc: location() }; }
 
 // Shared rules
 // ------------

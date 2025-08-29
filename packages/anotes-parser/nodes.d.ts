@@ -1,4 +1,4 @@
-import { type LocationRange } from "./parser.js";
+import type { LocationRange } from "./parser.js";
 
 export type Node = {
   loc: LocationRange;
@@ -55,6 +55,29 @@ export type CardBackNode = {
 
 export type CardStylingNode = {
   text: string;
+} & Node;
+
+export type TemplateItem = string | TemplateFieldNode | TemplateBranchNode;
+
+export type TemplateFieldNode = {
+  type: "field";
+  field: Token;
+} & Node;
+
+export type TemplateBranchNode = {
+  type: "branch";
+  cond: IfFieldNode;
+  items: TemplateItem[];
+  end: EndIfFieldNode;
+} & Node;
+
+export type IfFieldNode = {
+  field: Token;
+  not: boolean;
+} & Node;
+
+export type EndIfFieldNode = {
+  field: Token;
 } & Node;
 
 export type Token = {

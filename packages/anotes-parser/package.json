@@ -7,7 +7,7 @@
     "peggy": "^5.0.6"
   },
   "scripts": {
-    "compile": "peggy --format=es --dts --output=parser$.js --allowed-start-rules=Start,NoteList,ModelList ./parser.peggy",
+    "compile": "peggy --format=es --dts --output=parser$.js --allowed-start-rules=Start,NoteList,ModelList,Template ./parser.peggy",
     "pretest": "npm run compile",
     "test": "node --test '**/*.test.js'"
   }
