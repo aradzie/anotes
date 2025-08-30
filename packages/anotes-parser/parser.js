@@ -12,8 +12,4 @@ function parseTemplate(input, grammarSource) {
   return parse(input, { grammarSource, startRule: "Template" });
 }
 
-function parseCloze(input, grammarSource) {
-  return parse(input, { grammarSource, startRule: "Cloze" });
-}
-
-export { parseCloze, parseModelList, parseNoteList, parseTemplate, SyntaxError };
+export { parseModelList, parseNoteList, parseTemplate, SyntaxError };

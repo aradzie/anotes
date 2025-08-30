@@ -139,21 +139,6 @@ TemplateFieldName =
   text:$( !( _ "}}" ) . )+
   { return { text: text.replaceAll(/\s+/g, " "), loc: location() }; }
 
-// Cloze parser
-// ------------
-
-Cloze = ( ClozeText / ClozeDeletion )*
-
-ClozeText = $( !( "{{" ) . )+
-
-ClozeDeletion =
-  "{{" id:$( "c" [1-9] ) "::" text:ClozeHiddenText hint:( "::" @ClozeFragment ) ? "}}"
-  { return { id, text, hint }; }
-
-ClozeHiddenText = ( ClozeFragment / ClozeDeletion )+
-
-ClozeFragment = $( !( "{{" / "}}" / "::" ) . )+
-
 // Shared rules
 // ------------
 

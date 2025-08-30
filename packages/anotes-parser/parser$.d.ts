@@ -169,7 +169,7 @@ export type ParserTracerEvent
       readonly result: unknown;
     };
 
-export type StartRuleNames = "Start" | "NoteList" | "ModelList" | "Template" | "Cloze";
+export type StartRuleNames = "Start" | "NoteList" | "ModelList" | "Template";
 export interface ParseOptions<T extends StartRuleNames = "Start"> {
   /**
    * String or object that will be attached to the each `LocationRange` object
@@ -213,11 +213,6 @@ declare function ParseFunction<Options extends ParseOptions<"ModelList">>(
 ): any;
 
 declare function ParseFunction<Options extends ParseOptions<"Template">>(
-  input: string,
-  options?: Options,
-): any;
-
-declare function ParseFunction<Options extends ParseOptions<"Cloze">>(
   input: string,
   options?: Options,
 ): any;

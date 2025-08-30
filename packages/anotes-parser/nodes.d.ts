@@ -80,14 +80,6 @@ export type EndIfFieldNode = {
   field: Token;
 } & Node;
 
-export type ClozeItem = string | ClozeDeletion;
-
-export type ClozeDeletion = {
-  id: string;
-  text: ClozeItem[];
-  hint: string | null;
-};
-
 export type Token = {
   text: string;
 } & Node;
