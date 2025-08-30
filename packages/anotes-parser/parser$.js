@@ -2167,7 +2167,7 @@ function peg$parse(input, options) {
   }
 
   function peg$parseIfField() {
-    let s0, s1, s2, s3, s4, s5, s6;
+    let s0, s1, s2, s3, s4, s5, s6, s7;
 
     s0 = peg$currPos;
     if (input.substr(peg$currPos, 2) === peg$c15) {
@@ -2187,19 +2187,20 @@ function peg$parse(input, options) {
         if (peg$silentFails === 0) { peg$fail(peg$e22); }
       }
       if (s3 !== peg$FAILED) {
-        s4 = peg$parseTemplateFieldName();
-        if (s4 !== peg$FAILED) {
-          s5 = peg$parse_();
+        s4 = peg$parse_();
+        s5 = peg$parseTemplateFieldName();
+        if (s5 !== peg$FAILED) {
+          s6 = peg$parse_();
           if (input.substr(peg$currPos, 2) === peg$c16) {
-            s6 = peg$c16;
+            s7 = peg$c16;
             peg$currPos += 2;
           } else {
-            s6 = peg$FAILED;
+            s7 = peg$FAILED;
             if (peg$silentFails === 0) { peg$fail(peg$e21); }
           }
-          if (s6 !== peg$FAILED) {
+          if (s7 !== peg$FAILED) {
             peg$savedPos = s0;
-            s0 = peg$f27(s4);
+            s0 = peg$f27(s5);
           } else {
             peg$currPos = s0;
             s0 = peg$FAILED;
@@ -2221,7 +2222,7 @@ function peg$parse(input, options) {
   }
 
   function peg$parseIfNotField() {
-    let s0, s1, s2, s3, s4, s5, s6;
+    let s0, s1, s2, s3, s4, s5, s6, s7;
 
     s0 = peg$currPos;
     if (input.substr(peg$currPos, 2) === peg$c15) {
@@ -2241,19 +2242,20 @@ function peg$parse(input, options) {
         if (peg$silentFails === 0) { peg$fail(peg$e23); }
       }
       if (s3 !== peg$FAILED) {
-        s4 = peg$parseTemplateFieldName();
-        if (s4 !== peg$FAILED) {
-          s5 = peg$parse_();
+        s4 = peg$parse_();
+        s5 = peg$parseTemplateFieldName();
+        if (s5 !== peg$FAILED) {
+          s6 = peg$parse_();
           if (input.substr(peg$currPos, 2) === peg$c16) {
-            s6 = peg$c16;
+            s7 = peg$c16;
             peg$currPos += 2;
           } else {
-            s6 = peg$FAILED;
+            s7 = peg$FAILED;
             if (peg$silentFails === 0) { peg$fail(peg$e21); }
           }
-          if (s6 !== peg$FAILED) {
+          if (s7 !== peg$FAILED) {
             peg$savedPos = s0;
-            s0 = peg$f28(s4);
+            s0 = peg$f28(s5);
           } else {
             peg$currPos = s0;
             s0 = peg$FAILED;
@@ -2275,7 +2277,7 @@ function peg$parse(input, options) {
   }
 
   function peg$parseEndIfField() {
-    let s0, s1, s2, s3, s4, s5, s6;
+    let s0, s1, s2, s3, s4, s5, s6, s7;
 
     s0 = peg$currPos;
     if (input.substr(peg$currPos, 2) === peg$c15) {
@@ -2295,19 +2297,20 @@ function peg$parse(input, options) {
         if (peg$silentFails === 0) { peg$fail(peg$e24); }
       }
       if (s3 !== peg$FAILED) {
-        s4 = peg$parseTemplateFieldName();
-        if (s4 !== peg$FAILED) {
-          s5 = peg$parse_();
+        s4 = peg$parse_();
+        s5 = peg$parseTemplateFieldName();
+        if (s5 !== peg$FAILED) {
+          s6 = peg$parse_();
           if (input.substr(peg$currPos, 2) === peg$c16) {
-            s6 = peg$c16;
+            s7 = peg$c16;
             peg$currPos += 2;
           } else {
-            s6 = peg$FAILED;
+            s7 = peg$FAILED;
             if (peg$silentFails === 0) { peg$fail(peg$e21); }
           }
-          if (s6 !== peg$FAILED) {
+          if (s7 !== peg$FAILED) {
             peg$savedPos = s0;
-            s0 = peg$f29(s4);
+            s0 = peg$f29(s5);
           } else {
             peg$currPos = s0;
             s0 = peg$FAILED;

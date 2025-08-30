@@ -124,15 +124,15 @@ TemplateField =
   { return { type: "field", field, loc: location() }; }
 
 IfField =
-  "{{" _ "#" field:TemplateFieldName _ "}}"
+  "{{" _ "#" _ field:TemplateFieldName _ "}}"
   { return { field, not: false, loc: location() }; }
 
 IfNotField =
-  "{{" _ "^" field:TemplateFieldName _ "}}"
+  "{{" _ "^" _ field:TemplateFieldName _ "}}"
   { return { field, not: true,  loc: location() }; }
 
 EndIfField =
-  "{{" _  "/" field:TemplateFieldName _ "}}"
+  "{{" _  "/" _ field:TemplateFieldName _ "}}"
   { return { field, loc: location() }; }
 
 TemplateFieldName =
