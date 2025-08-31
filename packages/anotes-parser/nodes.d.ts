@@ -57,7 +57,12 @@ export type CardStylingNode = {
   text: string;
 } & Node;
 
-export type TemplateItem = string | TemplateFieldNode | TemplateBranchNode;
+export type TemplateItemNode = TemplateTextNode | TemplateFieldNode | TemplateBranchNode;
+
+export type TemplateTextNode = {
+  type: "text";
+  text: string;
+} & Node;
 
 export type TemplateFieldNode = {
   type: "field";
@@ -67,7 +72,7 @@ export type TemplateFieldNode = {
 export type TemplateBranchNode = {
   type: "branch";
   cond: IfFieldNode;
-  items: TemplateItem[];
+  items: TemplateItemNode[];
   end: EndIfFieldNode;
 } & Node;
 

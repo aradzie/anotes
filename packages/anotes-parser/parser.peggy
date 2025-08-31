@@ -108,7 +108,9 @@ MultilineText =
 
 Template = ( TempalteText / TemplateBranch / TemplateField )*
 
-TempalteText = $( !( "{{" ) . )+
+TempalteText =
+  text:$( !( "{{" ) . )+
+  { return { type: "text", text, loc: location() }; }
 
 TemplateBranch =
   cond:( IfField / IfNotField ) items:Template end:EndIfField
