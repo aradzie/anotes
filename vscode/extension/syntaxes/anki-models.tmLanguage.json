@@ -52,7 +52,13 @@
       "endCaptures": {
         "1": { "name": "keyword.control.anki-models" }
       },
-      "patterns": [{ "include": "text.html.basic" }]
+      "patterns": [
+        { "include": "text.html.basic" },
+        {
+          "match": "\\{\\{(?:(?!\\}\\}).)*\\}\\}",
+          "name": "constant.language.anki-models"
+        }
+      ]
     },
     {
       "name": "meta.block.html",
@@ -64,7 +70,13 @@
       "endCaptures": {
         "1": { "name": "keyword.control.anki-models" }
       },
-      "patterns": [{ "include": "text.html.basic" }]
+      "patterns": [
+        { "include": "text.html.basic" },
+        {
+          "match": "\\{\\{(?:(?!\\}\\}).)*\\}\\}",
+          "name": "constant.language.anki-models"
+        }
+      ]
     },
     {
       "name": "meta.block.css",
