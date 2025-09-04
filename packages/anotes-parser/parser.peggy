@@ -30,7 +30,7 @@ NoteField "field" =
   { return { name, value, loc: location() }; }
 
 NoteFieldName =
-  "!" text:FieldName ":"
+  "!" text:FieldNameText ":"
   { return { text, loc: location() }; }
 
 NoteFieldValue =
@@ -74,7 +74,7 @@ ModelField =
   { return { name, required: !opt, loc: location() } }
 
 ModelFieldName =
-  text:FieldName
+  text:FieldNameText
   { return { text, loc: location() }; }
 
 ModelCard =
@@ -106,9 +106,9 @@ MultilineText =
 // Card template parser
 // --------------------
 
-Template = ( TempalteText / TemplateBranch / TemplateField )*
+Template = ( TemplateText / TemplateBranch / TemplateField )*
 
-TempalteText =
+TemplateText =
   text:$( !( "{{" ) . )+
   { return { type: "text", text, loc: location() }; }
 
@@ -148,7 +148,7 @@ NormalText =
   text:Text
   { return { text: text.replaceAll(/\s+/g, " "), loc: location() }; }
 
-FieldName =
+FieldNameText =
   part:( $[-_a-z0-9]i+ )|1.., Whitespace|
   { return part.join(" "); }
 

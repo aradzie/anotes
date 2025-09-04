@@ -885,7 +885,7 @@ function peg$parse(input, options) {
       if (peg$silentFails === 0) { peg$fail(peg$e5); }
     }
     if (s1 !== peg$FAILED) {
-      s2 = peg$parseFieldName();
+      s2 = peg$parseFieldNameText();
       if (s2 !== peg$FAILED) {
         if (input.charCodeAt(peg$currPos) === 58) {
           s3 = peg$c4;
@@ -1628,7 +1628,7 @@ function peg$parse(input, options) {
     let s0, s1;
 
     s0 = peg$currPos;
-    s1 = peg$parseFieldName();
+    s1 = peg$parseFieldNameText();
     if (s1 !== peg$FAILED) {
       peg$savedPos = s0;
       s1 = peg$f19(s1);
@@ -1959,7 +1959,7 @@ function peg$parse(input, options) {
     let s0, s1;
 
     s0 = [];
-    s1 = peg$parseTempalteText();
+    s1 = peg$parseTemplateText();
     if (s1 === peg$FAILED) {
       s1 = peg$parseTemplateBranch();
       if (s1 === peg$FAILED) {
@@ -1968,7 +1968,7 @@ function peg$parse(input, options) {
     }
     while (s1 !== peg$FAILED) {
       s0.push(s1);
-      s1 = peg$parseTempalteText();
+      s1 = peg$parseTemplateText();
       if (s1 === peg$FAILED) {
         s1 = peg$parseTemplateBranch();
         if (s1 === peg$FAILED) {
@@ -1980,7 +1980,7 @@ function peg$parse(input, options) {
     return s0;
   }
 
-  function peg$parseTempalteText() {
+  function peg$parseTemplateText() {
     let s0, s1, s2, s3, s4, s5;
 
     s0 = peg$currPos;
@@ -2467,7 +2467,7 @@ function peg$parse(input, options) {
     return s0;
   }
 
-  function peg$parseFieldName() {
+  function peg$parseFieldNameText() {
     let s0, s1, s2, s3, s4, s5, s6;
 
     s0 = peg$currPos;
