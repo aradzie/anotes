@@ -120,17 +120,17 @@ export class ModelMap implements Iterable<Model> {
     styling: "",
   } as const satisfies Model;
 
+  static readonly internal: readonly Model[] = [
+    ModelMap.basic,
+    ModelMap.basicAndReversedCard,
+    ModelMap.basicOptionalReversedCard,
+    ModelMap.basicTypeInAnswer,
+    ModelMap.cloze,
+  ];
+
   readonly #map = new Map<string, Model>();
 
-  constructor(
-    initial: Iterable<Model> = [
-      ModelMap.basic,
-      ModelMap.basicAndReversedCard,
-      ModelMap.basicOptionalReversedCard,
-      ModelMap.basicTypeInAnswer,
-      ModelMap.cloze,
-    ],
-  ) {
+  constructor(initial: Iterable<Model> = ModelMap.internal) {
     for (const model of initial) {
       this.add(model);
     }

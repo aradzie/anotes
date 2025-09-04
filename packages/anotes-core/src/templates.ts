@@ -68,13 +68,22 @@ class CompiledCard implements FieldValueProvider {
   getFieldValue(note: Note, field: string): string {
     switch (field) {
       case "Type": {
-        return escapeHtml(note.type.name);
+        return escapeHtml(this.model.name);
+      }
+      case "Card": {
+        return escapeHtml(this.card.name);
+      }
+      case "Deck": {
+        return escapeHtml(note.deck);
+      }
+      case "Subdeck": {
+        return escapeHtml(note.deck.split("::").pop() ?? "");
       }
       case "Tags": {
         return escapeHtml(note.tags);
       }
-      case "Deck": {
-        return escapeHtml(note.deck);
+      case "Flags": {
+        return "Flags";
       }
       case "FrontSide": {
         return this.renderFront(note);
