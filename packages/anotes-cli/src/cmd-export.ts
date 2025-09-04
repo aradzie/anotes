@@ -1,8 +1,7 @@
+import { exportNotes, generatePreview, NoteParser } from "@anotes/core";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { exportNotes, NoteParser } from "@anotes/core";
 import { findNoteFiles } from "./io.js";
-import { generatePreview } from "./preview.js";
 
 export function exportCmd({ dir, out, preview }: { dir: string; out: string; preview: boolean }) {
   const parser = new NoteParser();

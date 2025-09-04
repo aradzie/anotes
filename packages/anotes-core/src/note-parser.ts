@@ -7,7 +7,7 @@ import {
   SyntaxError,
   type Token,
 } from "@anotes/parser";
-import { type Model, type ModelCard, type ModelField, ModelMap,Note, NoteList } from "./note.js";
+import { type Model, type ModelCard, type ModelField, ModelMap, Note, NoteList } from "./note.js";
 
 const unknown = {
   source: "<unknown>",
@@ -21,7 +21,7 @@ export type NoteError = {
 };
 
 export class ParseError extends Error {
-  errors: NoteError[];
+  errors: readonly NoteError[];
 
   constructor(errors: Iterable<NoteError>) {
     super();
@@ -50,7 +50,7 @@ export class NoteParser {
     return this.#notes;
   }
 
-  get errors(): NoteError[] {
+  get errors(): readonly NoteError[] {
     return this.#errors;
   }
 
@@ -119,7 +119,7 @@ export class NoteParser {
     }
   }
 
-  walkModelNodes(nodes: ModelNode[]) {
+  walkModelNodes(nodes: readonly ModelNode[]) {
     for (const node of nodes) {
       this.walkModelNode(node);
     }
@@ -190,7 +190,7 @@ export class NoteParser {
   }
 
   walkNoteNodes(
-    nodes: NoteNode[],
+    nodes: readonly NoteNode[],
     state: ParseState = {
       type: ModelMap.basic,
       deck: "",
