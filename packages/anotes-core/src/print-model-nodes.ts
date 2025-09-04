@@ -1,7 +1,7 @@
 import { type ModelNode } from "@anotes/parser";
 import { Output } from "./output.js";
 
-export function printModelNodes(nodes: Iterable<ModelNode>) {
+export function printModelNodes(nodes: Iterable<ModelNode>): string {
   const out = new Output();
   for (const { name, id, cloze, fields, cards, styling } of nodes) {
     out.separate();

@@ -7,7 +7,8 @@ import {
   SyntaxError,
   type Token,
 } from "@anotes/parser";
-import { type Model, type ModelCard, type ModelField, ModelMap, Note, NoteList } from "./note.js";
+import { type Model, type ModelCard, type ModelField, ModelMap } from "./model.js";
+import { Note, NoteList } from "./note.js";
 
 const unknown = {
   source: "<unknown>",

@@ -1,6 +1,7 @@
 import { formatField, renderHtml } from "@anotes/format";
 import { parseTemplate, type TemplateItemNode } from "@anotes/parser";
-import { type Model, type ModelCard, type ModelMap, type Note } from "./note.js";
+import { type Model, type ModelCard, type ModelMap } from "./model.js";
+import { type Note } from "./note.js";
 
 export class CompiledModels {
   readonly #cards = new Map<string, CompiledCard>();
