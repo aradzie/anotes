@@ -45,11 +45,17 @@ export function generatePreview(
   function renderStyles() {
     out.push(`<style>`);
     out.push(`:root { color-scheme: light dark; }`);
-    out.push(`.card-list { min-width: 40rem; width: min-content; margin: 1rem auto; }`);
-    out.push(`.card-list-item { margin: 1rem; border-bottom: 1px solid #666; }`);
-    out.push(`.prop { font-size: 0.75rem; color: #666; }`);
-    out.push(`.prop-name { font-weight: bold; }`);
-    out.push(`.prop-value { font-weight: normal; }`);
+    out.push(
+      `.card-list { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 1rem; }`,
+    );
+    out.push(`.card-list-item { flex: 0 1 auto; min-width: 20rem; padding: 0 1rem; border: 1px dotted #666; }`);
+    out.push(`.prop { font-size: 0.75em; color: #666; }`);
+    out.push(`.prop-name { font-weight: bold; font-style: normal; }`);
+    out.push(`.prop-value { font-weight: normal; font-style: normal; }`);
+    out.push(`img { max-width: 100%; }`);
+    out.push(`li { text-align: start; }`);
+    out.push(`pre { text-align: left; }`);
+    out.push(`hr { height: 1px; margin: 1em 0; border: none; background-color: #666; }`);
     out.push(`</style>`);
   }
 
@@ -80,29 +86,36 @@ export function generatePreview(
   }
 
   function renderNoteCardList(note: Note) {
-    const { type, deck, tags } = note;
-    out.push(`<div class="card-list-item">`);
-    if (details) {
-      renderProp("Deck", escapeHtml(deck));
-      renderProp("Tags", escapeHtml(tags));
-    }
-    for (const card of type.cards) {
+    for (const card of note.type.cards) {
       if (frontCard) {
-        out.push(`<div data-type="${escapeHtml(type.name)}">`);
+        out.push(`<div class="card-list-item">`);
+        if (details) {
+          renderProp("Type", escapeHtml(`${note.type.name}::${card.name}::Front`));
+          renderProp("Deck", escapeHtml(note.deck));
+          renderProp("Tags", escapeHtml(note.tags));
+        }
+        out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
         out.push(`<div class="card">`);
         out.push(models.renderCard(note, card.name, "front"));
         out.push(`</div>`);
         out.push(`</div>`);
+        out.push(`</div>`);
       }
       if (backCard) {
-        out.push(`<div data-type="${escapeHtml(type.name)}">`);
+        out.push(`<div class="card-list-item">`);
+        if (details) {
+          renderProp("Type", escapeHtml(`${note.type.name}::${card.name}::Back`));
+          renderProp("Deck", escapeHtml(note.deck));
+          renderProp("Tags", escapeHtml(note.tags));
+        }
+        out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
         out.push(`<div class="card">`);
         out.push(models.renderCard(note, card.name, "back"));
         out.push(`</div>`);
         out.push(`</div>`);
+        out.push(`</div>`);
       }
     }
-    out.push(`</div>`);
   }
 
   function renderProp(name: string, value: string) {
