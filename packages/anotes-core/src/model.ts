@@ -31,7 +31,7 @@ export class ModelMap implements Iterable<Model> {
       {
         name: "Card 1",
         front: "{{Front}}",
-        back: '{{FrontSide}}<hr id="answer">{{Back}}',
+        back: "{{FrontSide}}<hr>{{Back}}",
       },
     ],
     styling: "",
@@ -49,12 +49,12 @@ export class ModelMap implements Iterable<Model> {
       {
         name: "Card 1",
         front: "{{Front}}",
-        back: '{{FrontSide}}<hr id="answer">{{Back}}',
+        back: "{{FrontSide}}<hr>{{Back}}",
       },
       {
         name: "Card 2",
         front: "{{Back}}",
-        back: '{{FrontSide}}<hr id="answer">{{Front}}',
+        back: "{{FrontSide}}<hr>{{Front}}",
       },
     ],
     styling: "",
@@ -73,12 +73,12 @@ export class ModelMap implements Iterable<Model> {
       {
         name: "Card 1",
         front: "{{Front}}",
-        back: '{{FrontSide}}<hr id="answer">{{Back}}',
+        back: "{{FrontSide}}<hr>{{Back}}",
       },
       {
         name: "Card 2",
         front: "{{#Add Reverse}}{{Back}}{{/Add Reverse}}",
-        back: '{{FrontSide}}<hr id="answer">{{Front}}',
+        back: "{{FrontSide}}<hr>{{Front}}",
       },
     ],
     styling: "",
@@ -96,7 +96,7 @@ export class ModelMap implements Iterable<Model> {
       {
         name: "Card 1",
         front: "{{Front}}<br>{{type:Back}}",
-        back: '{{Front}}<hr id="answer">{{Back}}',
+        back: "{{Front}}<hr>{{Back}}",
       },
     ],
     styling: "",

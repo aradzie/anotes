@@ -1,3 +1,4 @@
+import type { ModelCard } from "./model.js";
 import { type Note, type NoteList } from "./note.js";
 import { Output } from "./output.js";
 import { CompiledModels, escapeHtml } from "./templates.js";
@@ -11,123 +12,187 @@ export type PreviewOptions = {
 
 export function generatePreview(
   notes: NoteList,
-  {
-    title = "Cards Preview",
+  options: Partial<Readonly<PreviewOptions>> = {},
+  renderer: Renderer = new Renderer(new CompiledModels(notes.types)),
+): string {
+  const {
+    title = "Cards Preview", //
     details = true,
     frontCard = false,
     backCard = true,
-  }: Partial<Readonly<PreviewOptions>> = {},
-): string {
-  const models = new CompiledModels(notes.types);
-
+  } = options;
   const out = new Output();
+  renderer.renderDocument({
+    options: {
+      title,
+      details,
+      frontCard,
+      backCard,
+    },
+    notes,
+    out,
+  });
+  return out.print();
+}
 
-  function renderDocument() {
-    out.push(`<!doctype html>`);
-    out.push(`<html>`);
-    renderHead();
-    renderBody();
-    out.push(`</html>`);
+export type RendererContext = Readonly<{
+  options: Readonly<PreviewOptions>;
+  notes: NoteList;
+  out: Output;
+}>;
+
+export class Renderer {
+  static readonly defaultStylesheets: readonly string[] = [
+    `https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css`, //
+  ];
+
+  static readonly defaultStyles: readonly string[] = [
+    `:root { color-scheme: light dark; }`,
+    `.card-list { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 1rem; }`,
+    `.card-list-item { flex: 0 1 auto; min-width: 20rem; padding: 0 1rem; border: 1px dotted #666; }`,
+    `.prop { font-size: 0.75em; color: #666; }`,
+    `.prop-name { font-weight: bold; font-style: normal; }`,
+    `.prop-value { font-weight: normal; font-style: normal; }`,
+    `img { max-width: 100%; }`,
+    `li { text-align: start; }`,
+    `pre { text-align: left; }`,
+    `hr { height: 1px; margin: 1em 0; border: none; background-color: #666; }`,
+  ];
+
+  readonly #models: CompiledModels;
+
+  #stylesheets: string[] = [...Renderer.defaultStylesheets];
+  #styles: string[] = [...Renderer.defaultStyles];
+
+  constructor(models: CompiledModels) {
+    this.#models = models;
   }
 
-  function renderHead() {
-    out.push(`<head>`);
-    out.push(`<meta charset="UTF-8">`);
-    out.push(`<title>${escapeHtml(title)}</title>`);
-    out.push(
-      `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossOrigin="anonymous">`,
-    );
-    renderStyles();
-    renderModelStyles();
-    out.push(`</head>`);
+  get models(): CompiledModels {
+    return this.#models;
   }
 
-  function renderStyles() {
-    out.push(`<style>`);
-    out.push(`:root { color-scheme: light dark; }`);
-    out.push(
-      `.card-list { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 1rem; }`,
-    );
-    out.push(`.card-list-item { flex: 0 1 auto; min-width: 20rem; padding: 0 1rem; border: 1px dotted #666; }`);
-    out.push(`.prop { font-size: 0.75em; color: #666; }`);
-    out.push(`.prop-name { font-weight: bold; font-style: normal; }`);
-    out.push(`.prop-value { font-weight: normal; font-style: normal; }`);
-    out.push(`img { max-width: 100%; }`);
-    out.push(`li { text-align: start; }`);
-    out.push(`pre { text-align: left; }`);
-    out.push(`hr { height: 1px; margin: 1em 0; border: none; background-color: #666; }`);
-    out.push(`</style>`);
+  get stylesheets(): string[] {
+    return [...this.#stylesheets];
   }
 
-  function renderModelStyles() {
-    for (const type of notes.types) {
+  set stylesheets(value: string[]) {
+    this.#stylesheets = [...value];
+  }
+
+  get styles(): string[] {
+    return [...this.#styles];
+  }
+
+  set styles(value: string[]) {
+    this.#styles = [...value];
+  }
+
+  renderDocument(ctx: RendererContext) {
+    ctx.out.push(`<!doctype html>`);
+    ctx.out.push(`<html>`);
+    this.renderHead(ctx);
+    this.renderBody(ctx);
+    ctx.out.push(`</html>`);
+  }
+
+  renderHead(ctx: RendererContext) {
+    ctx.out.push(`<head>`);
+    ctx.out.push(`<meta charset="UTF-8">`);
+    ctx.out.push(`<title>${escapeHtml(ctx.options.title)}</title>`);
+    this.renderStylesheets(ctx);
+    this.renderCommonStyles(ctx);
+    this.renderModelStyles(ctx);
+    ctx.out.push(`</head>`);
+  }
+
+  renderStylesheets(ctx: RendererContext) {
+    for (const stylesheet of this.#stylesheets) {
+      ctx.out.push(`<link rel="stylesheet" href="${encodeURI(stylesheet)}" crossOrigin="anonymous">`);
+    }
+  }
+
+  renderCommonStyles(ctx: RendererContext) {
+    ctx.out.push(`<style>`);
+    for (const style of this.#styles) {
+      ctx.out.push(style);
+    }
+    ctx.out.push(`</style>`);
+  }
+
+  renderModelStyles(ctx: RendererContext) {
+    for (const type of ctx.notes.types) {
       if (type.styling) {
-        out.push(`<style>`);
-        out.push(`[data-type="${type.name}"] {`);
-        out.push(type.styling);
-        out.push(`}`);
-        out.push(`</style>`);
+        ctx.out.push(`<style>`);
+        ctx.out.push(`[data-type="${type.name}"] {`);
+        ctx.out.push(type.styling);
+        ctx.out.push(`}`);
+        ctx.out.push(`</style>`);
       }
     }
   }
 
-  function renderBody() {
-    out.push(`<body>`);
-    renderCardList();
-    out.push(`</body>`);
+  renderBody(ctx: RendererContext) {
+    ctx.out.push(`<body>`);
+    this.renderCardList(ctx);
+    ctx.out.push(`</body>`);
   }
 
-  function renderCardList() {
-    out.push(`<main class="card-list">`);
-    for (const note of notes) {
-      renderNoteCardList(note);
+  renderCardList(ctx: RendererContext) {
+    ctx.out.push(`<main class="card-list">`);
+    for (const note of ctx.notes) {
+      this.renderNoteCardList(ctx, note);
     }
-    out.push(`</main>`);
+    ctx.out.push(`</main>`);
   }
 
-  function renderNoteCardList(note: Note) {
+  renderNoteCardList(ctx: RendererContext, note: Note) {
     for (const card of note.type.cards) {
-      if (frontCard) {
-        out.push(`<div class="card-list-item">`);
-        if (details) {
-          renderProp("Type", escapeHtml(`${note.type.name}::${card.name}::Front`));
-          renderProp("Deck", escapeHtml(note.deck));
-          renderProp("Tags", escapeHtml(note.tags));
-        }
-        out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
-        out.push(`<div class="card">`);
-        out.push(models.renderCard(note, card.name, "front"));
-        out.push(`</div>`);
-        out.push(`</div>`);
-        out.push(`</div>`);
+      if (ctx.options.frontCard) {
+        this.renderNoteFrontCard(ctx, note, card);
       }
-      if (backCard) {
-        out.push(`<div class="card-list-item">`);
-        if (details) {
-          renderProp("Type", escapeHtml(`${note.type.name}::${card.name}::Back`));
-          renderProp("Deck", escapeHtml(note.deck));
-          renderProp("Tags", escapeHtml(note.tags));
-        }
-        out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
-        out.push(`<div class="card">`);
-        out.push(models.renderCard(note, card.name, "back"));
-        out.push(`</div>`);
-        out.push(`</div>`);
-        out.push(`</div>`);
+      if (ctx.options.backCard) {
+        this.renderNoteBackCard(ctx, note, card);
       }
     }
   }
 
-  function renderProp(name: string, value: string) {
-    out.push(
+  renderNoteFrontCard(ctx: RendererContext, note: Note, card: ModelCard) {
+    ctx.out.push(`<div class="card-list-item">`);
+    if (ctx.options.details) {
+      this.renderProp(ctx, "Type", escapeHtml(`${note.type.name}::${card.name}::Front`));
+      this.renderProp(ctx, "Deck", escapeHtml(note.deck));
+      this.renderProp(ctx, "Tags", escapeHtml(note.tags));
+    }
+    ctx.out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
+    ctx.out.push(`<div class="card">`);
+    ctx.out.push(this.#models.renderCard(note, card.name, "front"));
+    ctx.out.push(`</div>`);
+    ctx.out.push(`</div>`);
+    ctx.out.push(`</div>`);
+  }
+
+  renderNoteBackCard(ctx: RendererContext, note: Note, card: ModelCard) {
+    ctx.out.push(`<div class="card-list-item">`);
+    if (ctx.options.details) {
+      this.renderProp(ctx, "Type", escapeHtml(`${note.type.name}::${card.name}::Back`));
+      this.renderProp(ctx, "Deck", escapeHtml(note.deck));
+      this.renderProp(ctx, "Tags", escapeHtml(note.tags));
+    }
+    ctx.out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
+    ctx.out.push(`<div class="card">`);
+    ctx.out.push(this.#models.renderCard(note, card.name, "back"));
+    ctx.out.push(`</div>`);
+    ctx.out.push(`</div>`);
+    ctx.out.push(`</div>`);
+  }
+
+  renderProp(ctx: RendererContext, name: string, value: string) {
+    ctx.out.push(
       `<p class="prop">` +
         `<span class="prop-name">${escapeHtml(name)}:</span> ` +
         `<span class="prop-value">${escapeHtml(value)}</span>` +
         `</p>`,
     );
   }
-
-  renderDocument();
-
-  return out.print();
 }
