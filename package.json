@@ -23,6 +23,7 @@
     "packages/anotes-format",
     "packages/anotes-core",
     "packages/anotes-preview",
+    "packages/anotes-sync",
     "packages/anotes-cli",
     "vscode/protocol",
     "vscode/webview",
