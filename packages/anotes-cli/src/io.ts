@@ -1,4 +1,4 @@
-import { globSync } from "node:fs";
+import { glob } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
 const cwd = process.cwd();
@@ -7,11 +7,14 @@ export function pathTo(...file: string[]): string {
   return resolve(cwd, ...file);
 }
 
-export function findNoteFiles(dir: string) {
+export async function findNoteFiles(
+  dir: string,
+  exclude: readonly string[] = ["**/.git", "**/.hg", "**/.svn", "**/node_modules"],
+) {
   const notePaths: string[] = [];
   const modelPaths: string[] = [];
   const cwd = pathTo(dir);
-  for (const item of globSync("**/*.{note,model}", { cwd })) {
+  for await (const item of glob("**/*.{note,model}", { cwd, exclude })) {
     const path = join(cwd, item);
     switch (true) {
       case item.endsWith(".note"):

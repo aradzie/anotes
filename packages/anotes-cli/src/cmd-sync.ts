@@ -1,20 +1,20 @@
+import { readFile } from "node:fs/promises";
 import { NoteParser } from "@anotes/core";
 import { synchronizeNotes } from "@anotes/sync";
-import { readFileSync } from "node:fs";
 import { findNoteFiles } from "./io.js";
 
-export async function syncCmd({ dir }: { dir: string }) {
+export async function syncCmd({ dir }: { dir: string }): Promise<void> {
   const parser = new NoteParser();
   console.log(`Scanning directory "${dir}"...`);
-  const { notePaths, modelPaths } = findNoteFiles(dir);
+  const { notePaths, modelPaths } = await findNoteFiles(dir);
   for (const path of modelPaths) {
     console.log(`Parsing models file "${path}"...`);
-    const text = readFileSync(path, "utf-8");
+    const text = await readFile(path, "utf-8");
     parser.parseModels(path, text);
   }
   for (const path of notePaths) {
     console.log(`Parsing notes file "${path}"...`);
-    const text = readFileSync(path, "utf-8");
+    const text = await readFile(path, "utf-8");
     parser.parseNotes(path, text);
   }
   parser.checkDuplicates();
