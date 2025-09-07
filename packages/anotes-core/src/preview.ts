@@ -1,7 +1,7 @@
 import type { ModelCard } from "./model.js";
 import { type Note, type NoteList } from "./note.js";
 import { Output } from "./output.js";
-import { CompiledModels, escapeHtml } from "./templates.js";
+import { CompiledCards, escapeHtml } from "./templates.js";
 
 export type PreviewOptions = {
   title: string;
@@ -13,7 +13,7 @@ export type PreviewOptions = {
 export function generatePreview(
   notes: NoteList,
   options: Partial<Readonly<PreviewOptions>> = {},
-  renderer: Renderer = new Renderer(new CompiledModels(notes.types)),
+  renderer: PreviewRenderer = new PreviewRenderer(new CompiledCards(notes.types)),
 ): string {
   const {
     title = "Cards Preview", //
@@ -41,7 +41,7 @@ export type RendererContext = Readonly<{
   out: Output;
 }>;
 
-export class Renderer {
+export class PreviewRenderer {
   static readonly defaultStylesheets: readonly string[] = [
     `https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css`, //
   ];
@@ -59,17 +59,13 @@ export class Renderer {
     `hr { height: 1px; margin: 1em 0; border: none; background-color: #666; }`,
   ];
 
-  readonly #models: CompiledModels;
+  readonly #cards: CompiledCards;
 
-  #stylesheets: string[] = [...Renderer.defaultStylesheets];
-  #styles: string[] = [...Renderer.defaultStyles];
+  #stylesheets: string[] = [...PreviewRenderer.defaultStylesheets];
+  #styles: string[] = [...PreviewRenderer.defaultStyles];
 
-  constructor(models: CompiledModels) {
-    this.#models = models;
-  }
-
-  get models(): CompiledModels {
-    return this.#models;
+  constructor(cards: CompiledCards) {
+    this.#cards = cards;
   }
 
   get stylesheets(): string[] {
@@ -108,7 +104,7 @@ export class Renderer {
 
   renderStylesheets(ctx: RendererContext) {
     for (const stylesheet of this.#stylesheets) {
-      ctx.out.print(`<link rel="stylesheet" href="${encodeURI(stylesheet)}" crossOrigin="anonymous">`);
+      ctx.out.print(`<link rel="stylesheet" href="${escapeHtml(stylesheet)}" crossOrigin="anonymous">`);
     }
   }
 
@@ -166,7 +162,7 @@ export class Renderer {
     }
     ctx.out.print(`<div data-type="${escapeHtml(note.type.name)}">`);
     ctx.out.print(`<div class="card">`);
-    ctx.out.print(this.#models.renderCard(note, card.name, "front"));
+    ctx.out.print(this.renderCard(note, card, "front"));
     ctx.out.print(`</div>`);
     ctx.out.print(`</div>`);
     ctx.out.print(`</div>`);
@@ -181,7 +177,7 @@ export class Renderer {
     }
     ctx.out.print(`<div data-type="${escapeHtml(note.type.name)}">`);
     ctx.out.print(`<div class="card">`);
-    ctx.out.print(this.#models.renderCard(note, card.name, "back"));
+    ctx.out.print(this.renderCard(note, card, "back"));
     ctx.out.print(`</div>`);
     ctx.out.print(`</div>`);
     ctx.out.print(`</div>`);
@@ -194,5 +190,9 @@ export class Renderer {
         `<span class="prop-value">${escapeHtml(value)}</span>` +
         `</p>`,
     );
+  }
+
+  renderCard(note: Note, card: ModelCard, side: "front" | "back"): string {
+    return this.#cards.renderCard(note, card.name, side);
   }
 }

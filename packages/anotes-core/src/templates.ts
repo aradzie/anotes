@@ -3,7 +3,7 @@ import { parseTemplate, type TemplateItemNode } from "@anotes/parser";
 import { type Model, type ModelCard, type ModelMap } from "./model.js";
 import { type Note } from "./note.js";
 
-export class CompiledModels {
+export class CompiledCards {
   readonly #cards = new Map<string, CompiledCard>();
 
   constructor(models: ModelMap) {
@@ -113,10 +113,10 @@ type Part =
   | { readonly type: "if-not"; readonly field: string; readonly parts: readonly Part[] };
 
 class CompiledTemplate {
-  readonly #parts: Part[] = [];
+  readonly #parts: readonly Part[];
 
   constructor(template: string) {
-    this.#parts = this.#compile(parseTemplate(template));
+    this.#parts = mapNodeList(parseTemplate(template));
   }
 
   render(fields: FieldValueProvider, note: Note): string {
@@ -153,31 +153,39 @@ class CompiledTemplate {
 
     return out;
   }
+}
 
-  #compile(nodes: readonly TemplateItemNode[]): Part[] {
-    function mapNodeList(nodes: readonly TemplateItemNode[]) {
-      return nodes.map((node) => mapNode(node));
+function mapNodeList(nodes: readonly TemplateItemNode[]): Part[] {
+  return nodes.map((node) => mapNode(node));
+}
+
+function mapNode(node: TemplateItemNode): Part {
+  switch (node.type) {
+    case "text": {
+      return node.text;
     }
-
-    function mapNode(node: TemplateItemNode): Part {
-      switch (node.type) {
-        case "text": {
-          return node.text;
-        }
-        case "field": {
-          return { type: "field", field: node.field.text };
-        }
-        case "branch": {
-          if (node.cond.not) {
-            return { type: "if-not", field: node.cond.field.text, parts: mapNodeList(node.items) };
-          } else {
-            return { type: "if", field: node.cond.field.text, parts: mapNodeList(node.items) };
-          }
-        }
+    case "field": {
+      return {
+        type: "field",
+        field: node.field.text,
+      };
+    }
+    case "branch": {
+      const { cond } = node;
+      if (cond.not) {
+        return {
+          type: "if-not",
+          field: cond.field.text,
+          parts: mapNodeList(node.items),
+        };
+      } else {
+        return {
+          type: "if",
+          field: cond.field.text,
+          parts: mapNodeList(node.items),
+        };
       }
     }
-
-    return mapNodeList(nodes);
   }
 }
 

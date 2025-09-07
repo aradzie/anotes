@@ -2,7 +2,7 @@ import { test } from "node:test";
 import { equal } from "rich-assert";
 import { type Model, ModelMap } from "./model.js";
 import { Note } from "./note.js";
-import { CompiledModels } from "./templates.js";
+import { CompiledCards } from "./templates.js";
 
 test("render templates", () => {
   const models = new ModelMap([
@@ -33,18 +33,18 @@ test("render templates", () => {
     } as const satisfies Model,
   ]);
 
-  const compiledModels = new CompiledModels(models);
+  const cards = new CompiledCards(models);
 
   const note = new Note(models.get("Type 1")!);
   note.set("front", "FRONT");
   note.set("back", "BACK");
 
   equal(
-    compiledModels.renderCard(note, "Card 1", "front"), //
+    cards.renderCard(note, "Card 1", "front"), //
     `<p>FRONT</p>`,
   );
   equal(
-    compiledModels.renderCard(note, "Card 1", "back"), //
+    cards.renderCard(note, "Card 1", "back"), //
     `<p>FRONT</p>\n` + //
       `<p>BACK</p>\n` +
       `Type:Type 1\n` +
@@ -58,11 +58,11 @@ test("render templates", () => {
   note.tags = "A::B::C Tag1 Tag2";
 
   equal(
-    compiledModels.renderCard(note, "Card 1", "front"), //
+    cards.renderCard(note, "Card 1", "front"), //
     `<p>FRONT</p>`,
   );
   equal(
-    compiledModels.renderCard(note, "Card 1", "back"), //
+    cards.renderCard(note, "Card 1", "back"), //
     `<p>FRONT</p>\n` + //
       `<p>BACK</p>\n` +
       `Type:Type 1\n` +
@@ -99,21 +99,21 @@ test("conditional", () => {
     } as const satisfies Model,
   ]);
 
-  const compiledModels = new CompiledModels(models);
+  const cards = new CompiledCards(models);
 
   const note = new Note(models.get("Type 1")!);
   note.set("front", "FRONT");
   note.set("back", "BACK");
 
   equal(
-    compiledModels.renderCard(note, "Card 1", "back"), //
+    cards.renderCard(note, "Card 1", "back"), //
     `<p>FRONT</p>\n<p>BACK</p>\n\n???\n`,
   );
 
   note.set("extra", "EXTRA");
 
   equal(
-    compiledModels.renderCard(note, "Card 1", "back"), //
+    cards.renderCard(note, "Card 1", "back"), //
     `<p>FRONT</p>\n<p>BACK</p>\n<p>EXTRA</p>\n\n`,
   );
 });
