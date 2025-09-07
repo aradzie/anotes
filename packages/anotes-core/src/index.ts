@@ -3,7 +3,7 @@ export * from "./insert-note-id.js";
 export * from "./model.js";
 export * from "./note.js";
 export * from "./note-parser.js";
-export * from "./preview.js";
+export * from "./output.js";
 export * from "./print-model-nodes.js";
 export * from "./print-note-nodes.js";
 export * from "./reformat-model-nodes.js";

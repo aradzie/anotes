@@ -2,6 +2,16 @@ import { test } from "node:test";
 import { equal } from "rich-assert";
 import { formatField } from "./format-field.js";
 
+test("format empty", () => {
+  equal(formatField(""), "");
+  equal(formatField("\t\r\n"), "");
+});
+
+test("format text", () => {
+  equal(formatField("Hello"), "<p>Hello</p>");
+  equal(formatField("# Hello"), "<h1>Hello</h1>");
+});
+
 test("find inline math", () => {
   equal(formatField("\\(x\\)"), "<p>\\( x \\)</p>");
   equal(formatField("a\\(x\\)b"), "<p>a\\( x \\)b</p>");

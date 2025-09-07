@@ -1,14 +1,12 @@
 {
-  "name": "@anotes/cli",
+  "name": "@anotes/preview",
   "version": "0.0.1",
   "type": "module",
-  "bin": {
-    "anotes": "anotes.js"
-  },
+  "main": "dist/index.js",
   "dependencies": {
     "@anotes/core": "*",
-    "@anotes/preview": "*",
-    "commander": "^14.0.0"
+    "@anotes/format": "*",
+    "@anotes/parser": "*"
   },
   "scripts": {
     "compile": "rm -fr dist && tsc",
