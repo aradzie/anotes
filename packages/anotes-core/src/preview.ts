@@ -32,7 +32,7 @@ export function generatePreview(
     notes,
     out,
   });
-  return out.print();
+  return String(out);
 }
 
 export type RendererContext = Readonly<{
@@ -89,61 +89,61 @@ export class Renderer {
   }
 
   renderDocument(ctx: RendererContext) {
-    ctx.out.push(`<!doctype html>`);
-    ctx.out.push(`<html>`);
+    ctx.out.print(`<!doctype html>`);
+    ctx.out.print(`<html>`);
     this.renderHead(ctx);
     this.renderBody(ctx);
-    ctx.out.push(`</html>`);
+    ctx.out.print(`</html>`);
   }
 
   renderHead(ctx: RendererContext) {
-    ctx.out.push(`<head>`);
-    ctx.out.push(`<meta charset="UTF-8">`);
-    ctx.out.push(`<title>${escapeHtml(ctx.options.title)}</title>`);
+    ctx.out.print(`<head>`);
+    ctx.out.print(`<meta charset="UTF-8">`);
+    ctx.out.print(`<title>${escapeHtml(ctx.options.title)}</title>`);
     this.renderStylesheets(ctx);
     this.renderCommonStyles(ctx);
     this.renderModelStyles(ctx);
-    ctx.out.push(`</head>`);
+    ctx.out.print(`</head>`);
   }
 
   renderStylesheets(ctx: RendererContext) {
     for (const stylesheet of this.#stylesheets) {
-      ctx.out.push(`<link rel="stylesheet" href="${encodeURI(stylesheet)}" crossOrigin="anonymous">`);
+      ctx.out.print(`<link rel="stylesheet" href="${encodeURI(stylesheet)}" crossOrigin="anonymous">`);
     }
   }
 
   renderCommonStyles(ctx: RendererContext) {
-    ctx.out.push(`<style>`);
+    ctx.out.print(`<style>`);
     for (const style of this.#styles) {
-      ctx.out.push(style);
+      ctx.out.print(style);
     }
-    ctx.out.push(`</style>`);
+    ctx.out.print(`</style>`);
   }
 
   renderModelStyles(ctx: RendererContext) {
     for (const type of ctx.notes.types) {
       if (type.styling) {
-        ctx.out.push(`<style>`);
-        ctx.out.push(`[data-type="${type.name}"] {`);
-        ctx.out.push(type.styling);
-        ctx.out.push(`}`);
-        ctx.out.push(`</style>`);
+        ctx.out.print(`<style>`);
+        ctx.out.print(`[data-type="${type.name}"] {`);
+        ctx.out.print(type.styling);
+        ctx.out.print(`}`);
+        ctx.out.print(`</style>`);
       }
     }
   }
 
   renderBody(ctx: RendererContext) {
-    ctx.out.push(`<body>`);
+    ctx.out.print(`<body>`);
     this.renderCardList(ctx);
-    ctx.out.push(`</body>`);
+    ctx.out.print(`</body>`);
   }
 
   renderCardList(ctx: RendererContext) {
-    ctx.out.push(`<main class="card-list">`);
+    ctx.out.print(`<main class="card-list">`);
     for (const note of ctx.notes) {
       this.renderNoteCardList(ctx, note);
     }
-    ctx.out.push(`</main>`);
+    ctx.out.print(`</main>`);
   }
 
   renderNoteCardList(ctx: RendererContext, note: Note) {
@@ -158,37 +158,37 @@ export class Renderer {
   }
 
   renderNoteFrontCard(ctx: RendererContext, note: Note, card: ModelCard) {
-    ctx.out.push(`<div class="card-list-item">`);
+    ctx.out.print(`<div class="card-list-item">`);
     if (ctx.options.details) {
       this.renderProp(ctx, "Type", escapeHtml(`${note.type.name}::${card.name}::Front`));
       this.renderProp(ctx, "Deck", escapeHtml(note.deck));
       this.renderProp(ctx, "Tags", escapeHtml(note.tags));
     }
-    ctx.out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
-    ctx.out.push(`<div class="card">`);
-    ctx.out.push(this.#models.renderCard(note, card.name, "front"));
-    ctx.out.push(`</div>`);
-    ctx.out.push(`</div>`);
-    ctx.out.push(`</div>`);
+    ctx.out.print(`<div data-type="${escapeHtml(note.type.name)}">`);
+    ctx.out.print(`<div class="card">`);
+    ctx.out.print(this.#models.renderCard(note, card.name, "front"));
+    ctx.out.print(`</div>`);
+    ctx.out.print(`</div>`);
+    ctx.out.print(`</div>`);
   }
 
   renderNoteBackCard(ctx: RendererContext, note: Note, card: ModelCard) {
-    ctx.out.push(`<div class="card-list-item">`);
+    ctx.out.print(`<div class="card-list-item">`);
     if (ctx.options.details) {
       this.renderProp(ctx, "Type", escapeHtml(`${note.type.name}::${card.name}::Back`));
       this.renderProp(ctx, "Deck", escapeHtml(note.deck));
       this.renderProp(ctx, "Tags", escapeHtml(note.tags));
     }
-    ctx.out.push(`<div data-type="${escapeHtml(note.type.name)}">`);
-    ctx.out.push(`<div class="card">`);
-    ctx.out.push(this.#models.renderCard(note, card.name, "back"));
-    ctx.out.push(`</div>`);
-    ctx.out.push(`</div>`);
-    ctx.out.push(`</div>`);
+    ctx.out.print(`<div data-type="${escapeHtml(note.type.name)}">`);
+    ctx.out.print(`<div class="card">`);
+    ctx.out.print(this.#models.renderCard(note, card.name, "back"));
+    ctx.out.print(`</div>`);
+    ctx.out.print(`</div>`);
+    ctx.out.print(`</div>`);
   }
 
   renderProp(ctx: RendererContext, name: string, value: string) {
-    ctx.out.push(
+    ctx.out.print(
       `<p class="prop">` +
         `<span class="prop-name">${escapeHtml(name)}:</span> ` +
         `<span class="prop-value">${escapeHtml(value)}</span>` +

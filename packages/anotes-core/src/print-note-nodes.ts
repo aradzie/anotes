@@ -7,25 +7,25 @@ export function printNoteNodes(nodes: Iterable<NoteNode>): string {
     out.separate();
     for (const { name, value } of properties) {
       if (value.text) {
-        out.push(`!${name.text}: ${value.text}`);
+        out.print(`!${name.text}: ${value.text}`);
       } else {
-        out.push(`!${name.text}:`);
+        out.print(`!${name.text}:`);
       }
     }
     out.separate();
     for (const { name, value } of fields) {
       if (value.text) {
         if (value.text.includes("\n")) {
-          out.push(`!${name.text}:`);
-          out.push(value.text);
+          out.print(`!${name.text}:`);
+          out.print(value.text);
         } else {
-          out.push(`!${name.text}: ${value.text}`);
+          out.print(`!${name.text}: ${value.text}`);
         }
       } else {
-        out.push(`!${name.text}:`);
+        out.print(`!${name.text}:`);
       }
     }
-    out.push(end.text);
+    out.print(end.text);
   }
-  return out.print();
+  return String(out);
 }

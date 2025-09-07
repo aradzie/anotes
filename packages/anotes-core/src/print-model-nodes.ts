@@ -5,35 +5,35 @@ export function printModelNodes(nodes: Iterable<ModelNode>): string {
   const out = new Output();
   for (const { name, id, cloze, fields, cards, styling } of nodes) {
     out.separate();
-    out.push(`model ${name.text}`);
+    out.print(`model ${name.text}`);
     out.separate();
-    out.push(`id ${id.value}`);
+    out.print(`id ${id.value}`);
     if (cloze != null) {
       out.separate();
-      out.push("cloze");
+      out.print("cloze");
     }
     out.separate();
     for (const { name, required } of fields) {
-      out.push(`field ${name.text}${required ? "" : "?"}`);
+      out.print(`field ${name.text}${required ? "" : "?"}`);
     }
     out.separate();
     for (const { name, front, back } of cards) {
-      out.push(`card ${name.text}`);
+      out.print(`card ${name.text}`);
       out.separate();
-      out.push("front");
-      out.push(front.text);
-      out.push("~~~");
+      out.print("front");
+      out.print(front.text);
+      out.print("~~~");
       out.separate();
-      out.push("back");
-      out.push(back.text);
-      out.push("~~~");
+      out.print("back");
+      out.print(back.text);
+      out.print("~~~");
       out.separate();
     }
     if (styling != null) {
-      out.push("styling");
-      out.push(styling.text);
-      out.push("~~~");
+      out.print("styling");
+      out.print(styling.text);
+      out.print("~~~");
     }
   }
-  return out.print();
+  return String(out);
 }
