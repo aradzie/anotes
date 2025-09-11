@@ -12,5 +12,8 @@
     "compile": "rm -fr dist && tsc",
     "pretest": "npm run compile",
     "test": "node --test 'dist/**/*.test.js'"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
