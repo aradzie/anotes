@@ -1,4 +1,4 @@
-import { insertNoteId, NoteParser, printNoteNodes } from "@anotes/core";
+import { insertNoteId, NoteParser, printNoteNodes } from "@notatki/core";
 import vscode from "vscode";
 import { Command } from "./command.js";
 import { ankiNotes, cmdInsertId } from "./constants.js";

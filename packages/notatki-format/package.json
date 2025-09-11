@@ -1,9 +1,12 @@
 {
-  "private": true,
-  "name": "@notatki/vscode-protocol",
-  "version": "0.0.0",
+  "name": "@notatki/format",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
+  "dependencies": {
+    "katex": "^0.16.22",
+    "marked": "^16.2.1"
+  },
   "scripts": {
     "compile": "rm -fr dist && tsc",
     "pretest": "npm run compile",

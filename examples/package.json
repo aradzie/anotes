@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "@anotes/examples",
+  "name": "@notatki/examples",
   "version": "0.0.0",
   "scripts": {
-    "insert-id": "anotes insert-id",
-    "reformat": "anotes reformat",
-    "export": "anotes export",
+    "insert-id": "notatki insert-id",
+    "reformat": "notatki reformat",
+    "export": "notatki export",
     "build": "npm run insert-id && npm run reformat && npm run export"
   }
 }

@@ -1,4 +1,4 @@
-import { type LocationRange } from "@anotes/parser";
+import { type LocationRange } from "@notatki/parser";
 
 export type Selection = { start: number; end: number };
 

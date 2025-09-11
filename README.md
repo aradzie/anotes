@@ -49,12 +49,12 @@ $$ f'(c) = \frac{f(b) - f(a)}{b - a} $$
 
 ## Command Line Tools
 
-The tool `anotes` scans the given directory for all `*.note` files and compiles them into an output deck that can be
+The tool `notatki` scans the given directory for all `*.note` files and compiles them into an output deck that can be
 imported into Anki.
 
 ```shell
-$ npm install -g @anotes/cli
-$ anotes export --dir=notes --out=notes.txt
+$ npm install -g @notatki/cli
+$ notatki export --dir=notes --out=notes.txt
 ```
 
 ## Visual Studio Code Extension

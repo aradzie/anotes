@@ -1,5 +1,5 @@
-import { type Model, ModelMap,type Note, type NoteError, NoteList, NoteParser } from "@anotes/core";
-import { type ReviveState } from "@anotes/vscode-protocol";
+import { ModelMap, type Note, type NoteError, NoteList, NoteParser } from "@notatki/core";
+import { type ReviveState } from "@notatki/vscode-protocol";
 import { useEffect, useState } from "react";
 import { queue } from "./messages.js";
 import { type Selection } from "./selection.js";

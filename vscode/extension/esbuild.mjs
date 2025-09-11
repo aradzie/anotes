@@ -1,4 +1,4 @@
-import { problemMatcherPlugin } from "@anotes/scripts/esbuild.js";
+import { problemMatcherPlugin } from "@notatki/scripts/esbuild.js";
 import esbuild from "esbuild";
 
 const production = process.argv.includes("--production");

@@ -1,4 +1,4 @@
-import { type Note } from "@anotes/core";
+import { type Note } from "@notatki/core";
 import { Field1 } from "./Field.js";
 import { type Selection } from "./selection.js";
 

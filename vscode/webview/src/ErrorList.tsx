@@ -1,4 +1,4 @@
-import { type NoteError } from "@anotes/core";
+import { type NoteError } from "@notatki/core";
 import * as cn from "./ErrorList.module.css";
 import { revealRange } from "./navigate.js";
 

@@ -1,5 +1,5 @@
-import { type NoteField } from "@anotes/core";
-import { formatField, renderHtml } from "@anotes/format";
+import { type NoteField } from "@notatki/core";
+import { formatField, renderHtml } from "@notatki/format";
 import { clsx } from "clsx";
 import { memo, useEffect, useRef } from "react";
 import * as cn from "./Field.module.css";

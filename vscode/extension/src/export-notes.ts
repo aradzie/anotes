@@ -1,7 +1,7 @@
-import { exportNotes, NoteParser } from "@anotes/core";
+import { exportNotes, NoteParser } from "@notatki/core";
 import vscode from "vscode";
 import { Command } from "./command.js";
-import { allSearchPath, cmdExportNotes, excludeSearchPath, modelExt,noteExt } from "./constants.js";
+import { allSearchPath, cmdExportNotes, excludeSearchPath, modelExt, noteExt } from "./constants.js";
 import { type ErrorChecker } from "./errors.js";
 
 export class ExportCommand extends Command {

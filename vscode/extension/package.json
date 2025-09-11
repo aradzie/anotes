@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "anki-notes",
-  "displayName": "anki-notes",
+  "name": "notatki",
+  "displayName": "Notatki",
   "version": "0.0.0",
   "publisher": "master",
   "engines": {
-    "vscode": "^1.102.0"
+    "vscode": "^1.103.0"
   },
   "categories": [
     "Other"
@@ -136,15 +136,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aradzie/anotes.git"
+    "url": "git+https://github.com/aradzie/notatki.git"
   },
   "dependencies": {
-    "@anotes/core": "*",
-    "@anotes/vscode-protocol": "*"
+    "@notatki/core": "*",
+    "@notatki/vscode-protocol": "*"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
-    "@types/vscode": "^1.102.0"
+    "@types/node": "^24.3.1",
+    "@types/vscode": "=1.103.0"
   },
   "scripts": {
     "compile": "tsc",
@@ -153,9 +153,9 @@
     "prebuild": "npm run compile",
     "build": "rm -fr dist && node esbuild.mjs --production",
     "prepackageext": "npm run build",
-    "packageext": "npx @vscode/vsce package --out=anki-notes.vsix",
+    "packageext": "npx @vscode/vsce package --out=notatki.vsix",
     "preinstallext": "npm run packageext",
-    "installext": "code --install-extension anki-notes.vsix --force",
-    "uninstallext": "code --uninstall-extension master.anki-notes"
+    "installext": "code --install-extension notatki.vsix --force",
+    "uninstallext": "code --uninstall-extension master.notatki"
   }
 }

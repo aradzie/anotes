@@ -1,19 +1,19 @@
 {
   "private": true,
-  "name": "@anotes/vscode-webview",
+  "name": "@notatki/vscode-webview",
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
-    "@anotes/core": "*",
-    "@anotes/format": "*",
-    "@anotes/vscode-protocol": "*",
+    "@notatki/core": "*",
+    "@notatki/format": "*",
+    "@notatki/vscode-protocol": "*",
     "clsx": "^2.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@types/react": "^19.1.10",
-    "@types/react-dom": "^19.1.7",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "@types/vscode-webview": "^1.57.5"
   },
   "scripts": {

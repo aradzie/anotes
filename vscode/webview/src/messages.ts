@@ -1,4 +1,4 @@
-import { type ToWebviewMessage } from "@anotes/vscode-protocol";
+import { type ToWebviewMessage } from "@notatki/vscode-protocol";
 
 type Callback = (message: ToWebviewMessage) => void;
 

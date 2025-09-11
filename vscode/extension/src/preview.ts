@@ -1,10 +1,10 @@
-import { type Model } from "@anotes/core";
+import { type Model } from "@notatki/core";
 import {
   type ReviveState,
   type SelectMessage,
   type ToExtensionMessage,
   type UpdateMessage,
-} from "@anotes/vscode-protocol";
+} from "@notatki/vscode-protocol";
 import vscode from "vscode";
 import {
   ankiNotes,

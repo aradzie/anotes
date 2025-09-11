@@ -1,0 +1,19 @@
+{
+  "name": "@notatki/cli",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "notatki": "notatki.js"
+  },
+  "dependencies": {
+    "@notatki/core": "*",
+    "@notatki/preview": "*",
+    "@notatki/sync": "*",
+    "commander": "^14.0.0"
+  },
+  "scripts": {
+    "compile": "rm -fr dist && tsc",
+    "pretest": "npm run compile",
+    "test": "node --test 'dist/**/*.test.js'"
+  }
+}

@@ -1,30 +1,29 @@
 {
   "private": true,
-  "name": "anotes",
+  "name": "notatki",
   "version": "0.0.0",
   "description": "A collection of tools for creating Anki notes from simple text files.",
   "keywords": [
     "anki"
   ],
-  "homepage": "https://github.com/aradzie/anotes#readme",
+  "homepage": "https://github.com/aradzie/notatki#readme",
   "bugs": {
-    "url": "https://github.com/aradzie/anotes/issues"
+    "url": "https://github.com/aradzie/notatki/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aradzie/anotes.git"
+    "url": "git+https://github.com/aradzie/notatki.git"
   },
   "license": "ISC",
   "type": "module",
   "workspaces": [
     "scripts",
-    "packages/anki-export",
-    "packages/anotes-parser",
-    "packages/anotes-format",
-    "packages/anotes-core",
-    "packages/anotes-preview",
-    "packages/anotes-sync",
-    "packages/anotes-cli",
+    "packages/notatki-parser",
+    "packages/notatki-format",
+    "packages/notatki-core",
+    "packages/notatki-preview",
+    "packages/notatki-sync",
+    "packages/notatki-cli",
     "vscode/protocol",
     "vscode/webview",
     "vscode/extension",
@@ -34,18 +33,18 @@
     "rich-assert": "^0.0.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
+    "@eslint/js": "^9.35.0",
     "esbuild": "^0.25.9",
-    "eslint": "^9.33.0",
+    "eslint": "^9.35.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "prettier": "^3.6.2",
-    "stylelint": "^16.23.1",
+    "stylelint": "^16.24.0",
     "stylelint-config-recommended": "^17.0.0",
     "stylelint-order": "^7.0.0",
     "stylelint-plugin-logical-css": "^1.2.3",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.40.0"
+    "typescript-eslint": "^8.43.0"
   },
   "scripts": {
     "compile": "npm run compile --workspaces --if-present",

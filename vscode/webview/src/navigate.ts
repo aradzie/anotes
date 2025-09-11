@@ -1,5 +1,5 @@
-import { type LocationRange } from "@anotes/parser";
-import { type RevealRangeMessage } from "@anotes/vscode-protocol";
+import { type LocationRange } from "@notatki/parser";
+import { type RevealRangeMessage } from "@notatki/vscode-protocol";
 import { vscode } from "./vscode.js";
 
 export function revealRange({ source, start, end }: LocationRange): void {

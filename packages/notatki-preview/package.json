@@ -1,9 +1,13 @@
 {
-  "private": true,
-  "name": "@notatki/vscode-protocol",
-  "version": "0.0.0",
+  "name": "@notatki/preview",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
+  "dependencies": {
+    "@notatki/core": "*",
+    "@notatki/format": "*",
+    "@notatki/parser": "*"
+  },
   "scripts": {
     "compile": "rm -fr dist && tsc",
     "pretest": "npm run compile",

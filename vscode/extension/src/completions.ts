@@ -1,4 +1,4 @@
-import { type ModelMap } from "@anotes/core";
+import { type ModelMap } from "@notatki/core";
 import vscode from "vscode";
 import { ankiNotes } from "./constants.js";
 import { type ModelManager } from "./models.js";
