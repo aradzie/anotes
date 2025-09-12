@@ -15,6 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/aradzie/notatki.git"
   },
+  "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "dependencies": {

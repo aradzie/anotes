@@ -21,6 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/aradzie/notatki.git"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.103.0"
   },
