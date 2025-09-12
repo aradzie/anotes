@@ -3,13 +3,27 @@
   "name": "notatki",
   "displayName": "Notatki",
   "version": "0.0.0",
-  "publisher": "master",
-  "engines": {
-    "vscode": "^1.103.0"
-  },
+  "publisher": "aradzie",
+  "description": "Write Anki notes in text files using a simple, human-readable format.",
+  "keywords": [
+    "anki",
+    "flashcards",
+    "spaced-repetition"
+  ],
   "categories": [
     "Other"
   ],
+  "homepage": "https://github.com/aradzie/notatki#readme",
+  "bugs": {
+    "url": "https://github.com/aradzie/notatki/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aradzie/notatki.git"
+  },
+  "engines": {
+    "vscode": "^1.103.0"
+  },
   "main": "./dist/extension.js",
   "activationEvents": [
     "onWebviewPanel:anki-notes.preview"
@@ -134,10 +148,6 @@
       }
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aradzie/notatki.git"
-  },
   "dependencies": {
     "@notatki/core": "*",
     "@notatki/vscode-protocol": "*"
@@ -156,6 +166,6 @@
     "packageext": "npx @vscode/vsce package --out=notatki.vsix",
     "preinstallext": "npm run packageext",
     "installext": "code --install-extension notatki.vsix --force",
-    "uninstallext": "code --uninstall-extension master.notatki"
+    "uninstallext": "code --uninstall-extension aradzie.notatki"
   }
 }

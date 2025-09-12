@@ -2,9 +2,11 @@
   "private": true,
   "name": "notatki",
   "version": "0.0.0",
-  "description": "A collection of tools for creating Anki notes from simple text files.",
+  "description": "A collection of tools for creating and syncing Anki notes from simple text files.",
   "keywords": [
-    "anki"
+    "anki",
+    "flashcards",
+    "spaced-repetition"
   ],
   "homepage": "https://github.com/aradzie/notatki#readme",
   "bugs": {
@@ -14,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/aradzie/notatki.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "workspaces": [
     "scripts",
@@ -54,6 +56,8 @@
     "lint-fix": "eslint '{**/*,*}.{js,ts,tsx}' --fix",
     "stylelint": "stylelint '**/*.css'",
     "stylelint-fix": "stylelint '**.css' --fix",
-    "format": "prettier '{**/*,*}.{js,ts,tsx,css}' --write"
+    "format": "prettier '{**/*,*}.{js,ts,tsx,css}' --write",
+    "prepublish": "npm run compile && npm run test && npm run lint && npm run stylelint",
+    "publish": "lerna publish --no-private"
   }
 }

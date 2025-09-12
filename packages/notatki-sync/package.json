@@ -1,6 +1,20 @@
 {
   "name": "@notatki/sync",
   "version": "0.0.1",
+  "description": "A collection of tools for creating and syncing Anki notes from simple text files.",
+  "keywords": [
+    "anki",
+    "flashcards",
+    "spaced-repetition"
+  ],
+  "homepage": "https://github.com/aradzie/notatki#readme",
+  "bugs": {
+    "url": "https://github.com/aradzie/notatki/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aradzie/notatki.git"
+  },
   "type": "module",
   "main": "dist/index.js",
   "dependencies": {
