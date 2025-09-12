@@ -2,7 +2,6 @@
 **
 
 # Use negative patterns to bring back the specific things we want to publish.
-!/src/**
 !/dist/**
 
 # Ignore certain files in the above directories.
